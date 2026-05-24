@@ -138,12 +138,12 @@
 
 a.header-city-label {
   text-decoration: none;
-  color: #C8BFB8;
+  color: #ffffff;
   transition: color 0.2s ease;
 }
 
 a.header-city-label:hover {
-  color: #ffffff;
+  color: #C8BFB8;
 }
 
 /* =====================================================
