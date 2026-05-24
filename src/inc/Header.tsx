@@ -67,12 +67,6 @@ const Header: React.FC = () => {
     const header = fullHeaderRef.current;
     if (!header) return;
 
-    // ─────────────────────────────────────────────────────────
-    // PRIMARY: IntersectionObserver
-    // Watches whether the full header is visible in the viewport.
-    // Completely independent of scroll events — fires correctly
-    // across all modern browsers.
-    // ─────────────────────────────────────────────────────────
     const observer = new IntersectionObserver(
       ([entry]) => setIsSticky(!entry.isIntersecting),
       {
@@ -83,9 +77,6 @@ const Header: React.FC = () => {
     );
     observer.observe(header);
 
-    // ─────────────────────────────────────────────────────────
-    // FALLBACK: scroll events on window + document (capture)
-    // ─────────────────────────────────────────────────────────
     const checkSticky = (): void => {
       if (!header) return;
       const { bottom } = header.getBoundingClientRect();
@@ -117,7 +108,14 @@ const Header: React.FC = () => {
 
           {/* Right: City label on top, nav links on bottom */}
           <div className="header-right">
-            <div className="header-city-label">City of Greenwood</div>
+            <a
+              href="https://www.greenwoodcity.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="header-city-label"
+            >
+              City of Greenwood
+            </a>
             <nav className="header-nav" aria-label="Main navigation">
               <NavLinks />
             </nav>
@@ -141,7 +139,14 @@ const Header: React.FC = () => {
 
             {/* Right: City label + nav */}
             <div className="header-right header-right--sticky">
-              <div className="header-city-label">City of Greenwood</div>
+              <a
+                href="https://www.greenwoodcity.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="header-city-label"
+              >
+                City of Greenwood
+              </a>
               <nav className="header-nav" aria-label="Main navigation">
                 <NavLinks />
               </nav>

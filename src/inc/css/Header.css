@@ -136,6 +136,16 @@
   /* Inherits column layout */
 }
 
+a.header-city-label {
+  text-decoration: none;
+  color: #C8BFB8;
+  transition: color 0.2s ease;
+}
+
+a.header-city-label:hover {
+  color: #ffffff;
+}
+
 /* =====================================================
    Responsive Design
    ===================================================== */
