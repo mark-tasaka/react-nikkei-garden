@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
 import { NavLink } from 'react-router-dom';
 import './css/Header.css';
-import logoHeader from './css/img/header/logo_header.png';
+import logoHeader from './img/header/logo_header.png';
 
 /* ─────────────────────────────────────────────────────────
    Shared sub-components
