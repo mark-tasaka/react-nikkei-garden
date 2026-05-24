@@ -12,11 +12,11 @@
 .header-container {
   display: flex;
   flex-direction: row;
-  align-items: stretch;         /* children stretch to full height */
+  align-items: stretch;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 12px 24px;
+  padding: 20px 32px;          /* ← more top/bottom breathing room */
   box-sizing: border-box;
   gap: 24px;
 }
@@ -26,33 +26,28 @@
    ===================================================== */
 .header-logo {
   display: flex;
-  align-items: center;          /* vertically center inside the row */
+  align-items: center;
   flex-shrink: 0;
 }
 
 .header-logo img {
-  height: 64px;
+  height: 88px;                /* ← was 64px */
   width: auto;
   display: block;
 }
 
 /* =====================================================
    Right — City label + Nav
-   The right column uses flex-column so the city label
-   sits at the top and the nav pins to the bottom.
    ===================================================== */
 .header-right {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* city label top, nav bottom */
+  justify-content: space-between;
   align-items: flex-end;
   flex: 1;
   min-width: 0;
 }
 
-/* City of Greenwood label — aligns to logo's top edge
-   because both .header-logo and .header-right stretch
-   to the same height and this is the first flex child. */
 .header-city-label {
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
@@ -63,7 +58,7 @@
 }
 
 /* =====================================================
-   Navigation — aligns to logo's bottom edge
+   Navigation
    ===================================================== */
 .header-nav {
   display: flex;
@@ -76,16 +71,16 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 28px;
+  gap: 32px;                   /* ← slightly more gap to match Figma spacing */
   align-items: flex-end;
 }
 
 /* Inactive link */
 .nav-link {
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;             /* ← was 14px */
   font-weight: 400;
-  color: #D6CEC8;
+  color: #ffffff;              /* ← was #D6CEC8 */
   text-decoration: none;
   white-space: nowrap;
   line-height: 1;
@@ -94,6 +89,7 @@
 
 .nav-link:hover {
   color: #ffffff;
+  opacity: 0.75;
 }
 
 /* Active link */
@@ -123,17 +119,17 @@
   pointer-events: auto;
 }
 
-/* Sticky container — same single-row layout, slightly tighter */
+/* Sticky container — tighter padding, smaller logo */
 .header-container--sticky {
-  padding: 8px 24px;
+  padding: 10px 32px;
 }
 
 .header-logo--sticky img {
-  height: 48px;
+  height: 52px;                /* ← scaled proportionally from 88px */
 }
 
 .header-right--sticky {
-  /* Inherits the column layout; just a hook for overrides if needed */
+  /* Inherits column layout */
 }
 
 /* =====================================================
@@ -143,15 +139,15 @@
 /* ── Tablet (max 1024px) ── */
 @media (max-width: 1024px) {
   .header-container {
-    padding: 12px 20px;
+    padding: 18px 24px;
   }
 
   .header-logo img {
-    height: 56px;
+    height: 76px;
   }
 
   .nav-list {
-    gap: 20px;
+    gap: 24px;
   }
 }
 
@@ -160,8 +156,8 @@
   .header-container {
     flex-direction: column;
     align-items: center;
-    padding: 12px 16px;
-    gap: 10px;
+    padding: 16px 20px;
+    gap: 12px;
   }
 
   .header-logo {
@@ -169,47 +165,47 @@
   }
 
   .header-logo img {
-    height: 52px;
+    height: 64px;
   }
 
   .header-right {
     align-items: center;
-    gap: 8px;
+    gap: 10px;
   }
 
   .nav-list {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 14px;
+    gap: 18px;
   }
 
   .nav-link {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .header-container--sticky {
     flex-direction: row;
     align-items: stretch;
-    padding: 8px 16px;
+    padding: 10px 20px;
   }
 
   .header-logo--sticky img {
-    height: 40px;
+    height: 44px;
   }
 }
 
 /* ── Mobile (max 480px) ── */
 @media (max-width: 480px) {
   .header-logo img {
-    height: 44px;
+    height: 52px;
   }
 
   .nav-list {
-    gap: 10px;
+    gap: 12px;
   }
 
   .nav-link {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .header-container--sticky {
@@ -227,14 +223,14 @@
 /* ── Extra Small Mobile (max 360px) ── */
 @media (max-width: 360px) {
   .header-logo img {
-    height: 36px;
+    height: 42px;
   }
 
   .nav-list {
-    gap: 8px;
+    gap: 10px;
   }
 
   .nav-link {
-    font-size: 11px;
+    font-size: 13px;
   }
 }
