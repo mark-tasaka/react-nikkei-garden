@@ -64,7 +64,7 @@
   color: #ffffff;
   text-decoration: none;
   padding: 7px 0;               /* ← top/bottom was 14px, halved; left/right replaced by width */
-  width: 160px;                 /* ← fixed width so both buttons are identical */
+  width: 120px;                 /* ← fixed width so both buttons are identical */
   text-align: center;           /* ← centers text within the fixed width */
   border-radius: 6px;
   background: linear-gradient(to right, #B8322A, #85231E);
@@ -139,7 +139,7 @@
 
   .hero-btn {
     font-size: 15px;
-    width: 140px;
+    width: 105px;
   }
 }
 
@@ -157,7 +157,7 @@
   .hero-btn {
     font-size: 14px;
     padding: 6px 0;
-    width: 130px;
+    width: 100px;
   }
 
   .hero-dots {
@@ -180,7 +180,7 @@
   .hero-btn {
     font-size: 13px;
     padding: 5px 0;
-    width: 120px;
+    width: 90px;
   }
 
   .hero-dot {
