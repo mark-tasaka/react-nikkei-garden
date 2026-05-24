@@ -1,25 +1,50 @@
+// src/App.tsx
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
-function App() {
+// Pages — create these files as you build them out
+import HomePage from './HomePage';
+import HistoryPage from './HistoryPage';
+import MediaPage from './MediaPage';
+import GalleryPage from './GalleryPage';
+
+// Shared layout components
+import Header from './inc/Header';
+// import Hero   from './inc/Hero';    // uncomment when ready
+// import Footer from './inc/Footer';  // uncomment when ready
+
+/* ─────────────────────────────────────────────────────────
+   AppShell — wraps every page with the shared chrome
+───────────────────────────────────────────────────────── */
+interface AppShellProps {
+  children: React.ReactNode;
+}
+
+const AppShell: React.FC<AppShellProps> = ({ children }) => (
+  <div className="App">
+    <Header />
+    {/* <Hero /> */}
+    <main className="main-content">
+      {children}
+    </main>
+    {/* <Footer /> */}
+  </div>
+);
+
+/* ─────────────────────────────────────────────────────────
+   App — router + routes
+───────────────────────────────────────────────────────── */
+function App(): React.ReactElement {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/"        element={<AppShell><HomePage /></AppShell>} />
+        <Route path="/history" element={<AppShell><HistoryPage /></AppShell>} />
+        <Route path="/media"   element={<AppShell><MediaPage /></AppShell>} />
+        <Route path="/gallery" element={<AppShell><GalleryPage /></AppShell>} />
+      </Routes>
+    </Router>
   );
 }
 
