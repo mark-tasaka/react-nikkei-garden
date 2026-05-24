@@ -1,0 +1,221 @@
+/* src/inc/css/Hero.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* =====================================================
+   Hero Section
+   ===================================================== */
+.hero {
+  background-color: #1a1210;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   Slide Track — full-width, fixed height
+   All slides are absolutely stacked inside.
+   Buttons float above via z-index.
+   ===================================================== */
+.hero-track {
+  position: relative;
+  width: 100%;
+  height: 560px;
+  overflow: hidden;
+}
+
+/* =====================================================
+   Slides — stacked, active one fades in
+   ===================================================== */
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.hero-slide--active {
+  opacity: 1;
+}
+
+/* =====================================================
+   CTA Buttons — above the slides
+   ===================================================== */
+.hero-cta {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  z-index: 10;
+}
+
+.hero-btn {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 36px;
+  border-radius: 6px;
+  background: linear-gradient(to right, #B8322A, #85231E);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+  transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.55);
+}
+
+.hero-btn:active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* =====================================================
+   Navigation Dots
+   ===================================================== */
+.hero-dots {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #444444;
+  border: 2px solid #666666;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.3s ease,
+              border-color     0.3s ease,
+              transform        0.3s ease;
+  flex-shrink: 0;
+}
+
+.hero-dot:hover {
+  background-color: #888888;
+  border-color: #aaaaaa;
+}
+
+.hero-dot--active {
+  background-color: #B8322A;
+  border-color: #e06057;
+  transform: scale(1.4);
+}
+
+/* =====================================================
+   Responsive Design
+   ===================================================== */
+
+/* ── Tablet (max 1024px) ── */
+@media (max-width: 1024px) {
+  .hero-track {
+    height: 460px;
+  }
+
+  .hero-btn {
+    font-size: 15px;
+    padding: 12px 28px;
+  }
+}
+
+/* ── Small Tablet / Large Mobile (max 768px) ── */
+@media (max-width: 768px) {
+  .hero-track {
+    height: 360px;
+  }
+
+  .hero-cta {
+    bottom: 28px;
+    gap: 16px;
+  }
+
+  .hero-btn {
+    font-size: 14px;
+    padding: 11px 22px;
+  }
+
+  .hero-dots {
+    gap: 10px;
+    margin-top: 16px;
+  }
+}
+
+/* ── Mobile (max 480px) ── */
+@media (max-width: 480px) {
+  .hero-track {
+    height: 260px;
+  }
+
+  .hero-cta {
+    bottom: 20px;
+    gap: 12px;
+  }
+
+  .hero-btn {
+    font-size: 13px;
+    padding: 9px 18px;
+  }
+
+  .hero-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .hero-dots {
+    gap: 8px;
+    margin-top: 14px;
+  }
+}
+
+/* ── Extra Small Mobile (max 360px) ── */
+@media (max-width: 360px) {
+  .hero-track {
+    height: 210px;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+    bottom: 16px;
+    gap: 8px;
+  }
+
+  .hero-btn {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .hero-dot {
+    width: 7px;
+    height: 7px;
+  }
+
+  .hero-dots {
+    gap: 6px;
+  }
+}

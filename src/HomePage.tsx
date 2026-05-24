@@ -1,3 +1,11 @@
+// src/HomePage.tsx
 import React from 'react';
-const HomePage: React.FC = () => <div>Home Page</div>;
+import Hero from './inc/Hero';
+
+const HomePage: React.FC = () => (
+  <>
+    <Hero />
+  </>
+);
+
 export default HomePage;
