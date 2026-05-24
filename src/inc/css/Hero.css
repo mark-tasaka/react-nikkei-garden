@@ -7,15 +7,13 @@
 .hero {
   background-color: #1a1210;
   width: 100%;
-  /* No position/flex needed — hero-track fills it */
 }
 
 /* =====================================================
-   Slide Track — the single positioning context
-   for slides, buttons, AND dots.
+   Slide Track
    ===================================================== */
 .hero-track {
-  position: relative;   /* ← ALL absolute children anchor here */
+  position: relative;
   width: 100%;
   height: 560px;
   overflow: hidden;
@@ -45,15 +43,17 @@
 
 /* =====================================================
    CTA Buttons
+   bottom: 64px → 128px  (doubled)
+   gap: 24px → 36px      (×1.5)
    ===================================================== */
 .hero-cta {
   position: absolute;
-  bottom: 64px;
+  bottom: 128px;                /* ← was 64px, now doubled */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  gap: 36px;                    /* ← was 24px, now ×1.5 */
   z-index: 10;
 }
 
@@ -63,13 +63,16 @@
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
-  padding: 14px 36px;
+  padding: 7px 0;               /* ← top/bottom was 14px, halved; left/right replaced by width */
+  width: 160px;                 /* ← fixed width so both buttons are identical */
+  text-align: center;           /* ← centers text within the fixed width */
   border-radius: 6px;
   background: linear-gradient(to right, #B8322A, #85231E);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
   transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
   white-space: nowrap;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .hero-btn:hover {
@@ -84,7 +87,7 @@
 }
 
 /* =====================================================
-   Navigation Dots — inside hero-track, anchored correctly
+   Navigation Dots
    ===================================================== */
 .hero-dots {
   position: absolute;
@@ -136,7 +139,7 @@
 
   .hero-btn {
     font-size: 15px;
-    padding: 12px 28px;
+    width: 140px;
   }
 }
 
@@ -147,13 +150,14 @@
   }
 
   .hero-cta {
-    bottom: 52px;
-    gap: 16px;
+    bottom: 104px;              /* ← was 52px, doubled */
+    gap: 24px;                  /* ← was 16px, ×1.5 */
   }
 
   .hero-btn {
     font-size: 14px;
-    padding: 11px 22px;
+    padding: 6px 0;
+    width: 130px;
   }
 
   .hero-dots {
@@ -169,13 +173,14 @@
   }
 
   .hero-cta {
-    bottom: 44px;
-    gap: 12px;
+    bottom: 88px;               /* ← was 44px, doubled */
+    gap: 18px;                  /* ← was 12px, ×1.5 */
   }
 
   .hero-btn {
     font-size: 13px;
-    padding: 9px 18px;
+    padding: 5px 0;
+    width: 120px;
   }
 
   .hero-dot {
@@ -198,13 +203,14 @@
   .hero-cta {
     flex-direction: column;
     align-items: center;
-    bottom: 40px;
+    bottom: 80px;               /* ← was 40px, doubled */
     gap: 8px;
   }
 
   .hero-btn {
     font-size: 12px;
-    padding: 8px 16px;
+    padding: 5px 0;
+    width: 120px;
   }
 
   .hero-dot {
