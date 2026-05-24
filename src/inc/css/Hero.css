@@ -7,28 +7,22 @@
 .hero {
   background-color: #1a1210;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  box-sizing: border-box;
+  /* No position/flex needed — hero-track fills it */
 }
 
 /* =====================================================
-   Slide Track — full-width, fixed height
-   All slides are absolutely stacked inside.
-   Buttons float above via z-index.
+   Slide Track — the single positioning context
+   for slides, buttons, AND dots.
    ===================================================== */
 .hero-track {
-  position: relative;
+  position: relative;   /* ← ALL absolute children anchor here */
   width: 100%;
   height: 560px;
   overflow: hidden;
 }
 
 /* =====================================================
-   Slides — stacked, active one fades in
+   Slides
    ===================================================== */
 .hero-slide {
   position: absolute;
@@ -50,11 +44,11 @@
 }
 
 /* =====================================================
-   CTA Buttons — above the slides
+   CTA Buttons
    ===================================================== */
 .hero-cta {
   position: absolute;
-  bottom: 40px;
+  bottom: 64px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -90,24 +84,27 @@
 }
 
 /* =====================================================
-   Navigation Dots
+   Navigation Dots — inside hero-track, anchored correctly
    ===================================================== */
 .hero-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 12px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  z-index: 10;
 }
 
 .hero-dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #444444;
-  border: 2px solid #666666;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.7);
   cursor: pointer;
   padding: 0;
   transition: background-color 0.3s ease,
@@ -117,8 +114,8 @@
 }
 
 .hero-dot:hover {
-  background-color: #888888;
-  border-color: #aaaaaa;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-color: #ffffff;
 }
 
 .hero-dot--active {
@@ -150,7 +147,7 @@
   }
 
   .hero-cta {
-    bottom: 28px;
+    bottom: 52px;
     gap: 16px;
   }
 
@@ -160,8 +157,8 @@
   }
 
   .hero-dots {
+    bottom: 16px;
     gap: 10px;
-    margin-top: 16px;
   }
 }
 
@@ -172,7 +169,7 @@
   }
 
   .hero-cta {
-    bottom: 20px;
+    bottom: 44px;
     gap: 12px;
   }
 
@@ -187,8 +184,8 @@
   }
 
   .hero-dots {
+    bottom: 12px;
     gap: 8px;
-    margin-top: 14px;
   }
 }
 
@@ -201,7 +198,7 @@
   .hero-cta {
     flex-direction: column;
     align-items: center;
-    bottom: 16px;
+    bottom: 40px;
     gap: 8px;
   }
 
@@ -216,6 +213,7 @@
   }
 
   .hero-dots {
+    bottom: 10px;
     gap: 6px;
   }
 }

@@ -15,9 +15,6 @@ import slide10 from './img/hero/HeroSlide10.jpg';
 import slide11 from './img/hero/HeroSlide11.jpg';
 import slide12 from './img/hero/HeroSlide12.jpg';
 
-/* ─────────────────────────────────────────────────────────
-   Slide data
-───────────────────────────────────────────────────────── */
 interface Slide {
   src: string;
   alt: string;
@@ -40,9 +37,6 @@ const SLIDES: Slide[] = [
 
 const SLIDE_INTERVAL_MS = 6000;
 
-/* ─────────────────────────────────────────────────────────
-   Hero component
-───────────────────────────────────────────────────────── */
 const Hero: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
@@ -58,7 +52,8 @@ const Hero: React.FC = () => {
   return (
     <section className="hero" aria-label="Featured slideshow">
 
-      {/* ── Slide Track ── */}
+      {/* ── Everything lives inside hero-track so absolute
+           positioning is always relative to this container ── */}
       <div className="hero-track">
 
         {/* Slides */}
@@ -72,7 +67,7 @@ const Hero: React.FC = () => {
           />
         ))}
 
-        {/* ── CTA Buttons — sit above the slides via z-index ── */}
+        {/* ── CTA Buttons ── */}
         <div className="hero-cta">
           <a
             href="/history"
@@ -91,20 +86,22 @@ const Hero: React.FC = () => {
             Find Us
           </a>
         </div>
-      </div>
 
-      {/* ── Dot Navigation ── */}
-      <div className="hero-dots" role="tablist" aria-label="Slideshow navigation">
-        {SLIDES.map((_, i) => (
-          <button
-            key={i}
-            role="tab"
-            aria-selected={i === activeIndex}
-            aria-label={`Go to slide ${i + 1}`}
-            className={`hero-dot${i === activeIndex ? ' hero-dot--active' : ''}`}
-            onClick={() => setActiveIndex(i)}
-          />
-        ))}
+        {/* ── Dot Navigation — inside hero-track so position:absolute
+             is always anchored to the same containing block ── */}
+        <div className="hero-dots" role="tablist" aria-label="Slideshow navigation">
+          {SLIDES.map((_, i) => (
+            <button
+              key={i}
+              role="tab"
+              aria-selected={i === activeIndex}
+              aria-label={`Go to slide ${i + 1}`}
+              className={`hero-dot${i === activeIndex ? ' hero-dot--active' : ''}`}
+              onClick={() => setActiveIndex(i)}
+            />
+          ))}
+        </div>
+
       </div>
 
     </section>
