@@ -8,10 +8,10 @@ const HomePage: React.FC = () => (
     <Hero />
 
     {/* ── Main Content ── */}
-    <section className="home-content">
+    <section id="about" className="home-content">
       <div className="home-content-inner">
 
-        <h2 className="home-content-title">Nikkei Legacy Park</h2>
+        <h2 className="home-content-title">About the Nikkei Legacy Park</h2>
 
         <p className="home-content-body">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec

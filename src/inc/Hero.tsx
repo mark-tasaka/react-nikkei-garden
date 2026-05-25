@@ -51,12 +51,8 @@ const Hero: React.FC = () => {
 
   return (
     <section className="hero" aria-label="Featured slideshow">
-
-      {/* ── Everything lives inside hero-track so absolute
-           positioning is always relative to this container ── */}
       <div className="hero-track">
 
-        {/* Slides */}
         {SLIDES.map(({ src, alt }, i) => (
           <img
             key={i}
@@ -70,7 +66,7 @@ const Hero: React.FC = () => {
         {/* ── CTA Buttons ── */}
         <div className="hero-cta">
           <a
-            href="/history"
+            href="#about"
             className="hero-btn"
             aria-label="About the Nikkei Legacy Garden"
           >
@@ -87,8 +83,7 @@ const Hero: React.FC = () => {
           </a>
         </div>
 
-        {/* ── Dot Navigation — inside hero-track so position:absolute
-             is always anchored to the same containing block ── */}
+        {/* ── Dot Navigation ── */}
         <div className="hero-dots" role="tablist" aria-label="Slideshow navigation">
           {SLIDES.map((_, i) => (
             <button
@@ -103,7 +98,6 @@ const Hero: React.FC = () => {
         </div>
 
       </div>
-
     </section>
   );
 };
