@@ -109,6 +109,10 @@ const Header: React.FC = () => {
   const closeMenu = () => setMenuOpen(false);
   const toggleMenu = () => setMenuOpen(prev => !prev);
 
+  const handleLinkClick = () => {
+    setTimeout(() => setMenuOpen(false), 50);
+  };
+
   return (
     <>
       {/* ── Full header ── */}
@@ -152,7 +156,7 @@ const Header: React.FC = () => {
           aria-hidden={!menuOpen}
         >
           <nav className="header-nav" aria-label="Mobile navigation">
-            <NavLinks onLinkClick={closeMenu} includeGreenwood />
+            <NavLinks onLinkClick={handleLinkClick} includeGreenwood />
           </nav>
         </div>
       </header>
@@ -205,7 +209,7 @@ const Header: React.FC = () => {
               aria-hidden={!menuOpen}
             >
               <nav className="header-nav" aria-label="Mobile navigation">
-                <NavLinks onLinkClick={closeMenu} includeGreenwood />
+                <NavLinks onLinkClick={handleLinkClick} includeGreenwood />
               </nav>
             </div>
           )}
