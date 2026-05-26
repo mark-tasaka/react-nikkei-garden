@@ -7,108 +7,51 @@ import logoHeader from './img/header/logo_header.png';
 import logoHeaderSticky from './img/header/logo_header-sticky.png';
 
 /* ─────────────────────────────────────────────────────────
-   Shared sub-components
+   Nav link lists
 ───────────────────────────────────────────────────────── */
 
-const NavLinks: React.FC = () => (
-  <ul className="nav-list">
-    <li>
-      <NavLink
-        to="/"
-        end
-        className={({ isActive }) =>
-          isActive ? 'nav-link nav-link--active' : 'nav-link'
-        }
-      >
-        Home
-      </NavLink>
-    </li>
-    <li>
-      <NavLink
-        to="/history"
-        className={({ isActive }) =>
-          isActive ? 'nav-link nav-link--active' : 'nav-link'
-        }
-      >
-        History
-      </NavLink>
-    </li>
-    <li>
-      <NavLink
-        to="/media"
-        className={({ isActive }) =>
-          isActive ? 'nav-link nav-link--active' : 'nav-link'
-        }
-      >
-        Media
-      </NavLink>
-    </li>
-    <li>
-      <NavLink
-        to="/gallery"
-        className={({ isActive }) =>
-          isActive ? 'nav-link nav-link--active' : 'nav-link'
-        }
-      >
-        Gallery
-      </NavLink>
-    </li>
-  </ul>
-);
+interface NavLinksProps {
+  onLinkClick?: () => void;
+  includeGreenwood?: boolean;
+}
 
-const NavLinksSticky: React.FC = () => (
+const NavLinks: React.FC<NavLinksProps> = ({ onLinkClick, includeGreenwood = false }) => (
   <ul className="nav-list">
     <li>
-      <NavLink
-        to="/"
-        end
-        className={({ isActive }) =>
-          isActive ? 'nav-link nav-link--active' : 'nav-link'
-        }
-      >
-        Home
-      </NavLink>
+      <NavLink to="/" end
+        className={({ isActive }) => isActive ? 'nav-link nav-link--active' : 'nav-link'}
+        onClick={onLinkClick}
+      >Home</NavLink>
     </li>
     <li>
-      <NavLink
-        to="/history"
-        className={({ isActive }) =>
-          isActive ? 'nav-link nav-link--active' : 'nav-link'
-        }
-      >
-        History
-      </NavLink>
+      <NavLink to="/history"
+        className={({ isActive }) => isActive ? 'nav-link nav-link--active' : 'nav-link'}
+        onClick={onLinkClick}
+      >History</NavLink>
     </li>
     <li>
-      <NavLink
-        to="/media"
-        className={({ isActive }) =>
-          isActive ? 'nav-link nav-link--active' : 'nav-link'
-        }
-      >
-        Media
-      </NavLink>
+      <NavLink to="/media"
+        className={({ isActive }) => isActive ? 'nav-link nav-link--active' : 'nav-link'}
+        onClick={onLinkClick}
+      >Media</NavLink>
     </li>
     <li>
-      <NavLink
-        to="/gallery"
-        className={({ isActive }) =>
-          isActive ? 'nav-link nav-link--active' : 'nav-link'
-        }
-      >
-        Gallery
-      </NavLink>
+      <NavLink to="/gallery"
+        className={({ isActive }) => isActive ? 'nav-link nav-link--active' : 'nav-link'}
+        onClick={onLinkClick}
+      >Gallery</NavLink>
     </li>
-    <li>
-      <a                                        
-        href="https://www.greenwoodcity.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="nav-link"
-      >
-        Greenwood
-      </a>
-    </li>
+    {includeGreenwood && (
+      <li>
+        
+          <a href="https://www.greenwoodcity.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-link"
+          onClick={onLinkClick}
+        >City of Greenwood</a>
+      </li>
+    )}
   </ul>
 );
 
@@ -118,8 +61,10 @@ const NavLinksSticky: React.FC = () => (
 
 const Header: React.FC = () => {
   const [isSticky, setIsSticky] = useState<boolean>(false);
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const fullHeaderRef = useRef<HTMLElement | null>(null);
 
+  /* ── Sticky detection ── */
   useEffect(() => {
     const header = fullHeaderRef.current;
     if (!header) return;
@@ -146,6 +91,22 @@ const Header: React.FC = () => {
     };
   }, []);
 
+  /* ── Lock body scroll when menu is open ── */
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [menuOpen]);
+
+  /* ── Close menu on Escape ── */
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setMenuOpen(false); };
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, []);
+
+  const closeMenu = () => setMenuOpen(false);
+  const toggleMenu = () => setMenuOpen(prev => !prev);
+
   return (
     <>
       {/* ── Full header ── */}
@@ -154,21 +115,55 @@ const Header: React.FC = () => {
           <div className="header-logo">
             <img src={logoHeader} alt="Nikkei Legacy Park" />
           </div>
+
+          {/* Desktop right side */}
           <div className="header-right">
-            <a                                   
-              href="https://www.greenwoodcity.com/"
+            
+              <a href="https://www.greenwoodcity.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="header-city-label"
             >
               City of Greenwood
             </a>
-            <nav className="header-nav" aria-label="Main navigation">
+            <nav className="header-nav header-nav--desktop" aria-label="Main navigation">
               <NavLinks />
             </nav>
           </div>
+
+          {/* Mobile hamburger button */}
+          <button
+            className={`hamburger${menuOpen ? ' hamburger--open' : ''}`}
+            onClick={toggleMenu}
+            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={menuOpen}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+        </div>
+
+        {/* Mobile menu drawer */}
+        <div
+          className={`mobile-menu${menuOpen ? ' mobile-menu--open' : ''}`}
+          aria-hidden={!menuOpen}
+        >
+          <nav className="header-nav" aria-label="Mobile navigation">
+            <NavLinks onLinkClick={closeMenu} includeGreenwood />
+          </nav>
         </div>
       </header>
+
+      {/* Mobile backdrop */}
+      {ReactDOM.createPortal(
+        <div
+          className={`mobile-backdrop${menuOpen ? ' mobile-backdrop--visible' : ''}`}
+          onClick={closeMenu}
+          aria-hidden
+        />,
+        document.body
+      )}
 
       {/* ── Sticky header ── */}
       {ReactDOM.createPortal(
@@ -180,11 +175,35 @@ const Header: React.FC = () => {
             <div className="header-logo header-logo--sticky">
               <img src={logoHeaderSticky} alt="Nikkei Legacy Park" />
             </div>
+
+            {/* Desktop sticky nav */}
             <div className="header-right header-right--sticky">
-              <nav className="header-nav" aria-label="Main navigation">
-                <NavLinksSticky />
+              <nav className="header-nav header-nav--desktop" aria-label="Main navigation">
+                <NavLinks includeGreenwood />
               </nav>
             </div>
+
+            {/* Mobile sticky hamburger */}
+            <button
+              className={`hamburger hamburger--sticky${menuOpen ? ' hamburger--open' : ''}`}
+              onClick={toggleMenu}
+              aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={menuOpen}
+            >
+              <span />
+              <span />
+              <span />
+            </button>
+          </div>
+
+          {/* Sticky mobile menu drawer */}
+          <div
+            className={`mobile-menu mobile-menu--sticky${menuOpen ? ' mobile-menu--open' : ''}`}
+            aria-hidden={!menuOpen}
+          >
+            <nav className="header-nav" aria-label="Mobile navigation">
+              <NavLinks onLinkClick={closeMenu} includeGreenwood />
+            </nav>
           </div>
         </header>,
         document.body

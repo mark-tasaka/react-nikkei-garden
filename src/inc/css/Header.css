@@ -178,59 +178,73 @@ a.header-city-label:hover {
 
 /* ── Small Tablet / Large Mobile (max 768px) ── */
 @media (max-width: 768px) {
+  /* ── Layout ── */
   .header-container {
-    flex-direction: column;
+    flex-direction: row;         /* logo left, hamburger right */
     align-items: center;
-    /* padding: 32px 20px; */
-    padding-top: 32px;
-    padding-bottom: 16px;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 20px;
     padding-right: 20px;
-    gap: 12px;
+    gap: 0;
   }
 
   .header-logo {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .header-logo img {
-    height: 64px;
+    height: 48px;
   }
 
+  /* Hide desktop-only elements */
   .header-right {
-    align-items: center;
-    gap: 10px;
+    display: none;
   }
 
-  .nav-list {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 18px;
+  .header-nav--desktop {
+    display: none;
   }
 
-  .nav-link {
-    font-size: 15px;
+  /* ── Show hamburger & mobile menu ── */
+  .hamburger {
+    display: flex;
   }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .mobile-backdrop {
+    display: block;
+  }
+
+  /* ── Sticky mobile ── */
   .header-container--sticky {
-    flex-direction: row;       /* keep logo + nav side-by-side */
+    flex-direction: row;
     align-items: center;
-    padding: 7px 16px;
-    gap: 10px;
+    justify-content: space-between;
+    padding: 8px 20px;
+    gap: 0;
   }
 
   .header-logo--sticky img {
-    height: 28px;
+    height: 32px;
   }
 
   .header-right--sticky {
-    align-items: center;
+    display: none;
   }
 
-  .nav-list {                 
-    gap: 14px;
+  .mobile-menu--sticky {
+    position: fixed;
+    top: 52px;
+    left: 0;
+    right: 0;
+    z-index: 14;
   }
 }
-
 /* ── Mobile (max 480px) ── */
 @media (max-width: 480px) {
   .header-logo img {
@@ -285,5 +299,125 @@ a.header-city-label:hover {
 
   .nav-link {
     font-size: 12px;
+  }
+}
+
+/* =====================================================
+   Hamburger Button
+   ===================================================== */
+.hamburger {
+  display: none;               /* hidden on desktop */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 20;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease, width 0.3s ease;
+  transform-origin: center;
+}
+
+/* Animate to X when open */
+.hamburger--open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger--open span:nth-child(2) {
+  opacity: 0;
+  width: 0;
+}
+.hamburger--open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* =====================================================
+   Mobile Menu Drawer
+   ===================================================== */
+.mobile-menu {
+  display: none;               /* hidden on desktop */
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, #3a3330, #1E1A18);
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+}
+
+.mobile-menu--open {
+  max-height: 400px;
+  padding: 24px 0 32px;
+}
+
+.mobile-menu .nav-list {
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.mobile-menu .nav-link {
+  font-size: 20px;
+}
+
+/* =====================================================
+   Mobile Backdrop
+   ===================================================== */
+.mobile-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 14;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.mobile-backdrop--visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* =====================================================
+   Mobile breakpoint — show hamburger, hide desktop nav
+   ===================================================== */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .header-nav--desktop {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .mobile-backdrop {
+    display: block;
+  }
+
+  /* Sticky-specific drawer sits below the sticky bar */
+  .mobile-menu--sticky {
+    position: fixed;
+    top: 52px;                 /* matches sticky header height */
+    left: 0;
+    right: 0;
+    z-index: 14;
   }
 }
