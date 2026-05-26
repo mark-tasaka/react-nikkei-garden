@@ -57,12 +57,12 @@
 
 .hero-btn {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
-  padding: 7px 0;
-  width: 160px;
+  padding: 14px 0;
+  width: 200px;
   text-align: center;
   border-radius: 12px;
   background: linear-gradient(to right, #B8322A, #85231E);
@@ -135,8 +135,9 @@
   }
 
   .hero-btn {
-    font-size: 15px;
-    width: 105px;
+    font-size: 20px;
+    padding: 12px 0;
+    width: 178px;
   }
 }
 
@@ -152,9 +153,9 @@
   }
 
   .hero-btn {
-    font-size: 14px;
-    padding: 6px 0;
-    width: 98px;
+    font-size: 18px;
+    padding: 10px 0;
+    width: 158px;
   }
 
   .hero-dots {
@@ -175,9 +176,9 @@
   }
 
   .hero-btn {
-    font-size: 13px;
-    padding: 5px 0;
-    width: 90px;
+    font-size: 16px;
+    padding: 8px 0;
+    width: 138px;
   }
 
   .hero-dot {
@@ -205,9 +206,9 @@
   }
 
   .hero-btn {
-    font-size: 12px;
-    padding: 5px 0;
-    width: 90px;
+    font-size: 14px;
+    padding: 7px 0;
+    width: 128px;
   }
 
   .hero-dot {
