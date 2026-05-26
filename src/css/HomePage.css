@@ -17,10 +17,7 @@
   max-width: 1200px;        /* matches .header-container */
   width: 100%;
   margin: 0 auto;
-  padding-top: 48px;
-  padding-bottom: 56px;
-  padding-left: 32px;       /* matches .header-container */
-  padding-right: 32px;      /* matches .header-container */
+  padding: 48px 32px 56px;  /* matches .header-container */
   box-sizing: border-box;
   gap: 20px;
 }
@@ -50,17 +47,18 @@
   width: 100%;
   text-align: left;
 }
+
 /* =====================================================
-   Map / Find Us Section
+   Map Section
    ===================================================== */
 .home-map-section {
   background-color: #EDEDEA;
   width: 100%;
   box-sizing: border-box;
-  padding-bottom: 56px;     /* breathing room below map */
+  padding-bottom: 56px;
 }
 
-/* The map section reuses .home-content-inner for consistent max-width/padding */
+/* Reuses .home-content-inner for consistent max-width/padding */
 
 .home-map-wrapper {
   width: 100%;
@@ -76,8 +74,18 @@
   display: block;
 }
 
-/* ── Tablet ── */
+/* =====================================================
+   Responsive Design
+   ===================================================== */
+
+/* ── Tablet (max 1024px) ── */
 @media (max-width: 1024px) {
+  .home-content-inner {
+    padding: 40px 24px 48px; /* matches .header-container @1024px */
+  }
+  .home-content-title {
+    font-size: 26px;
+  }
   .home-map-section {
     padding-bottom: 48px;
   }
@@ -86,8 +94,18 @@
   }
 }
 
-/* ── Small Tablet / Large Mobile ── */
+/* ── Small Tablet / Large Mobile (max 768px) ── */
 @media (max-width: 768px) {
+  .home-content-inner {
+    padding: 32px 20px 40px; /* matches .header-container @768px */
+    gap: 16px;
+  }
+  .home-content-title {
+    font-size: 22px;
+  }
+  .home-content-body {
+    font-size: 15px;
+  }
   .home-map-section {
     padding-bottom: 40px;
   }
@@ -96,8 +114,19 @@
   }
 }
 
-/* ── Mobile ── */
+/* ── Mobile (max 480px) ── */
 @media (max-width: 480px) {
+  .home-content-inner {
+    padding: 24px 12px 32px; /* matches .header-container @480px */
+    gap: 14px;
+  }
+  .home-content-title {
+    font-size: 20px;
+  }
+  .home-content-body {
+    font-size: 14px;
+    line-height: 1.65;
+  }
   .home-map-section {
     padding-bottom: 32px;
   }
@@ -106,77 +135,15 @@
   }
 }
 
-/* ── Extra Small Mobile ── */
-@media (max-width: 360px) {
-  .home-map-frame {
-    height: 220px;
-  }
-}
-
-/* =====================================================
-   Responsive Design
-   ===================================================== */
-
-/* ── Tablet (max 1024px) ── */
-@media (max-width: 1024px) {
-  .home-content-inner {
-    padding-top: 40px;
-    padding-bottom: 48px;
-    padding-left: 24px;     /* matches .header-container @1024px */
-    padding-right: 24px;
-  }
-
-  .home-content-title {
-    font-size: 26px;
-  }
-}
-
-/* ── Small Tablet / Large Mobile (max 768px) ── */
-@media (max-width: 768px) {
-  .home-content-inner {
-    padding-top: 32px;
-    padding-bottom: 40px;
-    padding-left: 20px;     /* matches .header-container @768px */
-    padding-right: 20px;
-    gap: 16px;
-  }
-
-  .home-content-title {
-    font-size: 22px;
-  }
-
-  .home-content-body {
-    font-size: 15px;
-  }
-}
-
-/* ── Mobile (max 480px) ── */
-@media (max-width: 480px) {
-  .home-content-inner {
-    padding-top: 24px;
-    padding-bottom: 32px;
-    padding-left: 12px;     /* matches .header-container @480px */
-    padding-right: 12px;
-    gap: 14px;
-  }
-
-  .home-content-title {
-    font-size: 20px;
-  }
-
-  .home-content-body {
-    font-size: 14px;
-    line-height: 1.65;
-  }
-}
-
 /* ── Extra Small Mobile (max 360px) ── */
 @media (max-width: 360px) {
   .home-content-title {
     font-size: 18px;
   }
-
   .home-content-body {
     font-size: 13px;
+  }
+  .home-map-frame {
+    height: 220px;
   }
 }
