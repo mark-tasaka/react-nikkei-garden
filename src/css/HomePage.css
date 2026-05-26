@@ -50,6 +50,68 @@
   width: 100%;
   text-align: left;
 }
+/* =====================================================
+   Map / Find Us Section
+   ===================================================== */
+.home-map-section {
+  background-color: #EDEDEA;
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 56px;     /* breathing room below map */
+}
+
+/* The map section reuses .home-content-inner for consistent max-width/padding */
+
+.home-map-wrapper {
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.home-map-frame {
+  width: 100%;
+  height: 420px;
+  border: 0;
+  display: block;
+}
+
+/* ── Tablet ── */
+@media (max-width: 1024px) {
+  .home-map-section {
+    padding-bottom: 48px;
+  }
+  .home-map-frame {
+    height: 380px;
+  }
+}
+
+/* ── Small Tablet / Large Mobile ── */
+@media (max-width: 768px) {
+  .home-map-section {
+    padding-bottom: 40px;
+  }
+  .home-map-frame {
+    height: 320px;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+  .home-map-section {
+    padding-bottom: 32px;
+  }
+  .home-map-frame {
+    height: 260px;
+  }
+}
+
+/* ── Extra Small Mobile ── */
+@media (max-width: 360px) {
+  .home-map-frame {
+    height: 220px;
+  }
+}
 
 /* =====================================================
    Responsive Design
