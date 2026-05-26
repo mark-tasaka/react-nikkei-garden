@@ -5,7 +5,6 @@ import './App.css';
 
 // Pages — create these files as you build them out
 import HomePage from './HomePage';
-import HistoryPage from './HistoryPage';
 import MediaPage from './MediaPage';
 import GalleryPage from './GalleryPage';
 
@@ -40,7 +39,6 @@ function App(): React.ReactElement {
     <Router>
       <Routes>
         <Route path="/"        element={<AppShell><HomePage /></AppShell>} />
-        <Route path="/history" element={<AppShell><HistoryPage /></AppShell>} />
         <Route path="/media"   element={<AppShell><MediaPage /></AppShell>} />
         <Route path="/gallery" element={<AppShell><GalleryPage /></AppShell>} />
       </Routes>

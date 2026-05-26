@@ -24,10 +24,12 @@ const NavLinks: React.FC<NavLinksProps> = ({ onLinkClick, includeGreenwood = fal
       >Home</NavLink>
     </li>
     <li>
-      <NavLink to="/history"
-        className={({ isActive }) => isActive ? 'nav-link nav-link--active' : 'nav-link'}
+        <a href="https://www.greenwoodnikkei.ca/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="nav-link"
         onClick={onLinkClick}
-      >History</NavLink>
+      >History</a>
     </li>
     <li>
       <NavLink to="/media"
