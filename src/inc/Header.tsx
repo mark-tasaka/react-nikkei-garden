@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { NavLink } from 'react-router-dom';
 import './css/Header.css';
 import logoHeader from './img/header/logo_header.png';
+import logoHeaderSticky from './img/header/logo_header-sticky.png';
 
 /* ─────────────────────────────────────────────────────────
    Shared sub-components
@@ -55,6 +56,62 @@ const NavLinks: React.FC = () => (
   </ul>
 );
 
+const NavLinksSticky: React.FC = () => (
+  <ul className="nav-list">
+    <li>
+      <NavLink
+        to="/"
+        end
+        className={({ isActive }) =>
+          isActive ? 'nav-link nav-link--active' : 'nav-link'
+        }
+      >
+        Home
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        to="/history"
+        className={({ isActive }) =>
+          isActive ? 'nav-link nav-link--active' : 'nav-link'
+        }
+      >
+        History
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        to="/media"
+        className={({ isActive }) =>
+          isActive ? 'nav-link nav-link--active' : 'nav-link'
+        }
+      >
+        Media
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        to="/gallery"
+        className={({ isActive }) =>
+          isActive ? 'nav-link nav-link--active' : 'nav-link'
+        }
+      >
+        Gallery
+      </NavLink>
+    </li>
+    <li>
+      <a                                        
+        href="https://www.greenwoodcity.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="nav-link"
+      >
+        Greenwood
+      </a>
+    </li>
+  </ul>
+);
+
 /* ─────────────────────────────────────────────────────────
    Main Header
 ───────────────────────────────────────────────────────── */
@@ -69,11 +126,7 @@ const Header: React.FC = () => {
 
     const observer = new IntersectionObserver(
       ([entry]) => setIsSticky(!entry.isIntersecting),
-      {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0,
-      }
+      { root: null, rootMargin: '0px', threshold: 0 }
     );
     observer.observe(header);
 
@@ -84,10 +137,7 @@ const Header: React.FC = () => {
     };
 
     window.addEventListener('scroll', checkSticky, { passive: true });
-    document.addEventListener('scroll', checkSticky, {
-      passive: true,
-      capture: true,
-    });
+    document.addEventListener('scroll', checkSticky, { passive: true, capture: true });
 
     return () => {
       observer.disconnect();
@@ -98,17 +148,14 @@ const Header: React.FC = () => {
 
   return (
     <>
-      {/* ── Full header — stays in the normal document flow ── */}
+      {/* ── Full header ── */}
       <header className="header" ref={fullHeaderRef}>
         <div className="header-container">
-          {/* Left: Logo */}
           <div className="header-logo">
             <img src={logoHeader} alt="Nikkei Legacy Park" />
           </div>
-
-          {/* Right: City label on top, nav links on bottom */}
           <div className="header-right">
-            <a
+            <a                                   
               href="https://www.greenwoodcity.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -123,32 +170,19 @@ const Header: React.FC = () => {
         </div>
       </header>
 
-      {/* ── Sticky header — Portal escapes all parent stacking contexts ── */}
+      {/* ── Sticky header ── */}
       {ReactDOM.createPortal(
         <header
-          className={`header header--sticky${
-            isSticky ? ' header--sticky-visible' : ''
-          }`}
+          className={`header header--sticky${isSticky ? ' header--sticky-visible' : ''}`}
           aria-hidden={!isSticky}
         >
           <div className="header-container header-container--sticky">
-            {/* Left: Logo */}
             <div className="header-logo header-logo--sticky">
-              <img src={logoHeader} alt="Nikkei Legacy Park" />
+              <img src={logoHeaderSticky} alt="Nikkei Legacy Park" />
             </div>
-
-            {/* Right: City label + nav */}
             <div className="header-right header-right--sticky">
-              <a
-                href="https://www.greenwoodcity.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="header-city-label"
-              >
-                City of Greenwood
-              </a>
               <nav className="header-nav" aria-label="Main navigation">
-                <NavLinks />
+                <NavLinksSticky />
               </nav>
             </div>
           </div>
