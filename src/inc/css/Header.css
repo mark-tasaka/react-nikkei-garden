@@ -16,7 +16,6 @@
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  /* padding: 40px 32px; */
   padding-top: 40px;
   padding-bottom: 20px;
   padding-left: 32px;
@@ -35,7 +34,7 @@
 }
 
 .header-logo img {
-  height: 88px;                /* ← was 64px */
+  height: 88px;
   width: auto;
   display: block;
 }
@@ -62,6 +61,10 @@
   text-decoration: none;
 }
 
+a.header-city-label:hover {
+  color: #C8BFB8;
+}
+
 /* =====================================================
    Navigation
    ===================================================== */
@@ -76,16 +79,15 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 32px;                   /* ← slightly more gap to match Figma spacing */
+  gap: 32px;
   align-items: flex-end;
 }
 
-/* Inactive link */
 .nav-link {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;             /* ← was 14px */
+  font-size: 16px;
   font-weight: 400;
-  color: #ffffff;              /* ← was #D6CEC8 */
+  color: #ffffff;
   text-decoration: none;
   white-space: nowrap;
   line-height: 1;
@@ -97,7 +99,6 @@
   opacity: 0.75;
 }
 
-/* Active link */
 .nav-link--active {
   color: #ffffff;
   font-weight: 700;
@@ -124,189 +125,23 @@
   pointer-events: auto;
 }
 
-/* Sticky container — tighter padding, smaller logo */
 .header-container--sticky {
-  padding: 8px 32px;           /* ← was 10px 32px, slightly tighter */
+  padding: 8px 32px;
 }
 
 .header-logo--sticky img {
-  height: 36px;                /* ← was 52px, reduced ~30% */
+  height: 36px;
 }
 
 .header-right--sticky {
   justify-content: center;
 }
 
-a.header-city-label:hover {
-  color: #C8BFB8;
-}
-
-/* =====================================================
-   Responsive Design
-   ===================================================== */
-
-/* ── Tablet (max 1024px) ── */
-@media (max-width: 1024px) {
-  .header-container {
-    padding-top: 36px;
-    padding-bottom: 18px;
-    padding-left: 24px;
-    padding-right: 24px;
-    
-  }
-
-  .header-logo img {
-    height: 76px;
-  }
-
-  .nav-list {
-    gap: 24px;
-  }
-
-  .header-container--sticky {
-    padding: 8px 24px;
-  }
-
-  .header-logo--sticky img {
-    height: 32px;              
-  }
-
-  .nav-list {
-    gap: 20px;                 
-  }
-}
-
-/* ── Small Tablet / Large Mobile (max 768px) ── */
-@media (max-width: 768px) {
-  /* ── Layout ── */
-  .header-container {
-    flex-direction: row;         /* logo left, hamburger right */
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 20px;
-    padding-right: 20px;
-    gap: 0;
-  }
-
-  .header-logo {
-    justify-content: flex-start;
-  }
-
-  .header-logo img {
-    height: 48px;
-  }
-
-  /* Hide desktop-only elements */
-  .header-right {
-    display: none;
-  }
-
-  .header-nav--desktop {
-    display: none;
-  }
-
-  /* ── Show hamburger & mobile menu ── */
-  .hamburger {
-    display: flex;
-  }
-
-  .mobile-menu {
-    display: flex;
-  }
-
-  .mobile-backdrop {
-    display: block;
-  }
-
-  /* ── Sticky mobile ── */
-  .header-container--sticky {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px 20px;
-    gap: 0;
-  }
-
-  .header-logo--sticky img {
-    height: 32px;
-  }
-
-  .header-right--sticky {
-    display: none;
-  }
-
-  .mobile-menu--sticky {
-    position: fixed;
-    top: 52px;
-    left: 0;
-    right: 0;
-    z-index: 14;
-  }
-}
-/* ── Mobile (max 480px) ── */
-@media (max-width: 480px) {
-  .header-logo img {
-    height: 52px;
-  }
-
-  .nav-list {
-    gap: 12px;
-  }
-
-  .nav-link {
-    font-size: 14px;
-  }
-
-  .header-container--sticky {
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    padding: 6px 12px;
-  }
-
-  .header-right--sticky {
-    align-items: center;
-  }
-
-  .header-logo--sticky img {
-    height: 24px;
-  }
-
-  .nav-link {                
-    font-size: 13px;
-  }
-}
-
-/* ── Extra Small Mobile (max 360px) ── */
-@media (max-width: 360px) {
-  .header-logo img {
-    height: 42px;
-  }
-
-  .nav-list {
-    gap: 10px;
-  }
-
-  .nav-link {
-    font-size: 13px;
-  }
-
-  .header-logo--sticky img {
-    height: 20px;
-  }
-
-  .nav-link {
-    font-size: 12px;
-  }
-}
-
 /* =====================================================
    Hamburger Button
    ===================================================== */
 .hamburger {
-  display: none;               /* hidden on desktop */
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -332,7 +167,6 @@ a.header-city-label:hover {
   transform-origin: center;
 }
 
-/* Animate to X when open */
 .hamburger--open span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
@@ -348,7 +182,7 @@ a.header-city-label:hover {
    Mobile Menu Drawer
    ===================================================== */
 .mobile-menu {
-  display: none;               /* hidden on desktop */
+  display: none;
   flex-direction: column;
   align-items: center;
   background: linear-gradient(to bottom, #3a3330, #1E1A18);
@@ -393,15 +227,62 @@ a.header-city-label:hover {
 }
 
 /* =====================================================
-   Mobile breakpoint — show hamburger, hide desktop nav
+   Responsive Design
    ===================================================== */
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
+
+/* ── Tablet (max 1024px) ── */
+@media (max-width: 1024px) {
+  .header-container {
+    padding-top: 36px;
+    padding-bottom: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
-  .header-nav--desktop {
+  .header-logo img {
+    height: 76px;
+  }
+
+  .nav-list {
+    gap: 20px;
+  }
+
+  .header-container--sticky {
+    padding: 8px 24px;
+  }
+
+  .header-logo--sticky img {
+    height: 32px;
+  }
+}
+
+/* ── Mobile (max 768px) — hamburger layout ── */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 0;
+  }
+
+  .header-logo {
+    justify-content: flex-start;
+  }
+
+  .header-logo img {
+    height: 48px;
+  }
+
+  .header-right {
     display: none;
+  }
+
+  .hamburger {
+    display: flex;
   }
 
   .mobile-menu {
@@ -412,12 +293,49 @@ a.header-city-label:hover {
     display: block;
   }
 
-  /* Sticky-specific drawer sits below the sticky bar */
+  .header-container--sticky {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 20px;
+    gap: 0;
+  }
+
+  .header-logo--sticky img {
+    height: 32px;
+  }
+
+  .header-right--sticky {
+    display: none;
+  }
+
   .mobile-menu--sticky {
     position: fixed;
-    top: 52px;                 /* matches sticky header height */
+    top: 52px;
     left: 0;
     right: 0;
     z-index: 14;
+  }
+}
+
+/* ── Small Mobile (max 480px) ── */
+@media (max-width: 480px) {
+  .header-logo img {
+    height: 40px;
+  }
+
+  .header-logo--sticky img {
+    height: 24px;
+  }
+}
+
+/* ── Extra Small Mobile (max 360px) ── */
+@media (max-width: 360px) {
+  .header-logo img {
+    height: 34px;
+  }
+
+  .header-logo--sticky img {
+    height: 20px;
   }
 }
