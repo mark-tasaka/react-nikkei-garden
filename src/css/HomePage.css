@@ -61,10 +61,9 @@
 /* Reuses .home-content-inner for consistent max-width/padding */
 
 .home-map-wrapper {
-  width: 100%;
+  width: 70%; 
   border-radius: 4px;
   overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
 }
 
 .home-map-frame {
@@ -80,8 +79,11 @@
 
 /* ── Tablet (max 1024px) ── */
 @media (max-width: 1024px) {
+  .home-map-wrapper {
+    width: 80%;
+  }
   .home-content-inner {
-    padding: 40px 24px 48px; /* matches .header-container @1024px */
+    padding: 40px 24px 48px;
   }
   .home-content-title {
     font-size: 26px;
@@ -96,8 +98,11 @@
 
 /* ── Small Tablet / Large Mobile (max 768px) ── */
 @media (max-width: 768px) {
+  .home-map-wrapper {
+    width: 90%;
+  }
   .home-content-inner {
-    padding: 32px 20px 40px; /* matches .header-container @768px */
+    padding: 32px 20px 40px;
     gap: 16px;
   }
   .home-content-title {
@@ -116,8 +121,11 @@
 
 /* ── Mobile (max 480px) ── */
 @media (max-width: 480px) {
+  .home-map-wrapper {
+    width: 100%;
+  }
   .home-content-inner {
-    padding: 24px 12px 32px; /* matches .header-container @480px */
+    padding: 24px 12px 32px;
     gap: 14px;
   }
   .home-content-title {
