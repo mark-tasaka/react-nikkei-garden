@@ -125,21 +125,15 @@
 
 /* Sticky container — tighter padding, smaller logo */
 .header-container--sticky {
-  padding: 10px 32px;
+  padding: 8px 32px;           /* ← was 10px 32px, slightly tighter */
 }
 
 .header-logo--sticky img {
-  height: 52px;                /* ← scaled proportionally from 88px */
+  height: 36px;                /* ← was 52px, reduced ~30% */
 }
 
 .header-right--sticky {
-  justify-content: center;  /* vertically centre the single nav row */
-}
-
-a.header-city-label {
-  text-decoration: none;
-  color: #ffffff;
-  transition: color 0.2s ease;
+  justify-content: center;
 }
 
 a.header-city-label:hover {
@@ -153,7 +147,6 @@ a.header-city-label:hover {
 /* ── Tablet (max 1024px) ── */
 @media (max-width: 1024px) {
   .header-container {
-    /*padding: 36px 24px;*/    
     padding-top: 36px;
     padding-bottom: 18px;
     padding-left: 24px;
@@ -167,6 +160,18 @@ a.header-city-label:hover {
 
   .nav-list {
     gap: 24px;
+  }
+
+  .header-container--sticky {
+    padding: 8px 24px;
+  }
+
+  .header-logo--sticky img {
+    height: 32px;              
+  }
+
+  .nav-list {
+    gap: 20px;                 
   }
 }
 
@@ -205,15 +210,23 @@ a.header-city-label:hover {
   .nav-link {
     font-size: 15px;
   }
-
   .header-container--sticky {
-    flex-direction: row;
-    align-items: stretch;
-    padding: 10px 20px;
+    flex-direction: row;       /* keep logo + nav side-by-side */
+    align-items: center;
+    padding: 7px 16px;
+    gap: 10px;
   }
 
   .header-logo--sticky img {
-    height: 44px;
+    height: 28px;
+  }
+
+  .header-right--sticky {
+    align-items: center;
+  }
+
+  .nav-list {                 
+    gap: 14px;
   }
 }
 
@@ -235,11 +248,19 @@ a.header-city-label:hover {
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    padding: 8px 12px;
+    padding: 6px 12px;
   }
 
   .header-right--sticky {
     align-items: center;
+  }
+
+  .header-logo--sticky img {
+    height: 24px;
+  }
+
+  .nav-link {                
+    font-size: 13px;
   }
 }
 
@@ -255,5 +276,13 @@ a.header-city-label:hover {
 
   .nav-link {
     font-size: 13px;
+  }
+
+  .header-logo--sticky img {
+    height: 20px;
+  }
+
+  .nav-link {
+    font-size: 12px;
   }
 }
