@@ -21,18 +21,18 @@ interface Slide {
 }
 
 const SLIDES: Slide[] = [
-  { src: slide1,  alt: 'Nikkei Legacy Garden – Slide 1'  },
-  { src: slide2,  alt: 'Nikkei Legacy Garden – Slide 2'  },
-  { src: slide3,  alt: 'Nikkei Legacy Garden – Slide 3'  },
-  { src: slide4,  alt: 'Nikkei Legacy Garden – Slide 4'  },
-  { src: slide5,  alt: 'Nikkei Legacy Garden – Slide 5'  },
-  { src: slide6,  alt: 'Nikkei Legacy Garden – Slide 6'  },
-  { src: slide7,  alt: 'Nikkei Legacy Garden – Slide 7'  },
-  { src: slide8,  alt: 'Nikkei Legacy Garden – Slide 8'  },
-  { src: slide9,  alt: 'Nikkei Legacy Garden – Slide 9'  },
-  { src: slide10, alt: 'Nikkei Legacy Garden – Slide 10' },
-  { src: slide11, alt: 'Nikkei Legacy Garden – Slide 11' },
-  { src: slide12, alt: 'Nikkei Legacy Garden – Slide 12' },
+  { src: slide1,  alt: 'Nikkei Legacy Park – Slide 1'  },
+  { src: slide2,  alt: 'Nikkei Legacy Park – Slide 2'  },
+  { src: slide3,  alt: 'Nikkei Legacy Park – Slide 3'  },
+  { src: slide4,  alt: 'Nikkei Legacy Park – Slide 4'  },
+  { src: slide5,  alt: 'Nikkei Legacy Park – Slide 5'  },
+  { src: slide6,  alt: 'Nikkei Legacy Park – Slide 6'  },
+  { src: slide7,  alt: 'Nikkei Legacy Park – Slide 7'  },
+  { src: slide8,  alt: 'Nikkei Legacy Park – Slide 8'  },
+  { src: slide9,  alt: 'Nikkei Legacy Park – Slide 9'  },
+  { src: slide10, alt: 'Nikkei Legacy Park – Slide 10' },
+  { src: slide11, alt: 'Nikkei Legacy Park – Slide 11' },
+  { src: slide12, alt: 'Nikkei Legacy Park – Slide 12' },
 ];
 
 const SLIDE_INTERVAL_MS = 6000;
@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
           <a
             href="#about"
             className="hero-btn"
-            aria-label="About the Nikkei Legacy Garden"
+            aria-label="About the Nikkei Legacy Park"
           >
             About
           </a>

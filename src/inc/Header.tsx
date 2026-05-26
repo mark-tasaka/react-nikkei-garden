@@ -103,7 +103,7 @@ const Header: React.FC = () => {
         <div className="header-container">
           {/* Left: Logo */}
           <div className="header-logo">
-            <img src={logoHeader} alt="Nikkei Legacy Garden" />
+            <img src={logoHeader} alt="Nikkei Legacy Park" />
           </div>
 
           {/* Right: City label on top, nav links on bottom */}
@@ -134,7 +134,7 @@ const Header: React.FC = () => {
           <div className="header-container header-container--sticky">
             {/* Left: Logo */}
             <div className="header-logo header-logo--sticky">
-              <img src={logoHeader} alt="Nikkei Legacy Garden" />
+              <img src={logoHeader} alt="Nikkei Legacy Park" />
             </div>
 
             {/* Right: City label + nav */}
