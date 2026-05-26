@@ -73,11 +73,9 @@ const Hero: React.FC = () => {
             About
           </a>
           <a
-            href="https://maps.google.com/?q=Nikkei+Legacy+Garden+Greenwood+BC"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#find-us"
             className="hero-btn"
-            aria-label="Find us on Google Maps"
+            aria-label="Visit Our Park – location and map"
           >
             Find Us
           </a>

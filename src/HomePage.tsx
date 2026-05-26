@@ -37,9 +37,9 @@ const HomePage: React.FC = () => (
     </section>
 
     {/* ── Find Us / Map Section ── */}
-    <section id="find-us" className="home-map-section">
+    <section className="home-map-section">
       <div className="home-content-inner">
-        <h2 className="home-content-title">Visit Our Park</h2>
+        <h2 id="find-us" className="home-content-title">Visit Our Park</h2>
         <div className="home-map-wrapper">
           <iframe
             title="Nikkei Legacy Park location"
