@@ -51,7 +51,7 @@
   transform: translateX(-50%);
   display: flex;
   flex-direction: row;
-  gap: 36px;
+  gap: 48px;
   z-index: 10;
 }
 
@@ -149,7 +149,7 @@
 
   .hero-cta {
     bottom: 104px;
-    gap: 24px;
+    gap: 32px;
   }
 
   .hero-btn {
@@ -172,7 +172,7 @@
 
   .hero-cta {
     bottom: 88px;
-    gap: 18px;
+    gap: 24px;
   }
 
   .hero-btn {
@@ -202,7 +202,7 @@
     flex-direction: column;
     align-items: center;
     bottom: 80px;
-    gap: 8px;
+    gap: 10px;
   }
 
   .hero-btn {
