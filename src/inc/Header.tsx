@@ -197,14 +197,16 @@ const Header: React.FC = () => {
           </div>
 
           {/* Sticky mobile menu drawer */}
-          <div
-            className={`mobile-menu mobile-menu--sticky${menuOpen ? ' mobile-menu--open' : ''}`}
-            aria-hidden={!menuOpen}
-          >
-            <nav className="header-nav" aria-label="Mobile navigation">
-              <NavLinks onLinkClick={closeMenu} includeGreenwood />
-            </nav>
-          </div>
+          {isSticky && (
+            <div
+              className={`mobile-menu mobile-menu--sticky${menuOpen ? ' mobile-menu--open' : ''}`}
+              aria-hidden={!menuOpen}
+            >
+              <nav className="header-nav" aria-label="Mobile navigation">
+                <NavLinks onLinkClick={closeMenu} includeGreenwood />
+              </nav>
+            </div>
+          )}
         </header>,
         document.body
       )}
