@@ -31,7 +31,7 @@
 .header-top-row {
   display: flex;
   align-items: flex-end;
-  gap: 10px;
+  gap: 8px;
 }
 
 .header-weather-divider {
@@ -55,8 +55,7 @@
   width: 18px;
   height: 18px;
   vertical-align: middle;
-  margin-left: 4px;
-  margin-bottom: 1px;
+  margin-right: 0px;
 }
 /* =====================================================
    Left — Logo

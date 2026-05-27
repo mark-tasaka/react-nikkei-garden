@@ -178,14 +178,12 @@ const Header: React.FC = () => {
             <div className="header-top-row">
               {temp !== null && code !== null && (
                 <>
-                  <span className="header-weather">
-                    {temp}°C
-                    <img
-                      src={getWeatherIcon(code)}
-                      alt="weather icon"
-                      className="header-weather-icon"
-                    />
-                  </span>
+                  <img
+                    src={getWeatherIcon(code)}
+                    alt="weather icon"
+                    className="header-weather-icon"
+                  />
+                  <span className="header-weather">{temp}°C</span>
                   
                   <span className="header-weather-divider">|</span>
                   <a href="https://www.greenwoodcity.com/"
