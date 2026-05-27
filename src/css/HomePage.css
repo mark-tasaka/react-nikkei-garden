@@ -73,6 +73,94 @@
   display: block;
 }
 
+/* ── Weather Widget ── */
+.weather-widget {
+  margin-top: 32px;
+  background: #f5f2ef;
+  border-radius: 12px;
+  padding: 24px 32px;
+  text-align: center;
+}
+
+.weather-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1E1A18;
+  margin: 0 0 16px;
+}
+
+.weather-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.weather-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.weather-item--main {
+  gap: 6px;
+}
+
+.weather-emoji {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.weather-temp {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1E1A18;
+  line-height: 1;
+}
+
+.weather-desc {
+  font-size: 14px;
+  color: #5B4F49;
+}
+
+.weather-label {
+  font-size: 13px;
+  color: #5B4F49;
+}
+
+.weather-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1E1A18;
+}
+
+.weather-loading {
+  color: #5B4F49;
+  font-size: 14px;
+}
+
+.weather-credit {
+  margin-top: 16px;
+  font-size: 11px;
+  color: #9e9189;
+}
+
+.weather-credit a {
+  color: #9e9189;
+}
+
+@media (max-width: 480px) {
+  .weather-grid {
+    gap: 24px;
+  }
+  .weather-temp {
+    font-size: 28px;
+  }
+}
+
 /* =====================================================
    Responsive Design
    ===================================================== */

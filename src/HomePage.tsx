@@ -1,7 +1,107 @@
 // src/HomePage.tsx
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Hero from './inc/Hero';
 import './css/HomePage.css';
+
+interface WeatherData {
+  temperature: number;
+  weatherCode: number;
+  sunrise: string;
+  sunset: string;
+}
+
+function getWeatherDescription(code: number): string {
+  if (code === 0) return 'Clear Sky';
+  if (code <= 2) return 'Partly Cloudy';
+  if (code === 3) return 'Overcast';
+  if (code <= 49) return 'Foggy';
+  if (code <= 59) return 'Drizzle';
+  if (code <= 69) return 'Rain';
+  if (code <= 79) return 'Snow';
+  if (code <= 84) return 'Rain Showers';
+  if (code <= 94) return 'Thunderstorm';
+  return 'Unknown';
+}
+
+function getWeatherEmoji(code: number): string {
+  if (code === 0) return '☀️';
+  if (code <= 2) return '⛅';
+  if (code === 3) return '☁️';
+  if (code <= 49) return '🌫️';
+  if (code <= 69) return '🌧️';
+  if (code <= 79) return '❄️';
+  if (code <= 84) return '🌦️';
+  return '⛈️';
+}
+
+function formatTime(isoString: string): string {
+  const date = new Date(isoString);
+  return date.toLocaleTimeString('en-CA', {
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZone: 'America/Vancouver',
+  });
+}
+
+const WeatherWidget: React.FC = () => {
+  const [weather, setWeather] = useState<WeatherData | null>(null);
+  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    // Greenwood, BC coordinates
+    fetch(
+      'https://api.open-meteo.com/v1/forecast' +
+      '?latitude=49.0014&longitude=-118.6937' +
+      '&current=temperature_2m,weather_code' +
+      '&daily=sunrise,sunset' +
+      '&timezone=America%2FVancouver' +
+      '&forecast_days=1'
+    )
+      .then(res => res.json())
+      .then(data => {
+        setWeather({
+          temperature: Math.round(data.current.temperature_2m),
+          weatherCode: data.current.weather_code,
+          sunrise: data.daily.sunrise[0],
+          sunset: data.daily.sunset[0],
+        });
+      })
+      .catch(() => setError(true));
+  }, []);
+
+  if (error) return null;
+
+  return (
+    <div className="weather-widget">
+      <h3 className="weather-title">Today in Greenwood, BC</h3>
+      {weather ? (
+        <div className="weather-grid">
+          <div className="weather-item weather-item--main">
+            <span className="weather-emoji">{getWeatherEmoji(weather.weatherCode)}</span>
+            <span className="weather-temp">{weather.temperature}°C</span>
+            <span className="weather-desc">{getWeatherDescription(weather.weatherCode)}</span>
+          </div>
+          <div className="weather-item">
+            <span className="weather-label">🌅 Sunrise</span>
+            <span className="weather-value">{formatTime(weather.sunrise)}</span>
+          </div>
+          <div className="weather-item">
+            <span className="weather-label">🌇 Sunset</span>
+            <span className="weather-value">{formatTime(weather.sunset)}</span>
+          </div>
+        </div>
+      ) : (
+        <p className="weather-loading">Loading weather…</p>
+      )}
+      <p className="weather-credit">
+        Weather data via{' '}
+        <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">
+          Open-Meteo
+        </a>
+      </p>
+    </div>
+  );
+};
 
 const HomePage: React.FC = () => (
   <>
@@ -12,6 +112,7 @@ const HomePage: React.FC = () => (
       <div className="home-content-inner">
         <h2 className="home-content-title">About the Nikkei Legacy Park</h2>
         <p className="home-content-body">
+          
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec
           pellentesque massa. Suspendisse potenti. Suspendisse dictum pellentesque
           libero ac pellentesque. Fusce sollicitudin facilisis tincidunt. Curabitur
@@ -50,6 +151,7 @@ const HomePage: React.FC = () => (
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
+        <WeatherWidget />
       </div>
     </section>
   </>
