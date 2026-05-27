@@ -94,10 +94,10 @@ const Header: React.FC = () => {
   }, []);
 
   /* ── Lock body scroll when menu is open ── */
-  useEffect(() => {
-    document.body.style.overflow = menuOpen ? 'hidden' : '';
-    return () => { document.body.style.overflow = ''; };
-  }, [menuOpen]);
+  // useEffect(() => {
+  //   document.body.style.overflow = menuOpen ? 'hidden' : '';
+  //   return () => { document.body.style.overflow = ''; };
+  // }, [menuOpen]);
 
   /* ── Close menu on Escape ── */
   useEffect(() => {
