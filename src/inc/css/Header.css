@@ -52,8 +52,12 @@
 }
 
 .header-weather-icon {
-  filter: grayscale(1) brightness(1.8) sepia(0.15);
-  opacity: 0.85;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-left: 4px;
+  position: relative;
+  top: -1px;
 }
 /* =====================================================
    Left — Logo

@@ -61,15 +61,27 @@ const NavLinks: React.FC<NavLinksProps> = ({ onLinkClick, includeGreenwood = fal
    Weather (desktop non-sticky only)
 ───────────────────────────────────────────────────────── */
 
-function getWeatherEmoji(code: number): string {
-  if (code === 0) return '☀️';
-  if (code <= 2) return '⛅';
-  if (code === 3) return '☁️';
-  if (code <= 49) return '🌫️';
-  if (code <= 69) return '🌧️';
-  if (code <= 79) return '❄️';
-  if (code <= 84) return '🌦️';
-  return '⛈️';
+// function getWeatherEmoji(code: number): string {
+//   if (code === 0) return '☀️';
+//   if (code <= 2) return '⛅';
+//   if (code === 3) return '☁️';
+//   if (code <= 49) return '🌫️';
+//   if (code <= 69) return '🌧️';
+//   if (code <= 79) return '❄️';
+//   if (code <= 84) return '🌦️';
+//   return '⛈️';
+// }
+
+// Replace getWeatherEmoji with this:
+function getWeatherIcon(code: number): string {
+  if (code === 0) return require('./img/header/weather/01-clear-sky.png');
+  if (code <= 2)  return require('./img/header/weather/02-partly-cloudy.png');
+  if (code === 3) return require('./img/header/weather/03-overcast.png');
+  if (code <= 49) return require('./img/header/weather/04-foggy.png');
+  if (code <= 69) return require('./img/header/weather/05-rain.png');
+  if (code <= 79) return require('./img/header/weather/06-snow.png');
+  if (code <= 84) return require('./img/header/weather/07-rain-showers.png');
+  return require('./img/header/weather/08-thunderstorm.png');
 }
 
 const useHeaderWeather = () => {
@@ -176,7 +188,12 @@ const Header: React.FC = () => {
                 <>
                   <span className="header-weather-divider">|</span>
                   <span className="header-weather">
-                    {temp}°C <span className="header-weather-icon">{getWeatherEmoji(code)}</span>
+                    {temp}°C
+                    <img
+                      src={getWeatherIcon(code)}
+                      alt="weather icon"
+                      className="header-weather-icon"
+                    />
                   </span>
                 </>
               )}
