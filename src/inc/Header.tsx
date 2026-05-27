@@ -58,6 +58,44 @@ const NavLinks: React.FC<NavLinksProps> = ({ onLinkClick, includeGreenwood = fal
 );
 
 /* ─────────────────────────────────────────────────────────
+   Weather (desktop non-sticky only)
+───────────────────────────────────────────────────────── */
+
+function getWeatherEmoji(code: number): string {
+  if (code === 0) return '☀️';
+  if (code <= 2) return '⛅';
+  if (code === 3) return '☁️';
+  if (code <= 49) return '🌫️';
+  if (code <= 69) return '🌧️';
+  if (code <= 79) return '❄️';
+  if (code <= 84) return '🌦️';
+  return '⛈️';
+}
+
+const useHeaderWeather = () => {
+  const [temp, setTemp] = useState<number | null>(null);
+  const [code, setCode] = useState<number | null>(null);
+
+  useEffect(() => {
+    fetch(
+      'https://api.open-meteo.com/v1/forecast' +
+      '?latitude=49.0014&longitude=-118.6937' +
+      '&current=temperature_2m,weather_code' +
+      '&timezone=America%2FVancouver' +
+      '&forecast_days=1'
+    )
+      .then(res => res.json())
+      .then(data => {
+        setTemp(Math.round(data.current.temperature_2m));
+        setCode(data.current.weather_code);
+      })
+      .catch(() => {});
+  }, []);
+
+  return { temp, code };
+};
+
+/* ─────────────────────────────────────────────────────────
    Main Header
 ───────────────────────────────────────────────────────── */
 
@@ -65,6 +103,7 @@ const Header: React.FC = () => {
   const [isSticky, setIsSticky] = useState<boolean>(false);
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const fullHeaderRef = useRef<HTMLElement | null>(null);
+  const { temp, code } = useHeaderWeather();
 
   /* ── Sticky detection ── */
   useEffect(() => {
@@ -122,16 +161,26 @@ const Header: React.FC = () => {
             <img src={logoHeader} alt="Nikkei Legacy Park" />
           </div>
 
-          {/* Desktop right side */}
+          {/* Desktop right side — update this block */}
           <div className="header-right">
-            
-              <a href="https://www.greenwoodcity.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="header-city-label"
-            >
-              City of Greenwood
-            </a>
+            <div className="header-top-row">
+              
+                <a href="https://www.greenwoodcity.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="header-city-label"
+              >
+                City of Greenwood
+              </a>
+              {temp !== null && code !== null && (
+                <>
+                  <span className="header-weather-divider">|</span>
+                  <span className="header-weather">
+                    {temp}°C <span className="header-weather-icon">{getWeatherEmoji(code)}</span>
+                  </span>
+                </>
+              )}
+            </div>
             <nav className="header-nav header-nav--desktop" aria-label="Main navigation">
               <NavLinks />
             </nav>

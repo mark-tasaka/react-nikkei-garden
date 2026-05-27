@@ -26,6 +26,35 @@
 }
 
 /* =====================================================
+   Header Top Row (City label + Weather)
+   ===================================================== */
+.header-top-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-weather-divider {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  color: #C8BFB8;
+  line-height: 1;
+  user-select: none;
+}
+
+.header-weather {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #C8BFB8;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.header-weather-icon {
+  filter: grayscale(1) brightness(3);
+}
+/* =====================================================
    Left — Logo
    ===================================================== */
 .header-logo {
