@@ -176,17 +176,8 @@ const Header: React.FC = () => {
           {/* Desktop right side — update this block */}
           <div className="header-right">
             <div className="header-top-row">
-              
-                <a href="https://www.greenwoodcity.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="header-city-label"
-              >
-                City of Greenwood
-              </a>
               {temp !== null && code !== null && (
                 <>
-                  <span className="header-weather-divider">|</span>
                   <span className="header-weather">
                     {temp}°C
                     <img
@@ -195,6 +186,15 @@ const Header: React.FC = () => {
                       className="header-weather-icon"
                     />
                   </span>
+                  
+                  <span className="header-weather-divider">|</span>
+                  <a href="https://www.greenwoodcity.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="header-city-label"
+                  >
+                    City of Greenwood
+                  </a>
                 </>
               )}
             </div>

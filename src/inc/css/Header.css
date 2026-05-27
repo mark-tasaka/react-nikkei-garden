@@ -30,7 +30,7 @@
    ===================================================== */
 .header-top-row {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 10px;
 }
 
@@ -52,12 +52,11 @@
 }
 
 .header-weather-icon {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   vertical-align: middle;
   margin-left: 4px;
-  position: relative;
-  top: -1px;
+  margin-bottom: 1px;
 }
 /* =====================================================
    Left — Logo
