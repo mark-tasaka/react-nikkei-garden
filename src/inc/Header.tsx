@@ -145,6 +145,16 @@ const Header: React.FC = () => {
     };
   }, []);
 
+  /* ── Sync menu source when sticky state changes ── */
+  useEffect(() => {
+    if (!menuOpen) return;
+    if (isSticky && menuSource === 'main') {
+      setMenuSource('sticky');
+    } else if (!isSticky && menuSource === 'sticky') {
+      setMenuSource('main');
+    }
+  }, [isSticky]);
+
   /* ── Lock body scroll when menu is open ── */
   // useEffect(() => {
   //   document.body.style.overflow = menuOpen ? 'hidden' : '';
