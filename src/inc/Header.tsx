@@ -201,6 +201,18 @@ const Header: React.FC = () => {
             </nav>
           </div>
 
+                    {/* Mobile weather — non-sticky only */}
+          {temp !== null && code !== null && (
+            <div className="mobile-weather">
+              <img
+                src={getWeatherIcon(code)}
+                alt="weather icon"
+                className="header-weather-icon"
+              />
+              <span className="header-weather">{temp}°C</span>
+            </div>
+          )}
+
           {/* Mobile hamburger button */}
           <button
             className={`hamburger${menuOpen ? ' hamburger--open' : ''}`}

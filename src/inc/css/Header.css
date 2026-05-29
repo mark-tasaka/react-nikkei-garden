@@ -57,6 +57,22 @@
   vertical-align: middle;
   margin-right: 0px;
 }
+
+/* =====================================================
+   Mobile Weather (non-sticky header only)
+   ===================================================== */
+.mobile-weather {
+  display: none;
+  align-items: center;
+  gap: 4px;
+}
+
+@media (max-width: 768px) {
+  .mobile-weather {
+    display: flex;
+  }
+}
+
 /* =====================================================
    Left — Logo
    ===================================================== */
