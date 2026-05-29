@@ -114,6 +114,7 @@ const useHeaderWeather = () => {
 const Header: React.FC = () => {
   const [isSticky, setIsSticky] = useState<boolean>(false);
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const [menuSource, setMenuSource] = useState<'main' | 'sticky' | null>(null);
   const fullHeaderRef = useRef<HTMLElement | null>(null);
   const { temp, code } = useHeaderWeather();
 
@@ -157,8 +158,10 @@ const Header: React.FC = () => {
     return () => document.removeEventListener('keydown', onKey);
   }, []);
 
-  const closeMenu = () => setMenuOpen(false);
-  const toggleMenu = () => setMenuOpen(prev => !prev);
+
+const closeMenu = () => { setMenuOpen(false); setMenuSource(null); };
+const toggleMainMenu  = () => { setMenuOpen(prev => !prev); setMenuSource(s => s === 'main'   ? null : 'main'); };
+const toggleStickyMenu = () => { setMenuOpen(prev => !prev); setMenuSource(s => s === 'sticky' ? null : 'sticky'); };
 
   const handleLinkClick = () => {
     setTimeout(() => setMenuOpen(false), 50);
@@ -215,10 +218,10 @@ const Header: React.FC = () => {
 
           {/* Mobile hamburger button */}
           <button
-            className={`hamburger${menuOpen ? ' hamburger--open' : ''}`}
-            onClick={toggleMenu}
-            aria-label={menuOpen ? 'Close menu' : 'Open menu'}
-            aria-expanded={menuOpen}
+            className={`hamburger${menuOpen && menuSource === 'main' ? ' hamburger--open' : ''}`}
+            onClick={toggleMainMenu}
+            aria-expanded={menuOpen && menuSource === 'main'}
+            aria-label={menuOpen && menuSource === 'main' ? 'Close menu' : 'Open menu'}
           >
             <span />
             <span />
@@ -228,8 +231,8 @@ const Header: React.FC = () => {
 
         {/* Mobile menu drawer */}
         <div
-          className={`mobile-menu${menuOpen ? ' mobile-menu--open' : ''}`}
-          aria-hidden={!menuOpen}
+          className={`mobile-menu${menuOpen && menuSource === 'main' ? ' mobile-menu--open' : ''}`}
+          aria-hidden={!(menuOpen && menuSource === 'main')}
         >
           <nav className="header-nav" aria-label="Mobile navigation">
             <NavLinks onLinkClick={handleLinkClick} includeGreenwood />
@@ -267,10 +270,10 @@ const Header: React.FC = () => {
 
             {/* Mobile sticky hamburger */}
             <button
-              className={`hamburger hamburger--sticky${menuOpen ? ' hamburger--open' : ''}`}
-              onClick={toggleMenu}
-              aria-label={menuOpen ? 'Close menu' : 'Open menu'}
-              aria-expanded={menuOpen}
+              className={`hamburger hamburger--sticky${menuOpen && menuSource === 'sticky' ? ' hamburger--open' : ''}`}
+              onClick={toggleStickyMenu}
+              aria-expanded={menuOpen && menuSource === 'sticky'}
+              aria-label={menuOpen && menuSource === 'sticky' ? 'Close menu' : 'Open menu'}
             >
               <span />
               <span />
@@ -281,8 +284,8 @@ const Header: React.FC = () => {
           {/* Sticky mobile menu drawer */}
           {isSticky && (
             <div
-              className={`mobile-menu mobile-menu--sticky${menuOpen ? ' mobile-menu--open' : ''}`}
-              aria-hidden={!menuOpen}
+              className={`mobile-menu mobile-menu--sticky${menuOpen && menuSource === 'sticky' ? ' mobile-menu--open' : ''}`}
+              aria-hidden={!(menuOpen && menuSource === 'sticky')}
             >
               <nav className="header-nav" aria-label="Mobile navigation">
                 <NavLinks onLinkClick={handleLinkClick} includeGreenwood />
