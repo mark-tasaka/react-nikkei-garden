@@ -145,14 +145,15 @@ const Header: React.FC = () => {
     };
   }, []);
 
-  /* ── Sync menu source when sticky state changes ── */
+/* ── Sync menu source when sticky state changes ── */
+// eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    if (!menuOpen) return;
-    if (isSticky && menuSource === 'main') {
-      setMenuSource('sticky');
-    } else if (!isSticky && menuSource === 'sticky') {
-      setMenuSource('main');
-    }
+    setMenuSource(current => {
+      if (!menuOpen) return current;
+      if (isSticky && current === 'main') return 'sticky';
+      if (!isSticky && current === 'sticky') return 'main';
+      return current;
+    });
   }, [isSticky]);
 
   /* ── Lock body scroll when menu is open ── */
