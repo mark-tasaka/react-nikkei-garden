@@ -61,17 +61,28 @@
 /* =====================================================
    Mobile Weather (non-sticky header only)
    ===================================================== */
+.mobile-right {
+  display: none;          /* hidden on desktop */
+  align-items: center;
+  gap: 8px;               /* space between weather and hamburger */
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .mobile-right {
+    display: flex;
+  }
+}
+
+/* =====================================================
+   Mobile Weather (non-sticky header only)
+   ===================================================== */
 .mobile-weather {
-  display: none;
+  display: flex;          /* always flex inside .mobile-right */
   align-items: center;
   gap: 4px;
 }
 
-@media (max-width: 768px) {
-  .mobile-weather {
-    display: flex;
-  }
-}
 
 /* =====================================================
    Left — Logo

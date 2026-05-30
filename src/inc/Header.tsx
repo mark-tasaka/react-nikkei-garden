@@ -214,31 +214,23 @@ const toggleStickyMenu = () => { setMenuOpen(prev => !prev); setMenuSource(s => 
             </nav>
           </div>
 
-                    {/* Mobile weather — non-sticky only */}
+        <div className="mobile-right">             
           {temp !== null && code !== null && (
             <div className="mobile-weather">
-              <img
-                src={getWeatherIcon(code)}
-                alt="weather icon"
-                className="header-weather-icon"
-              />
+              <img src={getWeatherIcon(code)} alt="weather icon" className="header-weather-icon" />
               <span className="header-weather">{temp}°C</span>
             </div>
           )}
-
-          {/* Mobile hamburger button */}
           <button
             className={`hamburger${menuOpen && menuSource === 'main' ? ' hamburger--open' : ''}`}
             onClick={toggleMainMenu}
             aria-expanded={menuOpen && menuSource === 'main'}
             aria-label={menuOpen && menuSource === 'main' ? 'Close menu' : 'Open menu'}
           >
-            <span />
-            <span />
-            <span />
+            <span /><span /><span />
           </button>
         </div>
-
+      </div>
         {/* Mobile menu drawer */}
         <div
           className={`mobile-menu${menuOpen && menuSource === 'main' ? ' mobile-menu--open' : ''}`}
