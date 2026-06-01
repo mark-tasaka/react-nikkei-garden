@@ -17,24 +17,35 @@ const Footer: React.FC = () => {
       {/* ── 3-Column Grid ── */}
       <div className="footer-container">
 
-        {/* ── Column 1: Land Acknowledgement (left-aligned) ── */}
+        {/* ── Column 1: Visit Our Park + Land Acknowledgement ── */}
         <div className="footer-col footer-col--acknowledge">
+
+          {/* Visit Our Park */}
+          <div className="footer-visit">
+            <h3 className="footer-heading">Visit Our Park</h3>
+            <address className="footer-address">
+              <p>Mineral St, Greenwood, BC V0H 1J0 Canada</p>
+            </address>
+          </div>
+
+          {/* Land Acknowledgement */}
           <p className="footer-acknowledgement-inline">
             We would like to acknowledge that we are gathered on the traditional territories
             of the Sinixt, Syilx, Ktunaxa, and Secwépemc Nations. We pay our respects to
             the Elders, past and present, and recognize their ongoing connection to these lands.
           </p>
+
         </div>
 
-        {/* ── Column 2: Logo only (centred) ── */}
+        {/* ── Column 2: Logo (centred) ── */}
         <div className="footer-col footer-col--brand">
           <img src={logoFooter} alt="Nikkei Legacy Park" className="footer-logo" />
         </div>
 
-        {/* ── Column 3: Nav Links (2-col grid) + Visit Our Park + Address ── */}
+        {/* ── Column 3: Nav Links + City of Greenwood (right-aligned, nav centred) ── */}
         <div className="footer-col footer-col--info">
 
-          {/* Nav links — 4 links in 2×2 grid */}
+          {/* Nav links — 4 links in 2×2 grid, centred */}
           <ul className="footer-links">
             <li>
               <NavLink to="/" end
@@ -57,19 +68,11 @@ const Footer: React.FC = () => {
             </li>
           </ul>
 
-          {/* City of Greenwood — full width below the 2-col grid */}
+          {/* City of Greenwood — right-aligned below nav grid */}
           <a href="https://www.greenwoodcity.com/" target="_blank"
             rel="noopener noreferrer" className="footer-link footer-link--city">
             City of Greenwood
           </a>
-
-          {/* Visit Our Park heading + address */}
-          <div className="footer-visit">
-            <h3 className="footer-heading">Visit Our Park</h3>
-            <address className="footer-address">
-              <p>Mineral St, Greenwood, BC V0H 1J0 Canada</p>
-            </address>
-          </div>
 
         </div>
 
