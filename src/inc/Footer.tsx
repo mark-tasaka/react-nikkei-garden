@@ -26,16 +26,15 @@ const Footer: React.FC = () => {
           </p>
         </div>
 
-        {/* ── Column 2: Logo + Address (centred) ── */}
+        {/* ── Column 2: Logo only (centred) ── */}
         <div className="footer-col footer-col--brand">
           <img src={logoFooter} alt="Nikkei Legacy Park" className="footer-logo" />
-          <address className="footer-address">
-            <p>Mineral St, Greenwood, BC V0H 1J0&nbsp; Canada</p>
-          </address>
         </div>
 
-        {/* ── Column 3: Nav Links (left-aligned) ── */}
+        {/* ── Column 3: Nav Links (2-col grid) + Visit Our Park + Address ── */}
         <div className="footer-col footer-col--info">
+
+          {/* Nav links — 4 links in 2×2 grid */}
           <ul className="footer-links">
             <li>
               <NavLink to="/" end
@@ -56,11 +55,22 @@ const Footer: React.FC = () => {
                 className={({ isActive }) => isActive ? 'footer-link footer-link--active' : 'footer-link'}
               >Gallery</NavLink>
             </li>
-            <li>
-              <a href="https://www.greenwoodcity.com/" target="_blank"
-                rel="noopener noreferrer" className="footer-link">City of Greenwood</a>
-            </li>
           </ul>
+
+          {/* City of Greenwood — full width below the 2-col grid */}
+          <a href="https://www.greenwoodcity.com/" target="_blank"
+            rel="noopener noreferrer" className="footer-link footer-link--city">
+            City of Greenwood
+          </a>
+
+          {/* Visit Our Park heading + address */}
+          <div className="footer-visit">
+            <h3 className="footer-heading">Visit Our Park</h3>
+            <address className="footer-address">
+              <p>Mineral St, Greenwood, BC V0H 1J0 Canada</p>
+            </address>
+          </div>
+
         </div>
 
       </div>

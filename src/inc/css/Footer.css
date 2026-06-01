@@ -13,7 +13,7 @@
 /* =====================================================
    Main 3-Column Grid
    1fr  |  auto  |  1fr
-   ack  |  logo + address  |  nav links
+   ack  |  logo  |  nav + city + visit
    ===================================================== */
 .footer-container {
   display: grid;
@@ -56,11 +56,10 @@
 }
 
 /* =====================================================
-   Column 2 — Logo + Address (centred)
+   Column 2 — Logo (centred)
    ===================================================== */
 .footer-col--brand {
   align-items: center;
-  gap: 10px;
 }
 
 .footer-logo {
@@ -69,29 +68,17 @@
   display: block;
 }
 
-.footer-address {
-  font-style: normal;
-  margin: 0;
-  text-align: center;
-}
-
-.footer-address p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  color: #C8BFB8;
-  margin: 0;
-  line-height: 1.5;
-}
-
 /* =====================================================
-   Column 3 — Nav Links (left-aligned)
+   Column 3 — Nav links + City + Visit Our Park
    ===================================================== */
 .footer-col--info {
   align-items: flex-start;
   padding-left: 40px;
   border-left: 1px solid rgba(200, 191, 184, 0.15);
+  gap: 12px;
 }
 
+/* 4 nav links in a 2×2 grid */
 .footer-links {
   list-style: none;
   margin: 0;
@@ -120,6 +107,45 @@
 .footer-link--active {
   color: #ffffff;
   font-weight: 700;
+}
+
+/* City of Greenwood — sits below the 2×2 grid, full width */
+.footer-link--city {
+  display: block;
+  margin-top: 0;            /* gap on parent handles spacing */
+}
+
+/* Visit Our Park block */
+.footer-visit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding-top: 4px;
+  border-top: 1px solid rgba(200, 191, 184, 0.12);
+  width: 100%;
+}
+
+.footer-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 2px 0;
+  letter-spacing: 0.01em;
+}
+
+.footer-address {
+  font-style: normal;
+  margin: 0;
+}
+
+.footer-address p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #C8BFB8;
+  margin: 0;
+  line-height: 1.5;
 }
 
 /* =====================================================
@@ -175,7 +201,7 @@
 
 /* =====================================================
    Responsive — Mobile (max 768px)
-   Stack: logo+address → nav links → acknowledgement
+   Stack: logo → nav+city+visit → acknowledgement
    ===================================================== */
 @media (max-width: 768px) {
   .footer-container {
@@ -213,12 +239,15 @@
     justify-content: center;
   }
 
-  .footer-acknowledgement-inline {
-    max-width: none;
+  .footer-visit {
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid rgba(200, 191, 184, 0.12);
+    width: auto;
   }
 
-  .footer-address {
-    text-align: center;
+  .footer-acknowledgement-inline {
+    max-width: none;
   }
 
   .footer-logo {
