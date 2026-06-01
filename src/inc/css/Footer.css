@@ -12,8 +12,8 @@
 
 /* =====================================================
    Main 3-Column Grid
-   1fr          |  auto  |  1fr
-   nav+city     |  logo  |  visit
+   1fr               |  auto  |  1fr
+   acknowledgement   |  logo  |  visit
    ===================================================== */
 .footer-container {
   display: grid;
@@ -36,13 +36,21 @@
 }
 
 /* =====================================================
-   Column 1 — Nav Links + City of Greenwood
+   Column 1 — Land Acknowledgement
    ===================================================== */
 .footer-col--acknowledge {
   align-items: flex-start;
-  text-align: left;
   padding-right: 24px;
-  gap: 10px;
+}
+
+.footer-acknowledgement-inline {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: rgba(200, 191, 184, 0.75);
+  line-height: 1.7;
+  margin: 0;
+  text-align: left;
 }
 
 /* =====================================================
@@ -63,12 +71,10 @@
    Column 3 — Visit Our Park (right-aligned)
    ===================================================== */
 .footer-col--info {
-  align-items: flex-end;   /* pushes content to the right edge */
+  align-items: flex-end;
   padding-left: 24px;
-  gap: 12px;
 }
 
-/* Visit Our Park block — text stays left-aligned within its own box */
 .footer-visit {
   display: flex;
   flex-direction: column;
@@ -99,15 +105,34 @@
   text-align: left;
 }
 
-/* 4-column nav grid */
+/* =====================================================
+   Bottom Bar — nav + copyright
+   ===================================================== */
+.footer-bottom {
+  border-top: 1px solid rgba(200, 191, 184, 0.12);
+  width: 100%;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 32px;
+  box-sizing: border-box;
+}
+
+/* Nav links — flex row, wraps to two rows when narrow */
 .footer-links {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  gap: 8px 20px;
-  justify-content: start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 24px;
 }
 
 .footer-link {
@@ -130,53 +155,16 @@
   font-weight: 700;
 }
 
-.footer-link--city {
-  display: block;
-}
-
-/* =====================================================
-   Bottom Bar — acknowledgement + copyright centred
-   ===================================================== */
-.footer-bottom {
-  border-top: 1px solid rgba(200, 191, 184, 0.12);
-  width: 100%;
-}
-
-.footer-bottom-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 14px 32px;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-/* Land Acknowledgement */
-.footer-acknowledgement-inline {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 11px;
-  font-weight: 400;
-  color: rgba(200, 191, 184, 0.75);
-  line-height: 1.7;
-  margin: 0;
-  text-align: center;
-  max-width: 720px;          /* constrains width so <br> splits land near the midpoint */
-}
-
 .footer-copyright {
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   font-weight: 400;
   color: #C8BFB8;
+  text-align: center;
 }
 
 /* =====================================================
    Responsive — Tablet (max 1024px)
-   Nav: 4 → 3 columns
    ===================================================== */
 @media (max-width: 1024px) {
   .footer-container {
@@ -192,10 +180,6 @@
     padding-left: 20px;
   }
 
-  .footer-links {
-    grid-template-columns: repeat(3, auto);
-  }
-
   .footer-logo {
     height: 90px;
   }
@@ -207,12 +191,12 @@
 
 /* =====================================================
    Responsive — Mobile (max 768px)
-   Stack: logo → nav+city → visit
+   Stack: logo → acknowledgement → visit
    ===================================================== */
 @media (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 20px;
     padding: 32px 20px 24px;
     grid-template-areas:
       "brand"
@@ -224,9 +208,11 @@
   .footer-col--acknowledge {
     grid-area: acknowledge;
     align-items: center;
-    text-align: center;
     padding-right: 0;
-    gap: 8px;
+  }
+
+  .footer-acknowledgement-inline {
+    text-align: center;
   }
 
   .footer-col--brand {
@@ -237,9 +223,8 @@
 
   .footer-col--info {
     grid-area: info;
-    align-items: center;   /* centred on mobile stacked layout */
+    align-items: center;
     padding-left: 0;
-    gap: 8px;
   }
 
   .footer-visit {
@@ -248,11 +233,6 @@
 
   .footer-address p {
     text-align: center;
-  }
-
-  .footer-links {
-    grid-template-columns: repeat(2, auto);
-    justify-content: center;
   }
 
   .footer-logo {
@@ -266,15 +246,10 @@
 
 /* =====================================================
    Responsive — Small Mobile (max 480px)
-   Nav: 2 → 1 column
    ===================================================== */
 @media (max-width: 480px) {
   .footer-logo {
     height: 84px;
-  }
-
-  .footer-links {
-    grid-template-columns: 1fr;
   }
 }
 
