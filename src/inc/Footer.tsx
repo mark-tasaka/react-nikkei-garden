@@ -3,16 +3,13 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './css/Footer.css';
 import logoFooter from './img/footer/logo_footer.png';
-/* ─────────────────────────────────────────────────────────
-   Footer
-───────────────────────────────────────────────────────── */
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="footer">
-      {/* ── 3-Column Grid ── */}
+
       <div className="footer-container">
-        {/* ── Column 1: Land Acknowledgement ── */}
+        {/* Col 1 — Land Acknowledgement */}
         <div className="footer-col footer-col--acknowledge">
           <p className="footer-acknowledgement-inline">
             We would like to acknowledge that we are gathered on the traditional territories
@@ -20,11 +17,11 @@ const Footer: React.FC = () => {
             the Elders, past and present, and recognize their ongoing connection to these lands.
           </p>
         </div>
-        {/* ── Column 2: Logo (centred) ── */}
+        {/* Col 2 — Logo */}
         <div className="footer-col footer-col--brand">
           <img src={logoFooter} alt="Nikkei Legacy Park" className="footer-logo" />
         </div>
-        {/* ── Column 3: Visit Our Park (right-aligned) ── */}
+        {/* Col 3 — Visit Our Park */}
         <div className="footer-col footer-col--info">
           <div className="footer-visit">
             <h3 className="footer-heading">Visit Our Park</h3>
@@ -34,14 +31,15 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-      {/* ── Bottom bar ── */}
+
+      {/* ── Bottom bar: Nav only ── */}
       <div className="footer-bottom">
         <div className="footer-bottom-inner">
-          {/* Nav links + City of Greenwood — single row, wraps to two */}
           <ul className="footer-links">
             <li>
               <NavLink to="/" end
-                className={({ isActive }) => isActive ? 'footer-link footer-link--active' : 'footer-link'}
+                className={({ isActive }) =>
+                  isActive ? 'footer-link footer-link--active' : 'footer-link'}
               >Home</NavLink>
             </li>
             <li>
@@ -50,12 +48,14 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <NavLink to="/media"
-                className={({ isActive }) => isActive ? 'footer-link footer-link--active' : 'footer-link'}
+                className={({ isActive }) =>
+                  isActive ? 'footer-link footer-link--active' : 'footer-link'}
               >Media</NavLink>
             </li>
             <li>
               <NavLink to="/gallery"
-                className={({ isActive }) => isActive ? 'footer-link footer-link--active' : 'footer-link'}
+                className={({ isActive }) =>
+                  isActive ? 'footer-link footer-link--active' : 'footer-link'}
               >Gallery</NavLink>
             </li>
             <li>
@@ -63,12 +63,19 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer" className="footer-link">City of Greenwood</a>
             </li>
           </ul>
-          {/* Copyright */}
-          <span className="footer-copyright">
+          {/* Copyright — desktop: sits here inside footer-bottom-inner.
+              Mobile: this element is hidden; .footer-copyright-mobile below is shown. */}
+          <span className="footer-copyright footer-copyright--desktop">
             &copy;&nbsp;{currentYear} Nikkei Legacy Park. All rights reserved.
           </span>
         </div>
       </div>
+
+      {/* Copyright — mobile only, direct child of .footer so order:5 works */}
+      <span className="footer-copyright footer-copyright--mobile">
+        &copy;&nbsp;{currentYear} Nikkei Legacy Park. All rights reserved.
+      </span>
+
     </footer>
   );
 };

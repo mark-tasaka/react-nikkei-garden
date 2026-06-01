@@ -1,7 +1,7 @@
 /* src/inc/css/Footer.css */
 
 /* =====================================================
-   Footer Shell
+   Footer Shell — plain block on desktop
    ===================================================== */
 .footer {
   background: linear-gradient(to right, #5B4F49, #1E1A18);
@@ -10,14 +10,13 @@
 }
 
 /* =====================================================
-   Main 3-Column Grid
-   1fr               |  auto  |  1fr
-   acknowledgement   |  logo  |  visit
+   3-Column Grid
+   col 1: acknowledge  |  col 2: logo  |  col 3: visit
    ===================================================== */
 .footer-container {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  gap: 24px;
+  gap: 0;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -35,7 +34,7 @@
 }
 
 /* =====================================================
-   Column 1 — Land Acknowledgement
+   Col 1 — Acknowledge
    ===================================================== */
 .footer-col--acknowledge {
   align-items: flex-start;
@@ -53,7 +52,7 @@
 }
 
 /* =====================================================
-   Column 2 — Logo (centred)
+   Col 2 — Logo
    ===================================================== */
 .footer-col--brand {
   align-items: center;
@@ -67,10 +66,10 @@
 }
 
 /* =====================================================
-   Column 3 — Visit Our Park (right-aligned)
+   Col 3 — Visit Our Park
    ===================================================== */
 .footer-col--info {
-  align-items: flex-start;
+  align-items: flex-end;
   padding-left: 24px;
 }
 
@@ -115,17 +114,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0;                    /* managed per-child below */
+  gap: 0;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 8px 32px 14px;    /* less top padding = less gap below logo */
+  padding: 8px 32px 14px;
   box-sizing: border-box;
 }
 
-/* Nav links — flex row, wraps to two rows when narrow */
 .footer-links {
   list-style: none;
-  margin: 0 0 16px;          /* 16px gap between nav and copyright */
+  margin: 0 0 16px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -144,9 +142,7 @@
   white-space: nowrap;
 }
 
-.footer-link:hover {
-  color: #ffffff;
-}
+.footer-link:hover { color: #ffffff; }
 
 .footer-link--active {
   color: #ffffff;
@@ -161,13 +157,15 @@
   text-align: center;
 }
 
+/* Mobile-only copyright is hidden on desktop */
+.footer-copyright--mobile { display: none; }
+
 /* =====================================================
-   Responsive — Tablet (max 1024px)
+   Tablet (max 1024px)
    ===================================================== */
 @media (max-width: 1024px) {
   .footer-container {
     padding: 28px 24px 24px;
-    gap: 20px;
   }
 
   .footer-col--acknowledge {
@@ -188,78 +186,97 @@
 }
 
 /* =====================================================
-   Responsive — Mobile (max 768px)
-   Stack: logo → acknowledgement → visit
+   Mobile (max 768px)
+   Order: logo(1) → address(2) → nav+copyright(3) → acknowledge(4)
+   display:contents on footer-container unwraps its children
+   so they participate directly in .footer's flex order.
    ===================================================== */
 @media (max-width: 768px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 32px 20px 24px;
-    grid-template-areas:
-      "brand"
-      "acknowledge"
-      "info";
-    align-items: start;
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 20px 20px;
+    gap: 16px;
+    box-sizing: border-box;
   }
 
-  .footer-col--acknowledge {
-    grid-area: acknowledge;
+  /* Unwrap footer-container — children become direct flex items of .footer */
+  .footer-container {
+    display: contents;
+  }
+
+  /* Explicit order for every direct flex child of .footer */
+  .footer-col--brand       { order: 1; }
+  .footer-col--info        { order: 2; }
+  .footer-bottom           { order: 3; }
+  .footer-col--acknowledge { order: 4; }
+
+  /* Brand */
+  .footer-col--brand {
     align-items: center;
-    padding-right: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  /* Info — centred, heading hidden */
+  .footer-col--info {
+    align-items: center;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .footer-visit { align-items: center; }
+  .footer-heading { display: none; }
+  .footer-address p { text-align: center; }
+
+  /* Nav */
+  .footer-bottom { width: 100%; }
+  .footer-bottom-inner { padding: 4px 20px 0; }
+
+  /* Hide desktop copyright inside footer-bottom on mobile */
+  .footer-copyright--desktop { display: none; }
+
+  /* Acknowledge */
+  .footer-col--acknowledge {
+    align-items: center;
+    padding: 0;
+    width: 100%;
   }
 
   .footer-acknowledgement-inline {
     text-align: center;
+    max-width: 460px;
   }
 
-  .footer-col--brand {
-    grid-area: brand;
-    align-items: center;
-    padding: 0;
-  }
-
-  .footer-col--info {
-    grid-area: info;
-    align-items: center;
-    padding-left: 0;
-  }
-
-  .footer-visit {
-    align-items: center;
-  }
-
-  .footer-address p {
+  /* Copyright — mobile sibling, shown after acknowledge */
+  .footer-copyright--mobile {
+    display: block;
+    order: 5;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #C8BFB8;
+    padding-bottom: 4px;
+    width: 100%;
   }
 
-  .footer-logo {
-    height: 100px;
-  }
-
-  .footer-bottom-inner {
-    padding: 12px 20px;
-  }
+  .footer-logo { height: 100px; }
 }
 
 /* =====================================================
-   Responsive — Small Mobile (max 480px)
+   Small Mobile (max 480px)
    ===================================================== */
 @media (max-width: 480px) {
-  .footer-logo {
-    height: 84px;
-  }
+  .footer-logo { height: 84px; }
 }
 
 /* =====================================================
-   Responsive — Extra Small (max 360px)
+   Extra Small (max 360px)
    ===================================================== */
 @media (max-width: 360px) {
-  .footer-logo {
-    height: 70px;
-  }
-
-  .footer-container {
-    padding: 24px 16px 20px;
-  }
+  .footer-logo { height: 70px; }
+  .footer { padding: 20px 16px 16px; }
 }
