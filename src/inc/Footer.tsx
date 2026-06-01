@@ -17,9 +17,13 @@ const Footer: React.FC = () => {
       {/* ── 3-Column Grid ── */}
       <div className="footer-container">
 
-        {/* ── Column 1: Quick Links ── */}
+        {/* ── Column 1: Logo ── */}
+        <div className="footer-col footer-col--brand">
+          <img src={logoFooter} alt="Nikkei Legacy Park" className="footer-logo" />
+        </div>
+
+        {/* ── Column 2: Nav Links (2-column sub-grid) ── */}
         <div className="footer-col footer-col--links">
-          <h3 className="footer-heading">Quick Links</h3>
           <ul className="footer-links">
             <li>
               <NavLink to="/" end
@@ -45,11 +49,6 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer" className="footer-link">City of Greenwood</a>
             </li>
           </ul>
-        </div>
-
-        {/* ── Column 2: Logo (centred) ── */}
-        <div className="footer-col footer-col--brand">
-          <img src={logoFooter} alt="Nikkei Legacy Park" className="footer-logo" />
         </div>
 
         {/* ── Column 3: Visit Our Park ── */}
