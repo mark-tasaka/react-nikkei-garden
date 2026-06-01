@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
       {/* ── 3-Column Grid ── */}
       <div className="footer-container">
 
-        {/* ── Column 1: Land Acknowledgement (right-aligned) ── */}
+        {/* ── Column 1: Land Acknowledgement (left-aligned) ── */}
         <div className="footer-col footer-col--acknowledge">
           <p className="footer-acknowledgement-inline">
             We would like to acknowledge that we are gathered on the traditional territories
@@ -26,15 +26,16 @@ const Footer: React.FC = () => {
           </p>
         </div>
 
-        {/* ── Column 2: Logo (centred) ── */}
+        {/* ── Column 2: Logo + Address (centred) ── */}
         <div className="footer-col footer-col--brand">
           <img src={logoFooter} alt="Nikkei Legacy Park" className="footer-logo" />
+          <address className="footer-address">
+            <p>Mineral St, Greenwood, BC V0H 1J0&nbsp; Canada</p>
+          </address>
         </div>
 
-        {/* ── Column 3: Nav Links + Visit Our Park (right-aligned block, content left-aligned) ── */}
+        {/* ── Column 3: Nav Links (left-aligned) ── */}
         <div className="footer-col footer-col--info">
-
-          {/* Nav links */}
           <ul className="footer-links">
             <li>
               <NavLink to="/" end
@@ -60,15 +61,6 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer" className="footer-link">City of Greenwood</a>
             </li>
           </ul>
-
-          {/* Visit Our Park */}
-          <div className="footer-visit">
-            <h3 className="footer-heading">Visit Our Park</h3>
-            <address className="footer-address">
-              <p>Mineral St, Greenwood, BC V0H 1J0&nbsp; Canada</p>
-            </address>
-          </div>
-
         </div>
 
       </div>
