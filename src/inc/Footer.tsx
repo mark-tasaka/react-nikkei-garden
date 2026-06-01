@@ -46,12 +46,12 @@ const Footer: React.FC = () => {
         <div className="footer-col footer-col--brand">
           <img src={logoFooter} alt="Nikkei Legacy Park" className="footer-logo" />
         </div>
-        {/* ── Column 3: Visit Our Park ── */}
+        {/* ── Column 3: Visit Our Park (right-aligned) ── */}
         <div className="footer-col footer-col--info">
           <div className="footer-visit">
             <h3 className="footer-heading">Visit Our Park</h3>
             <address className="footer-address">
-              <p>Mineral St, Greenwood, BC<br />V0H 1J0 Canada</p>
+              <p>Mineral St, Greenwood, BC V0H 1J0 Canada</p>
             </address>
           </div>
         </div>
@@ -59,11 +59,8 @@ const Footer: React.FC = () => {
       {/* ── Bottom bar ── */}
       <div className="footer-bottom">
         <div className="footer-bottom-inner">
-          {/* Land Acknowledgement */}
           <p className="footer-acknowledgement-inline">
-            We would like to acknowledge that we are gathered on the traditional territories
-            of the Sinixt, Syilx, Ktunaxa, and Secwépemc Nations. We pay our respects to
-            the Elders, past and present, and recognize their ongoing connection to these lands.
+            We would like to acknowledge that we are gathered on the traditional territories of the Sinixt, Syilx, Ktunaxa, and Secwépemc Nations.  We pay our respects to the Elders, past and present, and recognize their ongoing connection to these lands.
           </p>
           <span className="footer-copyright">
             &copy;&nbsp;{currentYear} Nikkei Legacy Park. All rights reserved.

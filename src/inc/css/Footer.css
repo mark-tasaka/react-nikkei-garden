@@ -60,15 +60,15 @@
 }
 
 /* =====================================================
-   Column 3 — Visit Our Park
+   Column 3 — Visit Our Park (right-aligned)
    ===================================================== */
 .footer-col--info {
-  align-items: flex-start;
+  align-items: flex-end;   /* pushes content to the right edge */
   padding-left: 24px;
   gap: 12px;
 }
 
-/* Visit Our Park block */
+/* Visit Our Park block — text stays left-aligned within its own box */
 .footer-visit {
   display: flex;
   flex-direction: column;
@@ -96,6 +96,7 @@
   color: #ffffff;
   margin: 0;
   line-height: 1.5;
+  text-align: left;
 }
 
 /* 4-column nav grid */
@@ -154,7 +155,7 @@
   text-align: center;
 }
 
-/* Land Acknowledgement — now lives in the bottom bar */
+/* Land Acknowledgement */
 .footer-acknowledgement-inline {
   font-family: 'Open Sans', sans-serif;
   font-size: 11px;
@@ -163,6 +164,7 @@
   line-height: 1.7;
   margin: 0;
   text-align: center;
+  max-width: 720px;          /* constrains width so <br> splits land near the midpoint */
 }
 
 .footer-copyright {
@@ -235,13 +237,17 @@
 
   .footer-col--info {
     grid-area: info;
-    align-items: center;
+    align-items: center;   /* centred on mobile stacked layout */
     padding-left: 0;
     gap: 8px;
   }
 
   .footer-visit {
     align-items: center;
+  }
+
+  .footer-address p {
+    text-align: center;
   }
 
   .footer-links {
