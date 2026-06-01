@@ -17,13 +17,24 @@ const Footer: React.FC = () => {
       {/* ── 3-Column Grid ── */}
       <div className="footer-container">
 
-        {/* ── Column 1: Logo ── */}
+        {/* ── Column 1: Land Acknowledgement (right-aligned) ── */}
+        <div className="footer-col footer-col--acknowledge">
+          <p className="footer-acknowledgement-inline">
+            We would like to acknowledge that we are gathered on the traditional territories
+            of the Sinixt, Syilx, Ktunaxa, and Secwépemc Nations. We pay our respects to
+            the Elders, past and present, and recognize their ongoing connection to these lands.
+          </p>
+        </div>
+
+        {/* ── Column 2: Logo (centred) ── */}
         <div className="footer-col footer-col--brand">
           <img src={logoFooter} alt="Nikkei Legacy Park" className="footer-logo" />
         </div>
 
-        {/* ── Column 2: Nav Links (2-column sub-grid) ── */}
-        <div className="footer-col footer-col--links">
+        {/* ── Column 3: Nav Links + Visit Our Park (right-aligned block, content left-aligned) ── */}
+        <div className="footer-col footer-col--info">
+
+          {/* Nav links */}
           <ul className="footer-links">
             <li>
               <NavLink to="/" end
@@ -49,19 +60,15 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer" className="footer-link">City of Greenwood</a>
             </li>
           </ul>
-        </div>
 
-        {/* ── Column 3: Visit Our Park ── */}
-        <div className="footer-col footer-col--visit">
-          <h3 className="footer-heading">Visit Our Park</h3>
-          <address className="footer-address">
-            <p>Mineral St, Greenwood, BC V0H 1J0&nbsp; Canada</p>
-          </address>
-          <p className="footer-acknowledgement-inline">
-            We would like to acknowledge that we are gathered on the traditional territories
-            of the Sinixt, Syilx, Ktunaxa, and Secwépemc Nations. We pay our respects to
-            the Elders, past and present, and recognize their ongoing connection to these lands.
-          </p>
+          {/* Visit Our Park */}
+          <div className="footer-visit">
+            <h3 className="footer-heading">Visit Our Park</h3>
+            <address className="footer-address">
+              <p>Mineral St, Greenwood, BC V0H 1J0&nbsp; Canada</p>
+            </address>
+          </div>
+
         </div>
 
       </div>
