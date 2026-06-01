@@ -1,0 +1,233 @@
+/* src/inc/css/Footer.css */
+
+/* =====================================================
+   Footer Shell
+   — matches Header gradient direction & palette
+   ===================================================== */
+.footer {
+  background: linear-gradient(to right, #5B4F49, #1E1A18);
+  width: 100%;
+  position: relative;
+  border-top: 1px solid rgba(200, 191, 184, 0.15);
+}
+
+/* =====================================================
+   Main 3-Column Grid
+   ===================================================== */
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 32px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 32px 36px;
+  box-sizing: border-box;
+  align-items: start;
+}
+
+/* =====================================================
+   Column Base
+   ===================================================== */
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* =====================================================
+   Column 1 — Quick Links
+   ===================================================== */
+.footer-col--links {
+  align-items: flex-start;
+  gap: 0;
+}
+
+.footer-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 14px 0;
+  letter-spacing: 0.01em;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-link {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #C8BFB8;
+  text-decoration: none;
+  line-height: 1.2;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+.footer-link--active {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* =====================================================
+   Column 2 — Brand / Logo (centred)
+   ===================================================== */
+.footer-col--brand {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer-logo {
+  height: 120px;
+  width: auto;
+  display: block;
+  /* White logo on dark bg — no filter needed if PNG has transparency */
+}
+
+/* =====================================================
+   Column 3 — Visit Our Park
+   ===================================================== */
+.footer-col--visit {
+  align-items: flex-start;
+  gap: 0;
+}
+
+.footer-address {
+  font-style: normal;
+  margin: 0 0 14px 0;
+}
+
+.footer-address p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #C8BFB8;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footer-acknowledgement-inline {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #C8BFB8;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* =====================================================
+   Bottom Bar — copyright centred
+   ===================================================== */
+.footer-bottom {
+  border-top: 1px solid rgba(200, 191, 184, 0.12);
+  width: 100%;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  box-sizing: border-box;
+}
+
+.footer-copyright {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #C8BFB8;
+}
+
+/* =====================================================
+   Responsive — Tablet (max 1024px)
+   ===================================================== */
+@media (max-width: 1024px) {
+  .footer-container {
+    padding: 36px 24px 32px;
+    gap: 24px;
+  }
+
+  .footer-logo {
+    height: 100px;
+  }
+
+  .footer-bottom-inner {
+    padding: 14px 24px;
+  }
+}
+
+/* =====================================================
+   Responsive — Mobile (max 768px)
+   — Stack: Logo top-centre, then Links, then Visit
+   ===================================================== */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 32px;
+    padding: 36px 20px 28px;
+    /* Reorder: logo first, then links, then visit */
+    grid-template-areas:
+      "brand"
+      "links"
+      "visit";
+  }
+
+  .footer-col--brand  { grid-area: brand; align-items: center; }
+  .footer-col--links  { grid-area: links; align-items: center; }
+  .footer-col--visit  { grid-area: visit; align-items: center; text-align: center; }
+
+  .footer-links {
+    align-items: center;
+  }
+
+  .footer-address {
+    text-align: center;
+  }
+
+  .footer-logo {
+    height: 110px;
+  }
+
+  .footer-bottom-inner {
+    padding: 14px 20px;
+    text-align: center;
+  }
+}
+
+/* =====================================================
+   Responsive — Small Mobile (max 480px)
+   ===================================================== */
+@media (max-width: 480px) {
+  .footer-logo {
+    height: 90px;
+  }
+
+  .footer-acknowledgement-inline {
+    font-size: 12px;
+  }
+}
+
+/* =====================================================
+   Responsive — Extra Small (max 360px)
+   ===================================================== */
+@media (max-width: 360px) {
+  .footer-logo {
+    height: 76px;
+  }
+
+  .footer-container {
+    padding: 28px 16px 24px;
+  }
+}

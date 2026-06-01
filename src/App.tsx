@@ -11,7 +11,7 @@ import GalleryPage from './GalleryPage';
 // Shared layout components
 import Header from './inc/Header';
 // import Hero   from './inc/Hero';    // uncomment when ready
-// import Footer from './inc/Footer';  // uncomment when ready
+import Footer from './inc/Footer'; 
 
 /* ─────────────────────────────────────────────────────────
    AppShell — wraps every page with the shared chrome
@@ -27,7 +27,7 @@ const AppShell: React.FC<AppShellProps> = ({ children }) => (
     <main className="main-content">
       {children}
     </main>
-    {/* <Footer /> */}
+    <Footer />
   </div>
 );
 
