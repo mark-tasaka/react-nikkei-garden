@@ -90,6 +90,53 @@
 }
 
 /* =====================================================
+   Google Photos album section
+   ===================================================== */
+.media-photos-section {
+  max-width: 760px;
+  margin: 48px auto 0;
+  padding: 0 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.media-photos-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1210;
+  margin: 0 0 8px;
+}
+
+.media-photos-desc {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  color: #5b4f49;
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+
+.media-photos-btn {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(to right, #B8322A, #85231E);
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  transition: opacity 0.2s ease;
+}
+
+.media-photos-btn:hover {
+  opacity: 0.88;
+}
+
+/* =====================================================
    "More videos" link
    ===================================================== */
 .media-more {
