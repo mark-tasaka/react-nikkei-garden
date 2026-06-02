@@ -17,13 +17,13 @@ const VIDEOS: VideoEntry[] = [
   },
   {
     embedId: 'M3wJgU67ZP8',
-    title: 'Nikkei Legacy Park – Video 2',
-    description: '',
+    title: 'Explorations - Japanese Canadians',
+    description: 'A documentary from the CBC in 1960. The film traces the origins of Japanese Canadians back to villages like Mio Mura in Japan. The immigration to such communities as Steveston; the discrimination and prejudice they encountered; their internment and loss of property during World War II. Includes interviews with Professor Ronald P. Dore from the Department of Asian Studies at UBC; Dr. George Ishiwara; fisherman Tatsuro "Buck" Suzuki of Steveston; W. McArthur, wartime mayor of Greenwood; Seiji Onozuka of Greenwood. It also contains some rare footage from the camps and even a Buddhist service.',
   },
   {
     embedId: 'dQTcfId-sbw',
-    title: 'Nikkei Legacy Park – Video 3',
-    description: '',
+    title: 'Excerpts from the Mamoru Madokoro Collection (1964)',
+    description: 'Scenes from the Greenwood Labour Day Celebration and Natsu Matsuri of 1964.',
   },
 ];
 
@@ -58,9 +58,9 @@ const MediaPage: React.FC = () => (
 
     {/* ── Google Photos album link ── */}
     <div className="media-photos-section">
-      <h2 className="media-photos-title">Photo Album</h2>
+      <h2 className="media-photos-title">Drone Captured Video of Nikkei Legacy Park</h2>
       <p className="media-photos-desc">
-        View our full photo album of the Nikkei Memorial Garden on Google Photos.
+        Drone captured video by Aaron Oye on Google Photos.
       </p>
       <a
         href={GOOGLE_PHOTOS_URL}
@@ -68,7 +68,7 @@ const MediaPage: React.FC = () => (
         rel="noopener noreferrer"
         className="media-photos-btn"
       >
-        View Photo Album ↗
+        View Videos (Google Photos) ↗
       </a>
     </div>
   </main>
