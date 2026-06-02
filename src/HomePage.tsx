@@ -112,27 +112,10 @@ const HomePage: React.FC = () => (
       <div className="home-content-inner">
         <h2 className="home-content-title">About the Nikkei Legacy Park</h2>
         <p className="home-content-body">
-          
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec
-          pellentesque massa. Suspendisse potenti. Suspendisse dictum pellentesque
-          libero ac pellentesque. Fusce sollicitudin facilisis tincidunt. Curabitur
-          non tellus non nibh molestie viverra. Aenean at tempor nibh. Sed imperdiet
-          odio at eros tempor, laoreet convallis nisl congue. Nulla ut erat interdum,
-          pharetra metus non, venenatis justo. Curabitur quis fermentum ex. Mauris
-          magna risus, pharetra eu lectus vel, aliquet feugiat enim.
+          Nikkei Legacy Park is located in the City of Greenwood, BC, along Highway 3 (Crowsnest Highway), just outside of downtown. Originally known as Ohairi Park, the site was given new life in 2014 when former Greenwood internee and resident Chuck Tasaka spearheaded the Nikkei Legacy Park Restoration Project. In 2015, with the City of Greenwood's support, the park was revitalized and officially opened in July 2018.
         </p>
         <p className="home-content-body">
-          Pellentesque viverra rhoncus tortor, id vehicula ligula porta nec. Mauris
-          varius sed eros eu scelerisque. Pellentesque id sagittis orci. Phasellus
-          bibendum magna id nisl fermentum, vehicula luctus magna placerat. Donec
-          accumsan diam in iaculis malesuada. Praesent at arcu vitae nisi molestie
-          rutrum ut at magna. Nulla quis varius lacus. Fusce sed dolor mauris. Sed
-          placerat magna lacinia, dignissim lorem quis, ultricies ipsum. Maecenas
-          massa erat, tristique ac eleifend sit amet, tempus cursus est. Nunc vitae
-          dui vel magna ullamcorper congue eget non diam. Aliquam ullamcorper
-          elementum justo, non aliquam mauris accumsan a. Aenean felis sapien,
-          ultrices ut aliquet ac, auctor vel est. Vestibulum sit amet arcu nec diam
-          pretium facilisis id eget turpis. Aliquam erat volutpat.
+          The Nikkei Legacy Park is dedicated to the approximately 1,200 Canadians of Japanese heritage who were interned in Greenwood during the Second World War. On April 26, 1942, Greenwood became Canada's first Japanese Canadian internment site, when residents forcibly relocated from the BC coast arrived in a city whose population had already dwindled from a peak of 3,000 to fewer than 200. Mayor W.E. McArthur Sr. and the Franciscan Order of the Atonement courageously welcomed them. Today, the park stands as both a memorial to those who were interned and a place of education and reflection on this difficult chapter of Canadian history.
         </p>
       </div>
     </section>
