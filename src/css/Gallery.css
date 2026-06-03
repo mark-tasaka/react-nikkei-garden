@@ -64,6 +64,13 @@
   opacity: 1;
 }
 
+.gallery-section {
+  margin-bottom: 60px;
+}
+.gallery-section:last-child {
+  margin-bottom: 0;
+}
+
 /* =====================================================
    Prev / Next arrows
    ===================================================== */
