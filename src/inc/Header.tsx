@@ -1,7 +1,7 @@
 // src/inc/Header.tsx
 import React, { useState, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import './css/Header.css';
 import logoHeader from './img/header/logo_header.png';
 import logoHeaderSticky from './img/header/logo_header-sticky.png';
@@ -183,8 +183,10 @@ const toggleStickyMenu = () => { setMenuOpen(prev => !prev); setMenuSource(s => 
       {/* ── Full header ── */}
       <header className="header" ref={fullHeaderRef}>
         <div className="header-container">
-          <div className="header-logo">
-            <img src={logoHeader} alt="Nikkei Legacy Park" />
+          <div className="header-logo">  
+            <Link to="/">
+              <img src={logoHeader} alt="Nikkei Legacy Park" />
+            </Link>
           </div>
 
           {/* Desktop right side — update this block */}
@@ -261,7 +263,9 @@ const toggleStickyMenu = () => { setMenuOpen(prev => !prev); setMenuSource(s => 
         >
           <div className="header-container header-container--sticky">
             <div className="header-logo header-logo--sticky">
-              <img src={logoHeaderSticky} alt="Nikkei Legacy Park" />
+                {/* <Link to="/"> */}
+                  <img src={logoHeaderSticky} alt="Nikkei Legacy Park" />
+                {/* </Link> */}
             </div>
 
             {/* Desktop sticky nav */}
