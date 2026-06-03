@@ -15,12 +15,22 @@ import img10 from './img/galleryMay2026/nikkeiGarden10.JPG';
 import img11 from './img/galleryMay2026/nikkeiGarden11.JPG';
 import img12 from './img/galleryMay2026/nikkeiGarden12.JPG';
 
+import spring2026_1 from './img/galleryJune2026/spring2026-1.jpeg';
+import spring2026_2 from './img/galleryJune2026/spring2026-2.jpeg';
+import spring2026_3 from './img/galleryJune2026/spring2026-3.jpeg';
+import spring2026_4 from './img/galleryJune2026/spring2026-4.jpeg';
+import spring2026_5 from './img/galleryJune2026/spring2026-5.jpeg';
+import spring2026_6 from './img/galleryJune2026/spring2026-6.jpeg';
+import spring2026_7 from './img/galleryJune2026/spring2026-7.jpeg';
+import spring2026_8 from './img/galleryJune2026/spring2026-8.jpeg';
+import spring2026_9 from './img/galleryJune2026/spring2026-9.jpeg';
+
 interface GalleryImage {
   src: string;
   alt: string;
 }
 
-const IMAGES: GalleryImage[] = [
+const MAY_IMAGES: GalleryImage[] = [
   { src: img1,  alt: 'Nikkei Legacy Park – May 2026, Photo 1'  },
   { src: img2,  alt: 'Nikkei Legacy Park – May 2026, Photo 2'  },
   { src: img3,  alt: 'Nikkei Legacy Park – May 2026, Photo 3'  },
@@ -35,30 +45,44 @@ const IMAGES: GalleryImage[] = [
   { src: img12, alt: 'Nikkei Legacy Park – May 2026, Photo 12' },
 ];
 
-const GalleryPage: React.FC = () => {
+const JUNE_IMAGES: GalleryImage[] = [
+  { src: spring2026_1, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 1' },
+  { src: spring2026_2, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 2' },
+  { src: spring2026_3, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 3' },
+  { src: spring2026_4, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 4' },
+  { src: spring2026_5, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 5' },
+  { src: spring2026_6, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 6' },
+  { src: spring2026_7, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 7' },
+  { src: spring2026_8, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 8' },
+  { src: spring2026_9, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 9' },
+];
+
+interface CarouselProps {
+  images: GalleryImage[];
+  title: string;
+}
+
+const Carousel: React.FC<CarouselProps> = ({ images, title }) => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   const goPrev = useCallback(() => {
-    setActiveIndex(prev => (prev - 1 + IMAGES.length) % IMAGES.length);
-  }, []);
+    setActiveIndex(prev => (prev - 1 + images.length) % images.length);
+  }, [images.length]);
 
   const goNext = useCallback(() => {
-    setActiveIndex(prev => (prev + 1) % IMAGES.length);
-  }, []);
+    setActiveIndex(prev => (prev + 1) % images.length);
+  }, [images.length]);
 
   const openInNewTab = useCallback(() => {
-    window.open(IMAGES[activeIndex].src, '_blank', 'noopener,noreferrer');
-  }, [activeIndex]);
+    window.open(images[activeIndex].src, '_blank', 'noopener,noreferrer');
+  }, [activeIndex, images]);
 
   return (
-    <main className="gallery-page">
-      <h1 className="gallery-title">Nikkei Legacy Park: May 2026</h1>
-
+    <section className="gallery-section">
+      <h1 className="gallery-title">{title}</h1>
       <div className="gallery-carousel" aria-label="Photo gallery carousel">
-
-        {/* ── Slides ── */}
         <div className="gallery-track">
-          {IMAGES.map(({ src, alt }, i) => (
+          {images.map(({ src, alt }, i) => (
             <img
               key={i}
               src={src}
@@ -68,7 +92,6 @@ const GalleryPage: React.FC = () => {
             />
           ))}
 
-          {/* ── Prev / Next arrows ── */}
           <button
             className="gallery-arrow gallery-arrow--prev"
             onClick={goPrev}
@@ -84,7 +107,6 @@ const GalleryPage: React.FC = () => {
             &#8250;
           </button>
 
-          {/* ── Open in new tab ── */}
           <button
             className="gallery-open-btn"
             onClick={openInNewTab}
@@ -94,9 +116,8 @@ const GalleryPage: React.FC = () => {
             &#x2197;
           </button>
 
-          {/* ── Dot Navigation ── */}
           <div className="hero-dots" role="tablist" aria-label="Gallery navigation">
-            {IMAGES.map((_, i) => (
+            {images.map((_, i) => (
               <button
                 key={i}
                 role="tab"
@@ -108,8 +129,16 @@ const GalleryPage: React.FC = () => {
             ))}
           </div>
         </div>
-
       </div>
+    </section>
+  );
+};
+
+const GalleryPage: React.FC = () => {
+  return (
+    <main className="gallery-page">
+      <Carousel images={JUNE_IMAGES} title="Spring Time in the Park: June 2026" />
+      <Carousel images={MAY_IMAGES}  title="Nikkei Legacy Park: May 2026" />
     </main>
   );
 };
