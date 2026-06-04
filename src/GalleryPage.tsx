@@ -24,6 +24,10 @@ import spring2026_6 from './img/galleryJune2026/spring2026-6.jpeg';
 import spring2026_7 from './img/galleryJune2026/spring2026-7.jpeg';
 import spring2026_8 from './img/galleryJune2026/spring2026-8.jpeg';
 import spring2026_9 from './img/galleryJune2026/spring2026-9.jpeg';
+import spring2026_10 from './img/galleryJune2026/spring2026-10.jpeg';
+import spring2026_11 from './img/galleryJune2026/spring2026-11.jpeg';
+import spring2026_12 from './img/galleryJune2026/spring2026-12.jpeg';
+import spring2026_13 from './img/galleryJune2026/spring2026-13.jpeg';
 
 interface GalleryImage {
   src: string;
@@ -55,6 +59,10 @@ const JUNE_IMAGES: GalleryImage[] = [
   { src: spring2026_7, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 7' },
   { src: spring2026_8, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 8' },
   { src: spring2026_9, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 9' },
+  { src: spring2026_10, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 10' },
+  { src: spring2026_11, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 11' },
+  { src: spring2026_12, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 12' },
+  { src: spring2026_13, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 13' },
 ];
 
 interface CarouselProps {
