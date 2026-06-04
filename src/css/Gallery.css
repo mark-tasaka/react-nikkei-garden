@@ -143,6 +143,26 @@
 }
 
 /* =====================================================
+   Photo caption overlay
+   ===================================================== */
+.gallery-caption {
+  position: absolute;
+  bottom: 44px;          /* sits above the dot row */
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.52);
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  padding: 8px 16px;
+  pointer-events: none;
+  letter-spacing: 0.01em;
+}
+
+/* =====================================================
    Responsive
    ===================================================== */
 @media (max-width: 1024px) {
@@ -182,5 +202,10 @@
     font-size: 16px;
     width: 30px;
     height: 30px;
+  }
+  
+  .gallery-caption {
+    font-size: 13px;
+    padding: 6px 12px;
   }
 }
