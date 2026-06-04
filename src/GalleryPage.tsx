@@ -36,9 +36,13 @@ import panel2026_4 from './img/galleryPanels2026/panel2026-4.jpeg';
 import panel2026_5 from './img/galleryPanels2026/panel2026-5.jpeg';
 import panel2026_6 from './img/galleryPanels2026/panel2026-6.jpeg';
 
+import misc_1 from './img/misc/ohairi-park-1.JPG';
+import misc_2 from './img/misc/ohairi-park-2.JPG';
+
 interface GalleryImage {
   src: string;
   alt: string;
+  caption?: string;
 }
 
 const PANEL_IMAGES: GalleryImage[] = [
@@ -81,6 +85,11 @@ const JUNE_IMAGES: GalleryImage[] = [
   { src: spring2026_13, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 13' },
 ];
 
+const MISC_IMAGES: GalleryImage[] = [
+  { src: misc_1, alt: 'Ohairi Park – Photo 1', caption: 'Ohairi Park' },
+  { src: misc_2, alt: 'Ohairi Park – Photo 2', caption: 'Ohairi Park Flooding 2018'               },
+];
+
 interface CarouselProps {
   images: GalleryImage[];
   title: string;
@@ -101,6 +110,8 @@ const Carousel: React.FC<CarouselProps> = ({ images, title }) => {
     window.open(images[activeIndex].src, '_blank', 'noopener,noreferrer');
   }, [activeIndex, images]);
 
+  const activeCaption = images[activeIndex].caption;
+
   return (
     <section className="gallery-section">
       <h1 className="gallery-title">{title}</h1>
@@ -115,6 +126,12 @@ const Carousel: React.FC<CarouselProps> = ({ images, title }) => {
               draggable={false}
             />
           ))}
+
+          {activeCaption && (
+            <div className="gallery-caption" aria-live="polite">
+              {activeCaption}
+            </div>
+          )}
 
           <button
             className="gallery-arrow gallery-arrow--prev"
@@ -164,6 +181,7 @@ const GalleryPage: React.FC = () => {
       <Carousel images={PANEL_IMAGES} title="Nikkei Legacy Park Panels" />
       <Carousel images={JUNE_IMAGES}  title="Spring Time in the Park: June 2026" />
       <Carousel images={MAY_IMAGES}   title="Nikkei Legacy Park: May 2026" />
+      <Carousel images={MISC_IMAGES}  title="A Look Back: Ohairi Park (Pre-2014)" />
     </main>
   );
 };
