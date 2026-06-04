@@ -15,24 +15,40 @@ import img10 from './img/galleryMay2026/nikkeiGarden10.JPG';
 import img11 from './img/galleryMay2026/nikkeiGarden11.JPG';
 import img12 from './img/galleryMay2026/nikkeiGarden12.JPG';
 
-import spring2026_1 from './img/galleryJune2026/spring2026-1.jpeg';
-import spring2026_2 from './img/galleryJune2026/spring2026-2.jpeg';
-import spring2026_3 from './img/galleryJune2026/spring2026-3.jpeg';
-import spring2026_4 from './img/galleryJune2026/spring2026-4.jpeg';
-import spring2026_5 from './img/galleryJune2026/spring2026-5.jpeg';
-import spring2026_6 from './img/galleryJune2026/spring2026-6.jpeg';
-import spring2026_7 from './img/galleryJune2026/spring2026-7.jpeg';
-import spring2026_8 from './img/galleryJune2026/spring2026-8.jpeg';
-import spring2026_9 from './img/galleryJune2026/spring2026-9.jpeg';
+import spring2026_1  from './img/galleryJune2026/spring2026-1.jpeg';
+import spring2026_2  from './img/galleryJune2026/spring2026-2.jpeg';
+import spring2026_3  from './img/galleryJune2026/spring2026-3.jpeg';
+import spring2026_4  from './img/galleryJune2026/spring2026-4.jpeg';
+import spring2026_5  from './img/galleryJune2026/spring2026-5.jpeg';
+import spring2026_6  from './img/galleryJune2026/spring2026-6.jpeg';
+import spring2026_7  from './img/galleryJune2026/spring2026-7.jpeg';
+import spring2026_8  from './img/galleryJune2026/spring2026-8.jpeg';
+import spring2026_9  from './img/galleryJune2026/spring2026-9.jpeg';
 import spring2026_10 from './img/galleryJune2026/spring2026-10.jpeg';
 import spring2026_11 from './img/galleryJune2026/spring2026-11.jpeg';
 import spring2026_12 from './img/galleryJune2026/spring2026-12.jpeg';
 import spring2026_13 from './img/galleryJune2026/spring2026-13.jpeg';
 
+import panel2026_1 from './img/galleryPanels2026/panel2026-1.jpeg';
+import panel2026_2 from './img/galleryPanels2026/panel2026-2.jpeg';
+import panel2026_3 from './img/galleryPanels2026/panel2026-3.jpeg';
+import panel2026_4 from './img/galleryPanels2026/panel2026-4.jpeg';
+import panel2026_5 from './img/galleryPanels2026/panel2026-5.jpeg';
+import panel2026_6 from './img/galleryPanels2026/panel2026-6.jpeg';
+
 interface GalleryImage {
   src: string;
   alt: string;
 }
+
+const PANEL_IMAGES: GalleryImage[] = [
+  { src: panel2026_1, alt: 'Panels June 2026, Photo 1' },
+  { src: panel2026_2, alt: 'Panels June 2026, Photo 2' },
+  { src: panel2026_3, alt: 'Panels June 2026, Photo 3' },
+  { src: panel2026_4, alt: 'Panels June 2026, Photo 4' },
+  { src: panel2026_5, alt: 'Panels June 2026, Photo 5' },
+  { src: panel2026_6, alt: 'Panels June 2026, Photo 6' },
+];
 
 const MAY_IMAGES: GalleryImage[] = [
   { src: img1,  alt: 'Nikkei Legacy Park – May 2026, Photo 1'  },
@@ -50,15 +66,15 @@ const MAY_IMAGES: GalleryImage[] = [
 ];
 
 const JUNE_IMAGES: GalleryImage[] = [
-  { src: spring2026_1, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 1' },
-  { src: spring2026_2, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 2' },
-  { src: spring2026_3, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 3' },
-  { src: spring2026_4, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 4' },
-  { src: spring2026_5, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 5' },
-  { src: spring2026_6, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 6' },
-  { src: spring2026_7, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 7' },
-  { src: spring2026_8, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 8' },
-  { src: spring2026_9, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 9' },
+  { src: spring2026_1,  alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 1'  },
+  { src: spring2026_2,  alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 2'  },
+  { src: spring2026_3,  alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 3'  },
+  { src: spring2026_4,  alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 4'  },
+  { src: spring2026_5,  alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 5'  },
+  { src: spring2026_6,  alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 6'  },
+  { src: spring2026_7,  alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 7'  },
+  { src: spring2026_8,  alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 8'  },
+  { src: spring2026_9,  alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 9'  },
   { src: spring2026_10, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 10' },
   { src: spring2026_11, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 11' },
   { src: spring2026_12, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 12' },
@@ -145,8 +161,9 @@ const Carousel: React.FC<CarouselProps> = ({ images, title }) => {
 const GalleryPage: React.FC = () => {
   return (
     <main className="gallery-page">
-      <Carousel images={JUNE_IMAGES} title="Spring Time in the Park: June 2026" />
-      <Carousel images={MAY_IMAGES}  title="Nikkei Legacy Park: May 2026" />
+      <Carousel images={PANEL_IMAGES} title="Nikkei Legacy Park Panels" />
+      <Carousel images={JUNE_IMAGES}  title="Spring Time in the Park: June 2026" />
+      <Carousel images={MAY_IMAGES}   title="Nikkei Legacy Park: May 2026" />
     </main>
   );
 };
