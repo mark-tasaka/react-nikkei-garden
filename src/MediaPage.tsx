@@ -57,18 +57,18 @@ const MediaPage: React.FC = () => (
     </div>
 
     {/* ── Google Photos album link ── */}
-    <div className="media-photos-section">
+<div className="media-photos-section">
       <h2 className="media-photos-title">Drone Captured Video of Nikkei Legacy Park</h2>
       <p className="media-photos-desc">
-        Drone captured video by Aaron Oye on Google Photos.
+        Drone captured video by Aaron Oye.
       </p>
-      <a
-        href={GOOGLE_PHOTOS_URL}
+      
+        <a href="https://www.dropbox.com/scl/fi/k7hukms9ibhyrvioostxk/Greenwood-BC.mov?rlkey=wsci6n7jg19na1om0vpc8wgw5&e=1&st=fvbxf4vc&dl=0"
         target="_blank"
         rel="noopener noreferrer"
         className="media-photos-btn"
-      >
-        View Videos (Google Photos) ↗
+        >
+        View Video (Dropbox) ↗
       </a>
     </div>
   </main>
