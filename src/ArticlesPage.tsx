@@ -88,13 +88,14 @@ const SearchIcon: React.FC = () => (
 const ArticlesPage: React.FC = () => {
   const [query, setQuery] = useState('');
 
-  const filtered = ARTICLES.filter(({ title, source, author, excerpt }) => {
+  const filtered = ARTICLES.filter(({ title, source, author, excerpt, date }) => {
     const q = query.toLowerCase();
     return (
       title.toLowerCase().includes(q)   ||
       source.toLowerCase().includes(q)  ||
       author.toLowerCase().includes(q)  ||
-      excerpt.toLowerCase().includes(q)
+      excerpt.toLowerCase().includes(q) ||
+      date.toLowerCase().includes(q)
     );
   });
 
@@ -111,7 +112,7 @@ const ArticlesPage: React.FC = () => {
             id="articles-search"
             type="search"
             className="articles-search-input"
-            placeholder="Search by title, author, or keyword…"
+            placeholder="Search by title, author, date, or keyword…"
             value={query}
             onChange={e => setQuery(e.target.value)}
           />
