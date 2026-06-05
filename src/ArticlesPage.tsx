@@ -1,5 +1,5 @@
 // src/ArticlesPage.tsx
-import React from 'react';
+import React, { useState } from 'react';
 import './css/Articles.css';
 
 import discover1 from './img/articles/discover1.jpeg';
@@ -56,38 +56,117 @@ function truncateWords(text: string, maxWords: number): string {
   return words.slice(0, maxWords).join(' ') + '…';
 }
 
-const ArticlesPage: React.FC = () => (
-  <main className="articles-page">
-    <h1 className="articles-title">Articles</h1>
-    <div className="articles-grid">
-      {ARTICLES.map(({ source, sourceUrl, title, author, date, link, excerpt, img }) => (
-        <article key={link} className="article-card">
-          <a href={link} target="_blank" rel="noopener noreferrer" className="article-img-link">
-            <img src={img} alt={title} className="article-img" />
-          </a>
-          <div className="article-card-body">
-            <a href={link} target="_blank" rel="noopener noreferrer" className="article-title-link">
-              <h2 className="article-card-title">{title}</h2>
-            </a>
-            <p className="article-meta">
-              
-              < a href={sourceUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="article-source-link"
-              >
-                <span className="article-source">{source}</span>
-              </a>
-              <span className="article-meta-sep"> · </span>
-              <span className="article-date">{date}</span>
-            </p>
-            <p className="article-author">Author: {author}</p>
-            <p className="article-excerpt">{truncateWords(excerpt, 50)}</p>
-          </div>
-        </article>
-      ))}
-    </div>
-  </main>
+const SearchIcon: React.FC = () => (
+  <svg
+    className="search-icon"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    aria-hidden="true"
+  >
+    <circle
+      cx="10.5"
+      cy="10.5"
+      r="6.5"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <line
+      x1="15.5"
+      y1="15.5"
+      x2="21"
+      y2="21"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+    />
+  </svg>
 );
+
+const ArticlesPage: React.FC = () => {
+  const [query, setQuery] = useState('');
+
+  const filtered = ARTICLES.filter(({ title, source, author, excerpt }) => {
+    const q = query.toLowerCase();
+    return (
+      title.toLowerCase().includes(q)   ||
+      source.toLowerCase().includes(q)  ||
+      author.toLowerCase().includes(q)  ||
+      excerpt.toLowerCase().includes(q)
+    );
+  });
+
+  return (
+    <main className="articles-page">
+      <h1 className="articles-title">Articles & Resources</h1>
+
+      {/* ── Search bar ── */}
+      <div className="articles-search-wrapper">
+        <label htmlFor="articles-search" className="sr-only">Search articles</label>
+        <div className="articles-search-box">
+          <SearchIcon />
+          <input
+            id="articles-search"
+            type="search"
+            className="articles-search-input"
+            placeholder="Search by title, author, or keyword…"
+            value={query}
+            onChange={e => setQuery(e.target.value)}
+          />
+          {query && (
+            <button
+              className="articles-search-clear"
+              onClick={() => setQuery('')}
+              aria-label="Clear search"
+            >
+              &#x2715;
+            </button>
+          )}
+        </div>
+        {query && (
+          <p className="articles-search-count">
+            {filtered.length} result{filtered.length !== 1 ? 's' : ''} for &ldquo;{query}&rdquo;
+          </p>
+        )}
+      </div>
+
+      {/* ── Grid ── */}
+      <div className="articles-grid">
+        {filtered.length > 0 ? (
+          filtered.map(({ source, sourceUrl, title, author, date, link, excerpt, img }) => (
+            <article key={link} className="article-card">
+              <a href={link} target="_blank" rel="noopener noreferrer" className="article-img-link">
+                <img src={img} alt={title} className="article-img" />
+              </a>
+              <div className="article-card-body">
+                <a href={link} target="_blank" rel="noopener noreferrer" className="article-title-link">
+                  <h2 className="article-card-title">{title}</h2>
+                </a>
+                <p className="article-meta">
+                  
+                  <a href={sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="article-source-link"
+                  >
+                    <span className="article-source">{source}</span>
+                  </a>
+                  <span className="article-meta-sep"> · </span>
+                  <span className="article-date">{date}</span>
+                </p>
+                <p className="article-author">Author: {author}</p>
+                <p className="article-excerpt">{truncateWords(excerpt, 50)}</p>
+              </div>
+            </article>
+          ))
+        ) : (
+          <p className="articles-no-results">No articles match your search.</p>
+        )}
+      </div>
+    </main>
+  );
+};
 
 export default ArticlesPage;
