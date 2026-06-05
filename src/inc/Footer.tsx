@@ -59,6 +59,12 @@ const Footer: React.FC = () => {
               >Gallery</NavLink>
             </li>
             <li>
+              <NavLink to="/articles"
+                className={({ isActive }) =>
+                  isActive ? 'footer-link footer-link--active' : 'footer-link'}
+              >Articles</NavLink>
+            </li>
+            <li>
               <a href="https://www.greenwoodcity.com/" target="_blank"
                 rel="noopener noreferrer" className="footer-link">City of Greenwood</a>
             </li>
