@@ -7,7 +7,7 @@ import './App.css';
 import HomePage from './HomePage';
 import MediaPage from './MediaPage';
 import GalleryPage from './GalleryPage';
-import ArticlesPage from './ArticlesPage';
+import ResourcesPage from './ResourcesPage';
 
 // Shared layout components
 import Header from './inc/Header';
@@ -42,7 +42,7 @@ function App(): React.ReactElement {
         <Route path="/"        element={<AppShell><HomePage /></AppShell>} />
         <Route path="/media"   element={<AppShell><MediaPage /></AppShell>} />
         <Route path="/gallery" element={<AppShell><GalleryPage /></AppShell>} />
-        <Route path="/articles" element={<AppShell><ArticlesPage /></AppShell>} />
+        <Route path="/resources" element={<AppShell><ResourcesPage /></AppShell>} />
       </Routes>
     </Router>
   );

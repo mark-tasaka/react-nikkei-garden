@@ -1,6 +1,6 @@
-// src/ArticlesPage.tsx
+// src/ResourcesPage.tsx
 import React, { useState } from 'react';
-import './css/Articles.css';
+import './css/Resources.css';
 
 import discover1 from './img/articles/discover1.jpeg';
 import discover2 from './img/articles/discover2.jpeg';
@@ -101,7 +101,7 @@ const ArticlesPage: React.FC = () => {
 
   return (
     <main className="articles-page">
-      <h1 className="articles-title">Articles & Resources</h1>
+      <h1 className="articles-title">Resources and Articles</h1>
 
       {/* ── Search bar ── */}
       <div className="articles-search-wrapper">
