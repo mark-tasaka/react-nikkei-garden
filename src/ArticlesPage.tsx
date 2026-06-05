@@ -71,7 +71,7 @@ const ArticlesPage: React.FC = () => (
             </a>
             <p className="article-meta">
               
-              < a  href={sourceUrl}
+              < a href={sourceUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="article-source-link"
