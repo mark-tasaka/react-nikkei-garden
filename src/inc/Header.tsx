@@ -43,6 +43,12 @@ const NavLinks: React.FC<NavLinksProps> = ({ onLinkClick, includeGreenwood = fal
         onClick={onLinkClick}
       >Gallery</NavLink>
     </li>
+    <li>
+      <NavLink to="/articles"
+        className={({ isActive }) => isActive ? 'nav-link nav-link--active' : 'nav-link'}
+        onClick={onLinkClick}
+      >Articles</NavLink>
+    </li>
     {includeGreenwood && (
       <li>
         
