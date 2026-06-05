@@ -2,42 +2,42 @@
 import React, { useState, useCallback } from 'react';
 import './css/Gallery.css';
 
-import img1  from './img/galleryMay2026/nikkeiGarden1.JPG';
-import img2  from './img/galleryMay2026/nikkeiGarden2.JPG';
-import img3  from './img/galleryMay2026/nikkeiGarden3.JPG';
-import img4  from './img/galleryMay2026/nikkeiGarden4.JPG';
-import img5  from './img/galleryMay2026/nikkeiGarden5.JPG';
-import img6  from './img/galleryMay2026/nikkeiGarden6.JPG';
-import img7  from './img/galleryMay2026/nikkeiGarden7.JPG';
-import img8  from './img/galleryMay2026/nikkeiGarden8.JPG';
-import img9  from './img/galleryMay2026/nikkeiGarden9.JPG';
-import img10 from './img/galleryMay2026/nikkeiGarden10.JPG';
-import img11 from './img/galleryMay2026/nikkeiGarden11.JPG';
-import img12 from './img/galleryMay2026/nikkeiGarden12.JPG';
+import img1  from './img/gallery/galleryMay2026/nikkeiGarden1.JPG';
+import img2  from './img/gallery/galleryMay2026/nikkeiGarden2.JPG';
+import img3  from './img/gallery/galleryMay2026/nikkeiGarden3.JPG';
+import img4  from './img/gallery/galleryMay2026/nikkeiGarden4.JPG';
+import img5  from './img/gallery/galleryMay2026/nikkeiGarden5.JPG';
+import img6  from './img/gallery/galleryMay2026/nikkeiGarden6.JPG';
+import img7  from './img/gallery/galleryMay2026/nikkeiGarden7.JPG';
+import img8  from './img/gallery/galleryMay2026/nikkeiGarden8.JPG';
+import img9  from './img/gallery/galleryMay2026/nikkeiGarden9.JPG';
+import img10 from './img/gallery/galleryMay2026/nikkeiGarden10.JPG';
+import img11 from './img/gallery/galleryMay2026/nikkeiGarden11.JPG';
+import img12 from './img/gallery/galleryMay2026/nikkeiGarden12.JPG';
 
-import spring2026_1  from './img/galleryJune2026/spring2026-1.jpeg';
-import spring2026_2  from './img/galleryJune2026/spring2026-2.jpeg';
-import spring2026_3  from './img/galleryJune2026/spring2026-3.jpeg';
-import spring2026_4  from './img/galleryJune2026/spring2026-4.jpeg';
-import spring2026_5  from './img/galleryJune2026/spring2026-5.jpeg';
-import spring2026_6  from './img/galleryJune2026/spring2026-6.jpeg';
-import spring2026_7  from './img/galleryJune2026/spring2026-7.jpeg';
-import spring2026_8  from './img/galleryJune2026/spring2026-8.jpeg';
-import spring2026_9  from './img/galleryJune2026/spring2026-9.jpeg';
-import spring2026_10 from './img/galleryJune2026/spring2026-10.jpeg';
-import spring2026_11 from './img/galleryJune2026/spring2026-11.jpeg';
-import spring2026_12 from './img/galleryJune2026/spring2026-12.jpeg';
-import spring2026_13 from './img/galleryJune2026/spring2026-13.jpeg';
+import spring2026_1  from './img/gallery/galleryJune2026/spring2026-1.jpeg';
+import spring2026_2  from './img/gallery/galleryJune2026/spring2026-2.jpeg';
+import spring2026_3  from './img/gallery/galleryJune2026/spring2026-3.jpeg';
+import spring2026_4  from './img/gallery/galleryJune2026/spring2026-4.jpeg';
+import spring2026_5  from './img/gallery/galleryJune2026/spring2026-5.jpeg';
+import spring2026_6  from './img/gallery/galleryJune2026/spring2026-6.jpeg';
+import spring2026_7  from './img/gallery/galleryJune2026/spring2026-7.jpeg';
+import spring2026_8  from './img/gallery/galleryJune2026/spring2026-8.jpeg';
+import spring2026_9  from './img/gallery/galleryJune2026/spring2026-9.jpeg';
+import spring2026_10 from './img/gallery/galleryJune2026/spring2026-10.jpeg';
+import spring2026_11 from './img/gallery/galleryJune2026/spring2026-11.jpeg';
+import spring2026_12 from './img/gallery/galleryJune2026/spring2026-12.jpeg';
+import spring2026_13 from './img/gallery/galleryJune2026/spring2026-13.jpeg';
 
-import panel2026_1 from './img/galleryPanels2026/panel2026-1.jpeg';
-import panel2026_2 from './img/galleryPanels2026/panel2026-2.jpeg';
-import panel2026_3 from './img/galleryPanels2026/panel2026-3.jpeg';
-import panel2026_4 from './img/galleryPanels2026/panel2026-4.jpeg';
-import panel2026_5 from './img/galleryPanels2026/panel2026-5.jpeg';
-import panel2026_6 from './img/galleryPanels2026/panel2026-6.jpeg';
+import panel2026_1 from './img/gallery/galleryPanels2026/panel2026-1.jpeg';
+import panel2026_2 from './img/gallery/galleryPanels2026/panel2026-2.jpeg';
+import panel2026_3 from './img/gallery/galleryPanels2026/panel2026-3.jpeg';
+import panel2026_4 from './img/gallery/galleryPanels2026/panel2026-4.jpeg';
+import panel2026_5 from './img/gallery/galleryPanels2026/panel2026-5.jpeg';
+import panel2026_6 from './img/gallery/galleryPanels2026/panel2026-6.jpeg';
 
-import misc_1 from './img/misc/ohairi-park-1.JPG';
-import misc_2 from './img/misc/ohairi-park-2.JPG';
+import misc_1 from './img/gallery/misc/ohairi-park-1.JPG';
+import misc_2 from './img/gallery/misc/ohairi-park-2.JPG';
 
 interface GalleryImage {
   src: string;
