@@ -272,21 +272,47 @@ const SearchIcon: React.FC = () => (
   </svg>
 );
 
-const ArticlesPage: React.FC = () => {
-  const [query, setQuery]   = useState('');
-  const [filter, setFilter] = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies'>('all');
+type SortField = 'year' | 'source' | 'title' | 'author';
+type SortDir   = 'desc' | 'asc';
 
-  const filtered = ARTICLES.filter(({ title, source, author, excerpt, date }) => {
-    const q = query.toLowerCase();
-    const matchesSearch =
-      title.toLowerCase().includes(q)   ||
-      source.toLowerCase().includes(q)  ||
-      author.toLowerCase().includes(q)  ||
-      excerpt.toLowerCase().includes(q) ||
-      date.toLowerCase().includes(q);
-    const matchesFilter = filter === 'all' || source === filter;
-    return matchesSearch && matchesFilter;
-  });
+const ArticlesPage: React.FC = () => {
+  const [query,     setQuery]     = useState('');
+  const [filter,    setFilter]    = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies'>('all');
+  const [sortField, setSortField] = useState<SortField>('year');
+  const [sortDir,   setSortDir]   = useState<SortDir>('desc');
+
+  const getSortValue = (a: ArticleEntry, field: SortField): string => {
+    switch (field) {
+      case 'year':   return a.date;
+      case 'source': return a.source;
+      case 'title':  return a.title;
+      case 'author': return a.author;
+    }
+  };
+
+  const filtered = ARTICLES
+    .filter(({ title, source, author, excerpt, date }) => {
+      const q = query.toLowerCase();
+      const matchesSearch =
+        title.toLowerCase().includes(q)   ||
+        source.toLowerCase().includes(q)  ||
+        author.toLowerCase().includes(q)  ||
+        excerpt.toLowerCase().includes(q) ||
+        date.toLowerCase().includes(q);
+      const matchesFilter = filter === 'all' || source === filter;
+      return matchesSearch && matchesFilter;
+    })
+    .sort((a, b) => {
+      let valA = getSortValue(a, sortField);
+      let valB = getSortValue(b, sortField);
+      if (sortField === 'year') {
+        const dateA = new Date(a.date).getTime();
+        const dateB = new Date(b.date).getTime();
+        return sortDir === 'desc' ? dateB - dateA : dateA - dateB;
+      }
+      const cmp = valA.localeCompare(valB);
+      return sortDir === 'desc' ? -cmp : cmp;
+    });
 
   return (
     <main className="articles-page">
@@ -305,6 +331,30 @@ const ArticlesPage: React.FC = () => {
             {f === 'all' ? 'All' : f === 'Discover Nikkei' ? 'Discover Nikkei' : 'JC Legacies'}
           </button>
         ))}
+      </div>
+
+      {/* ── Sort controls ── */}
+      <div className="articles-sort-wrapper">
+        <label htmlFor="articles-sort" className="articles-sort-label">Sort by</label>
+        <select
+          id="articles-sort"
+          className="articles-sort-select"
+          value={sortField}
+          onChange={e => setSortField(e.target.value as SortField)}
+        >
+          <option value="year">Year</option>
+          <option value="source">Source</option>
+          <option value="title">Title</option>
+          <option value="author">Author</option>
+        </select>
+        <button
+          className="articles-sort-dir"
+          onClick={() => setSortDir(d => d === 'desc' ? 'asc' : 'desc')}
+          aria-label={sortDir === 'desc' ? 'Sort descending' : 'Sort ascending'}
+          title={sortDir === 'desc' ? 'Newest first' : 'Oldest first'}
+        >
+          {sortDir === 'desc' ? '↓ Desc' : '↑ Asc'}
+        </button>
       </div>
 
       {/* ── Search bar ── */}
