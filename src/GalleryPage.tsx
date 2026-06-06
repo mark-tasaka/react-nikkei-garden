@@ -41,6 +41,12 @@ import misc_2 from './img/gallery/misc/ohairi-park-2.JPG';
 import misc_3 from './img/gallery/misc/building2.png';
 import misc_4 from './img/gallery/misc/building2back.png';
 import misc_5 from './img/gallery/misc/building4.JPG';
+import misc_6 from './img/gallery/misc/nikkeiWomen.jpg';
+import misc_7 from './img/gallery/misc/Sacred_Heart.jpg';
+import misc_8 from './img/gallery/misc/firehall.jpg';
+import misc_9 from './img/gallery/misc/building5.JPG'
+import misc_10 from './img/gallery/misc/building7.JPG'
+import misc_11 from './img/gallery/misc/building11.JPG'
 
 interface GalleryImage {
   src: string;
@@ -91,7 +97,7 @@ const JUNE_IMAGES: GalleryImage[] = [
 const MISC_IMAGES: GalleryImage[] = [
   { 
     src: misc_1, 
-    alt: 'Ohairi Park – Photo 1', 
+    alt: 'Ohairi Park1', 
     caption: (
       <>
         Ohairi Park
@@ -100,7 +106,7 @@ const MISC_IMAGES: GalleryImage[] = [
   },
   { 
     src: misc_2, 
-    alt: 'Ohairi Park – Photo 2', 
+    alt: 'Ohairi Park Flooding', 
     caption: (
       <>
         Ohairi Park Flooding 2018
@@ -112,7 +118,7 @@ const MISC_IMAGES: GalleryImage[] = [
 const BW_IMAGES: GalleryImage[] = [
   { 
     src: misc_3, 
-    alt: 'Building #2 – Photo 3', 
+    alt: 'Building #2', 
     caption: (
       <>
         #2 Building was formerly Armstrong Hotel. During the internment part of the building was the hospital and the rest were accommodation for the new arrivals. Notice the clothesline.
@@ -123,7 +129,7 @@ const BW_IMAGES: GalleryImage[] = [
   },
   { 
     src: misc_4, 
-    alt: 'Building #2 – Photo 4', 
+    alt: 'Building #2', 
     caption: (
       <>
         The back view of the #2 Building.
@@ -134,12 +140,72 @@ const BW_IMAGES: GalleryImage[] = [
   },
   { 
     src: misc_5, 
-    alt: 'Building #4 – Photo 5', 
+    alt: 'Building #4', 
     caption: (
       <>
         #4 Building was the tallest building with the turret.  It was Rendell Block to the locals.
         <br /><br />
         Photo courtesy of Greenwood Museum
+      </>
+    )
+  },
+  { 
+    src: misc_9, 
+    alt: 'Building #5', 
+    caption: (
+      <>
+        #5 Building
+        <br /><br />
+        Photo courtesy of Greenwood Museum
+      </>
+    )
+  },
+  { 
+    src: misc_10, 
+    alt: 'Building #7', 
+    caption: (
+      <>
+        #7 Building
+        <br /><br />
+        Photo courtesy of Greenwood Museum
+      </>
+    )
+  },
+  { 
+    src: misc_11, 
+    alt: 'Building #11', 
+    caption: (
+      <>
+        #11 Building
+        <br /><br />
+        Photo courtesy of Greenwood Museum
+      </>
+    )
+  },
+  { 
+    src: misc_6, 
+    alt: 'Nikkei Women', 
+    caption: (
+      <>
+        Florence Kariya, Ruby Sora, Mitsi Sasaki, Eiko Nishimura, Shizu Nishimura
+      </>
+    )
+  },
+  { 
+    src: misc_7, 
+    alt: 'Sacred Heart Catholic Church', 
+    caption: (
+      <>
+        Sacred Heart Catholic Church, built in 1911, was the spiritual home for many of the Nikkei community. 
+      </>
+    )
+  },
+  { 
+    src: misc_8, 
+    alt: 'Fire Hall', 
+    caption: (
+      <>
+        Greenwood Fire Hall
       </>
     )
   },
