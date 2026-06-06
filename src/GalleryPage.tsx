@@ -40,6 +40,7 @@ import misc_1 from './img/gallery/misc/ohairi-park-1.JPG';
 import misc_2 from './img/gallery/misc/ohairi-park-2.JPG';
 import misc_3 from './img/gallery/misc/building2.png';
 import misc_4 from './img/gallery/misc/building2back.png';
+import misc_5 from './img/gallery/misc/building4.JPG';
 
 interface GalleryImage {
   src: string;
@@ -108,7 +109,7 @@ const MISC_IMAGES: GalleryImage[] = [
   },
   { 
     src: misc_3, 
-    alt: 'Nikkei Legacy Park – Photo 3', 
+    alt: 'Building #2 – Photo 3', 
     caption: (
       <>
         #2 Building was formerly Armstrong Hotel. During the internment part of the building was the hospital and the rest were accommodation for the new arrivals. Notice the clothesline.
@@ -119,10 +120,21 @@ const MISC_IMAGES: GalleryImage[] = [
   },
   { 
     src: misc_4, 
-    alt: 'Nikkei Legacy Park – Photo 4', 
+    alt: 'Building #2 – Photo 4', 
     caption: (
       <>
         The back view of the #2 Building.
+        <br /><br />
+        Photo courtesy of Greenwood Museum
+      </>
+    )
+  },
+  { 
+    src: misc_5, 
+    alt: 'Building #4 – Photo 5', 
+    caption: (
+      <>
+        #4 Building was the tallest building with the turret.  It was Rendell Block to the locals.
         <br /><br />
         Photo courtesy of Greenwood Museum
       </>
