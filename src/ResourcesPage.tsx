@@ -22,6 +22,7 @@ import discover17 from './img/articles/discover17.jpeg';
 import discover18 from './img/articles/discover18.jpeg';
 import discover19 from './img/articles/discover19.jpeg';
 import legacies1   from './img/articles/legacies1.jpeg';
+import legacies2 from './img/articles/legacies2.jpeg';
 
 interface ArticleEntry {
   source:     string;
@@ -230,10 +231,20 @@ const ARTICLES: ArticleEntry[] = [
     sourceUrl: 'https://jclegacies.com/',
     title:     'BC Heritage Sites – Greenwood',
     author:    'Japanese Canadian Legacies',
-    date:      'Feb. 6, 2024',
+    date:      'February. 6, 2024',
     link:      'https://jclegacies.com/bc-heritage-sites-greenwood/',
     excerpt:   'While the JCLS has yet to name the 30 BC Heritage sites identified around the province, Greenwood\'s Nikkei Legacy Park will be on the list. On February 2, BC Attorney General Niki Sharma and Boundary-Similkameen MLA Roly Russell visited Greenwood to honour the Japanese Canadian survivors.',
     img:       legacies1,
+  },
+  {
+    source:    'Japanese Canadian Legacies',
+    sourceUrl: 'https://jclegacies.com/',
+    title:     'Greenwood Video',
+    author:    'Japanese Canadian Legacies',
+    date:      'December 26, 2025',
+    link:      'https://jclegacies.com/greenwood-video/',
+    excerpt:   'The Greenwood Nikkei Memorial Garden, which opened on July 20, 2025, is dedicated to the 1,200 Japanese Canadians who were forcibly uprooted from the west coast and sent to Greenwood, beginning on April 26, 1942. Greenwood was the first internment site to open – a new temporary home for the exiled citizens, most of whom were Canadian. The garden is part of Nikkei Legacy Park (formerly Ohairi Park), situated off Highway 3 that runs through Greenwood.',
+    img:       legacies2,
   },
 ];
 
