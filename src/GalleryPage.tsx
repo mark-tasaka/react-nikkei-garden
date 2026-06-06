@@ -107,6 +107,9 @@ const MISC_IMAGES: GalleryImage[] = [
       </>
     )
   },
+];
+
+const BW_IMAGES: GalleryImage[] = [
   { 
     src: misc_3, 
     alt: 'Building #2 – Photo 3', 
@@ -234,6 +237,7 @@ const GalleryPage: React.FC = () => {
       <Carousel images={JUNE_IMAGES}  title="Spring Time in the Park: June 2026" />
       <Carousel images={MAY_IMAGES}   title="Nikkei Legacy Park: May 2026" />
       <Carousel images={MISC_IMAGES}  title="A Look Back: Ohairi Park (Pre-2014)" />
+      <Carousel images={BW_IMAGES}    title="Greenwood Historical Photos" />
     </main>
   );
 };
