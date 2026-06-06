@@ -273,22 +273,37 @@ const SearchIcon: React.FC = () => (
 );
 
 const ArticlesPage: React.FC = () => {
-  const [query, setQuery] = useState('');
+  const [query, setQuery]   = useState('');
+  const [filter, setFilter] = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies'>('all');
 
   const filtered = ARTICLES.filter(({ title, source, author, excerpt, date }) => {
     const q = query.toLowerCase();
-    return (
+    const matchesSearch =
       title.toLowerCase().includes(q)   ||
       source.toLowerCase().includes(q)  ||
       author.toLowerCase().includes(q)  ||
       excerpt.toLowerCase().includes(q) ||
-      date.toLowerCase().includes(q)
-    );
+      date.toLowerCase().includes(q);
+    const matchesFilter = filter === 'all' || source === filter;
+    return matchesSearch && matchesFilter;
   });
 
   return (
     <main className="articles-page">
       <h1 className="articles-title">Resources and Articles</h1>
+
+      {/* ── Filter buttons ── */}
+      <div className="articles-filter-wrapper">
+        {(['all', 'Discover Nikkei', 'Japanese Canadian Legacies'] as const).map(f => (
+          <button
+            key={f}
+            className={`articles-filter-btn${filter === f ? ' articles-filter-btn--active' : ''}`}
+            onClick={() => setFilter(f)}
+          >
+            {f === 'all' ? 'All' : f === 'Discover Nikkei' ? 'Discover Nikkei' : 'JC Legacies'}
+          </button>
+        ))}
+      </div>
 
       {/* ── Search bar ── */}
       <div className="articles-search-wrapper">
@@ -333,12 +348,7 @@ const ArticlesPage: React.FC = () => {
                   <h2 className="article-card-title">{title}</h2>
                 </a>
                 <p className="article-meta">
-                  
-                  <a href={sourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="article-source-link"
-                  >
+                  <a href={sourceUrl} target="_blank" rel="noopener noreferrer" className="article-source-link">
                     <span className="article-source">{source}</span>
                   </a>
                   <span className="article-meta-sep"> · </span>
