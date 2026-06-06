@@ -357,6 +357,8 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.20);
   transition: opacity 0.2s ease;
   white-space: nowrap;
+  width: 80px;
+  text-align: center;
 }
 
 .articles-sort-dir:hover {

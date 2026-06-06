@@ -272,7 +272,7 @@ const SearchIcon: React.FC = () => (
   </svg>
 );
 
-type SortField = 'year' | 'source' | 'title' | 'author';
+type SortField = 'year' | 'title' | 'author';
 type SortDir   = 'desc' | 'asc';
 
 const ArticlesPage: React.FC = () => {
@@ -284,9 +284,9 @@ const ArticlesPage: React.FC = () => {
   const getSortValue = (a: ArticleEntry, field: SortField): string => {
     switch (field) {
       case 'year':   return a.date;
-      case 'source': return a.source;
       case 'title':  return a.title;
       case 'author': return a.author;
+      default:       return '';
     }
   };
 
@@ -303,13 +303,13 @@ const ArticlesPage: React.FC = () => {
       return matchesSearch && matchesFilter;
     })
     .sort((a, b) => {
-      let valA = getSortValue(a, sortField);
-      let valB = getSortValue(b, sortField);
       if (sortField === 'year') {
         const dateA = new Date(a.date).getTime();
         const dateB = new Date(b.date).getTime();
         return sortDir === 'desc' ? dateB - dateA : dateA - dateB;
       }
+      const valA = getSortValue(a, sortField) ?? '';
+      const valB = getSortValue(b, sortField) ?? '';
       const cmp = valA.localeCompare(valB);
       return sortDir === 'desc' ? -cmp : cmp;
     });
@@ -343,7 +343,6 @@ const ArticlesPage: React.FC = () => {
           onChange={e => setSortField(e.target.value as SortField)}
         >
           <option value="year">Year</option>
-          <option value="source">Source</option>
           <option value="title">Title</option>
           <option value="author">Author</option>
         </select>
