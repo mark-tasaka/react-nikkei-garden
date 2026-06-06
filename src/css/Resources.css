@@ -285,14 +285,15 @@
   color: #ffffff;
   padding: 10px 0;
   width: 160px;
-  text-align: center;
   border: none;
   border-radius: 12px;
-  /* background: linear-gradient(to right, #6b2020, #4a1515); */
   background: #727270;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.30);
   cursor: pointer;
   transition: opacity 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .articles-filter-btn:hover {
@@ -386,6 +387,18 @@
     margin-bottom: 24px;
   }
 
+    .articles-filter-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .articles-filter-btn {
+    font-size: 13px;
+    width: 260px;
+    padding: 8px 0;
+  }
+
   .articles-grid {
     grid-template-columns: 1fr;
     max-width: 560px;
@@ -411,7 +424,7 @@
 
   .articles-filter-btn {
     font-size: 13px;
-    width: 110px;
+    width: 240px;
     padding: 8px 0;
   }
     .articles-sort-wrapper {
