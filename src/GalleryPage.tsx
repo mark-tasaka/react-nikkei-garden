@@ -236,8 +236,8 @@ const GalleryPage: React.FC = () => {
       <Carousel images={PANEL_IMAGES} title="Nikkei Legacy Park Panels" />
       <Carousel images={JUNE_IMAGES}  title="Spring Time in the Park: June 2026" />
       <Carousel images={MAY_IMAGES}   title="Nikkei Legacy Park: May 2026" />
-      <Carousel images={MISC_IMAGES}  title="A Look Back: Ohairi Park (Pre-2014)" />
       <Carousel images={BW_IMAGES}    title="Greenwood Historical Photos" />
+      <Carousel images={MISC_IMAGES}  title="A Look Back: Ohairi Park (Pre-2014)" />
     </main>
   );
 };
