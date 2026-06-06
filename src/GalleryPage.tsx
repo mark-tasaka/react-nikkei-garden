@@ -38,11 +38,13 @@ import panel2026_6 from './img/gallery/galleryPanels2026/panel2026-6.jpeg';
 
 import misc_1 from './img/gallery/misc/ohairi-park-1.JPG';
 import misc_2 from './img/gallery/misc/ohairi-park-2.JPG';
+import misc_3 from './img/gallery/misc/building2.png';
+import misc_4 from './img/gallery/misc/building2back.png';
 
 interface GalleryImage {
   src: string;
   alt: string;
-  caption?: string;
+  caption?: React.ReactNode; 
 }
 
 const PANEL_IMAGES: GalleryImage[] = [
@@ -86,8 +88,46 @@ const JUNE_IMAGES: GalleryImage[] = [
 ];
 
 const MISC_IMAGES: GalleryImage[] = [
-  { src: misc_1, alt: 'Ohairi Park – Photo 1', caption: 'Ohairi Park' },
-  { src: misc_2, alt: 'Ohairi Park – Photo 2', caption: 'Ohairi Park Flooding 2018'               },
+  { 
+    src: misc_1, 
+    alt: 'Ohairi Park – Photo 1', 
+    caption: (
+      <>
+        Ohairi Park
+      </>
+    )
+  },
+  { 
+    src: misc_2, 
+    alt: 'Ohairi Park – Photo 2', 
+    caption: (
+      <>
+        Ohairi Park Flooding 2018
+      </>
+    )
+  },
+  { 
+    src: misc_3, 
+    alt: 'Nikkei Legacy Park – Photo 3', 
+    caption: (
+      <>
+        #2 Building was formerly Armstrong Hotel. During the internment part of the building was the hospital and the rest were accommodation for the new arrivals. Notice the clothesline.
+        <br /><br />
+        Photo courtesy of Greenwood Museum
+      </>
+    )
+  },
+  { 
+    src: misc_4, 
+    alt: 'Nikkei Legacy Park – Photo 4', 
+    caption: (
+      <>
+        The back view of the #2 Building.
+        <br /><br />
+        Photo courtesy of Greenwood Museum
+      </>
+    )
+  },
 ];
 
 interface CarouselProps {
