@@ -297,7 +297,9 @@ const ArticlesPage: React.FC = () => {
         {(['all', 'Discover Nikkei', 'Japanese Canadian Legacies'] as const).map(f => (
           <button
             key={f}
-            className={`articles-filter-btn${filter === f ? ' articles-filter-btn--active' : ''}`}
+            className={`articles-filter-btn${
+              filter === f || filter === 'all' ? ' articles-filter-btn--active' : ''
+            }`}
             onClick={() => setFilter(f)}
           >
             {f === 'all' ? 'All' : f === 'Discover Nikkei' ? 'Discover Nikkei' : 'JC Legacies'}
