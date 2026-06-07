@@ -28,6 +28,7 @@ import spring2026_10 from './img/gallery/galleryJune2026/spring2026-10.jpeg';
 import spring2026_11 from './img/gallery/galleryJune2026/spring2026-11.jpeg';
 import spring2026_12 from './img/gallery/galleryJune2026/spring2026-12.jpeg';
 import spring2026_13 from './img/gallery/galleryJune2026/spring2026-13.jpeg';
+import spring2026_14 from './img/gallery/galleryJune2026/spring2026-14.jpeg';
 
 import panel2026_1 from './img/gallery/galleryPanels2026/panel2026-1.jpeg';
 import panel2026_2 from './img/gallery/galleryPanels2026/panel2026-2.jpeg';
@@ -35,6 +36,7 @@ import panel2026_3 from './img/gallery/galleryPanels2026/panel2026-3.jpeg';
 import panel2026_4 from './img/gallery/galleryPanels2026/panel2026-4.jpeg';
 import panel2026_5 from './img/gallery/galleryPanels2026/panel2026-5.jpeg';
 import panel2026_6 from './img/gallery/galleryPanels2026/panel2026-6.jpeg';
+import panel2026_7 from './img/gallery/galleryPanels2026/panel2026-7.jpeg';
 
 import misc_1 from './img/gallery/misc/ohairi-park-1.JPG';
 import misc_2 from './img/gallery/misc/ohairi-park-2.JPG';
@@ -53,6 +55,8 @@ import misc_14 from './img/gallery/misc/greenwood-3.jpg';
 import misc_15 from './img/gallery/misc/greenwood-4.jpg';
 import misc_16 from './img/gallery/misc/greenwood-5.jpg';
 import misc_17 from './img/gallery/misc/greenwood-6.jpg';
+import misc_18 from './img/gallery/misc/train-ride.jpg';
+import misc_19 from './img/gallery/misc/welcome.jpg';
 
 interface GalleryImage {
   src: string;
@@ -67,6 +71,7 @@ const PANEL_IMAGES: GalleryImage[] = [
   { src: panel2026_4, alt: 'Panels June 2026, Photo 4' },
   { src: panel2026_5, alt: 'Panels June 2026, Photo 5' },
   { src: panel2026_6, alt: 'Panels June 2026, Photo 6' },
+  { src: panel2026_7, alt: 'Panels June 2026, Photo 7' },
 ];
 
 const MAY_IMAGES: GalleryImage[] = [
@@ -98,6 +103,7 @@ const JUNE_IMAGES: GalleryImage[] = [
   { src: spring2026_11, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 11' },
   { src: spring2026_12, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 12' },
   { src: spring2026_13, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 13' },
+  { src: spring2026_14, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 14' },
 ];
 
 const MISC_IMAGES: GalleryImage[] = [
@@ -270,6 +276,24 @@ const BW_IMAGES_2: GalleryImage[] = [
     caption: (
       <>
         Father Benedict (left) and Mayor W.E. McArthur Sr (right)
+      </>
+    )
+  },
+  { 
+    src: misc_18, 
+    alt: 'Train ride to Greenwood', 
+    caption: (
+      <>
+        Train ride to Greenwood (1942)
+      </>
+    )
+  },
+  { 
+    src: misc_19, 
+    alt: 'Getting off the train and meeting a welcoming group from Mayor McArthur and Franciscan Sisters.', 
+    caption: (
+      <>
+        Getting off the train and meeting a welcoming group from Mayor McArthur and Franciscan Sisters. (1942)
       </>
     )
   },
