@@ -38,17 +38,17 @@ import panel2026_5 from './img/gallery/galleryPanels2026/panel2026-5.jpeg';
 import panel2026_6 from './img/gallery/galleryPanels2026/panel2026-6.jpeg';
 import panel2026_7 from './img/gallery/galleryPanels2026/panel2026-7.jpeg';
 
-import misc_1 from './img/gallery/misc/ohairi-park-1.JPG';
-import misc_2 from './img/gallery/misc/ohairi-park-2.JPG';
-import misc_3 from './img/gallery/misc/building2.png';
-import misc_4 from './img/gallery/misc/building2back.png';
-import misc_5 from './img/gallery/misc/building4.JPG';
-import misc_6 from './img/gallery/misc/nikkeiWomen.jpg';
-import misc_7 from './img/gallery/misc/Sacred_Heart.jpg';
-import misc_8 from './img/gallery/misc/firehall.jpg';
-import misc_9 from './img/gallery/misc/building5.JPG'
-import misc_10 from './img/gallery/misc/building7.JPG'
-import misc_11 from './img/gallery/misc/building11.JPG'
+import misc_1  from './img/gallery/misc/ohairi-park-1.JPG';
+import misc_2  from './img/gallery/misc/ohairi-park-2.JPG';
+import misc_3  from './img/gallery/misc/building2.png';
+import misc_4  from './img/gallery/misc/building2back.png';
+import misc_5  from './img/gallery/misc/building4.JPG';
+import misc_6  from './img/gallery/misc/nikkeiWomen.jpg';
+import misc_7  from './img/gallery/misc/Sacred_Heart.jpg';
+import misc_8  from './img/gallery/misc/firehall.jpg';
+import misc_9  from './img/gallery/misc/building5.JPG';
+import misc_10 from './img/gallery/misc/building7.JPG';
+import misc_11 from './img/gallery/misc/building11.JPG';
 import misc_12 from './img/gallery/misc/greenwood-1.jpg';
 import misc_13 from './img/gallery/misc/greenwood-2.jpg';
 import misc_14 from './img/gallery/misc/greenwood-3.jpg';
@@ -61,7 +61,7 @@ import misc_19 from './img/gallery/misc/welcome.jpg';
 interface GalleryImage {
   src: string;
   alt: string;
-  caption?: React.ReactNode; 
+  caption?: React.ReactNode;
 }
 
 const PANEL_IMAGES: GalleryImage[] = [
@@ -107,198 +107,176 @@ const JUNE_IMAGES: GalleryImage[] = [
 ];
 
 const MISC_IMAGES: GalleryImage[] = [
-  { 
-    src: misc_1, 
-    alt: 'Ohairi Park1', 
-    caption: (
-      <>
-        Ohairi Park
-      </>
-    )
+  {
+    src: misc_1,
+    alt: 'Ohairi Park1',
+    caption: <>Ohairi Park</>,
   },
-  { 
-    src: misc_2, 
-    alt: 'Ohairi Park Flooding', 
-    caption: (
-      <>
-        Ohairi Park Flooding 2018
-      </>
-    )
+  {
+    src: misc_2,
+    alt: 'Ohairi Park Flooding',
+    caption: <>Ohairi Park Flooding 2018</>,
   },
 ];
 
 const BW_IMAGES: GalleryImage[] = [
-  { 
-    src: misc_3, 
-    alt: 'Building #2', 
+  {
+    src: misc_3,
+    alt: 'Building #2',
     caption: (
       <>
-        #2 Building was formerly Armstrong Hotel. During the internment part of the building was the hospital and the rest were accommodation for the new arrivals. Notice the clothesline.
+        #2 Building was formerly Armstrong Hotel. During the internment part of the building was the
+        hospital and the rest were accommodation for the new arrivals. Notice the clothesline.
         <br /><br />
         Photo courtesy of Greenwood Museum
       </>
-    )
+    ),
   },
-  { 
-    src: misc_4, 
-    alt: 'Building #2', 
+  {
+    src: misc_4,
+    alt: 'Building #2',
     caption: (
       <>
         The back view of the #2 Building.
         <br /><br />
         Photo courtesy of Greenwood Museum
       </>
-    )
+    ),
   },
-  { 
-    src: misc_5, 
-    alt: 'Building #4', 
+  {
+    src: misc_5,
+    alt: 'Building #4',
     caption: (
       <>
-        #4 Building was the tallest building with the turret.  It was Rendell Block to the locals.
+        #4 Building was the tallest building with the turret. It was Rendell Block to the locals.
         <br /><br />
         Photo courtesy of Greenwood Museum
       </>
-    )
+    ),
   },
-  { 
-    src: misc_9, 
-    alt: 'Building #5', 
+  {
+    src: misc_9,
+    alt: 'Building #5',
     caption: (
       <>
         #5 Building
         <br /><br />
         Photo courtesy of Greenwood Museum
       </>
-    )
+    ),
   },
-  { 
-    src: misc_10, 
-    alt: 'Building #7', 
+  {
+    src: misc_10,
+    alt: 'Building #7',
     caption: (
       <>
         #7 Building
         <br /><br />
         Photo courtesy of Greenwood Museum
       </>
-    )
+    ),
   },
-  { 
-    src: misc_11, 
-    alt: 'Building #11', 
+  {
+    src: misc_11,
+    alt: 'Building #11',
     caption: (
       <>
         #11 Building
         <br /><br />
         Photo courtesy of Greenwood Museum
       </>
-    )
+    ),
   },
-  { 
-    src: misc_12, 
-    alt: 'Greenwood 1942', 
+  {
+    src: misc_12,
+    alt: 'Greenwood 1942',
     caption: (
       <>
-        Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to the buildings that JCs were designated
+        Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to
+        the buildings that JCs were designated
       </>
-    )
+    ),
   },
-  { 
-    src: misc_13, 
-    alt: 'Greenwood 1942', 
+  {
+    src: misc_13,
+    alt: 'Greenwood 1942',
     caption: (
       <>
-        Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to the buildings that JCs were designated
+        Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to
+        the buildings that JCs were designated
       </>
-    )
+    ),
   },
-  { 
-    src: misc_14, 
-    alt: 'Greenwood 1942', 
+  {
+    src: misc_14,
+    alt: 'Greenwood 1942',
     caption: (
       <>
-        Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to the buildings that JCs were designated
+        Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to
+        the buildings that JCs were designated
       </>
-    )
+    ),
   },
-  { 
-    src: misc_6, 
-    alt: 'Nikkei Women', 
-    caption: (
-      <>
-        Florence Kariya, Ruby Sora, Mitsi Sasaki, Eiko Nishimura, Shizu Nishimura
-      </>
-    )
+  {
+    src: misc_6,
+    alt: 'Nikkei Women',
+    caption: <>Florence Kariya, Ruby Sora, Mitsi Sasaki, Eiko Nishimura, Shizu Nishimura</>,
   },
-  { 
-    src: misc_7, 
-    alt: 'Sacred Heart Catholic Church', 
+  {
+    src: misc_7,
+    alt: 'Sacred Heart Catholic Church',
     caption: (
-      <>
-        Sacred Heart Catholic Church, built in 1911, was the spiritual home for many of the Nikkei community. 
-      </>
-    )
+      <>Sacred Heart Catholic Church, built in 1911, was the spiritual home for many of the Nikkei community.</>
+    ),
   },
-  { 
-    src: misc_8, 
-    alt: 'Fire Hall', 
-    caption: (
-      <>
-        Greenwood Fire Hall
-      </>
-    )
+  {
+    src: misc_8,
+    alt: 'Fire Hall',
+    caption: <>Greenwood Fire Hall</>,
   },
 ];
-
 
 const BW_IMAGES_2: GalleryImage[] = [
-  { 
-    src: misc_15, 
-    alt: 'Greenwood 1942', 
+  {
+    src: misc_15,
+    alt: 'Greenwood 1942',
     caption: (
       <>
-        Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to the buildings that JCs were designated
+        Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to
+        the buildings that JCs were designated
       </>
-    )
+    ),
   },
-  { 
-    src: misc_16, 
-    alt: 'Greenwood 1942', 
+  {
+    src: misc_16,
+    alt: 'Greenwood 1942',
     caption: (
       <>
-        Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to the buildings that JCs were designated
+        Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to
+        the buildings that JCs were designated
       </>
-    )
+    ),
   },
-  { 
-    src: misc_17, 
-    alt: 'Fr. Benedict and Mayor McArthur', 
-    caption: (
-      <>
-        Father Benedict (left) and Mayor W.E. McArthur Sr (right)
-      </>
-    )
+  {
+    src: misc_17,
+    alt: 'Fr. Benedict and Mayor McArthur',
+    caption: <>Father Benedict (left) and Mayor W.E. McArthur Sr (right)</>,
   },
-  { 
-    src: misc_18, 
-    alt: 'Train ride to Greenwood', 
-    caption: (
-      <>
-        Train ride to Greenwood (1942)
-      </>
-    )
+  {
+    src: misc_18,
+    alt: 'Train ride to Greenwood',
+    caption: <>Train ride to Greenwood (1942)</>,
   },
-  { 
-    src: misc_19, 
-    alt: 'Getting off the train and meeting a welcoming group from Mayor McArthur and Franciscan Sisters.', 
+  {
+    src: misc_19,
+    alt: 'Getting off the train and meeting a welcoming group from Mayor McArthur and Franciscan Sisters.',
     caption: (
-      <>
-        Getting off the train and meeting a welcoming group from Mayor McArthur and Franciscan Sisters. (1942)
-      </>
-    )
+      <>Getting off the train and meeting a welcoming group from Mayor McArthur and Franciscan Sisters. (1942)</>
+    ),
   },
 ];
 
+// ── Carousel ────────────────────────────────────────────────────────────────
 
 interface CarouselProps {
   images: GalleryImage[];
@@ -385,15 +363,53 @@ const Carousel: React.FC<CarouselProps> = ({ images, title }) => {
   );
 };
 
+// ── GalleryPage ─────────────────────────────────────────────────────────────
+
+type GalleryFilter = 'all' | 'nikkei' | 'historical' | 'ohairi';
+
+const FILTER_BUTTONS: { key: GalleryFilter; label: string }[] = [
+  { key: 'all',        label: 'All' },
+  { key: 'nikkei',     label: 'Nikkei Legacy Park' },
+  { key: 'historical', label: 'Historical Photos' },
+  { key: 'ohairi',     label: 'Ohairi Park' },
+];
+
 const GalleryPage: React.FC = () => {
+  const [filter, setFilter] = useState<GalleryFilter>('all');
+
   return (
     <main className="gallery-page">
-      <Carousel images={PANEL_IMAGES} title="Nikkei Legacy Park Panels" />
-      <Carousel images={JUNE_IMAGES}  title="Spring Time in the Park: June 2026" />
-      <Carousel images={MAY_IMAGES}   title="Nikkei Legacy Park: May 2026" />
-      <Carousel images={BW_IMAGES}    title="Greenwood Historical Photos: Gallery 1" />
-      <Carousel images={BW_IMAGES_2}    title="Greenwood Historical Photos: Gallery 2" />
-      <Carousel images={MISC_IMAGES}  title="A Look Back: Ohairi Park (Pre-2014)" />
+
+      {/* ── Filter buttons ── */}
+      <div className="gallery-filter-wrapper">
+        {FILTER_BUTTONS.map(({ key, label }) => (
+          <button
+            key={key}
+            className={`gallery-filter-btn${filter === key ? ' gallery-filter-btn--active' : ''}`}
+            onClick={() => setFilter(key)}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+
+      {(filter === 'all' || filter === 'nikkei') && (
+        <>
+          <Carousel images={PANEL_IMAGES} title="Nikkei Legacy Park Panels" />
+          <Carousel images={JUNE_IMAGES}  title="Spring Time in the Park: June 2026" />
+          <Carousel images={MAY_IMAGES}   title="Nikkei Legacy Park: May 2026" />
+        </>
+      )}
+      {(filter === 'all' || filter === 'historical') && (
+        <>
+          <Carousel images={BW_IMAGES}   title="Greenwood Historical Photos: Gallery 1" />
+          <Carousel images={BW_IMAGES_2} title="Greenwood Historical Photos: Gallery 2" />
+        </>
+      )}
+      {(filter === 'all' || filter === 'ohairi') && (
+        <Carousel images={MISC_IMAGES} title="A Look Back: Ohairi Park (Pre-2014)" />
+      )}
+
     </main>
   );
 };
