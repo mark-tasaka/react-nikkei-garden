@@ -47,6 +47,9 @@ import misc_8 from './img/gallery/misc/firehall.jpg';
 import misc_9 from './img/gallery/misc/building5.JPG'
 import misc_10 from './img/gallery/misc/building7.JPG'
 import misc_11 from './img/gallery/misc/building11.JPG'
+import misc_12 from './img/gallery/misc/greenwood-1.jpg';
+import misc_13 from './img/gallery/misc/greenwood-2.jpg';
+import misc_14 from './img/gallery/misc/greenwood-3.jpg';
 
 interface GalleryImage {
   src: string;
@@ -179,6 +182,33 @@ const BW_IMAGES: GalleryImage[] = [
         #11 Building
         <br /><br />
         Photo courtesy of Greenwood Museum
+      </>
+    )
+  },
+  { 
+    src: misc_12, 
+    alt: 'Greenwood 1942', 
+    caption: (
+      <>
+        Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to the buildings that JCs were designated
+      </>
+    )
+  },
+  { 
+    src: misc_13, 
+    alt: 'Greenwood 1942', 
+    caption: (
+      <>
+        Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to the buildings that JCs were designated
+      </>
+    )
+  },
+  { 
+    src: misc_14, 
+    alt: 'Greenwood 1942', 
+    caption: (
+      <>
+        Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to the buildings that JCs were designated
       </>
     )
   },
