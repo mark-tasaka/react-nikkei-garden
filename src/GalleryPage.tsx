@@ -385,7 +385,7 @@ const GalleryPage: React.FC = () => {
         {FILTER_BUTTONS.map(({ key, label }) => (
           <button
             key={key}
-            className={`gallery-filter-btn${filter === key ? ' gallery-filter-btn--active' : ''}`}
+            className={`gallery-filter-btn${filter === key || filter === 'all' ? ' gallery-filter-btn--active' : ''}`}
             onClick={() => setFilter(key)}
           >
             {label}
