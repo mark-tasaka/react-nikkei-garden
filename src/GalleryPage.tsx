@@ -50,6 +50,9 @@ import misc_11 from './img/gallery/misc/building11.JPG'
 import misc_12 from './img/gallery/misc/greenwood-1.jpg';
 import misc_13 from './img/gallery/misc/greenwood-2.jpg';
 import misc_14 from './img/gallery/misc/greenwood-3.jpg';
+import misc_15 from './img/gallery/misc/greenwood-4.jpg';
+import misc_16 from './img/gallery/misc/greenwood-5.jpg';
+import misc_17 from './img/gallery/misc/greenwood-6.jpg';
 
 interface GalleryImage {
   src: string;
@@ -241,6 +244,38 @@ const BW_IMAGES: GalleryImage[] = [
   },
 ];
 
+
+const BW_IMAGES_2: GalleryImage[] = [
+  { 
+    src: misc_15, 
+    alt: 'Greenwood 1942', 
+    caption: (
+      <>
+        Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to the buildings that JCs were designated
+      </>
+    )
+  },
+  { 
+    src: misc_16, 
+    alt: 'Greenwood 1942', 
+    caption: (
+      <>
+        Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to the buildings that JCs were designated
+      </>
+    )
+  },
+  { 
+    src: misc_17, 
+    alt: 'Fr. Benedict and Mayor McArthur', 
+    caption: (
+      <>
+        Father Benedict (left) and Mayor W.E. McArthur Sr (right)
+      </>
+    )
+  },
+];
+
+
 interface CarouselProps {
   images: GalleryImage[];
   title: string;
@@ -332,7 +367,8 @@ const GalleryPage: React.FC = () => {
       <Carousel images={PANEL_IMAGES} title="Nikkei Legacy Park Panels" />
       <Carousel images={JUNE_IMAGES}  title="Spring Time in the Park: June 2026" />
       <Carousel images={MAY_IMAGES}   title="Nikkei Legacy Park: May 2026" />
-      <Carousel images={BW_IMAGES}    title="Greenwood Historical Photos" />
+      <Carousel images={BW_IMAGES}    title="Greenwood Historical Photos: Gallery 1" />
+      <Carousel images={BW_IMAGES_2}    title="Greenwood Historical Photos: Gallery 2" />
       <Carousel images={MISC_IMAGES}  title="A Look Back: Ohairi Park (Pre-2014)" />
     </main>
   );
