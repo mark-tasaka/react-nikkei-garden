@@ -61,6 +61,13 @@ import misc_20  from './img/gallery/misc/ohairi-park-3.JPG';
 import misc_21  from './img/gallery/misc/ohairi-park-4.JPG';
 import misc_22  from './img/gallery/misc/ohairi-park-5.JPG';
 
+import restoration1  from './img/gallery/restoration/restoration1.JPG';
+import restoration2  from './img/gallery/restoration/restoration2.JPG';
+import restoration3  from './img/gallery/restoration/restoration3.JPG';
+import restoration4  from './img/gallery/restoration/restoration4.JPG';
+import restoration5  from './img/gallery/restoration/restoration5.JPG';
+import restoration6  from './img/gallery/restoration/restoration6.JPG';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -134,6 +141,39 @@ const MISC_IMAGES: GalleryImage[] = [
     src: misc_22,
     alt: 'Ohairi Park Flooding',
     caption: <>Ohairi Park</>,
+  },
+];
+
+const RESTORATION_IMAGES: GalleryImage[] = [
+  {
+    src: restoration1,
+    alt: 'Restoration Image 1',
+    caption: <>Restoration and renovation of Ohairi Park to Nikkei Legacy Park (2018)</>,
+  },
+  {
+    src: restoration2,
+    alt: 'Restoration Image 2',
+    caption: <>Restoration and renovation of Ohairi Park to Nikkei Legacy Park (2018)</>,
+  },
+  {
+    src: restoration3,
+    alt: 'Restoration Image 3',
+    caption: <>Restoration and renovation of Ohairi Park to Nikkei Legacy Park (2018)</>,
+  },
+  {
+    src: restoration4,
+    alt: 'Restoration Image 4',
+    caption: <>Dignitaries cutting the ribbon in 2018 for the first grand opening of Nikkei Legacy Park.   Left to right: CAO Wendy Higashi, Everett Baker Grand Forks, MLA Katrina Conroy and Mayor Ed Smith.</>,
+  },
+  {
+    src: restoration5,
+    alt: 'Restoration Image 5',
+    caption: <>Restoration and renovation of Ohairi Park to Nikkei Legacy Park (2018)</>,
+  },
+  {
+    src: restoration6,
+    alt: 'Restoration Image 6',
+    caption: <>Restoration and renovation of Ohairi Park to Nikkei Legacy Park (2018)</>,
   },
 ];
 
@@ -403,12 +443,13 @@ const Carousel: React.FC<CarouselProps> = ({ images, title }) => {
 
 // ── GalleryPage ─────────────────────────────────────────────────────────────
 
-type GalleryFilter = 'all' | 'nikkei' | 'historical' | 'ohairi';
+type GalleryFilter = 'all' | 'nikkei' | 'historical' | 'restoration' | 'ohairi' ;
 
 const FILTER_BUTTONS: { key: GalleryFilter; label: string }[] = [
   { key: 'all',        label: 'All' },
   { key: 'nikkei',     label: 'Nikkei Legacy Park' },
   { key: 'historical', label: 'Historical Photos' },
+  { key: 'restoration', label: 'Restoration' },
   { key: 'ohairi',     label: 'Ohairi Park' },
 ];
 
@@ -443,6 +484,9 @@ const GalleryPage: React.FC = () => {
           <Carousel images={BW_IMAGES}   title="Greenwood Historical Photos: Gallery 1" />
           <Carousel images={BW_IMAGES_2} title="Greenwood Historical Photos: Gallery 2" />
         </>
+      )}
+      {(filter === 'all' || filter === 'restoration') && (
+        <Carousel images={RESTORATION_IMAGES} title="Restoration and Renovation: 2018" />
       )}
       {(filter === 'all' || filter === 'ohairi') && (
         <Carousel images={MISC_IMAGES} title="A Look Back: Ohairi Park (Pre-2014)" />
