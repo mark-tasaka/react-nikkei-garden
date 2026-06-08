@@ -156,10 +156,10 @@ const BW_IMAGES: GalleryImage[] = [
   },
   {
     src: misc_9,
-    alt: 'Building #5',
+    alt: 'Building #3',
     caption: (
       <>
-        #5 Building
+        #3 Building (now McArthur Centre)
         <br /><br />
         Photo courtesy of Greenwood Museum
       </>
@@ -167,10 +167,10 @@ const BW_IMAGES: GalleryImage[] = [
   },
   {
     src: misc_10,
-    alt: 'Building #7',
+    alt: 'Building #1',
     caption: (
       <>
-        #7 Building
+        #1 Building where about 90 people were squeezed on each floor with one stove and one toilet.
         <br /><br />
         Photo courtesy of Greenwood Museum
       </>
@@ -181,7 +181,7 @@ const BW_IMAGES: GalleryImage[] = [
     alt: 'Building #11',
     caption: (
       <>
-        #11 Building
+        #11 Building (left) - Miller Block, #7 Building (middle), #11 Building (right) - Mellor Block. 
         <br /><br />
         Photo courtesy of Greenwood Museum
       </>
@@ -219,8 +219,8 @@ const BW_IMAGES: GalleryImage[] = [
   },
   {
     src: misc_6,
-    alt: 'Nikkei Women',
-    caption: <>Florence Kariya, Ruby Sora, Mitsi Sasaki, Eiko Nishimura, Shizu Nishimura</>,
+    alt: 'Ladies working at BC Security Commission office.',
+    caption: <>Ladies working at BC Security Commission office.</>,
   },
   {
     src: misc_7,
@@ -231,8 +231,10 @@ const BW_IMAGES: GalleryImage[] = [
   },
   {
     src: misc_8,
-    alt: 'Fire Hall',
-    caption: <>Greenwood Fire Hall</>,
+    alt: '#10 Building',
+    caption: <>#10 Building
+        <br /><br />
+        Photo courtesy of Eiko Kimoto</>,
   },
 ];
 
