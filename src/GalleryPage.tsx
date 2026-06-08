@@ -60,6 +60,11 @@ import misc_19 from './img/gallery/misc/welcome.jpg';
 import misc_20  from './img/gallery/misc/ohairi-park-3.JPG';
 import misc_21  from './img/gallery/misc/ohairi-park-4.JPG';
 import misc_22  from './img/gallery/misc/ohairi-park-5.JPG';
+import misc_23  from './img/gallery/misc/FatherKatsuno.jpg';
+import misc_24  from './img/gallery/misc/GHSstudents46.jpg';
+import misc_25  from './img/gallery/misc/nikkeiGirls.jpg';
+import misc_26  from './img/gallery/misc/GreenwoodMothers.jpg';
+import misc_27  from './img/gallery/misc/rcmp.jpg';
 
 import restoration1  from './img/gallery/restoration/restoration1.JPG';
 import restoration2  from './img/gallery/restoration/restoration2.JPG';
@@ -351,7 +356,52 @@ const BW_IMAGES_2: GalleryImage[] = [
         <br /><br />
         Photo courtesy of Greenwood Museum</>
     ),
-  },
+    },
+    {
+      src: misc_23,
+      alt: 'Father Katsuno',
+      caption: (
+        <>Father Peter Katsuno (Sacred Heart High School in the background)
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: misc_24,
+      alt: 'GHS students in 1946',
+      caption: (
+        <>Greenwood Public High School students circa 1946-47
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: misc_25,
+      alt: 'Nikkei girls',
+      caption: (
+        <>Young Nisei girls hiking up to the smelter for a picnic.
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: misc_26,
+      alt: 'Greenwood mothers',
+      caption: (
+        <>Greenwood mothers 1940s
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: misc_27,
+      alt: 'RCMP',
+      caption: (
+        <>BCSC commissioner Leonard Cowdrill and RCMP.
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
 ];
 
 // ── Carousel ────────────────────────────────────────────────────────────────
