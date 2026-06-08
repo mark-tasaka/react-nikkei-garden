@@ -65,6 +65,9 @@ import misc_24  from './img/gallery/misc/GHSstudents46.jpg';
 import misc_25  from './img/gallery/misc/nikkeiGirls.jpg';
 import misc_26  from './img/gallery/misc/GreenwoodMothers.jpg';
 import misc_27  from './img/gallery/misc/rcmp.jpg';
+import misc_28  from './img/gallery/misc/Class1940.jpg';
+import misc_29  from './img/gallery/misc/Greenwood1942-43IwasakiandYuasa.jpg';
+import misc_30  from './img/gallery/misc/Greenwoodboys40s.jpg';
 
 import restoration1  from './img/gallery/restoration/restoration1.JPG';
 import restoration2  from './img/gallery/restoration/restoration2.JPG';
@@ -402,6 +405,33 @@ const INTERNEES_IMAGES: GalleryImage[] = [
       alt: 'RCMP',
       caption: (
         <>The police and Mrs. Fumi  Matsubuchi.
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: misc_28,
+      alt: 'Embroidery Club',
+      caption: (
+        <>Greenwood Embroidery Club 1940s
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: misc_29,
+      alt: 'Iwasaki and Yuasa ladies.',
+      caption: (
+        <>Iwasaki and Yuasa ladies.
+          <br /><br />
+          Photo courtesy of Moira Matsubuchi-Shaw</>
+      ),
+    },
+    {
+      src: misc_30,
+      alt: 'Greenwood boys',
+      caption: (
+        <>Teenage JC and local boys
           <br /><br />
           Photo courtesy of Greenwood Museum</>
       ),
