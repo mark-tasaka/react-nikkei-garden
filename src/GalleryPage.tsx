@@ -375,6 +375,10 @@ const BW_IMAGES_2: GalleryImage[] = [
           Photo courtesy of Greenwood Museum</>
       ),
     },
+];
+
+
+const INTERNEES_IMAGES: GalleryImage[] = [
     {
       src: misc_25,
       alt: 'Nikkei girls',
@@ -397,12 +401,13 @@ const BW_IMAGES_2: GalleryImage[] = [
       src: misc_27,
       alt: 'RCMP',
       caption: (
-        <>BCSC commissioner Leonard Cowdrill and RCMP.
+        <>The police and Mrs. Fumi  Matsubuchi.
           <br /><br />
           Photo courtesy of Greenwood Museum</>
       ),
     },
 ];
+
 
 // ── Carousel ────────────────────────────────────────────────────────────────
 
@@ -533,6 +538,7 @@ const GalleryPage: React.FC = () => {
         <>
           <Carousel images={BW_IMAGES}   title="Greenwood Historical Photos: Gallery 1" />
           <Carousel images={BW_IMAGES_2} title="Greenwood Historical Photos: Gallery 2" />
+          <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45" />
         </>
       )}
       {(filter === 'all' || filter === 'restoration') && (
