@@ -130,7 +130,7 @@ const JUNE_IMAGES: GalleryImage[] = [
 const MISC_IMAGES: GalleryImage[] = [
   {
     src: misc_1,
-    alt: 'Ohairi Park1',
+    alt: 'Ohairi Park',
     caption: <>Ohairi Park</>,
   },
   {
@@ -140,18 +140,18 @@ const MISC_IMAGES: GalleryImage[] = [
   },
   {
     src: misc_20,
-    alt: 'Ohairi Park Flooding',
-    caption: <>Ohairi Park</>,
+    alt: 'Ohairi Park',
+    caption: <>Ohairi Park with the original red bridge and picnic hut with no walls.</>,
   },
   {
     src: misc_21,
-    alt: 'Ohairi Park Flooding',
-    caption: <>Ohairi Park False Brook (now filled)</>,
+    alt: 'Ohairi Park',
+    caption: <>Faux creek</>,
   },
   {
     src: misc_22,
-    alt: 'Ohairi Park Flooding',
-    caption: <>Ohairi Park</>,
+    alt: 'Ohairi Park',
+    caption: <>Walls added in 2015</>,
   },
 ];
 
@@ -159,32 +159,32 @@ const RESTORATION_IMAGES: GalleryImage[] = [
   {
     src: restoration1,
     alt: 'Restoration Image 1',
-    caption: <>Restoration and renovation of Ohairi Park to Nikkei Legacy Park (2018)</>,
+    caption: <>Making of Nikkei Legacy Park front platform. Framing done by Greenwood Yardwork</>,
   },
   {
     src: restoration2,
     alt: 'Restoration Image 2',
-    caption: <>Restoration and renovation of Ohairi Park to Nikkei Legacy Park (2018)</>,
+    caption: <>Public Works pouring concrete 2016.</>,
   },
   {
     src: restoration3,
     alt: 'Restoration Image 3',
-    caption: <>Restoration and renovation of Ohairi Park to Nikkei Legacy Park (2018)</>,
+    caption: <>Making of Nikkei Legacy Park front platform. Framing done by Greenwood Yardwork</>,
   },
   {
     src: restoration4,
     alt: 'Restoration Image 4',
-    caption: <>Dignitaries cutting the ribbon in 2018 for the first grand opening of Nikkei Legacy Park.   Left to right: CAO Wendy Higashi, Everett Baker Grand Forks, MLA Katrina Conroy and Mayor Ed Smith.</>,
-  },
-  {
-    src: restoration5,
-    alt: 'Restoration Image 5',
-    caption: <>Restoration and renovation of Ohairi Park to Nikkei Legacy Park (2018)</>,
+    caption: <>2018 ribbon-cutting for the new Nikkei Legacy Park.   Left to right: CAO Wendy Higashi, Everett Baker Grand Forks, MLA Katrina Conroy and Mayor Ed Smith.</>,
   },
   {
     src: restoration6,
     alt: 'Restoration Image 6',
-    caption: <>Restoration and renovation of Ohairi Park to Nikkei Legacy Park (2018)</>,
+    caption: <>Prepping to lay aggregates.</>,
+  },
+  {
+    src: restoration5,
+    alt: 'Restoration Image 5',
+    caption: <>The front platform taking shape.</>,
   },
 ];
 
@@ -602,7 +602,7 @@ const GalleryPage: React.FC = () => {
         </>
       )}
       {(filter === 'all' || filter === 'restoration') && (
-        <Carousel images={RESTORATION_IMAGES} title="Restoration and Renovation: 2018" />
+        <Carousel images={RESTORATION_IMAGES} title="Restoration and Renovation: 2016" />
       )}
       {(filter === 'all' || filter === 'ohairi') && (
         <Carousel images={MISC_IMAGES} title="A Look Back: Ohairi Park (Pre-2014)" />
