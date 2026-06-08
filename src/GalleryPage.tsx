@@ -68,6 +68,9 @@ import misc_27  from './img/gallery/misc/rcmp.jpg';
 import misc_28  from './img/gallery/misc/Class1940.jpg';
 import misc_29  from './img/gallery/misc/Greenwood1942-43IwasakiandYuasa.jpg';
 import misc_30  from './img/gallery/misc/Greenwoodboys40s.jpg';
+import misc_31  from './img/gallery/misc/GreenwoodUnitedChurchGroup9.jpg';
+import misc_32  from './img/gallery/misc/HDSHSGrads.jpg';
+import misc_33  from './img/gallery/misc/wedding.jpg';
 
 import restoration1  from './img/gallery/restoration/restoration1.JPG';
 import restoration2  from './img/gallery/restoration/restoration2.JPG';
@@ -434,6 +437,33 @@ const INTERNEES_IMAGES: GalleryImage[] = [
         <>Teenage JC and local boys
           <br /><br />
           Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: misc_31,
+      alt: 'United Church',
+      caption: (
+        <>Unitd Church group in Greenwood, 1940s
+          <br /><br />
+          Photo courtesy of United Church of Canada</>
+      ),
+    },
+    {
+      src: misc_32,
+      alt: 'Sacred Heart School Grade 8 grad class 1945-46',
+      caption: (
+        <>Sacred Heart School Grade 8 grad class 1945-46
+          <br /><br />
+          Photo courtesy of Francis Nakagawa</>
+      ),
+    },
+    {
+      src: misc_33,
+      alt: 'Fumi Nasu’s wedding with Maid of Honour Mitsi Sasaki',
+      caption: (
+        <>Fumi Nasu’s wedding with Maid of Honour Mitsi Sasaki
+          <br /><br />
+          Photo courtesy of Mytsuu Fugeta</>
       ),
     },
 ];
