@@ -57,6 +57,9 @@ import misc_16 from './img/gallery/misc/greenwood-5.jpg';
 import misc_17 from './img/gallery/misc/greenwood-6.jpg';
 import misc_18 from './img/gallery/misc/train-ride.jpg';
 import misc_19 from './img/gallery/misc/welcome.jpg';
+import misc_20  from './img/gallery/misc/ohairi-park-3.JPG';
+import misc_21  from './img/gallery/misc/ohairi-park-4.JPG';
+import misc_22  from './img/gallery/misc/ohairi-park-5.JPG';
 
 interface GalleryImage {
   src: string;
@@ -116,6 +119,21 @@ const MISC_IMAGES: GalleryImage[] = [
     src: misc_2,
     alt: 'Ohairi Park Flooding',
     caption: <>Ohairi Park Flooding 2018</>,
+  },
+  {
+    src: misc_20,
+    alt: 'Ohairi Park Flooding',
+    caption: <>Ohairi Park</>,
+  },
+  {
+    src: misc_21,
+    alt: 'Ohairi Park Flooding',
+    caption: <>Ohairi Park False Brook (now filled)</>,
+  },
+  {
+    src: misc_22,
+    alt: 'Ohairi Park Flooding',
+    caption: <>Ohairi Park</>,
   },
 ];
 
