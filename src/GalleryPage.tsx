@@ -199,7 +199,7 @@ const BW_IMAGES: GalleryImage[] = [
     alt: 'Building #11',
     caption: (
       <>
-        #11 Building (left) - Miller Block, #7 Building (middle), #11 Building (right) - Mellor Block. 
+        #5 Building (left) - Miller Block, #7 Building (middle), #11 Building (right) - Mellor Block. 
         <br /><br />
         Photo courtesy of Greenwood Museum
       </>
@@ -212,6 +212,8 @@ const BW_IMAGES: GalleryImage[] = [
       <>
         Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to
         the buildings that JCs were designated
+        <br /><br />
+        Photo courtesy of Greenwood Museum
       </>
     ),
   },
@@ -222,6 +224,8 @@ const BW_IMAGES: GalleryImage[] = [
       <>
         Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to
         the buildings that JCs were designated
+        <br /><br />
+        Photo courtesy of Greenwood Museum
       </>
     ),
   },
@@ -232,19 +236,23 @@ const BW_IMAGES: GalleryImage[] = [
       <>
         Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to
         the buildings that JCs were designated
+        <br /><br />
+        Photo courtesy of Greenwood Museum
       </>
     ),
   },
   {
     src: misc_6,
     alt: 'Ladies working at BC Security Commission office.',
-    caption: <>Ladies working at BC Security Commission office.</>,
+    caption: <>Ladies working at BC Security Commission office.
+        <br /><br />
+        Photo courtesy of Greenwood Museum</>,
   },
   {
     src: misc_7,
     alt: 'Sacred Heart Catholic Church',
     caption: (
-      <>Sacred Heart Catholic Church, built in 1911, was the spiritual home for many of the Nikkei community.</>
+      <>Sacred Heart Catholic Church.  Built in 1898, but officially opened in 1901 where many Japanese Canadian Catholics attended Mass.</>
     ),
   },
   {
@@ -264,6 +272,8 @@ const BW_IMAGES_2: GalleryImage[] = [
       <>
         Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to
         the buildings that JCs were designated
+        <br /><br />
+        Photo courtesy of Greenwood Museum
       </>
     ),
   },
@@ -274,24 +284,32 @@ const BW_IMAGES_2: GalleryImage[] = [
       <>
         Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to
         the buildings that JCs were designated
+        <br /><br />
+        Photo courtesy of Greenwood Museum
       </>
     ),
   },
   {
     src: misc_17,
     alt: 'Fr. Benedict and Mayor McArthur',
-    caption: <>Father Benedict (left) and Mayor W.E. McArthur Sr (right)</>,
+    caption: <>Father Benedict (left) and Mayor W.E. McArthur Sr (right)
+        <br /><br />
+        Photo courtesy of Greenwood Museum</>,
   },
   {
     src: misc_18,
     alt: 'Train ride to Greenwood',
-    caption: <>Train ride to Greenwood (1942)</>,
+    caption: <>Train ride to Greenwood (1942)
+        <br /><br />
+        Photo courtesy of Greenwood Museum</>,
   },
   {
     src: misc_19,
     alt: 'Getting off the train and meeting a welcoming group from Mayor McArthur and Franciscan Sisters.',
     caption: (
-      <>Getting off the train and meeting a welcoming group from Mayor McArthur and Franciscan Sisters. (1942)</>
+      <>Getting off the train and meeting a welcoming group from Mayor McArthur and Franciscan Sisters. (1942)
+        <br /><br />
+        Photo courtesy of Greenwood Museum</>
     ),
   },
 ];
