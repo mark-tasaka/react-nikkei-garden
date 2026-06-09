@@ -23,6 +23,7 @@ import discover18 from './img/articles/discover18.jpeg';
 import discover19 from './img/articles/discover19.jpeg';
 import legacies1   from './img/articles/legacies1.jpeg';
 import legacies2 from './img/articles/legacies2.jpeg';
+import greenwood1 from './img/articles/greenwood1.jpeg';
 
 interface ArticleEntry {
   source:     string;
@@ -246,6 +247,16 @@ const ARTICLES: ArticleEntry[] = [
     excerpt:   'The Greenwood Nikkei Memorial Garden, which opened on July 20, 2025, is dedicated to the 1,200 Japanese Canadians who were forcibly uprooted from the west coast and sent to Greenwood, beginning on April 26, 1942. Greenwood was the first internment site to open – a new temporary home for the exiled citizens, most of whom were Canadian. The garden is part of Nikkei Legacy Park (formerly Ohairi Park), situated off Highway 3 that runs through Greenwood.',
     img:       legacies2,
   },
+  {
+    source:    'Greenwood Nikkei',
+    sourceUrl: 'https://www.greenwoodnikkei.ca/',
+    title:     'Nikkei Legacy Park Project',
+    author:    'Chuck Tasaka',
+    date:      'June 1, 2018',
+    link:      'https://www.greenwoodnikkei.ca/Nekkei-Legacy-Park-Project.html',
+    excerpt:   'The names have changed since the 1990’s. This park was originally called Boundary Creek Park. The main purpose was to be used as a free overnight campsite and a rest stop for weary travelers. In 1997, the City of Greenwood was presented with a large, brass internment history plaque by members of the National Association of Japanese Canadians from Kamloops. Thus, the city councillors decided to have a ‘Name That Park’ contest in the local paper.',
+    img:       greenwood1,
+  },
 ];
 
 function truncateWords(text: string, maxWords: number): string {
@@ -288,7 +299,7 @@ type SortDir   = 'desc' | 'asc';
 
 const ArticlesPage: React.FC = () => {
   const [query,     setQuery]     = useState('');
-  const [filter,    setFilter]    = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies'>('all');
+  const [filter, setFilter] = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies' | 'Greenwood Nikkei'>('all');
   const [sortField, setSortField] = useState<SortField>('year');
   const [sortDir,   setSortDir]   = useState<SortDir>('desc');
 
@@ -331,15 +342,15 @@ const ArticlesPage: React.FC = () => {
 
       {/* ── Filter buttons ── */}
       <div className="articles-filter-wrapper">
-        {(['all', 'Discover Nikkei', 'Japanese Canadian Legacies'] as const).map(f => (
+        {(['all', 'Discover Nikkei', 'Japanese Canadian Legacies', 'Greenwood Nikkei'] as const).map(f => (
           <button
             key={f}
             className={`articles-filter-btn${
-              filter === f || filter === 'all' ? ' articles-filter-btn--active' : ''
+              filter === f ? ' articles-filter-btn--active' : ''
             }`}
             onClick={() => setFilter(f)}
           >
-            {f === 'all' ? 'All' : f === 'Discover Nikkei' ? 'Discover Nikkei' : 'JC Legacies'}
+            {f === 'all' ? 'All' : f === 'Discover Nikkei' ? 'Discover Nikkei' : f === 'Japanese Canadian Legacies' ? 'JC Legacies' : 'Greenwood Nikkei'}
           </button>
         ))}
       </div>
