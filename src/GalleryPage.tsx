@@ -322,40 +322,16 @@ const BW_IMAGES: GalleryImage[] = [
 
 const BW_IMAGES_2: GalleryImage[] = [
   {
-    src: misc_15,
-    alt: 'Greenwood 1942',
-    caption: (
-      <>
-        Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to
-        the buildings that JCs were designated
-        <br /><br />
-        Photo courtesy of Greenwood Museum
-      </>
-    ),
-  },
-  {
-    src: misc_16,
-    alt: 'Greenwood 1942',
-    caption: (
-      <>
-        Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to
-        the buildings that JCs were designated
-        <br /><br />
-        Photo courtesy of Greenwood Museum
-      </>
-    ),
-  },
-  {
     src: misc_17,
     alt: 'Fr. Benedict and Mayor McArthur',
-    caption: <>Father Benedict (left) and Mayor W.E. McArthur Sr (right)
+    caption: <>Father Benedict Quigley (left) and Mayor W.E. McArthur Sr (right).  Responsible for making Greenwood the first internment site
         <br /><br />
         Photo courtesy of Greenwood Museum</>,
   },
   {
     src: misc_18,
     alt: 'Train ride to Greenwood',
-    caption: <>Train ride to Greenwood (1942)
+    caption: <>Train ride to Greenwood (1942). Little boy in the front is Isao Mori
         <br /><br />
         Photo courtesy of Greenwood Museum</>,
   },
@@ -363,20 +339,33 @@ const BW_IMAGES_2: GalleryImage[] = [
     src: misc_19,
     alt: 'Getting off the train and meeting a welcoming group from Mayor McArthur and Franciscan Sisters.',
     caption: (
-      <>Getting off the train and meeting a welcoming group from Mayor McArthur and Franciscan Sisters. (1942)
+      <>Sister Eugenia and Sister Jerome were at the train station  to greet their parishioners.
         <br /><br />
         Photo courtesy of Greenwood Museum</>
     ),
-    },
-    {
-      src: misc_23,
-      alt: 'Father Katsuno',
-      caption: (
-        <>Father Peter Katsuno (Sacred Heart High School in the background)
-          <br /><br />
-          Photo courtesy of Greenwood Museum</>
-      ),
-    },
+  },
+  {
+    src: misc_16,
+    alt: 'Greenwood 1942',
+    caption: (
+      <>
+        Greenwood 1942 First day
+        <br /><br />
+        Photo courtesy of Greenwood Museum
+      </>
+    ),
+  },
+  {
+    src: misc_15,
+    alt: 'Greenwood 1942',
+    caption: (
+      <>
+        RCMP and BCSC supervising the arrival of the Japanese Canadians.
+        <br /><br />
+        Photo courtesy of Greenwood Museum
+      </>
+    ),
+  },
     {
       src: misc_24,
       alt: 'GHS students in 1946',
@@ -390,6 +379,15 @@ const BW_IMAGES_2: GalleryImage[] = [
 
 
 const INTERNEES_IMAGES: GalleryImage[] = [
+    {
+      src: misc_23,
+      alt: 'Father Katsuno',
+      caption: (
+        <>Father Peter Katsuno (Sacred Heart High School in the background)
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
     {
       src: misc_25,
       alt: 'Nikkei girls',
