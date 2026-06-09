@@ -136,7 +136,7 @@ const MISC_IMAGES: GalleryImage[] = [
   {
     src: misc_2,
     alt: 'Ohairi Park Flooding',
-    caption: <>Ohairi Park Flooding 2018</>,
+    caption: <>Ohairi Park Flooding, April to May 2018</>,
   },
   {
     src: misc_20,
