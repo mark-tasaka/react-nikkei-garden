@@ -79,6 +79,11 @@ import restoration4  from './img/gallery/restoration/restoration4.JPG';
 import restoration5  from './img/gallery/restoration/restoration5.JPG';
 import restoration6  from './img/gallery/restoration/restoration6.JPG';
 
+import housing1943_1  from './img/gallery/1943Housing/housing1943_1.jpeg';
+import housing1943_2  from './img/gallery/1943Housing/housing1943_2.jpeg';
+import housing1943_3  from './img/gallery/1943Housing/housing1943_3.jpeg';
+import housing1943_4  from './img/gallery/1943Housing/housing1943_4.jpeg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -469,6 +474,45 @@ const INTERNEES_IMAGES: GalleryImage[] = [
 ];
 
 
+const HOUSING_IMAGES: GalleryImage[] = [
+    {
+      src: housing1943_1,
+      alt: '1943 Map',
+      caption: (
+        <>Map of Greenwood City where Japanese Canadians stayed.
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: housing1943_2,
+      alt: '1943 census',
+      caption: (
+        <>1943 Japanese Canadian Housing census of Greenwood City.  Some stayed in “self-supporting” houses shared by three or four families.
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: housing1943_3,
+      alt: '1943 census',
+      caption: (
+        <>1943 Japanese Canadian Housing census of Greenwood City.  Some stayed in “self-supporting” houses shared by three or four families.
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: housing1943_4,
+      alt: '1943 census',
+      caption: (
+        <>Nikkei Legacy Park: Onsite Map of Greenwood City where Japanese Canadians stayed in 1943.
+          <br /><br />
+          Donated by Greenwood Museum with grant from JCLS</>
+      ),
+    },
+];
+
 // ── Carousel ────────────────────────────────────────────────────────────────
 
 interface CarouselProps {
@@ -599,6 +643,7 @@ const GalleryPage: React.FC = () => {
           <Carousel images={BW_IMAGES}   title="Greenwood Historical Photos: Gallery 1" />
           <Carousel images={BW_IMAGES_2} title="Greenwood Historical Photos: Gallery 2" />
           <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45" />
+          <Carousel images={HOUSING_IMAGES} title="1943 Japanese Canadian Housing" />
         </>
       )}
       {(filter === 'all' || filter === 'restoration') && (
