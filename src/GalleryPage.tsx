@@ -159,17 +159,17 @@ const RESTORATION_IMAGES: GalleryImage[] = [
   {
     src: restoration1,
     alt: 'Restoration Image 1',
-    caption: <>Making of Nikkei Legacy Park front platform. Framing done by Greenwood Yardwork</>,
+    caption: <>Making of Nikkei Legacy Park front platform. Framing done by Greenwood Yardwork (2018)</>,
   },
   {
     src: restoration2,
     alt: 'Restoration Image 2',
-    caption: <>Public Works pouring concrete 2016.</>,
+    caption: <>Public Works pouring concrete (2018)</>,
   },
   {
     src: restoration3,
     alt: 'Restoration Image 3',
-    caption: <>Making of Nikkei Legacy Park front platform. Framing done by Greenwood Yardwork</>,
+    caption: <>Making of Nikkei Legacy Park front platform. Framing done by Greenwood Yardwork (2018)</>,
   },
   {
     src: restoration4,
@@ -179,12 +179,12 @@ const RESTORATION_IMAGES: GalleryImage[] = [
   {
     src: restoration6,
     alt: 'Restoration Image 6',
-    caption: <>Prepping to lay aggregates.</>,
+    caption: <>Prepping to lay aggregates (2018).</>,
   },
   {
     src: restoration5,
     alt: 'Restoration Image 5',
-    caption: <>The front platform taking shape.</>,
+    caption: <>The front platform taking shape (2018).</>,
   },
 ];
 
@@ -602,7 +602,7 @@ const GalleryPage: React.FC = () => {
         </>
       )}
       {(filter === 'all' || filter === 'restoration') && (
-        <Carousel images={RESTORATION_IMAGES} title="Restoration and Renovation: 2016" />
+        <Carousel images={RESTORATION_IMAGES} title="Restoration and Renovation: 2016-2018" />
       )}
       {(filter === 'all' || filter === 'ohairi') && (
         <Carousel images={MISC_IMAGES} title="A Look Back: Ohairi Park (Pre-2014)" />
