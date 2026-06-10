@@ -84,6 +84,15 @@ import housing1943_2  from './img/gallery/1943Housing/housing1943_2.jpeg';
 import housing1943_3  from './img/gallery/1943Housing/housing1943_3.jpeg';
 import housing1943_4  from './img/gallery/1943Housing/housing1943_4.jpeg';
 
+// import labourDay_0  from './img/gallery/labourDay/labourDay.PNG';
+import labourDay_1  from './img/gallery/labourDay/labourDay1.jpg';
+import labourDay_2  from './img/gallery/labourDay/labourDay2.jpg';
+import labourDay_3  from './img/gallery/labourDay/labourDay3.jpg';
+import labourDay_4  from './img/gallery/labourDay/labourDay4.jpg';
+import labourDay_5  from './img/gallery/labourDay/labourDay5.jpg';
+import labourDay_6  from './img/gallery/labourDay/labourDay6.jpg';
+import labourDay_7  from './img/gallery/labourDay/labourDay7.jpg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -193,14 +202,25 @@ const RESTORATION_IMAGES: GalleryImage[] = [
   },
 ];
 
-const BW_IMAGES: GalleryImage[] = [
+const BUILDING_IMAGES: GalleryImage[] = [
+  {
+    src: misc_10,
+    alt: 'Building #1',
+    caption: (
+      <>
+        #1 Building on the right, next is Windsor Hotel and Guess Block (Greenwood Grocery) and now Copper Eagle. #1 Building is where about 90 people were squeezed on each floor with one stove and one toilet.
+        <br /><br />
+        Photo courtesy of Greenwood Museum
+      </>
+    ),
+  },
   {
     src: misc_3,
     alt: 'Building #2',
     caption: (
       <>
         #2 Building was formerly Armstrong Hotel. During the internment part of the building was the
-        hospital and the rest were accommodation for the new arrivals. Notice the clothesline.
+        hospital and the rest were accommodation for the new arrivals. In the 50’s became extra classrooms when Sacred Heart School closed down in 1954.
         <br /><br />
         Photo courtesy of Greenwood Museum
       </>
@@ -218,33 +238,22 @@ const BW_IMAGES: GalleryImage[] = [
     ),
   },
   {
-    src: misc_5,
-    alt: 'Building #4',
-    caption: (
-      <>
-        #4 Building was the tallest building with the turret. It was Rendell Block to the locals.
-        <br /><br />
-        Photo courtesy of Greenwood Museum
-      </>
-    ),
-  },
-  {
     src: misc_9,
     alt: 'Building #3',
     caption: (
       <>
-        #3 Building (now McArthur Centre)
+        #3 Building for the Japanese Canadians became McArthur Centre.
         <br /><br />
         Photo courtesy of Greenwood Museum
       </>
     ),
   },
   {
-    src: misc_10,
-    alt: 'Building #1',
+    src: misc_5,
+    alt: 'Building #4',
     caption: (
       <>
-        #1 Building where about 90 people were squeezed on each floor with one stove and one toilet.
+        #4 Building for the Japanese Canadians and Rendell Block to the locals (#8 and #9 Buildings were beside #4 Building).
         <br /><br />
         Photo courtesy of Greenwood Museum
       </>
@@ -252,7 +261,7 @@ const BW_IMAGES: GalleryImage[] = [
   },
   {
     src: misc_11,
-    alt: 'Building #11',
+    alt: 'Buildings 5, 7 and 11',
     caption: (
       <>
         #5 Building (left) - Miller Block, #7 Building (middle), #11 Building (right) - Mellor Block. 
@@ -261,6 +270,23 @@ const BW_IMAGES: GalleryImage[] = [
       </>
     ),
   },
+  {
+    src: misc_8,
+    alt: '#10 Building',
+    caption: <>#10 building that later became primary classroom, boxing gym and presently the Greenwood Volunteer Fire Dept.
+        <br /><br />
+        Photo courtesy of Eiko Kimoto</>,
+  },
+  {
+    src: misc_7,
+    alt: 'Sacred Heart Catholic Church',
+    caption: (
+      <>Sacred Heart Catholic Church.  Built in 1898, but officially opened in 1901 where many Japanese Canadian Catholics attended Mass.</>
+    ),
+  },
+];
+
+const BW_IMAGES: GalleryImage[] = [
   {
     src: misc_12,
     alt: 'Greenwood 1942',
@@ -303,20 +329,6 @@ const BW_IMAGES: GalleryImage[] = [
     caption: <>Ladies working at BC Security Commission office.
         <br /><br />
         Photo courtesy of Greenwood Museum</>,
-  },
-  {
-    src: misc_7,
-    alt: 'Sacred Heart Catholic Church',
-    caption: (
-      <>Sacred Heart Catholic Church.  Built in 1898, but officially opened in 1901 where many Japanese Canadian Catholics attended Mass.</>
-    ),
-  },
-  {
-    src: misc_8,
-    alt: '#10 Building',
-    caption: <>#10 Building
-        <br /><br />
-        Photo courtesy of Eiko Kimoto</>,
   },
 ];
 
@@ -511,6 +523,72 @@ const HOUSING_IMAGES: GalleryImage[] = [
     },
 ];
 
+const LAOBUR_DAY_IMAGES: GalleryImage[] = [
+    {
+      src: labourDay_1,
+      alt: 'Labour Day 1940s',
+      caption: (
+        <>Mayor McArthur asked Sacred Heart School parents and Sisters to participate in the annual local Labour Day celebration to “break the ice”.  It was a big success.
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: labourDay_2,
+      alt: 'Labour Day 1940s',
+      caption: (
+        <>The beginning float entrance.  Notice Marion Maclean enjoyed being part of the Japanese Canadian float.
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: labourDay_3,
+      alt: 'Labour Day 1940s',
+      caption: (
+        <>Labour Day parade in the 1940s.  
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: labourDay_4,
+      alt: 'Labour Day 1940s',
+      caption: (
+        <>Sacred Heart School float representing the provinces of Canada.
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: labourDay_5,
+      alt: 'Labour Day 1940s',
+      caption: (
+        <>CGIT United Church girls marching.
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: labourDay_7,
+      alt: 'Labour Day 1940s',
+      caption: (
+        <>Labour Day parade was a big event in Greenwood. 
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: labourDay_6,
+      alt: 'Labour Day 1940s',
+      caption: (
+        <>Sacred Heart School float.  
+          <br /><br />
+          Photo courtesy of Francis Nakagawa</>
+      ),
+    },
+];
+
 // ── Carousel ────────────────────────────────────────────────────────────────
 
 interface CarouselProps {
@@ -638,10 +716,12 @@ const GalleryPage: React.FC = () => {
       )}
       {(filter === 'all' || filter === 'historical') && (
         <>
-          <Carousel images={BW_IMAGES}   title="Greenwood Historical Photos: Gallery 1" />
-          <Carousel images={BW_IMAGES_2} title="Greenwood Historical Photos: Gallery 2" />
+          <Carousel images={BUILDING_IMAGES}   title="HistoricalBuildings" />
+          <Carousel images={BW_IMAGES_2} title="Arrival of Japanese Canadians to Greenwood: 1942" />
+          <Carousel images={BW_IMAGES}   title="Historical Photos" />
           <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45" />
           <Carousel images={HOUSING_IMAGES} title="1943 Japanese Canadian Housing" />
+          <Carousel images={LAOBUR_DAY_IMAGES} title="Labour Day Parades 1940s" />
         </>
       )}
       {(filter === 'all' || filter === 'restoration') && (
