@@ -494,10 +494,19 @@ const INTERNEES_IMAGES: GalleryImage[] = [
 
 const HOUSING_IMAGES: GalleryImage[] = [
     {
+      src: housing1943_4,
+      alt: '1943 census',
+      caption: (
+        <>Map on the Wall.
+          <br /><br />
+          Donated by Greenwood Museum with grant from JCLS</>
+      ),
+    },
+    {
       src: housing1943_1,
       alt: '1943 Map',
       caption: (
-        <>Map of Greenwood City where Japanese Canadians stayed.
+        <>Map with family names pasted.
           <br /><br />
           Photo courtesy of Greenwood Museum</>
       ),
@@ -505,29 +514,20 @@ const HOUSING_IMAGES: GalleryImage[] = [
     {
       src: housing1943_2,
       alt: '1943 census',
-      caption: (
-        <>1943 Japanese Canadian Housing census of Greenwood City.  Some stayed in “self-supporting” houses shared by three or four families.
-          <br /><br />
-          Photo courtesy of Greenwood Museum</>
-      ),
+      // caption: (
+      //   <>1943 Japanese Canadian Housing census of Greenwood City.  Some stayed in “self-supporting” houses shared by three or four families.
+      //     <br /><br />
+      //     Photo courtesy of Greenwood Museum</>
+      // ),
     },
     {
       src: housing1943_3,
       alt: '1943 census',
-      caption: (
-        <>1943 Japanese Canadian Housing census of Greenwood City.  Some stayed in “self-supporting” houses shared by three or four families.
-          <br /><br />
-          Photo courtesy of Greenwood Museum</>
-      ),
-    },
-    {
-      src: housing1943_4,
-      alt: '1943 census',
-      caption: (
-        <>Nikkei Legacy Park: Onsite Map of Greenwood City where Japanese Canadians stayed in 1943.
-          <br /><br />
-          Donated by Greenwood Museum with grant from JCLS</>
-      ),
+      // caption: (
+      //   <>1943 Japanese Canadian Housing census of Greenwood City.  Some stayed in “self-supporting” houses shared by three or four families.
+      //     <br /><br />
+      //     Photo courtesy of Greenwood Museum</>
+      // ),
     },
 ];
 
