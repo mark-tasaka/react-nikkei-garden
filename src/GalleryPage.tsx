@@ -95,6 +95,12 @@ import labourDay_7  from './img/gallery/labourDay/labourDay7.jpg';
 import labourDay_8  from './img/gallery/labourDay/labourDay8.jpg';
 import labourDay_9  from './img/gallery/labourDay/labourDay9.jpg';
 import labourDay_10  from './img/gallery/labourDay/labourDay10.jpg';
+import labourDay_11  from './img/gallery/labourDay/labourDay11.jpg';
+import labourDay_12  from './img/gallery/labourDay/labourDay12.jpg';
+import labourDay_13  from './img/gallery/labourDay/labourDay13.jpg';
+import labourDay_14  from './img/gallery/labourDay/labourDay14.jpg';
+import labourDay_15  from './img/gallery/labourDay/labourDay15.jpg';
+import labourDay_16  from './img/gallery/labourDay/labourDay16.jpg';
 
 interface GalleryImage {
   src: string;
@@ -334,10 +340,13 @@ const BW_IMAGES: GalleryImage[] = [
   {
     src: misc_6,
     alt: 'Ladies working at BC Security Commission office.',
-    caption: <>Ladies working at BC Security Commission office.
+    caption: ( 
+      <>Ladies working at BC Security Commission office.
         <br /><br />
-        Photo courtesy of Greenwood Museum</>,
+        Photo courtesy of Greenwood Museum</>
+    ),
   },
+
 ];
 
 const BW_IMAGES_2: GalleryImage[] = [
@@ -351,7 +360,7 @@ const BW_IMAGES_2: GalleryImage[] = [
   {
     src: misc_18,
     alt: 'Train ride to Greenwood',
-    caption: <>Train ride to Greenwood (1942). Little boy in the front is Isao Mori
+    caption: <>Train ride to Greenwood (1942). Father Matthias making sure the parishioners are comfortable. Little boy in the front is Isao Mori
         <br /><br />
         Photo courtesy of Greenwood Museum</>,
   },
@@ -369,7 +378,7 @@ const BW_IMAGES_2: GalleryImage[] = [
     alt: 'Greenwood 1942',
     caption: (
       <>
-        Greenwood 1942 First day
+        RCMP and BCSC supervising the arrival of the Japanese Canadians.
         <br /><br />
         Photo courtesy of Greenwood Museum
       </>
@@ -380,21 +389,12 @@ const BW_IMAGES_2: GalleryImage[] = [
     alt: 'Greenwood 1942',
     caption: (
       <>
-        RCMP and BCSC supervising the arrival of the Japanese Canadians.
+        Greenwood 1942 First day
         <br /><br />
         Photo courtesy of Greenwood Museum
       </>
     ),
   },
-    {
-      src: misc_24,
-      alt: 'GHS students in 1946',
-      caption: (
-        <>Greenwood Public High School students circa 1946-47
-          <br /><br />
-          Photo courtesy of Greenwood Museum</>
-      ),
-    },
 ];
 
 
@@ -422,15 +422,6 @@ const INTERNEES_IMAGES: GalleryImage[] = [
       alt: 'Greenwood mothers',
       caption: (
         <>Greenwood mothers 1940s
-          <br /><br />
-          Photo courtesy of Greenwood Museum</>
-      ),
-    },
-    {
-      src: misc_27,
-      alt: 'RCMP',
-      caption: (
-        <>The police and Mrs. Fumi  Matsubuchi.
           <br /><br />
           Photo courtesy of Greenwood Museum</>
       ),
@@ -489,6 +480,24 @@ const INTERNEES_IMAGES: GalleryImage[] = [
           Photo courtesy of Mytsuu Fugeta</>
       ),
     },
+    {
+      src: misc_24,
+      alt: 'GHS students in 1946',
+      caption: (
+        <>Greenwood Public High School students circa 1946-47
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: misc_27,
+      alt: 'RCMP',
+      caption: (
+        <>Police, BCSC Leonard Cowdrill and Mrs. Fumi Matsubuchi
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
 ];
 
 
@@ -533,16 +542,16 @@ const HOUSING_IMAGES: GalleryImage[] = [
 
 const LAOBUR_DAY_IMAGES: GalleryImage[] = [
     {
-      src: labourDay_1,
+      src: labourDay_2,
       alt: 'Labour Day 1940s',
       caption: (
         <>Mayor McArthur asked Sacred Heart School parents and Sisters to participate in the annual local Labour Day celebration to “break the ice”.  It was a big success.
           <br /><br />
           Photo courtesy of Greenwood Museum</>
       ),
-    },
-    {
-      src: labourDay_2,
+    },  
+  {
+      src: labourDay_1,
       alt: 'Labour Day 1940s',
       caption: (
         <>The beginning float entrance.  Notice Marion Maclean enjoyed being part of the Japanese Canadian float.
@@ -559,15 +568,15 @@ const LAOBUR_DAY_IMAGES: GalleryImage[] = [
           Photo courtesy of Greenwood Museum</>
       ),
     },
-    {
-      src: labourDay_4,
-      alt: 'Labour Day 1940s',
-      caption: (
-        <>Sacred Heart School float representing the provinces of Canada.
-          <br /><br />
-          Photo courtesy of Greenwood Museum</>
-      ),
-    },
+    // {
+    //   src: labourDay_4,
+    //   alt: 'Labour Day 1940s',
+    //   caption: (
+    //     <>Sacred Heart School float representing the provinces of Canada.
+    //       <br /><br />
+    //       Photo courtesy of Greenwood Museum</>
+    //   ),
+    // },
     {
       src: labourDay_5,
       alt: 'Labour Day 1940s',
@@ -620,6 +629,60 @@ const LAOBUR_DAY_IMAGES: GalleryImage[] = [
         <>Japanese Canadian girls in tradtional Kimono   
           <br /><br />
           Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: labourDay_11,
+      alt: 'Labour Day 1940s',
+      caption: (
+        <>Early parade featuring ladies with kimono
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: labourDay_12,
+      alt: 'Labour Day 1940s',
+      caption: (
+        <>Float: Greenwodd Japanese Catholic Group
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: labourDay_13,
+      alt: 'Labour Day 1940s',
+      caption: (
+        <>Sacred Heart School children marching behind the float of many nations.
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: labourDay_14,
+      alt: 'Labour Day 1940s',
+      caption: (
+        <>Nations of the World
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: labourDay_15,
+      alt: 'Labour Day 1940s',
+      caption: (
+        <>Big crowd enjoying the parade with horses
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: labourDay_16,
+      alt: 'Labour Day 1940s',
+      caption: (
+        <>Sacred Heart School float
+          <br /><br />
+          Photo courtesy of Francis Nakagawa</>
       ),
     },
 ];
@@ -751,7 +814,7 @@ const GalleryPage: React.FC = () => {
       )}
       {(filter === 'all' || filter === 'historical') && (
         <>
-          <Carousel images={BUILDING_IMAGES}   title="HistoricalBuildings" />
+          <Carousel images={BUILDING_IMAGES}   title="Historical Buildings" />
           <Carousel images={BW_IMAGES_2} title="Arrival of Japanese Canadians to Greenwood: 1942" />
           <Carousel images={BW_IMAGES}   title="Historical Photos" />
           <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45" />
