@@ -71,6 +71,12 @@ import misc_30  from './img/gallery/misc/Greenwoodboys40s.jpg';
 import misc_31  from './img/gallery/misc/GreenwoodUnitedChurchGroup9.jpg';
 import misc_32  from './img/gallery/misc/HDSHSGrads.jpg';
 import misc_33  from './img/gallery/misc/wedding.jpg';
+import misc_34  from './img/gallery/misc/hunterKendrickBuilding.jpg';
+import misc_35  from './img/gallery/misc/iceRink.jpg';
+import misc_36  from './img/gallery/misc/greenwoodSchool.jpg';
+import misc_37  from './img/gallery/misc/sacredHeart.JPG';
+import misc_38  from './img/gallery/misc/internees_1.JPG';
+import misc_39  from './img/gallery/misc/internees_2.JPG';
 
 import restoration1  from './img/gallery/restoration/restoration1.JPG';
 import restoration2  from './img/gallery/restoration/restoration2.JPG';
@@ -84,6 +90,11 @@ import housing1943_1  from './img/gallery/1943Housing/housing1943_1.jpeg';
 import housing1943_2  from './img/gallery/1943Housing/housing1943_2.jpeg';
 import housing1943_3  from './img/gallery/1943Housing/housing1943_3.jpeg';
 import housing1943_4  from './img/gallery/1943Housing/housing1943_4.jpeg';
+
+
+import location_1  from './img/gallery/locations/location_1.jpg';
+import location_2  from './img/gallery/locations/location_2.jpg';
+import location_3  from './img/gallery/locations/location_3.jpg';
 
 import labourDay_1  from './img/gallery/labourDay/labourDay1.jpg';
 import labourDay_2  from './img/gallery/labourDay/labourDay2.jpg';
@@ -298,6 +309,42 @@ const BUILDING_IMAGES: GalleryImage[] = [
       <>Sacred Heart Catholic Church.  Built in 1898, but officially opened in 1901 where many Japanese Canadian Catholics attended Mass.</>
     ),
   },
+  {
+    src: misc_37,
+    alt: 'Sacred Heart Catholic Church Inside',
+    caption: (
+      <>View of the inside of Sacred Heart Church.  Church was full every Sunday.
+        <br /><br />
+        Photo courtesy of Greenwood Museum</>
+    ),
+  },
+  {
+    src: misc_34,
+    alt: 'Hunter Kenrick Building',
+    caption: (
+      <>Hunter-Kendrick Building had Cowdrill Surplus Store (left) to supply beds and stoves for the JCs.  Jewel Theatre (right) showing Hollywood and Japanese movies on the weekend.  Upstairs was for Boy Scouts and Cubs.
+        <br /><br />
+        Photo courtesy of Greenwood Museum</>
+    ),
+  },
+  {
+    src: misc_35,
+    alt: 'Ice Rink',
+    caption: (
+      <>The old natural ice curling rink was located where the Route 3 Race Track next to Nikkei Legacy Park.
+        <br /><br />
+        Photo courtesy of Greenwood Museum</>
+    ),
+  },
+  {
+    src: misc_36,
+    alt: 'Greenwood School',
+    caption: (
+      <>Greenwood Elementary-High School on Government Street now burnt down where many Nikkei children attended.  School was built in 1953.
+        <br /><br />
+        Photo courtesy of Greenwood Museum</>
+    ),
+  },
 ];
 
 const BW_IMAGES: GalleryImage[] = [
@@ -344,6 +391,43 @@ const BW_IMAGES: GalleryImage[] = [
       <>Ladies working at BC Security Commission office.
         <br /><br />
         Photo courtesy of Greenwood Museum</>
+    ),
+  },
+
+];
+
+const LOCATIONS_IMAGES: GalleryImage[] = [
+  {
+    src: location_1,
+    alt: 'Old Mother Lode Mine',
+    caption: (
+      <>
+        Old Mother Lode mine where the copper was transported to the smelter.  Maeda family visiting the site.
+        <br /><br />
+        Photo courtesy of Greenwood Museum
+      </>
+    ),
+  },
+    {
+    src: location_2,
+    alt: 'Greenwood City Park',
+    caption: (
+      <>
+        Greenwood City Park where Lions Park is now located.  Children played on the swings and teeter-totter.  JC children called it (bucking) bronco.  Daring children on the swings would go as high as possible and then jump off at its peak.
+        <br /><br />
+        Photo courtesy of Greenwood Museum
+      </>
+    ),
+  },
+    {
+    src: location_3,
+    alt: 'Greenwood City Park Pond',
+    caption: (
+      <>
+        At the park, children called it THE POND where they swam in the summer and skated in the winter.  You might see a raft. Special events were held at the park. 
+        <br /><br />
+        Photo courtesy of Greenwood Museum
+      </>
     ),
   },
 
@@ -494,6 +578,24 @@ const INTERNEES_IMAGES: GalleryImage[] = [
       alt: 'RCMP',
       caption: (
         <>Police, BCSC Leonard Cowdrill and Mrs. Fumi Matsubuchi
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: misc_38,
+      alt: 'Greenwood mothers picking potatoes',
+      caption: (
+        <>Greenwood mothers woke up early in the morning to pick potatoes in Midway.  Students picked before school commenced.
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: misc_39,
+      alt: 'Mrs. Den Oye and Mrs. Ruth Hamaguchi',
+      caption: (
+        <>Mrs. Den Oye with a dog and Mrs. Ruth Hamaguchi with a child posed in front of the woodshed that was the children’s playground where ‘Katana kiri and Bang Bang’ were played and many more games.
           <br /><br />
           Photo courtesy of Greenwood Museum</>
       ),
@@ -817,6 +919,8 @@ const GalleryPage: React.FC = () => {
           <Carousel images={BUILDING_IMAGES}   title="Historical Buildings" />
           <Carousel images={BW_IMAGES_2} title="Arrival of Japanese Canadians to Greenwood: 1942" />
           <Carousel images={BW_IMAGES}   title="Historical Photos" />
+          
+          <Carousel images={LOCATIONS_IMAGES}   title="Historical Locations" />
           <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45" />
           <Carousel images={HOUSING_IMAGES} title="1943 Japanese Canadian Housing" />
           <Carousel images={LAOBUR_DAY_IMAGES} title="Labour Day Parades 1940s" />
