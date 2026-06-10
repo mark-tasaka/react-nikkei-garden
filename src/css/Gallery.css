@@ -150,7 +150,7 @@
   bottom: 44px;          /* sits above the dot row */
   left: 0;
   right: 0;
-  z-index: 20;
+  z-index: 10;
   background: rgba(0, 0, 0, 0.52);
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
