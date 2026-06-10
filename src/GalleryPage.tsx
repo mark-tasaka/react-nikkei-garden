@@ -78,13 +78,13 @@ import restoration3  from './img/gallery/restoration/restoration3.JPG';
 import restoration4  from './img/gallery/restoration/restoration4.JPG';
 import restoration5  from './img/gallery/restoration/restoration5.JPG';
 import restoration6  from './img/gallery/restoration/restoration6.JPG';
+import restoration7  from './img/gallery/restoration/restoration7.JPG';
 
 import housing1943_1  from './img/gallery/1943Housing/housing1943_1.jpeg';
 import housing1943_2  from './img/gallery/1943Housing/housing1943_2.jpeg';
 import housing1943_3  from './img/gallery/1943Housing/housing1943_3.jpeg';
 import housing1943_4  from './img/gallery/1943Housing/housing1943_4.jpeg';
 
-// import labourDay_0  from './img/gallery/labourDay/labourDay.PNG';
 import labourDay_1  from './img/gallery/labourDay/labourDay1.jpg';
 import labourDay_2  from './img/gallery/labourDay/labourDay2.jpg';
 import labourDay_3  from './img/gallery/labourDay/labourDay3.jpg';
@@ -92,6 +92,9 @@ import labourDay_4  from './img/gallery/labourDay/labourDay4.jpg';
 import labourDay_5  from './img/gallery/labourDay/labourDay5.jpg';
 import labourDay_6  from './img/gallery/labourDay/labourDay6.jpg';
 import labourDay_7  from './img/gallery/labourDay/labourDay7.jpg';
+import labourDay_8  from './img/gallery/labourDay/labourDay8.jpg';
+import labourDay_9  from './img/gallery/labourDay/labourDay9.jpg';
+import labourDay_10  from './img/gallery/labourDay/labourDay10.jpg';
 
 interface GalleryImage {
   src: string;
@@ -199,6 +202,11 @@ const RESTORATION_IMAGES: GalleryImage[] = [
     src: restoration5,
     alt: 'Restoration Image 5',
     caption: <>The front platform taking shape (2018).</>,
+  },
+  {
+    src: restoration7,
+    alt: 'Restoration Image 7',
+    caption: <>2019.</>,
   },
 ];
 
@@ -585,6 +593,33 @@ const LAOBUR_DAY_IMAGES: GalleryImage[] = [
         <>Sacred Heart School float.  
           <br /><br />
           Photo courtesy of Francis Nakagawa</>
+      ),
+    },
+    {
+      src: labourDay_8,
+      alt: 'Labour Day 1940s',
+      caption: (
+        <>Japanese kimono was a crowd-pleaser. 
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: labourDay_9,
+      alt: 'Labour Day 1940s',
+      caption: (
+        <>Sacred Heart School Kindergarden float.  
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: labourDay_10,
+      alt: 'Labour Day 1940s',
+      caption: (
+        <>Japanese Canadian girls in tradtional Kimono   
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
       ),
     },
 ];
