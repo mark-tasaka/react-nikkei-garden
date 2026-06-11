@@ -24,6 +24,7 @@ import discover19 from './img/articles/discover19.jpeg';
 import legacies1   from './img/articles/legacies1.jpeg';
 import legacies2 from './img/articles/legacies2.jpeg';
 import greenwood1 from './img/articles/greenwood1.jpeg';
+import bulletin1 from './img/articles/bulletin1.jpeg';
 
 interface ArticleEntry {
   source:     string;
@@ -257,6 +258,16 @@ const ARTICLES: ArticleEntry[] = [
     excerpt:   'The names have changed since the 1990’s. This park was originally called Boundary Creek Park. The main purpose was to be used as a free overnight campsite and a rest stop for weary travelers. In 1997, the City of Greenwood was presented with a large, brass internment history plaque by members of the National Association of Japanese Canadians from Kamloops. Thus, the city councillors decided to have a ‘Name That Park’ contest in the local paper.',
     img:       greenwood1,
   },
+  {
+    source:    'The Bulletin',
+    sourceUrl: 'https://jccabulletin-geppo.ca/',
+    title:     'Sgt. Masumi Mitsui – last of the issei veterans',
+    author:    'John Endo Greenaway',
+    date:      'November 9, 2013',
+    link:      'https://jccabulletin-geppo.ca/sgt-masumi-mitsui-last-of-the-issei-veterans/',
+    excerpt:   'When Sgt. Masumi Mitsui passed away on April 22, 1987 at the age of 100 years he was one of the last surviving Japanese Canadian volunteers of World War I. Having emigrated to Canada in 1908 from Fukuoka-ken, Sgt. Mitsui had a distinguished service record that began in 1916 when he travelled to Calgary to enlist with the 192nd Overseas Battalion. He embarked for Europe in late 1916 and in January of the following year was ordered to France where he joined the 10th Battalion, 2nd Infantry Brigade, 1st Canadian Division.',
+    img:       bulletin1,
+  },
 ];
 
 function truncateWords(text: string, maxWords: number): string {
@@ -299,7 +310,7 @@ type SortDir   = 'desc' | 'asc';
 
 const ArticlesPage: React.FC = () => {
   const [query,     setQuery]     = useState('');
-  const [filter, setFilter] = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies' | 'Greenwood Nikkei'>('all');
+  const [filter, setFilter] = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies' | 'Greenwood Nikkei' | 'The Bulletin'>('all');
   const [sortField, setSortField] = useState<SortField>('year');
   const [sortDir,   setSortDir]   = useState<SortDir>('desc');
 
@@ -342,7 +353,7 @@ const ArticlesPage: React.FC = () => {
 
       {/* ── Filter buttons ── */}
       <div className="articles-filter-wrapper">
-        {(['all', 'Discover Nikkei', 'Japanese Canadian Legacies', 'Greenwood Nikkei'] as const).map(f => (
+        {(['all', 'Discover Nikkei', 'Japanese Canadian Legacies', 'Greenwood Nikkei', 'The Bulletin'] as const).map(f => (
           <button
             key={f}
             className={`articles-filter-btn${
@@ -350,7 +361,15 @@ const ArticlesPage: React.FC = () => {
             }`}
             onClick={() => setFilter(f)}
           >
-            {f === 'all' ? 'All' : f === 'Discover Nikkei' ? 'Discover Nikkei' : f === 'Japanese Canadian Legacies' ? 'JC Legacies' : 'Greenwood Nikkei'}
+            {f === 'all'
+              ? 'All'
+              : f === 'Discover Nikkei'
+              ? 'Discover Nikkei'
+              : f === 'Japanese Canadian Legacies'
+              ? 'JC Legacies'
+              : f === 'Greenwood Nikkei'
+              ? 'Greenwood Nikkei'
+              : 'The Bulletin'}
           </button>
         ))}
       </div>
