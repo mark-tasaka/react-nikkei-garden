@@ -32,6 +32,12 @@ import discover27 from './img/articles/discover27.jpeg';
 import discover28 from './img/articles/discover28.jpeg';
 import discover29 from './img/articles/discover29.jpeg';
 import discover30 from './img/articles/discover30.jpeg';
+import discover31 from './img/articles/discover31.jpeg';
+import discover32 from './img/articles/discover32.jpeg';
+import discover33 from './img/articles/discover33.jpeg';
+import discover35 from './img/articles/discover35.jpeg';
+import discover36 from './img/articles/discover36.jpeg';
+import discover37 from './img/articles/discover37.jpeg';
 
 import legacies1   from './img/articles/legacies1.jpeg';
 import legacies2 from './img/articles/legacies2.jpeg';
@@ -389,6 +395,66 @@ const ARTICLES: ArticleEntry[] = [
     link:      'https://discovernikkei.org/en/journal/2016/12/2/nisei-games/',
     excerpt:   'Nisei growing up on Powell Streets in the \'30s didn\'t have that many toys so they had to improvise. Some boys picked chestnuts off the ground and pierced them with a needle with string threaded through to the other side and made bolos.',
     img:       discover30,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'You Are Canadian Nisei If . . . Part II',
+    author:    'Chuck Tasaka',
+    date:      'November 11, 2016',
+    link:      'https://discovernikkei.org/en/journal/2016/11/17/canadian-nisei-if-2/',
+    excerpt:   'Discover Nikkei published my article titled, You Are Canadian Nisei If . . . on December 9, 2015. There were more Nisei traits uncovered to add to this article. I wonder if there are any more hidden gems regarding Canadian Nisei identity?',
+    img:       discover31,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Nisei: Sports Brought "Wa" (Harmony)',
+    author:    'Chuck Tasaka',
+    date:      'October 7, 2016',
+    link:      'https://discovernikkei.org/en/journal/2016/10/7/nisei-sports-wa/',
+    excerpt:   'The famous Vancouver Asahi baseball teams have been well-documented and the latest, a movie made in Japan called Asahi was the "icing on the cake". Pat Adachi was the first to write the history of the Asahi franchise in her book titled Asahi: A Legend in Baseball.',
+    img:       discover32,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Nisei: Summer Jobs',
+    author:    'Chuck Tasaka',
+    date:      'September 8, 2016',
+    link:      'https://discovernikkei.org/en/journal/2016/9/8/summer-jobs/',
+    excerpt:   '"What? I have to travel 400 km to work all summer? I will call family services!" No, no, that didn\'t come out of the mouth of a Nisei. They followed their parents\' orders. The Child\'s Labour Code was not discussed back in those days.',
+    img:       discover33,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Nisei Saves! Mottainai',
+    author:    'Chuck Tasaka',
+    date:      'July 28, 2016',
+    link:      'https://discovernikkei.org/en/journal/2016/7/28/mottainai/',
+    excerpt:   'I read on the Discover Nikkei website about a Japanese American granddaughter having to clear out her Nisei grandmother\'s house when she passed away. To her shock, she found stacks of plastic tofu containers that grandma "treasured" all her life!',
+    img:       discover35,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Nisei: Internment Camp Life',
+    author:    'Chuck Tasaka',
+    date:      'July 22, 2016',
+    link:      'https://discovernikkei.org/en/journal/2016/7/22/internment-camp-life/',
+    excerpt:   'Greenwood was the first "internment centre" and Tashme was the last. In-between, there were Lemon Creek, Popoff, Bay Farm, New Denver, Rosebery, Sandon, and Kaslo. Self-supporting camps were East Lillooet, Minto Mine, Bridge River, and McGillivray Falls.',
+    img:       discover36,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'You-mo? Me mo!: Nisei Language and Dialect',
+    author:    'Chuck Tasaka',
+    date:      'June 6, 2016',
+    link:      'https://discovernikkei.org/en/journal/2016/6/7/nisei-language-dialect/',
+    excerpt:   'I don\'t have a PhD in linguistics but I hope that a budding linguist major will get interested in this topic. In Hawaii, the first boat load of about 150 Japanese immigrants came to this island as sugar cane laborers in 1868.',
+    img:       discover37,
   },
 ];
 
