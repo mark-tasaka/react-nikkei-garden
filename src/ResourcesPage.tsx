@@ -38,6 +38,13 @@ import discover33 from './img/articles/discover33.jpeg';
 import discover35 from './img/articles/discover35.jpeg';
 import discover36 from './img/articles/discover36.jpeg';
 import discover37 from './img/articles/discover37.jpeg';
+import discover38 from './img/articles/discover38.jpeg';
+import discover39 from './img/articles/discover39.jpeg';
+import discover40 from './img/articles/discover40.jpeg';
+import discover41 from './img/articles/discover41.jpeg';
+import discover42 from './img/articles/discover42.jpeg';
+import discover43 from './img/articles/discover43.jpeg';
+import discover44 from './img/articles/discover44.jpeg';
 
 import legacies1   from './img/articles/legacies1.jpeg';
 import legacies2 from './img/articles/legacies2.jpeg';
@@ -455,6 +462,76 @@ const ARTICLES: ArticleEntry[] = [
     link:      'https://discovernikkei.org/en/journal/2016/6/7/nisei-language-dialect/',
     excerpt:   'I don\'t have a PhD in linguistics but I hope that a budding linguist major will get interested in this topic. In Hawaii, the first boat load of about 150 Japanese immigrants came to this island as sugar cane laborers in 1868.',
     img:       discover37,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Love, Nisei Style',
+    author:    'Chuck Tasaka',
+    date:      'May 17, 2016',
+    link:      'https://discovernikkei.org/en/journal/2016/5/17/love-nisei-style/',
+    excerpt:   'Dion and the Belmonts made the doo wop song famous with "Teenagers in Love." We could call this segment "Nisei-gers in Love." Was this the clash of the old world Issei tradition versus the new world Canadian way?',
+    img:       discover38,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'The Nisei Hepcats',
+    author:    'Chuck Tasaka',
+    date:      'April 8, 2016',
+    link:      'https://discovernikkei.org/en/journal/2016/4/8/nishi-hepcats/',
+    excerpt:   '"The day the music died," from the song "American Pie" by Don McLean, referred to February 3, 1959, the day Buddy Holly, Richie Valens, and the Big Bopper perished in the ill-fated plane crash in Clear Lake, Iowa. Music does that.',
+    img:       discover39,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Cumberland Chow Mein, Denbazuke, Karinto? It\'s Canadian Nisei Food!',
+    author:    'Chuck Tasaka',
+    date:      'March 29, 2016',
+    link:      'https://discovernikkei.org/en/journal/2016/3/29/canadian-nikkei-food/',
+    excerpt:   'How can you tell a Nisei by looking at the food they eat? Have you heard of Cumberland chow mein, denbazuke, or karinto? In the case of Japanese Hawaiians, you have heard of and most likely have eaten Spam sushi.',
+    img:       discover40,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Winter Holiday, Nikkei Way',
+    author:    'Chuck Tasaka',
+    date:      'January 5, 2016',
+    link:      'https://discovernikkei.org/en/journal/2016/1/5/winter-holiday/',
+    excerpt:   'When the Canadian government finally gave the Japanese Canadians the freedom to have equal rights as all Canadians in 1949, they were able to choose their destination. The Nikkei families scattered across Canada.',
+    img:       discover41,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'You Are Canadian Nisei If...',
+    author:    'Chuck Tasaka',
+    date:      'December 9, 2015',
+    link:      'https://discovernikkei.org/en/journal/2015/12/9/canadian-nisei-if/',
+    excerpt:   'Most Yonsei (4th generation Nikkei) and Gosei (5th) are most likely living very comfortable lives with their parents. For the Nisei grandparents in the house, they\'re probably saying, "I can\'t…. I won\'t…. I don\'t really care!"',
+    img:       discover42,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Berry Picking in Mount Lehman',
+    author:    'Chuck Tasaka',
+    date:      'November 11, 2015',
+    link:      'https://discovernikkei.org/en/journal/2015/11/25/berry-picking/',
+    excerpt:   'Good evening, I was asked by Stan to speak on behalf of the berry pickers. Most of my sisters, brother, and their friends preceded me, and they left Greenwood at age 10 and 11 to earn money for their families.',
+    img:       discover43,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Isaburo Tasaka\'s 100-year old Charcoal Kiln Found on Salt Spring Island',
+    author:    'Chuck Tasaka',
+    date:      'October 13, 2015',
+    link:      'https://discovernikkei.org/en/journal/2015/10/13/charcoal-kiln/',
+    excerpt:   'What is the old saying? "What is old is now new again." For thousands of years, the Wakayama Prefecture craftsmen made charcoal to produce the finest steel to pound into samurai swords.',
+    img:       discover44,
   },
 ];
 
