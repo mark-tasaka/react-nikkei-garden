@@ -269,9 +269,9 @@ const toggleStickyMenu = () => { setMenuOpen(prev => !prev); setMenuSource(s => 
         >
           <div className="header-container header-container--sticky">
             <div className="header-logo header-logo--sticky">
-                {/* <Link to="/"> */}
-                  <img src={logoHeaderSticky} alt="Nikkei Legacy Park" />
-                {/* </Link> */}
+              <Link to="/">
+                <img src={logoHeaderSticky} alt="Nikkei Legacy Park" />
+              </Link>
             </div>
 
             {/* Desktop sticky nav */}
