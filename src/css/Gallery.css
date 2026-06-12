@@ -168,6 +168,7 @@
 .gallery-filter-wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;  
   justify-content: center;
   gap: 24px;
   margin: 0 auto 40px;
@@ -210,6 +211,12 @@
 @media (max-width: 1024px) {
   .gallery-carousel {
     max-width: 640px;
+  }
+}
+
+@media (max-width: 900px) {
+  .gallery-filter-btn {
+    width: 200px;
   }
 }
 
