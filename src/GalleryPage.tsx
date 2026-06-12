@@ -113,6 +113,11 @@ import labourDay_14  from './img/gallery/labourDay/labourDay14.jpg';
 import labourDay_15  from './img/gallery/labourDay/labourDay15.jpg';
 import labourDay_16  from './img/gallery/labourDay/labourDay16.jpg';
 
+import labourDay50_1  from './img/gallery/labourDay1950/labourDay50_1.jpg';
+import labourDay50_2  from './img/gallery/labourDay1950/labourDay50_2.jpg';
+import labourDay50_3  from './img/gallery/labourDay1950/labourDay50_3.jpg';
+import labourDay50_4  from './img/gallery/labourDay1950/labourDay50_4.jpg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -789,6 +794,45 @@ const LAOBUR_DAY_IMAGES: GalleryImage[] = [
     },
 ];
 
+const LAOBUR_DAY1950_IMAGES: GalleryImage[] = [
+    {
+      src: labourDay50_1,
+      alt: 'Labour Day 1950s',
+      caption: (
+        <>Greenwood Labour Day parade in the 1950s.  
+          <br /><br />
+          Photo courtesy of Miyamoto Photograph of Grand Forks</>
+      ),
+    },
+    {
+      src: labourDay50_2,
+      alt: 'Labour Day 1950s',
+      caption: (
+        <>Greenwood Labour Day parade in the 1950s.  
+          <br /><br />
+          Photo courtesy of Miyamoto Photograph of Grand Forks</>
+      ),
+    },
+    {
+      src: labourDay50_3,
+      alt: 'Labour Day 1950s',
+      caption: (
+        <>Greenwood Labour Day parade in the 1950s.  
+          <br /><br />
+          Photo courtesy of Miyamoto Photograph of Grand Forks</>
+      ),
+    },
+    {
+      src: labourDay50_4,
+      alt: 'Labour Day 1950s',
+      caption: (
+        <>Greenwood Labour Day parade in the 1950s.  
+          <br /><br />
+          Photo courtesy of Miyamoto Photograph of Grand Forks</>
+      ),
+    },        
+];
+
 // ── Carousel ────────────────────────────────────────────────────────────────
 
 interface CarouselProps {
@@ -923,7 +967,7 @@ const GalleryPage: React.FC = () => {
           <Carousel images={LOCATIONS_IMAGES}   title="Historical Locations" />
           <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45" />
           <Carousel images={HOUSING_IMAGES} title="1943 Japanese Canadian Housing" />
-          <Carousel images={LAOBUR_DAY_IMAGES} title="Labour Day Parades 1940s" />
+          <Carousel images={LAOBUR_DAY1950_IMAGES} title="Labour Day Parades 1950s" />
         </>
       )}
       {(filter === 'all' || filter === 'restoration') && (
