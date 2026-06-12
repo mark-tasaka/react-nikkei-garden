@@ -25,6 +25,16 @@ const VIDEOS: VideoEntry[] = [
     title: 'Excerpts from the Mamoru Madokoro Collection (1964)',
     description: 'Scenes from the Greenwood Labour Day Celebration and Natsu Matsuri of 1964.',
   },
+  {
+    embedId: 'QILO0XT-0eo',
+    title: 'Japanese Canadian Internment, Second World War ',
+    description: 'Mary Kitagawa was seven years old when she was detained in a livestock barn at Vancouver\'s Hastings Park. She remembers the stench of the buildings when she dragged her suitcase through the barn door in April, 1942. Mary and her family spent a month at Hastings Park before they were relocated to the BC interior. They were eventually moved to a sugar beet farm in Alberta until well after the war ended. Approximately 8,000 other Japanese Canadian women and children were held at Hastings Park before being sent to farms and camps across Canada.',
+  },
+  {
+    embedId: 'C8TQTuMqM9g',
+    title: 'Japanese Canadian Internment | Narrated by David Suzuki',
+    description: 'To remember the 75th Anniversary of Japanese Canadian Internment during the Second World War, Legion Magazine and David Suzuki tell the story of the injustices and atrocities done towards Japanese-Canadians across the country, and in particular, British Columbia. Visit www.legionmagazine.com for more information.',
+  },
 ];
 
 const GOOGLE_PHOTOS_URL =
@@ -32,7 +42,7 @@ const GOOGLE_PHOTOS_URL =
 
 const MediaPage: React.FC = () => (
   <main className="media-page">
-    <h1 className="media-title">Videos of the Nikkei Memorial Park</h1>
+    <h1 className="media-title">Videos of the Japanese Canadian Experience</h1>
 
     <div className="media-grid">
       {VIDEOS.map(({ embedId, title, description }) => (
