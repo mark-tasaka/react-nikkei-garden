@@ -126,6 +126,13 @@ import labourDay50_10  from './img/gallery/labourDay1950/labourDay50_10.jpg';
 import labourDay50_11  from './img/gallery/labourDay1950/labourDay50_11.jpg';
 import labourDay50_12  from './img/gallery/labourDay1950/labourDay50_12.jpg';
 
+import historical1960_1  from './img/gallery/historical1960/historical1960_1.jpg';
+import historical1960_2  from './img/gallery/historical1960/historical1960_2.jpg';
+import historical1960_3  from './img/gallery/historical1960/historical1960_3.jpg';
+import historical1960_4  from './img/gallery/historical1960/historical1960_4.jpg';
+import historical1960_5  from './img/gallery/historical1960/historical1960_5.jpg';
+import historical1960_6  from './img/gallery/historical1960/historical1960_6.jpg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -913,6 +920,52 @@ const LAOBUR_DAY1950_IMAGES: GalleryImage[] = [
     },                               
 ];
 
+
+const HISTORICAL1960_IMAGES: GalleryImage[] = [
+    {
+      src: historical1960_1,
+      alt: 'Historical 1960s',
+      caption: (
+        <>Husband Jim Fukui, former Asahi player is prepared to pull his wife Molly Fukui in the parade. Stan Tanizawa is behind the rickshaw. </>
+      ),
+    },
+    {
+      src: historical1960_2,
+      alt: 'Historical 1960s',
+      caption: (
+        <>More local Japanese Canadian dancers strutting down Copper Street. </>
+      ),
+    },
+    {
+      src: historical1960_3,
+      alt: 'Historical 1960s',
+      caption: (
+        <>Judo demonstration was a big hit. </>
+      ),
+    },
+    {
+      src: historical1960_4,
+      alt: 'Historical 1960s',
+      caption: (
+        <>Arizo Tasaka is pulling 'Geisha' Bob Maeda in a jinrikisha.</>
+      ),
+    },
+    {
+      src: historical1960_5,
+      alt: 'Historical 1960s',
+      caption: (
+        <>Summer of 1964: One of the most successful Labour Day celebrations in Greenwood was the NATSU MATSURI or Summer Festival.  The whole community got involved and produced a gala affair.  Watch Mamoru Madokoro’s home movie.  Platform was built by local carpenters for the grand opening.</>
+      ),
+    },
+    {
+      src: historical1960_6,
+      alt: 'Historical 1960s',
+      caption: (
+        <>Matsuri dancers marching past Johnny’s Market, Tanizawa Greenwood Bakery and Imai Bros Electric.</>
+      ),
+    },
+  ];
+
 // ── Carousel ────────────────────────────────────────────────────────────────
 
 interface CarouselProps {
@@ -1049,6 +1102,7 @@ const GalleryPage: React.FC = () => {
           <Carousel images={HOUSING_IMAGES} title="1943 Japanese Canadian Housing" />
           <Carousel images={LAOBUR_DAY_IMAGES} title="Labour Day Parades 1940s" />
           <Carousel images={LAOBUR_DAY1950_IMAGES} title="Labour Day Parades 1950s" />
+          <Carousel images={HISTORICAL1960_IMAGES} title="Historical Photos: 1960s" />
         </>
       )}
       {(filter === 'all' || filter === 'restoration') && (
