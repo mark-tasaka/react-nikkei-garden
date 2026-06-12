@@ -77,6 +77,15 @@ import misc_36  from './img/gallery/misc/greenwoodSchool.jpg';
 import misc_37  from './img/gallery/misc/sacredHeart.JPG';
 import misc_38  from './img/gallery/misc/internees_1.JPG';
 import misc_39  from './img/gallery/misc/internees_2.JPG';
+import misc_40  from './img/gallery/misc/arrivals_1.jpg';
+import misc_41  from './img/gallery/misc/arrivals_2.jpg';
+import misc_42  from './img/gallery/misc/arrivals_3.jpg';
+import misc_43  from './img/gallery/misc/arrivals_4.jpg';
+import misc_44  from './img/gallery/misc/arrival_5.jpg';
+import misc_45  from './img/gallery/misc/arrival_6.jpg';
+import misc_46  from './img/gallery/misc/arrival_7.jpg';
+import misc_47  from './img/gallery/misc/arrival_8.jpg';
+import misc_48  from './img/gallery/misc/arrival_9.jpg';
 
 import restoration1  from './img/gallery/restoration/restoration1.JPG';
 import restoration2  from './img/gallery/restoration/restoration2.JPG';
@@ -496,6 +505,101 @@ const BW_IMAGES_2: GalleryImage[] = [
         Greenwood 1942 First day
         <br /><br />
         Photo courtesy of Greenwood Museum
+      </>
+    ),
+  },
+  {
+    src: misc_40,
+    alt: 'Greenwood 1942',
+    caption: (
+      <>
+        Dentist Dr. George Ishiwara was sent to provide dental care to the JCs.
+        <br /><br />
+        Photo courtesy of Vyvyan Dorsett
+      </>
+    ),
+  },
+  {
+    src: misc_41,
+    alt: 'Greenwood 1942',
+    caption: (
+      <>
+        Mrs. Ishiwara (Shimokura) with daughter Vyvyan near Bob Brown Store and Rendell Block (#4 Building) in the background.  Empty lot behind later became Mook’s Cafe. 
+        <br /><br />
+        Photo courtesy of Vyvyan Dorsett
+      </>
+    ),
+  },
+  {
+    src: misc_42,
+    alt: 'Greenwood 1942',
+    caption: (
+      <>
+        Sacred Heart School couldn’t accommodate 364 children in a four-room school therefore half of the students attended class in the morning and the other half in the afternoon.
+      </>
+    ),
+  },
+  {
+    src: misc_43,
+    alt: 'Greenwood 1942',
+    caption: (
+      <>
+        Early arrivals in 1942 were placed in #5 Building (Miller Block).
+      </>
+    ),
+  },
+  {
+    src: misc_44,
+    alt: 'Greenwood 1942',
+    caption: (
+      <>
+        Greenwood Hospital Staff.
+        <br /><br />
+        Photo courtesy of Molly Fukui
+      </>
+    ),
+  },
+  {
+    src: misc_45,
+    alt: 'Greenwood 1942',
+    caption: (
+      <>
+        Sacred Her Church Confirmation Day.
+        <br /><br />
+        Photo courtesy of Mitsy Sasaki
+      </>
+    ),
+  },
+  {
+    src: misc_46,
+    alt: 'Greenwood 1942',
+    caption: (
+      <>
+        Nurses Aides.
+        <br /><br />
+        Photo courtesy of Molly Fukui
+      </>
+    ),
+  },
+  {
+    src: misc_47,
+    alt: 'Greenwood 1942',
+    caption: (
+      <>
+        Jim and Joe Fukui in the early days of the internment.
+        <br /><br />
+        Photo courtesy of Molly Fukui
+      </>
+    ),
+  },
+  {
+    src: misc_48,
+    alt: 'Greenwood 1942',
+    caption: (
+      <>
+        One of the first friendships in Greenwood.  Teresa Kurisu taught Marion Maclean piano and they became ‘life-long’ even though they lost touch.  Teresa followed her parents to Japan in 1946.  An article is written in Discover Nikkei (Resources).
+        <br /><br />
+        Photo courtesy of Teresa Ogawa
       </>
     ),
   },
