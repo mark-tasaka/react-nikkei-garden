@@ -48,8 +48,17 @@ import discover44 from './img/articles/discover44.jpeg';
 
 import legacies1   from './img/articles/legacies1.jpeg';
 import legacies2 from './img/articles/legacies2.jpeg';
+
 import greenwood1 from './img/articles/greenwood1.jpeg';
+
 import bulletin1 from './img/articles/bulletin1.jpeg';
+import bulletin2 from './img/articles/bulletin2.jpeg';
+import bulletin3 from './img/articles/bulletin3.jpeg';
+import bulletin4 from './img/articles/bulletin4.jpeg';
+import bulletin5 from './img/articles/bulletin5.jpeg';
+
+import jcVeterans1 from './img/articles/jcVeterans1.jpeg';
+import jcVeterans2 from './img/articles/jcVeterans2.jpeg';
 
 interface ArticleEntry {
   source:     string;
@@ -533,6 +542,66 @@ const ARTICLES: ArticleEntry[] = [
     excerpt:   'What is the old saying? "What is old is now new again." For thousands of years, the Wakayama Prefecture craftsmen made charcoal to produce the finest steel to pound into samurai swords.',
     img:       discover44,
   },
+  {
+    source:    'The Bulletin',
+    sourceUrl: 'https://jccabulletin-geppo.ca/',
+    title:     'Memories of Greenwood',
+    author:    'David Fujino',
+    date:      'April 16, 2013',
+    link:      'https://jccabulletin-geppo.ca/memories-of-greenwood/',
+    excerpt:   'Mollie McArthur—a positive name from the past. Mom often talked about Mollie as a dear friend from the Greenwood days, the place where I was born during the crazy circumstances of World War II. We interned Japanese Canadians were encouraged by the residents of Greenwood to take part fully in town life.',
+    img:       bulletin2,
+  },
+  {
+    source:    'The Bulletin',
+    sourceUrl: 'https://jccabulletin-geppo.ca/',
+    title:     'Remembering the Sisters',
+    author:    'John Endo Greenaway',
+    date:      'July 28, 2011',
+    link:      'https://jccabulletin-geppo.ca/remembering-the-sisters/',
+    excerpt:   'By the time I was in grade one, I knew I wasn\'t a good student. Two things I recalled. One, I had to sing a song with my sister in a split grade one-two class. I refused to sing because I was so shy. The nun put me on her lap and I received a spanking!',
+    img:       bulletin3,
+  },
+  {
+    source:    'The Bulletin',
+    sourceUrl: 'https://jccabulletin-geppo.ca/',
+    title:     'Farewell to the Franciscan Sisters',
+    author:    'John Endo Greenaway',
+    date:      'July 28, 2011',
+    link:      'https://jccabulletin-geppo.ca/farewell-to-the-franciscan-sisters/',
+    excerpt:   'After serving Vancouver\'s Downtown Eastside for the past 85 years, The Franciscan Sisters of the Atonement are leaving Vancouver and moving to their Edmonton convent. They played an important part in the evacuation of 1,700 Japanese Canadians to a little ghost town called Greenwood in the interior of BC.',
+    img:       bulletin4,
+  },
+  {
+    source:    'The Bulletin',
+    sourceUrl: 'https://jccabulletin-geppo.ca/',
+    title:     'Franciscan Sisters leaving the Downtown Eastside',
+    author:    'John Endo Greenaway',
+    date:      'June 9, 2011',
+    link:      'https://jccabulletin-geppo.ca/franciscan-sisters-leaving-the-downtown-eastside/',
+    excerpt:   'The Franciscan Sisters of the Atonement are leaving the Downtown Eastside at the end of August. They started their ministry with the Japanese about 85 years ago and played a great part in helping with the evacuation of the Japanese during the Second World War.',
+    img:       bulletin5,
+  },
+  {
+    source:    'Japanese Canadian Veterans',
+    sourceUrl: 'https://japanesecanadianveterans.ca/',
+    title:     'Kiyoji Iizuka, MM',
+    author:    'Japanese Canadian Veterans',
+    date:      'April 22, 2025',
+    link:      'https://japanesecanadianveterans.ca/2025/04/22/kiyoji-iizuka/',
+    excerpt:   'Private Kiyoji Iizuka was a familiar face on Powell Street both before the Second World War and after. He lived at 522 Powell Street after his tour in France with the Canadian Overseas Expeditionary Force, and returned there in 1969 after being interned in Greenwood.',
+    img:       jcVeterans1,
+  },
+  {
+    source:    'Japanese Canadian Veterans',
+    sourceUrl: 'https://japanesecanadianveterans.ca/',
+    title:     'Masumi Mitsui, MM',
+    author:    'Japanese Canadian Veterans',
+    date:      'April 22, 2025',
+    link:      'https://japanesecanadianveterans.ca/2025/02/26/a-lifelong-fighter-masumi-mitsui/',
+    excerpt:   'Masumi Mitsui was born in Tokyo on Oct 7, 1887. The son of a soldier, he tried to enter the Japanese navy, but failed the entrance exam. Feeling like he had failed Japan, he decided to emigrate to North America, arriving in Canada in 1908.',
+    img:       jcVeterans2,
+  },
 ];
 
 function truncateWords(text: string, maxWords: number): string {
@@ -575,7 +644,7 @@ type SortDir   = 'desc' | 'asc';
 
 const ArticlesPage: React.FC = () => {
   const [query,     setQuery]     = useState('');
-  const [filter, setFilter] = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies' | 'Greenwood Nikkei' | 'The Bulletin'>('all');
+  const [filter, setFilter] = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies' | 'Greenwood Nikkei' | 'The Bulletin' | 'Japanese Canadian Veterans'>('all');
   const [sortField, setSortField] = useState<SortField>('year');
   const [sortDir,   setSortDir]   = useState<SortDir>('desc');
 
@@ -618,7 +687,7 @@ const ArticlesPage: React.FC = () => {
 
       {/* ── Filter buttons ── */}
       <div className="articles-filter-wrapper">
-        {(['all', 'Discover Nikkei', 'Japanese Canadian Legacies', 'Greenwood Nikkei', 'The Bulletin'] as const).map(f => (
+        {(['all', 'Discover Nikkei', 'Japanese Canadian Legacies', 'Greenwood Nikkei', 'The Bulletin', 'Japanese Canadian Veterans'] as const).map(f => (
           <button
             key={f}
             className={`articles-filter-btn${
@@ -634,7 +703,9 @@ const ArticlesPage: React.FC = () => {
               ? 'JC Legacies'
               : f === 'Greenwood Nikkei'
               ? 'Greenwood Nikkei'
-              : 'The Bulletin'}
+              : f === 'The Bulletin'
+              ? 'The Bulletin'
+              : 'JC Veterans'}
           </button>
         ))}
       </div>
