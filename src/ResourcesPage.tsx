@@ -21,6 +21,18 @@ import discover16 from './img/articles/discover16.jpeg';
 import discover17 from './img/articles/discover17.jpeg';
 import discover18 from './img/articles/discover18.jpeg';
 import discover19 from './img/articles/discover19.jpeg';
+import discover20 from './img/articles/discover20.jpeg';
+import discover21 from './img/articles/discover21.jpeg';
+import discover22 from './img/articles/discover22.jpeg';
+import discover23 from './img/articles/discover23.jpeg';
+import discover24 from './img/articles/discover24.jpeg';
+import discover25 from './img/articles/discover25.jpeg';
+import discover26 from './img/articles/discover26.jpeg';
+import discover27 from './img/articles/discover27.jpeg';
+import discover28 from './img/articles/discover28.jpeg';
+import discover29 from './img/articles/discover29.jpeg';
+import discover30 from './img/articles/discover30.jpeg';
+
 import legacies1   from './img/articles/legacies1.jpeg';
 import legacies2 from './img/articles/legacies2.jpeg';
 import greenwood1 from './img/articles/greenwood1.jpeg';
@@ -267,6 +279,116 @@ const ARTICLES: ArticleEntry[] = [
     link:      'https://jccabulletin-geppo.ca/sgt-masumi-mitsui-last-of-the-issei-veterans/',
     excerpt:   'When Sgt. Masumi Mitsui passed away on April 22, 1987 at the age of 100 years he was one of the last surviving Japanese Canadian volunteers of World War I. Having emigrated to Canada in 1908 from Fukuoka-ken, Sgt. Mitsui had a distinguished service record that began in 1916 when he travelled to Calgary to enlist with the 192nd Overseas Battalion. He embarked for Europe in late 1916 and in January of the following year was ordered to France where he joined the 10th Battalion, 2nd Infantry Brigade, 1st Canadian Division.',
     img:       bulletin1,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'No Time for ITADAKIMASU!',
+    author:    'Chuck Tasaka',
+    date:      'July 5, 2017',
+    link:      'https://discovernikkei.org/en/journal/2017/7/5/no-time-for-itadakimasu/',
+    excerpt:   'Itadakimasu. What\'s that? I never heard of it when I was growing up in postwar Canada. Japanese Language School didn\'t exist in Greenwood. The only word similar to that was "Itai!" or "Itai-na!" when your older brother or sister was shoving you aside to get the best seat at the kitchen table.',
+    img:       discover20,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Nisei Nicknames',
+    author:    'Chuck Tasaka',
+    date:      'June 22, 2017',
+    link:      'https://discovernikkei.org/en/journal/2017/6/22/nikkei-nicknames/',
+    excerpt:   'In this day of hi-tech computer with iPhone, iPad, Galaxy, and so forth, whatever happened to the old fashion nicknames? Nowadays, you hear of famous athletes with nicknames like Burnsie, Burr, Marky, JJ, JR, or AJ. Quite vanilla, I think.',
+    img:       discover21,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     '75th Anniversary of the Japanese Canadian Internment',
+    author:    'Chuck Tasaka',
+    date:      'May 5, 2017',
+    link:      'https://discovernikkei.org/en/journal/2017/5/5/anniversary-of-jc-internment/',
+    excerpt:   'What was to be a simple, casual get-together to commemorate the 75th Anniversary of the Japanese Canadian Internment, a Nikkei "Woodstock-like Love-in" occurred at St. Joseph the Worker School in Richmond on April 29th!',
+    img:       discover22,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Nisei: Nikkei Connection to McLean Mill',
+    author:    'Chuck Tasaka',
+    date:      'April 19, 2017',
+    link:      'https://discovernikkei.org/en/journal/2017/4/19/mclean-mill/',
+    excerpt:   'Did you know that there was a very small settlement of Japanese Canadians at the McLean Mill in Port Alberni on Vancouver Island in the early thirties? Reading the Parks Canada backgrounder article and excerpts from Jan Peterson\'s book, Twin Cities: Port Alberni.',
+    img:       discover23,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Nisei: Yancha Kozo For All Seasons - Part 4',
+    author:    'Chuck Tasaka',
+    date:      'March 27, 2017',
+    link:      'https://discovernikkei.org/en/journal/2017/3/27/nisei-yancha-kozo-for-all-seasons-4/',
+    excerpt:   'WINTER: Winter fun almost equaled summer activities except for the below zero temperature. Skating, sleigh-riding, skiing, building snowman, igloo, shinny hockey, ice carnival and football in the snow kept the children busy.',
+    img:       discover24,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Nisei: Immigration To Canada',
+    author:    'Chuck Tasaka',
+    date:      'March 24, 2017',
+    link:      'https://discovernikkei.org/en/journal/2017/3/24/nisei-immigration-to-canada/',
+    excerpt:   'Manzo Nagano is credited for being the first Japanese settler in Canada in 1877, though he was not the first to come to B.C. Japanese sailors were rescued from a shipwrecked whaling boat as early as 1834.',
+    img:       discover25,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Nisei: Yancha Kozo For All Seasons - Part 3',
+    author:    'Chuck Tasaka',
+    date:      'March 20, 2017',
+    link:      'https://discovernikkei.org/en/journal/2017/3/20/nisei-yancha-kozo-for-all-seasons-3/',
+    excerpt:   'AUTUMN: Labour Day celebration marked the end of summer in Greenwood and the beginning of a new school year. This was the day for everyone to dress up and take in the parade with marching band, various sponsored floats and decorated bicycles.',
+    img:       discover26,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Nisei: Yancha Kozo For All Seasons - Part 2',
+    author:    'Chuck Tasaka',
+    date:      'March 13, 2017',
+    link:      'https://discovernikkei.org/en/journal/2017/3/13/nisei-yancha-kozo-for-all-seasons-2/',
+    excerpt:   'SUMMER: No wonder, many of the children couldn\'t wait to get out of school in June. This was the time of life for boys and girls. Boys played spitball, katana kiri, bang-bang and flashlight team games.',
+    img:       discover27,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Nisei: Yancha Kozo For All Seasons - Part 1',
+    author:    'Chuck Tasaka',
+    date:      'March 6, 2017',
+    link:      'https://discovernikkei.org/en/journal/2017/3/6/nisei-yancha-kozo-for-all-seasons-1/',
+    excerpt:   'Post-war babies born in the internment camps should be considered the \'Lucky Ones\'? These children didn\'t suffer the whole forced removal ordeal beginning in 1942. They were born in Greenwood, New Denver, Kaslo, Slocan City or Lillooet where there were hospitals.',
+    img:       discover28,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Mio-Steveston Fishermen Dialect',
+    author:    'Chuck Tasaka',
+    date:      'February 7, 2017',
+    link:      'https://discovernikkei.org/en/journal/2017/2/7/mio-steveston-fishermen-dialect/',
+    excerpt:   'Whenever you hear of Mio, a poor, small fishing village south-east of Osaka in Wakayama-ken, the name \'Amerika Mura\' comes to mind. To the villagers, Amerika was Canada and U.S. Gihei Kuno\'s name became synonymous with Mio-Steveston connection.',
+    img:       discover29,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Nisei: The Games We Played',
+    author:    'Chuck Tasaka',
+    date:      'December 2, 2016',
+    link:      'https://discovernikkei.org/en/journal/2016/12/2/nisei-games/',
+    excerpt:   'Nisei growing up on Powell Streets in the \'30s didn\'t have that many toys so they had to improvise. Some boys picked chestnuts off the ground and pierced them with a needle with string threaded through to the other side and made bolos.',
+    img:       discover30,
   },
 ];
 
