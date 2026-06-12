@@ -117,6 +117,14 @@ import labourDay50_1  from './img/gallery/labourDay1950/labourDay50_1.jpg';
 import labourDay50_2  from './img/gallery/labourDay1950/labourDay50_2.jpg';
 import labourDay50_3  from './img/gallery/labourDay1950/labourDay50_3.jpg';
 import labourDay50_4  from './img/gallery/labourDay1950/labourDay50_4.jpg';
+import labourDay50_5  from './img/gallery/labourDay1950/labourDay50_5.jpg';
+import labourDay50_6  from './img/gallery/labourDay1950/labourDay50_6.jpg';
+import labourDay50_7  from './img/gallery/labourDay1950/labourDay50_7.jpg';
+import labourDay50_8  from './img/gallery/labourDay1950/labourDay50_8.jpg';
+import labourDay50_9  from './img/gallery/labourDay1950/labourDay50_9.jpg';
+import labourDay50_10  from './img/gallery/labourDay1950/labourDay50_10.jpg';
+import labourDay50_11  from './img/gallery/labourDay1950/labourDay50_11.jpg';
+import labourDay50_12  from './img/gallery/labourDay1950/labourDay50_12.jpg';
 
 interface GalleryImage {
   src: string;
@@ -830,7 +838,79 @@ const LAOBUR_DAY1950_IMAGES: GalleryImage[] = [
           <br /><br />
           Photo courtesy of Miyamoto Photograph of Grand Forks</>
       ),
+    },       
+    {
+      src: labourDay50_5,
+      alt: 'Labour Day 1950s',
+      caption: (
+        <>Greenwood Labour Day parade in the 1950s.  
+          <br /><br />
+          Photo courtesy of Miyamoto Photograph of Grand Forks</>
+      ),
+    }, 
+    {
+      src: labourDay50_6,
+      alt: 'Labour Day 1950s',
+      caption: (
+        <>Greenwood Labour Day parade in the 1950s.  
+          <br /><br />
+          Photo courtesy of Miyamoto Photograph of Grand Forks</>
+      ),
+    },
+    {
+      src: labourDay50_7,
+      alt: 'Labour Day 1950s',
+      caption: (
+        <>Greenwood Labour Day parade in the 1950s.  
+          <br /><br />
+          Photo courtesy of Miyamoto Photograph of Grand Forks</>
+      ),
+    },                  
+    {
+      src: labourDay50_8,
+      alt: 'Labour Day 1950s',
+      caption: (
+        <>Greenwood Labour Day parade in the 1950s.  
+          <br /><br />
+          Photo courtesy of Miyamoto Photograph of Grand Forks</>
+      ),
+    },                    
+    {
+      src: labourDay50_9,
+      alt: 'Labour Day 1950s',
+      caption: (
+        <>Labour Day parade was very popular and the highlight was the fireworks display to end Labour Day celebration.  #8 and #9 Building in the background.   
+          <br /><br />
+          Photo courtesy of Miyamoto Photograph of Grand Forks</>
+      ),
+    },       
+    {
+      src: labourDay50_10,
+      alt: 'Labour Day 1950s',
+      caption: (
+        <>Floats were popular and people spent hours building them.
+          <br /><br />
+          Photo courtesy of Miyamoto Photograph of Grand Forks</>
+      ),
     },        
+    {
+      src: labourDay50_11,
+      alt: 'Labour Day 1950s',
+      caption: (
+        <>Mrs. Takahashi, daughter Michi, Mrs. Suzuki and friend taking in the parade.
+          <br /><br />
+          Photo courtesy of Miyamoto Photograph of Grand Forks</>
+      ),
+    },        
+    {
+      src: labourDay50_12,
+      alt: 'Labour Day 1950s',
+      caption: (
+        <>Mook’s Cafe ladies preparing and helping Ken and Shirley Mukai to serve hungry customers after the parade.
+          <br /><br />
+          Photo courtesy of Miyamoto Photograph of Grand Forks</>
+      ),
+    },                               
 ];
 
 // ── Carousel ────────────────────────────────────────────────────────────────
@@ -967,6 +1047,7 @@ const GalleryPage: React.FC = () => {
           <Carousel images={LOCATIONS_IMAGES}   title="Historical Locations" />
           <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45" />
           <Carousel images={HOUSING_IMAGES} title="1943 Japanese Canadian Housing" />
+          <Carousel images={LAOBUR_DAY_IMAGES} title="Labour Day Parades 1940s" />
           <Carousel images={LAOBUR_DAY1950_IMAGES} title="Labour Day Parades 1950s" />
         </>
       )}
