@@ -836,7 +836,7 @@ const ArticlesPage: React.FC = () => {
           <button
             key={f}
             className={`articles-filter-btn${
-              filter === f ? ' articles-filter-btn--active' : ''
+              filter === f || filter === 'all' ? ' articles-filter-btn--active' : ''
             }`}
             onClick={() => setFilter(f)}
           >
