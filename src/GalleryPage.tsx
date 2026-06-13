@@ -395,8 +395,7 @@ const BW_IMAGES: GalleryImage[] = [
     alt: 'Greenwood 1942',
     caption: (
       <>
-        Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to
-        the buildings that JCs were designated
+        Panoramic view of Greenwood 1942
         <br /><br />
         Photo courtesy of Greenwood Museum
       </>
@@ -419,8 +418,7 @@ const BW_IMAGES: GalleryImage[] = [
     alt: 'Greenwood 1942',
     caption: (
       <>
-        Greenwood 1942: the first days of arriving in Greenwood, getting off the train, walking to
-        the buildings that JCs were designated
+        Registering at the Greenwood Court House.
         <br /><br />
         Photo courtesy of Greenwood Museum
       </>
@@ -494,7 +492,7 @@ const BW_IMAGES_2: GalleryImage[] = [
     src: misc_19,
     alt: 'Getting off the train and meeting a welcoming group from Mayor McArthur and Franciscan Sisters.',
     caption: (
-      <>Sister Eugenia and Sister Jerome were at the train station  to greet their parishioners.
+      <>Sr. Jerome (left) and Sr. Eugenia (right) were at the train station  to greet their parishioners.
         <br /><br />
         Photo courtesy of Greenwood Museum</>
     ),
@@ -599,7 +597,7 @@ const BW_IMAGES_2: GalleryImage[] = [
     alt: 'Greenwood 1942',
     caption: (
       <>
-        Jim and Joe Fukui in the early days of the internment.
+        Twosome Molly Madokoro and Jim Fukui later got married.
         <br /><br />
         Photo courtesy of Molly Fukui
       </>
