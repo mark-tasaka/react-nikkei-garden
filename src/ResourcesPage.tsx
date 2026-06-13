@@ -60,6 +60,8 @@ import bulletin5 from './img/articles/bulletin5.jpeg';
 import jcVeterans1 from './img/articles/jcVeterans1.jpeg';
 import jcVeterans2 from './img/articles/jcVeterans2.jpeg';
 
+import canadian1 from './img/articles/canadian1.jpeg';
+
 interface ArticleEntry {
   source:     string;
   sourceUrl:  string;
@@ -602,6 +604,16 @@ const ARTICLES: ArticleEntry[] = [
     excerpt:   'Masumi Mitsui was born in Tokyo on Oct 7, 1887. The son of a soldier, he tried to enter the Japanese navy, but failed the entrance exam. Feeling like he had failed Japan, he decided to emigrate to North America, arriving in Canada in 1908.',
     img:       jcVeterans2,
   },
+  {
+    source:    'Canadian Encyclopedia',
+    sourceUrl: 'https://thecanadianencyclopedia.ca/en',
+    title:     'Japanese Canadian Internment: Prisoners in their own Country',
+    author:    'James H. Marsh',
+    date:      'September 17, 2020',
+    link:      'https://thecanadianencyclopedia.ca/en/article/japanese-internment-banished-and-beyond-tears-feature',
+    excerpt:   'Beginning in early 1942, the Canadian government detained and dispossessed more than 90 per cent of Japanese Canadians, some 21,000 people, living in British Columbia. They were detained under the War Measures Act and were interned for the rest of the Second World War.',
+    img:       canadian1,
+  },
 ];
 
 function truncateWords(text: string, maxWords: number): string {
@@ -644,7 +656,7 @@ type SortDir   = 'desc' | 'asc';
 
 const ArticlesPage: React.FC = () => {
   const [query,     setQuery]     = useState('');
-  const [filter, setFilter] = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies' | 'Greenwood Nikkei' | 'The Bulletin' | 'Japanese Canadian Veterans'>('all');
+  const [filter, setFilter] = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies' | 'Greenwood Nikkei' | 'The Bulletin' | 'Japanese Canadian Veterans' | 'Canadian Encyclopedia'>('all');
   const [sortField, setSortField] = useState<SortField>('year');
   const [sortDir,   setSortDir]   = useState<SortDir>('desc');
 
@@ -687,7 +699,7 @@ const ArticlesPage: React.FC = () => {
 
       {/* ── Filter buttons ── */}
       <div className="articles-filter-wrapper">
-        {(['all', 'Discover Nikkei', 'Japanese Canadian Legacies', 'Greenwood Nikkei', 'The Bulletin', 'Japanese Canadian Veterans'] as const).map(f => (
+        {(['all', 'Discover Nikkei', 'Japanese Canadian Legacies', 'Greenwood Nikkei', 'The Bulletin', 'Japanese Canadian Veterans', 'Canadian Encyclopedia'] as const).map(f => (
           <button
             key={f}
             className={`articles-filter-btn${
@@ -705,7 +717,9 @@ const ArticlesPage: React.FC = () => {
               ? 'Greenwood Nikkei'
               : f === 'The Bulletin'
               ? 'The Bulletin'
-              : 'JC Veterans'}
+              : f === 'Japanese Canadian Veterans'
+              ? 'JC Veterans'
+              : 'Canadian Ency'}
           </button>
         ))}
       </div>
