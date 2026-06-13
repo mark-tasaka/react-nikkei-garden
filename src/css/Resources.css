@@ -269,15 +269,16 @@
 /* =====================================================
    Filter buttons
    ===================================================== */
-.articles-filter-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;  
-  justify-content: center;
-  gap: 24px;
-  margin: 0 auto 28px;
-  padding: 0 24px;
-}
+  .articles-filter-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    justify-content: center;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto 28px;
+    padding: 0 32px;
+  }
 
 .articles-filter-btn {
   font-family: 'Open Sans', sans-serif;

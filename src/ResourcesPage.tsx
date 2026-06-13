@@ -62,6 +62,8 @@ import jcVeterans2 from './img/articles/jcVeterans2.jpeg';
 
 import canadian1 from './img/articles/canadian1.jpeg';
 
+import book1 from './img/articles/book1.jpeg';
+
 interface ArticleEntry {
   source:     string;
   sourceUrl:  string;
@@ -614,6 +616,16 @@ const ARTICLES: ArticleEntry[] = [
     excerpt:   'Beginning in early 1942, the Canadian government detained and dispossessed more than 90 per cent of Japanese Canadians, some 21,000 people, living in British Columbia. They were detained under the War Measures Act and were interned for the rest of the Second World War.',
     img:       canadian1,
   },
+  {
+    source:    'Books',
+    sourceUrl: 'https://japanesecanadianhistory.ca/',
+    title:     'The Politics of Racism: The Uprooting of Japanese Canadians During the Second World War',
+    author:    'Ann Sunahara',
+    date:      '1981',
+    link:      'https://japanesecanadianhistory.ca/',
+    excerpt:   'The first book to fully document the politics behind the 1942 expulsion order that saw 20,000 Japanese Canadians evicted from their homes in British Columbia and sent inland to work camps, detention centres and farms in Alberta and Manitoba. The book details the relationship between racism and political expediency, and shows how political parties were controlled by a small group of politicians who scapegoated minorities to hang on to power.',
+    img:       book1,
+  },
 ];
 
 function truncateWords(text: string, maxWords: number): string {
@@ -656,7 +668,7 @@ type SortDir   = 'desc' | 'asc';
 
 const ArticlesPage: React.FC = () => {
   const [query,     setQuery]     = useState('');
-  const [filter, setFilter] = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies' | 'Greenwood Nikkei' | 'The Bulletin' | 'Japanese Canadian Veterans' | 'Canadian Encyclopedia'>('all');
+  const [filter, setFilter] = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies' | 'Greenwood Nikkei' | 'The Bulletin' | 'Japanese Canadian Veterans' | 'Canadian Encyclopedia' | 'Books'>('all');
   const [sortField, setSortField] = useState<SortField>('year');
   const [sortDir,   setSortDir]   = useState<SortDir>('desc');
 
@@ -699,7 +711,7 @@ const ArticlesPage: React.FC = () => {
 
       {/* ── Filter buttons ── */}
       <div className="articles-filter-wrapper">
-        {(['all', 'Discover Nikkei', 'Japanese Canadian Legacies', 'Greenwood Nikkei', 'The Bulletin', 'Japanese Canadian Veterans', 'Canadian Encyclopedia'] as const).map(f => (
+        {(['all', 'Discover Nikkei', 'Japanese Canadian Legacies', 'Greenwood Nikkei', 'The Bulletin', 'Japanese Canadian Veterans', 'Canadian Encyclopedia', 'Books'] as const).map(f => (
           <button
             key={f}
             className={`articles-filter-btn${
@@ -719,7 +731,9 @@ const ArticlesPage: React.FC = () => {
               ? 'The Bulletin'
               : f === 'Japanese Canadian Veterans'
               ? 'JC Veterans'
-              : 'Canadian Ency'}
+              : f === 'Canadian Encyclopedia'
+              ? 'Canadian Ency'
+              : 'Books'}
           </button>
         ))}
       </div>
