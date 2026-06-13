@@ -37,51 +37,94 @@ const VIDEOS: VideoEntry[] = [
   },
 ];
 
+type MediaFilter = 'all' | 'nikkei' | 'greenwood' | 'internment';
+
+const FILTER_BUTTONS: { key: MediaFilter; label: string }[] = [
+  { key: 'all',        label: 'All' },
+  { key: 'nikkei',     label: 'Nikkei Legacy Park' },
+  { key: 'greenwood',  label: 'Greenwood' },
+  { key: 'internment', label: 'JC Internment' },
+];
+
+const NIKKEI_IDS    = new Set(['0SerwWKTJPE']);
+const GREENWOOD_IDS = new Set(['dQTcfId-sbw']);
+const INTERNMENT_IDS = new Set(['M3wJgU67ZP8', 'QILO0XT-0eo', 'C8TQTuMqM9g']);
+
+function matchesFilter(embedId: string, filter: MediaFilter): boolean {
+  if (filter === 'all')        return true;
+  if (filter === 'nikkei')     return NIKKEI_IDS.has(embedId);
+  if (filter === 'greenwood')  return GREENWOOD_IDS.has(embedId);
+  if (filter === 'internment') return INTERNMENT_IDS.has(embedId);
+  return false;
+}
+
 const GOOGLE_PHOTOS_URL =
   'https://photos.google.com/share/AF1QipNF_xaWBwApezR9zrvE5GslCyfWnNKObywg10jzrwPW515dMahdE76TLCRrNFCixw?key=RjdtQ09XazM3T1dVbFotaHRLV2hTNmRVUnpYb1lB';
 
-const MediaPage: React.FC = () => (
-  <main className="media-page">
-    <h1 className="media-title">Videos of the Japanese Canadian Experience</h1>
+const MediaPage: React.FC = () => {
+  const [filter, setFilter] = React.useState<MediaFilter>('all');
 
-    <div className="media-grid">
-      {VIDEOS.map(({ embedId, title, description }) => (
-        <article key={embedId} className="media-card">
-          <div className="media-embed-wrapper">
-            <iframe
-              className="media-embed"
-              src={`https://www.youtube.com/embed/${embedId}`}
-              title={title}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-          <div className="media-card-body">
-            <h2 className="media-card-title">{title}</h2>
-            {description && (
-              <p className="media-card-desc">{description}</p>
-            )}
-          </div>
-        </article>
-      ))}
-    </div>
+  const filteredVideos = VIDEOS.filter(v => matchesFilter(v.embedId, filter));
+  const showDrone = filter === 'all' || filter === 'nikkei';
 
-    {/* ── Google Photos album link ── */}
-<div className="media-photos-section">
-      <h2 className="media-photos-title">Drone Captured Video of Nikkei Legacy Park</h2>
-      <p className="media-photos-desc">
-        Drone captured video by Aaron Oye.
-      </p>
-      
-        <a href="https://www.dropbox.com/scl/fi/k7hukms9ibhyrvioostxk/Greenwood-BC.mov?rlkey=wsci6n7jg19na1om0vpc8wgw5&e=1&st=fvbxf4vc&dl=0"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="media-photos-btn"
-        >
-        View Video (Dropbox) ↗
-      </a>
-    </div>
-  </main>
-);
+  return (
+    <main className="media-page">
+      <h1 className="media-title">Videos of the Japanese Canadian Experience</h1>
+
+      {/* ── Filter buttons ── */}
+      <div className="gallery-filter-wrapper">
+        {FILTER_BUTTONS.map(({ key, label }) => (
+          <button
+            key={key}
+            className={`gallery-filter-btn${filter === key || filter === 'all' ? ' gallery-filter-btn--active' : ''}`}
+            onClick={() => setFilter(key)}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+
+      <div className="media-grid">
+        {filteredVideos.map(({ embedId, title, description }) => (
+          <article key={embedId} className="media-card">
+            <div className="media-embed-wrapper">
+              <iframe
+                className="media-embed"
+                src={`https://www.youtube.com/embed/${embedId}`}
+                title={title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+            <div className="media-card-body">
+              <h2 className="media-card-title">{title}</h2>
+              {description && (
+                <p className="media-card-desc">{description}</p>
+              )}
+            </div>
+          </article>
+        ))}
+      </div>
+
+      {/* ── Drone video section ── */}
+      {showDrone && (
+        <div className="media-photos-section">
+          <h2 className="media-photos-title">Drone Captured Video of Nikkei Legacy Park</h2>
+          <p className="media-photos-desc">
+            Drone captured video by Aaron Oye.
+          </p>
+          
+            <a href="https://www.dropbox.com/scl/fi/k7hukms9ibhyrvioostxk/Greenwood-BC.mov?rlkey=wsci6n7jg19na1om0vpc8wgw5&e=1&st=fvbxf4vc&dl=0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="media-photos-btn"
+          >
+            View Video (Dropbox) ↗
+          </a>
+        </div>
+      )}
+    </main>
+  );
+};
 
 export default MediaPage;
