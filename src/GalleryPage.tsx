@@ -154,6 +154,10 @@ import sacredHeart_9  from './img/gallery/SacredHeart/sacredHeart_9.jpg';
 import sacredHeart_10  from './img/gallery/SacredHeart/sacredHeart_10.jpg';
 import sacredHeart_11  from './img/gallery/SacredHeart/sacredHeart_11.jpg';
 import sacredHeart_12  from './img/gallery/SacredHeart/sacredHeart_12.jpg';
+import sacredHeart_13  from './img/gallery/SacredHeart/sacredHeart_13.jpg';
+import sacredHeart_14  from './img/gallery/SacredHeart/sacredHeart_14.jpg';
+import sacredHeart_15  from './img/gallery/SacredHeart/sacredHeart_15.jpg';
+import sacredHeart_16  from './img/gallery/SacredHeart/sacredHeart_16.jpg';
 
 interface GalleryImage {
   src: string;
@@ -1157,9 +1161,9 @@ const SACREDHEART_IMAGES: GalleryImage[] = [
       src: sacredHeart_11,
       alt: 'Sacred Heart Church',
       caption: (
-        <>Sacred Heart Church was also another gathering place. 
+        <>Kindergarten class was much smaller in the early 50’s.  Families started returning to the coast after April 1st, 1949. 
           <br /><br />
-          Photo courtesy of Yamaguchi</>
+          Photo courtesy of Yamaguchi family</>
       ),
     },
     {
@@ -1169,7 +1173,43 @@ const SACREDHEART_IMAGES: GalleryImage[] = [
         <>Baptism in the 50’s.</>
       ),
     },
+    {
+      src: sacredHeart_13,
+      alt: 'Sacred Heart Church',
+      caption: (
+        <>By 1950, the kindergarten class was smaller.  In 1953-54, SHS closed due to dwindling enrolment, but kept the kindergarten class open.  In 1967, the Franciscan Sisters left Greenwood.
+          <br /><br />
+          Photo courtesy of Yamaguchi family </>
+      ),
+    },
+    {
+      src: sacredHeart_14,
+      alt: 'Sacred Heart Church',
+      caption: (
+        <>Picnics were one of the highlights.
+          <br /><br />
+          Photo courtesy of Yamaguchi family </>
+      ),
+    },
+    {
+      src: sacredHeart_15,
+      alt: 'Sacred Heart Church',
+      caption: (
+        <>Another picnic group.
+          <br /><br />
+          Photo courtesy of Yamaguchi family </>
+      ),
+    },
+    {
+      src: sacredHeart_16,
+      alt: 'Sacred Heart Church',
+      caption: (
+        <>Children looked forward to hiking up towards Phoenix and enjoyed the camaraderie.  Notice the nun still wearing heavy clothing even on a warm day </>
+      ),
+    },
   ];
+
+
 // ── Carousel ────────────────────────────────────────────────────────────────
 
 interface CarouselProps {
