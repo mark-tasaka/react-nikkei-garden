@@ -45,6 +45,16 @@ import discover41 from './img/articles/discover41.jpeg';
 import discover42 from './img/articles/discover42.jpeg';
 import discover43 from './img/articles/discover43.jpeg';
 import discover44 from './img/articles/discover44.jpeg';
+import discover45 from './img/articles/discover45.jpeg';
+import discover46 from './img/articles/discover46.jpeg';
+import discover47 from './img/articles/discover47.jpeg';
+import discover48 from './img/articles/discover48.jpeg';
+import discover49 from './img/articles/discover49.jpeg';
+import discover50 from './img/articles/discover50.jpeg';
+import discover51 from './img/articles/discover51.jpeg';
+import discover52 from './img/articles/discover52.jpeg';
+import discover53 from './img/articles/discover53.jpeg';
+import discover54 from './img/articles/discover54.jpeg';
 
 import legacies1   from './img/articles/legacies1.jpeg';
 import legacies2 from './img/articles/legacies2.jpeg';
@@ -56,6 +66,7 @@ import bulletin2 from './img/articles/bulletin2.jpeg';
 import bulletin3 from './img/articles/bulletin3.jpeg';
 import bulletin4 from './img/articles/bulletin4.jpeg';
 import bulletin5 from './img/articles/bulletin5.jpeg';
+import bulletin6 from './img/articles/bulletin6.jpeg';
 
 import jcVeterans1 from './img/articles/jcVeterans1.jpeg';
 import jcVeterans2 from './img/articles/jcVeterans2.jpeg';
@@ -625,6 +636,116 @@ const ARTICLES: ArticleEntry[] = [
     link:      'https://japanesecanadianhistory.ca/',
     excerpt:   'The first book to fully document the politics behind the 1942 expulsion order that saw 20,000 Japanese Canadians evicted from their homes in British Columbia and sent inland to work camps, detention centres and farms in Alberta and Manitoba. The book details the relationship between racism and political expediency, and shows how political parties were controlled by a small group of politicians who scapegoated minorities to hang on to power.',
     img:       book1,
+  },
+  {
+    source:    'The Bulletin',
+    sourceUrl: 'https://jccabulletin-geppo.ca/',
+    title:     'The Japanese Canadian Soldiers of the First World War and the Fight to Win the Vote',
+    author:    'David R. Mitsui',
+    date:      'November 7, 2011',
+    link:      'https://jccabulletin-geppo.ca/the-japanese-canadian-soldiers-of-the-first-world-war-and-the-fight-to-win-the-vote/',
+    excerpt:   'On July 9, 2007, I submitted a nomination to the Historic Sites and Monuments Board of Canada regarding the Japanese Canadian soldiers of WW I. In early August 2011, I received a letter from The Honourable Peter Kent, Minister of the Environment, advising me that he has officially designated the "Japanese Canadian Soldiers of the First World War and the Fight to Win the Vote" a national historic event.',
+    img:       bulletin6,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Kinky, Ken-boh, Gacha-ba',
+    author:    'Chuck Tasaka',
+    date:      'July 17, 2024',
+    link:      'https://discovernikkei.org/en/journal/2024/7/17/kinky-kenboh-gachaba/',
+    excerpt:   'The old cliche, "What\'s in a name?" Names like "Mad Dog" and "Scarface" are obvious. African-American names are very creative and unique. De\'Andre, Shaquon, and JuJuan give more attention to people with these names. Former Yankee ace "Whitey" Ford or "Whitey" Herzog of the St. Louis Cardinals were probably given that nickname due to their whitest head of hair.',
+    img:       discover45,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Canadian Nikkei Comfort Food',
+    author:    'Chuck Tasaka',
+    date:      'September 4, 2022',
+    link:      'https://discovernikkei.org/en/journal/2022/9/4/comfort-food/',
+    excerpt:   'Fuki is symbolic of Japanese immigration. In the late 1800\'s, when poor people from rural villages came to Canada or Amerika, for some reason they brought this insignificant root that is grown on the hillside of Japan.',
+    img:       discover46,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Mystery \'Graffiti\' Revealed',
+    author:    'Chuck Tasaka',
+    date:      'December 12, 2019',
+    link:      'https://discovernikkei.org/en/journal/2019/12/24/mystery-graffiti/',
+    excerpt:   'Former Nelson Star editor, Greg Nesteroff, on January 21, 2015, wrote an article on names of Japanese Canadians scratched on the wall of the old \'Slocan Hall\' or Legion/Oddfellows Hall. As the contractors were peeling off the asphalt of the building, they could see the names of Japanese Canadians who were probably young teens during the internment years around 1944 or 1945.',
+    img:       discover47,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Happy Hockey Hapas\' "Dream Season"',
+    author:    'Chuck Tasaka',
+    date:      'June 1, 2018',
+    link:      'https://discovernikkei.org/en/journal/2018/6/1/happy-hockey-hapa/',
+    excerpt:   'Every team across Canada dreams about winning it all, and in 2018, Richmond\'s Seafair Islanders Bantam hockey club\'s young U-15 (ages 13-14) finished the season as winners of the Pacific Coast Tier One regular season with a record of 19-1.',
+    img:       discover48,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'First Lady Plumber in Canada Is a Nikkei',
+    author:    'Chuck Tasaka',
+    date:      'November 23, 2017',
+    link:      'https://discovernikkei.org/en/journal/2017/11/23/first-lady-plumber/',
+    excerpt:   'Anna (Fujimura) Higashi grew up in Woodfibre, B.C. Her grandfather Isaburo Fujimura and son Taichiro, seventeen years of age, came to Canada in the early 1900s. Isaburo was a caretaker of a community bath on Powell Street (Japantown).',
+    img:       discover49,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Canadian Nisei! You Know You\'re Old When…',
+    author:    'Chuck Tasaka',
+    date:      'October 24, 2017',
+    link:      'https://discovernikkei.org/en/journal/2017/10/24/canadian-nisei/',
+    excerpt:   'The Nisei—the group who suffered the most during the World War II incarceration of Japanese Canadians and Americans—is now heading into the twilight of their lives. They survived and succeeded because of their resilience, perseverance, and determination.',
+    img:       discover50,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Ema Lake: An Emerging Talent',
+    author:    'Chuck Tasaka',
+    date:      'September 15, 2017',
+    link:      'https://discovernikkei.org/en/journal/2017/9/15/ema-lake/',
+    excerpt:   'In the summer of 2016, I was in the midst of planning a major fundraising event to help finance the Nikkei Legacy Park project in Greenwood, BC. The family plaques for those who lived through the internment were paid for by donors.',
+    img:       discover51,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Japanese Canadians: Race, Religion, and Confinement',
+    author:    'Greg Robinson',
+    date:      'June 22, 2022',
+    link:      'https://discovernikkei.org/en/journal/2022/6/22/jc-race-religion-confinement/',
+    excerpt:   'In the summer of 2016, I was in the midst of planning a major fundraising event to help finance the Nikkei Legacy Park project in Greenwood, BC. The family plaques for those who lived through the internment were paid for by donors.',
+    img:       discover52,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Japanese Canadian Participation in World War I and World War II',
+    author:    'Susan Yatabe and Ewan Craig',
+    date:      'March 19, 2019',
+    link:      'https://discovernikkei.org/en/journal/2019/3/19/japanese-canadian-vets/',
+    excerpt:   'To prove their loyalty to Canada, two generations of Nikkei fought in the World Wars to gain rights for their community. The first generation, the Issei, served in World War I. The second generation, the Nisei, served in World War II, as well as the Korean War.',
+    img:       discover53,
+  },
+  {
+    source:    'Discover Nikkei',
+    sourceUrl: 'https://discovernikkei.org/',
+    title:     'Japanese Canadian Internment and the Struggle for Redress',
+    author:    'Mathew McRae',
+    date:      'June 16, 2017',
+    link:      'https://discovernikkei.org/en/journal/2017/6/16/jc-internment-and-redress/',
+    excerpt:   'Before the outbreak of the Second World War, Lena Hayakawa lived what she describes as a very idyllic life. Hayakawa was born in British Columbia and until she was 11, she lived on her father\'s strawberry farm in the countryside.',
+    img:       discover54,
   },
 ];
 
