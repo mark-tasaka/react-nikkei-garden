@@ -142,6 +142,19 @@ import historical1960_4  from './img/gallery/historical1960/historical1960_4.jpg
 import historical1960_5  from './img/gallery/historical1960/historical1960_5.jpg';
 import historical1960_6  from './img/gallery/historical1960/historical1960_6.jpg';
 
+import sacredHeart_1  from './img/gallery/SacredHeart/sacredHeart_1.jpg';
+import sacredHeart_2  from './img/gallery/SacredHeart/sacredHeart_2.jpg';
+import sacredHeart_3  from './img/gallery/SacredHeart/sacredHeart_3.jpg';
+import sacredHeart_4  from './img/gallery/SacredHeart/sacredHeart_4.jpg';
+import sacredHeart_5  from './img/gallery/SacredHeart/sacredHeart_5.jpg';
+import sacredHeart_6  from './img/gallery/SacredHeart/sacredHeart_6.jpg';
+import sacredHeart_7  from './img/gallery/SacredHeart/sacredHeart_7.jpg';
+import sacredHeart_8  from './img/gallery/SacredHeart/sacredHeart_8.jpg';
+import sacredHeart_9  from './img/gallery/SacredHeart/sacredHeart_9.jpg';
+import sacredHeart_10  from './img/gallery/SacredHeart/sacredHeart_10.jpg';
+import sacredHeart_11  from './img/gallery/SacredHeart/sacredHeart_11.jpg';
+import sacredHeart_12  from './img/gallery/SacredHeart/sacredHeart_12.jpg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -564,7 +577,7 @@ const BW_IMAGES_2: GalleryImage[] = [
     alt: 'Greenwood 1942',
     caption: (
       <>
-        Sacred Her Church Confirmation Day.
+        Sacred Heart Church Confirmation Day.
         <br /><br />
         Photo courtesy of Mitsy Sasaki
       </>
@@ -597,7 +610,7 @@ const BW_IMAGES_2: GalleryImage[] = [
     alt: 'Greenwood 1942',
     caption: (
       <>
-        One of the first friendships in Greenwood.  Teresa Kurisu taught Marion Maclean piano and they became ‘life-long’ even though they lost touch.  Teresa followed her parents to Japan in 1946.  An article is written in Discover Nikkei (Resources).
+        One of the first friendships in Greenwood.  Teresa Kurisu taught Marion Maclean piano and they became \'life-long\' friends even though they lost touch.  Teresa followed her parents to Japan in 1946.  An article is written in Discover Nikkei (Resources).
         <br /><br />
         Photo courtesy of Teresa Ogawa
       </>
@@ -1070,6 +1083,95 @@ const HISTORICAL1960_IMAGES: GalleryImage[] = [
     },
   ];
 
+
+const SACREDHEART_IMAGES: GalleryImage[] = [
+    {
+      src: sacredHeart_1,
+      alt: 'Sacred Heart Church',
+      caption: (
+        <>Sacred Heart School or SHS began with Summer School and by October of 1942, classes were in session.  With 364 students, resources were limited, but JCs had education. </>
+      ),
+    },
+    {
+      src: sacredHeart_2,
+      alt: 'Sacred Heart Church',
+      caption: (
+        <>The old fire hall was converted to SHS.  Fire escape was added.  Where the truck was stored, that became the multi-purpose room.  Buntaro Nakatsu spear-headed a workforce to build a playing field. </>
+      ),
+    },
+    {
+      src: sacredHeart_3,
+      alt: 'Sacred Heart Church',
+      caption: (
+        <>Fr. Katsuno in front of Sacred Heart School. </>
+      ),
+    },
+    {
+      src: sacredHeart_4,
+      alt: 'Sacred Heart Church',
+      caption: (
+        <>Sr. Donata and other nuns were teachers. </>
+      ),
+    },
+    {
+      src: sacredHeart_5,
+      alt: 'Sacred Heart Church',
+      caption: (
+        <>Sr. Donata and other nuns were teachers. </>
+      ),
+    },
+    {
+      src: sacredHeart_6,
+      alt: 'Sacred Heart Church',
+      caption: (
+        <>Fr. Katsuno and SHS students enjoying winter activities. </>
+      ),
+    },
+    {
+      src: sacredHeart_7,
+      alt: 'Sacred Heart Church',
+      caption: (
+        <>Early days of Sacred Heart School. </>
+      ),
+    },
+    {
+      src: sacredHeart_8,
+      alt: 'Sacred Heart Church',
+      caption: (
+        <>Baptism for young Japanese Canadian Catholic. </>
+      ),
+    },
+    {
+      src: sacredHeart_9,
+      alt: 'Sacred Heart Church',
+      caption: (
+        <>New converts in front of the convent </>
+      ),
+    },
+    {
+      src: sacredHeart_10,
+      alt: 'Sacred Heart Church',
+      caption: (
+        <>Kindergarten graduation.  Notice classes were larger in the 40’s. </>
+      ),
+    },
+    {
+      src: sacredHeart_11,
+      alt: 'Sacred Heart Church',
+      caption: (
+        <>Sacred Heart Church was also another gathering place. 
+          <br /><br />
+          Photo courtesy of Yamaguchi</>
+      ),
+    },
+    {
+      src: sacredHeart_12,
+      alt: 'Sacred Heart Church',
+      caption: (
+        <>Baptism in the 50’s.</>
+      ),
+    },
+  ];
 // ── Carousel ────────────────────────────────────────────────────────────────
 
 interface CarouselProps {
@@ -1207,6 +1309,7 @@ const GalleryPage: React.FC = () => {
           <Carousel images={LAOBUR_DAY_IMAGES} title="Labour Day Parades 1940s" />
           <Carousel images={LAOBUR_DAY1950_IMAGES} title="Labour Day Parades 1950s" />
           <Carousel images={HISTORICAL1960_IMAGES} title="Historical Photos: 1960s" />
+          <Carousel images={SACREDHEART_IMAGES} title="Sacred Heart School Life" />
         </>
       )}
       {(filter === 'all' || filter === 'restoration') && (
