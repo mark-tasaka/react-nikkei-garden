@@ -35,26 +35,39 @@ const VIDEOS: VideoEntry[] = [
     title: 'Japanese Canadian Internment | Narrated by David Suzuki',
     description: 'To remember the 75th Anniversary of Japanese Canadian Internment during the Second World War, Legion Magazine and David Suzuki tell the story of the injustices and atrocities done towards Japanese-Canadians across the country, and in particular, British Columbia. Visit www.legionmagazine.com for more information.',
   },
+  {
+    embedId: 'zxBWg4zxTkQ',
+    title: 'Sleeping Tigers: The Asahi Baseball Story',
+    description: 'This feature-length documentary tells the story of the Asahi baseball team. In pre-World War II Vancouver, the team was unbeatable, winning the Pacific Northwest Championship for five straight years. After the Japanese attack on Pearl Harbor, all persons of Japanese descent in Canada were sent to internment camps. The former Asahi members survived by playing ball. Their passion was contagious and soon other players joined in, among them RCMP officials and local townspeople. As a result, the games helped break down racial and cultural barriers. This remarkable story is told with a combination of archival footage, interviews and dramatic re-enactments.',
+  },
+  {
+    embedId: 'wBv-MYAf9P0',
+    title: 'Heritage Minutes: Vancouver Asahi ',
+    description: 'From 1914-1941, the Vancouver Asahi were one of city’s most dominant amateur baseball teams, winning multiple league titles in Vancouver and along the Northwest Coast. In 1942, after Canada declared war on Japan, 22,000 Japanese Canadians were interned in the interior of BC, including the Asahi players.',
+  },
 ];
 
-type MediaFilter = 'all' | 'nikkei' | 'greenwood' | 'internment';
+type MediaFilter = 'all' | 'nikkei' | 'greenwood' | 'internment' | 'asahi';
 
 const FILTER_BUTTONS: { key: MediaFilter; label: string }[] = [
   { key: 'all',        label: 'All' },
   { key: 'nikkei',     label: 'Nikkei Legacy Park' },
   { key: 'greenwood',  label: 'Greenwood' },
   { key: 'internment', label: 'JC Internment' },
+  { key: 'asahi', label: 'Asahi Baseball' },
 ];
 
 const NIKKEI_IDS    = new Set(['0SerwWKTJPE']);
 const GREENWOOD_IDS = new Set(['dQTcfId-sbw']);
 const INTERNMENT_IDS = new Set(['M3wJgU67ZP8', 'QILO0XT-0eo', 'C8TQTuMqM9g']);
+const ASAHI_IDS = new Set(['zxBWg4zxTkQ', 'wBv-MYAf9P0']);
 
 function matchesFilter(embedId: string, filter: MediaFilter): boolean {
   if (filter === 'all')        return true;
   if (filter === 'nikkei')     return NIKKEI_IDS.has(embedId);
   if (filter === 'greenwood')  return GREENWOOD_IDS.has(embedId);
   if (filter === 'internment') return INTERNMENT_IDS.has(embedId);
+  if (filter === 'asahi') return ASAHI_IDS.has(embedId);
   return false;
 }
 
