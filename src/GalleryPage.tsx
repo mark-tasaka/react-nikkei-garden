@@ -519,6 +519,15 @@ const BW_IMAGES_2: GalleryImage[] = [
       </>
     ),
   },
+    {
+      src: misc_27,
+      alt: 'RCMP',
+      caption: (
+        <>Fumi Matsubuchi with RCMP and BCSC Leonard Cowdrill.
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
   {
     src: misc_40,
     alt: 'Greenwood 1942',
@@ -669,7 +678,7 @@ const INTERNEES_IMAGES: GalleryImage[] = [
       caption: (
         <>Teenage JC and local boys
           <br /><br />
-          Photo courtesy of Greenwood Museum</>
+          Photo courtesy of Francis Nakagawa</>
       ),
     },
     {
@@ -704,15 +713,6 @@ const INTERNEES_IMAGES: GalleryImage[] = [
       alt: 'GHS students in 1946',
       caption: (
         <>Greenwood Public High School students circa 1946-47
-          <br /><br />
-          Photo courtesy of Greenwood Museum</>
-      ),
-    },
-    {
-      src: misc_27,
-      alt: 'RCMP',
-      caption: (
-        <>Police, BCSC Leonard Cowdrill and Mrs. Fumi Matsubuchi
           <br /><br />
           Photo courtesy of Greenwood Museum</>
       ),
