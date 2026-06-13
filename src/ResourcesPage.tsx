@@ -60,6 +60,9 @@ import legacies1   from './img/articles/legacies1.jpeg';
 import legacies2 from './img/articles/legacies2.jpeg';
 
 import greenwood1 from './img/articles/greenwood1.jpeg';
+import greenwood2 from './img/articles/greenwood2.jpeg';
+import greenwood3 from './img/articles/greenwood3.jpeg';
+import greenwood4 from './img/articles/greenwood4.jpeg';
 
 import bulletin1 from './img/articles/bulletin1.jpeg';
 import bulletin2 from './img/articles/bulletin2.jpeg';
@@ -302,7 +305,7 @@ const ARTICLES: ArticleEntry[] = [
     sourceUrl: 'https://www.greenwoodnikkei.ca/',
     title:     'Nikkei Legacy Park Project',
     author:    'Chuck Tasaka',
-    date:      'June 1, 2018',
+    date:      '2018',
     link:      'https://www.greenwoodnikkei.ca/Nekkei-Legacy-Park-Project.html',
     excerpt:   'The names have changed since the 1990’s. This park was originally called Boundary Creek Park. The main purpose was to be used as a free overnight campsite and a rest stop for weary travelers. In 1997, the City of Greenwood was presented with a large, brass internment history plaque by members of the National Association of Japanese Canadians from Kamloops. Thus, the city councillors decided to have a ‘Name That Park’ contest in the local paper.',
     img:       greenwood1,
@@ -602,7 +605,7 @@ const ARTICLES: ArticleEntry[] = [
     sourceUrl: 'https://japanesecanadianveterans.ca/',
     title:     'Kiyoji Iizuka, MM',
     author:    'Japanese Canadian Veterans',
-    date:      'April 22, 2025',
+    date:      '2025',
     link:      'https://japanesecanadianveterans.ca/2025/04/22/kiyoji-iizuka/',
     excerpt:   'Private Kiyoji Iizuka was a familiar face on Powell Street both before the Second World War and after. He lived at 522 Powell Street after his tour in France with the Canadian Overseas Expeditionary Force, and returned there in 1969 after being interned in Greenwood.',
     img:       jcVeterans1,
@@ -612,7 +615,7 @@ const ARTICLES: ArticleEntry[] = [
     sourceUrl: 'https://japanesecanadianveterans.ca/',
     title:     'Masumi Mitsui, MM',
     author:    'Japanese Canadian Veterans',
-    date:      'April 22, 2025',
+    date:      '2025',
     link:      'https://japanesecanadianveterans.ca/2025/02/26/a-lifelong-fighter-masumi-mitsui/',
     excerpt:   'Masumi Mitsui was born in Tokyo on Oct 7, 1887. The son of a soldier, he tried to enter the Japanese navy, but failed the entrance exam. Feeling like he had failed Japan, he decided to emigrate to North America, arriving in Canada in 1908.',
     img:       jcVeterans2,
@@ -746,6 +749,36 @@ const ARTICLES: ArticleEntry[] = [
     link:      'https://discovernikkei.org/en/journal/2017/6/16/jc-internment-and-redress/',
     excerpt:   'Before the outbreak of the Second World War, Lena Hayakawa lived what she describes as a very idyllic life. Hayakawa was born in British Columbia and until she was 11, she lived on her father\'s strawberry farm in the countryside.',
     img:       discover54,
+  },
+  {
+    source:    'Greenwood Nikkei',
+    sourceUrl: 'https://www.greenwoodnikkei.ca/',
+    title:     'The First Internment Site',
+    author:    'Moira Matsubuchi',
+    date:      '2018',
+    link:      'https://www.greenwoodnikkei.ca/Internment-Site.html',
+    excerpt:   'It happened on a chilly Sunday afternoon on April 26th, 1942. Mayor McArthur and residents were at the train station in Greenwood to welcome their new neighbours and offer them transportation to the accommodations provided by the B.C. Security Commission.',
+    img:       greenwood2,
+  },
+  {
+    source:    'Greenwood Nikkei',
+    sourceUrl: 'https://www.greenwoodnikkei.ca/',
+    title:     'Housing',
+    author:    'Moira Matsubuchi',
+    date:      '2018',
+    link:      'https://www.greenwoodnikkei.ca/Housing.html',
+    excerpt:   'Each family had one room. My wife and daughter and I had a room about this size, about fourteen feet by ten feet; but some families with five and six children — well, it got pretty crowded in there. The fall and winter of 1942 was the coldest it had been around Greenwood in a long, long time.',
+    img:       greenwood3,
+  },
+  {
+    source:    'Greenwood Nikkei',
+    sourceUrl: 'https://www.greenwoodnikkei.ca/',
+    title:     'Japanese-Canadian World War I Veterans in Greenwood',
+    author:    'Chuck Tasaka',
+    date:      '2018',
+    link:      'https://www.greenwoodnikkei.ca/Their-Stories.html',
+    excerpt:   'In September 2021, a memorial monument was erected at the Nikkei Legacy Park in Greenwood, B.C. to honour the twelve Japanese Canadian war veterans who were sent to the first internment site in B.C.',
+    img:       greenwood4,
   },
 ];
 
