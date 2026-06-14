@@ -1447,14 +1447,17 @@ const Carousel: React.FC<CarouselProps> = ({ images, title }) => {
 
 // ── GalleryPage ─────────────────────────────────────────────────────────────
 
-type GalleryFilter = 'all' | 'nikkei' | 'historical' | 'restoration' | 'ohairi' ;
+type GalleryFilter = 'all' | 'nikkei' | 'places' | 'internment' | 'community' | 'restoration' | 'ohairi' ;
 
 const FILTER_BUTTONS: { key: GalleryFilter; label: string }[] = [
   { key: 'all',        label: 'All' },
   { key: 'nikkei',     label: 'Nikkei Legacy Park' },
-  { key: 'historical', label: 'Historical Photos' },
+  // { key: 'historical', label: 'Historical: Locations' },
   { key: 'restoration', label: 'Restoration' },
   { key: 'ohairi',     label: 'Ohairi Park' },
+  { key: 'places',     label: 'Places' },
+  { key: 'internment', label: 'Internment' },
+  { key: 'community',  label: 'Community Life' },
 ];
 
 const GalleryPage: React.FC = () => {
@@ -1485,7 +1488,7 @@ const GalleryPage: React.FC = () => {
           <Carousel images={MAY_IMAGES}   title="Nikkei Legacy Park: May 2026" />
         </>
       )}
-      {(filter === 'all' || filter === 'historical') && (
+      {/* {(filter === 'all' || filter === 'historical') && (
         <>
           <Carousel images={BUILDING_IMAGES}   title="Historical Buildings" />
           <Carousel images={BW_IMAGES_2} title="Arrival of Japanese Canadians to Greenwood: 1942" />
@@ -1501,7 +1504,7 @@ const GalleryPage: React.FC = () => {
           <Carousel images={UNITEDCHURCH_IMAGES} title="United Church" />
           <Carousel images={SAWMILLS_IMAGES} title="Sawmill & Logging Industry in Greenwood" />
         </>
-      )}
+      )} */}
       {(filter === 'all' || filter === 'restoration') && (
         <>
         <Carousel images={RESTORATION_IMAGES} title="Restoration and Renovation: 2016-2018" />
@@ -1510,6 +1513,30 @@ const GalleryPage: React.FC = () => {
       )}
       {(filter === 'all' || filter === 'ohairi') && (
         <Carousel images={MISC_IMAGES} title="A Look Back: Ohairi Park (Pre-2014)" />
+      )}
+      {(filter === 'all' || filter === 'places') && (
+        <>
+          <Carousel images={BUILDING_IMAGES}   title="Historical Buildings" />
+          <Carousel images={LOCATIONS_IMAGES}   title="Historical Locations" />
+          <Carousel images={SAWMILLS_IMAGES} title="Sawmill & Logging Industry in Greenwood" />
+        </>
+      )}
+      {(filter === 'all' || filter === 'internment') && (
+        <>
+          <Carousel images={BW_IMAGES_2} title="Arrival of Japanese Canadians to Greenwood: 1942" />
+          <Carousel images={BW_IMAGES}   title="Historical Photos" />
+          <Carousel images={HOUSING_IMAGES} title="1943 Japanese Canadian Housing" />
+          <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45" />
+        </>
+      )}
+      {(filter === 'all' || filter === 'community') && (
+        <>
+          <Carousel images={SACREDHEART_IMAGES} title="Sacred Heart School Life" />
+          <Carousel images={UNITEDCHURCH_IMAGES} title="United Church" />
+          <Carousel images={LAOBUR_DAY_IMAGES} title="Labour Day Parades 1940s" />
+          <Carousel images={LAOBUR_DAY1950_IMAGES} title="Labour Day Parades 1950s" />
+          <Carousel images={HISTORICAL1960_IMAGES} title="Natsu Matsuri - Summer Festival 1964" />
+        </>
       )}
 
     </main>
