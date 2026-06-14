@@ -1449,14 +1449,27 @@ const Carousel: React.FC<CarouselProps> = ({ images, title }) => {
 
 type GalleryFilter = 'all' | 'nikkei' | 'places' | 'internment' | 'community' | 'restoration' | 'ohairi' ;
 
-const FILTER_BUTTONS: { key: GalleryFilter; label: string }[] = [
+// const FILTER_BUTTONS: { key: GalleryFilter; label: string }[] = [
+//   { key: 'all',        label: 'All' },
+//   { key: 'nikkei',     label: 'Nikkei Legacy Park' },
+//   // { key: 'historical', label: 'Historical: Locations' },
+//   { key: 'restoration', label: 'Restoration' },
+//   { key: 'ohairi',     label: 'Ohairi Park' },
+//   { key: 'places',     label: 'Historical: Places' },
+//   { key: 'internment', label: 'Historical: Internment' },
+//   { key: 'community',  label: 'Historical: Community Life' },
+// ];
+
+const PRIMARY_FILTER_BUTTONS: { key: GalleryFilter; label: string }[] = [
   { key: 'all',        label: 'All' },
   { key: 'nikkei',     label: 'Nikkei Legacy Park' },
-  // { key: 'historical', label: 'Historical: Locations' },
   { key: 'restoration', label: 'Restoration' },
   { key: 'ohairi',     label: 'Ohairi Park' },
-  { key: 'places',     label: 'Places' },
-  { key: 'internment', label: 'Internment' },
+];
+
+const ARCHIVAL_FILTER_BUTTONS: { key: GalleryFilter; label: string }[] = [
+  { key: 'places',     label: 'Buildings & Industries' },
+  { key: 'internment', label: 'Arrival & Internment' },
   { key: 'community',  label: 'Community Life' },
 ];
 
@@ -1469,8 +1482,9 @@ const GalleryPage: React.FC = () => {
       <h1 className="gallery-page-title">Photo Galleries</h1>
 
       {/* ── Filter buttons ── */}
+      {/* ── Filter buttons ── */}
       <div className="gallery-filter-wrapper">
-        {FILTER_BUTTONS.map(({ key, label }) => (
+        {PRIMARY_FILTER_BUTTONS.map(({ key, label }) => (
           <button
             key={key}
             className={`gallery-filter-btn${filter === key || filter === 'all' ? ' gallery-filter-btn--active' : ''}`}
@@ -1480,6 +1494,31 @@ const GalleryPage: React.FC = () => {
           </button>
         ))}
       </div>
+
+      <h2 className="gallery-filter-section-label">Archival Photos</h2>
+
+      <div className="gallery-filter-wrapper">
+        {ARCHIVAL_FILTER_BUTTONS.map(({ key, label }) => (
+          <button
+            key={key}
+            className={`gallery-filter-btn${filter === key || filter === 'all' ? ' gallery-filter-btn--active' : ''}`}
+            onClick={() => setFilter(key)}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+      {/* <div className="gallery-filter-wrapper"> */}
+        {/* {FILTER_BUTTONS.map(({ key, label }) => (
+          <button
+            key={key}
+            className={`gallery-filter-btn${filter === key || filter === 'all' ? ' gallery-filter-btn--active' : ''}`}
+            onClick={() => setFilter(key)}
+          >
+            {label}
+          </button>
+        ))}
+      </div> */}
 
       {(filter === 'all' || filter === 'nikkei') && (
         <>
@@ -1516,6 +1555,7 @@ const GalleryPage: React.FC = () => {
       )}
       {(filter === 'all' || filter === 'places') && (
         <>
+          <Carousel images={HOUSING_IMAGES} title="1943 Japanese Canadian Housing" />
           <Carousel images={BUILDING_IMAGES}   title="Historical Buildings" />
           <Carousel images={LOCATIONS_IMAGES}   title="Historical Locations" />
           <Carousel images={SAWMILLS_IMAGES} title="Sawmill & Logging Industry in Greenwood" />
@@ -1525,7 +1565,6 @@ const GalleryPage: React.FC = () => {
         <>
           <Carousel images={BW_IMAGES_2} title="Arrival of Japanese Canadians to Greenwood: 1942" />
           <Carousel images={BW_IMAGES}   title="Historical Photos" />
-          <Carousel images={HOUSING_IMAGES} title="1943 Japanese Canadian Housing" />
           <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45" />
         </>
       )}

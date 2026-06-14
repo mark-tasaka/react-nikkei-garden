@@ -28,6 +28,17 @@
   margin: 0 0 28px;
 }
 
+.gallery-filter-section-label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #5b4f49;
+  text-align: center;
+  margin: -16px auto 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 /* =====================================================
    Carousel wrapper — centres the track on the page
    ===================================================== */
@@ -180,8 +191,9 @@
   flex-wrap: wrap;  
   justify-content: center;
   gap: 24px;
+  max-width: 1200px;
   margin: 0 auto 40px;
-  padding: 0 24px;
+  padding: 0 32px;
 }
 
 .gallery-filter-btn {
@@ -190,7 +202,7 @@
   font-weight: 700;
   color: #ffffff;
   padding: 10px 0;
-  width: 160px;
+  width: 180px;
   border: none;
   border-radius: 12px;
   background: #727270;
