@@ -170,6 +170,10 @@ import sawmill_4  from './img/gallery/sawmills/sawmill_4.jpg';
 import sawmill_5  from './img/gallery/sawmills/sawmill_5.jpg';
 import sawmill_6  from './img/gallery/sawmills/sawmill_6.jpg';
 
+import unitedChurch_1  from './img/gallery/unitedChurch/unitedChurch_1.jpg';
+import unitedChurch_2  from './img/gallery/unitedChurch/unitedChurch_2.jpg';
+import unitedChurch_3  from './img/gallery/unitedChurch/unitedChurch_3.jpg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -1241,6 +1245,37 @@ const SACREDHEART_IMAGES: GalleryImage[] = [
     },
   ];
 
+  
+const UNITEDCHURCH_IMAGES: GalleryImage[] = [
+    {
+      src: unitedChurch_1,
+      alt: 'United Church',
+      caption: (
+        <>CGIT or Canadian Girls in Training was the favourite of Madeleine Bock’s activity.
+          <br /><br />
+          Photo courtesy of United Church of Canada</>
+      ),
+    },
+    {
+      src: unitedChurch_2,
+      alt: 'United Church',
+      caption: (
+        <>Jr. Red Cross picnic at Jewel Lake. Left to right: Joanne Cowdrill, Joan Aldham, Lily Sakamoto, Joan Miura.  Front is May Watanabe and Mitsy Haraga.
+          <br /><br />
+          Photo courtesy of United Church of Canada</>
+      ),
+    },
+    {
+      src: unitedChurch_3,
+      alt: 'United Church',
+      caption: (
+        <>United Church left Grace Namba, Visiting Supervisor and Madeleine Bock
+          <br /><br />
+          Photo courtesy of United Church of Canada</>
+      ),
+    },
+  ];
+
 
 
 const SAWMILLS_IMAGES: GalleryImage[] = [
@@ -1425,6 +1460,7 @@ const GalleryPage: React.FC = () => {
           <Carousel images={LAOBUR_DAY1950_IMAGES} title="Labour Day Parades 1950s" />
           <Carousel images={HISTORICAL1960_IMAGES} title="Natsu Matsuri - Summer Festival 1964" />
           <Carousel images={SACREDHEART_IMAGES} title="Sacred Heart School Life" />
+          <Carousel images={UNITEDCHURCH_IMAGES} title="United Church" />
           <Carousel images={SAWMILLS_IMAGES} title="Sawmill & Logging Industry in Greenwood" />
         </>
       )}
