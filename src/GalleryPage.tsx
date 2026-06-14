@@ -97,6 +97,7 @@ import restoration4  from './img/gallery/restoration/restoration4.JPG';
 import restoration5  from './img/gallery/restoration/restoration5.JPG';
 import restoration6  from './img/gallery/restoration/restoration6.JPG';
 import restoration7  from './img/gallery/restoration/restoration7.JPG';
+import restoration8  from './img/gallery/restoration/restoration8.JPG';
 
 import landscaping_1  from './img/gallery/landscaping/landscaping_1.jpg';
 import landscaping_2  from './img/gallery/landscaping/landscaping_2.jpg';
@@ -288,6 +289,13 @@ const RESTORATION_IMAGES: GalleryImage[] = [
     src: restoration7,
     alt: 'Restoration Image 7',
     caption: <>2019.</>,
+  },
+  {
+    src: restoration8,
+    alt: 'Restoration Image 8',
+    caption: <>Grand Opening of Nikkei Memorial Garden July 20th, 2025.  Many thanks to JCLS, City of Greenwood Public Works and Greenwood Museum for your unbelievable support.
+    <br /> <br />
+    Mayor John Bolt, Linda Kawamoto-Reid, JCLS CEO Susanne Tabata,  Clare Folvik, Kumpei Wakino.  Holding the ribbons are Laura Yamaguchi and Rachel Yamaguchi.</>,
   },
 ];
 
