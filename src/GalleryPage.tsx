@@ -95,6 +95,9 @@ import restoration5  from './img/gallery/restoration/restoration5.JPG';
 import restoration6  from './img/gallery/restoration/restoration6.JPG';
 import restoration7  from './img/gallery/restoration/restoration7.JPG';
 
+import landscaping_1  from './img/gallery/landscaping/landscaping_1.jpg';
+import landscaping_2  from './img/gallery/landscaping/landscaping_2.jpg';
+
 import housing1943_1  from './img/gallery/1943Housing/housing1943_1.jpeg';
 import housing1943_2  from './img/gallery/1943Housing/housing1943_2.jpeg';
 import housing1943_3  from './img/gallery/1943Housing/housing1943_3.jpeg';
@@ -279,6 +282,20 @@ const RESTORATION_IMAGES: GalleryImage[] = [
     alt: 'Restoration Image 7',
     caption: <>2019.</>,
   },
+];
+
+
+const LANDSCAPING_IMAGES: GalleryImage[] = [
+  {
+    src: landscaping_1,
+    alt: 'Landscaping Image 1',
+    caption: <>Kunon Landscaping Company and Japonica Landscaping & Environment Farm Ltd and crew created a beautiful but serene 15th century rock garden (Karesansui) to enhance the landscape of Greenwood.  Kumpei Wakino, Yusuke, Myles Berney, Hiro Okusa.</>,
+  },
+  {
+    src: landscaping_2,
+    alt: 'Landscaping Image 2',
+    caption: <>Winter scene:  Greenwood Nikkei Memorial Garden dedicated to the 1200 Japanese Canadians who came to Greenwood April 26th, 1942.  Most stayed and made their homes after 1945.  There are still a few JCs are still residing in this community.</>,
+  }
 ];
 
 const BUILDING_IMAGES: GalleryImage[] = [
@@ -1406,13 +1423,16 @@ const GalleryPage: React.FC = () => {
           <Carousel images={HOUSING_IMAGES} title="1943 Japanese Canadian Housing" />
           <Carousel images={LAOBUR_DAY_IMAGES} title="Labour Day Parades 1940s" />
           <Carousel images={LAOBUR_DAY1950_IMAGES} title="Labour Day Parades 1950s" />
-          <Carousel images={HISTORICAL1960_IMAGES} title="Historical Photos: 1960s" />
+          <Carousel images={HISTORICAL1960_IMAGES} title="Natsu Matsuri - Summer Festival 1964" />
           <Carousel images={SACREDHEART_IMAGES} title="Sacred Heart School Life" />
           <Carousel images={SAWMILLS_IMAGES} title="Sawmill & Logging Industry in Greenwood" />
         </>
       )}
       {(filter === 'all' || filter === 'restoration') && (
+        <>
         <Carousel images={RESTORATION_IMAGES} title="Restoration and Renovation: 2016-2018" />
+        <Carousel images={LANDSCAPING_IMAGES} title="Japanese Rock Garden Landscaping" />
+        </>
       )}
       {(filter === 'all' || filter === 'ohairi') && (
         <Carousel images={MISC_IMAGES} title="A Look Back: Ohairi Park (Pre-2014)" />
