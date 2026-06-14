@@ -158,6 +158,7 @@ import sacredHeart_13  from './img/gallery/SacredHeart/sacredHeart_13.jpg';
 import sacredHeart_14  from './img/gallery/SacredHeart/sacredHeart_14.jpg';
 import sacredHeart_15  from './img/gallery/SacredHeart/sacredHeart_15.jpg';
 import sacredHeart_16  from './img/gallery/SacredHeart/sacredHeart_16.jpg';
+import sacredHeart_17  from './img/gallery/SacredHeart/sacredHeart_17.jpg';
 
 interface GalleryImage {
   src: string;
@@ -1205,6 +1206,13 @@ const SACREDHEART_IMAGES: GalleryImage[] = [
       alt: 'Sacred Heart Church',
       caption: (
         <>Children looked forward to hiking up towards Phoenix and enjoyed the camaraderie.  Notice the nun still wearing heavy clothing even on a warm day </>
+      ),
+    },
+    {
+      src: sacredHeart_17,
+      alt: 'Sacred Heart Church',
+      caption: (
+        <>Franciscans of the Atonement’s contribution to Greenwood was enormous.  </>
       ),
     },
   ];
