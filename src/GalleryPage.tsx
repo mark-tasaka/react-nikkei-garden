@@ -86,6 +86,9 @@ import misc_45  from './img/gallery/misc/arrival_6.jpg';
 import misc_46  from './img/gallery/misc/arrival_7.jpg';
 import misc_47  from './img/gallery/misc/arrival_8.jpg';
 import misc_48  from './img/gallery/misc/arrival_9.jpg';
+import building2_2  from './img/gallery/misc/building2_2.jpg';
+import building2_3  from './img/gallery/misc/building2_3.jpg';
+import building2_4  from './img/gallery/misc/building2_4.jpg';
 
 import restoration1  from './img/gallery/restoration/restoration1.JPG';
 import restoration2  from './img/gallery/restoration/restoration2.JPG';
@@ -334,6 +337,39 @@ const BUILDING_IMAGES: GalleryImage[] = [
         The back view of the #2 Building.
         <br /><br />
         Photo courtesy of Greenwood Museum
+      </>
+    ),
+  },
+  {
+    src: building2_2,
+    alt: 'Building #2',
+    caption: (
+      <>
+        The former Armstrong Hotel turned hospital and internment housing (1940’s) to extra classrooms (1954) burnt to the ground in July of 1957.  Area is now the Thrift Shop and Senior Centre. 
+        <br /><br />
+        Photo courtesy of Joan Scott Tice
+      </>
+    ),
+  },
+  {
+    src: building2_3,
+    alt: 'Building #2',
+    caption: (
+      <>
+        The former Armstrong Hotel turned hospital and internment housing (1940’s) to extra classrooms (1954) burnt to the ground in July of 1957.  Area is now the Thrift Shop and Senior Centre. 
+        <br /><br />
+        Photo courtesy of Joan Scott Tice
+      </>
+    ),
+  },
+  {
+    src: building2_4,
+    alt: 'Building #2',
+    caption: (
+      <>
+        The former Armstrong Hotel turned hospital and internment housing (1940’s) to extra classrooms (1954) burnt to the ground in July of 1957.  Area is now the Thrift Shop and Senior Centre. 
+        <br /><br />
+        Photo courtesy of Joan Scott Tice
       </>
     ),
   },
