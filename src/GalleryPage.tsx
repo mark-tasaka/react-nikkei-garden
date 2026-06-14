@@ -1463,6 +1463,8 @@ const GalleryPage: React.FC = () => {
   return (
     <main className="gallery-page">
 
+      <h1 className="gallery-page-title">Photo Galleries</h1>
+
       {/* ── Filter buttons ── */}
       <div className="gallery-filter-wrapper">
         {FILTER_BUTTONS.map(({ key, label }) => (
