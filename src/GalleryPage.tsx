@@ -160,6 +160,13 @@ import sacredHeart_15  from './img/gallery/SacredHeart/sacredHeart_15.jpg';
 import sacredHeart_16  from './img/gallery/SacredHeart/sacredHeart_16.jpg';
 import sacredHeart_17  from './img/gallery/SacredHeart/sacredHeart_17.jpg';
 
+import sawmill_1  from './img/gallery/sawmills/sawmill_1.jpg';
+import sawmill_2  from './img/gallery/sawmills/sawmill_2.jpg';
+import sawmill_3  from './img/gallery/sawmills/sawmill_3.jpg';
+import sawmill_4  from './img/gallery/sawmills/sawmill_4.jpg';
+import sawmill_5  from './img/gallery/sawmills/sawmill_5.jpg';
+import sawmill_6  from './img/gallery/sawmills/sawmill_6.jpg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -1218,6 +1225,51 @@ const SACREDHEART_IMAGES: GalleryImage[] = [
   ];
 
 
+
+const SAWMILLS_IMAGES: GalleryImage[] = [
+    {
+      src: sawmill_1,
+      alt: 'Sawmill',
+      caption: (
+        <>Sawmill and logging were the main industry of Greenwood.  Many Japanese Canadians were employed by various sawmills in town.  Cooke Lumber Ltd, Folvik Mill, Boundary Falls Mill and Sandner’s Box Mill.  There were smaller mills Tedesco and Forshaw.</>
+      ),
+    },
+    {
+      src: sawmill_2,
+      alt: 'Sawmill',
+      caption: (
+        <>Sawmill and logging were the main industry of Greenwood.  Many Japanese Canadians were employed by various sawmills in town.  Cooke Lumber Ltd, Folvik Mill, Boundary Falls Mill and Sandner’s Box Mill.  There were smaller mills Tedesco and Forshaw. </>
+      ),
+    },
+    {
+      src: sawmill_3,
+      alt: 'Sawmill',
+      caption: (
+        <>Sawmill and logging were the main industry of Greenwood.  Many Japanese Canadians were employed by various sawmills in town.  Cooke Lumber Ltd, Folvik Mill, Boundary Falls Mill and Sandner’s Box Mill.  There were smaller mills Tedesco and Forshaw. </>
+      ),
+    },
+    {
+      src: sawmill_4,
+      alt: 'Sawmill',
+      caption: (
+        <>Sawmill and logging were the main industry of Greenwood.  Many Japanese Canadians were employed by various sawmills in town.  Cooke Lumber Ltd, Folvik Mill, Boundary Falls Mill and Sandner’s Box Mill.  There were smaller mills Tedesco and Forshaw. </>
+      ),
+    },
+    {
+      src: sawmill_5,
+      alt: 'Sawmill',
+      caption: (
+        <>Sawmill and logging were the main industry of Greenwood.  Many Japanese Canadians were employed by various sawmills in town.  Cooke Lumber Ltd, Folvik Mill, Boundary Falls Mill and Sandner’s Box Mill.  There were smaller mills Tedesco and Forshaw. </>
+      ),
+    },
+    {
+      src: sawmill_6,
+      alt: 'Sawmill',
+      caption: (
+        <>Sawmill and logging were the main industry of Greenwood.  Many Japanese Canadians were employed by various sawmills in town.  Cooke Lumber Ltd, Folvik Mill, Boundary Falls Mill and Sandner’s Box Mill.  There were smaller mills Tedesco and Forshaw. </>
+      ),
+    },
+  ];
 // ── Carousel ────────────────────────────────────────────────────────────────
 
 interface CarouselProps {
@@ -1356,6 +1408,7 @@ const GalleryPage: React.FC = () => {
           <Carousel images={LAOBUR_DAY1950_IMAGES} title="Labour Day Parades 1950s" />
           <Carousel images={HISTORICAL1960_IMAGES} title="Historical Photos: 1960s" />
           <Carousel images={SACREDHEART_IMAGES} title="Sacred Heart School Life" />
+          <Carousel images={SAWMILLS_IMAGES} title="Sawmill & Logging Industry in Greenwood" />
         </>
       )}
       {(filter === 'all' || filter === 'restoration') && (
