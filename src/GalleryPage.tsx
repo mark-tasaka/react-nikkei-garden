@@ -111,6 +111,7 @@ import housing1943_4  from './img/gallery/1943Housing/housing1943_4.jpeg';
 import location_1  from './img/gallery/locations/location_1.jpg';
 import location_2  from './img/gallery/locations/location_2.jpg';
 import location_3  from './img/gallery/locations/location_3.jpg';
+import location_4  from './img/gallery/locations/location_4.jpg';
 
 import labourDay_1  from './img/gallery/labourDay/labourDay1.jpg';
 import labourDay_2  from './img/gallery/labourDay/labourDay2.jpg';
@@ -178,6 +179,11 @@ import unitedChurch_1  from './img/gallery/unitedChurch/unitedChurch_1.jpg';
 import unitedChurch_2  from './img/gallery/unitedChurch/unitedChurch_2.jpg';
 import unitedChurch_3  from './img/gallery/unitedChurch/unitedChurch_3.jpg';
 
+import cementery_1  from './img/gallery/cementery/cementery_1.jpg';
+import cementery_2  from './img/gallery/cementery/cementery_2.jpg';
+import cementery_3  from './img/gallery/cementery/cementery_3.jpg';
+import cementery_4  from './img/gallery/cementery/cementery_4.jpg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -207,6 +213,13 @@ const MAY_IMAGES: GalleryImage[] = [
   { src: img10, alt: 'Nikkei Legacy Park – May 2026, Photo 10' },
   { src: img11, alt: 'Nikkei Legacy Park – May 2026, Photo 11' },
   { src: img12, alt: 'Nikkei Legacy Park – May 2026, Photo 12' },
+  {
+    src: restoration8,
+    alt: 'Restoration Image 8',
+    caption: <>Grand Opening of Nikkei Memorial Garden July 20th, 2025.  Many thanks to JCLS, City of Greenwood Public Works and Greenwood Museum for your unbelievable support.
+    <br /> <br />
+    Mayor John Bolt, Linda Kawamoto-Reid, JCLS CEO Susanne Tabata,  Clare Folvik, Kumpei Wakino.  Holding the ribbons are Laura Yamaguchi and Rachel Yamaguchi.</>,
+  },
 ];
 
 const JUNE_IMAGES: GalleryImage[] = [
@@ -290,13 +303,6 @@ const RESTORATION_IMAGES: GalleryImage[] = [
     alt: 'Restoration Image 7',
     caption: <>2019.</>,
   },
-  {
-    src: restoration8,
-    alt: 'Restoration Image 8',
-    caption: <>Grand Opening of Nikkei Memorial Garden July 20th, 2025.  Many thanks to JCLS, City of Greenwood Public Works and Greenwood Museum for your unbelievable support.
-    <br /> <br />
-    Mayor John Bolt, Linda Kawamoto-Reid, JCLS CEO Susanne Tabata,  Clare Folvik, Kumpei Wakino.  Holding the ribbons are Laura Yamaguchi and Rachel Yamaguchi.</>,
-  },
 ];
 
 
@@ -304,7 +310,7 @@ const LANDSCAPING_IMAGES: GalleryImage[] = [
   {
     src: landscaping_1,
     alt: 'Landscaping Image 1',
-    caption: <>Kunon Landscaping Company and Japonica Landscaping & Environment Farm Ltd and crew created a beautiful but serene 15th century rock garden (Karesansui) to enhance the landscape of Greenwood.  Kumpei Wakino, Yusuke, Myles Berney, Hiro Okusa.</>,
+    caption: <>Kunon Landscaping Company and Japonica Landscaping & Environment Farm Ltd and crew created a beautiful but serene 15th century rock garden (Karesansui) to enhance the landscape of Greenwood.  Kumpei Wakino, Yosuke, Myles Berney, Hiro Okusa.</>,
   },
   {
     src: landscaping_2,
@@ -542,6 +548,17 @@ const LOCATIONS_IMAGES: GalleryImage[] = [
     caption: (
       <>
         At the park, children called it THE POND where they swam in the summer and skated in the winter.  You might see a raft. Special events were held at the park. 
+        <br /><br />
+        Photo courtesy of Greenwood Museum
+      </>
+    ),
+  },
+    {
+    src: location_4,
+    alt: 'Old Smelter in Anaconda',
+    caption: (
+      <>
+        Old smelter in Anaconda just south-west of Greenwood.  250,000 bricks were used to build the tall chimney.
         <br /><br />
         Photo courtesy of Greenwood Museum
       </>
@@ -1366,6 +1383,38 @@ const SAWMILLS_IMAGES: GalleryImage[] = [
       ),
     },
   ];
+
+  
+const CEMENTERY_IMAGES: GalleryImage[] = [
+    {
+      src: cementery_1,
+      alt: 'Cementery',
+      caption: (
+        <>Greenwood Cemetery</>
+      ),
+    },
+    {
+      src: cementery_2,
+      alt: 'Bob Maeda headstone in Greenwood Cemetery',
+      caption: (
+        <>Bob Maeda</>
+      ),
+    },
+    {
+      src: cementery_3,
+      alt: 'Joseph Maeda headstone in Greenwood Cemetery',
+      caption: (
+        <>Joseph Maeda</>
+      ),
+    },
+    {
+      src: cementery_4,
+      alt: 'Mary Masu Hayashi headstone in Greenwood Cemetery',
+      caption: (
+        <>Mary Masu Hayashi.</>
+      ),
+    },
+  ];
 // ── Carousel ────────────────────────────────────────────────────────────────
 
 interface CarouselProps {
@@ -1476,8 +1525,8 @@ const PRIMARY_FILTER_BUTTONS: { key: GalleryFilter; label: string }[] = [
 ];
 
 const ARCHIVAL_FILTER_BUTTONS: { key: GalleryFilter; label: string }[] = [
-  { key: 'places',     label: 'Buildings & Industries' },
-  { key: 'internment', label: 'Arrival & Internment' },
+  { key: 'places',     label: 'Places' },
+  { key: 'internment', label: 'Internment' },
   { key: 'community',  label: 'Community Life' },
 ];
 
@@ -1567,6 +1616,7 @@ const GalleryPage: React.FC = () => {
           <Carousel images={BUILDING_IMAGES}   title="Historical Buildings" />
           <Carousel images={LOCATIONS_IMAGES}   title="Historical Locations" />
           <Carousel images={SAWMILLS_IMAGES} title="Sawmill & Logging Industry in Greenwood" />
+          <Carousel images={CEMENTERY_IMAGES} title="Greenwood Cemetery" />
         </>
       )}
       {(filter === 'all' || filter === 'internment') && (
