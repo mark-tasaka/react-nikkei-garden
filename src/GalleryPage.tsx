@@ -162,7 +162,6 @@ import sacredHeart_9  from './img/gallery/SacredHeart/sacredHeart_9.jpg';
 import sacredHeart_10  from './img/gallery/SacredHeart/sacredHeart_10.jpg';
 import sacredHeart_11  from './img/gallery/SacredHeart/sacredHeart_11.jpg';
 import sacredHeart_12  from './img/gallery/SacredHeart/sacredHeart_12.jpg';
-import sacredHeart_13  from './img/gallery/SacredHeart/sacredHeart_13.jpg';
 import sacredHeart_14  from './img/gallery/SacredHeart/sacredHeart_14.jpg';
 import sacredHeart_15  from './img/gallery/SacredHeart/sacredHeart_15.jpg';
 import sacredHeart_16  from './img/gallery/SacredHeart/sacredHeart_16.jpg';
@@ -892,7 +891,7 @@ const HOUSING_IMAGES: GalleryImage[] = [
       ),
     },
     {
-      src: housing1943_2,
+      src: housing1943_3,
       alt: '1943 census',
       // caption: (
       //   <>1943 Japanese Canadian Housing census of Greenwood City.  Some stayed in “self-supporting” houses shared by three or four families.
@@ -901,7 +900,7 @@ const HOUSING_IMAGES: GalleryImage[] = [
       // ),
     },
     {
-      src: housing1943_3,
+      src: housing1943_2,
       alt: '1943 census',
       // caption: (
       //   <>1943 Japanese Canadian Housing census of Greenwood City.  Some stayed in “self-supporting” houses shared by three or four families.
@@ -1291,7 +1290,7 @@ const SACREDHEART_IMAGES: GalleryImage[] = [
       src: sacredHeart_11,
       alt: 'Sacred Heart Church',
       caption: (
-        <>Kindergarten class was much smaller in the early 50’s.  Families started returning to the coast after April 1st, 1949. 
+        <>By 1950, the kindergarten class was smaller.  In 1953-54, SHS closed due to dwindling enrolment, but kept the kindergarten class open.  In 1967, the Franciscan Sisters left Greenwood.
           <br /><br />
           Photo courtesy of Yamaguchi family</>
       ),
@@ -1301,15 +1300,6 @@ const SACREDHEART_IMAGES: GalleryImage[] = [
       alt: 'Sacred Heart Church',
       caption: (
         <>Baptism in the 50’s.</>
-      ),
-    },
-    {
-      src: sacredHeart_13,
-      alt: 'Sacred Heart Church',
-      caption: (
-        <>By 1950, the kindergarten class was smaller.  In 1953-54, SHS closed due to dwindling enrolment, but kept the kindergarten class open.  In 1967, the Franciscan Sisters left Greenwood.
-          <br /><br />
-          Photo courtesy of Yamaguchi family </>
       ),
     },
     {
@@ -1412,14 +1402,18 @@ const SAWMILLS_IMAGES: GalleryImage[] = [
       src: sawmill_5,
       alt: 'Sawmill',
       caption: (
-        <>Sawmill and logging were the main industry of Greenwood.  Many Japanese Canadians were employed by various sawmills in town.  Cooke Lumber Ltd, Folvik Mill, Boundary Falls Mill and Sandner’s Box Mill.  There were smaller mills Tedesco and Forshaw. </>
+        <>Sawmill and logging were the main industry of Greenwood.  Many Japanese Canadians were employed by various sawmills in town.  Cooke Lumber Ltd, Folvik Mill, Boundary Falls Mill and Sandner’s Box Mill.  There were smaller mills Tedesco and Forshaw.
+          <br /><br />
+          Photo courtesy of Jim Taylor</>
       ),
     },
     {
       src: sawmill_6,
       alt: 'Sawmill',
       caption: (
-        <>Sawmill and logging were the main industry of Greenwood.  Many Japanese Canadians were employed by various sawmills in town.  Cooke Lumber Ltd, Folvik Mill, Boundary Falls Mill and Sandner’s Box Mill.  There were smaller mills Tedesco and Forshaw. </>
+        <>Sawmill and logging were the main industry of Greenwood.  Many Japanese Canadians were employed by various sawmills in town.  Cooke Lumber Ltd, Folvik Mill, Boundary Falls Mill and Sandner’s Box Mill.  There were smaller mills Tedesco and Forshaw.
+          <br /><br />
+          Photo courtesy of Jim Taylor</> 
       ),
     },
   ];
