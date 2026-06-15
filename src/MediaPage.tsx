@@ -45,6 +45,11 @@ const VIDEOS: VideoEntry[] = [
     title: 'Heritage Minutes: Vancouver Asahi ',
     description: 'From 1914-1941, the Vancouver Asahi were one of city’s most dominant amateur baseball teams, winning multiple league titles in Vancouver and along the Northwest Coast. In 1942, after Canada declared war on Japan, 22,000 Japanese Canadians were interned in the interior of BC, including the Asahi players.',
   },
+  {
+    embedId: '1pWmTIX4NCM',
+    title: 'Drone Captured Video of Nikkei Legacy Park',
+    description: 'An aerial tour of Nikkei Legacy Park and the City of Greenwood, captured, filmed, and produced by Aaron Oye.',
+  },
 ];
 
 type MediaFilter = 'all' | 'nikkei' | 'greenwood' | 'internment' | 'asahi';
@@ -57,7 +62,7 @@ const FILTER_BUTTONS: { key: MediaFilter; label: string }[] = [
   { key: 'asahi', label: 'Asahi Baseball' },
 ];
 
-const NIKKEI_IDS    = new Set(['0SerwWKTJPE']);
+const NIKKEI_IDS    = new Set(['0SerwWKTJPE', '1pWmTIX4NCM']);
 const GREENWOOD_IDS = new Set(['dQTcfId-sbw']);
 const INTERNMENT_IDS = new Set(['M3wJgU67ZP8', 'QILO0XT-0eo', 'C8TQTuMqM9g']);
 const ASAHI_IDS = new Set(['zxBWg4zxTkQ', 'wBv-MYAf9P0']);
@@ -120,7 +125,7 @@ const MediaPage: React.FC = () => {
       </div>
 
       {/* ── Drone video section ── */}
-      {showDrone && (
+      {/* {showDrone && (
         <div className="media-photos-section">
           <h2 className="media-photos-title">Drone Captured Video of Nikkei Legacy Park</h2>
           <p className="media-photos-desc">
@@ -135,7 +140,7 @@ const MediaPage: React.FC = () => {
             View Video (Dropbox) ↗
           </a>
         </div>
-      )}
+      )} */}
     </main>
   );
 };
