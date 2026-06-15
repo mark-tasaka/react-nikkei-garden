@@ -187,6 +187,11 @@ import cementery_5  from './img/gallery/cementery/cementery_5.jpg';
 import cementery_6  from './img/gallery/cementery/cementery_6.jpg';
 import cementery_7  from './img/gallery/cementery/cementery_7.jpg';
 
+import opening_1  from './img/gallery/opening2025/opening_1.jpg';
+import opening_2  from './img/gallery/opening2025/opening_2.jpg';
+import opening_3  from './img/gallery/opening2025/opening_3.jpg';
+import opening_4  from './img/gallery/opening2025/opening_4.jpg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -240,6 +245,38 @@ const JUNE_IMAGES: GalleryImage[] = [
   { src: spring2026_12, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 12' },
   { src: spring2026_13, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 13' },
   { src: spring2026_14, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 14' },
+];
+
+
+const OPENING_IMAGES: GalleryImage[] = [
+  {
+    src: opening_1,
+    alt: 'Opening Image 1',
+    caption: <>Nikkei Memorial Garden was completed by joint Kunon and Japonica Landscaping Company with the grant from JCLS.  In kind service by City of Greenwood Public Works.
+    <br /><br />
+    Photos Courtesy of Peter Kalasz Photography</>,
+  },
+  {
+    src: opening_2,
+    alt: 'Opening Image 2',
+    caption: <>Entertainment was provided by Southern Wave Music and Dance Society from Vancouver.
+    <br /><br />
+    Photos Courtesy of Peter Kalasz Photography</>,
+  },
+  {
+    src: opening_3,
+    alt: 'Opening Image 3',
+    caption: <>Chuck Tasaka thanking JCLS, City of Greenwood, Landscaping crew  and Greenwood Museum.
+    <br /><br />
+    Photos Courtesy of Peter Kalasz Photography</>,
+  },
+  {
+    src: opening_4,
+    alt: 'Opening Image 4',
+    caption: <>Welcome dance Okinawa style.
+    <br /><br />
+    Photos Courtesy of Peter Kalasz Photography</>,
+  },
 ];
 
 const MISC_IMAGES: GalleryImage[] = [
@@ -1583,6 +1620,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park Panels' },
     { filterKey: 'nikkei', title: 'Spring Time in the Park: June 2026' },
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park: May 2026' },
+    { filterKey: 'nikkei', title: 'Grand Opening: July 20, 2025' },
     { filterKey: 'restoration', title: 'Restoration and Renovation: 2016-2018' },
     { filterKey: 'restoration', title: 'Japanese Rock Garden Landscaping' },
     { filterKey: 'ohairi', title: 'A Look Back: Ohairi Park (Pre-2014)' },
@@ -1662,12 +1700,13 @@ const GalleryPage: React.FC = () => {
           )}
         </div>
       </div>
-      
+
       {(filter === 'all' || filter === 'nikkei') && (
         <>
           {matchesQuery('Nikkei Legacy Park Panels') && <Carousel images={PANEL_IMAGES} title="Nikkei Legacy Park Panels" />}
           {matchesQuery('Spring Time in the Park: June 2026') && <Carousel images={JUNE_IMAGES}  title="Spring Time in the Park: June 2026" />}
           {matchesQuery('Nikkei Legacy Park: May 2026') && <Carousel images={MAY_IMAGES}   title="Nikkei Legacy Park: May 2026" />}
+          {matchesQuery('Grand Opening: July 20, 2025') && <Carousel images={OPENING_IMAGES}   title="Grand Opening: July 20, 2025" />}
         </>
       )}
 
