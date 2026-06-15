@@ -220,13 +220,6 @@ const MAY_IMAGES: GalleryImage[] = [
   { src: img10, alt: 'Nikkei Legacy Park – May 2026, Photo 10' },
   { src: img11, alt: 'Nikkei Legacy Park – May 2026, Photo 11' },
   { src: img12, alt: 'Nikkei Legacy Park – May 2026, Photo 12' },
-  {
-    src: restoration8,
-    alt: 'Restoration Image 8',
-    caption: <>Grand Opening of Nikkei Memorial Garden July 20th, 2025.  Many thanks to JCLS, City of Greenwood Public Works and Greenwood Museum for your unbelievable support.
-    <br /> <br />
-    Mayor John Bolt, Linda Kawamoto-Reid, JCLS CEO Susanne Tabata,  Clare Folvik, Kumpei Wakino.  Holding the ribbons are Laura Yamaguchi and Rachel Yamaguchi.</>,
-  },
 ];
 
 const JUNE_IMAGES: GalleryImage[] = [
@@ -275,6 +268,13 @@ const OPENING_IMAGES: GalleryImage[] = [
     caption: <>Welcome dance Okinawa style.
     <br /><br />
     Photos Courtesy of Peter Kalasz Photography</>,
+  },
+  {
+    src: restoration8,
+    alt: 'Restoration Image 8',
+    caption: <>Grand Opening of Nikkei Memorial Garden July 20th, 2025.  Many thanks to JCLS, City of Greenwood Public Works and Greenwood Museum for your unbelievable support.
+    <br /> <br />
+    Mayor John Bolt, Linda Kawamoto-Reid, JCLS CEO Susanne Tabata,  Clare Folvik, Kumpei Wakino.  Holding the ribbons are Laura Yamaguchi and Rachel Yamaguchi.</>,
   },
 ];
 
