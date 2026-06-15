@@ -183,6 +183,9 @@ import cementery_1  from './img/gallery/cementery/cementery_1.jpg';
 import cementery_2  from './img/gallery/cementery/cementery_2.jpg';
 import cementery_3  from './img/gallery/cementery/cementery_3.jpg';
 import cementery_4  from './img/gallery/cementery/cementery_4.jpg';
+import cementery_5  from './img/gallery/cementery/cementery_5.jpg';
+import cementery_6  from './img/gallery/cementery/cementery_6.jpg';
+import cementery_7  from './img/gallery/cementery/cementery_7.jpg';
 
 interface GalleryImage {
   src: string;
@@ -1411,7 +1414,28 @@ const CEMENTERY_IMAGES: GalleryImage[] = [
       src: cementery_4,
       alt: 'Mary Masu Hayashi headstone in Greenwood Cemetery',
       caption: (
-        <>Mary Masu Hayashi.</>
+        <>Mary Masu Hayashi</>
+      ),
+    },
+    {
+      src: cementery_5,
+      alt: 'Koto Watanabe headstone in Greenwood Cemetery',
+      caption: (
+        <>Koto Watanabe owned the Cherry Shoppe Beauty Salon in Greenwood.</>
+      ),
+    },
+    {
+      src: cementery_6,
+      alt: 'Yonesaburo Kuroda headstone in Greenwood Cemetery',
+      caption: (
+        <>Yonesaburo Kuroda is the only WWI JC vet buried in Greenwood.  He had no next of kin in Canada so local Legion had a service for him.</>
+      ),
+    },
+    {
+      src: cementery_7,
+      alt: 'Sadako Matsuba headstone in Greenwood Cemetery',
+      caption: (
+        <>Sadako Matsuba</>
       ),
     },
   ];
@@ -1506,17 +1530,6 @@ const Carousel: React.FC<CarouselProps> = ({ images, title }) => {
 
 type GalleryFilter = 'all' | 'nikkei' | 'places' | 'internment' | 'community' | 'restoration' | 'ohairi' ;
 
-// const FILTER_BUTTONS: { key: GalleryFilter; label: string }[] = [
-//   { key: 'all',        label: 'All' },
-//   { key: 'nikkei',     label: 'Nikkei Legacy Park' },
-//   // { key: 'historical', label: 'Historical: Locations' },
-//   { key: 'restoration', label: 'Restoration' },
-//   { key: 'ohairi',     label: 'Ohairi Park' },
-//   { key: 'places',     label: 'Historical: Places' },
-//   { key: 'internment', label: 'Historical: Internment' },
-//   { key: 'community',  label: 'Historical: Community Life' },
-// ];
-
 const PRIMARY_FILTER_BUTTONS: { key: GalleryFilter; label: string }[] = [
   { key: 'all',        label: 'All' },
   { key: 'nikkei',     label: 'Nikkei Legacy Park' },
@@ -1538,7 +1551,6 @@ const GalleryPage: React.FC = () => {
 
       <h1 className="gallery-page-title">Photo Galleries</h1>
 
-      {/* ── Filter buttons ── */}
       {/* ── Filter buttons ── */}
       <div className="gallery-filter-wrapper">
         {PRIMARY_FILTER_BUTTONS.map(({ key, label }) => (
@@ -1565,17 +1577,7 @@ const GalleryPage: React.FC = () => {
           </button>
         ))}
       </div>
-      {/* <div className="gallery-filter-wrapper"> */}
-        {/* {FILTER_BUTTONS.map(({ key, label }) => (
-          <button
-            key={key}
-            className={`gallery-filter-btn${filter === key || filter === 'all' ? ' gallery-filter-btn--active' : ''}`}
-            onClick={() => setFilter(key)}
-          >
-            {label}
-          </button>
-        ))}
-      </div> */}
+
 
       {(filter === 'all' || filter === 'nikkei') && (
         <>
@@ -1584,23 +1586,7 @@ const GalleryPage: React.FC = () => {
           <Carousel images={MAY_IMAGES}   title="Nikkei Legacy Park: May 2026" />
         </>
       )}
-      {/* {(filter === 'all' || filter === 'historical') && (
-        <>
-          <Carousel images={BUILDING_IMAGES}   title="Historical Buildings" />
-          <Carousel images={BW_IMAGES_2} title="Arrival of Japanese Canadians to Greenwood: 1942" />
-          <Carousel images={BW_IMAGES}   title="Historical Photos" />
-          
-          <Carousel images={LOCATIONS_IMAGES}   title="Historical Locations" />
-          <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45" />
-          <Carousel images={HOUSING_IMAGES} title="1943 Japanese Canadian Housing" />
-          <Carousel images={LAOBUR_DAY_IMAGES} title="Labour Day Parades 1940s" />
-          <Carousel images={LAOBUR_DAY1950_IMAGES} title="Labour Day Parades 1950s" />
-          <Carousel images={HISTORICAL1960_IMAGES} title="Natsu Matsuri - Summer Festival 1964" />
-          <Carousel images={SACREDHEART_IMAGES} title="Sacred Heart School Life" />
-          <Carousel images={UNITEDCHURCH_IMAGES} title="United Church" />
-          <Carousel images={SAWMILLS_IMAGES} title="Sawmill & Logging Industry in Greenwood" />
-        </>
-      )} */}
+
       {(filter === 'all' || filter === 'restoration') && (
         <>
         <Carousel images={RESTORATION_IMAGES} title="Restoration and Renovation: 2016-2018" />
