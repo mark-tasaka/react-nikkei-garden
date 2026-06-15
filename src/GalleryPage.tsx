@@ -1526,6 +1526,35 @@ const Carousel: React.FC<CarouselProps> = ({ images, title }) => {
   );
 };
 
+const SearchIcon: React.FC = () => (
+  <svg
+    className="search-icon"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    aria-hidden="true"
+  >
+    <circle
+      cx="10.5"
+      cy="10.5"
+      r="6.5"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <line
+      x1="15.5"
+      y1="15.5"
+      x2="21"
+      y2="21"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+    />
+  </svg>
+);
+
 // ── GalleryPage ─────────────────────────────────────────────────────────────
 
 type GalleryFilter = 'all' | 'nikkei' | 'places' | 'internment' | 'community' | 'restoration' | 'ohairi' ;
@@ -1545,6 +1574,37 @@ const ARCHIVAL_FILTER_BUTTONS: { key: GalleryFilter; label: string }[] = [
 
 const GalleryPage: React.FC = () => {
   const [filter, setFilter] = useState<GalleryFilter>('all');
+  const [query, setQuery] = useState('');
+
+  const q = query.trim().toLowerCase();
+  const matchesQuery = (title: string) => q === '' || title.toLowerCase().includes(q);
+
+  const ALL_CAROUSELS: { filterKey: GalleryFilter; title: string }[] = [
+    { filterKey: 'nikkei', title: 'Nikkei Legacy Park Panels' },
+    { filterKey: 'nikkei', title: 'Spring Time in the Park: June 2026' },
+    { filterKey: 'nikkei', title: 'Nikkei Legacy Park: May 2026' },
+    { filterKey: 'restoration', title: 'Restoration and Renovation: 2016-2018' },
+    { filterKey: 'restoration', title: 'Japanese Rock Garden Landscaping' },
+    { filterKey: 'ohairi', title: 'A Look Back: Ohairi Park (Pre-2014)' },
+    { filterKey: 'places', title: '1943 Japanese Canadian Housing' },
+    { filterKey: 'places', title: 'Historical Buildings' },
+    { filterKey: 'places', title: 'Historical Locations' },
+    { filterKey: 'places', title: 'Sawmill & Logging Industry in Greenwood' },
+    { filterKey: 'places', title: 'Greenwood Cemetery' },
+    { filterKey: 'internment', title: 'Arrival of Japanese Canadians to Greenwood: 1942' },
+    { filterKey: 'internment', title: 'Historical Photos' },
+    { filterKey: 'internment', title: 'Early Internees 1942-45' },
+    { filterKey: 'community', title: 'Sacred Heart School Life' },
+    { filterKey: 'community', title: 'United Church' },
+    { filterKey: 'community', title: 'Labour Day Parades 1940s' },
+    { filterKey: 'community', title: 'Labour Day Parades 1950s' },
+    { filterKey: 'community', title: 'Natsu Matsuri - Summer Festival 1964' },
+  ];
+
+  const hasVisibleResults = ALL_CAROUSELS.some(
+    ({ filterKey, title }) =>
+      (filter === 'all' || filter === filterKey) && matchesQuery(title)
+  );
 
   return (
     <main className="gallery-page">
@@ -1578,48 +1638,77 @@ const GalleryPage: React.FC = () => {
         ))}
       </div>
 
-
+      {/* ── Search bar ── */}
+      <div className="articles-search-wrapper">
+        <label htmlFor="gallery-search" className="sr-only">Search galleries</label>
+        <div className="articles-search-box">
+          <SearchIcon />
+          <input
+            id="gallery-search"
+            type="search"
+            className="articles-search-input"
+            placeholder="Search gallery titles…"
+            value={query}
+            onChange={e => setQuery(e.target.value)}
+          />
+          {query && (
+            <button
+              className="articles-search-clear"
+              onClick={() => setQuery('')}
+              aria-label="Clear search"
+            >
+              &#x2715;
+            </button>
+          )}
+        </div>
+      </div>
+      
       {(filter === 'all' || filter === 'nikkei') && (
         <>
-          <Carousel images={PANEL_IMAGES} title="Nikkei Legacy Park Panels" />
-          <Carousel images={JUNE_IMAGES}  title="Spring Time in the Park: June 2026" />
-          <Carousel images={MAY_IMAGES}   title="Nikkei Legacy Park: May 2026" />
+          {matchesQuery('Nikkei Legacy Park Panels') && <Carousel images={PANEL_IMAGES} title="Nikkei Legacy Park Panels" />}
+          {matchesQuery('Spring Time in the Park: June 2026') && <Carousel images={JUNE_IMAGES}  title="Spring Time in the Park: June 2026" />}
+          {matchesQuery('Nikkei Legacy Park: May 2026') && <Carousel images={MAY_IMAGES}   title="Nikkei Legacy Park: May 2026" />}
         </>
       )}
 
       {(filter === 'all' || filter === 'restoration') && (
         <>
-        <Carousel images={RESTORATION_IMAGES} title="Restoration and Renovation: 2016-2018" />
-        <Carousel images={LANDSCAPING_IMAGES} title="Japanese Rock Garden Landscaping" />
+        {matchesQuery('Restoration and Renovation: 2016-2018') && <Carousel images={RESTORATION_IMAGES} title="Restoration and Renovation: 2016-2018" />}
+        {matchesQuery('Japanese Rock Garden Landscaping') && <Carousel images={LANDSCAPING_IMAGES} title="Japanese Rock Garden Landscaping" />}
         </>
       )}
       {(filter === 'all' || filter === 'ohairi') && (
-        <Carousel images={MISC_IMAGES} title="A Look Back: Ohairi Park (Pre-2014)" />
+        matchesQuery('A Look Back: Ohairi Park (Pre-2014)') && <Carousel images={MISC_IMAGES} title="A Look Back: Ohairi Park (Pre-2014)" />
       )}
       {(filter === 'all' || filter === 'places') && (
         <>
-          <Carousel images={HOUSING_IMAGES} title="1943 Japanese Canadian Housing" />
-          <Carousel images={BUILDING_IMAGES}   title="Historical Buildings" />
-          <Carousel images={LOCATIONS_IMAGES}   title="Historical Locations" />
-          <Carousel images={SAWMILLS_IMAGES} title="Sawmill & Logging Industry in Greenwood" />
-          <Carousel images={CEMENTERY_IMAGES} title="Greenwood Cemetery" />
+          {matchesQuery('1943 Japanese Canadian Housing') && <Carousel images={HOUSING_IMAGES} title="1943 Japanese Canadian Housing" />}
+          {matchesQuery('Historical Buildings') && <Carousel images={BUILDING_IMAGES}   title="Historical Buildings" />}
+          {matchesQuery('Historical Locations') && <Carousel images={LOCATIONS_IMAGES}   title="Historical Locations" />}
+          {matchesQuery('Sawmill & Logging Industry in Greenwood') && <Carousel images={SAWMILLS_IMAGES} title="Sawmill & Logging Industry in Greenwood" />}
+          {matchesQuery('Greenwood Cemetery') && <Carousel images={CEMENTERY_IMAGES} title="Greenwood Cemetery" />}
         </>
       )}
       {(filter === 'all' || filter === 'internment') && (
         <>
-          <Carousel images={BW_IMAGES_2} title="Arrival of Japanese Canadians to Greenwood: 1942" />
-          <Carousel images={BW_IMAGES}   title="Historical Photos" />
-          <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45" />
+          {matchesQuery('Arrival of Japanese Canadians to Greenwood: 1942') && <Carousel images={BW_IMAGES_2} title="Arrival of Japanese Canadians to Greenwood: 1942" />}
+          {matchesQuery('Historical Photos') && <Carousel images={BW_IMAGES}   title="Historical Photos" />}
+          {matchesQuery('Early Internees 1942-45') && <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45" />}
         </>
       )}
       {(filter === 'all' || filter === 'community') && (
         <>
-          <Carousel images={SACREDHEART_IMAGES} title="Sacred Heart School Life" />
-          <Carousel images={UNITEDCHURCH_IMAGES} title="United Church" />
-          <Carousel images={LAOBUR_DAY_IMAGES} title="Labour Day Parades 1940s" />
-          <Carousel images={LAOBUR_DAY1950_IMAGES} title="Labour Day Parades 1950s" />
-          <Carousel images={HISTORICAL1960_IMAGES} title="Natsu Matsuri - Summer Festival 1964" />
+          {matchesQuery('Sacred Heart School Life') && <Carousel images={SACREDHEART_IMAGES} title="Sacred Heart School Life" />}
+          {matchesQuery('United Church') && <Carousel images={UNITEDCHURCH_IMAGES} title="United Church" />}
+          {matchesQuery('Labour Day Parades 1940s') && <Carousel images={LAOBUR_DAY_IMAGES} title="Labour Day Parades 1940s" />}
+          {matchesQuery('Labour Day Parades 1950s') && <Carousel images={LAOBUR_DAY1950_IMAGES} title="Labour Day Parades 1950s" />}
+          {matchesQuery('Natsu Matsuri - Summer Festival 1964') && <Carousel images={HISTORICAL1960_IMAGES} title="Natsu Matsuri - Summer Festival 1964" />}
         </>
+      )}
+
+      {/* ── No results ── */}
+      {query && !hasVisibleResults && (
+        <p className="articles-no-results">No galleries match your search.</p>
       )}
 
     </main>

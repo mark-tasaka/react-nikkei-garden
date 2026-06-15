@@ -41,6 +41,14 @@
   letter-spacing: 0.08em;
 }
 
+.gallery-no-results {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #8a7b74;
+  text-align: center;
+  padding: 40px 0;
+}
+
 /* =====================================================
    Carousel wrapper — centres the track on the page
    ===================================================== */
