@@ -112,6 +112,7 @@ import location_1  from './img/gallery/locations/location_1.jpg';
 import location_2  from './img/gallery/locations/location_2.jpg';
 import location_3  from './img/gallery/locations/location_3.jpg';
 import location_4  from './img/gallery/locations/location_4.jpg';
+import location_5  from './img/gallery/locations/location_5.jpg';
 
 import labourDay_1  from './img/gallery/labourDay/labourDay1.jpg';
 import labourDay_2  from './img/gallery/labourDay/labourDay2.jpg';
@@ -190,6 +191,7 @@ import opening_1  from './img/gallery/opening2025/opening_1.jpg';
 import opening_2  from './img/gallery/opening2025/opening_2.jpg';
 import opening_3  from './img/gallery/opening2025/opening_3.jpg';
 import opening_4  from './img/gallery/opening2025/opening_4.jpg';
+import opening_5  from './img/gallery/opening2025/opening_5.jpg';
 
 interface GalleryImage {
   src: string;
@@ -275,6 +277,11 @@ const OPENING_IMAGES: GalleryImage[] = [
     caption: <>Grand Opening of Nikkei Memorial Garden July 20th, 2025.  Many thanks to JCLS, City of Greenwood Public Works and Greenwood Museum for your unbelievable support.
     <br /> <br />
     Mayor John Bolt, Linda Kawamoto-Reid, JCLS CEO Susanne Tabata,  Clare Folvik, Kumpei Wakino.  Holding the ribbons are Laura Yamaguchi and Rachel Yamaguchi.</>,
+  },
+  {
+    src: opening_5,
+    alt: 'Opening Image 5',
+    caption: <>As is the Japanese custom is when you start a project, you add one eye.  When the project is completed, you colour in the other eye to signify a successful result.</>,
   },
 ];
 
@@ -600,6 +607,15 @@ const LOCATIONS_IMAGES: GalleryImage[] = [
         Old smelter in Anaconda just south-west of Greenwood.  250,000 bricks were used to build the tall chimney.
         <br /><br />
         Photo courtesy of Greenwood Museum
+      </>
+    ),
+  },
+    {
+    src: location_5,
+    alt: 'B.C. Security Commission Garden',
+    caption: (
+      <>
+        B.C. Security Commission Garden:  BCSC found a plot of land by the creek towards the smelter for ‘apartment’ dwellers.  You could see elderly men and women carrying a large okaki tin full of water from the creek.  Men made sprinkler device by drilling holes on the bottom of the old tobacco can and a short handle that went through both sides of the can.
       </>
     ),
   },
