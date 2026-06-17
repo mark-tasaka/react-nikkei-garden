@@ -205,6 +205,14 @@ import visitors_6  from './img/gallery/visitors/visitors_6.jpg';
 import visitors_7  from './img/gallery/visitors/visitors_7.jpg';
 import visitors_8  from './img/gallery/visitors/visitors_8.jpg';
 import visitors_9  from './img/gallery/visitors/visitors_9.jpg';
+import visitors_10  from './img/gallery/visitors/visitors_10.jpg';
+import visitors_11  from './img/gallery/visitors/visitors_11.jpg';
+import visitors_12  from './img/gallery/visitors/visitors_12.jpg';
+import visitors_13  from './img/gallery/visitors/visitors_13.jpg';
+import visitors_14  from './img/gallery/visitors/visitors_14.jpg';
+import visitors_15  from './img/gallery/visitors/visitors_15.jpg';
+import visitors_16  from './img/gallery/visitors/visitors_16.jpg';
+import visitors_17  from './img/gallery/visitors/visitors_17.jpg';
 
 
 interface GalleryImage {
@@ -360,8 +368,54 @@ const VISITORS_IMAGES: GalleryImage[] = [
     alt: 'Researchers from Japan and U.S.',
     caption: <>We had researchers from Japan and U.S. visiting Greenwood.  Left to right:  front row Susan Tasaka, Karli Messer-Tasaka, Masami Izumi of Doshisha University.  Back Chuck Tasaka, Takae Mio of Canada Museum in Mio, Japan, Kaz Tasaka, Sachiko Kawakami of Kyoto University, Norifumi Kawahara of Ritsumeikan University and Dr. Ian Baird of University of Wisconsin-Madison.</>,
   },
+  {
+    src: visitors_10,
+    alt: 'Nikkei internment bus tour',
+    caption: <>Nikkei Internment Bus Tour:<br />Stephanie Kawamoto with Chuck and Dr. Sachiko Kawakami.</>,
+  },
+  {
+    src: visitors_11,
+    alt: 'Nikkei internment bus tour',
+    caption: <>Nikkei Internment Bus Tour:<br />Stephanie Kawamoto with Chuck and Janis Bridger, co-author of ‘Obaasan’s Boots’.</>,
+  },
+  {
+    src: visitors_12,
+    alt: 'Nikkei internment bus tour',
+    caption: <>Nikkei Internment Bus Tour:<br />Lara Okihiro, co-author of ‘Obaasan’s Boots’ with cousin Janis Bridger.</>,
+  },
+
 ];
 
+
+const VISITORS2_IMAGES: GalleryImage[] = [
+  {
+    src: visitors_13,
+    alt: 'Lynn Enomoto',
+    caption: <>Lynn Enomoto chatting with Nikkei Legacy Park caretaker</>,
+  },
+  {
+    src: visitors_14,
+    alt: 'Randy Enomoto and his dogs enjoy visiting Greenwood',
+    caption: <>Randy Enomoto and his dogs enjoy visiting Greenwood</>,
+  },
+  {
+    src: visitors_15,
+    alt: 'Former Greenwood internee Mary Miki-Nomura at the Greenwood Museum',
+    caption: <>Former Greenwood internee Mary Miki-Nomura at the Greenwood Museum</>,
+  },
+  {
+    src: visitors_16,
+    alt: 'Mary and brother Joe Miki returning to Greenwood in 2025',
+    caption: <>Mary and brother Joe Miki returning to Greenwood in 2025</>,
+  },
+  {
+    src: visitors_17,
+    alt: 'Lara Okihiro brought her family to Greenwood since her relatives were in Greenwood, the Okinobu and Hisaoka family.  Husband Mario with daughters Imogene and Kira5',
+    caption: <>Lara Okihiro brought her family to Greenwood since her relatives were in Greenwood, the Okinobu and Hisaoka family.  Husband Mario with daughters Imogene and Kira.</>,
+  },
+
+
+];
 
 const MISC_IMAGES: GalleryImage[] = [
   {
@@ -1736,7 +1790,8 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'nikkei', title: 'Spring Time in the Park: June 2026' },
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park: May 2026' },
     { filterKey: 'nikkei', title: 'Grand Opening: July 20, 2025' },
-    { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park' },
+    { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 1' },
+    { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 2' },
     { filterKey: 'restoration', title: 'Restoration and Renovation: 2016-2018' },
     { filterKey: 'restoration', title: 'Japanese Rock Garden Landscaping' },
     { filterKey: 'ohairi', title: 'A Look Back: Ohairi Park (Pre-2014)' },
@@ -1823,7 +1878,8 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Spring Time in the Park: June 2026') && <Carousel images={JUNE_IMAGES}  title="Spring Time in the Park: June 2026" />}
           {matchesQuery('Nikkei Legacy Park: May 2026') && <Carousel images={MAY_IMAGES}   title="Nikkei Legacy Park: May 2026" />}
           {matchesQuery('Grand Opening: July 20, 2025') && <Carousel images={OPENING_IMAGES}   title="Grand Opening: July 20, 2025" />}
-          {matchesQuery('Visitors to Nikkei Legacy Park') && <Carousel images={VISITORS_IMAGES}   title="Visitors to Nikkei Legacy Park" />}
+          {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 1') && <Carousel images={VISITORS_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 1" />}
+          {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 2') && <Carousel images={VISITORS2_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 2" />}
         </>
       )}
 
