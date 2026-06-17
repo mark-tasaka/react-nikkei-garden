@@ -214,6 +214,7 @@ import visitors_15  from './img/gallery/visitors/visitors_15.jpg';
 import visitors_16  from './img/gallery/visitors/visitors_16.jpg';
 import visitors_17  from './img/gallery/visitors/visitors_17.jpg';
 import visitors_18  from './img/gallery/visitors/visitors_18.jpg';
+import visitors_19  from './img/gallery/visitors/visitors_19.jpg';
 
 
 interface GalleryImage {
@@ -418,6 +419,13 @@ const VISITORS2_IMAGES: GalleryImage[] = [
     src: visitors_18,
     alt: 'Kenzie McGruer',
     caption: <>Kenzie McGruer, granddaughter of Ichio Miki paid a visit and toured the places of her grandfather.  She made a spiritual connection with her family in Greenwood.</>,
+  },
+  {
+    src: visitors_19,
+    alt: 'David and Arlene Yoshida',
+    caption: <>David and Arlene Yoshida visited Greenwood in 2026.  David wanted to visit his old stomping ground where his parents, uncles and aunts were interned here. 
+    <br /><br />
+    Photos Courtesy of Arlene Nishi-Yoshida</>,
   },
 
 

@@ -78,6 +78,9 @@ import canadian1 from './img/articles/canadian1.jpeg';
 
 import book1 from './img/articles/book1.jpeg';
 
+import manzanar1 from './img/articles/manzanar1.jpeg';
+const burton2024 = '/pdf/burton2024.pdf';
+
 interface ArticleEntry {
   source:     string;
   sourceUrl:  string;
@@ -780,6 +783,16 @@ const ARTICLES: ArticleEntry[] = [
     excerpt:   'In September 2021, a memorial monument was erected at the Nikkei Legacy Park in Greenwood, B.C. to honour the twelve Japanese Canadian war veterans who were sent to the first internment site in B.C.',
     img:       greenwood4,
   },
+  {
+    source:    'PDF',
+    sourceUrl: 'https://www.nps.gov/manz/index.htm',
+    title:     'An Overview of World War II Japanese Canadian Internment Sites in British Columbia',
+    author:    'Jeff Burton',
+    date:      'December 1, 2024',
+    link:      burton2024,
+    excerpt:   'During World War II the Canadian government forcedly removed to inland areas nearly 22,000 persons of Japanese ancestry living within 100 miles of the West Coast. Some 75 percent of the internees were Canadian citizens. Although the term "internment" is no longer widely used in the United States',
+    img:       manzanar1,
+  },
 ];
 
 function truncateWords(text: string, maxWords: number): string {
@@ -822,7 +835,7 @@ type SortDir   = 'desc' | 'asc';
 
 const ArticlesPage: React.FC = () => {
   const [query,     setQuery]     = useState('');
-  const [filter, setFilter] = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies' | 'Greenwood Nikkei' | 'The Bulletin' | 'Japanese Canadian Veterans' | 'Canadian Encyclopedia' | 'Books'>('all');
+  const [filter, setFilter] = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies' | 'Greenwood Nikkei' | 'The Bulletin' | 'Japanese Canadian Veterans' | 'Canadian Encyclopedia' | 'Books' | 'PDF'>('all');
   const [sortField, setSortField] = useState<SortField>('year');
   const [sortDir,   setSortDir]   = useState<SortDir>('desc');
 
@@ -865,7 +878,7 @@ const ArticlesPage: React.FC = () => {
 
       {/* ── Filter buttons ── */}
       <div className="articles-filter-wrapper">
-        {(['all', 'Discover Nikkei', 'Japanese Canadian Legacies', 'Greenwood Nikkei', 'The Bulletin', 'Japanese Canadian Veterans', 'Canadian Encyclopedia', 'Books'] as const).map(f => (
+        {(['all', 'Discover Nikkei', 'Japanese Canadian Legacies', 'Greenwood Nikkei', 'The Bulletin', 'Japanese Canadian Veterans', 'Canadian Encyclopedia', 'Books', 'PDF'] as const).map(f => (
           <button
             key={f}
             className={`articles-filter-btn${
@@ -887,7 +900,9 @@ const ArticlesPage: React.FC = () => {
               ? 'JC Veterans'
               : f === 'Canadian Encyclopedia'
               ? 'Canadian Ency'
-              : 'Books'}
+              : f === 'Books'
+              ? 'Books'
+              : 'PDF'}
           </button>
         ))}
       </div>
