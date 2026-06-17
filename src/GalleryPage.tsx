@@ -113,6 +113,9 @@ import location_2  from './img/gallery/locations/location_2.jpg';
 import location_3  from './img/gallery/locations/location_3.jpg';
 import location_4  from './img/gallery/locations/location_4.jpg';
 import location_5  from './img/gallery/locations/location_5.jpg';
+import location_6  from './img/gallery/locations/location_6.jpg';
+import location_7  from './img/gallery/locations/location_7.jpg';
+import location_8  from './img/gallery/locations/location_8.jpg';
 
 import labourDay_1  from './img/gallery/labourDay/labourDay1.jpg';
 import labourDay_2  from './img/gallery/labourDay/labourDay2.jpg';
@@ -616,6 +619,33 @@ const LOCATIONS_IMAGES: GalleryImage[] = [
     caption: (
       <>
         B.C. Security Commission Garden:  BCSC found a plot of land by the creek towards the smelter for ‘apartment’ dwellers.  You could see elderly men and women carrying a large okaki tin full of water from the creek.  Men made sprinkler device by drilling holes on the bottom of the old tobacco can and a short handle that went through both sides of the can.
+      </>
+    ),
+  },
+  {
+    src: location_6,
+    alt: 'Post Office',
+    caption: (
+      <>
+        Post Office opened in 1915, but the clock was installed in 1914.  Custom Office was upstairs.  During the war years, Nancy Asahina worked here until college back east.  Molly Fukui was employed after Nancy and later became post mistress of Greenwood.  Mrs. Yoshiko Hamanishi worked there part-time.
+      </>
+    ),
+  },
+  {
+    src: location_7,
+    alt: 'Barrett House',
+    caption: (
+      <>
+        Once Barrett House.  Mayor W.E. McArthur Sr lived in this house while he was a mayor handling the affairs of the Japanese Canadians.
+      </>
+    ),
+  },
+  {
+    src: location_8,
+    alt: 'Court House',
+    caption: (
+      <>
+        Court House and office of the Supreme Court of B.C.  There was a jail in the basement. Presently, it's the City Hall.
       </>
     ),
   },
