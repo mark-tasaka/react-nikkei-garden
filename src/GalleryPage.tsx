@@ -89,6 +89,7 @@ import misc_48  from './img/gallery/misc/arrival_9.jpg';
 import building2_2  from './img/gallery/misc/building2_2.jpg';
 import building2_3  from './img/gallery/misc/building2_3.jpg';
 import building2_4  from './img/gallery/misc/building2_4.jpg';
+import fundraiser  from './img/gallery/misc/fundraiser.jpg';
 
 import restoration1  from './img/gallery/restoration/restoration1.JPG';
 import restoration2  from './img/gallery/restoration/restoration2.JPG';
@@ -205,6 +206,7 @@ import visitors_6  from './img/gallery/visitors/visitors_6.jpg';
 import visitors_7  from './img/gallery/visitors/visitors_7.jpg';
 import visitors_8  from './img/gallery/visitors/visitors_8.jpg';
 import visitors_9  from './img/gallery/visitors/visitors_9.jpg';
+import visitors_9a  from './img/gallery/visitors/visitors_9a.jpg';
 import visitors_10  from './img/gallery/visitors/visitors_10.jpg';
 import visitors_11  from './img/gallery/visitors/visitors_11.jpg';
 import visitors_12  from './img/gallery/visitors/visitors_12.jpg';
@@ -349,14 +351,14 @@ const VISITORS_IMAGES: GalleryImage[] = [
   {
     src: visitors_7,
     alt: 'Attorney General Nikki Sharma',
-    caption: <>Attorney General Nikki Sharma enjoyed high tea at Greenwood Museum listening to shared stories by the local elders.
+    caption: <>Chuck Tasaka giving the history of how Greenwood became the first internment site.
     <br /><br />
     February 2, 2024</>,
   },
   {
     src: visitors_6,
     alt: 'Attorney General Nikki Sharma',
-    caption: <>Chuck Tasaka giving the history of how Greenwood became the first internment site.
+    caption: <>Attorney General Nikki Sharma enjoyed high tea at Greenwood Museum listening to shared stories by the local elders.
     <br /><br />
     February 2, 2024</>,
   },
@@ -369,6 +371,11 @@ const VISITORS_IMAGES: GalleryImage[] = [
     src: visitors_9,
     alt: 'Researchers from Japan and U.S.',
     caption: <>We had researchers from Japan and U.S. visiting Greenwood.  Left to right:  front row Susan Tasaka, Karli Messer-Tasaka, Masami Izumi of Doshisha University.  Back Chuck Tasaka, Takae Mio of Canada Museum in Mio, Japan, Kaz Tasaka, Sachiko Kawakami of Kyoto University, Norifumi Kawahara of Ritsumeikan University and Dr. Ian Baird of University of Wisconsin-Madison.</>,
+  },
+  {
+    src: visitors_9a,
+    alt: 'Nikei Food',
+    caption: <>Nikkei Food</>,
   },
   {
     src: visitors_10,
@@ -456,6 +463,11 @@ const MISC_IMAGES: GalleryImage[] = [
     src: misc_22,
     alt: 'Ohairi Park',
     caption: <>Walls added in 2015</>,
+  },
+  {
+    src: fundraiser,
+    alt: 'first major fundraiser ',
+    caption: <>The first major fundraiser was held at Richmond’s St. Joseph the Worker gymnasium in 2017, and it was an overwhelming success.  It was the beginning of Nikkei Legacy Park to expand the interpretive panels and WWI JC veterans monument.  Thank you for all your support. </>,
   },
 ];
 
