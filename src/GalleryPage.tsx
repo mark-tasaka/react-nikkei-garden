@@ -196,6 +196,9 @@ import opening_3  from './img/gallery/opening2025/opening_3.jpg';
 import opening_4  from './img/gallery/opening2025/opening_4.jpg';
 import opening_5  from './img/gallery/opening2025/opening_5.jpg';
 
+import visitors_1  from './img/gallery/visitors/visitors_1.jpg';
+import visitors_2  from './img/gallery/visitors/visitors_2.jpg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -287,6 +290,25 @@ const OPENING_IMAGES: GalleryImage[] = [
     caption: <>As is the Japanese custom is when you start a project, you add one eye.  When the project is completed, you colour in the other eye to signify a successful result.</>,
   },
 ];
+
+
+const VISITORS_IMAGES: GalleryImage[] = [
+  {
+    src: visitors_1,
+    alt: 'Duke of Edinburgh Commonwealth Study Conference group',
+    caption: <>A Duke of Edinburgh Commonwealth Study Conference group visited Greenwood a few years ago.  Nikkei Legacy Park was not in their itinerary and I mentioned the park in passing.  It was a pleasant surprise for this group and they were amazed to learn about the Japanese Canadian history in Greenwood.  Members were from many Commonwealth countries.
+    <br /><br />
+    Photos Courtesy of Amy Fleming, Canada</>,
+  },
+  {
+    src: visitors_2,
+    alt: 'Duke of Edinburgh Commonwealth Study Conference group',
+    caption: <>A Duke of Edinburgh Commonwealth Study Conference group visited Greenwood a few years ago.  Nikkei Legacy Park was not in their itinerary and I mentioned the park in passing.  It was a pleasant surprise for this group and they were amazed to learn about the Japanese Canadian history in Greenwood.  Members were from many Commonwealth countries.
+    <br /><br />
+    Photos Courtesy of Amy Fleming, Canada</>,
+  },
+];
+
 
 const MISC_IMAGES: GalleryImage[] = [
   {
@@ -1661,6 +1683,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'nikkei', title: 'Spring Time in the Park: June 2026' },
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park: May 2026' },
     { filterKey: 'nikkei', title: 'Grand Opening: July 20, 2025' },
+    { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park' },
     { filterKey: 'restoration', title: 'Restoration and Renovation: 2016-2018' },
     { filterKey: 'restoration', title: 'Japanese Rock Garden Landscaping' },
     { filterKey: 'ohairi', title: 'A Look Back: Ohairi Park (Pre-2014)' },
@@ -1747,6 +1770,7 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Spring Time in the Park: June 2026') && <Carousel images={JUNE_IMAGES}  title="Spring Time in the Park: June 2026" />}
           {matchesQuery('Nikkei Legacy Park: May 2026') && <Carousel images={MAY_IMAGES}   title="Nikkei Legacy Park: May 2026" />}
           {matchesQuery('Grand Opening: July 20, 2025') && <Carousel images={OPENING_IMAGES}   title="Grand Opening: July 20, 2025" />}
+          {matchesQuery('Visitors to Nikkei Legacy Park') && <Carousel images={VISITORS_IMAGES}   title="Visitors to Nikkei Legacy Park" />}
         </>
       )}
 
