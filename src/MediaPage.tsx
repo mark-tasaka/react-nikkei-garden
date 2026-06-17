@@ -50,9 +50,14 @@ const VIDEOS: VideoEntry[] = [
     title: 'Drone Captured Video of Nikkei Legacy Park',
     description: 'An aerial tour of Nikkei Legacy Park and the City of Greenwood, captured, filmed, and produced by Aaron Oye.',
   },
+  {
+    embedId: 'cblvugIloOc',
+    title: 'How 148 Japanese - Canadians Fought for the Country That Jailed Them',
+    description: 'In 1945, Canada recruited 148 Japanese-Canadian men from the very internment camps where their families were imprisoned -  needing their language skills for intelligence work in Southeast Asia that the British Empire couldn\'t do without them. They interrogated prisoners, translated war crimes evidence, and helped prosecute Japanese commanders, then came home to find they were still classified as enemy aliens.',
+  },
 ];
 
-type MediaFilter = 'all' | 'nikkei' | 'greenwood' | 'internment' | 'asahi';
+type MediaFilter = 'all' | 'nikkei' | 'greenwood' | 'internment' | 'asahi' | 'veterans';
 
 const FILTER_BUTTONS: { key: MediaFilter; label: string }[] = [
   { key: 'all',        label: 'All' },
@@ -60,12 +65,14 @@ const FILTER_BUTTONS: { key: MediaFilter; label: string }[] = [
   { key: 'greenwood',  label: 'Greenwood' },
   { key: 'internment', label: 'JC Internment' },
   { key: 'asahi', label: 'Asahi Baseball' },
+  { key: 'veterans', label: 'JC Veterans' },
 ];
 
 const NIKKEI_IDS    = new Set(['0SerwWKTJPE', '1pWmTIX4NCM']);
 const GREENWOOD_IDS = new Set(['dQTcfId-sbw']);
 const INTERNMENT_IDS = new Set(['M3wJgU67ZP8', 'QILO0XT-0eo', 'C8TQTuMqM9g']);
 const ASAHI_IDS = new Set(['zxBWg4zxTkQ', 'wBv-MYAf9P0']);
+const VETERANS_IDS = new Set(['cblvugIloOc']);
 
 function matchesFilter(embedId: string, filter: MediaFilter): boolean {
   if (filter === 'all')        return true;
@@ -73,6 +80,7 @@ function matchesFilter(embedId: string, filter: MediaFilter): boolean {
   if (filter === 'greenwood')  return GREENWOOD_IDS.has(embedId);
   if (filter === 'internment') return INTERNMENT_IDS.has(embedId);
   if (filter === 'asahi') return ASAHI_IDS.has(embedId);
+  if (filter === 'veterans') return VETERANS_IDS.has(embedId);
   return false;
 }
 
@@ -90,11 +98,11 @@ const MediaPage: React.FC = () => {
       <h1 className="media-title">Videos of the Japanese Canadian Experience</h1>
 
       {/* ── Filter buttons ── */}
-      <div className="gallery-filter-wrapper">
+      <div className="media-filter-wrapper">
         {FILTER_BUTTONS.map(({ key, label }) => (
           <button
             key={key}
-            className={`gallery-filter-btn${filter === key || filter === 'all' ? ' gallery-filter-btn--active' : ''}`}
+            className={`media-filter-btn${filter === key || filter === 'all' ? ' media-filter-btn--active' : ''}`}
             onClick={() => setFilter(key)}
           >
             {label}
