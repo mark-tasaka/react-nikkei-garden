@@ -198,6 +198,14 @@ import opening_5  from './img/gallery/opening2025/opening_5.jpg';
 
 import visitors_1  from './img/gallery/visitors/visitors_1.jpg';
 import visitors_2  from './img/gallery/visitors/visitors_2.jpg';
+import visitors_3  from './img/gallery/visitors/visitors_3.jpg';
+import visitors_4  from './img/gallery/visitors/visitors_4.jpg';
+import visitors_5  from './img/gallery/visitors/visitors_5.jpg';
+import visitors_6  from './img/gallery/visitors/visitors_6.jpg';
+import visitors_7  from './img/gallery/visitors/visitors_7.jpg';
+import visitors_8  from './img/gallery/visitors/visitors_8.jpg';
+import visitors_9  from './img/gallery/visitors/visitors_9.jpg';
+
 
 interface GalleryImage {
   src: string;
@@ -306,6 +314,51 @@ const VISITORS_IMAGES: GalleryImage[] = [
     caption: <>A Duke of Edinburgh Commonwealth Study Conference group visited Greenwood a few years ago.  Nikkei Legacy Park was not in their itinerary and I mentioned the park in passing.  It was a pleasant surprise for this group and they were amazed to learn about the Japanese Canadian history in Greenwood.  Members were from many Commonwealth countries.
     <br /><br />
     Photos Courtesy of Amy Fleming, Canada</>,
+  },
+  {
+    src: visitors_3,
+    alt: 'Point Grey Secondary',
+    caption: <>Teacher Mori Hamilton (Nakanishi) brought his Point Grey Secondary’s special group on a tour of the Japanese Canadian internment camps.  Greenwood was one of the stops since his mother Hisami Nakanishi was interned in Greenwood. 
+    <br /><br />
+    Photos Courtesy of Mr. Hamilton</>,
+  },
+  {
+    src: visitors_4,
+    alt: 'Bus tour group',
+    caption: <>very year since the 80’s, the Nikkei Place JC internment camp bus tour stops in Greenwood on their second day of the trip.  This is one of the tours. I believe this bus group had researchers from Australia, Japan, Brazil and U.S.A. 
+    <br /><br />
+    Photos Courtesy of Nikkei Place coordinator</>,
+  },
+  {
+    src: visitors_5,
+    alt: 'Attorney General Nikki Sharma',
+    caption: <>Attorney General Nikki Sharma came to thank the Japanese Canadians for their resilience and perseverance. Some of the remaining JCs who made Greenwood their home postwar.
+    <br /><br />
+    February 2, 2024</>,
+  },
+  {
+    src: visitors_7,
+    alt: 'Attorney General Nikki Sharma',
+    caption: <>Attorney General Nikki Sharma enjoyed high tea at Greenwood Museum listening to shared stories by the local elders.
+    <br /><br />
+    February 2, 2024</>,
+  },
+  {
+    src: visitors_6,
+    alt: 'Attorney General Nikki Sharma',
+    caption: <>Chuck Tasaka giving the history of how Greenwood became the first internment site.
+    <br /><br />
+    February 2, 2024</>,
+  },
+  {
+    src: visitors_8,
+    alt: 'Mana and Manami Saito-Calvo',
+    caption: <>Nikkei Legacy Park gets frequent visitors to learn about the Greenwood internment history. Mana and Manami Saito-Calvo standing in front of the pavilion.</>,
+  },
+  {
+    src: visitors_9,
+    alt: 'Researchers from Japan and U.S.',
+    caption: <>We had researchers from Japan and U.S. visiting Greenwood.  Left to right:  front row Susan Tasaka, Karli Messer-Tasaka, Masami Izumi of Doshisha University.  Back Chuck Tasaka, Takae Mio of Canada Museum in Mio, Japan, Kaz Tasaka, Sachiko Kawakami of Kyoto University, Norifumi Kawahara of Ritsumeikan University and Dr. Ian Baird of University of Wisconsin-Madison.</>,
   },
 ];
 
