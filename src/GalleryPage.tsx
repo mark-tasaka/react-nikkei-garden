@@ -29,10 +29,6 @@ import spring2026_11 from './img/gallery/galleryJune2026/spring2026-11.jpeg';
 import spring2026_12 from './img/gallery/galleryJune2026/spring2026-12.jpeg';
 import spring2026_13 from './img/gallery/galleryJune2026/spring2026-13.jpeg';
 import spring2026_14 from './img/gallery/galleryJune2026/spring2026-14.jpeg';
-import spring2026_15 from './img/gallery/galleryJune2026/spring2026-15.jpeg';
-import spring2026_16 from './img/gallery/galleryJune2026/spring2026-16.jpeg';
-import spring2026_17 from './img/gallery/galleryJune2026/spring2026-17.jpeg';
-import spring2026_18 from './img/gallery/galleryJune2026/spring2026-18.jpeg';
 
 import panel2026_1 from './img/gallery/galleryPanels2026/panel2026-1.jpeg';
 import panel2026_2 from './img/gallery/galleryPanels2026/panel2026-2.jpeg';
@@ -243,10 +239,6 @@ const JUNE_IMAGES: GalleryImage[] = [
   { src: spring2026_12, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 12' },
   { src: spring2026_13, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 13' },
   { src: spring2026_14, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 14' },
-  { src: spring2026_15, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 15' },
-  { src: spring2026_16, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 16' },
-  { src: spring2026_17, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 17' },
-  { src: spring2026_18, alt: 'Spring Time June 2026 (Photo taken by Chuck Tasaka), Photo 18' },
 ];
 
 
