@@ -323,7 +323,7 @@ const VISITORS_IMAGES: GalleryImage[] = [
   {
     src: visitors_2,
     alt: 'Duke of Edinburgh Commonwealth Study Conference group',
-    caption: <>A Duke of Edinburgh Commonwealth Study Conference group visited Greenwood a few years ago.  Nikkei Legacy Park was not in their itinerary and I mentioned the park in passing.  It was a pleasant surprise for this group and they were amazed to learn about the Japanese Canadian history in Greenwood.  Members were from many Commonwealth countries.
+    caption: <>CSC members enjoyed learning about the Greenwood’s JC history
     <br /><br />
     Photos Courtesy of Amy Fleming, Canada</>,
   },
@@ -390,7 +390,7 @@ const VISITORS_IMAGES: GalleryImage[] = [
   {
     src: visitors_12,
     alt: 'Nikkei internment bus tour',
-    caption: <>Nikkei Internment Bus Tour:<br />Lara Okihiro, co-author of ‘Obaasan’s Boots’ with cousin Janis Bridger.</>,
+    caption: <>Nikkei Internment Bus Tour:<br />Lara Okihiro, co-author of ‘Obaasan’s Boots’ with cousin Janis Bridger with her daughters Imogene and Kira.</>,
   },
 
 ];
