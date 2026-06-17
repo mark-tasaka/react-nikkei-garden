@@ -213,6 +213,7 @@ import visitors_14  from './img/gallery/visitors/visitors_14.jpg';
 import visitors_15  from './img/gallery/visitors/visitors_15.jpg';
 import visitors_16  from './img/gallery/visitors/visitors_16.jpg';
 import visitors_17  from './img/gallery/visitors/visitors_17.jpg';
+import visitors_18  from './img/gallery/visitors/visitors_18.jpg';
 
 
 interface GalleryImage {
@@ -410,8 +411,13 @@ const VISITORS2_IMAGES: GalleryImage[] = [
   },
   {
     src: visitors_17,
-    alt: 'Lara Okihiro brought her family to Greenwood since her relatives were in Greenwood, the Okinobu and Hisaoka family.  Husband Mario with daughters Imogene and Kira5',
+    alt: 'Lara Okihiro ',
     caption: <>Lara Okihiro brought her family to Greenwood since her relatives were in Greenwood, the Okinobu and Hisaoka family.  Husband Mario with daughters Imogene and Kira.</>,
+  },
+  {
+    src: visitors_18,
+    alt: 'Kenzie McGruer',
+    caption: <>Kenzie McGruer, granddaughter of Ichio Miki paid a visit and toured the places of her grandfather.  She made a spiritual connection with her family in Greenwood.</>,
   },
 
 
