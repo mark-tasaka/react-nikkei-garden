@@ -217,6 +217,10 @@ import visitors_16  from './img/gallery/visitors/visitors_16.jpg';
 import visitors_17  from './img/gallery/visitors/visitors_17.jpg';
 import visitors_18  from './img/gallery/visitors/visitors_18.jpg';
 import visitors_19  from './img/gallery/visitors/visitors_19.jpg';
+import visitors_20  from './img/gallery/visitors/visitors_20.jpg';
+import visitors_20a  from './img/gallery/visitors/visitors_20a.jpg';
+import visitors_21  from './img/gallery/visitors/visitors_21.jpg';
+import visitors_22  from './img/gallery/visitors/visitors_22.jpg';
 
 
 interface GalleryImage {
@@ -337,7 +341,7 @@ const VISITORS_IMAGES: GalleryImage[] = [
   {
     src: visitors_4,
     alt: 'Bus tour group',
-    caption: <>very year since the 80’s, the Nikkei Place JC internment camp bus tour stops in Greenwood on their second day of the trip.  This is one of the tours. I believe this bus group had researchers from Australia, Japan, Brazil and U.S.A. 
+    caption: <>Every year since the 80’s, the Nikkei Place JC internment camp bus tour stops in Greenwood on their second day of the trip.  This is one of the tours. I believe this bus group had researchers from Australia, Japan, Brazil and U.S.A. 
     <br /><br />
     Photos Courtesy of Nikkei Place coordinator</>,
   },
@@ -433,6 +437,21 @@ const VISITORS2_IMAGES: GalleryImage[] = [
     caption: <>David and Arlene Yoshida visited Greenwood in 2026.  David wanted to visit his old stomping ground where his parents, uncles and aunts were interned here. 
     <br /><br />
     Photos Courtesy of Arlene Nishi-Yoshida</>,
+  },
+  {
+    src: visitors_20a,
+    alt: 'Masako Oka Stilwell',
+    caption: <>Masako Oka Stilwell was on the bus tour.  She wrote about the first Japanese Canadian nurse allowed to be employed by St. Paul’s Hospital in Vancouver in the 1930’s.  It took Fr. Benedict Quigley to pressure the hospital to hire Asians.  Nurse Dorothy Nakamachi was interned in Greenwood.</>,
+  },
+  {
+    src: visitors_21,
+    alt: 'Karen Koyanagi-Geiger',
+    caption: <>Karen Koyanagi-Geiger is a writer of Senkusha series for Nikkei Voice and the Bulletin.</>,
+  },
+  {
+    src: visitors_22,
+    alt: 'Karen Koyanagi-Geiger',
+    caption: <>Janet Mori of Vernon paid a visit to Nikkei Legacy Park</>,
   },
 
 
