@@ -228,6 +228,7 @@ import food_3  from './img/gallery/food/food_3.jpg';
 import food_4  from './img/gallery/food/food_4.jpg';
 import food_5  from './img/gallery/food/food_5.jpg';
 import food_6  from './img/gallery/food/food_6.jpg';
+import food_7  from './img/gallery/food/food_7.jpg';
 
 
 interface GalleryImage {
@@ -575,6 +576,11 @@ const FOOD_IMAGES: GalleryImage[] = [
     src: food_5,
     alt: 'Nikkei Comfort Food',
     caption: <>Voila!  Here is a typical Nikkei meal with side dishes.</>,
+  },
+  {
+    src: food_7,
+    alt: 'Nikkei Comfort Food',
+    caption: <>This is homemade kinpira made from gobo (burdock) by Dianne Tasaka.</>,
   },
   {
     src: food_6,
