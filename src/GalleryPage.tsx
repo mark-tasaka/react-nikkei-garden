@@ -221,13 +221,13 @@ import visitors_20  from './img/gallery/visitors/visitors_20.jpg';
 import visitors_20a  from './img/gallery/visitors/visitors_20a.jpg';
 import visitors_21  from './img/gallery/visitors/visitors_21.jpg';
 import visitors_22  from './img/gallery/visitors/visitors_22.jpg';
-import visitors_23  from './img/gallery/visitors/visitors_23.jpg';
 
 import food_1  from './img/gallery/food/food_1.jpg';
 import food_2  from './img/gallery/food/food_2.jpg';
 import food_3  from './img/gallery/food/food_3.jpg';
 import food_4  from './img/gallery/food/food_4.jpg';
 import food_5  from './img/gallery/food/food_5.jpg';
+import food_6  from './img/gallery/food/food_6.jpg';
 
 
 interface GalleryImage {
@@ -460,11 +460,6 @@ const VISITORS2_IMAGES: GalleryImage[] = [
     alt: 'Karen Koyanagi-Geiger',
     caption: <>Janet Mori of Vernon paid a visit to Nikkei Legacy Park</>,
   },
-  {
-    src: visitors_23,
-    alt: 'Dr. Paula Fujiwara',
-    caption: <>Dr. Paula Fujiwara, a renowned physician of San Francisco and Sylvia Campbell of Olympia, Washington visited Nikkei Legacy Park to research nutrition in Japanese American and JC diet during the internment years.</>,
-  },
 
 
 ];
@@ -580,6 +575,11 @@ const FOOD_IMAGES: GalleryImage[] = [
     src: food_5,
     alt: 'Nikkei Comfort Food',
     caption: <>Voila!  Here is a typical Nikkei meal with side dishes.</>,
+  },
+  {
+    src: food_6,
+    alt: 'Dr. Paula Fujiwara',
+    caption: <>Dr. Paula Fujiwara, a renowned physician of San Francisco and Sylvia Campbell of Olympia, Washington visited Nikkei Legacy Park to research nutrition in Japanese American and JC diet during the internment years.</>,
   },
 
 ];
