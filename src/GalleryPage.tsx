@@ -222,6 +222,12 @@ import visitors_20a  from './img/gallery/visitors/visitors_20a.jpg';
 import visitors_21  from './img/gallery/visitors/visitors_21.jpg';
 import visitors_22  from './img/gallery/visitors/visitors_22.jpg';
 
+import food_1  from './img/gallery/food/food_1.jpg';
+import food_2  from './img/gallery/food/food_2.jpg';
+import food_3  from './img/gallery/food/food_3.jpg';
+import food_4  from './img/gallery/food/food_4.jpg';
+import food_5  from './img/gallery/food/food_5.jpg';
+
 
 interface GalleryImage {
   src: string;
@@ -540,6 +546,36 @@ const LANDSCAPING_IMAGES: GalleryImage[] = [
     alt: 'Landscaping Image 2',
     caption: <>Winter scene:  Greenwood Nikkei Memorial Garden dedicated to the 1200 Japanese Canadians who came to Greenwood April 26th, 1942.  Most stayed and made their homes after 1945.  There are still a few JCs are still residing in this community.</>,
   }
+];
+
+
+const FOOD_IMAGES: GalleryImage[] = [
+  {
+    src: food_1,
+    alt: 'Nikkei Comfort Food',
+    caption: <>This is “ma-ze gohan” to the Japanese Canadians.  It’s Takikomi gohan in Japan.  This maze gohan was made by late Martha (Masako Honda) Johnson.  It was her mom’s recipe.</>,
+  },
+  {
+    src: food_2,
+    alt: 'Nikkei Comfort Food',
+    caption: <>My brother Kaz Tasaka retain old traditional food.  He made the spinach tsukemono and he still has his adult children harvest iwa nori.  Kaz meticulously cures the nori.</>,
+  },
+  {
+    src: food_3,
+    alt: 'Nikkei Comfort Food',
+    caption: <>Fish and kabocha are staple meal in Steveston with ochazuke with furikake.</>,
+  },
+  {
+    src: food_4,
+    alt: 'Nikkei Comfort Food',
+    caption: <>Umeboshi made by Susan Tasaka.</>,
+  },
+  {
+    src: food_5,
+    alt: 'Nikkei Comfort Food',
+    caption: <>Voila!  Here is a typical Nikkei meal with side dishes.</>,
+  },
+
 ];
 
 const BUILDING_IMAGES: GalleryImage[] = [
