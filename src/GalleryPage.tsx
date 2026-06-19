@@ -1982,7 +1982,23 @@ const GalleryPage: React.FC = () => {
         matchesQuery('A Look Back: Ohairi Park (Pre-2014)') && <Carousel images={MISC_IMAGES} title="A Look Back: Ohairi Park (Pre-2014)" />
       )}
       {(filter === 'all' || filter === 'culture') && (
-        matchesQuery('Nikkei Comfort Foods') && <Carousel images={FOOD_IMAGES} title="Nikkei Comfort Foods" />
+        <>
+          {matchesQuery('Nikkei Comfort Foods') && (
+            <>
+              <Carousel images={FOOD_IMAGES} title="Nikkei Comfort Foods" />
+              <p className="gallery-section-link">
+                Read the article:{' '}
+                
+                  <a href="https://discovernikkei.org/en/journal/2022/9/4/comfort-food/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Canadian Nikkei Comfort Food — Chuck Tasaka, Discover Nikkei (Sept 2022)
+                </a>
+              </p>
+            </>
+          )}
+        </>
       )}
       {(filter === 'all' || filter === 'places') && (
         <>

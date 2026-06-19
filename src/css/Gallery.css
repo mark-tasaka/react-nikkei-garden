@@ -49,6 +49,23 @@
   padding: 40px 0;
 }
 
+.gallery-section-link {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin: -40px auto 60px;
+  color: #5b4f49;
+}
+
+.gallery-section-link a {
+  color: #B8322A;
+  text-decoration: underline;
+}
+
+.gallery-section-link a:hover {
+  color: #85231E;
+}
+
 /* =====================================================
    Carousel wrapper — centres the track on the page
    ===================================================== */
