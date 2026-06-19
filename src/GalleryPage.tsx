@@ -1987,13 +1987,13 @@ const GalleryPage: React.FC = () => {
             <>
               <Carousel images={FOOD_IMAGES} title="Nikkei Comfort Foods" />
               <p className="gallery-section-link">
-                Read the article:{' '}
+                Featured article:{' '}
                 
                   <a href="https://discovernikkei.org/en/journal/2022/9/4/comfort-food/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Canadian Nikkei Comfort Food — Chuck Tasaka, Discover Nikkei (Sept 2022)
+                  Canadian Nikkei Comfort Food by Chuck Tasaka
                 </a>
               </p>
             </>

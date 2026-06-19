@@ -51,19 +51,20 @@
 
 .gallery-section-link {
   font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   text-align: center;
   margin: -40px auto 60px;
   color: #5b4f49;
 }
 
 .gallery-section-link a {
-  color: #B8322A;
-  text-decoration: underline;
+  text-decoration: none;
+  color: #5b4f49;
+  font-weight: 600;
 }
 
 .gallery-section-link a:hover {
-  color: #85231E;
+  color: #B8322A;
 }
 
 /* =====================================================
