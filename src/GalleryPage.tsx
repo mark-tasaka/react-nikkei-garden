@@ -221,6 +221,7 @@ import visitors_20  from './img/gallery/visitors/visitors_20.jpg';
 import visitors_20a  from './img/gallery/visitors/visitors_20a.jpg';
 import visitors_21  from './img/gallery/visitors/visitors_21.jpg';
 import visitors_22  from './img/gallery/visitors/visitors_22.jpg';
+import visitors_23  from './img/gallery/visitors/visitors_23.jpg';
 
 import food_1  from './img/gallery/food/food_1.jpg';
 import food_2  from './img/gallery/food/food_2.jpg';
@@ -458,6 +459,11 @@ const VISITORS2_IMAGES: GalleryImage[] = [
     src: visitors_22,
     alt: 'Karen Koyanagi-Geiger',
     caption: <>Janet Mori of Vernon paid a visit to Nikkei Legacy Park</>,
+  },
+  {
+    src: visitors_23,
+    alt: 'Dr. Paula Fujiwara',
+    caption: <>Dr. Paula Fujiwara, a renowned physician of San Francisco and Sylvia Campbell of Olympia, Washington visited Nikkei Legacy Park to research nutrition in Japanese American and JC diet during the internment years.</>,
   },
 
 
@@ -1844,13 +1850,14 @@ const SearchIcon: React.FC = () => (
 
 // ── GalleryPage ─────────────────────────────────────────────────────────────
 
-type GalleryFilter = 'all' | 'nikkei' | 'places' | 'internment' | 'community' | 'restoration' | 'ohairi' ;
+type GalleryFilter = 'all' | 'nikkei' | 'places' | 'internment' | 'community' | 'restoration' | 'ohairi' | 'culture' ;
 
 const PRIMARY_FILTER_BUTTONS: { key: GalleryFilter; label: string }[] = [
   { key: 'all',        label: 'All' },
   { key: 'nikkei',     label: 'Nikkei Legacy Park' },
   { key: 'restoration', label: 'Restoration' },
   { key: 'ohairi',     label: 'Ohairi Park' },
+  { key: 'culture',     label: 'Nikkei Culture' },
 ];
 
 const ARCHIVAL_FILTER_BUTTONS: { key: GalleryFilter; label: string }[] = [
@@ -1876,6 +1883,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'restoration', title: 'Restoration and Renovation: 2016-2018' },
     { filterKey: 'restoration', title: 'Japanese Rock Garden Landscaping' },
     { filterKey: 'ohairi', title: 'A Look Back: Ohairi Park (Pre-2014)' },
+    { filterKey: 'culture', title: 'Nikkei Comfort Food' },
     { filterKey: 'places', title: '1943 Japanese Canadian Housing' },
     { filterKey: 'places', title: 'Historical Buildings' },
     { filterKey: 'places', title: 'Historical Locations' },
@@ -1972,6 +1980,9 @@ const GalleryPage: React.FC = () => {
       )}
       {(filter === 'all' || filter === 'ohairi') && (
         matchesQuery('A Look Back: Ohairi Park (Pre-2014)') && <Carousel images={MISC_IMAGES} title="A Look Back: Ohairi Park (Pre-2014)" />
+      )}
+      {(filter === 'all' || filter === 'culture') && (
+        matchesQuery('Nikkei Comfort Foods') && <Carousel images={FOOD_IMAGES} title="Nikkei Comfort Foods" />
       )}
       {(filter === 'all' || filter === 'places') && (
         <>
