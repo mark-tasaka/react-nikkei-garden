@@ -223,6 +223,9 @@ import visitors_20  from './img/gallery/visitors/visitors_20.jpg';
 import visitors_20a  from './img/gallery/visitors/visitors_20a.jpg';
 import visitors_21  from './img/gallery/visitors/visitors_21.jpg';
 import visitors_22  from './img/gallery/visitors/visitors_22.jpg';
+import visitors_23  from './img/gallery/visitors/visitors_23.jpg';
+import visitors_24  from './img/gallery/visitors/visitors_24.jpg';
+import visitors_25  from './img/gallery/visitors/visitors_25.jpg';
 
 import food_1  from './img/gallery/food/food_1.jpg';
 import food_2  from './img/gallery/food/food_2.jpg';
@@ -465,6 +468,22 @@ const VISITORS2_IMAGES: GalleryImage[] = [
     src: visitors_22,
     alt: 'Karen Koyanagi-Geiger',
     caption: <>Janet Mori of Vernon paid a visit to Nikkei Legacy Park</>,
+  },
+  {
+    src: visitors_23,
+    alt: 'Jason Higo',
+    caption: <>Jason Higo visited Nikkei Legacy Park with Rebecca</>,
+  },
+  {
+    src: visitors_24,
+    alt: 'Daryl Storey',
+    caption: <>Former student Daryl Storey paid a surprise visit.
+    <br /><br />Photo Drew Storey</>,
+  },
+  {
+    src: visitors_25,
+    alt: 'Yuks Watano',
+    caption: <>Visitor Yuks Watano dropped in to visit Nikkei Legacy Park</>,
   },
 
 
