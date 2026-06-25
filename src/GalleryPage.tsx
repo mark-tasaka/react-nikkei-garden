@@ -247,16 +247,6 @@ interface GalleryImage {
   caption?: React.ReactNode;
 }
 
-const PANEL_IMAGES: GalleryImage[] = [
-  { src: panel2026_1, alt: 'Panels June 2026, Photo 1' },
-  { src: panel2026_2, alt: 'Panels June 2026, Photo 2' },
-  { src: panel2026_3, alt: 'Panels June 2026, Photo 3' },
-  { src: panel2026_4, alt: 'Panels June 2026, Photo 4' },
-  { src: panel2026_5, alt: 'Panels June 2026, Photo 5' },
-  { src: panel2026_6, alt: 'Panels June 2026, Photo 6' },
-  { src: panel2026_7, alt: 'Panels June 2026, Photo 7' },
-];
-
 const MAY_IMAGES: GalleryImage[] = [
   { src: img1,  alt: 'Nikkei Legacy Park – May 2026, Photo 1'  },
   { src: img2,  alt: 'Nikkei Legacy Park – May 2026, Photo 2'  },
@@ -291,6 +281,16 @@ const JUNE_IMAGES: GalleryImage[] = [
   { src: spring2026_16, alt: 'Springtime June 2026 (Photo taken by Chuck Tasaka), Photo 16' },
 ];
 
+
+const PANEL_IMAGES: GalleryImage[] = [
+  { src: panel2026_1, alt: 'Panels June 2026, Photo 1' },
+  { src: panel2026_2, alt: 'Panels June 2026, Photo 2' },
+  { src: panel2026_3, alt: 'Panels June 2026, Photo 3' },
+  { src: panel2026_4, alt: 'Panels June 2026, Photo 4' },
+  { src: panel2026_5, alt: 'Panels June 2026, Photo 5' },
+  { src: panel2026_6, alt: 'Panels June 2026, Photo 6' },
+  { src: panel2026_7, alt: 'Panels June 2026, Photo 7' },
+];
 
 const OPENING_IMAGES: GalleryImage[] = [
   {
@@ -1936,9 +1936,9 @@ const GalleryPage: React.FC = () => {
   const matchesQuery = (title: string) => q === '' || title.toLowerCase().includes(q);
 
   const ALL_CAROUSELS: { filterKey: GalleryFilter; title: string }[] = [
-    { filterKey: 'nikkei', title: 'Nikkei Legacy Park Panels' },
     { filterKey: 'nikkei', title: 'Springtime in the Park: June 2026' },
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park: May 2026' },
+    { filterKey: 'nikkei', title: 'Nikkei Legacy Park Panels' },
     { filterKey: 'nikkei', title: 'Grand Opening: July 20, 2025' },
     { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 1' },
     { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 2' },
@@ -2026,9 +2026,9 @@ const GalleryPage: React.FC = () => {
 
       {(filter === 'all' || filter === 'nikkei') && (
         <>
-          {matchesQuery('Nikkei Legacy Park Panels') && <Carousel images={PANEL_IMAGES} title="Nikkei Legacy Park Panels" />}
           {matchesQuery('Springtime in the Park: June 2026') && <Carousel images={JUNE_IMAGES}  title="Springtime in the Park: June 2026" />}
           {matchesQuery('Nikkei Legacy Park: May 2026') && <Carousel images={MAY_IMAGES}   title="Nikkei Legacy Park: May 2026" />}
+          {matchesQuery('Nikkei Legacy Park Panels') && <Carousel images={PANEL_IMAGES} title="Nikkei Legacy Park Panels" />}
           {matchesQuery('Grand Opening: July 20, 2025') && <Carousel images={OPENING_IMAGES}   title="Grand Opening: July 20, 2025" />}
           {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 1') && <Carousel images={VISITORS_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 1" />}
           {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 2') && <Carousel images={VISITORS2_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 2" />}
