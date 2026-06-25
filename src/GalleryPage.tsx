@@ -231,6 +231,7 @@ import food_4  from './img/gallery/food/food_4.jpg';
 import food_5  from './img/gallery/food/food_5.jpg';
 import food_6  from './img/gallery/food/food_6.jpg';
 import food_7  from './img/gallery/food/food_7.jpg';
+import food_8  from './img/gallery/food/food_8.jpg';
 
 
 interface GalleryImage {
@@ -386,7 +387,7 @@ const VISITORS_IMAGES: GalleryImage[] = [
   {
     src: visitors_9,
     alt: 'Researchers from Japan and U.S.',
-    caption: <>We had researchers from Japan and U.S. visiting Greenwood.  Left to right:  front row Susan Tasaka, Karli Messer-Tasaka, Masami Izumi of Doshisha University.  Back Chuck Tasaka, Takae Mio of Canada Museum in Mio, Japan, Kaz Tasaka, Sachiko Kawakami of Kyoto University, Norifumi Kawahara of Ritsumeikan University and Dr. Ian Baird of University of Wisconsin-Madison.</>,
+    caption: <>We had researchers from Japan and U.S. visiting Greenwood.  Left to right:  front row Susan Tasaka, Karli Messer-Tasaka, Masumi Izumi of Doshisha University.  Back Chuck Tasaka, Takae Mio of Canada Museum in Mio, Japan, Kaz Tasaka, Sachiko Kawakami of Kyoto University, Norifumi Kawahara of Ritsumeikan University and Dr. Ian Baird of University of Wisconsin-Madison.</>,
   },
   {
     src: visitors_9a,
@@ -585,6 +586,11 @@ const FOOD_IMAGES: GalleryImage[] = [
     src: food_7,
     alt: 'Nikkei Comfort Food',
     caption: <>This is homemade kinpira made from gobo (burdock) by Dianne Tasaka.</>,
+  },
+  {
+    src: food_8,
+    alt: 'Homemade manju',
+    caption: <>Homemade manju by Steveston Buddhist Church.</>,
   },
   {
     src: food_6,
