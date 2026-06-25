@@ -1628,7 +1628,7 @@ const UNITEDCHURCH_IMAGES: GalleryImage[] = [
       src: unitedChurch_3,
       alt: 'United Church',
       caption: (
-        <>United Church left Grace Namba, Visiting Supervisor and Madeleine Bock
+        <>United Church left Grace Namba, Visiting Sobel Loveys and Madeleine Bock
           <br /><br />
           Photo courtesy of United Church of Canada</>
       ),
