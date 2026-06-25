@@ -101,6 +101,7 @@ import restoration5  from './img/gallery/restoration/restoration5.JPG';
 import restoration6  from './img/gallery/restoration/restoration6.JPG';
 import restoration7  from './img/gallery/restoration/restoration7.JPG';
 import restoration8  from './img/gallery/restoration/restoration8.JPG';
+import restoration9  from './img/gallery/restoration/restoration9.JPG';
 
 import landscaping_1  from './img/gallery/landscaping/landscaping_1.jpg';
 import landscaping_2  from './img/gallery/landscaping/landscaping_2.jpg';
@@ -544,6 +545,11 @@ const MISC_IMAGES: GalleryImage[] = [
 ];
 
 const RESTORATION_IMAGES: GalleryImage[] = [
+  {
+    src: restoration9,
+    alt: 'Beginning of Nikkei Legacy Park family plaque project 2016-17.',
+    caption: <>This was the beginning of Nikkei Legacy Park family plaque project 2016-17.</>,
+  },
   {
     src: restoration1,
     alt: 'Restoration Image 1',
