@@ -226,6 +226,9 @@ import visitors_22  from './img/gallery/visitors/visitors_22.jpg';
 import visitors_23  from './img/gallery/visitors/visitors_23.jpg';
 import visitors_24  from './img/gallery/visitors/visitors_24.jpg';
 import visitors_25  from './img/gallery/visitors/visitors_25.jpg';
+import visitors_26  from './img/gallery/visitors/visitors_26.jpg';
+import visitors_27  from './img/gallery/visitors/visitors_27.jpg';
+import visitors_28  from './img/gallery/visitors/visitors_28.jpg';
 
 import food_1  from './img/gallery/food/food_1.jpg';
 import food_2  from './img/gallery/food/food_2.jpg';
@@ -480,12 +483,30 @@ const VISITORS2_IMAGES: GalleryImage[] = [
     caption: <>Former student Daryl Storey paid a surprise visit.
     <br /><br />Photo Drew Storey</>,
   },
+];
+
+
+const VISITORS3_IMAGES: GalleryImage[] = [
   {
     src: visitors_25,
     alt: 'Yuks Watano',
     caption: <>Visitor Yuks Watano dropped in to visit Nikkei Legacy Park</>,
   },
-
+  {
+    src: visitors_26,
+    alt: 'Fr. Gene Morishita-Miki and wife Bernadette',
+    caption: <>Fr. Gene Morishita-Miki and wife Bernadette with their family visited Greenwood to find their family roots and the Catholic contribution at SHS</>,
+  },
+  {
+    src: visitors_27,
+    alt: 'Aaron Oye',
+    caption: <>Aaron Oye brought his family to see his father’s plaque.<br /><br />Photo by Aaron Oye</>,
+  },
+  {
+    src: visitors_28,
+    alt: 'Sylvia Campbell',
+    caption: <>Sylvia Campbell of Olympia, Washington with Dr. Paula Fujiwara of S.F. visited Nikkei Legacy Park to study nutritional value or lack thereof</>,
+  },
 
 ];
 
@@ -1915,6 +1936,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'nikkei', title: 'Grand Opening: July 20, 2025' },
     { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 1' },
     { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 2' },
+    { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 3' },
     { filterKey: 'restoration', title: 'Restoration and Renovation: 2016-2018' },
     { filterKey: 'restoration', title: 'Japanese Rock Garden Landscaping' },
     { filterKey: 'ohairi', title: 'A Look Back: Ohairi Park (Pre-2014)' },
@@ -2004,6 +2026,7 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Grand Opening: July 20, 2025') && <Carousel images={OPENING_IMAGES}   title="Grand Opening: July 20, 2025" />}
           {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 1') && <Carousel images={VISITORS_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 1" />}
           {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 2') && <Carousel images={VISITORS2_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 2" />}
+          {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 3') && <Carousel images={VISITORS3_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 3" />}
         </>
       )}
 
