@@ -641,14 +641,19 @@ const FOOD_IMAGES: GalleryImage[] = [
     caption: <>Homemade manju by Steveston Buddhist Church.</>,
   },
   {
-    src: food_9,
+    src: spring2026_9,
     alt: 'Fuki',
     caption: <>Japanese early immigrants brought Fuki to Canada.     Initially, Fuki might have been the only source of Japanese food.  Therefore, wherever Fuki is found, there must have been a Japanese settlement in places like Cumberland and Salt Spring Island.  Later, Fuki was found in internment camps.</>,
   },
   {
     src: food_10,
     alt: 'Fuki',
-    caption: <>Japanese early immigrants brought Fuki to Canada.     Initially, Fuki might have been the only source of Japanese food.  Therefore, wherever Fuki is found, there must have been a Japanese settlement in places like Cumberland and Salt Spring Island.  Later, Fuki was found in internment camps.</>,
+    caption: <>Cooked Fuki.</>,
+  },
+  {
+    src: food_9,
+    alt: 'Shiso',
+    caption: <>Shiso is another Japanese delicacy. They are used to enhance the flavour of umeboshi, sunomono and onigiri.</>,
   },
   {
     src: food_6,
