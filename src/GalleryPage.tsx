@@ -239,6 +239,8 @@ import food_5  from './img/gallery/food/food_5.jpg';
 import food_6  from './img/gallery/food/food_6.jpg';
 import food_7  from './img/gallery/food/food_7.jpg';
 import food_8  from './img/gallery/food/food_8.jpg';
+import food_9  from './img/gallery/food/food_9.jpg';
+import food_10  from './img/gallery/food/food_10.jpg';
 
 
 interface GalleryImage {
@@ -637,6 +639,16 @@ const FOOD_IMAGES: GalleryImage[] = [
     src: food_8,
     alt: 'Homemade manju',
     caption: <>Homemade manju by Steveston Buddhist Church.</>,
+  },
+  {
+    src: food_9,
+    alt: 'Fuki',
+    caption: <>Japanese early immigrants brought Fuki to Canada.     Initially, Fuki might have been the only source of Japanese food.  Therefore, wherever Fuki is found, there must have been a Japanese settlement in places like Cumberland and Salt Spring Island.  Later, Fuki was found in internment camps.</>,
+  },
+  {
+    src: food_10,
+    alt: 'Fuki',
+    caption: <>Japanese early immigrants brought Fuki to Canada.     Initially, Fuki might have been the only source of Japanese food.  Therefore, wherever Fuki is found, there must have been a Japanese settlement in places like Cumberland and Salt Spring Island.  Later, Fuki was found in internment camps.</>,
   },
   {
     src: food_6,
