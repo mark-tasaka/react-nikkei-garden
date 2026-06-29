@@ -236,6 +236,7 @@ import visitors_25  from './img/gallery/visitors/visitors_25.jpg';
 import visitors_26  from './img/gallery/visitors/visitors_26.jpg';
 import visitors_27  from './img/gallery/visitors/visitors_27.jpg';
 import visitors_28  from './img/gallery/visitors/visitors_28.jpg';
+import visitors_29  from './img/gallery/visitors/visitors_29.jpg';
 
 import food_1  from './img/gallery/food/food_1.jpg';
 import food_2  from './img/gallery/food/food_2.jpg';
@@ -516,6 +517,11 @@ const VISITORS3_IMAGES: GalleryImage[] = [
     alt: 'Sylvia Campbell',
     caption: <>Sylvia Campbell of Olympia, Washington with Dr. Paula Fujiwara of S.F. visited Nikkei Legacy Park to study nutritional value or lack thereof</>,
   },
+  {
+    src: visitors_29,
+    alt: 'Nikita Kitagawa',
+    caption: <>My former skipper from Cinnabar Valley Elementary School, Nikita Kitagawa paid a surprise visit to Nikkei Legacy Park.  Nikita was on her way to find out her grandparents’ New Denver internment site.</>,
+  },
 
 ];
 
@@ -596,7 +602,7 @@ const RESTORATION_IMAGES: GalleryImage[] = [
   {
     src: restoration10,
     alt: 'Nikkei Legacy Park Sign at Night',
-    caption: <>Nikkei Legacy Park sign illuminated at night</>,
+    caption: <>Designer Cornel Hanson suggested adding the illuminated sign</>,
   },
 ];
 
@@ -610,22 +616,22 @@ const LANDSCAPING_IMAGES: GalleryImage[] = [
   {
     src: landscaping_3,
     alt: 'Landscaping Image 3',
-    caption: <>Kunon Landscaping Company and Japonica Landscaping & Environment Farm Ltd and crew created a beautiful but serene 15th century rock garden (Karesansui) to enhance the landscape of Greenwood.</>,
+    caption: <>Greenwood Nikkei Memorial garden has made a significant improvement to the landscape of our community.  Many more people drop in to view the “ karekansui” dry garden..</>,
   },
   {
     src: landscaping_4,
     alt: 'Landscaping Image 4',
-    caption: <>Kunon Landscaping Company and Japonica Landscaping & Environment Farm Ltd and crew created a beautiful but serene 15th century rock garden (Karesansui) to enhance the landscape of Greenwood.</>,
+    caption: <>Greenwood Nikkei Memorial garden has made a significant improvement to the landscape of our community.  Many more people drop in to view the “ karekansui” dry garden.</>,
   },
   {
     src: landscaping_5,
     alt: 'Landscaping Image 5',
-    caption: <>Kunon Landscaping Company and Japonica Landscaping & Environment Farm Ltd and crew created a beautiful but serene 15th century rock garden (Karesansui) to enhance the landscape of Greenwood.</>,
+    caption: <>Greenwood Nikkei Memorial garden has made a significant improvement to the landscape of our community.  Many more people drop in to view the “ karekansui” dry garden.</>,
   },
   {
     src: landscaping_6,
     alt: 'Landscaping Image 6',
-    caption: <>Kunon Landscaping Company and Japonica Landscaping & Environment Farm Ltd and crew created a beautiful but serene 15th century rock garden (Karesansui) to enhance the landscape of Greenwood.</>,
+    caption: <>Greenwood Nikkei Memorial garden has made a significant improvement to the landscape of our community.  Many more people drop in to view the “ karekansui” dry garden.</>,
   },
   {
     src: landscaping_2,
