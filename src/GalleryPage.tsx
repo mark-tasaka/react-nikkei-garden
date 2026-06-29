@@ -102,9 +102,15 @@ import restoration6  from './img/gallery/restoration/restoration6.JPG';
 import restoration7  from './img/gallery/restoration/restoration7.JPG';
 import restoration8  from './img/gallery/restoration/restoration8.JPG';
 import restoration9  from './img/gallery/restoration/restoration9.JPG';
+import restoration10  from './img/gallery/restoration/restoration10.JPG';
 
 import landscaping_1  from './img/gallery/landscaping/landscaping_1.jpg';
 import landscaping_2  from './img/gallery/landscaping/landscaping_2.jpg';
+import landscaping_3  from './img/gallery/landscaping/landscaping_3.jpg';
+import landscaping_4  from './img/gallery/landscaping/landscaping_4.jpg';
+import landscaping_5  from './img/gallery/landscaping/landscaping_5.jpg';
+import landscaping_6  from './img/gallery/landscaping/landscaping_6.jpg';
+
 
 import housing1943_1  from './img/gallery/1943Housing/housing1943_1.jpeg';
 import housing1943_2  from './img/gallery/1943Housing/housing1943_2.jpeg';
@@ -587,6 +593,11 @@ const RESTORATION_IMAGES: GalleryImage[] = [
     alt: 'Restoration Image 7',
     caption: <>2019.</>,
   },
+  {
+    src: restoration10,
+    alt: 'Nikkei Legacy Park Sign at Night',
+    caption: <>Nikkei Legacy Park sign illuminated at night</>,
+  },
 ];
 
 
@@ -595,6 +606,26 @@ const LANDSCAPING_IMAGES: GalleryImage[] = [
     src: landscaping_1,
     alt: 'Landscaping Image 1',
     caption: <>Kunon Landscaping Company and Japonica Landscaping & Environment Farm Ltd and crew created a beautiful but serene 15th century rock garden (Karesansui) to enhance the landscape of Greenwood.  Kumpei Wakino, Yosuke, Myles Berney, Hiro Okusa.</>,
+  },
+  {
+    src: landscaping_3,
+    alt: 'Landscaping Image 3',
+    caption: <>Kunon Landscaping Company and Japonica Landscaping & Environment Farm Ltd and crew created a beautiful but serene 15th century rock garden (Karesansui) to enhance the landscape of Greenwood.</>,
+  },
+  {
+    src: landscaping_4,
+    alt: 'Landscaping Image 4',
+    caption: <>Kunon Landscaping Company and Japonica Landscaping & Environment Farm Ltd and crew created a beautiful but serene 15th century rock garden (Karesansui) to enhance the landscape of Greenwood.</>,
+  },
+  {
+    src: landscaping_5,
+    alt: 'Landscaping Image 5',
+    caption: <>Kunon Landscaping Company and Japonica Landscaping & Environment Farm Ltd and crew created a beautiful but serene 15th century rock garden (Karesansui) to enhance the landscape of Greenwood.</>,
+  },
+  {
+    src: landscaping_6,
+    alt: 'Landscaping Image 6',
+    caption: <>Kunon Landscaping Company and Japonica Landscaping & Environment Farm Ltd and crew created a beautiful but serene 15th century rock garden (Karesansui) to enhance the landscape of Greenwood.</>,
   },
   {
     src: landscaping_2,
