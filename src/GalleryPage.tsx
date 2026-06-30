@@ -95,6 +95,10 @@ import fundraiser  from './img/gallery/misc/fundraiser.jpg';
 import interneeArticle_1  from './img/gallery/misc/internee_article1.jpg';
 import interneeArticle_2  from './img/gallery/misc/internee_article2.jpg';
 import buildingArticle_1  from './img/gallery/misc/building_article1.jpg';
+import buildingArticle_2  from './img/gallery/misc/building_article2.jpg';
+import buildingArticle_3  from './img/gallery/misc/building_article3.jpg';
+import buildingArticle_4  from './img/gallery/misc/building_article4.jpg';
+import buildingArticle_5  from './img/gallery/misc/building_article5.jpg';
 
 import restoration1  from './img/gallery/restoration/restoration1.JPG';
 import restoration2  from './img/gallery/restoration/restoration2.JPG';
@@ -860,6 +864,34 @@ const BUILDING_IMAGES: GalleryImage[] = [
   {
     src: buildingArticle_1,
     alt: '',
+  },
+  {
+    src: buildingArticle_2,
+    alt: '',
+    caption: (
+      <>Under the Greenwood Museum, Rita Daminato and Ginny Kelly collected all these documents with the Secretary of States of Kelowna.  </>
+    ),
+  },
+  {
+    src: buildingArticle_3,
+    alt: '',
+    caption: (
+      <>Under the Greenwood Museum, Rita Daminato and Ginny Kelly collected all these documents with the Secretary of States of Kelowna.  </>
+    ),
+  },
+  {
+    src: buildingArticle_4,
+    alt: '',
+    caption: (
+      <>Under the Greenwood Museum, Rita Daminato and Ginny Kelly collected all these documents with the Secretary of States of Kelowna.  </>
+    ),
+  },
+  {
+    src: buildingArticle_5,
+    alt: '',
+    caption: (
+      <>Under the Greenwood Museum, Rita Daminato and Ginny Kelly collected all these documents with the Secretary of States of Kelowna.  </>
+    ),
   },
 ];
 
