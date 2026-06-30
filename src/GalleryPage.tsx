@@ -215,6 +215,10 @@ import opening_2  from './img/gallery/opening2025/opening_2.jpg';
 import opening_3  from './img/gallery/opening2025/opening_3.jpg';
 import opening_4  from './img/gallery/opening2025/opening_4.jpg';
 import opening_5  from './img/gallery/opening2025/opening_5.jpg';
+import opening_6  from './img/gallery/opening2025/opening_6.jpg';
+import opening_7  from './img/gallery/opening2025/opening_7.jpg';
+import opening_8  from './img/gallery/opening2025/opening_8.jpg';
+import opening_9  from './img/gallery/opening2025/opening_9.jpg';
 
 import visitors_1  from './img/gallery/visitors/visitors_1.jpg';
 import visitors_2  from './img/gallery/visitors/visitors_2.jpg';
@@ -346,6 +350,26 @@ const OPENING_IMAGES: GalleryImage[] = [
     caption: <>Grand Opening of Nikkei Memorial Garden July 20th, 2025.  Many thanks to JCLS, City of Greenwood Public Works and Greenwood Museum for your unbelievable support.
     <br /> <br />
     Mayor John Bolt, Linda Kawamoto-Reid, JCLS CEO Susanne Tabata,  Clare Folvik, Kumpei Wakino.  Holding the ribbons are Laura Yamaguchi and Rachel Yamaguchi.</>,
+  },
+  {
+    src: opening_6,
+    alt: 'Family members attending the grand opening.',
+    caption: <>Family members attending the 2025 grand opening of the memorial garden.</>,
+  },
+  {
+    src: opening_7,
+    alt: 'Family members attending the grand opening.',
+    caption: <>Nieces friends Derek Imai, Anthony Yamamura and Wayne Durban with Jodi and Maureen.</>,
+  },
+  {
+    src: opening_8,
+    alt: 'Family members attending the grand opening.',
+    caption: <>Nieces Kathleen, Jodi, Patti, Cindy and Maureen.</>,
+  },
+  {
+    src: opening_9,
+    alt: 'Yamaguchi-Greaves Family',
+    caption: <>Yamaguchi-Greaves Family.  Laura and Rachel in there colourful yukata were the ribbon holders.</>,
   },
   {
     src: opening_5,
