@@ -163,6 +163,7 @@ import historical1960_3  from './img/gallery/historical1960/historical1960_3.jpg
 import historical1960_4  from './img/gallery/historical1960/historical1960_4.jpg';
 import historical1960_5  from './img/gallery/historical1960/historical1960_5.jpg';
 import historical1960_6  from './img/gallery/historical1960/historical1960_6.jpg';
+import historical1960_7  from './img/gallery/historical1960/historical1960_7.jpg';
 
 import sacredHeart_1  from './img/gallery/SacredHeart/sacredHeart_1.jpg';
 import sacredHeart_2  from './img/gallery/SacredHeart/sacredHeart_2.jpg';
@@ -1589,6 +1590,10 @@ const HISTORICAL1960_IMAGES: GalleryImage[] = [
       caption: (
         <>Matsuri dancers marching past Johnny’s Market, Tanizawa Greenwood Bakery and Imai Bros Electric.</>
       ),
+    },
+    {
+      src: historical1960_7,
+      alt: 'Labour Day 1964',
     },
   ];
 
