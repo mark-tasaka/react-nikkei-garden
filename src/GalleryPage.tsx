@@ -143,6 +143,7 @@ import labourDay_13  from './img/gallery/labourDay/labourDay13.jpg';
 import labourDay_14  from './img/gallery/labourDay/labourDay14.jpg';
 import labourDay_15  from './img/gallery/labourDay/labourDay15.jpg';
 import labourDay_16  from './img/gallery/labourDay/labourDay16.jpg';
+import labourDay_17  from './img/gallery/labourDay/labourDay17.jpg';
 
 import labourDay50_1  from './img/gallery/labourDay1950/labourDay50_1.jpg';
 import labourDay50_2  from './img/gallery/labourDay1950/labourDay50_2.jpg';
@@ -164,6 +165,7 @@ import historical1960_4  from './img/gallery/historical1960/historical1960_4.jpg
 import historical1960_5  from './img/gallery/historical1960/historical1960_5.jpg';
 import historical1960_6  from './img/gallery/historical1960/historical1960_6.jpg';
 import historical1960_7  from './img/gallery/historical1960/historical1960_7.jpg';
+import historical1960_8  from './img/gallery/historical1960/historical1960_8.jpg';
 
 import sacredHeart_1  from './img/gallery/SacredHeart/sacredHeart_1.jpg';
 import sacredHeart_2  from './img/gallery/SacredHeart/sacredHeart_2.jpg';
@@ -1434,6 +1436,10 @@ const LAOBUR_DAY_IMAGES: GalleryImage[] = [
           Photo courtesy of Francis Nakagawa</>
       ),
     },
+    {
+      src: labourDay_17,
+      alt: 'Labour Day 1940s',
+    },
 ];
 
 const LAOBUR_DAY1950_IMAGES: GalleryImage[] = [
@@ -1594,6 +1600,10 @@ const HISTORICAL1960_IMAGES: GalleryImage[] = [
     {
       src: historical1960_7,
       alt: 'Labour Day 1964',
+    },
+    {
+      src: historical1960_8,
+      alt: 'Greenwood to be Cpmgratulated',
     },
   ];
 
