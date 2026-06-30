@@ -94,6 +94,7 @@ import building2_4  from './img/gallery/misc/building2_4.jpg';
 import fundraiser  from './img/gallery/misc/fundraiser.jpg';
 import interneeArticle_1  from './img/gallery/misc/internee_article1.jpg';
 import interneeArticle_2  from './img/gallery/misc/internee_article2.jpg';
+import buildingArticle_1  from './img/gallery/misc/building_article1.jpg';
 
 import restoration1  from './img/gallery/restoration/restoration1.JPG';
 import restoration2  from './img/gallery/restoration/restoration2.JPG';
@@ -855,6 +856,10 @@ const BUILDING_IMAGES: GalleryImage[] = [
         <br /><br />
         Photo courtesy of Greenwood Museum</>
     ),
+  },
+  {
+    src: buildingArticle_1,
+    alt: '',
   },
 ];
 
