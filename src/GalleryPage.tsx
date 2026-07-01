@@ -287,6 +287,8 @@ import active_life_11  from './img/gallery/activeLife/active_life_11.jpg';
 import active_life_12  from './img/gallery/activeLife/active_life_12.jpg';
 import active_life_13  from './img/gallery/activeLife/active_life_13.jpg';
 import active_life_14  from './img/gallery/activeLife/active_life_14.jpg';
+import active_life_15  from './img/gallery/activeLife/active_life_15.jpg';
+import active_life_16  from './img/gallery/activeLife/active_life_16.jpg';
 
 interface GalleryImage {
   src: string;
@@ -2134,11 +2136,31 @@ const ACTIVELIFE_IMAGES: GalleryImage[] = [
         <>Greenwood had ice carnival where the spotlight was the crowning of Snow Queen.  Here, Joan Aldham was queen and Lorraine Miyagishima was an attendant.</> 
       ),
     },
+  ];
+
+     
+const ACTIVELIFE2_IMAGES: GalleryImage[] = [
     {
       src: active_life_14,
       alt: 'Sleigh Riding',
       caption: (
         <>Sleigh riding was so much fun for the kids speeding down Phoenix Road down to Greenwood Street!</> 
+      ),
+    },
+    {
+      src: active_life_15,
+      alt: 'Greenwood Hospital',
+      caption: (
+        <>Greenwood Hospital was very busy with babies being born in the 40’s
+          <br /><br />
+          Photo courtesy of Greenwood Museum</> 
+      ),
+    },
+    {
+      src: active_life_16,
+      alt: 'Jacks',
+      caption: (
+        <>Jacks was a very popular pastime for both boys and girls.</> 
       ),
     },
   ];
@@ -2310,7 +2332,8 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'community', title: 'Labour Day Parades 1950s' },
     { filterKey: 'community', title: 'Natsu Matsuri - Summer Festival 1964' },
     { filterKey: 'community', title: 'Sports' },
-    { filterKey: 'community', title: 'Active Life in Greenwood' },
+    { filterKey: 'community', title: 'Active Life in Greenwood: Gallery 1' },
+    { filterKey: 'community', title: 'Active Life in Greenwood: Gallery 2' },
   ];
 
   const hasVisibleResults = ALL_CAROUSELS.some(
@@ -2439,7 +2462,8 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Labour Day Parades 1950s') && <Carousel images={LAOBUR_DAY1950_IMAGES} title="Labour Day Parades 1950s" />}
           {matchesQuery('Natsu Matsuri - Summer Festival 1964') && <Carousel images={HISTORICAL1960_IMAGES} title="Natsu Matsuri - Summer Festival 1964" />}
           {matchesQuery('Sports') && <Carousel images={SPORTS_IMAGES} title="Sports" />}
-          {matchesQuery('Active Life in Greenwood') && <Carousel images={ACTIVELIFE_IMAGES} title="Active Life in Greenwood" />}
+          {matchesQuery('Active Life in Greenwood: Gallery 1') && <Carousel images={ACTIVELIFE_IMAGES} title="Active Life in Greenwood: Gallery 1" />}
+          {matchesQuery('Active Life in Greenwood: Gallery 2') && <Carousel images={ACTIVELIFE2_IMAGES} title="Active Life in Greenwood: Gallery 2" />}
         </>
       )}
 
