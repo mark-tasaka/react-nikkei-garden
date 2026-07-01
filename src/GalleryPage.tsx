@@ -275,6 +275,9 @@ import sports_9  from './img/gallery/sports/sports_9.jpg';
 import sports_10  from './img/gallery/sports/sports_10.jpg';
 import sports_11  from './img/gallery/sports/sports_11.jpg';
 import sports_12  from './img/gallery/sports/sports_12.jpg';
+import sports_13  from './img/gallery/sports/sports_13.jpg';
+import sports_14  from './img/gallery/sports/sports_14.jpg';
+import sports_15  from './img/gallery/sports/sports_15.jpg';
 
 import active_life_1  from './img/gallery/activeLife/active_life_1.jpg';
 import active_life_2  from './img/gallery/activeLife/active_life_2.jpg';
@@ -2064,7 +2067,31 @@ const SPORTS_IMAGES: GalleryImage[] = [
       ),
     },
   ];
-
+  
+  
+const SPORTS2_IMAGES: GalleryImage[] = [
+    {
+      src: sports_13,
+      alt: 'Early Hockey',
+      caption: (
+        <>Caption to be added soon.</> 
+      ),
+    },
+    {
+      src: sports_14,
+      alt: 'Early Hockey',
+      caption: (
+        <>Caption to be added soon.</> 
+      ),
+    },
+    {
+      src: sports_15,
+      alt: 'Early Hockey',
+      caption: (
+        <>Caption to be added soon.</> 
+      ),
+    },
+  ];
     
 const ACTIVELIFE_IMAGES: GalleryImage[] = [
     {
@@ -2387,7 +2414,8 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'community', title: 'Labour Day Parades 1940s' },
     { filterKey: 'community', title: 'Labour Day Parades 1950s' },
     { filterKey: 'community', title: 'Natsu Matsuri - Summer Festival 1964' },
-    { filterKey: 'community', title: 'Sports' },
+    { filterKey: 'community', title: 'Sports: Gallery 1' },
+    { filterKey: 'community', title: 'Sports: Gallery 2' },
     { filterKey: 'community', title: 'Active Life in Greenwood: Gallery 1' },
     { filterKey: 'community', title: 'Active Life in Greenwood: Gallery 2' },
   ];
@@ -2517,7 +2545,8 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Labour Day Parades 1940s') && <Carousel images={LAOBUR_DAY_IMAGES} title="Labour Day Parades 1940s" />}
           {matchesQuery('Labour Day Parades 1950s') && <Carousel images={LAOBUR_DAY1950_IMAGES} title="Labour Day Parades 1950s" />}
           {matchesQuery('Natsu Matsuri - Summer Festival 1964') && <Carousel images={HISTORICAL1960_IMAGES} title="Natsu Matsuri - Summer Festival 1964" />}
-          {matchesQuery('Sports') && <Carousel images={SPORTS_IMAGES} title="Sports" />}
+          {matchesQuery('Sports: Gallery 1') && <Carousel images={SPORTS_IMAGES} title="Sports: Gallery 1" />}
+          {matchesQuery('Sports: Gallery 2') && <Carousel images={SPORTS2_IMAGES} title="Sports: Gallery 2" />}
           {matchesQuery('Active Life in Greenwood: Gallery 1') && <Carousel images={ACTIVELIFE_IMAGES} title="Active Life in Greenwood: Gallery 1" />}
           {matchesQuery('Active Life in Greenwood: Gallery 2') && <Carousel images={ACTIVELIFE2_IMAGES} title="Active Life in Greenwood: Gallery 2" />}
         </>
