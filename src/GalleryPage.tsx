@@ -267,6 +267,9 @@ import sports_1  from './img/gallery/sports/sports_1.jpg';
 import sports_2  from './img/gallery/sports/sports_2.jpg';
 import sports_3  from './img/gallery/sports/sports_3.jpg';
 import sports_4  from './img/gallery/sports/sports_4.jpg';
+import sports_5  from './img/gallery/sports/sports_5.jpg';
+import sports_6  from './img/gallery/sports/sports_6.jpg';
+import sports_7  from './img/gallery/sports/sports_7.jpg';
 
 
 interface GalleryImage {
@@ -1975,6 +1978,29 @@ const SPORTS_IMAGES: GalleryImage[] = [
       alt: 'Greenwood Sports Arena',
       caption: (
         <>Greenwood Sports Arena was an indoor natural ice rink.  Public ice skating, Snow Carnival, broomball and hockey games were played in the winter.  basketball was played when the ice melted.  Makeshift boarded were laid.  During the game, coaches carried a hammer!  When a nail popped up, they stopped the game to hammer it back in.</> 
+      ),
+    },
+    {
+      src: sports_5,
+      alt: 'athletic support',
+      caption: (
+        <>This athletic support was owned by Stephen Tasaka. It was called a “nut cup” as well.  In 1957, he decided to try out in goal.  During practice, pucks were directed towards the cup by cheeky teammates.  Dents are evident.</> 
+      ),
+    },
+    {
+      src: sports_6,
+      alt: 'Softball Game',
+      caption: (
+        <>Christina Lake and Greenwood Japanese Canadian teams played a softball game in the 1943 Labour Day celebration. It was featured in the local news for JC contribution as part of the local festivities.  This field was located between Silver and Gold Street.  Present day Canco would be to the right.</> 
+      ),
+    },
+    {
+      src: sports_7,
+      alt: 'Early Hockey',
+      caption: (
+        <>This was the first year of Babe Ruth Baseball League in 1960.  Grand Forks had three teams, Cubs, Braves and Tigers.  Christina Lake Lakers made it a five-team league.
+          <br /><br />
+          Photo courtesy of Cynthia Wallace Price.</> 
       ),
     },
   ];
