@@ -263,6 +263,9 @@ import food_8  from './img/gallery/food/food_8.jpg';
 import food_9  from './img/gallery/food/food_9.jpg';
 import food_10  from './img/gallery/food/food_10.jpg';
 
+import sports_1  from './img/gallery/sports/sports_1.jpg';
+import sports_2  from './img/gallery/sports/sports_2.jpg';
+
 
 interface GalleryImage {
   src: string;
@@ -1934,6 +1937,29 @@ const CEMENTERY_IMAGES: GalleryImage[] = [
       ),
     },
   ];
+
+  
+  
+const SPORTS_IMAGES: GalleryImage[] = [
+    {
+      src: sports_1,
+      alt: 'Early Hockey',
+      caption: (
+        <>Early hockey teams in the 40's.  There were three teams, Bruins, Tigers and Hepcats.  Bruins won the cup.  The arena was located next(south) to Nikkei Legacy Park. 
+          <br /><br />
+          Photo courtesy of Greenwood Museum</> 
+      ),
+    },
+    {
+      src: sports_2,
+      alt: 'Early Hockey',
+      caption: (
+        <>Men's team the Greenwood Dynamiters in the late 50’s
+          <br /><br />
+          Photo courtesy of Vince Hall</> 
+      ),
+    },
+  ];
 // ── Carousel ────────────────────────────────────────────────────────────────
 
 interface CarouselProps {
@@ -2100,6 +2126,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'community', title: 'Labour Day Parades 1940s' },
     { filterKey: 'community', title: 'Labour Day Parades 1950s' },
     { filterKey: 'community', title: 'Natsu Matsuri - Summer Festival 1964' },
+    { filterKey: 'community', title: 'Sports' },
   ];
 
   const hasVisibleResults = ALL_CAROUSELS.some(
@@ -2227,6 +2254,7 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Labour Day Parades 1940s') && <Carousel images={LAOBUR_DAY_IMAGES} title="Labour Day Parades 1940s" />}
           {matchesQuery('Labour Day Parades 1950s') && <Carousel images={LAOBUR_DAY1950_IMAGES} title="Labour Day Parades 1950s" />}
           {matchesQuery('Natsu Matsuri - Summer Festival 1964') && <Carousel images={HISTORICAL1960_IMAGES} title="Natsu Matsuri - Summer Festival 1964" />}
+          {matchesQuery('Sports') && <Carousel images={SPORTS_IMAGES} title="Sports" />}
         </>
       )}
 
