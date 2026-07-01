@@ -99,6 +99,7 @@ import buildingArticle_2  from './img/gallery/misc/building_article2.jpg';
 import buildingArticle_3  from './img/gallery/misc/building_article3.jpg';
 import buildingArticle_4  from './img/gallery/misc/building_article4.jpg';
 import buildingArticle_5  from './img/gallery/misc/building_article5.jpg';
+import ohairi_6  from './img/gallery/misc/ohairi-park-6.JPG';
 
 import restoration1  from './img/gallery/restoration/restoration1.JPG';
 import restoration2  from './img/gallery/restoration/restoration2.JPG';
@@ -633,6 +634,11 @@ const MISC_IMAGES: GalleryImage[] = [
     src: misc_22,
     alt: 'Ohairi Park',
     caption: <>Walls added in 2015</>,
+  },
+  {
+    src: ohairi_6,
+    alt: 'Ohairi Park',
+    caption: <>Old Ohairi Park slowly turning into NIkkei Legacy Park</>,
   },
   {
     src: fundraiser,
