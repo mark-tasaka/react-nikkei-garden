@@ -284,6 +284,9 @@ import sports_18  from './img/gallery/sports/sports_18.jpg';
 import sports_19  from './img/gallery/sports/sports_19.jpg';
 import sports_20  from './img/gallery/sports/sports_20.jpg';
 import sports_21  from './img/gallery/sports/sports_21.jpg';
+import sports_22  from './img/gallery/sports/sports_22.jpg';
+import sports_23  from './img/gallery/sports/sports_23.jpg';
+import sports_24  from './img/gallery/sports/sports_24.jpg';
 
 import active_life_1  from './img/gallery/activeLife/active_life_1.jpg';
 import active_life_2  from './img/gallery/activeLife/active_life_2.jpg';
@@ -2137,6 +2140,27 @@ const SPORTS2_IMAGES: GalleryImage[] = [
       alt: 'Greenwood Hawks Hockey Team',
       caption: (
         <>This was one of the later teams in the early 60's.  They were called the Greenwood Hawks. Hockey display at the Greenwood Museum in 2015.</> 
+      ),
+    },
+    {
+      src: sports_22,
+      alt: 'Greenwood Museum featured Hockey History',
+      caption: (
+        <>Greenwood Museum featured Hockey History one year and many hockey memorabilia were displayed.</> 
+      ),
+    },
+    {
+      src: sports_23,
+      alt: 'Greenwood Museum featured Hockey History',
+      caption: (
+        <>Greenwood Museum featured Hockey History one year and many hockey memorabilia were displayed.</> 
+      ),
+    },
+    {
+      src: sports_24,
+      alt: 'Greenwood Museum featured Hockey History',
+      caption: (
+        <>Greenwood Museum featured Hockey History one year and many hockey memorabilia were displayed.</> 
       ),
     },
   ];
