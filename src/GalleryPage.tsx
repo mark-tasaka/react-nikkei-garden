@@ -271,6 +271,7 @@ import sports_5  from './img/gallery/sports/sports_5.jpg';
 import sports_6  from './img/gallery/sports/sports_6.jpg';
 import sports_7  from './img/gallery/sports/sports_7.jpg';
 import sports_8  from './img/gallery/sports/sports_8.jpg';
+import sports_9  from './img/gallery/sports/sports_9.jpg';
 
 import active_life_1  from './img/gallery/activeLife/active_life_1.jpg';
 import active_life_2  from './img/gallery/activeLife/active_life_2.jpg';
@@ -282,6 +283,10 @@ import active_life_7  from './img/gallery/activeLife/active_life_7.jpg';
 import active_life_8  from './img/gallery/activeLife/active_life_8.jpg';
 import active_life_9  from './img/gallery/activeLife/active_life_9.jpg';
 import active_life_10  from './img/gallery/activeLife/active_life_10.jpg';
+import active_life_11  from './img/gallery/activeLife/active_life_11.jpg';
+import active_life_12  from './img/gallery/activeLife/active_life_12.jpg';
+import active_life_13  from './img/gallery/activeLife/active_life_13.jpg';
+import active_life_14  from './img/gallery/activeLife/active_life_14.jpg';
 
 interface GalleryImage {
   src: string;
@@ -2021,6 +2026,13 @@ const SPORTS_IMAGES: GalleryImage[] = [
         <>Judo was a late starter in Greenwood.  Yosh Mitsui who was a kendo master was also a black belt in judo.  John Huntley from Grand Forks introduced judo in Greenwood initially and Yosh took over the Greenwood club.  At first, canvas mat was used at the old Sacred Heart School.  Then tatami mat was added when the club moved to McArthur Centre where the Kettle River Art Club is located.</> 
       ),
     },
+    {
+      src: sports_9,
+      alt: 'Hockey in Greenwood',
+      caption: (
+        <>This is one of the earliest hockey teams in Greenwood when the Japanese Canadians arrived.  Yuki Onizuka the goalie chose to go to Toronto in 1946 and started NHL, the Nisei Hockey League! </> 
+      ),
+    },
   ];
 
     
@@ -2099,6 +2111,34 @@ const ACTIVELIFE_IMAGES: GalleryImage[] = [
       alt: 'Embroidery club',
       caption: (
         <>Embroidery club was also another activity for the ladies.</> 
+      ),
+    },
+    {
+      src: active_life_11,
+      alt: 'Odori or Japanese dance',
+      caption: (
+        <>Odori or Japanese dance was a cultural activity enjoyed by young ladies.  Monica Tasaka, Catherine Tanaka and Maryann Uyede performing at SHS.</> 
+      ),
+    },
+    {
+      src: active_life_12,
+      alt: 'Crowning of the Snow Queen',
+      caption: (
+        <>Crowning of the Snow Queen in 1945.  JoAnne Cowdrill is passing the crown to Maryann Miyagishima.  It was a significant year since the war ended.  JoAnne gave a heartfelt speech.  Esther Kanda is the attendant and Mayor McArthur Sr in the background.</> 
+      ),
+    },
+    {
+      src: active_life_13,
+      alt: 'Crowning of the Snow Queen',
+      caption: (
+        <>Greenwood had ice carnival where the spotlight was the crowning of Snow Queen.  Here, Joan Aldham was queen and Lorraine Miyagishima was an attendant.</> 
+      ),
+    },
+    {
+      src: active_life_14,
+      alt: 'Sleigh Riding',
+      caption: (
+        <>Sleigh riding was so much fun for the kids speeding down Phoenix Road down to Greenwood Street!</> 
       ),
     },
   ];
