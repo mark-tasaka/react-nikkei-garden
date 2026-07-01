@@ -272,6 +272,7 @@ import sports_6  from './img/gallery/sports/sports_6.jpg';
 import sports_7  from './img/gallery/sports/sports_7.jpg';
 import sports_8  from './img/gallery/sports/sports_8.jpg';
 
+import active_life_1  from './img/gallery/activeLife/active_life_1.jpg';
 
 interface GalleryImage {
   src: string;
@@ -2012,6 +2013,19 @@ const SPORTS_IMAGES: GalleryImage[] = [
       ),
     },
   ];
+
+    
+const ACTIVELIFE_IMAGES: GalleryImage[] = [
+    {
+      src: active_life_1,
+      alt: 'Active Life',
+      caption: (
+        <>Academy of Domestic Arts was one of the first activity for the ladies who wanted to learn the skills of sewing.  This 1945 photo shows local ladies as members
+          <br /><br />
+          Photo courtesy of Greenwood Museum</> 
+      ),
+    },
+  ];
 // ── Carousel ────────────────────────────────────────────────────────────────
 
 interface CarouselProps {
@@ -2179,6 +2193,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'community', title: 'Labour Day Parades 1950s' },
     { filterKey: 'community', title: 'Natsu Matsuri - Summer Festival 1964' },
     { filterKey: 'community', title: 'Sports' },
+    { filterKey: 'community', title: 'Active Life in Greenwood' },
   ];
 
   const hasVisibleResults = ALL_CAROUSELS.some(
@@ -2307,6 +2322,7 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Labour Day Parades 1950s') && <Carousel images={LAOBUR_DAY1950_IMAGES} title="Labour Day Parades 1950s" />}
           {matchesQuery('Natsu Matsuri - Summer Festival 1964') && <Carousel images={HISTORICAL1960_IMAGES} title="Natsu Matsuri - Summer Festival 1964" />}
           {matchesQuery('Sports') && <Carousel images={SPORTS_IMAGES} title="Sports" />}
+          {matchesQuery('Active Life in Greenwood') && <Carousel images={ACTIVELIFE_IMAGES} title="Active Life in Greenwood" />}
         </>
       )}
 
