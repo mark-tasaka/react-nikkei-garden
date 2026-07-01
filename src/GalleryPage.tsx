@@ -273,6 +273,8 @@ import sports_7  from './img/gallery/sports/sports_7.jpg';
 import sports_8  from './img/gallery/sports/sports_8.jpg';
 
 import active_life_1  from './img/gallery/activeLife/active_life_1.jpg';
+import active_life_2  from './img/gallery/activeLife/active_life_2.jpg';
+import active_life_3  from './img/gallery/activeLife/active_life_3.jpg';
 
 interface GalleryImage {
   src: string;
@@ -2025,7 +2027,22 @@ const ACTIVELIFE_IMAGES: GalleryImage[] = [
           Photo courtesy of Greenwood Museum</> 
       ),
     },
+    {
+      src: active_life_2,
+      alt: 'Academy of Domestic Arts',
+      caption: (
+        <>Mrs. Kurisu, Mrs. Tamoto and Mrs. Ooka started the Academy of Domestic Arts probably in 1943.  This is 1945 when the war ended. In 1946, some of these members moved east of the Rockies or to Japan.</> 
+      ),
+    },
+    {
+      src: active_life_3,
+      alt: 'Pool Hall',
+      caption: (
+        <>Playing pool was another popular activity.  This building once housed the Academy of Domestic Arts.  This 1947 photo also had Arizo Tasaka cutting Tadao Yoshida’s hair in the background.</> 
+      ),
+    },
   ];
+
 // ── Carousel ────────────────────────────────────────────────────────────────
 
 interface CarouselProps {
