@@ -281,6 +281,9 @@ import sports_15  from './img/gallery/sports/sports_15.jpg';
 import sports_16  from './img/gallery/sports/sports_16.jpg';
 import sports_17  from './img/gallery/sports/sports_17.jpg';
 import sports_18  from './img/gallery/sports/sports_18.jpg';
+import sports_19  from './img/gallery/sports/sports_19.jpg';
+import sports_20  from './img/gallery/sports/sports_20.jpg';
+import sports_21  from './img/gallery/sports/sports_21.jpg';
 
 import active_life_1  from './img/gallery/activeLife/active_life_1.jpg';
 import active_life_2  from './img/gallery/activeLife/active_life_2.jpg';
@@ -2113,6 +2116,27 @@ const SPORTS2_IMAGES: GalleryImage[] = [
       alt: 'Greenwood Monarchs Hockey Team',
       caption: (
         <>Postwar Greenwood Monarchs hockey teams during the early 50's.</> 
+      ),
+    },
+    {
+      src: sports_19,
+      alt: 'Greenwood Hawks Hockey Team',
+      caption: (
+        <>This was one of the later teams in the early 60's.  They were called the Greenwood Hawks. Hockey display at the Greenwood Museum in 2015.</> 
+      ),
+    },
+    {
+      src: sports_20,
+      alt: 'Greenwood Hawks Hockey Team',
+      caption: (
+        <>This was one of the later teams in the early 60's.  They were called the Greenwood Hawks. Hockey display at the Greenwood Museum in 2015.</> 
+      ),
+    },
+    {
+      src: sports_21,
+      alt: 'Greenwood Hawks Hockey Team',
+      caption: (
+        <>This was one of the later teams in the early 60's.  They were called the Greenwood Hawks. Hockey display at the Greenwood Museum in 2015.</> 
       ),
     },
   ];
