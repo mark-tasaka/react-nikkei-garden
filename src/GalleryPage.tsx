@@ -270,6 +270,7 @@ import sports_4  from './img/gallery/sports/sports_4.jpg';
 import sports_5  from './img/gallery/sports/sports_5.jpg';
 import sports_6  from './img/gallery/sports/sports_6.jpg';
 import sports_7  from './img/gallery/sports/sports_7.jpg';
+import sports_8  from './img/gallery/sports/sports_8.jpg';
 
 
 interface GalleryImage {
@@ -1996,11 +1997,18 @@ const SPORTS_IMAGES: GalleryImage[] = [
     },
     {
       src: sports_7,
-      alt: 'Early Hockey',
+      alt: 'Babe Ruth Baseball League ',
       caption: (
         <>This was the first year of Babe Ruth Baseball League in 1960.  Grand Forks had three teams, Cubs, Braves and Tigers.  Christina Lake Lakers made it a five-team league.
           <br /><br />
           Photo courtesy of Cynthia Wallace Price.</> 
+      ),
+    },
+    {
+      src: sports_8,
+      alt: 'Judo in Greenwood',
+      caption: (
+        <>Judo was a late starter in Greenwood.  Yosh Mitsui who was a kendo master was also a black belt in judo.  John Huntley from Grand Forks introduced judo in Greenwood initially and Yosh took over the Greenwood club.  At first, canvas mat was used at the old Sacred Heart School.  Then tatami mat was added when the club moved to McArthur Centre where the Kettle River Art Club is located.</> 
       ),
     },
   ];
