@@ -2002,7 +2002,7 @@ const SPORTS_IMAGES: GalleryImage[] = [
       src: sports_4,
       alt: 'Greenwood Sports Arena',
       caption: (
-        <>Greenwood Sports Arena was an indoor natural ice rink.  Public ice skating, Snow Carnival, broomball and hockey games were played in the winter.  basketball was played when the ice melted.  Makeshift boarded were laid.  During the game, coaches carried a hammer!  When a nail popped up, they stopped the game to hammer it back in.</> 
+        <>Greenwood Sports Arena was an indoor natural ice rink.  Public ice skating, Snow Carnival, broomball and hockey games were played in the winter.  basketball was played when the ice melted.  Makeshift boards were laid.  During the game, coaches carried a hammer!  When a nail popped up, they stopped the game to hammer it back in.</> 
       ),
     },
     {
@@ -2032,7 +2032,7 @@ const SPORTS_IMAGES: GalleryImage[] = [
       src: sports_8,
       alt: 'Judo in Greenwood',
       caption: (
-        <>Judo was a late starter in Greenwood.  Yosh Mitsui who was a kendo master was also a black belt in judo.  John Huntley from Grand Forks introduced judo in Greenwood initially and Yosh took over the Greenwood club.  At first, canvas mat was used at the old Sacred Heart School.  Then tatami mat was added when the club moved to McArthur Centre where the Kettle River Art Club is located.</> 
+        <>Judo was a late starter in Greenwood.  Yosh Mitsui who was a kendo master was also a black belt in judo.  John Huntley from Grand Forks introduced judo in Greenwood initially and Yosh took over the Greenwood club.  At first, canvas mat was used at the old Sacred Heart School.  Then judo mats were added when the club moved to McArthur Centre where the Kettle River Art Club is located.</> 
       ),
     },
     {
@@ -2071,7 +2071,7 @@ const ACTIVELIFE_IMAGES: GalleryImage[] = [
       src: active_life_1,
       alt: 'Active Life',
       caption: (
-        <>Academy of Domestic Arts was one of the first activity for the ladies who wanted to learn the skills of sewing.  This 1945 photo shows local ladies as members
+        <>Academy of Domestic Arts was one of the first activity for the ladies who wanted to learn the skills of sewing.  This 1947 photo shows local ladies as members
           <br /><br />
           Photo courtesy of Greenwood Museum</> 
       ),
@@ -2080,7 +2080,7 @@ const ACTIVELIFE_IMAGES: GalleryImage[] = [
       src: active_life_2,
       alt: 'Academy of Domestic Arts',
       caption: (
-        <>Mrs. Kurisu, Mrs. Tamoto and Mrs. Ooka started the Academy of Domestic Arts probably in 1943.  This is 1945 when the war ended. In 1946, some of these members moved east of the Rockies or to Japan.</> 
+        <>Mrs. Kurisu, Mrs. Tamoto and Mrs. Ooka started the Academy of Domestic Arts probably in 1943.  This is 1947 when the war ended. In 1946, some of these members moved east of the Rockies or to Japan.</> 
       ),
     },
     {
@@ -2115,16 +2115,16 @@ const ACTIVELIFE_IMAGES: GalleryImage[] = [
       src: active_life_7,
       alt: 'Boy Scouts and Cub Scouts',
       caption: (
-        <>Boy Scouts and Cub Scouts was held above Jewel Theatre at the old Hunter-Kendrick Building.  Greenwood Museum now stands where the scouts congregated.
+        <>Boy Scouts and Cubs was held above Jewel Theatre at the old Hunter-Kendrick Building.  Greenwood Museum now stands where the scouts congregated.
           <br /><br />
           Photo courtesy of Greenwood Museum</> 
       ),
     },
     {
       src: active_life_8,
-      alt: 'Crowing of May Day Queen',
+      alt: 'Crowning of May Day Queen',
       caption: (
-        <>Crowing of May Day Queen was another exciting time for the girls.  Dorothy Otani was crowned May Queen.</> 
+        <>Crowning of May Day Queen was another exciting time for the girls.  Dorothy Otani was crowned May Queen.</> 
       ),
     },
     {
