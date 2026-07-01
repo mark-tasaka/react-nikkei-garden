@@ -275,6 +275,9 @@ import sports_8  from './img/gallery/sports/sports_8.jpg';
 import active_life_1  from './img/gallery/activeLife/active_life_1.jpg';
 import active_life_2  from './img/gallery/activeLife/active_life_2.jpg';
 import active_life_3  from './img/gallery/activeLife/active_life_3.jpg';
+import active_life_4  from './img/gallery/activeLife/active_life_4.jpg';
+import active_life_5  from './img/gallery/activeLife/active_life_5.jpg';
+import active_life_6  from './img/gallery/activeLife/active_life_6.jpg';
 
 interface GalleryImage {
   src: string;
@@ -2039,6 +2042,27 @@ const ACTIVELIFE_IMAGES: GalleryImage[] = [
       alt: 'Pool Hall',
       caption: (
         <>Playing pool was another popular activity.  This building once housed the Academy of Domestic Arts.  This 1947 photo also had Arizo Tasaka cutting Tadao Yoshida’s hair in the background.</> 
+      ),
+    },
+    {
+      src: active_life_4,
+      alt: 'Hiking and picnicking',
+      caption: (
+        <>Hiking and picnicking to the smelter was another pastime for the JCs in the 40’s.</> 
+      ),
+    },
+    {
+      src: active_life_5,
+      alt: 'Katana kiri',
+      caption: (
+        <>Katana kiri was very popular for the boys.  This is SHS but most of the time it was played behind #5 Building.</> 
+      ),
+    },
+    {
+      src: active_life_6,
+      alt: 'Maypole Dance',
+      caption: (
+        <>Maypole Dance was performed at May Day celebration.</> 
       ),
     },
   ];
