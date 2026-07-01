@@ -278,6 +278,8 @@ import active_life_3  from './img/gallery/activeLife/active_life_3.jpg';
 import active_life_4  from './img/gallery/activeLife/active_life_4.jpg';
 import active_life_5  from './img/gallery/activeLife/active_life_5.jpg';
 import active_life_6  from './img/gallery/activeLife/active_life_6.jpg';
+import active_life_7  from './img/gallery/activeLife/active_life_7.jpg';
+import active_life_8  from './img/gallery/activeLife/active_life_8.jpg';
 
 interface GalleryImage {
   src: string;
@@ -2063,6 +2065,22 @@ const ACTIVELIFE_IMAGES: GalleryImage[] = [
       alt: 'Maypole Dance',
       caption: (
         <>Maypole Dance was performed at May Day celebration.</> 
+      ),
+    },
+    {
+      src: active_life_7,
+      alt: 'Boy Scouts and Cub Scouts',
+      caption: (
+        <>Boy Scouts and Cub Scouts was held above Jewel Theatre at the old Hunter-Kendrick Building.  Greenwood Museum now stands where the scouts congregated.
+          <br /><br />
+          Photo courtesy of Greenwood Museum</> 
+      ),
+    },
+    {
+      src: active_life_8,
+      alt: 'Crowing of May Day Queen',
+      caption: (
+        <>Crowing of May Day Queen was another exciting time for the girls.  Dorothy Otani was crowned May Queen.</> 
       ),
     },
   ];
