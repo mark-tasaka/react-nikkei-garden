@@ -272,6 +272,9 @@ import sports_6  from './img/gallery/sports/sports_6.jpg';
 import sports_7  from './img/gallery/sports/sports_7.jpg';
 import sports_8  from './img/gallery/sports/sports_8.jpg';
 import sports_9  from './img/gallery/sports/sports_9.jpg';
+import sports_10  from './img/gallery/sports/sports_10.jpg';
+import sports_11  from './img/gallery/sports/sports_11.jpg';
+import sports_12  from './img/gallery/sports/sports_12.jpg';
 
 import active_life_1  from './img/gallery/activeLife/active_life_1.jpg';
 import active_life_2  from './img/gallery/activeLife/active_life_2.jpg';
@@ -2037,6 +2040,27 @@ const SPORTS_IMAGES: GalleryImage[] = [
       alt: 'Hockey in Greenwood',
       caption: (
         <>This is one of the earliest hockey teams in Greenwood when the Japanese Canadians arrived.  Yuki Onizuka the goalie chose to go to Toronto in 1946 and started NHL, the Nisei Hockey League! </> 
+      ),
+    },
+    {
+      src: sports_10,
+      alt: 'Early Greenwood hockey teams',
+      caption: (
+        <>Early Greenwood hockey teams during the internment years.  Mayor McArthur Sr opened the ice arena to provide healthy, positive activities for the younger people.  In the early 1900's during the mining days, Greenwood was a feeder team along with Grand Forks and Phoenix for the Vancouver Millionaires that won the Stanley Cup in 1915.</> 
+      ),
+    },
+    {
+      src: sports_11,
+      alt: 'Early Greenwood hockey teams',
+      caption: (
+        <>Early Greenwood hockey teams during the internment years.  Mayor McArthur Sr opened the ice arena to provide healthy, positive activities for the younger people.  In the early 1900's during the mining days, Greenwood was a feeder team along with Grand Forks and Phoenix for the Vancouver Millionaires that won the Stanley Cup in 1915.</> 
+      ),
+    },
+    {
+      src: sports_12,
+      alt: 'Early Greenwood hockey teams',
+      caption: (
+        <>Early Greenwood hockey teams during the internment years.  Mayor McArthur Sr opened the ice arena to provide healthy, positive activities for the younger people.  In the early 1900's during the mining days, Greenwood was a feeder team along with Grand Forks and Phoenix for the Vancouver Millionaires that won the Stanley Cup in 1915.</> 
       ),
     },
   ];
