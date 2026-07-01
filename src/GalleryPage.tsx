@@ -287,6 +287,7 @@ import sports_21  from './img/gallery/sports/sports_21.jpg';
 import sports_22  from './img/gallery/sports/sports_22.jpg';
 import sports_23  from './img/gallery/sports/sports_23.jpg';
 import sports_24  from './img/gallery/sports/sports_24.jpg';
+import sports_25  from './img/gallery/sports/sports_25.jpg';
 
 import active_life_1  from './img/gallery/activeLife/active_life_1.jpg';
 import active_life_2  from './img/gallery/activeLife/active_life_2.jpg';
@@ -308,6 +309,9 @@ import active_life_17  from './img/gallery/activeLife/active_life_17.jpg';
 import active_life_18  from './img/gallery/activeLife/active_life_18.jpg';
 import active_life_19  from './img/gallery/activeLife/active_life_19.jpg';
 import active_life_20  from './img/gallery/activeLife/active_life_20.jpg';
+import active_life_21  from './img/gallery/activeLife/active_life_21.jpg';
+import active_life_22  from './img/gallery/activeLife/active_life_22.jpg';
+import active_life_23  from './img/gallery/activeLife/active_life_23.jpg';
 
 interface GalleryImage {
   src: string;
@@ -2163,6 +2167,13 @@ const SPORTS2_IMAGES: GalleryImage[] = [
         <>Greenwood Museum featured Hockey History one year and many hockey memorabilia were displayed.</> 
       ),
     },
+    {
+      src: sports_25,
+      alt: 'First High School Hockey Jersey',
+      caption: (
+        <>This was the first high school hockey jersey designed by Stephen Tasaka circa 1957.</> 
+      ),
+    },
   ];
     
 const ACTIVELIFE_IMAGES: GalleryImage[] = [
@@ -2316,6 +2327,27 @@ const ACTIVELIFE2_IMAGES: GalleryImage[] = [
       alt: 'Jacks and Teddly Winks',
       caption: (
         <>These were great indoor activities.  Jacks needed agility and quick reflexes.  Teddly Winks took skills and concentration.</> 
+      ),
+    },
+    {
+      src: active_life_21,
+      alt: 'Greenwood Park Pond',
+      caption: (
+        <>Greenwood Park had a large pond where a raft was built for children to explore the other end of the pond.</> 
+      ),
+    },
+    {
+      src: active_life_22,
+      alt: 'Pro Rec tumbling club',
+      caption: (
+        <>Pro Rec tumbling club was a great activity to improve agility and strength.</> 
+      ),
+    },
+    {
+      src: active_life_23,
+      alt: 'Pro Rec tumbling club',
+      caption: (
+        <>Pro Rec tumbling club was a great activity to improve agility and strength.</> 
       ),
     },
   ];
