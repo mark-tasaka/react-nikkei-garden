@@ -278,6 +278,9 @@ import sports_12  from './img/gallery/sports/sports_12.jpg';
 import sports_13  from './img/gallery/sports/sports_13.jpg';
 import sports_14  from './img/gallery/sports/sports_14.jpg';
 import sports_15  from './img/gallery/sports/sports_15.jpg';
+import sports_16  from './img/gallery/sports/sports_16.jpg';
+import sports_17  from './img/gallery/sports/sports_17.jpg';
+import sports_18  from './img/gallery/sports/sports_18.jpg';
 
 import active_life_1  from './img/gallery/activeLife/active_life_1.jpg';
 import active_life_2  from './img/gallery/activeLife/active_life_2.jpg';
@@ -2089,6 +2092,27 @@ const SPORTS2_IMAGES: GalleryImage[] = [
       alt: 'Early Hockey',
       caption: (
         <>Caption to be added soon.</> 
+      ),
+    },
+    {
+      src: sports_16,
+      alt: 'Greenwood Monarchs Hockey Team',
+      caption: (
+        <>Postwar Greenwood Monarchs hockey teams during the early 50's.</> 
+      ),
+    },
+    {
+      src: sports_17,
+      alt: 'Greenwood Monarchs Hockey Team',
+      caption: (
+        <>Postwar Greenwood Monarchs hockey teams during the early 50's.</> 
+      ),
+    },
+    {
+      src: sports_18,
+      alt: 'Greenwood Monarchs Hockey Team',
+      caption: (
+        <>Postwar Greenwood Monarchs hockey teams during the early 50's.</> 
       ),
     },
   ];
