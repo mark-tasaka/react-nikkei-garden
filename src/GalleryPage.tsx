@@ -265,6 +265,8 @@ import food_10  from './img/gallery/food/food_10.jpg';
 
 import sports_1  from './img/gallery/sports/sports_1.jpg';
 import sports_2  from './img/gallery/sports/sports_2.jpg';
+import sports_3  from './img/gallery/sports/sports_3.jpg';
+import sports_4  from './img/gallery/sports/sports_4.jpg';
 
 
 interface GalleryImage {
@@ -1957,6 +1959,22 @@ const SPORTS_IMAGES: GalleryImage[] = [
         <>Men's team the Greenwood Dynamiters in the late 50’s
           <br /><br />
           Photo courtesy of Vince Hall</> 
+      ),
+    },
+    {
+      src: sports_3,
+      alt: 'Early Hockey',
+      caption: (
+        <>Sacred Heart School had a hockey team in the 40’s.  Fr. Damien Sato and Fr. Peter Baptist Katsuno were coaches. 
+          <br /><br />
+          Photo courtesy of Francis Nakagawa</> 
+      ),
+    },
+    {
+      src: sports_4,
+      alt: 'Greenwood Sports Arena',
+      caption: (
+        <>Greenwood Sports Arena was an indoor natural ice rink.  Public ice skating, Snow Carnival, broomball and hockey games were played in the winter.  basketball was played when the ice melted.  Makeshift boarded were laid.  During the game, coaches carried a hammer!  When a nail popped up, they stopped the game to hammer it back in.</> 
       ),
     },
   ];
