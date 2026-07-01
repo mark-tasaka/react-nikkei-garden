@@ -280,6 +280,8 @@ import active_life_5  from './img/gallery/activeLife/active_life_5.jpg';
 import active_life_6  from './img/gallery/activeLife/active_life_6.jpg';
 import active_life_7  from './img/gallery/activeLife/active_life_7.jpg';
 import active_life_8  from './img/gallery/activeLife/active_life_8.jpg';
+import active_life_9  from './img/gallery/activeLife/active_life_9.jpg';
+import active_life_10  from './img/gallery/activeLife/active_life_10.jpg';
 
 interface GalleryImage {
   src: string;
@@ -2081,6 +2083,22 @@ const ACTIVELIFE_IMAGES: GalleryImage[] = [
       alt: 'Crowing of May Day Queen',
       caption: (
         <>Crowing of May Day Queen was another exciting time for the girls.  Dorothy Otani was crowned May Queen.</> 
+      ),
+    },
+    {
+      src: active_life_9,
+      alt: 'Shigin in the 50’s',
+      caption: (
+        <>Shigin in the 50’s was very popular with the adults.
+          <br /><br />
+          Photo courtesy of Greenwood Museum</> 
+      ),
+    },
+    {
+      src: active_life_10,
+      alt: 'Embroidery club',
+      caption: (
+        <>Embroidery club was also another activity for the ladies.</> 
       ),
     },
   ];
