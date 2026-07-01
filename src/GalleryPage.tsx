@@ -289,6 +289,10 @@ import active_life_13  from './img/gallery/activeLife/active_life_13.jpg';
 import active_life_14  from './img/gallery/activeLife/active_life_14.jpg';
 import active_life_15  from './img/gallery/activeLife/active_life_15.jpg';
 import active_life_16  from './img/gallery/activeLife/active_life_16.jpg';
+import active_life_17  from './img/gallery/activeLife/active_life_17.jpg';
+import active_life_18  from './img/gallery/activeLife/active_life_18.jpg';
+import active_life_19  from './img/gallery/activeLife/active_life_19.jpg';
+import active_life_20  from './img/gallery/activeLife/active_life_20.jpg';
 
 interface GalleryImage {
   src: string;
@@ -2161,6 +2165,34 @@ const ACTIVELIFE2_IMAGES: GalleryImage[] = [
       alt: 'Jacks',
       caption: (
         <>Jacks was a very popular pastime for both boys and girls.</> 
+      ),
+    },
+    {
+      src: active_life_17,
+      alt: 'Riding the inner tube',
+      caption: (
+        <>Riding the inner tube down Boundary Creek was fun!  Jerry, Chuck Tasaka and Dennis Hamaguchi.  The boxmill burner provided warmth after swimming in the icy cold creek.</> 
+      ),
+    },
+    {
+      src: active_life_18,
+      alt: 'Swimming in Boundary Creek',
+      caption: (
+        <>Great summer holiday activity.  This is First Bridge, now Louisa Bridge.  However, children had swimming holes at Second and Steel Bridge.  Kids built dams to raise the water level.</> 
+      ),
+    },
+    {
+      src: active_life_19,
+      alt: 'Pick up Sticks',
+      caption: (
+        <>These were great indoor activities.  Pick up Sticks needed focus, steady hands and patience.</> 
+      ),
+    },
+    {
+      src: active_life_20,
+      alt: 'Jacks and Teddly Winks',
+      caption: (
+        <>These were great indoor activities.  Jacks needed agility and quick reflexes.  Teddly Winks took skills and concentration.</> 
       ),
     },
   ];
