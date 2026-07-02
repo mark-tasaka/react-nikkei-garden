@@ -2093,21 +2093,21 @@ const SPORTS2_IMAGES: GalleryImage[] = [
       src: sports_13,
       alt: 'Early Hockey',
       caption: (
-        <>Caption to be added soon.</> 
+        <>Hepcats Hockey team</> 
       ),
     },
     {
       src: sports_14,
       alt: 'Early Hockey',
       caption: (
-        <>Caption to be added soon.</> 
+        <>1951 high school team travelled to Kamloops to participate in a hockey tournament</> 
       ),
     },
     {
       src: sports_15,
       alt: 'Early Hockey',
       caption: (
-        <>Caption to be added soon.</> 
+        <>Tigers Hockey Team</> 
       ),
     },
     {
@@ -2135,21 +2135,21 @@ const SPORTS2_IMAGES: GalleryImage[] = [
       src: sports_19,
       alt: 'Greenwood Hawks Hockey Team',
       caption: (
-        <>This was one of the later teams in the early 60's.  They were called the Greenwood Hawks. Hockey display at the Greenwood Museum in 2015.</> 
+        <>Greenwood Museum hockey history display of the Dynamiters jacket.</> 
       ),
     },
-    {
-      src: sports_20,
-      alt: 'Greenwood Hawks Hockey Team',
-      caption: (
-        <>This was one of the later teams in the early 60's.  They were called the Greenwood Hawks. Hockey display at the Greenwood Museum in 2015.</> 
-      ),
-    },
+    // {
+    //   src: sports_20,
+    //   alt: 'Greenwood Hawks Hockey Team',
+    //   caption: (
+    //     <>This was one of the later teams in the early 60's.  They were called the Greenwood Hawks. Hockey display at the Greenwood Museum in 2015.</> 
+    //   ),
+    // },
     {
       src: sports_21,
       alt: 'Greenwood Hawks Hockey Team',
       caption: (
-        <>This was one of the later teams in the early 60's.  They were called the Greenwood Hawks. Hockey display at the Greenwood Museum in 2015.</> 
+        <>This was one of the later teams in the early 60's.  They were called the Greenwood Hawks.</> 
       ),
     },
     {
@@ -2163,14 +2163,14 @@ const SPORTS2_IMAGES: GalleryImage[] = [
       src: sports_23,
       alt: 'Greenwood Museum featured Hockey History',
       caption: (
-        <>Greenwood Museum featured Hockey History one year and many hockey memorabilia were displayed.</> 
+        <>Greenwood hockey had a long history being a feeder team along with Grand Forks and Phoenix for the Stanley Cup Vancouver Millionaires in 1915.</> 
       ),
     },
     {
       src: sports_24,
       alt: 'Greenwood Museum featured Hockey History',
       caption: (
-        <>Greenwood Museum featured Hockey History one year and many hockey memorabilia were displayed.</> 
+        <>Beginning 1942 Japanese Canadians played a prominent role up to the 1960’s.</> 
       ),
     },
     {
@@ -2196,7 +2196,7 @@ const ACTIVELIFE_IMAGES: GalleryImage[] = [
       src: active_life_2,
       alt: 'Academy of Domestic Arts',
       caption: (
-        <>Mrs. Kurisu, Mrs. Tamoto and Mrs. Ooka started the Academy of Domestic Arts probably in 1943.  This is 1947 when the war ended. In 1946, some of these members moved east of the Rockies or to Japan.</> 
+        <>Mrs. Kurisu, Mrs. Tamoto and Mrs. Ooka started the Academy of Domestic Arts probably in 1943.  This is 1945 when the war ended. In 1946, some of these members moved east of the Rockies or to Japan.</> 
       ),
     },
     {
@@ -2245,9 +2245,9 @@ const ACTIVELIFE_IMAGES: GalleryImage[] = [
     },
     {
       src: active_life_9,
-      alt: 'Shigin in the 50’s',
+      alt: 'Shigin in the 50\'s',
       caption: (
-        <>Shigin in the 50’s was very popular with the adults.
+        <>Shigin in the 50's was very popular with the adults.
           <br /><br />
           Photo courtesy of Greenwood Museum</> 
       ),
@@ -2270,7 +2270,7 @@ const ACTIVELIFE_IMAGES: GalleryImage[] = [
       src: active_life_12,
       alt: 'Crowning of the Snow Queen',
       caption: (
-        <>Crowning of the Snow Queen in 1945.  JoAnne Cowdrill is passing the crown to Maryann Miyagishima.  It was a significant year since the war ended.  JoAnne gave a heartfelt speech.  Esther Kanda is the attendant and Mayor McArthur Sr in the background.</> 
+        <>Crowning of the Snow Queen in 1945.  JoAnne Cowdrill is passing the crown to Maryann Miyagishima.  It was a significant year since the war ended.  JoAnne gave a heartfelt speech.  Nancy Asahina, Esther Kanda and Mayor McArthur Sr are in the background.</> 
       ),
     },
     {
@@ -2330,30 +2330,30 @@ const ACTIVELIFE2_IMAGES: GalleryImage[] = [
     },
     {
       src: active_life_20,
-      alt: 'Jacks and Teddly Winks',
+      alt: 'Jacks and Tiddly Winks',
       caption: (
-        <>These were great indoor activities.  Jacks needed agility and quick reflexes.  Teddly Winks took skills and concentration.</> 
+        <>These were great indoor activities.  Jacks needed agility and quick reflexes.  Tiddly Winks took skills and concentration.</> 
       ),
     },
     {
       src: active_life_21,
       alt: 'Greenwood Park Pond',
       caption: (
-        <>Greenwood Park had a large pond where a raft was built for children to explore the other end of the pond.</> 
+        <>Pro Rec tumbling club was a great activity to improve agility and strength.</> 
       ),
     },
     {
       src: active_life_22,
       alt: 'Pro Rec tumbling club',
       caption: (
-        <>Pro Rec tumbling club was a great activity to improve agility and strength.</> 
+        <>Greenwood Park had a large pond where a raft was built for children to explore the other end of the pond.</> 
       ),
     },
     {
       src: active_life_23,
       alt: 'Pro Rec tumbling club',
       caption: (
-        <>Pro Rec tumbling club was a great activity to improve agility and strength.</> 
+        <>Put City of Greenwood was a natural adventure playground.</> 
       ),
     },
   ];
