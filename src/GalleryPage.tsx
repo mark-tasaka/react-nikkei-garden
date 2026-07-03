@@ -205,6 +205,9 @@ import sawmill_6  from './img/gallery/sawmills/sawmill_6.jpg';
 import unitedChurch_1  from './img/gallery/unitedChurch/unitedChurch_1.jpg';
 import unitedChurch_2  from './img/gallery/unitedChurch/unitedChurch_2.jpg';
 import unitedChurch_3  from './img/gallery/unitedChurch/unitedChurch_3.jpg';
+import unitedChurch_4  from './img/gallery/unitedChurch/unitedChurch_4.jpg';
+import unitedChurch_5  from './img/gallery/unitedChurch/unitedChurch_5.jpg';
+import unitedChurch_6  from './img/gallery/unitedChurch/unitedChurch_6.jpg';
 
 import cementery_1  from './img/gallery/cementery/cementery_1.jpg';
 import cementery_2  from './img/gallery/cementery/cementery_2.jpg';
@@ -1900,6 +1903,27 @@ const UNITEDCHURCH_IMAGES: GalleryImage[] = [
         <>United Church left Grace Namba, Visiting Sobel Loveys and Madeleine Bock
           <br /><br />
           Photo courtesy of United Church of Canada</>
+      ),
+    },
+    {
+      src: unitedChurch_4,
+      alt: 'United Church',
+      caption: (
+        <></>
+      ),
+    },
+    {
+      src: unitedChurch_5,
+      alt: 'United Church',
+      caption: (
+        <></>
+      ),
+    },
+    {
+      src: unitedChurch_6,
+      alt: 'United Church',
+      caption: (
+        <></>
       ),
     },
   ];
