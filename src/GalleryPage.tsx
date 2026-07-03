@@ -39,6 +39,7 @@ import panel2026_4 from './img/gallery/galleryPanels2026/panel2026-4.jpeg';
 import panel2026_5 from './img/gallery/galleryPanels2026/panel2026-5.jpeg';
 import panel2026_6 from './img/gallery/galleryPanels2026/panel2026-6.jpeg';
 import panel2026_7 from './img/gallery/galleryPanels2026/panel2026-7.jpeg';
+import panel2026_8 from './img/gallery/galleryPanels2026/panel2026-8.jpeg';
 
 import misc_1  from './img/gallery/misc/ohairi-park-1.JPG';
 import misc_2  from './img/gallery/misc/ohairi-park-2.JPG';
@@ -88,6 +89,7 @@ import misc_45  from './img/gallery/misc/arrival_6.jpg';
 import misc_46  from './img/gallery/misc/arrival_7.jpg';
 import misc_47  from './img/gallery/misc/arrival_8.jpg';
 import misc_48  from './img/gallery/misc/arrival_9.jpg';
+import misc_49  from './img/gallery/misc/arrivals_10.jpg';
 import building2_2  from './img/gallery/misc/building2_2.jpg';
 import building2_3  from './img/gallery/misc/building2_3.jpg';
 import building2_4  from './img/gallery/misc/building2_4.jpg';
@@ -124,6 +126,7 @@ import housing1943_1  from './img/gallery/1943Housing/housing1943_1.jpeg';
 import housing1943_2  from './img/gallery/1943Housing/housing1943_2.jpeg';
 import housing1943_3  from './img/gallery/1943Housing/housing1943_3.jpeg';
 import housing1943_4  from './img/gallery/1943Housing/housing1943_4.jpeg';
+import housing1943_5  from './img/gallery/1943Housing/housing1943_5.jpeg';
 
 
 import location_1  from './img/gallery/locations/location_1.jpg';
@@ -363,6 +366,7 @@ const PANEL_IMAGES: GalleryImage[] = [
   { src: panel2026_5, alt: 'Panels June 2026, Photo 5' },
   { src: panel2026_6, alt: 'Panels June 2026, Photo 6' },
   { src: panel2026_7, alt: 'Panels June 2026, Photo 7' },
+  { src: panel2026_8, alt: 'Panels June 2026, Photo 8' },
 ];
 
 const OPENING_IMAGES: GalleryImage[] = [
@@ -506,8 +510,8 @@ const VISITORS_IMAGES: GalleryImage[] = [
   },
   {
     src: visitors_12,
-    alt: 'Nikkei internment bus tour',
-    caption: <>Nikkei Internment Bus Tour:<br />Lara Okihiro, co-author of ‘Obaasan’s Boots’ with cousin Janis Bridger with her daughters Imogene and Kira.</>,
+    alt: 'Lara Okihiro',
+    caption: <>Lara Okihiro, co-author of ‘Obaasan’s Boots’ with cousin Janis Bridger with her daughters Imogene and Kira.</>,
   },
 
 ];
@@ -584,7 +588,7 @@ const VISITORS3_IMAGES: GalleryImage[] = [
   {
     src: visitors_25,
     alt: 'Yuks Watano',
-    caption: <>Visitor Yuks Watano dropped in to visit Nikkei Legacy Park</>,
+    caption: <>Visitor Yuka Watano dropped in to visit Nikkei Legacy Park</>,
   },
   {
     src: visitors_26,
@@ -1375,6 +1379,13 @@ const INTERNEES_IMAGES: GalleryImage[] = [
       src: interneeArticle_2,
       alt: '',
     },
+    {
+      src: misc_49,
+      alt: 'Japanese Canadian old-timers who remained in Greenwood.',
+      caption: (
+        <>Japanese Canadian old-timers who remained in Greenwood.</>
+      ),
+    },
 ];
 
 
@@ -1414,6 +1425,13 @@ const HOUSING_IMAGES: GalleryImage[] = [
       //     <br /><br />
       //     Photo courtesy of Greenwood Museum</>
       // ),
+    },
+    {
+      src: housing1943_5,
+      alt: '1950s Downtown Greenwood',
+      caption: (
+        <>This is a diagram of downtown Greenwood that shows where businesses and shops were located in the 50’s.  Street omitted between the library and #5 Building.</>
+      ),
     },
 ];
 
@@ -2068,21 +2086,21 @@ const SPORTS_IMAGES: GalleryImage[] = [
       src: sports_10,
       alt: 'Early Greenwood hockey teams',
       caption: (
-        <>Early Greenwood hockey teams during the internment years.  Mayor McArthur Sr opened the ice arena to provide healthy, positive activities for the younger people.  In the early 1900's during the mining days, Greenwood was a feeder team along with Grand Forks and Phoenix for the Vancouver Millionaires that won the Stanley Cup in 1915.</> 
+        <>Hiro Mukai, Eugene Fujisawa and Roland Fritz showing off their new jerseys. </> 
       ),
     },
     {
       src: sports_11,
       alt: 'Early Greenwood hockey teams',
       caption: (
-        <>Early Greenwood hockey teams during the internment years.  Mayor McArthur Sr opened the ice arena to provide healthy, positive activities for the younger people.  In the early 1900's during the mining days, Greenwood was a feeder team along with Grand Forks and Phoenix for the Vancouver Millionaires that won the Stanley Cup in 1915.</> 
+        <>This is one of the three teams formed, possibly the Tigers team.</> 
       ),
     },
     {
       src: sports_12,
       alt: 'Early Greenwood hockey teams',
       caption: (
-        <>Early Greenwood hockey teams during the internment years.  Mayor McArthur Sr opened the ice arena to provide healthy, positive activities for the younger people.  In the early 1900's during the mining days, Greenwood was a feeder team along with Grand Forks and Phoenix for the Vancouver Millionaires that won the Stanley Cup in 1915.</> 
+        <>Hepcats Hockey Team<br /><br />Early Greenwood hockey teams during the internment years.  Mayor McArthur Sr opened the ice arena to provide healthy, positive activities for the younger people.  </> 
       ),
     },
   ];
