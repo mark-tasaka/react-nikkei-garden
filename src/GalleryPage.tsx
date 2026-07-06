@@ -426,7 +426,7 @@ const OPENING_IMAGES: GalleryImage[] = [
   {
     src: opening_9,
     alt: 'Yamaguchi-Greaves Family',
-    caption: <>Yamaguchi-Greaves Family.  Laura and Rachel in there colourful yukata were the ribbon holders.</>,
+    caption: <>Yamaguchi-Greaves Family.  Laura and Rachel Yamaguchi in their colourful yukata were the ribbon holders.</>,
   },
   {
     src: opening_5,
@@ -2395,7 +2395,7 @@ const ACTIVELIFE2_IMAGES: GalleryImage[] = [
       src: active_life_23,
       alt: 'Pro Rec tumbling club',
       caption: (
-        <>Put City of Greenwood was a natural adventure playground.</> 
+        <>City of Greenwood was a natural adventure playground.</> 
       ),
     },
   ];
