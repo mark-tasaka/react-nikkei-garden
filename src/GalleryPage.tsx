@@ -32,6 +32,9 @@ import spring2026_14 from './img/gallery/galleryJune2026/spring2026-14.jpeg';
 import spring2026_15 from './img/gallery/galleryJune2026/spring2026-15.jpeg';
 import spring2026_16 from './img/gallery/galleryJune2026/spring2026-16.jpeg';
 
+import july2026_1  from './img/gallery/galleryJuly2026/july2026-1.jpg';
+import july2026_2  from './img/gallery/galleryJuly2026/july2026-2.jpg';
+
 import panel2026_1 from './img/gallery/galleryPanels2026/panel2026-1.jpeg';
 import panel2026_2 from './img/gallery/galleryPanels2026/panel2026-2.jpeg';
 import panel2026_3 from './img/gallery/galleryPanels2026/panel2026-3.jpeg';
@@ -325,6 +328,13 @@ interface GalleryImage {
   alt: string;
   caption?: React.ReactNode;
 }
+
+
+const JULY2026_IMAGES: GalleryImage[] = [
+  { src: july2026_1,  alt: 'Nikkei Legacy Park, July 2026, photo taken by Chuck Tasaka'  },
+  { src: july2026_2,  alt: 'Nikkei Legacy Park, July 2026, photo taken by Chuck Tasaka'  },
+];
+
 
 const MAY_IMAGES: GalleryImage[] = [
   { src: img1,  alt: 'Nikkei Legacy Park – May 2026, Photo 1'  },
@@ -2542,6 +2552,7 @@ const GalleryPage: React.FC = () => {
   const matchesQuery = (title: string) => q === '' || title.toLowerCase().includes(q);
 
   const ALL_CAROUSELS: { filterKey: GalleryFilter; title: string }[] = [
+    { filterKey: 'nikkei', title: 'Summertime in the Park: July 2026' },
     { filterKey: 'nikkei', title: 'Springtime in the Park: June 2026' },
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park: May 2026' },
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park Panels' },
@@ -2636,6 +2647,7 @@ const GalleryPage: React.FC = () => {
 
       {(filter === 'all' || filter === 'nikkei') && (
         <>
+          {matchesQuery('Summertime in the Park: July 2026') && <Carousel images={JULY2026_IMAGES}  title="Summertime in the Park: July 2026" />}
           {matchesQuery('Springtime in the Park: June 2026') && <Carousel images={JUNE_IMAGES}  title="Springtime in the Park: June 2026" />}
           {matchesQuery('Nikkei Legacy Park: May 2026') && <Carousel images={MAY_IMAGES}   title="Nikkei Legacy Park: May 2026" />}
           {matchesQuery('Nikkei Legacy Park Panels') && <Carousel images={PANEL_IMAGES} title="Nikkei Legacy Park Panels" />}
