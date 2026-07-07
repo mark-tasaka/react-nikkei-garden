@@ -2384,7 +2384,7 @@ const ACTIVELIFE2_IMAGES: GalleryImage[] = [
       src: active_life_20,
       alt: 'Jacks and Tiddly Winks',
       caption: (
-        <>These were great indoor activities.  Jacks needed agility and quick reflexes.  Tiddly Winks took skills and concentration.</> 
+        <>These were great indoor activities.  Jacks needed agility and quick reflexes.  Tiddly Winks took skill and concentration.</> 
       ),
     },
     {
