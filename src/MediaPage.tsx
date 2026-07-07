@@ -95,7 +95,7 @@ const MediaPage: React.FC = () => {
 
   return (
     <main className="media-page">
-      <h1 className="media-title">Videos of the Japanese Canadian Experience</h1>
+      <h1 className="media-title">Nikkei Legacy Park and the Japanese Canadian Experience Videos</h1>
 
       {/* ── Filter buttons ── */}
       <div className="media-filter-wrapper">

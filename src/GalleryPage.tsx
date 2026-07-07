@@ -330,6 +330,9 @@ import unveiling_3  from './img/gallery/unveiling/unveiling_3.jpg';
 import unveiling_4  from './img/gallery/unveiling/unveiling_4.jpg';
 import unveiling_5  from './img/gallery/unveiling/unveiling_5.jpg';
 import unveiling_6  from './img/gallery/unveiling/unveiling_6.jpg';
+import unveiling_7  from './img/gallery/unveiling/unveiling_7.jpg';
+import unveiling_8  from './img/gallery/unveiling/unveiling_8.jpg';
+import unveiling_9  from './img/gallery/unveiling/unveiling_9.jpg';
 
 interface GalleryImage {
   src: string;
@@ -479,12 +482,27 @@ const UNVEILING_IMAGES: GalleryImage[] = [
     src: unveiling_5,
     alt: 'Nikkei Legacy Park Unveiling 2017',
     caption: <>Caption added soon</>,
-  },
-  {
-    src: unveiling_6,
-    alt: 'Nikkei Legacy Park Unveiling 2017',
-    caption: <>Caption added soon</>,
-  },
+    },
+    {
+      src: unveiling_6,
+      alt: 'Nikkei Legacy Park Unveiling 2017',
+      caption: <>Caption added soon</>,
+    },
+    {
+      src: unveiling_7,
+      alt: 'Nikkei Legacy Park Unveiling 2017',
+      caption: <>Caption added soon</>,
+    },
+    {
+      src: unveiling_8,
+      alt: 'Nikkei Legacy Park Unveiling 2017',
+      caption: <>Caption added soon</>,
+    },
+    {
+      src: unveiling_9,
+      alt: 'Nikkei Legacy Park Unveiling 2017',
+      caption: <>Caption added soon</>,
+    }
 ];
 
 
