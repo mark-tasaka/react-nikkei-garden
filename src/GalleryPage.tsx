@@ -459,54 +459,60 @@ const OPENING_IMAGES: GalleryImage[] = [
 
 const UNVEILING_IMAGES: GalleryImage[] = [
   {
+    src: unveiling_3,
+    alt: 'Japanese Canadian Signage Unveiling: 2017',
+    caption: <>News clip from West Kootenay Advertiser announcing the 2018 Signage unveiling at Nikkei Legacy Park.</>,
+  },
+  {
     src: unveiling_1,
-    alt: 'Nikkei Legacy Park Unveiling 2017',
-    caption: <>Caption added soon</>,
+    alt: 'Japanese Canadian Signage Unveiling: 2017',
+    caption: <>The Signage by Japanese Canadian Legacy Committee tells the history of the internment in Greenwood, Grand Forks, Christina Lake and Midway.<br /><br />
+    Photo Courtesy of Lori Sameshima</>,
+  },
+  {
+    src: unveiling_6,
+    alt: 'Japanese Canadian Signage Unveiling: 2017',
+    caption: <>The Signage by Japanese Canadian Legacy Committee tells the history of the internment in Greenwood, Grand Forks, Christina Lake and Midway.<br /><br />Photo Courtesy of Lori Sameshima</>,
   },
   {
     src: unveiling_2,
-    alt: 'Nikkei Legacy Park Unveiling 2017',
-    caption: <>Caption added soon</>,
-  },
-  {
-    src: unveiling_3,
-    alt: 'Nikkei Legacy Park Unveiling 2017',
-    caption: <>Caption added soon</>,
+    alt: 'Japanese Canadian Signage Unveiling: 2017',
+    caption: <>Yamabiko Taiko of Kelowna opened the ceremony.</>,
   },
   {
     src: unveiling_4,
-    alt: 'Nikkei Legacy Park Unveiling 2017',
-    caption: <>Caption added soon</>,
+    alt: 'Japanese Canadian Signage Unveiling: 2017',
+    caption: <>MLA Katrine Conroy was our special guest.</>,
   },
-  {
-    src: unveiling_5,
-    alt: 'Nikkei Legacy Park Unveiling 2017',
-    caption: <>Caption added soon</>,
-    },
-    {
-      src: unveiling_6,
-      alt: 'Nikkei Legacy Park Unveiling 2017',
-      caption: <>Caption added soon</>,
-    },
+  // {
+  //   src: unveiling_5,
+  //   alt: 'Japanese Canadian Signage Unveiling: 2017',
+  //   caption: <>Caption added soon</>,
+  //   },
     {
       src: unveiling_7,
-      alt: 'Nikkei Legacy Park Unveiling 2017',
-      caption: <>Caption added soon</>,
+      alt: 'Japanese Canadian Signage Unveiling: 2017',
+      caption: <>The three JC pioneers of Greenwood unveiled the Signage.  Irene Terada, Nancy Yamamura and Yoshiko Uyeyama.</>,
     },
     {
       src: unveiling_8,
-      alt: 'Nikkei Legacy Park Unveiling 2017',
-      caption: <>Caption added soon</>,
+      alt: 'Japanese Canadian Signage Unveiling: 2017',
+      caption: <>Mayor Ed Smith, MLA Katrine Conroy, Irene Terada, Nancy Yamamura, Yoshiko Uyeyama, Everett Baker, Laura Saimoto, Ryan Ellan, Howard Shimokura, Sherri Kajiwara.  In front David Iwaasa.</>,
     },
     {
       src: unveiling_9,
-      alt: 'Nikkei Legacy Park Unveiling 2017',
-      caption: <>Caption added soon</>,
+      alt: 'Japanese Canadian Signage Unveiling: 2017',
+      caption: <>Guests joining present and local Japanese Canadians.</>,
     }
 ];
 
 
 const VISITORS_IMAGES: GalleryImage[] = [
+  {
+    src: visitors_12a,
+    alt: 'Ron and Beth Koyanagi',
+    caption: <>Ron and Beth Koyanagi were one of the early visitors to Nikkei Legacy Park</>,
+  },
   {
     src: visitors_1,
     alt: 'Duke of Edinburgh Commonwealth Study Conference group',
@@ -585,11 +591,6 @@ const VISITORS_IMAGES: GalleryImage[] = [
     src: visitors_12,
     alt: 'Lara Okihiro',
     caption: <>Lara Okihiro, co-author of ‘Obaasan’s Boots’ with cousin Janis Bridger with her daughters Imogene and Kira.</>,
-  },
-  {
-    src: visitors_12a,
-    alt: 'Ron and Beth Koyanagi',
-    caption: <>Ron and Beth Koyanagi were one of the early visitors to Nikkei Legacy Park</>,
   },
 
 ];
@@ -2622,7 +2623,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park: May 2026' },
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park Panels' },
     { filterKey: 'nikkei', title: 'Grand Opening: July 20, 2025' },
-    { filterKey: 'nikkei', title: 'Nikkei Legacy Park Unveiling: 2017' },
+    { filterKey: 'nikkei', title: 'Japanese Canadian Signage Unveiling: 2017' },
     { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 1' },
     { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 2' },
     { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 3' },
@@ -2718,7 +2719,7 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Nikkei Legacy Park: May 2026') && <Carousel images={MAY_IMAGES}   title="Nikkei Legacy Park: May 2026" />}
           {matchesQuery('Nikkei Legacy Park Panels') && <Carousel images={PANEL_IMAGES} title="Nikkei Legacy Park Panels" />}
           {matchesQuery('Grand Opening: July 20, 2025') && <Carousel images={OPENING_IMAGES}   title="Grand Opening: July 20, 2025" />}
-          {matchesQuery('Nikkei Legacy Park Unveiling: 2017') && <Carousel images={UNVEILING_IMAGES}   title="Nikkei Legacy Park Unveiling: 2017" />}
+          {matchesQuery('Japanese Canadian Signage Unveiling: 2017') && <Carousel images={UNVEILING_IMAGES}   title="Japanese Canadian Signage Unveiling: 2017" />}
           {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 1') && <Carousel images={VISITORS_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 1" />}
           {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 2') && <Carousel images={VISITORS2_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 2" />}
           {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 3') && <Carousel images={VISITORS3_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 3" />}
