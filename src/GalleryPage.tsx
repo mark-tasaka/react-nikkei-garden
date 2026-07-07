@@ -243,6 +243,7 @@ import visitors_9a  from './img/gallery/visitors/visitors_9a.jpg';
 import visitors_10  from './img/gallery/visitors/visitors_10.jpg';
 import visitors_11  from './img/gallery/visitors/visitors_11.jpg';
 import visitors_12  from './img/gallery/visitors/visitors_12.jpg';
+import visitors_12a  from './img/gallery/visitors/visitors_12a.jpg';
 import visitors_13  from './img/gallery/visitors/visitors_13.jpg';
 import visitors_14  from './img/gallery/visitors/visitors_14.jpg';
 import visitors_15  from './img/gallery/visitors/visitors_15.jpg';
@@ -525,6 +526,11 @@ const VISITORS_IMAGES: GalleryImage[] = [
     src: visitors_12,
     alt: 'Lara Okihiro',
     caption: <>Lara Okihiro, co-author of ‘Obaasan’s Boots’ with cousin Janis Bridger with her daughters Imogene and Kira.</>,
+  },
+  {
+    src: visitors_12a,
+    alt: 'Ron and Beth Koyanagi',
+    caption: <>Ron and Beth Koyanagi were one of the early visitors to Nikkei Legacy Park</>,
   },
 
 ];
