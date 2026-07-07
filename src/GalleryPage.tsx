@@ -324,6 +324,13 @@ import active_life_21  from './img/gallery/activeLife/active_life_21.jpg';
 import active_life_22  from './img/gallery/activeLife/active_life_22.jpg';
 import active_life_23  from './img/gallery/activeLife/active_life_23.jpg';
 
+import unveiling_1  from './img/gallery/unveiling/unveiling_1.jpg';
+import unveiling_2  from './img/gallery/unveiling/unveiling_2.jpg';
+import unveiling_3  from './img/gallery/unveiling/unveiling_3.jpg';
+import unveiling_4  from './img/gallery/unveiling/unveiling_4.jpg';
+import unveiling_5  from './img/gallery/unveiling/unveiling_5.jpg';
+import unveiling_6  from './img/gallery/unveiling/unveiling_6.jpg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -443,6 +450,40 @@ const OPENING_IMAGES: GalleryImage[] = [
     src: opening_5,
     alt: 'Opening Image 5',
     caption: <>As is the Japanese custom is when you start a project, you add one eye.  When the project is completed, you colour in the other eye to signify a successful result.</>,
+  },
+];
+
+
+const UNVEILING_IMAGES: GalleryImage[] = [
+  {
+    src: unveiling_1,
+    alt: 'Nikkei Legacy Park Unveiling 2017',
+    caption: <>Caption added soon</>,
+  },
+  {
+    src: unveiling_2,
+    alt: 'Nikkei Legacy Park Unveiling 2017',
+    caption: <>Caption added soon</>,
+  },
+  {
+    src: unveiling_3,
+    alt: 'Nikkei Legacy Park Unveiling 2017',
+    caption: <>Caption added soon</>,
+  },
+  {
+    src: unveiling_4,
+    alt: 'Nikkei Legacy Park Unveiling 2017',
+    caption: <>Caption added soon</>,
+  },
+  {
+    src: unveiling_5,
+    alt: 'Nikkei Legacy Park Unveiling 2017',
+    caption: <>Caption added soon</>,
+  },
+  {
+    src: unveiling_6,
+    alt: 'Nikkei Legacy Park Unveiling 2017',
+    caption: <>Caption added soon</>,
   },
 ];
 
@@ -2563,6 +2604,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park: May 2026' },
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park Panels' },
     { filterKey: 'nikkei', title: 'Grand Opening: July 20, 2025' },
+    { filterKey: 'nikkei', title: 'Nikkei Legacy Park Unveiling: 2017' },
     { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 1' },
     { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 2' },
     { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 3' },
@@ -2658,6 +2700,7 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Nikkei Legacy Park: May 2026') && <Carousel images={MAY_IMAGES}   title="Nikkei Legacy Park: May 2026" />}
           {matchesQuery('Nikkei Legacy Park Panels') && <Carousel images={PANEL_IMAGES} title="Nikkei Legacy Park Panels" />}
           {matchesQuery('Grand Opening: July 20, 2025') && <Carousel images={OPENING_IMAGES}   title="Grand Opening: July 20, 2025" />}
+          {matchesQuery('Nikkei Legacy Park Unveiling: 2017') && <Carousel images={UNVEILING_IMAGES}   title="Nikkei Legacy Park Unveiling: 2017" />}
           {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 1') && <Carousel images={VISITORS_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 1" />}
           {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 2') && <Carousel images={VISITORS2_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 2" />}
           {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 3') && <Carousel images={VISITORS3_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 3" />}
