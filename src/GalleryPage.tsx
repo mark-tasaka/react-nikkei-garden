@@ -43,6 +43,7 @@ import panel2026_5 from './img/gallery/galleryPanels2026/panel2026-5.jpeg';
 import panel2026_6 from './img/gallery/galleryPanels2026/panel2026-6.jpeg';
 import panel2026_7 from './img/gallery/galleryPanels2026/panel2026-7.jpeg';
 import panel2026_8 from './img/gallery/galleryPanels2026/panel2026-8.jpeg';
+import panel2026_9 from './img/gallery/galleryPanels2026/panel2026-9.jpeg';
 
 import misc_1  from './img/gallery/misc/ohairi-park-1.JPG';
 import misc_2  from './img/gallery/misc/ohairi-park-2.JPG';
@@ -265,6 +266,7 @@ import visitors_26  from './img/gallery/visitors/visitors_26.jpg';
 import visitors_27  from './img/gallery/visitors/visitors_27.jpg';
 import visitors_28  from './img/gallery/visitors/visitors_28.jpg';
 import visitors_29  from './img/gallery/visitors/visitors_29.jpg';
+import visitors_30  from './img/gallery/visitors/visitors_30.jpg';
 
 import food_1  from './img/gallery/food/food_1.jpg';
 import food_2  from './img/gallery/food/food_2.jpg';
@@ -386,9 +388,13 @@ const JUNE_IMAGES: GalleryImage[] = [
 
 
 const PANEL_IMAGES: GalleryImage[] = [
-  { src: panel2026_1, alt: 'Panels June 2026, Photo 1' },
+  { src: panel2026_1, alt: 'Panels June 2026, Photo 1',
+    
+    caption: <>Over 50% of the businesses were owned or operated by Japanese Canadians during the war and postwar.  Mayor McArthur Sr. and council provided business licence.</>,
+   },
   { src: panel2026_2, alt: 'Panels June 2026, Photo 2' },
   { src: panel2026_3, alt: 'Panels June 2026, Photo 3' },
+  { src: panel2026_9, alt: 'Panels June 2026, Photo 9' },
   { src: panel2026_4, alt: 'Panels June 2026, Photo 4' },
   { src: panel2026_5, alt: 'Panels June 2026, Photo 5' },
   { src: panel2026_6, alt: 'Panels June 2026, Photo 6' },
@@ -691,6 +697,11 @@ const VISITORS3_IMAGES: GalleryImage[] = [
     src: visitors_29,
     alt: 'Nikita Kitagawa',
     caption: <>My former skipper from Cinnabar Valley Elementary School, Nikita Kitagawa paid a surprise visit to Nikkei Legacy Park.  Nikita was on her way to find out her grandparents’ New Denver internment site.</>,
+  },
+  {
+    src: visitors_30,
+    alt: 'Keiko Funahashi',
+    caption: <>Keiko Funahashi of Nikkei Place and Mas Watanabe visited Nikkei Legacy Park.</>,
   },
 
 ];
