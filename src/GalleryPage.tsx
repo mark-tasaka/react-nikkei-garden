@@ -47,6 +47,7 @@ import panel2026_6 from './img/gallery/galleryPanels2026/panel2026-6.jpeg';
 import panel2026_7 from './img/gallery/galleryPanels2026/panel2026-7.jpeg';
 import panel2026_8 from './img/gallery/galleryPanels2026/panel2026-8.jpeg';
 import panel2026_9 from './img/gallery/galleryPanels2026/panel2026-9.jpeg';
+import panel2026_10 from './img/gallery/galleryPanels2026/panel2026-10.jpeg';
 
 import nikkeiPark_1 from './img/gallery/nikkeiPark/nikkeiPark_1.jpg';
 import nikkeiPark_2 from './img/gallery/nikkeiPark/nikkeiPark_2.jpg';
@@ -120,6 +121,7 @@ import ohairi_6  from './img/gallery/misc/ohairi-park-6.JPG';
 
 import buildings_1  from './img/gallery/buildings/buildings_1.jpg';
 import buildings_2  from './img/gallery/buildings/buildings_2.jpg';
+import buildings_3  from './img/gallery/buildings/buildings_3.jpg';
 
 import restoration1  from './img/gallery/restoration/restoration1.JPG';
 import restoration2  from './img/gallery/restoration/restoration2.JPG';
@@ -427,7 +429,7 @@ const NIKKEIPARK_IMAGES: GalleryImage[] = [
 const PANEL_IMAGES: GalleryImage[] = [
   { src: panel2026_1, alt: 'Panels June 2026, Photo 1',
     
-    caption: <>Over 50% of the businesses were owned or operated by Japanese Canadians during the war and postwar.  Mayor McArthur Sr. and council provided business licence.</>,
+    caption: <>Over 50% of the businesses were owned or operated by Japanese Canadians during the war and postwar.  Notice Mr. K. Morita sold kamaboko, yokan and oboro.  Mayor McArthur Sr. and council provided business licence.</>,
    },
   { src: panel2026_2, alt: 'Panels June 2026, Photo 2' },
   { src: panel2026_3, alt: 'Panels June 2026, Photo 3' },
@@ -437,6 +439,10 @@ const PANEL_IMAGES: GalleryImage[] = [
   { src: panel2026_6, alt: 'Panels June 2026, Photo 6' },
   { src: panel2026_7, alt: 'Panels June 2026, Photo 7' },
   { src: panel2026_8, alt: 'Panels June 2026, Photo 8' },
+  { src: panel2026_10, alt: 'Mr. Stolen’s class',
+    
+    caption: <>Mr. Stolen’s class folded a 1000 cranes to help commemorate the 80th Anniversary of the Japanese Canadian Internment in 2022.</>,
+   },
 ];
 
 const OPENING_IMAGES: GalleryImage[] = [
@@ -1122,6 +1128,13 @@ const BUILDING2_IMAGES: GalleryImage[] = [
     alt: '',
     caption: (
       <>Greenwood Public School which burnt down on New Year's Eve in 1951.  Many Japanese Canadian students attended high school after finishing grade 8 at Sacred Heart School.  Some students who attended United Church kindergarten attended elementary school.</>
+    ),
+  },
+  {
+    src: buildings_3,
+    alt: '',
+    caption: (
+      <>This is a rendering by Angela Hayashi of the Greenwood Elementary-High School on Government Street that was built in 1953.  This school also burnt down.</>
     ),
   },
 ];
