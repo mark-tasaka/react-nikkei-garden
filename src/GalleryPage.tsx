@@ -48,6 +48,9 @@ import panel2026_9 from './img/gallery/galleryPanels2026/panel2026-9.jpeg';
 import nikkeiPark_1 from './img/gallery/nikkeiPark/nikkeiPark_1.jpg';
 import nikkeiPark_2 from './img/gallery/nikkeiPark/nikkeiPark_2.jpg';
 import nikkeiPark_3 from './img/gallery/nikkeiPark/nikkeiPark_3.jpg';
+import nikkeiPark_4 from './img/gallery/nikkeiPark/nikkeiPark_4.jpg';
+import nikkeiPark_5 from './img/gallery/nikkeiPark/nikkeiPark_5.jpg';
+import nikkeiPark_6 from './img/gallery/nikkeiPark/nikkeiPark_6.jpg';
 
 import misc_1  from './img/gallery/misc/ohairi-park-1.JPG';
 import misc_2  from './img/gallery/misc/ohairi-park-2.JPG';
@@ -395,6 +398,9 @@ const NIKKEIPARK_IMAGES: GalleryImage[] = [
   { src: nikkeiPark_1, alt: 'Nikkei Legacy Park' },
   { src: nikkeiPark_2, alt: 'Nikkei Legacy Park' },
   { src: nikkeiPark_3, alt: 'Nikkei Legacy Park' },
+  { src: nikkeiPark_4, alt: 'Nikkei Legacy Park' },
+  { src: nikkeiPark_5, alt: 'Nikkei Legacy Park' },
+  { src: nikkeiPark_6, alt: 'Nikkei Legacy Park' },
 ];
 
 
