@@ -45,6 +45,10 @@ import panel2026_7 from './img/gallery/galleryPanels2026/panel2026-7.jpeg';
 import panel2026_8 from './img/gallery/galleryPanels2026/panel2026-8.jpeg';
 import panel2026_9 from './img/gallery/galleryPanels2026/panel2026-9.jpeg';
 
+import nikkeiPark_1 from './img/gallery/nikkeiPark/nikkeiPark_1.jpg';
+import nikkeiPark_2 from './img/gallery/nikkeiPark/nikkeiPark_2.jpg';
+import nikkeiPark_3 from './img/gallery/nikkeiPark/nikkeiPark_3.jpg';
+
 import misc_1  from './img/gallery/misc/ohairi-park-1.JPG';
 import misc_2  from './img/gallery/misc/ohairi-park-2.JPG';
 import misc_3  from './img/gallery/misc/building2.png';
@@ -384,6 +388,13 @@ const JUNE_IMAGES: GalleryImage[] = [
   { src: spring2026_14, alt: 'Springtime June 2026 (Photo taken by Chuck Tasaka), Photo 14' },
   { src: spring2026_15, alt: 'Springtime June 2026 (Photo taken by Chuck Tasaka), Photo 15' },
   { src: spring2026_16, alt: 'Springtime June 2026 (Photo taken by Chuck Tasaka), Photo 16' },
+];
+
+const NIKKEIPARK_IMAGES: GalleryImage[] = [
+  
+  { src: nikkeiPark_1, alt: 'Nikkei Legacy Park' },
+  { src: nikkeiPark_2, alt: 'Nikkei Legacy Park' },
+  { src: nikkeiPark_3, alt: 'Nikkei Legacy Park' },
 ];
 
 
@@ -2652,7 +2663,8 @@ const GalleryPage: React.FC = () => {
   const ALL_CAROUSELS: { filterKey: GalleryFilter; title: string }[] = [
     { filterKey: 'nikkei', title: 'Summertime in the Park: July 2026' },
     { filterKey: 'nikkei', title: 'Springtime in the Park: June 2026' },
-    { filterKey: 'nikkei', title: 'Nikkei Legacy Park: May 2026' },
+    { filterKey: 'nikkei', title: 'Springtime in the Park: May 2026' },
+    { filterKey: 'nikkei', title: 'Nikkei Legacy Park' },
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park Panels' },
     { filterKey: 'nikkei', title: 'Grand Opening: July 20, 2025' },
     { filterKey: 'nikkei', title: 'Japanese Canadian Signage Unveiling: 2017' },
@@ -2749,7 +2761,8 @@ const GalleryPage: React.FC = () => {
         <>
           {matchesQuery('Summertime in the Park: July 2026') && <Carousel images={JULY2026_IMAGES}  title="Summertime in the Park: July 2026" />}
           {matchesQuery('Springtime in the Park: June 2026') && <Carousel images={JUNE_IMAGES}  title="Springtime in the Park: June 2026" />}
-          {matchesQuery('Nikkei Legacy Park: May 2026') && <Carousel images={MAY_IMAGES}   title="Nikkei Legacy Park: May 2026" />}
+          {matchesQuery('Springtime in the Park: May 2026') && <Carousel images={MAY_IMAGES}   title="Springtime in the Park: May 2026" />}
+          {matchesQuery('Nikkei Legacy Park') && <Carousel images={NIKKEIPARK_IMAGES} title="Nikkei Legacy Park" />}
           {matchesQuery('Nikkei Legacy Park Panels') && <Carousel images={PANEL_IMAGES} title="Nikkei Legacy Park Panels" />}
           {matchesQuery('Grand Opening: July 20, 2025') && <Carousel images={OPENING_IMAGES}   title="Grand Opening: July 20, 2025" />}
           {matchesQuery('Japanese Canadian Signage Unveiling: 2017') && <Carousel images={UNVEILING_IMAGES}   title="Japanese Canadian Signage Unveiling: 2017" />}
