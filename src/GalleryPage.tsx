@@ -34,6 +34,9 @@ import spring2026_16 from './img/gallery/galleryJune2026/spring2026-16.jpeg';
 
 import july2026_1  from './img/gallery/galleryJuly2026/july2026-1.jpg';
 import july2026_2  from './img/gallery/galleryJuly2026/july2026-2.jpg';
+import july2026_3  from './img/gallery/galleryJuly2026/july2026-3.jpg';
+import july2026_4  from './img/gallery/galleryJuly2026/july2026-4.jpg';
+import july2026_5  from './img/gallery/galleryJuly2026/july2026-5.jpg';
 
 import panel2026_1 from './img/gallery/galleryPanels2026/panel2026-1.jpeg';
 import panel2026_2 from './img/gallery/galleryPanels2026/panel2026-2.jpeg';
@@ -51,6 +54,7 @@ import nikkeiPark_3 from './img/gallery/nikkeiPark/nikkeiPark_3.jpg';
 import nikkeiPark_4 from './img/gallery/nikkeiPark/nikkeiPark_4.jpg';
 import nikkeiPark_5 from './img/gallery/nikkeiPark/nikkeiPark_5.jpg';
 import nikkeiPark_6 from './img/gallery/nikkeiPark/nikkeiPark_6.jpg';
+import nikkeiPark_7 from './img/gallery/nikkeiPark/nikkeiPark_7.jpg';
 
 import misc_1  from './img/gallery/misc/ohairi-park-1.JPG';
 import misc_2  from './img/gallery/misc/ohairi-park-2.JPG';
@@ -354,8 +358,21 @@ interface GalleryImage {
 
 
 const JULY2026_IMAGES: GalleryImage[] = [
-  { src: july2026_1,  alt: 'Nikkei Legacy Park, July 2026, photo taken by Chuck Tasaka'  },
-  { src: july2026_2,  alt: 'Nikkei Legacy Park, July 2026, photo taken by Chuck Tasaka'  },
+  { src: july2026_1,  alt: 'Nikkei Legacy Park, July 2026, photo taken by Chuck Tasaka',
+    
+    caption: <>Beautiful Japanese irises bloom in July.  They add needed colour in the summer.</>,   },
+  { src: july2026_2,  alt: 'Nikkei Legacy Park, July 2026, photo taken by Chuck Tasaka',
+    
+    caption: <>Beautiful Japanese irises bloom in July.  They add needed colour in the summer.</>,   },
+  { src: july2026_3,  alt: 'Nikkei Legacy Park, July 2026, photo taken by Chuck Tasaka',
+    
+    caption: <>Beautiful Japanese irises bloom in July.  They add needed colour in the summer.</>,   },
+  { src: july2026_4,  alt: 'Nikkei Legacy Park, July 2026, photo taken by Chuck Tasaka',
+    
+    caption: <>Beautiful Japanese irises bloom in July.  They add needed colour in the summer.</>,   },
+  { src: july2026_5,  alt: 'Nikkei Legacy Park, July 2026, photo taken by Chuck Tasaka',
+    
+    caption: <>Beautiful Japanese irises bloom in July.  They add needed colour in the summer.</>,   },
 ];
 
 
@@ -401,6 +418,9 @@ const NIKKEIPARK_IMAGES: GalleryImage[] = [
   { src: nikkeiPark_4, alt: 'Nikkei Legacy Park' },
   { src: nikkeiPark_5, alt: 'Nikkei Legacy Park' },
   { src: nikkeiPark_6, alt: 'Nikkei Legacy Park' },
+  { src: nikkeiPark_7, alt: 'Rock Garden in Nikkei Legacy Park' ,
+    
+    caption: <>his rock garden was made to symbolize the revival of Greenwood.  Stone in front is Deadwood.  Behind is Phoenix. Next to Greenwood is Anaconda.  Closest stone is Boundary Falls.  Farthest north is Eholt.  All the outlying places became more or less ghost towns.  Greenwood survived and revived.</>, },
 ];
 
 
