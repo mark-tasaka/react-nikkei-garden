@@ -106,6 +106,9 @@ import buildingArticle_4  from './img/gallery/misc/building_article4.jpg';
 import buildingArticle_5  from './img/gallery/misc/building_article5.jpg';
 import ohairi_6  from './img/gallery/misc/ohairi-park-6.JPG';
 
+import buildings_1  from './img/gallery/buildings/buildings_1.jpg';
+import buildings_2  from './img/gallery/buildings/buildings_2.jpg';
+
 import restoration1  from './img/gallery/restoration/restoration1.JPG';
 import restoration2  from './img/gallery/restoration/restoration2.JPG';
 import restoration3  from './img/gallery/restoration/restoration3.JPG';
@@ -1014,6 +1017,10 @@ const BUILDING_IMAGES: GalleryImage[] = [
         Photo courtesy of Greenwood Museum</>
     ),
   },
+];
+
+
+const BUILDING2_IMAGES: GalleryImage[] = [
   {
     src: misc_36,
     alt: 'Greenwood School',
@@ -1053,6 +1060,20 @@ const BUILDING_IMAGES: GalleryImage[] = [
     alt: '',
     caption: (
       <>Under the Greenwood Museum, Rita Daminato and Ginny Kelly collected all these documents with the Secretary of States of Kelowna.  </>
+    ),
+  },
+  {
+    src: buildings_1,
+    alt: '',
+    caption: (
+      <> Greenwood Sports Arena built in 1910 provided pubic skating on natural ice, ice carnival, hockey, broomball and basketball.  Next door was natural ice curling rink.</>
+    ),
+  },
+  {
+    src: buildings_2,
+    alt: '',
+    caption: (
+      <>Greenwood Public School which burnt down on New Year's Eve in 1951.  Many Japanese Canadian students attended high school after finishing grade 8 at Sacred Heart School.  Some students who attended United Church kindergarten attended elementary school.</>
     ),
   },
 ];
@@ -2632,7 +2653,8 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'ohairi', title: 'A Look Back: Ohairi Park (Pre-2014)' },
     { filterKey: 'culture', title: 'Nikkei Comfort Food' },
     { filterKey: 'places', title: '1943 Japanese Canadian Housing' },
-    { filterKey: 'places', title: 'Historical Buildings' },
+    { filterKey: 'places', title: 'Historical Buildings: Gallery 1' },
+    { filterKey: 'places', title: 'Historical Buildings: Gallery 2' },
     { filterKey: 'places', title: 'Historical Locations' },
     { filterKey: 'places', title: 'Sawmill & Logging Industry in Greenwood' },
     { filterKey: 'places', title: 'Greenwood Cemetery' },
@@ -2757,7 +2779,8 @@ const GalleryPage: React.FC = () => {
       {(filter === 'all' || filter === 'places') && (
         <>
           {matchesQuery('1943 Japanese Canadian Housing') && <Carousel images={HOUSING_IMAGES} title="1943 Japanese Canadian Housing" />}
-          {matchesQuery('Historical Buildings') && <Carousel images={BUILDING_IMAGES}   title="Historical Buildings" />}
+          {matchesQuery('Historical Buildings: Gallery 1') && <Carousel images={BUILDING_IMAGES}   title="Historical Buildings: Gallery 1" />}
+          {matchesQuery('Historical Buildings: Gallery 2') && <Carousel images={BUILDING2_IMAGES}   title="Historical Buildings: Gallery 2" />}
           {matchesQuery('Historical Locations') && <Carousel images={LOCATIONS_IMAGES}   title="Historical Locations" />}
           {matchesQuery('Sawmill & Logging Industry in Greenwood') && <Carousel images={SAWMILLS_IMAGES} title="Sawmill & Logging Industry in Greenwood" />}
           {matchesQuery('Greenwood Cemetery') && <Carousel images={CEMENTERY_IMAGES} title="Greenwood Cemetery" />}
