@@ -418,8 +418,8 @@ const NIKKEIPARK_IMAGES: GalleryImage[] = [
   { src: nikkeiPark_2, alt: 'Nikkei Legacy Park' },
   { src: nikkeiPark_3, alt: 'Nikkei Legacy Park' },
   { src: nikkeiPark_4, alt: 'Nikkei Legacy Park' },
-  { src: nikkeiPark_5, alt: 'Nikkei Legacy Park' },
-  { src: nikkeiPark_6, alt: 'Nikkei Legacy Park' },
+  // { src: nikkeiPark_5, alt: 'Nikkei Legacy Park' },
+  // { src: nikkeiPark_6, alt: 'Nikkei Legacy Park' },
   { src: nikkeiPark_7, alt: 'Rock Garden in Nikkei Legacy Park' ,
     
     caption: <>his rock garden was made to symbolize the revival of Greenwood.  Stone in front is Deadwood.  Behind is Phoenix. Next to Greenwood is Anaconda.  Closest stone is Boundary Falls.  Farthest north is Eholt.  All the outlying places became more or less ghost towns.  Greenwood survived and revived.</>, },
@@ -427,6 +427,7 @@ const NIKKEIPARK_IMAGES: GalleryImage[] = [
 
 
 const PANEL_IMAGES: GalleryImage[] = [
+  { src: panel2026_5, alt: 'Panels June 2026, Photo 5' },
   { src: panel2026_1, alt: 'Panels June 2026, Photo 1',
     
     caption: <>Over 50% of the businesses were owned or operated by Japanese Canadians during the war and postwar.  Notice Mr. K. Morita sold kamaboko, yokan and oboro.  Mayor McArthur Sr. and council provided business licence.</>,
@@ -435,7 +436,6 @@ const PANEL_IMAGES: GalleryImage[] = [
   { src: panel2026_3, alt: 'Panels June 2026, Photo 3' },
   { src: panel2026_9, alt: 'Panels June 2026, Photo 9' },
   { src: panel2026_4, alt: 'Panels June 2026, Photo 4' },
-  { src: panel2026_5, alt: 'Panels June 2026, Photo 5' },
   { src: panel2026_6, alt: 'Panels June 2026, Photo 6' },
   { src: panel2026_7, alt: 'Panels June 2026, Photo 7' },
   { src: panel2026_8, alt: 'Panels June 2026, Photo 8' },
