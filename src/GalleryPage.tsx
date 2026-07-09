@@ -357,6 +357,8 @@ import unveiling_9  from './img/gallery/unveiling/unveiling_9.jpg';
 import greenwood_1  from './img/gallery/greenwood/greenwood_1.jpg';
 import greenwood_2  from './img/gallery/greenwood/greenwood_2.jpg';
 import greenwood_3  from './img/gallery/greenwood/greenwood_3.jpg';
+import greenwood_4  from './img/gallery/greenwood/greenwood_4.jpg';
+import greenwood_5  from './img/gallery/greenwood/greenwood_5.jpg';
 
 interface GalleryImage {
   src: string;
@@ -956,6 +958,18 @@ const GREENWOOD_IMAGES: GalleryImage[] = [
     src: greenwood_3,
     alt: '80th Anniversary of the Japanese Canadian Internment commemoration was held in McArthur Centre in 2022.',
     caption: <>80th Anniversary of the Japanese Canadian Internment commemoration was held in McArthur Centre in 2022.  It was an overwhelming success with overflowing crowd.</>,
+  },
+  {
+    src: greenwood_4,
+    alt: '80th Anniversary of the Japanese Canadian Internment commemoration was held in McArthur Centre in 2022.',
+    caption: <>Slide show ran as MC explained Greenwood internment experiences.
+    <br /><br />Photo Courtesy of Maureen Johnson</>,
+  },
+  {
+    src: greenwood_5,
+    alt: '80th Anniversary of the Japanese Canadian Internment commemoration was held in McArthur Centre in 2022.',
+    caption: <>Jam-packed audience enjoyed learning and reliving those Greenwood years that cannot be replicated.
+    <br /><br />Photo Courtesy of Maureen Johnson</>,
   },
 ];
 
