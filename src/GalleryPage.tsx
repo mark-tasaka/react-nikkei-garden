@@ -636,7 +636,7 @@ const VISITORS_IMAGES: GalleryImage[] = [
   {
     src: visitors_9,
     alt: 'Researchers from Japan and U.S.',
-    caption: <>We had researchers from Japan and U.S. visiting Greenwood.  Left to right:  front row Susan Tasaka, Karli Messer-Tasaka, Masumi Izumi of Doshisha University.  Back Chuck Tasaka, Takae Mio of Canada Museum in Mio, Japan, Kaz Tasaka, Sachiko Kawakami of Kyoto University, Norifumi Kawahara of Ritsumeikan University and Dr. Ian Baird of University of Wisconsin-Madison.</>,
+    caption: <>We had researchers from Japan and U.S. visiting Greenwood.  Left to right:  front row Susan Tasaka, Karli Messer-Tasaka, Masumi Izumi of Doshisha University.  Back Chuck Tasaka, Takae Mio of Canada Museum in Mio, Japan, Kaz Tasaka, Sachiko Kawakami of Kyoto University of Foreign Studies, Norifumi Kawahara of Ritsumeikan University and Dr. Ian Baird of University of Wisconsin-Madison.</>,
   },
   {
     src: visitors_9a,
