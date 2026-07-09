@@ -56,6 +56,8 @@ import nikkeiPark_4 from './img/gallery/nikkeiPark/nikkeiPark_4.jpg';
 import nikkeiPark_5 from './img/gallery/nikkeiPark/nikkeiPark_5.jpg';
 import nikkeiPark_6 from './img/gallery/nikkeiPark/nikkeiPark_6.jpg';
 import nikkeiPark_7 from './img/gallery/nikkeiPark/nikkeiPark_7.jpg';
+import nikkeiPark_8 from './img/gallery/nikkeiPark/nikkeiPark_8.jpg';
+import nikkeiPark_9 from './img/gallery/nikkeiPark/nikkeiPark_9.jpg';
 
 import misc_1  from './img/gallery/misc/ohairi-park-1.JPG';
 import misc_2  from './img/gallery/misc/ohairi-park-2.JPG';
@@ -352,6 +354,10 @@ import unveiling_7  from './img/gallery/unveiling/unveiling_7.jpg';
 import unveiling_8  from './img/gallery/unveiling/unveiling_8.jpg';
 import unveiling_9  from './img/gallery/unveiling/unveiling_9.jpg';
 
+import greenwood_1  from './img/gallery/greenwood/greenwood_1.jpg';
+import greenwood_2  from './img/gallery/greenwood/greenwood_2.jpg';
+import greenwood_3  from './img/gallery/greenwood/greenwood_3.jpg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -420,6 +426,12 @@ const NIKKEIPARK_IMAGES: GalleryImage[] = [
   { src: nikkeiPark_2, alt: 'Nikkei Legacy Park' },
   { src: nikkeiPark_3, alt: 'Nikkei Legacy Park' },
   { src: nikkeiPark_4, alt: 'Nikkei Legacy Park' },
+  { src: nikkeiPark_8, alt: 'Bench Nikkei Legacy Park' ,
+    
+    caption: <>This bench gives thanks to the people who made Greenwood internment site more integrated and less restriction.</>, },
+  { src: nikkeiPark_9, alt: 'Bench Nikkei Legacy Park' ,
+    
+    caption: <>This bench gives thanks to the people who made Greenwood internment site more integrated and less restriction.</>, },
   { src: nikkeiPark_7, alt: 'Rock Garden in Nikkei Legacy Park' ,
     
     caption: <>his rock garden was made to symbolize the revival of Greenwood.  Stone in front is Deadwood.  Behind is Phoenix. Next to Greenwood is Anaconda.  Closest stone is Boundary Falls.  Farthest north is Eholt.  All the outlying places became more or less ghost towns.  Greenwood survived and revived.</>, },
@@ -927,6 +939,24 @@ const FOOD_IMAGES: GalleryImage[] = [
     caption: <>Dr. Paula Fujiwara, a renowned physician of San Francisco and Sylvia Campbell of Olympia, Washington visited Nikkei Legacy Park to research nutrition in Japanese American and JC diet during the internment years.</>,
   },
 
+];
+
+const GREENWOOD_IMAGES: GalleryImage[] = [
+  {
+    src: greenwood_1,
+    alt: '80th Anniversary of the Japanese Canadian Internment commemoration was held in McArthur Centre in 2022.',
+    caption: <>Southern Wave Music and Dance Society showcased Okinawan culture.</>,
+  },
+  {
+    src: greenwood_2,
+    alt: '80th Anniversary of the Japanese Canadian Internment commemoration was held in McArthur Centre in 2022.',
+    caption: <>80th Anniversary of the Japanese Canadian Internment commemoration was held in McArthur Centre in 2022.  It was an overwhelming success with overflowing crowd.</>,
+  },
+  {
+    src: greenwood_3,
+    alt: '80th Anniversary of the Japanese Canadian Internment commemoration was held in McArthur Centre in 2022.',
+    caption: <>80th Anniversary of the Japanese Canadian Internment commemoration was held in McArthur Centre in 2022.  It was an overwhelming success with overflowing crowd.</>,
+  },
 ];
 
 const BUILDING_IMAGES: GalleryImage[] = [
@@ -2676,7 +2706,7 @@ const SearchIcon: React.FC = () => (
 
 // ── GalleryPage ─────────────────────────────────────────────────────────────
 
-type GalleryFilter = 'all' | 'nikkei' | 'places' | 'internment' | 'community' | 'restoration' | 'ohairi' | 'culture' ;
+type GalleryFilter = 'all' | 'nikkei' | 'places' | 'internment' | 'community' | 'restoration' | 'ohairi' | 'culture' | 'greenwood' ;
 
 const PRIMARY_FILTER_BUTTONS: { key: GalleryFilter; label: string }[] = [
   { key: 'all',        label: 'All' },
@@ -2684,6 +2714,7 @@ const PRIMARY_FILTER_BUTTONS: { key: GalleryFilter; label: string }[] = [
   { key: 'restoration', label: 'Restoration' },
   { key: 'ohairi',     label: 'Ohairi Park' },
   { key: 'culture',     label: 'Nikkei Culture' },
+  { key: 'greenwood',   label: 'Greenwood' },
 ];
 
 const ARCHIVAL_FILTER_BUTTONS: { key: GalleryFilter; label: string }[] = [
@@ -2714,6 +2745,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'restoration', title: 'Japanese Rock Garden Landscaping' },
     { filterKey: 'ohairi', title: 'A Look Back: Ohairi Park (Pre-2014)' },
     { filterKey: 'culture', title: 'Nikkei Comfort Food' },
+    { filterKey: 'greenwood', title: '80th Anniversary of the JC Internment: 2022' },
     { filterKey: 'places', title: '1943 Japanese Canadian Housing' },
     { filterKey: 'places', title: 'Historical Buildings: Gallery 1' },
     { filterKey: 'places', title: 'Historical Buildings: Gallery 2' },
@@ -2833,6 +2865,26 @@ const GalleryPage: React.FC = () => {
                   rel="noopener noreferrer"
                 >
                   Canadian Nikkei Comfort Food by Chuck Tasaka
+                </a>
+              </p>
+            </>
+          )}
+        </>
+      )}
+      
+      {(filter === 'all' || filter === 'greenwood') && (
+        <>
+          {matchesQuery('80th Anniversary of the Japanese Canadian Internment: 2022') && (
+            <>
+              <Carousel images={GREENWOOD_IMAGES} title="80th Anniversary of the Japanese Canadian Internment: 2022" />
+              <p className="gallery-section-link">
+                Featured article:{' '}
+                
+                  <a href="https://discovernikkei.org/en/journal/2022/8/12/greenwood-80th-anniversary/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Greenwood's 80th Anniversary Commemoration by Chuck Tasaka
                 </a>
               </p>
             </>
