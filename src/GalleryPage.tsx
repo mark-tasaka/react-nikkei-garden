@@ -415,11 +415,11 @@ const JUNE_IMAGES: GalleryImage[] = [
 const NIKKEIPARK_IMAGES: GalleryImage[] = [
   
   { src: nikkeiPark_1, alt: 'Nikkei Legacy Park' },
+  { src: nikkeiPark_6, alt: 'Nikkei Legacy Park' },
+  { src: nikkeiPark_5, alt: 'Nikkei Legacy Park' },
   { src: nikkeiPark_2, alt: 'Nikkei Legacy Park' },
   { src: nikkeiPark_3, alt: 'Nikkei Legacy Park' },
   { src: nikkeiPark_4, alt: 'Nikkei Legacy Park' },
-  // { src: nikkeiPark_5, alt: 'Nikkei Legacy Park' },
-  // { src: nikkeiPark_6, alt: 'Nikkei Legacy Park' },
   { src: nikkeiPark_7, alt: 'Rock Garden in Nikkei Legacy Park' ,
     
     caption: <>his rock garden was made to symbolize the revival of Greenwood.  Stone in front is Deadwood.  Behind is Phoenix. Next to Greenwood is Anaconda.  Closest stone is Boundary Falls.  Farthest north is Eholt.  All the outlying places became more or less ghost towns.  Greenwood survived and revived.</>, },
