@@ -54,6 +54,7 @@ import nikkeiPark_2 from './img/gallery/nikkeiPark/nikkeiPark_2.jpg';
 import nikkeiPark_3 from './img/gallery/nikkeiPark/nikkeiPark_3.jpg';
 import nikkeiPark_4 from './img/gallery/nikkeiPark/nikkeiPark_4.jpg';
 import nikkeiPark_5 from './img/gallery/nikkeiPark/nikkeiPark_5.jpg';
+import nikkeiPark_5a from './img/gallery/nikkeiPark/nikkeiPark_5a.jpg';
 import nikkeiPark_6 from './img/gallery/nikkeiPark/nikkeiPark_6.jpg';
 import nikkeiPark_7 from './img/gallery/nikkeiPark/nikkeiPark_7.jpg';
 import nikkeiPark_8 from './img/gallery/nikkeiPark/nikkeiPark_8.jpg';
@@ -424,7 +425,7 @@ const NIKKEIPARK_IMAGES: GalleryImage[] = [
   
   { src: nikkeiPark_1, alt: 'Nikkei Legacy Park' },
   { src: nikkeiPark_6, alt: 'Nikkei Legacy Park' },
-  { src: nikkeiPark_5, alt: 'Nikkei Legacy Park' },
+  { src: nikkeiPark_5a, alt: 'Nikkei Legacy Park' },
   { src: nikkeiPark_2, alt: 'Nikkei Legacy Park' },
   { src: nikkeiPark_3, alt: 'Nikkei Legacy Park' },
   { src: nikkeiPark_4, alt: 'Nikkei Legacy Park' },
@@ -2337,7 +2338,8 @@ const SPORTS2_IMAGES: GalleryImage[] = [
       src: sports_13,
       alt: 'Early Hockey',
       caption: (
-        <>Hepcats Hockey team</> 
+        <>1951 hockey
+        <br /><br />Photo courtesy of Ichio Miki</> 
       ),
     },
     {
@@ -2532,7 +2534,8 @@ const ACTIVELIFE2_IMAGES: GalleryImage[] = [
       src: active_life_14,
       alt: 'Sleigh Riding',
       caption: (
-        <>Sleigh riding was so much fun for the kids speeding down Phoenix Road down to Greenwood Street!</> 
+        <>The first photo of kids sleigh-riding. <br /><br />
+          Photo courtesy of George Yamaguchi.</> 
       ),
     },
     {
