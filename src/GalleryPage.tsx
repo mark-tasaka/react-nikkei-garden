@@ -48,6 +48,7 @@ import panel2026_7 from './img/gallery/galleryPanels2026/panel2026-7.jpeg';
 import panel2026_8 from './img/gallery/galleryPanels2026/panel2026-8.jpeg';
 import panel2026_9 from './img/gallery/galleryPanels2026/panel2026-9.jpeg';
 import panel2026_10 from './img/gallery/galleryPanels2026/panel2026-10.jpeg';
+import panel2026_11 from './img/gallery/galleryPanels2026/panel2026-11.jpeg';
 
 import nikkeiPark_1 from './img/gallery/nikkeiPark/nikkeiPark_1.jpg';
 import nikkeiPark_2 from './img/gallery/nikkeiPark/nikkeiPark_2.jpg';
@@ -452,11 +453,16 @@ const PANEL_IMAGES: GalleryImage[] = [
   { src: panel2026_9, alt: 'Panels June 2026, Photo 9' },
   { src: panel2026_4, alt: 'Panels June 2026, Photo 4' },
   { src: panel2026_6, alt: 'Panels June 2026, Photo 6' },
-  { src: panel2026_7, alt: 'Panels June 2026, Photo 7' },
-  { src: panel2026_8, alt: 'Panels June 2026, Photo 8' },
+  { src: panel2026_8, alt: 'Panels June 2026, Photo 8',
+    caption: <>Sakura Blossom was done by Cornel.</>, },
+  { src: panel2026_11, alt: 'Panels June 2026, Photo 11' },
   { src: panel2026_10, alt: 'Mr. Stolen’s class',
     
     caption: <>Mr. Stolen’s class folded a 1000 cranes to help commemorate the 80th Anniversary of the Japanese Canadian Internment in 2022.</>,
+   },
+  { src: panel2026_7, alt: 'Panels June 2026, Photo 7',
+    
+    caption: <>Map of the Internment buildings by Route 3 Print Studio.</>,
    },
 ];
 
