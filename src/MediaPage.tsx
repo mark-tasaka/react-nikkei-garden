@@ -70,8 +70,8 @@ const VIDEOS: VideoEntry[] = [
   {
     source: 'drive',
     embedId: '12T4wjoQHaqtE5-ufzO64o6A3tDd0WhWA',
-    title: 'IMG_5584',
-    description: 'Add your description here.',
+    title: 'Okinawan taiko',
+    description: 'Southern Wave Music and Dance Society\'s performance of Okinawan Taiko drumming at the 80th Anniversary of the Japanese Canadian Internment in Greenwood, BC, on July 16, 2022.  The performance was held at the McArthur Park Centre.',
   },
 ];
 
