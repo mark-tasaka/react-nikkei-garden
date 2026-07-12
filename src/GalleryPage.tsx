@@ -50,6 +50,13 @@ import panel2026_9 from './img/gallery/galleryPanels2026/panel2026-9.jpeg';
 import panel2026_10 from './img/gallery/galleryPanels2026/panel2026-10.jpeg';
 import panel2026_11 from './img/gallery/galleryPanels2026/panel2026-11.jpeg';
 
+import tribute_1 from './img/gallery/tributePlaques/tributePlaques_1.jpeg';
+import tribute_2 from './img/gallery/tributePlaques/tributePlaques_2.jpeg';
+import tribute_3 from './img/gallery/tributePlaques/tributePlaques_3.jpeg';
+import tribute_4 from './img/gallery/tributePlaques/tributePlaques_4.jpeg';
+import tribute_5 from './img/gallery/tributePlaques/tributePlaques_5.jpeg';
+import tribute_6 from './img/gallery/tributePlaques/tributePlaques_6.jpeg';
+
 import nikkeiPark_1 from './img/gallery/nikkeiPark/nikkeiPark_1.jpg';
 import nikkeiPark_2 from './img/gallery/nikkeiPark/nikkeiPark_2.jpg';
 import nikkeiPark_3 from './img/gallery/nikkeiPark/nikkeiPark_3.jpg';
@@ -464,6 +471,16 @@ const PANEL_IMAGES: GalleryImage[] = [
     
     caption: <>Map of the Internment buildings by Route 3 Print Studio.</>,
    },
+];
+
+
+const TRIBUTE_IMAGES: GalleryImage[] = [
+  { src: tribute_1, alt: 'Tribute Image 1' },
+  { src: tribute_2, alt: 'Tribute Image 2' },
+  { src: tribute_3, alt: 'Tribute Image 3' },
+  { src: tribute_4, alt: 'Tribute Image 4' },
+  { src: tribute_5, alt: 'Tribute Image 5' },
+  { src: tribute_6, alt: 'Tribute Image 6' },
 ];
 
 const OPENING_IMAGES: GalleryImage[] = [
@@ -2759,6 +2776,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'nikkei', title: 'Springtime in the Park: May 2026' },
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park' },
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park Panels' },
+    { filterKey: 'nikkei', title: 'Nikkei Legacy Park Tribute Plaques' },
     { filterKey: 'nikkei', title: 'Grand Opening: July 20, 2025' },
     { filterKey: 'nikkei', title: 'Japanese Canadian Signage Unveiling: 2017' },
     { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 1' },
@@ -2858,6 +2876,7 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Springtime in the Park: May 2026') && <Carousel images={MAY_IMAGES}   title="Springtime in the Park: May 2026" />}
           {matchesQuery('Nikkei Legacy Park') && <Carousel images={NIKKEIPARK_IMAGES} title="Nikkei Legacy Park" />}
           {matchesQuery('Nikkei Legacy Park Panels') && <Carousel images={PANEL_IMAGES} title="Nikkei Legacy Park Panels" />}
+          {matchesQuery('Nikkei Legacy Park Tribute Plaques') && <Carousel images={TRIBUTE_IMAGES} title="Nikkei Legacy Park Tribute Plaques" />}
           {matchesQuery('Grand Opening: July 20, 2025') && <Carousel images={OPENING_IMAGES}   title="Grand Opening: July 20, 2025" />}
           {matchesQuery('Japanese Canadian Signage Unveiling: 2017') && <Carousel images={UNVEILING_IMAGES}   title="Japanese Canadian Signage Unveiling: 2017" />}
           {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 1') && <Carousel images={VISITORS_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 1" />}
