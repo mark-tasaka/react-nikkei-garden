@@ -369,6 +369,10 @@ import greenwood_3  from './img/gallery/greenwood/greenwood_3.jpg';
 import greenwood_4  from './img/gallery/greenwood/greenwood_4.jpg';
 import greenwood_5  from './img/gallery/greenwood/greenwood_5.jpg';
 
+import farewell_1  from './img/gallery/farewell/farewell_1.jpg';
+import farewell_2  from './img/gallery/farewell/farewell_2.jpg';
+import farewell_3  from './img/gallery/farewell/farewell_3.jpg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -1490,6 +1494,29 @@ const BW_IMAGES_2: GalleryImage[] = [
   },
 ];
 
+const FAREWELL_IMAGES: GalleryImage[] = [
+  {
+    src: farewell_1,
+    alt: 'Greenwood Japanese Canadians chose to go on the “exchange” ship in 1943',
+    caption: <>Greenwood Japanese Canadians chose to go on the “exchange” ship in 1943. 
+        <br /><br />
+        Courtesy of Boundary Times</>,
+  },
+  {
+    src: farewell_2,
+    alt: 'Greenwood Japanese Canadians chose to go on the “exchange” ship in 1943',
+    caption: <>Greenwood Japanese Canadians chose to go on the “exchange” ship in 1943. 
+        <br /><br />
+        Courtesy of Boundary Times</>,
+  },
+  {
+    src: farewell_3,
+    alt: 'Greenwood Japanese Canadians chose to go on the “exchange” ship in 1943',
+    caption: <>Greenwood Japanese Canadians chose to go on the “exchange” ship in 1943. 
+        <br /><br />
+        Courtesy of Boundary Times</>,
+  },
+];
 
 const INTERNEES_IMAGES: GalleryImage[] = [
     {
@@ -2794,6 +2821,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'places', title: 'Sawmill & Logging Industry in Greenwood' },
     { filterKey: 'places', title: 'Greenwood Cemetery' },
     { filterKey: 'internment', title: 'Arrival of Japanese Canadians to Greenwood: 1942' },
+    { filterKey: 'internment', title: 'Train Station Farewell' },
     { filterKey: 'internment', title: 'Historical Photos' },
     { filterKey: 'internment', title: 'Early Internees 1942-45' },
     { filterKey: 'community', title: 'Sacred Heart School Life' },
@@ -2946,6 +2974,7 @@ const GalleryPage: React.FC = () => {
       {(filter === 'all' || filter === 'internment') && (
         <>
           {matchesQuery('Arrival of Japanese Canadians to Greenwood: 1942') && <Carousel images={BW_IMAGES_2} title="Arrival of Japanese Canadians to Greenwood: 1942" />}
+          {matchesQuery('Train Station Farewell') && <Carousel images={FAREWELL_IMAGES} title="Train Station Farewell" />}
           {matchesQuery('Historical Photos') && <Carousel images={BW_IMAGES}   title="Historical Photos" />}
           {matchesQuery('Early Internees 1942-45') && <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45" />}
         </>
