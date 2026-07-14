@@ -208,6 +208,7 @@ import historical1960_5  from './img/gallery/historical1960/historical1960_5.jpg
 import historical1960_6  from './img/gallery/historical1960/historical1960_6.jpg';
 import historical1960_7  from './img/gallery/historical1960/historical1960_7.jpg';
 import historical1960_8  from './img/gallery/historical1960/historical1960_8.jpg';
+import historical1960_9  from './img/gallery/historical1960/historical1960_9.jpg';
 
 import sacredHeart_1  from './img/gallery/SacredHeart/sacredHeart_1.jpg';
 import sacredHeart_2  from './img/gallery/SacredHeart/sacredHeart_2.jpg';
@@ -2023,7 +2024,14 @@ const HISTORICAL1960_IMAGES: GalleryImage[] = [
     },
     {
       src: historical1960_8,
-      alt: 'Greenwood to be Cpmgratulated',
+      alt: 'Greenwood to be Congratulated',
+    },
+    {
+      src: historical1960_9,
+      alt: 'Greenwood Parade in Kimomos',
+      caption: (
+        <>Greenwood Parade in Kimomos</>
+      ),
     },
   ];
 
