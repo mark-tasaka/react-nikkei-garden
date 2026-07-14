@@ -199,6 +199,7 @@ import labourDay50_9  from './img/gallery/labourDay1950/labourDay50_9.jpg';
 import labourDay50_10  from './img/gallery/labourDay1950/labourDay50_10.jpg';
 import labourDay50_11  from './img/gallery/labourDay1950/labourDay50_11.jpg';
 import labourDay50_12  from './img/gallery/labourDay1950/labourDay50_12.jpg';
+import labourDay50_13  from './img/gallery/labourDay1950/labourDay50_13.jpg';
 
 import historical1960_1  from './img/gallery/historical1960/historical1960_1.jpg';
 import historical1960_2  from './img/gallery/historical1960/historical1960_2.jpg';
@@ -209,6 +210,9 @@ import historical1960_6  from './img/gallery/historical1960/historical1960_6.jpg
 import historical1960_7  from './img/gallery/historical1960/historical1960_7.jpg';
 import historical1960_8  from './img/gallery/historical1960/historical1960_8.jpg';
 import historical1960_9  from './img/gallery/historical1960/historical1960_9.jpg';
+import historical1960_10  from './img/gallery/historical1960/historical1960_10.jpg';
+import historical1960_11  from './img/gallery/historical1960/historical1960_11.jpg';
+import historical1960_12  from './img/gallery/historical1960/historical1960_12.jpg';
 
 import sacredHeart_1  from './img/gallery/SacredHeart/sacredHeart_1.jpg';
 import sacredHeart_2  from './img/gallery/SacredHeart/sacredHeart_2.jpg';
@@ -1971,7 +1975,14 @@ const LAOBUR_DAY1950_IMAGES: GalleryImage[] = [
           <br /><br />
           Photo courtesy of Miyamoto Photograph of Grand Forks</>
       ),
-    },                               
+    },               
+    {
+      src: labourDay50_13,
+      alt: 'Labour Day 1950s',
+      caption: (
+        <>Former Greenwood lnternee Nan Okano returned to participate in the Labour Day parade as a majorette.</>
+      ),
+    },                         
 ];
 
 
@@ -2031,6 +2042,27 @@ const HISTORICAL1960_IMAGES: GalleryImage[] = [
       alt: 'Greenwood Parade in Kimomos',
       caption: (
         <>Greenwood Parade in Kimomos</>
+      ),
+    },
+    {
+      src: historical1960_10,
+      alt: 'Katrina Izumi in an elegant kimono.',
+      caption: (
+        <>Katrina Izumi in an elegant kimono.</>
+      ),
+    },
+    {
+      src: historical1960_11,
+      alt: 'Mrs. Izumi the odori instructor following one of the child dancers.',
+      caption: (
+        <>Mrs. Izumi the odori instructor following one of the child dancers.</>
+      ),
+    },
+    {
+      src: historical1960_12,
+      alt: 'Parade participants resting and enjoying taking part in Natsu Matsuri',
+      caption: (
+        <>Parade participants resting and enjoying taking part in Natsu Matsuri</>
       ),
     },
   ];
