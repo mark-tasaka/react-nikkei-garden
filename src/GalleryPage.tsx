@@ -372,6 +372,9 @@ import greenwood_5  from './img/gallery/greenwood/greenwood_5.jpg';
 import farewell_1  from './img/gallery/farewell/farewell_1.jpg';
 import farewell_2  from './img/gallery/farewell/farewell_2.jpg';
 import farewell_3  from './img/gallery/farewell/farewell_3.jpg';
+import farewell_4  from './img/gallery/farewell/farewell_4.jpg';
+import farewell_5  from './img/gallery/farewell/farewell_5.jpg';
+import farewell_6  from './img/gallery/farewell/farewell_6.jpg';
 
 interface GalleryImage {
   src: string;
@@ -1515,6 +1518,23 @@ const FAREWELL_IMAGES: GalleryImage[] = [
     caption: <>Greenwood Japanese Canadians chose to go on the “exchange” ship in 1943. 
         <br /><br />
         Courtesy of Boundary Times</>,
+  },
+  {
+    src: farewell_4,
+    alt: 'Train station was a bustling place after 1945',
+    caption: <>Train station was a bustling place after 1945.  People were leaving east of the Rockies or to Japan even though the City wrote a letter of protest to keep the Japanese Canadians in Greenwood.
+        <br /><br />
+        Courtesy of Monica Yuasa-Matsubuchi</>,
+  },
+  {
+    src: farewell_5,
+    alt: 'At the station, there were many tears when good friends or relatives were leaving Greenwood.',
+    caption: <>At the station, there were many tears when good friends or relatives were leaving Greenwood.</>,
+  },
+  {
+    src: farewell_6,
+    alt: 'Leaving Greenwood was bittersweet.',
+    caption: <>Leaving Greenwood was bittersweet.  They were leaving a safe 'internment camp' but they were also leaving to find better opportunities in big cities like Toronto or Montreal.</>,
   },
 ];
 
