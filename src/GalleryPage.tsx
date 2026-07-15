@@ -49,6 +49,7 @@ import panel2026_8 from './img/gallery/galleryPanels2026/panel2026-8.jpeg';
 import panel2026_9 from './img/gallery/galleryPanels2026/panel2026-9.jpeg';
 import panel2026_10 from './img/gallery/galleryPanels2026/panel2026-10.jpeg';
 import panel2026_11 from './img/gallery/galleryPanels2026/panel2026-11.jpeg';
+import panel2026_12 from './img/gallery/galleryPanels2026/panel2026-12.jpeg';
 
 import tribute_1 from './img/gallery/tributePlaques/tributePlaques_1.jpeg';
 import tribute_2 from './img/gallery/tributePlaques/tributePlaques_2.jpeg';
@@ -56,6 +57,7 @@ import tribute_3 from './img/gallery/tributePlaques/tributePlaques_3.jpeg';
 import tribute_4 from './img/gallery/tributePlaques/tributePlaques_4.jpeg';
 import tribute_5 from './img/gallery/tributePlaques/tributePlaques_5.jpeg';
 import tribute_6 from './img/gallery/tributePlaques/tributePlaques_6.jpeg';
+import tribute_7 from './img/gallery/tributePlaques/tributePlaques_7.jpeg';
 
 import nikkeiPark_1 from './img/gallery/nikkeiPark/nikkeiPark_1.jpg';
 import nikkeiPark_2 from './img/gallery/nikkeiPark/nikkeiPark_2.jpg';
@@ -488,6 +490,7 @@ const PANEL_IMAGES: GalleryImage[] = [
     
     caption: <>Map of the Internment buildings by Route 3 Print Studio.</>,
    },
+  { src: panel2026_12, alt: 'Panels June 2026, Photo 12' },
 ];
 
 
@@ -498,6 +501,7 @@ const TRIBUTE_IMAGES: GalleryImage[] = [
   { src: tribute_4, alt: 'Tribute Image 4' },
   { src: tribute_5, alt: 'Tribute Image 5' },
   { src: tribute_6, alt: 'Tribute Image 6' },
+  { src: tribute_7, alt: 'Tribute Image 7' },
 ];
 
 const OPENING_IMAGES: GalleryImage[] = [
