@@ -402,6 +402,10 @@ import snowFalling_1  from './img/gallery/snowFalling/snowFalling_1.jpeg';
 import snowFalling_2  from './img/gallery/snowFalling/snowFalling_2.jpeg';
 import snowFalling_3  from './img/gallery/snowFalling/snowFalling_3.jpeg';
 import snowFalling_4  from './img/gallery/snowFalling/snowFalling_4.jpeg';
+import snowFalling_5  from './img/gallery/snowFalling/snowFalling_5.jpeg';
+import snowFalling_6  from './img/gallery/snowFalling/snowFalling_6.jpeg';
+import snowFalling_7  from './img/gallery/snowFalling/snowFalling_7.jpeg';
+import snowFalling_8  from './img/gallery/snowFalling/snowFalling_8.jpeg';
 
 interface GalleryImage {
   src: string;
@@ -1070,6 +1074,30 @@ const SNOW_FALLING_IMAGES: GalleryImage[] = [
     alt: 'Most or all Japanese Canadian locals were hired as extras.',
     caption: <>Most or all Japanese Canadian locals were hired as extras.
     <br /><br />News Clipping Courtesy of George Yamaguchi</>,
+  },
+  {
+    src: snowFalling_5,
+    alt: 'Arizo Tasaka’s last barber shop turned into a doctor’s office.',
+    caption: <>Arizo Tasaka’s last barber shop turned into a doctor’s office.
+    <br /><br />Photo Courtesy of George Yamaguchi</>,
+  },
+  {
+    src: snowFalling_6,
+    alt: 'Old court house now city hall and post office.',
+    caption: <>Old court house now city hall and post office.  There was hardly any snow in Greenwood that year in 1998-99.
+    <br /><br />Photo Courtesy of George Yamaguchi</>,
+  },
+  {
+    src: snowFalling_7,
+    alt: 'Simulated parade downtown Greenwood with local extras as parade watchers.',
+    caption: <>Simulated parade downtown Greenwood with local extras as parade watchers.
+    <br /><br />Photo Courtesy of George Yamaguchi</>,
+  },
+  {
+    src: snowFalling_8,
+    alt: 'Simulated parade downtown Greenwood with local extras as parade watchers.',
+    caption: <>Simulated parade downtown Greenwood with local extras as parade watchers.
+    <br /><br />Photo Courtesy of George Yamaguchi</>,
   },
 ];
 
