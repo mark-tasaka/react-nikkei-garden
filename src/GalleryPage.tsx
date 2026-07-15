@@ -381,6 +381,8 @@ import farewell_4  from './img/gallery/farewell/farewell_4.jpg';
 import farewell_5  from './img/gallery/farewell/farewell_5.jpg';
 import farewell_6  from './img/gallery/farewell/farewell_6.jpg';
 
+import internment1946_1  from './img/gallery/internment1946/internment1946_1.jpg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -1670,6 +1672,16 @@ const INTERNEES_IMAGES: GalleryImage[] = [
 ];
 
 
+const INTERMENT1945_IMAGES: GalleryImage[] = [
+    {
+      src: internment1946_1,
+      alt: 'Greenwood put on a skit for those leaving for Japan or East of the Rockies in 1945-46.',
+      caption: (
+        <>Greenwood put on a skit for those leaving for Japan or East of the Rockies in 1945-46.</>
+      ),
+    },
+  ];
+
 const HOUSING_IMAGES: GalleryImage[] = [
     {
       src: housing1943_4,
@@ -2884,6 +2896,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'internment', title: 'Train Station Farewell' },
     { filterKey: 'internment', title: 'Historical Photos' },
     { filterKey: 'internment', title: 'Early Internees 1942-45' },
+    { filterKey: 'internment', title: 'Internment 1945-46' },
     { filterKey: 'community', title: 'Sacred Heart School Life' },
     { filterKey: 'community', title: 'United Church' },
     { filterKey: 'community', title: 'Labour Day Parades 1940s' },
@@ -3037,6 +3050,7 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Train Station Farewell') && <Carousel images={FAREWELL_IMAGES} title="Train Station Farewell" />}
           {matchesQuery('Historical Photos') && <Carousel images={BW_IMAGES}   title="Historical Photos" />}
           {matchesQuery('Early Internees 1942-45') && <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45" />}
+          {matchesQuery('Internment 1945-46') && <Carousel images={INTERMENT1945_IMAGES} title="Internment 1945-46" />}
         </>
       )}
       {(filter === 'all' || filter === 'community') && (
