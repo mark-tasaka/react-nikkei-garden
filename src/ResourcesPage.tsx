@@ -79,6 +79,9 @@ import canadian1 from './img/articles/canadian1.jpeg';
 import book1 from './img/articles/book1.jpeg';
 
 import manzanar1 from './img/articles/manzanar1.jpeg';
+
+import kiyo from './img/articles/Kiyo.jpg';
+
 const burton2024 = '/pdf/burton2024.pdf';
 
 interface ArticleEntry {
@@ -793,6 +796,16 @@ const ARTICLES: ArticleEntry[] = [
     excerpt:   'During World War II the Canadian government forcedly removed to inland areas nearly 22,000 persons of Japanese ancestry living within 100 miles of the West Coast. Some 75 percent of the internees were Canadian citizens. Although the term "internment" is no longer widely used in the United States',
     img:       manzanar1,
   },
+  {
+    source:    'UBC',
+    sourceUrl: 'https://transpacificunderground.arts.ubc.ca/',
+    title:     'Kiyo Tanaka Gotō* (1894? -1982)',
+    author:    'Maya Koizumi',
+    date:      'March 1, 1972',
+    link:      'https://transpacificunderground.arts.ubc.ca/primary-sources/kiyo/',
+    excerpt:   'The following sections feature archival materials pertaining to Kiyo Tanaka Gotō* (1894? -1982), a woman from Kumamoto, Japan. During her time in Canada, she ran multiple businesses in Downtown Vancouver, Canada, including a Japanese restaurant on Powell Street, a brothel on Hastings Street, and a gambling venue in Chinatown. These materials consist of audio recordings of an interview with Kiyo conducted by Maya Koizumi in 1972 (available only in Japanese), 10 written vignettes created out of the interview and thematically organized (Japanese and English), and photographic images of Kiyo’s belongings held by the Nikkei National Museum & Cultural Centre. See “Modules” to explore critical approaches to examining this content.',
+    img:       kiyo,
+  },
 ];
 
 function truncateWords(text: string, maxWords: number): string {
@@ -835,7 +848,7 @@ type SortDir   = 'desc' | 'asc';
 
 const ArticlesPage: React.FC = () => {
   const [query,     setQuery]     = useState('');
-  const [filter, setFilter] = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies' | 'Greenwood Nikkei' | 'The Bulletin' | 'Japanese Canadian Veterans' | 'Canadian Encyclopedia' | 'Books' | 'PDF'>('all');
+  const [filter, setFilter] = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies' | 'Greenwood Nikkei' | 'The Bulletin' | 'Japanese Canadian Veterans' | 'Canadian Encyclopedia' | 'Books' | 'PDF' | 'UBC'>('all');
   const [sortField, setSortField] = useState<SortField>('year');
   const [sortDir,   setSortDir]   = useState<SortDir>('desc');
 
@@ -878,7 +891,7 @@ const ArticlesPage: React.FC = () => {
 
       {/* ── Filter buttons ── */}
       <div className="articles-filter-wrapper">
-        {(['all', 'Discover Nikkei', 'Japanese Canadian Legacies', 'Greenwood Nikkei', 'The Bulletin', 'Japanese Canadian Veterans', 'Canadian Encyclopedia', 'Books', 'PDF'] as const).map(f => (
+       {(['all', 'Discover Nikkei', 'Japanese Canadian Legacies', 'Greenwood Nikkei', 'The Bulletin', 'Japanese Canadian Veterans', 'Canadian Encyclopedia', 'Books', 'UBC', 'PDF'] as const).map(f => (
           <button
             key={f}
             className={`articles-filter-btn${
@@ -902,6 +915,8 @@ const ArticlesPage: React.FC = () => {
               ? 'Canadian Ency'
               : f === 'Books'
               ? 'Books'
+              : f === 'UBC'
+              ? 'UBC'
               : 'PDF'}
           </button>
         ))}
