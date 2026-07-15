@@ -388,6 +388,8 @@ import farewell_7  from './img/gallery/farewell/farewell_7.jpg';
 
 import internment1946_1  from './img/gallery/internment1946/internment1946_1.jpg';
 
+import donors_1  from './img/gallery/donors/donors_1.jpeg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -502,6 +504,10 @@ const TRIBUTE_IMAGES: GalleryImage[] = [
   { src: tribute_5, alt: 'Tribute Image 5' },
   { src: tribute_6, alt: 'Tribute Image 6' },
   { src: tribute_7, alt: 'Tribute Image 7' },
+];
+
+const DONORS_IMAGES: GalleryImage[] = [
+  { src: donors_1, alt: 'Donors' },
 ];
 
 const OPENING_IMAGES: GalleryImage[] = [
@@ -2909,6 +2915,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park' },
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park Panels' },
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park Tribute Plaques' },
+    { filterKey: 'nikkei', title: 'Nikkei Legacy Park Donors' },
     { filterKey: 'nikkei', title: 'Grand Opening: July 20, 2025' },
     { filterKey: 'nikkei', title: 'Japanese Canadian Signage Unveiling: 2018' },
     { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 1' },
@@ -3011,6 +3018,7 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Nikkei Legacy Park') && <Carousel images={NIKKEIPARK_IMAGES} title="Nikkei Legacy Park" />}
           {matchesQuery('Nikkei Legacy Park Panels') && <Carousel images={PANEL_IMAGES} title="Nikkei Legacy Park Panels" />}
           {matchesQuery('Nikkei Legacy Park Tribute Plaques') && <Carousel images={TRIBUTE_IMAGES} title="Nikkei Legacy Park Tribute Plaques" />}
+          {matchesQuery('Nikkei Legacy Park Donors') && <Carousel images={DONORS_IMAGES} title="Nikkei Legacy Park Donors" />}
           {matchesQuery('Grand Opening: July 20, 2025') && <Carousel images={OPENING_IMAGES}   title="Grand Opening: July 20, 2025" />}
           {matchesQuery('Japanese Canadian Signage Unveiling: 2018') && <Carousel images={UNVEILING_IMAGES}   title="Japanese Canadian Signage Unveiling: 2018" />}
           {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 1') && <Carousel images={VISITORS_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 1" />}
