@@ -357,6 +357,8 @@ import active_life_20  from './img/gallery/activeLife/active_life_20.jpg';
 import active_life_21  from './img/gallery/activeLife/active_life_21.jpg';
 import active_life_22  from './img/gallery/activeLife/active_life_22.jpg';
 import active_life_23  from './img/gallery/activeLife/active_life_23.jpg';
+import active_life_24  from './img/gallery/activeLife/active_life_24.jpg';
+import active_life_25  from './img/gallery/activeLife/active_life_25.jpg';
 
 import unveiling_1  from './img/gallery/unveiling/unveiling_1.jpg';
 import unveiling_2  from './img/gallery/unveiling/unveiling_2.jpg';
@@ -1504,7 +1506,14 @@ const BW_IMAGES_2: GalleryImage[] = [
   },
 ];
 
-const FAREWELL_IMAGES: GalleryImage[] = [
+const FAREWELL_IMAGES: GalleryImage[] = [  
+    {
+      src: internment1946_1,
+      alt: 'Greenwood put on a skit for those leaving for Japan or East of the Rockies in 1945-46.',
+      caption: (
+        <>Greenwood put on a skit for those leaving for Japan or East of the Rockies in 1945-46.</>
+      ),
+    },
   {
     src: farewell_1,
     alt: 'Greenwood Japanese Canadians chose to go on the “exchange” ship in 1943',
@@ -1672,15 +1681,15 @@ const INTERNEES_IMAGES: GalleryImage[] = [
 ];
 
 
-const INTERMENT1945_IMAGES: GalleryImage[] = [
-    {
-      src: internment1946_1,
-      alt: 'Greenwood put on a skit for those leaving for Japan or East of the Rockies in 1945-46.',
-      caption: (
-        <>Greenwood put on a skit for those leaving for Japan or East of the Rockies in 1945-46.</>
-      ),
-    },
-  ];
+// const INTERMENT1945_IMAGES: GalleryImage[] = [
+//     {
+//       src: internment1946_1,
+//       alt: 'Greenwood put on a skit for those leaving for Japan or East of the Rockies in 1945-46.',
+//       caption: (
+//         <>Greenwood put on a skit for those leaving for Japan or East of the Rockies in 1945-46.</>
+//       ),
+//     },
+//   ];
 
 const HOUSING_IMAGES: GalleryImage[] = [
     {
@@ -2725,6 +2734,20 @@ const ACTIVELIFE2_IMAGES: GalleryImage[] = [
         <>City of Greenwood was a natural adventure playground.</> 
       ),
     },
+    {
+      src: active_life_24,
+      alt: 'Haiku Club in Greenwood',
+      caption: (
+        <>Another hobby for the adults was the Haiku Club in Greenwood with sensei Mr. Komazo Sano and student Katsuyoshi Morita.  Students used pen names.  JP Antonio and Jacqueline Pearce published a book on Haiku in the internment camps.</> 
+      ),
+    },
+    {
+      src: active_life_25,
+      alt: 'Haiku Club in Greenwood',
+      caption: (
+        <>Another hobby for the adults was the Haiku Club in Greenwood with sensei Mr. Komazo Sano and student Katsuyoshi Morita.  Students used pen names.  JP Antonio and Jacqueline Pearce published a book on Haiku in the internment camps.</> 
+      ),
+    },
   ];
 
 // ── Carousel ────────────────────────────────────────────────────────────────
@@ -2893,7 +2916,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'places', title: 'Sawmill & Logging Industry in Greenwood' },
     { filterKey: 'places', title: 'Greenwood Cemetery' },
     { filterKey: 'internment', title: 'Arrival of Japanese Canadians to Greenwood: 1942' },
-    { filterKey: 'internment', title: 'Train Station Farewell' },
+    // { filterKey: 'internment', title: 'Train Station Farewell' },
     { filterKey: 'internment', title: 'Historical Photos' },
     { filterKey: 'internment', title: 'Early Internees 1942-45' },
     { filterKey: 'internment', title: 'Internment 1945-46' },
@@ -3050,7 +3073,7 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Train Station Farewell') && <Carousel images={FAREWELL_IMAGES} title="Train Station Farewell" />}
           {matchesQuery('Historical Photos') && <Carousel images={BW_IMAGES}   title="Historical Photos" />}
           {matchesQuery('Early Internees 1942-45') && <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45" />}
-          {matchesQuery('Internment 1945-46') && <Carousel images={INTERMENT1945_IMAGES} title="Internment 1945-46" />}
+          {/* {matchesQuery('Internment 1945-46') && <Carousel images={INTERMENT1945_IMAGES} title="Internment 1945-46" />} */}
         </>
       )}
       {(filter === 'all' || filter === 'community') && (
