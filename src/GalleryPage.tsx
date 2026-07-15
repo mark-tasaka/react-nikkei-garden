@@ -398,6 +398,11 @@ import donors_7  from './img/gallery/donors/donors_7.jpeg';
 import donors_8  from './img/gallery/donors/donors_8.jpeg';
 import donors_9  from './img/gallery/donors/donors_9.jpeg';
 
+import snowFalling_1  from './img/gallery/snowFalling/snowFalling_1.jpeg';
+import snowFalling_2  from './img/gallery/snowFalling/snowFalling_2.jpeg';
+import snowFalling_3  from './img/gallery/snowFalling/snowFalling_3.jpeg';
+import snowFalling_4  from './img/gallery/snowFalling/snowFalling_4.jpeg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -1037,6 +1042,34 @@ const GREENWOOD_IMAGES: GalleryImage[] = [
     alt: '80th Anniversary of the Japanese Canadian Internment commemoration was held in McArthur Centre in 2022.',
     caption: <>Jam-packed audience enjoyed learning and reliving those Greenwood years that cannot be replicated.
     <br /><br />Photo Courtesy of Maureen Johnson</>,
+  },
+];
+
+
+const SNOW_FALLING_IMAGES: GalleryImage[] = [
+  {
+    src: snowFalling_1,
+    alt: 'Snow Falling on Cedars Movie',
+    caption: <>Snow Falling on Cedars Movie Poster
+    <br /><br />Poster Courtesy of Kim Martin and Mary Nakagawa</>,
+  },
+  {
+    src: snowFalling_2,
+    alt: 'Big time news in Greenwood',
+    caption: <>Big time news in Greenwood
+    <br /><br />News Clipping Courtesy of George Yamaguchi</>,
+  },
+  {
+    src: snowFalling_3,
+    alt: 'Famous Japanese actress Yuko Koudo',
+    caption: <>Famous Japanese actress Yuko Koudo.
+    <br /><br />News Clipping Courtesy of George Yamaguchi</>,
+  },
+  {
+    src: snowFalling_4,
+    alt: 'Most or all Japanese Canadian locals were hired as extras.',
+    caption: <>Most or all Japanese Canadian locals were hired as extras.
+    <br /><br />News Clipping Courtesy of George Yamaguchi</>,
   },
 ];
 
@@ -2931,7 +2964,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park' },
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park Panels' },
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park Tribute Plaques' },
-    { filterKey: 'nikkei', title: 'Nikkei Legacy Park Donors' },
+    { filterKey: 'nikkei', title: 'Thank You Donors' },
     { filterKey: 'nikkei', title: 'Grand Opening: July 20, 2025' },
     { filterKey: 'nikkei', title: 'Japanese Canadian Signage Unveiling: 2018' },
     { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 1' },
@@ -2942,6 +2975,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'ohairi', title: 'A Look Back: Ohairi Park (Pre-2014)' },
     { filterKey: 'culture', title: 'Nikkei Comfort Food' },
     { filterKey: 'greenwood', title: '80th Anniversary of the JC Internment: 2022' },
+    { filterKey: 'greenwood', title: 'Snow Falling on Cedars Movie' },
     { filterKey: 'places', title: '1943 Japanese Canadian Housing' },
     { filterKey: 'places', title: 'Historical Buildings: Gallery 1' },
     { filterKey: 'places', title: 'Historical Buildings: Gallery 2' },
@@ -3034,7 +3068,7 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Nikkei Legacy Park') && <Carousel images={NIKKEIPARK_IMAGES} title="Nikkei Legacy Park" />}
           {matchesQuery('Nikkei Legacy Park Panels') && <Carousel images={PANEL_IMAGES} title="Nikkei Legacy Park Panels" />}
           {matchesQuery('Nikkei Legacy Park Tribute Plaques') && <Carousel images={TRIBUTE_IMAGES} title="Nikkei Legacy Park Tribute Plaques" />}
-          {matchesQuery('Nikkei Legacy Park Donors') && <Carousel images={DONORS_IMAGES} title="Nikkei Legacy Park Donors" />}
+          {matchesQuery('Thank You Donors') && <Carousel images={DONORS_IMAGES} title="Thank You Donors" />}
           {matchesQuery('Grand Opening: July 20, 2025') && <Carousel images={OPENING_IMAGES}   title="Grand Opening: July 20, 2025" />}
           {matchesQuery('Japanese Canadian Signage Unveiling: 2018') && <Carousel images={UNVEILING_IMAGES}   title="Japanese Canadian Signage Unveiling: 2018" />}
           {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 1') && <Carousel images={VISITORS_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 1" />}
@@ -3088,6 +3122,9 @@ const GalleryPage: React.FC = () => {
                 </a>
               </p>
             </>
+          )}
+          {matchesQuery('Snow Falling on Cedars Movie') && (
+            <Carousel images={SNOW_FALLING_IMAGES} title="Snow Falling on Cedars Movie" />
           )}
         </>
       )}
