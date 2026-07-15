@@ -389,6 +389,10 @@ import farewell_7  from './img/gallery/farewell/farewell_7.jpg';
 import internment1946_1  from './img/gallery/internment1946/internment1946_1.jpg';
 
 import donors_1  from './img/gallery/donors/donors_1.jpeg';
+import donors_2  from './img/gallery/donors/donors_2.jpeg';
+import donors_3  from './img/gallery/donors/donors_3.jpeg';
+import donors_4  from './img/gallery/donors/donors_4.jpeg';
+import donors_5  from './img/gallery/donors/donors_5.jpeg';
 
 interface GalleryImage {
   src: string;
@@ -508,6 +512,10 @@ const TRIBUTE_IMAGES: GalleryImage[] = [
 
 const DONORS_IMAGES: GalleryImage[] = [
   { src: donors_1, alt: 'Donors' },
+  { src: donors_2, alt: 'Donors' },
+  { src: donors_3, alt: 'Donors' },
+  { src: donors_4, alt: 'Donors' },
+  { src: donors_5, alt: 'Donors' },
 ];
 
 const OPENING_IMAGES: GalleryImage[] = [
