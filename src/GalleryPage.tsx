@@ -406,6 +406,7 @@ import snowFalling_5  from './img/gallery/snowFalling/snowFalling_5.jpeg';
 import snowFalling_6  from './img/gallery/snowFalling/snowFalling_6.jpeg';
 import snowFalling_7  from './img/gallery/snowFalling/snowFalling_7.jpeg';
 import snowFalling_8  from './img/gallery/snowFalling/snowFalling_8.jpeg';
+import snowFalling_9  from './img/gallery/snowFalling/snowFalling_9.jpeg';
 
 interface GalleryImage {
   src: string;
