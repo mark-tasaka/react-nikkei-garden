@@ -125,6 +125,9 @@ import building2_4  from './img/gallery/misc/building2_4.jpg';
 import fundraiser  from './img/gallery/misc/fundraiser.jpg';
 import interneeArticle_1  from './img/gallery/misc/internee_article1.jpg';
 import interneeArticle_2  from './img/gallery/misc/internee_article2.jpg';
+import interneeArticle_3  from './img/gallery/misc/interneeArticle_3.jpg';
+import interneeArticle_4  from './img/gallery/misc/interneeArticle_4.jpg';
+import interneeArticle_5  from './img/gallery/misc/interneeArticle_5.jpg';
 import buildingArticle_1  from './img/gallery/misc/building_article1.jpg';
 import buildingArticle_2  from './img/gallery/misc/building_article2.jpg';
 import buildingArticle_3  from './img/gallery/misc/building_article3.jpg';
@@ -1857,6 +1860,27 @@ const INTERNEES_IMAGES: GalleryImage[] = [
     {
       src: interneeArticle_2,
       alt: '',
+    },
+    {
+      src: interneeArticle_3,
+      alt: '',
+      caption: (
+        <>Peter Boliszczuk, a volunteer firefighter, was sifting through old files and he came upon these letters during the internment years.</>
+      ),
+    },
+    {
+      src: interneeArticle_4,
+      alt: '',
+      caption: (
+        <>Peter Boliszczuk, a volunteer firefighter, was sifting through old files and he came upon these letters during the internment years.</>
+      ),
+    },
+    {
+      src: interneeArticle_5,
+      alt: '',
+      caption: (
+        <>Peter Boliszczuk, a volunteer firefighter, was sifting through old files and he came upon these letters during the internment years.</>
+      ),
     },
     {
       src: misc_49,
