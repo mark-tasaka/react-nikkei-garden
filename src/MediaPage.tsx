@@ -2,7 +2,7 @@
 import React from 'react';
 import './css/Media.css';
 
-type VideoSource = 'youtube' | 'drive' | 'instagram';
+type VideoSource = 'youtube' | 'drive' | 'instagram' | 'globalnews';
 
 interface VideoEntry {
   source: VideoSource;
@@ -86,6 +86,13 @@ const VIDEOS: VideoEntry[] = [
     title: 'Miyazaki Legacy Project',
     description: 'This is Nicole Whitely’s video on Jim Miyazaki family interned in Kaslo and later sent to Greenwood in 1945.  Greenwood segment starts at after the 35 minute mark.',
   },
+  {
+  source: 'globalnews',
+  embedId: '11852829',
+  title: 'Asian Heritage Month: A History of Japanese Canadians',
+  description:
+    'A Global News Morning segment for Asian Heritage Month covering the history of Japanese Canadians.',
+},
 ];
 
 type MediaFilter = 'all' | 'nikkei' | 'greenwood' | 'internment' | 'asahi' | 'veterans';
@@ -101,7 +108,7 @@ const FILTER_BUTTONS: { key: MediaFilter; label: string }[] = [
 
 const NIKKEI_IDS = new Set(['0SerwWKTJPE', '1pWmTIX4NCM', 'DMTpp-iBr6a']);
 const GREENWOOD_IDS = new Set(['dQTcfId-sbw', '12T4wjoQHaqtE5-ufzO64o6A3tDd0WhWA']);
-const INTERNMENT_IDS = new Set(['M3wJgU67ZP8', 'QILO0XT-0eo', 'C8TQTuMqM9g', '1bQvFKnd7wCt0BdgXz2d4GvoUXzsfXwKk']);
+const INTERNMENT_IDS = new Set(['M3wJgU67ZP8', 'QILO0XT-0eo', 'C8TQTuMqM9g', '1bQvFKnd7wCt0BdgXz2d4GvoUXzsfXwKk', '11852829']);
 const ASAHI_IDS = new Set(['zxBWg4zxTkQ', 'wBv-MYAf9P0']);
 const VETERANS_IDS = new Set(['cblvugIloOc']);
 
@@ -121,6 +128,9 @@ function getEmbedSrc(video: VideoEntry): string {
   }
   if (video.source === 'instagram') {
     return `https://www.instagram.com/reel/${video.embedId}/embed`;
+  }
+  if (video.source === 'globalnews') {
+    return `https://globalnews.ca/video/embed/${video.embedId}/`;
   }
   return `https://www.youtube.com/embed/${video.embedId}`;
 }
