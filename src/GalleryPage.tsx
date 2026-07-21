@@ -71,6 +71,8 @@ import nikkeiPark_6 from './img/gallery/nikkeiPark/nikkeiPark_6.jpg';
 import nikkeiPark_7 from './img/gallery/nikkeiPark/nikkeiPark_7.jpg';
 import nikkeiPark_8 from './img/gallery/nikkeiPark/nikkeiPark_8.jpg';
 import nikkeiPark_9 from './img/gallery/nikkeiPark/nikkeiPark_9.jpg';
+import nikkeiPark_10 from './img/gallery/nikkeiPark/nikkeiPark_10.jpg';
+import nikkeiPark_11 from './img/gallery/nikkeiPark/nikkeiPark_11.jpg';
 
 import misc_1  from './img/gallery/misc/ohairi-park-1.JPG';
 import misc_2  from './img/gallery/misc/ohairi-park-2.JPG';
@@ -511,6 +513,12 @@ const NIKKEIPARK_IMAGES: GalleryImage[] = [
   { src: nikkeiPark_7, alt: 'Rock Garden in Nikkei Legacy Park' ,
     
     caption: <>This rock garden was made to symbolize the revival of Greenwood.  Stone in front is Deadwood.  Behind is Phoenix. Next to Greenwood is Anaconda.  Closest stone is Boundary Falls.  Farthest north is Eholt.  All the outlying places became more or less ghost towns.  Greenwood survived and revived.</>, },
+  { src: nikkeiPark_10, 
+    alt: 'Bench Nikkei Legacy Park' ,
+    caption: <>Mayor W.E. McArthur Sr. was instrumental in inviting the Japanese Canadian to Greenwood in 1942 which changed the course of history.</>, },
+  { src: nikkeiPark_11, 
+    alt: 'Bench Nikkei Legacy Park' ,
+    caption: <>Mayor W.E. McArthur Sr. was instrumental in inviting the Japanese Canadian to Greenwood in 1942 which changed the course of history.</>, },
 ];
 
 
