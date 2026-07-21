@@ -202,6 +202,23 @@
 }
 
 /* =====================================================
+   Instagram embed variant — Instagram's iframe has fixed
+   internal height (header + video + caption), so we size
+   the box to fit it rather than forcing 16:9.
+   ===================================================== */
+.media-embed-wrapper--instagram {
+  aspect-ratio: unset;
+  height: 400px;
+}
+
+.media-embed-wrapper--instagram .media-embed {
+  position: static;
+  width: 50%;
+  height: 100%;
+}
+
+
+/* =====================================================
    Responsive
    ===================================================== */
 @media (max-width: 1024px) {
@@ -251,5 +268,13 @@
     font-size: 13px;
     width: 240px;
     padding: 8px 0;
+  }
+  
+  .media-embed-wrapper--instagram {
+    height: 400px;
+  }
+
+  .media-embed-wrapper--instagram .media-embed {
+    width: 50%;
   }
 }

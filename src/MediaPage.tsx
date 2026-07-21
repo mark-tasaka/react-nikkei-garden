@@ -2,7 +2,7 @@
 import React from 'react';
 import './css/Media.css';
 
-type VideoSource = 'youtube' | 'drive';
+type VideoSource = 'youtube' | 'drive' | 'instagram';
 
 interface VideoEntry {
   source: VideoSource;
@@ -73,6 +73,13 @@ const VIDEOS: VideoEntry[] = [
     title: 'Okinawan taiko',
     description: 'Southern Wave Music and Dance Society\'s performance of Okinawan Taiko drumming at the 80th Anniversary of the Japanese Canadian Internment in Greenwood, BC, on July 16, 2022.  The performance was held at the McArthur Park Centre.',
   },
+    {
+    source: 'instagram',
+    embedId: 'DMTpp-iBr6a',
+    title: 'Chuck Tasaka Interview by Ian Hanomansing',
+    description:
+      "One of the best parts of my road trip to Manitoba and back was random stops, learning things and meeting fascinating people, like Chuck Tasaka. He was lovingly tending to the grounds at the Nikkei Legacy Park in Greenwood British Columbia when he saw my wife and me and asked if we had any questions. The official opening, by the way, is Sunday morning (July 20th). Of course the internment of Japanese Canadians was a terrible thing but I was interested to hear Chuck's perspective on what made Greenwood different. If you're ever driving through Greenwood, I highly recommend you stop and chat.",
+  },
 ];
 
 type MediaFilter = 'all' | 'nikkei' | 'greenwood' | 'internment' | 'asahi' | 'veterans';
@@ -86,7 +93,7 @@ const FILTER_BUTTONS: { key: MediaFilter; label: string }[] = [
   { key: 'veterans', label: 'JC Veterans' },
 ];
 
-const NIKKEI_IDS    = new Set(['0SerwWKTJPE', '1pWmTIX4NCM']);
+const NIKKEI_IDS = new Set(['0SerwWKTJPE', '1pWmTIX4NCM', 'DMTpp-iBr6a']);
 const GREENWOOD_IDS = new Set(['dQTcfId-sbw', '12T4wjoQHaqtE5-ufzO64o6A3tDd0WhWA']);
 const INTERNMENT_IDS = new Set(['M3wJgU67ZP8', 'QILO0XT-0eo', 'C8TQTuMqM9g']);
 const ASAHI_IDS = new Set(['zxBWg4zxTkQ', 'wBv-MYAf9P0']);
@@ -105,6 +112,9 @@ function matchesFilter(embedId: string, filter: MediaFilter): boolean {
 function getEmbedSrc(video: VideoEntry): string {
   if (video.source === 'drive') {
     return `https://drive.google.com/file/d/${video.embedId}/preview`;
+  }
+  if (video.source === 'instagram') {
+    return `https://www.instagram.com/reel/${video.embedId}/embed`;
   }
   return `https://www.youtube.com/embed/${video.embedId}`;
 }
@@ -138,7 +148,7 @@ const MediaPage: React.FC = () => {
       <div className="media-grid">
         {filteredVideos.map(({ source, embedId, title, description }) => (
           <article key={embedId} className="media-card">
-            <div className="media-embed-wrapper">
+            <div className={`media-embed-wrapper${source === 'instagram' ? ' media-embed-wrapper--instagram' : ''}`}>
               <iframe
                 className="media-embed"
                 src={getEmbedSrc({ source, embedId, title, description })}
