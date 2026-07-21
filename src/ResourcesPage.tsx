@@ -82,6 +82,8 @@ import manzanar1 from './img/articles/manzanar1.jpeg';
 
 import kiyo from './img/articles/kiyo.jpeg';
 
+import googleDoc from './img/articles/googleDoc.png';
+
 const burton2024 = '/pdf/burton2024.pdf';
 
 interface ArticleEntry {
@@ -806,6 +808,16 @@ const ARTICLES: ArticleEntry[] = [
     excerpt:   'The following sections feature archival materials pertaining to Kiyo Tanaka Gotō* (1894? -1982), a woman from Kumamoto, Japan. During her time in Canada, she ran multiple businesses in Downtown Vancouver, Canada, including a Japanese restaurant on Powell Street, a brothel on Hastings Street, and a gambling venue in Chinatown. These materials consist of audio recordings of an interview with Kiyo conducted by Maya Koizumi in 1972 (available only in Japanese), 10 written vignettes created out of the interview and thematically organized (Japanese and English), and photographic images of Kiyo’s belongings held by the Nikkei National Museum & Cultural Centre. See “Modules” to explore critical approaches to examining this content.',
     img:       kiyo,
   },
+  {
+    source:    'Google Docs',
+    sourceUrl: 'https://docs.google.com/presentation/d/1uHE1JpHBO_BRKU67kzjFOHvm_1iPNJKTVYWokVjtMMQ/edit?slide=id.ge2b17be85f_2_91#slide=id.ge2b17be85f_2_91',
+    title:     'The Internment of Japanese Canadians',
+    author:    'Yin Tsia',
+    date:      'March 1, 2026',
+    link:      'https://docs.google.com/presentation/d/1uHE1JpHBO_BRKU67kzjFOHvm_1iPNJKTVYWokVjtMMQ/edit?slide=id.ge2b17be85f_2_91#slide=id.ge2b17be85f_2_91',
+    excerpt:   'The Internment of Japanese Canadians 1942-1949 Click on the book or artifact beside the laptops for a description of the topic. Click on the laptops for lesson plans and graphic organizers',
+    img:       googleDoc,
+  },
 ];
 
 function truncateWords(text: string, maxWords: number): string {
@@ -848,7 +860,7 @@ type SortDir   = 'desc' | 'asc';
 
 const ArticlesPage: React.FC = () => {
   const [query,     setQuery]     = useState('');
-  const [filter, setFilter] = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies' | 'Greenwood Nikkei' | 'The Bulletin' | 'Japanese Canadian Veterans' | 'Canadian Encyclopedia' | 'Books' | 'PDF' | 'UBC'>('all');
+  const [filter, setFilter] = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies' | 'Greenwood Nikkei' | 'The Bulletin' | 'Japanese Canadian Veterans' | 'Canadian Encyclopedia' | 'Books' | 'PDF' | 'Google Docs' |'UBC'>('all');
   const [sortField, setSortField] = useState<SortField>('year');
   const [sortDir,   setSortDir]   = useState<SortDir>('desc');
 
@@ -891,7 +903,7 @@ const ArticlesPage: React.FC = () => {
 
       {/* ── Filter buttons ── */}
       <div className="articles-filter-wrapper">
-       {(['all', 'Discover Nikkei', 'Japanese Canadian Legacies', 'Greenwood Nikkei', 'The Bulletin', 'Japanese Canadian Veterans', 'Canadian Encyclopedia', 'Books', 'UBC', 'PDF'] as const).map(f => (
+       {(['all', 'Discover Nikkei', 'Japanese Canadian Legacies', 'Greenwood Nikkei', 'The Bulletin', 'Japanese Canadian Veterans', 'Canadian Encyclopedia', 'Books', 'UBC', 'PDF', 'Google Docs'] as const).map(f => (
           <button
             key={f}
             className={`articles-filter-btn${
@@ -917,6 +929,8 @@ const ArticlesPage: React.FC = () => {
               ? 'Books'
               : f === 'UBC'
               ? 'UBC'
+              : f === 'Google Docs'
+              ? 'Google Docs'
               : 'PDF'}
           </button>
         ))}
