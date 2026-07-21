@@ -407,6 +407,9 @@ import snowFalling_6  from './img/gallery/snowFalling/snowFalling_6.jpeg';
 import snowFalling_7  from './img/gallery/snowFalling/snowFalling_7.jpeg';
 import snowFalling_8  from './img/gallery/snowFalling/snowFalling_8.jpeg';
 import snowFalling_9  from './img/gallery/snowFalling/snowFalling_9.jpeg';
+import snowFalling_10  from './img/gallery/snowFalling/snowFalling_10.jpeg';
+import snowFalling_11  from './img/gallery/snowFalling/snowFalling_11.jpeg';
+import snowFalling_12  from './img/gallery/snowFalling/snowFalling_12.jpeg';
 
 interface GalleryImage {
   src: string;
@@ -1099,6 +1102,21 @@ const SNOW_FALLING_IMAGES: GalleryImage[] = [
     alt: 'Simulated parade downtown Greenwood with local extras as parade watchers.',
     caption: <>Simulated parade downtown Greenwood with local extras as parade watchers.
     <br /><br />Photo Courtesy of George Yamaguchi</>,
+  },
+  {
+    src: snowFalling_10,
+    alt: 'Local extras posing before the shoot.  Hiro I Iizuka, Amy Terada and Aiko Terashita.',
+    caption: <>Local extras posing before the shoot.  Hiro I Iizuka, Amy Terada and Aiko Terashita.</>,
+  },
+  {
+    src: snowFalling_11,
+    alt: 'Irene Terada and Aiko Terashita.  Ben and Taki Yamamura.  Insert is George Yamaguchi.',
+    caption: <>Irene Terada and Aiko Terashita.  Ben and Taki Yamamura.  Insert is George Yamaguchi.</>,
+  },
+  {
+    src: snowFalling_12,
+    alt: 'Walking down to the bus station to be “evacuated” to Manzanar, California.',
+    caption: <>Walking down to the bus station to be “evacuated” to Manzanar, California..</>,
   },
 ];
 
