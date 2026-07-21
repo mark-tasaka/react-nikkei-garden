@@ -410,6 +410,10 @@ import snowFalling_9  from './img/gallery/snowFalling/snowFalling_9.jpeg';
 import snowFalling_10  from './img/gallery/snowFalling/snowFalling_10.jpeg';
 import snowFalling_11  from './img/gallery/snowFalling/snowFalling_11.jpeg';
 import snowFalling_12  from './img/gallery/snowFalling/snowFalling_12.jpeg';
+import snowFalling_13  from './img/gallery/snowFalling/snowFalling_13.jpeg';
+import snowFalling_14  from './img/gallery/snowFalling/snowFalling_14.jpeg';
+import snowFalling_15  from './img/gallery/snowFalling/snowFalling_15.jpeg';
+import snowFalling_16  from './img/gallery/snowFalling/snowFalling_16.jpeg';
 
 interface GalleryImage {
   src: string;
@@ -1118,6 +1122,31 @@ const SNOW_FALLING_IMAGES: GalleryImage[] = [
     alt: 'Walking down to the bus station to be “evacuated” to Manzanar, California.',
     caption: <>Walking down to the bus station to be “evacuated” to Manzanar, California..</>,
   },
+];
+
+
+const SNOW_FALLING2_IMAGES: GalleryImage[] = [
+  {
+    src: snowFalling_13,
+    alt: 'Ethan Hawkes was the star of the movie, and his wife then Uma Thurman accompanied him.',
+    caption: <>Ethan Hawkes was the star of the movie, and his wife then Uma Thurman accompanied him.</>,
+  },
+  {
+    src: snowFalling_14,
+    alt: 'Nancy Yamamura and Val Collard with star Ethan Hawkes.',
+    caption: <>Nancy Yamamura and Val Collard with star Ethan Hawkes.</>,
+  },
+  {
+    src: snowFalling_15,
+    alt: 'Old Nakagawa confectionary store and dry cleaner in the forefront and past the ice vendor was the Tasaka pool hall and barbershop.',
+    caption: <>Old Nakagawa confectionary store and dry cleaner in the forefront and past the ice vendor was the Tasaka pool hall and barbershop.</>,
+  },
+  {
+    src: snowFalling_16,
+    alt: 'The old Bob Brown Store and Mook’s Snack Bar in the evening scene.',
+    caption: <>The old Bob Brown Store and Mook’s Snack Bar in the evening scene.</>,
+  },
+
 ];
 
 const BUILDING_IMAGES: GalleryImage[] = [
@@ -3022,7 +3051,8 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'ohairi', title: 'A Look Back: Ohairi Park (Pre-2014)' },
     { filterKey: 'culture', title: 'Nikkei Comfort Food' },
     { filterKey: 'greenwood', title: '80th Anniversary of the JC Internment: 2022' },
-    { filterKey: 'greenwood', title: 'Snow Falling on Cedars Movie' },
+    { filterKey: 'greenwood', title: 'Snow Falling on Cedars Movie: Gallery 1' },
+    { filterKey: 'greenwood', title: 'Snow Falling on Cedars Movie: Gallery 2' },
     { filterKey: 'places', title: '1943 Japanese Canadian Housing' },
     { filterKey: 'places', title: 'Historical Buildings: Gallery 1' },
     { filterKey: 'places', title: 'Historical Buildings: Gallery 2' },
@@ -3170,8 +3200,11 @@ const GalleryPage: React.FC = () => {
               </p>
             </>
           )}
-          {matchesQuery('Snow Falling on Cedars Movie') && (
-            <Carousel images={SNOW_FALLING_IMAGES} title="Snow Falling on Cedars Movie" />
+          {matchesQuery('Snow Falling on Cedars Movie: Gallery 1') && (
+            <Carousel images={SNOW_FALLING_IMAGES} title="Snow Falling on Cedars Movie: Gallery 1" />
+          )}
+          {matchesQuery('Snow Falling on Cedars Movie: Gallery 2') && (
+            <Carousel images={SNOW_FALLING2_IMAGES} title="Snow Falling on Cedars Movie: Gallery 2" />
           )}
         </>
       )}
