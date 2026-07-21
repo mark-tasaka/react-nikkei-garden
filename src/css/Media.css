@@ -209,14 +209,18 @@
 .media-embed-wrapper--instagram {
   aspect-ratio: unset;
   height: 400px;
+  overflow: hidden;
 }
 
 .media-embed-wrapper--instagram .media-embed {
-  position: static;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 50%;
-  height: 100%;
+  height: calc(100% + 60px);
+  border: none;
 }
-
 
 /* =====================================================
    Responsive
@@ -275,6 +279,9 @@
   }
 
   .media-embed-wrapper--instagram .media-embed {
-    width: 50%;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: calc(100% + 60px);
   }
 }
