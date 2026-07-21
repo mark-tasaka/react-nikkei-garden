@@ -37,6 +37,8 @@ import july2026_2  from './img/gallery/galleryJuly2026/july2026-2.jpg';
 import july2026_3  from './img/gallery/galleryJuly2026/july2026-3.jpg';
 import july2026_4  from './img/gallery/galleryJuly2026/july2026-4.jpg';
 import july2026_5  from './img/gallery/galleryJuly2026/july2026-5.jpg';
+import july2026_6  from './img/gallery/galleryJuly2026/july2026-6.jpg';
+import july2026_7  from './img/gallery/galleryJuly2026/july2026-7.jpg';
 
 import panel2026_1 from './img/gallery/galleryPanels2026/panel2026-1.jpeg';
 import panel2026_2 from './img/gallery/galleryPanels2026/panel2026-2.jpeg';
@@ -449,6 +451,12 @@ const JULY2026_IMAGES: GalleryImage[] = [
   { src: july2026_5,  alt: 'Nikkei Legacy Park, July 2026, photo taken by Chuck Tasaka',
     
     caption: <>Beautiful Japanese irises bloom in July.  They add needed colour in the summer.</>,   },
+  { src: july2026_6,  alt: 'Nikkei Legacy Park, July 2026, photo taken by Chuck Tasaka',
+    
+    caption: <>The ground cover is showing its beauty and colour to enhance the garden.</>,   },
+  { src: july2026_7,  alt: 'Nikkei Legacy Park, July 2026, photo taken by Chuck Tasaka',
+    
+    caption: <>The ground cover is showing its beauty and colour to enhance the garden.</>,   },
 ];
 
 
