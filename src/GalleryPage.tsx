@@ -499,7 +499,7 @@ const NIKKEIPARK_IMAGES: GalleryImage[] = [
     caption: <>This bench gives thanks to the people who made Greenwood internment site more integrated and less restriction.</>, },
   { src: nikkeiPark_7, alt: 'Rock Garden in Nikkei Legacy Park' ,
     
-    caption: <>his rock garden was made to symbolize the revival of Greenwood.  Stone in front is Deadwood.  Behind is Phoenix. Next to Greenwood is Anaconda.  Closest stone is Boundary Falls.  Farthest north is Eholt.  All the outlying places became more or less ghost towns.  Greenwood survived and revived.</>, },
+    caption: <>This rock garden was made to symbolize the revival of Greenwood.  Stone in front is Deadwood.  Behind is Phoenix. Next to Greenwood is Anaconda.  Closest stone is Boundary Falls.  Farthest north is Eholt.  All the outlying places became more or less ghost towns.  Greenwood survived and revived.</>, },
 ];
 
 
@@ -1689,13 +1689,6 @@ const BW_IMAGES_2: GalleryImage[] = [
 ];
 
 const FAREWELL_IMAGES: GalleryImage[] = [  
-    {
-      src: internment1946_1,
-      alt: 'Greenwood put on a skit for those leaving for Japan or East of the Rockies in 1945-46.',
-      caption: (
-        <>Greenwood put on a skit for those leaving for Japan or East of the Rockies in 1945-46.</>
-      ),
-    },
   {
     src: farewell_1,
     alt: 'Greenwood Japanese Canadians chose to go on the “exchange” ship in 1943',
@@ -1703,6 +1696,13 @@ const FAREWELL_IMAGES: GalleryImage[] = [
         <br /><br />
         Courtesy of Boundary Times</>,
   },
+      {
+      src: internment1946_1,
+      alt: 'Greenwood put on a skit for those leaving for Japan or East of the Rockies in 1945-46.',
+      caption: (
+        <>Greenwood put on a skit for those leaving for Japan or East of the Rockies in 1945-46.</>
+      ),
+    },
   {
     src: farewell_2,
     alt: 'Greenwood Japanese Canadians chose to go on the “exchange” ship in 1943',
