@@ -80,7 +80,7 @@ import book1 from './img/articles/book1.jpeg';
 
 import manzanar1 from './img/articles/manzanar1.jpeg';
 
-import kiyo from './img/articles/Kiyo.jpg';
+import kiyo from './img/articles/kiyo.jpeg';
 
 const burton2024 = '/pdf/burton2024.pdf';
 
