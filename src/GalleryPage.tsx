@@ -344,6 +344,8 @@ import active_life_5  from './img/gallery/activeLife/active_life_5.jpg';
 import active_life_6  from './img/gallery/activeLife/active_life_6.jpg';
 import active_life_7  from './img/gallery/activeLife/active_life_7.jpg';
 import active_life_8  from './img/gallery/activeLife/active_life_8.jpg';
+import active_life_8a  from './img/gallery/activeLife/active_life_8a.jpg';
+import active_life_8b  from './img/gallery/activeLife/active_life_8b.jpg';
 import active_life_9  from './img/gallery/activeLife/active_life_9.jpg';
 import active_life_10  from './img/gallery/activeLife/active_life_10.jpg';
 import active_life_11  from './img/gallery/activeLife/active_life_11.jpg';
@@ -2804,6 +2806,14 @@ const ACTIVELIFE_IMAGES: GalleryImage[] = [
       caption: (
         <>Crowning of May Day Queen was another exciting time for the girls.  Dorothy Otani was crowned May Queen.</> 
       ),
+    },
+    {
+      src: active_life_8a,
+      alt: 'Crowning of May Day Queen'
+    },
+    {
+      src: active_life_8b,
+      alt: 'Crowning of May Day Queen'
     },
     {
       src: active_life_9,
