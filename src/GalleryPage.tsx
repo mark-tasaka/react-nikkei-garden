@@ -414,6 +414,10 @@ import snowFalling_13  from './img/gallery/snowFalling/snowFalling_13.jpeg';
 import snowFalling_14  from './img/gallery/snowFalling/snowFalling_14.jpeg';
 import snowFalling_15  from './img/gallery/snowFalling/snowFalling_15.jpeg';
 import snowFalling_16  from './img/gallery/snowFalling/snowFalling_16.jpeg';
+import snowFalling_17  from './img/gallery/snowFalling/snowFalling_17.jpeg';
+import snowFalling_18  from './img/gallery/snowFalling/snowFalling_18.jpeg';
+import snowFalling_19  from './img/gallery/snowFalling/snowFalling_19.jpeg';
+import snowFalling_20  from './img/gallery/snowFalling/snowFalling_20.jpeg';
 
 interface GalleryImage {
   src: string;
@@ -1108,6 +1112,10 @@ const SNOW_FALLING_IMAGES: GalleryImage[] = [
     <br /><br />Photo Courtesy of George Yamaguchi</>,
   },
   {
+    src: snowFalling_9,
+    alt: '',
+  },
+  {
     src: snowFalling_10,
     alt: 'Local extras posing before the shoot.  Hiro I Iizuka, Amy Terada and Aiko Terashita.',
     caption: <>Local extras posing before the shoot.  Hiro I Iizuka, Amy Terada and Aiko Terashita.</>,
@@ -1145,6 +1153,26 @@ const SNOW_FALLING2_IMAGES: GalleryImage[] = [
     src: snowFalling_16,
     alt: 'The old Bob Brown Store and Mook’s Snack Bar in the evening scene.',
     caption: <>The old Bob Brown Store and Mook’s Snack Bar in the evening scene.</>,
+  },
+  {
+    src: snowFalling_17,
+    alt: 'Guide to being an extra in a movie.',
+    caption: <>Guide to being an extra in a movie.</>,
+  },
+  {
+    src: snowFalling_18,
+    alt: 'Guide to being an extra in a movie.',
+    caption: <>Guide to being an extra in a movie.</>,
+  },
+  {
+    src: snowFalling_19,
+    alt: 'trawberry farms in Greenwood',
+    caption: <>Strawberry farms in Greenwood?  Beside is Okada/Kurita Meat Market in the 40’s, and later bought by Ed Hendry in 1951. It was Jarrell’s Clothing Store in more recent time.  In the movie it was Larsen’s Pharmacy.</>,
+  },
+  {
+    src: snowFalling_20,
+    alt: 'Getting ready for the scene to begin down Greenwood Street.',
+    caption: <>Getting ready for the scene to begin down Greenwood Street.</>,
   },
 
 ];
