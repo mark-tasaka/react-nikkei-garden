@@ -418,6 +418,8 @@ import snowFalling_17  from './img/gallery/snowFalling/snowFalling_17.jpeg';
 import snowFalling_18  from './img/gallery/snowFalling/snowFalling_18.jpeg';
 import snowFalling_19  from './img/gallery/snowFalling/snowFalling_19.jpeg';
 import snowFalling_20  from './img/gallery/snowFalling/snowFalling_20.jpeg';
+import snowFalling_21  from './img/gallery/snowFalling/snowFalling_21.jpeg';
+import snowFalling_22  from './img/gallery/snowFalling/snowFalling_22.jpeg';
 
 interface GalleryImage {
   src: string;
@@ -1173,6 +1175,20 @@ const SNOW_FALLING2_IMAGES: GalleryImage[] = [
     src: snowFalling_20,
     alt: 'Getting ready for the scene to begin down Greenwood Street.',
     caption: <>Getting ready for the scene to begin down Greenwood Street.</>,
+  },
+  {
+    src: snowFalling_21,
+    alt: 'This scene shows Imai Elecrical Shop, Tanizawa Greenwood Bakery, Johnny’s Market,  old pharmacy and Tasaka barbershop and pool hall.',
+    caption: <>This scene shows Imai Elecrical Shop, Tanizawa Greenwood Bakery, Johnny’s Market,  old pharmacy and Tasaka barbershop and pool hall.
+        <br /><br />
+        Photo courtesy of George Yamaguchi</>,
+  },
+  {
+    src: snowFalling_22,
+    alt: 'Preparation for the final court scene.  Evening shot where Ethan Hawkes slowly walked up towards the post office.',
+    caption: <>Preparation for the final court scene.  Evening shot where Ethan Hawkes slowly walked up towards the post office.
+        <br /><br />
+        Photo courtesy of George Yamaguchi</>,
   },
 
 ];
