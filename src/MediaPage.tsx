@@ -80,6 +80,12 @@ const VIDEOS: VideoEntry[] = [
     description:
       "One of the best parts of my road trip to Manitoba and back was random stops, learning things and meeting fascinating people, like Chuck Tasaka. He was lovingly tending to the grounds at the Nikkei Legacy Park in Greenwood British Columbia when he saw my wife and me and asked if we had any questions. The official opening, by the way, is Sunday morning (July 20th). Of course the internment of Japanese Canadians was a terrible thing but I was interested to hear Chuck's perspective on what made Greenwood different. If you're ever driving through Greenwood, I highly recommend you stop and chat.",
   },
+  {
+    source: 'drive',
+    embedId: '1bQvFKnd7wCt0BdgXz2d4GvoUXzsfXwKk',
+    title: 'Miyazaki Legacy Project',
+    description: 'This is Nicole Whitely’s video on Jim Miyazaki family interned in Kaslo and later sent to Greenwood in 1945.  Greenwood segment starts at after the 35 minute mark.',
+  },
 ];
 
 type MediaFilter = 'all' | 'nikkei' | 'greenwood' | 'internment' | 'asahi' | 'veterans';
@@ -95,7 +101,7 @@ const FILTER_BUTTONS: { key: MediaFilter; label: string }[] = [
 
 const NIKKEI_IDS = new Set(['0SerwWKTJPE', '1pWmTIX4NCM', 'DMTpp-iBr6a']);
 const GREENWOOD_IDS = new Set(['dQTcfId-sbw', '12T4wjoQHaqtE5-ufzO64o6A3tDd0WhWA']);
-const INTERNMENT_IDS = new Set(['M3wJgU67ZP8', 'QILO0XT-0eo', 'C8TQTuMqM9g']);
+const INTERNMENT_IDS = new Set(['M3wJgU67ZP8', 'QILO0XT-0eo', 'C8TQTuMqM9g', '1bQvFKnd7wCt0BdgXz2d4GvoUXzsfXwKk']);
 const ASAHI_IDS = new Set(['zxBWg4zxTkQ', 'wBv-MYAf9P0']);
 const VETERANS_IDS = new Set(['cblvugIloOc']);
 
