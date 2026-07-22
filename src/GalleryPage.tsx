@@ -403,6 +403,8 @@ import donors_3  from './img/gallery/donors/donors_3.jpeg';
 import donors_4  from './img/gallery/donors/donors_4.jpeg';
 import donors_5  from './img/gallery/donors/donors_5.jpeg';
 import donors_6  from './img/gallery/donors/donors_6.jpeg';
+import donors_6a  from './img/gallery/donors/donors_6a.jpeg';
+import donors_6b  from './img/gallery/donors/donors_6b.jpeg';
 import donors_7  from './img/gallery/donors/donors_7.jpeg';
 import donors_8  from './img/gallery/donors/donors_8.jpeg';
 import donors_9  from './img/gallery/donors/donors_9.jpeg';
@@ -565,6 +567,12 @@ const DONORS_IMAGES: GalleryImage[] = [
   { src: donors_4, alt: 'Donors' },
   { src: donors_5, alt: 'Donors' },
   { src: donors_6, alt: 'Donors' },
+  { src: donors_6a, 
+    alt: 'snow lantern',
+    caption: <>Dr. Soichi Isomura and Frances Imai family donated the snow lantern.  This will go beside the lantern donor Isomura/Imai.</>, },
+  { src: donors_6b, 
+    alt: 'snow lantern',
+    caption: <>This lantern and Tsuru were donated by Stephen and Dianne Tasaka Family.</>, },
   { src: donors_7, alt: 'Donors' },
   { src: donors_8, alt: 'Donors' },
   { src: donors_9, alt: 'Donors' },
