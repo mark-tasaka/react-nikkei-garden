@@ -1987,6 +1987,11 @@ const INTERNEES2_IMAGES: GalleryImage[] = [
         <>Japanese Canadian old-timers who remained in Greenwood.</>
       ),
     },
+
+  ];
+
+ const MEMOIRS_IMAGES: GalleryImage[] = [
+
     {
       src: internees_4,
       alt: 'Tsuneo Miki',
@@ -1996,6 +2001,7 @@ const INTERNEES2_IMAGES: GalleryImage[] = [
     },
 
   ];
+
 const HOUSING_IMAGES: GalleryImage[] = [
     {
       src: housing1943_4,
@@ -3248,7 +3254,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'internment', title: 'Historical Photos' },
     { filterKey: 'internment', title: 'Early Internees 1942-45: Gallery 1' },
     { filterKey: 'internment', title: 'Early Internees 1942-45: Gallery 2' },
-    { filterKey: 'internment', title: 'Internment 1945-46' },
+    { filterKey: 'internment', title: 'Memoirs of the Internment' },
     { filterKey: 'community', title: 'Sacred Heart School Life: Gallery 1' },
     { filterKey: 'community', title: 'Sacred Heart School Life: Gallery 2' },
     { filterKey: 'community', title: 'United Church' },
@@ -3414,6 +3420,7 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Historical Photos') && <Carousel images={BW_IMAGES}   title="Historical Photos" />}
           {matchesQuery('Early Internees 1942-45: Gallery 1') && <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45: Gallery 1" />}
           {matchesQuery('Early Internees 1942-45: Gallery 2') && <Carousel images={INTERNEES2_IMAGES} title="Early Internees 1942-45: Gallery 2" />}
+          {matchesQuery('Memoirs of the Internment') && <Carousel images={MEMOIRS_IMAGES} title="Memoirs of the Internment" />}
         </>
       )}
       {(filter === 'all' || filter === 'community') && (
