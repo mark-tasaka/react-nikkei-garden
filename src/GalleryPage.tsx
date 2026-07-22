@@ -239,6 +239,7 @@ import sacredHeart_14  from './img/gallery/SacredHeart/sacredHeart_14.jpg';
 import sacredHeart_15  from './img/gallery/SacredHeart/sacredHeart_15.jpg';
 import sacredHeart_16  from './img/gallery/SacredHeart/sacredHeart_16.jpg';
 import sacredHeart_17  from './img/gallery/SacredHeart/sacredHeart_17.jpg';
+import sacredHeart_18  from './img/gallery/SacredHeart/sacredHeart_18.jpg';
 
 import sawmill_1  from './img/gallery/sawmills/sawmill_1.jpg';
 import sawmill_2  from './img/gallery/sawmills/sawmill_2.jpg';
@@ -253,6 +254,7 @@ import unitedChurch_3  from './img/gallery/unitedChurch/unitedChurch_3.jpg';
 import unitedChurch_4  from './img/gallery/unitedChurch/unitedChurch_4.jpg';
 import unitedChurch_5  from './img/gallery/unitedChurch/unitedChurch_5.jpg';
 import unitedChurch_6  from './img/gallery/unitedChurch/unitedChurch_6.jpg';
+import unitedChurch_7  from './img/gallery/unitedChurch/unitedChurch_7.jpg';
 
 import cementery_1  from './img/gallery/cementery/cementery_1.jpg';
 import cementery_2  from './img/gallery/cementery/cementery_2.jpg';
@@ -2405,6 +2407,18 @@ const SACREDHEART_IMAGES: GalleryImage[] = [
       ),
     },
     {
+      src: sacredHeart_17,
+      alt: 'Sacred Heart Church',
+      caption: (
+        <>Franciscans of the Atonement’s contribution to Greenwood was enormous.  </>
+      ),
+    },
+  ];
+
+
+const SACREDHEART2_IMAGES: GalleryImage[] = [
+
+    {
       src: sacredHeart_12,
       alt: 'Sacred Heart Church',
       caption: (
@@ -2437,14 +2451,13 @@ const SACREDHEART_IMAGES: GalleryImage[] = [
       ),
     },
     {
-      src: sacredHeart_17,
+      src: sacredHeart_18,
       alt: 'Sacred Heart Church',
       caption: (
-        <>Franciscans of the Atonement’s contribution to Greenwood was enormous.  </>
+        <>SHS students preparing to ride the float in the Labour Day parade in the 40’s. </>
       ),
     },
-  ];
-
+];
   
 const UNITEDCHURCH_IMAGES: GalleryImage[] = [
     {
@@ -2484,15 +2497,16 @@ const UNITEDCHURCH_IMAGES: GalleryImage[] = [
     {
       src: unitedChurch_5,
       alt: 'United Church',
-      caption: (
-        <></>
-      ),
     },
     {
       src: unitedChurch_6,
       alt: 'United Church',
+    },
+    {
+      src: unitedChurch_7,
+      alt: 'Vyvyan Ishiwara graduated from United Church kindergarten in 1945.',
       caption: (
-        <></>
+        <>Vyvyan Ishiwara graduated from United Church kindergarten in 1945.</>
       ),
     },
   ];
@@ -3166,7 +3180,8 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'internment', title: 'Historical Photos' },
     { filterKey: 'internment', title: 'Early Internees 1942-45' },
     { filterKey: 'internment', title: 'Internment 1945-46' },
-    { filterKey: 'community', title: 'Sacred Heart School Life' },
+    { filterKey: 'community', title: 'Sacred Heart School Life: Gallery 1' },
+    { filterKey: 'community', title: 'Sacred Heart School Life: Gallery 2' },
     { filterKey: 'community', title: 'United Church' },
     { filterKey: 'community', title: 'Labour Day Parades 1940s' },
     { filterKey: 'community', title: 'Labour Day Parades 1950s' },
@@ -3326,12 +3341,12 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Train Station Farewell') && <Carousel images={FAREWELL_IMAGES} title="Train Station Farewell" />}
           {matchesQuery('Historical Photos') && <Carousel images={BW_IMAGES}   title="Historical Photos" />}
           {matchesQuery('Early Internees 1942-45') && <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45" />}
-          {/* {matchesQuery('Internment 1945-46') && <Carousel images={INTERMENT1945_IMAGES} title="Internment 1945-46" />} */}
         </>
       )}
       {(filter === 'all' || filter === 'community') && (
         <>
-          {matchesQuery('Sacred Heart School Life') && <Carousel images={SACREDHEART_IMAGES} title="Sacred Heart School Life" />}
+          {matchesQuery('Sacred Heart School Life: Gallery 1') && <Carousel images={SACREDHEART_IMAGES} title="Sacred Heart School Life: Gallery 1" />}
+          {matchesQuery('Sacred Heart School Life: Gallery 2') && <Carousel images={SACREDHEART2_IMAGES} title="Sacred Heart School Life: Gallery 2" />}
           {matchesQuery('United Church') && <Carousel images={UNITEDCHURCH_IMAGES} title="United Church" />}
           {matchesQuery('Labour Day Parades 1940s') && <Carousel images={LAOBUR_DAY_IMAGES} title="Labour Day Parades 1940s" />}
           {matchesQuery('Labour Day Parades 1950s') && <Carousel images={LAOBUR_DAY1950_IMAGES} title="Labour Day Parades 1950s" />}
