@@ -1153,8 +1153,8 @@ const SNOW_FALLING_IMAGES: GalleryImage[] = [
   },
   {
     src: snowFalling_10,
-    alt: 'Local extras posing before the shoot.  Hiro I Iizuka, Amy Terada and Aiko Terashita.',
-    caption: <>Local extras posing before the shoot.  Hiro I Iizuka, Amy Terada and Aiko Terashita.</>,
+    alt: 'Local extras posing before the shoot.  Hiromi Iizuka, Amy Terada and Aiko Terashita.',
+    caption: <>Local extras posing before the shoot.  Hiromi Iizuka, Amy Terada and Aiko Terashita.</>,
   },
   {
     src: snowFalling_11,
@@ -1197,8 +1197,8 @@ const SNOW_FALLING2_IMAGES: GalleryImage[] = [
   },
   {
     src: snowFalling_18,
-    alt: 'Guide to being an extra in a movie.',
-    caption: <>Guide to being an extra in a movie.</>,
+    alt: 'Parade scene in front of Larsen Pharmacy. ',
+    caption: <>Parade scene in front of Larsen Pharmacy. </>,
   },
   {
     src: snowFalling_19,
@@ -1728,13 +1728,6 @@ const FAREWELL_IMAGES: GalleryImage[] = [
         <br /><br />
         Courtesy of Boundary Times</>,
   },
-      {
-      src: internment1946_1,
-      alt: 'Greenwood put on a skit for those leaving for Japan or East of the Rockies in 1945-46.',
-      caption: (
-        <>Greenwood put on a skit for those leaving for Japan or East of the Rockies in 1945-46.</>
-      ),
-    },
   {
     src: farewell_2,
     alt: 'Greenwood Japanese Canadians chose to go on the “exchange” ship in 1943',
@@ -1749,6 +1742,13 @@ const FAREWELL_IMAGES: GalleryImage[] = [
         <br /><br />
         Courtesy of Boundary Times</>,
   },
+      {
+      src: internment1946_1,
+      alt: 'Greenwood put on a skit for those leaving for Japan or East of the Rockies in 1945-46.',
+      caption: (
+        <>Greenwood put on a skit for those leaving for Japan or East of the Rockies in 1945-46.</>
+      ),
+    },
   {
     src: farewell_4,
     alt: 'Train station was a bustling place after 1945',
