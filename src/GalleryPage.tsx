@@ -410,6 +410,7 @@ import donors_6b  from './img/gallery/donors/donors_6b.jpeg';
 import donors_7  from './img/gallery/donors/donors_7.jpeg';
 import donors_8  from './img/gallery/donors/donors_8.jpeg';
 import donors_9  from './img/gallery/donors/donors_9.jpeg';
+import donors_10  from './img/gallery/donors/donors_10.jpeg';
 
 import snowFalling_1  from './img/gallery/snowFalling/snowFalling_1.jpeg';
 import snowFalling_2  from './img/gallery/snowFalling/snowFalling_2.jpeg';
@@ -578,6 +579,7 @@ const DONORS_IMAGES: GalleryImage[] = [
   { src: donors_7, alt: 'Donors' },
   { src: donors_8, alt: 'Donors' },
   { src: donors_9, alt: 'Donors' },
+  { src: donors_10, alt: 'Donors' },
 ];
 
 const OPENING_IMAGES: GalleryImage[] = [
