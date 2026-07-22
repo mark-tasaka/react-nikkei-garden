@@ -436,6 +436,11 @@ import snowFalling_20  from './img/gallery/snowFalling/snowFalling_20.jpeg';
 import snowFalling_21  from './img/gallery/snowFalling/snowFalling_21.jpeg';
 import snowFalling_22  from './img/gallery/snowFalling/snowFalling_22.jpeg';
 
+import reunion_1  from './img/gallery/reunion/reunion_1.jpeg';
+import reunion_2  from './img/gallery/reunion/reunion_2.jpeg';
+import reunion_3  from './img/gallery/reunion/reunion_3.jpeg';
+import reunion_4  from './img/gallery/reunion/reunion_4.jpeg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -1225,6 +1230,30 @@ const SNOW_FALLING2_IMAGES: GalleryImage[] = [
         Photo courtesy of George Yamaguchi</>,
   },
 
+];
+
+
+const REUNION_IMAGES: GalleryImage[] = [
+  {
+    src: reunion_1,
+    alt: 'Mary (Shigematsu) McKinnon, husband Bob, Rita (Bourgh) Frake and Dave Bombini.',
+    caption: <>Mary (Shigematsu) McKinnon, husband Bob, Rita (Bourgh) Frake and Dave Bombini.</>,
+  },
+  {
+    src: reunion_2,
+    alt: '1963 grad Bruce Kellie and wife Myrna.',
+    caption: <>1963 grad Bruce Kellie and wife Myrna.</>,
+  },
+  {
+    src: reunion_3,
+    alt: 'Lucy (Tasaka) Kitamura and Carol.',
+    caption: <>Lucy (Tasaka) Kitamura and Carol.</>,
+  },
+  {
+    src: reunion_4,
+    alt: 'Bonnie (Haines) Folvik and Doreen (Kakuno) Campbell',
+    caption: <>Bonnie (Haines) Folvik and Doreen (Kakuno) Campbell</>,
+  },
 ];
 
 const BUILDING_IMAGES: GalleryImage[] = [
@@ -3172,6 +3201,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'greenwood', title: '80th Anniversary of the JC Internment: 2022' },
     { filterKey: 'greenwood', title: 'Snow Falling on Cedars Movie: Gallery 1' },
     { filterKey: 'greenwood', title: 'Snow Falling on Cedars Movie: Gallery 2' },
+    { filterKey: 'greenwood', title: '1962 & 1963 High School Reunion in Greenwood 2026' },
     { filterKey: 'places', title: '1943 Japanese Canadian Housing' },
     { filterKey: 'places', title: 'Historical Buildings: Gallery 1' },
     { filterKey: 'places', title: 'Historical Buildings: Gallery 2' },
@@ -3325,6 +3355,9 @@ const GalleryPage: React.FC = () => {
           )}
           {matchesQuery('Snow Falling on Cedars Movie: Gallery 2') && (
             <Carousel images={SNOW_FALLING2_IMAGES} title="Snow Falling on Cedars Movie: Gallery 2" />
+          )}
+          {matchesQuery('1962 & 1963 High School Reunion in Greenwood 2026') && (
+            <Carousel images={REUNION_IMAGES} title="1962 & 1963 High School Reunion in Greenwood 2026" />
           )}
         </>
       )}
