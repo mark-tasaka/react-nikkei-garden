@@ -440,6 +440,12 @@ import reunion_1  from './img/gallery/reunion/reunion_1.jpeg';
 import reunion_2  from './img/gallery/reunion/reunion_2.jpeg';
 import reunion_3  from './img/gallery/reunion/reunion_3.jpeg';
 import reunion_4  from './img/gallery/reunion/reunion_4.jpeg';
+import reunion_5  from './img/gallery/reunion/reunion_5.jpeg';
+import reunion_6  from './img/gallery/reunion/reunion_6.jpeg';
+import reunion_7  from './img/gallery/reunion/reunion_7.jpeg';
+import reunion_8  from './img/gallery/reunion/reunion_8.jpeg';
+import reunion_9  from './img/gallery/reunion/reunion_9.jpeg';
+import reunion_10  from './img/gallery/reunion/reunion_10.jpeg';
 
 interface GalleryImage {
   src: string;
@@ -1253,6 +1259,36 @@ const REUNION_IMAGES: GalleryImage[] = [
     src: reunion_4,
     alt: 'Bonnie (Haines) Folvik and Doreen (Kakuno) Campbell',
     caption: <>Bonnie (Haines) Folvik and Doreen (Kakuno) Campbell</>,
+  },
+  {
+    src: reunion_5,
+    alt: 'Linda (Kleman), Fred, Eileen (Miki) Murao',
+    caption: <>Linda (Kleman), Fred, Eileen (Miki) Murao</>,
+  },
+  {
+    src: reunion_6,
+    alt: 'Bob, Mary and Rita',
+    caption: <>Bob, Mary and Rita</>,
+  },
+  {
+    src: reunion_7,
+    alt: 'Jim Campbell and wife Doreen',
+    caption: <>Jim Campbell and wife Doreen</>,
+  },
+  {
+    src: reunion_8,
+    alt: 'Robert Hamaguchi with Carol',
+    caption: <>Robert Hamaguchi with Carol</>,
+  },
+  {
+    src: reunion_9,
+    alt: 'Lucy and Robert',
+    caption: <>Lucy and Robert</>,
+  },
+  {
+    src: reunion_10,
+    alt: 'Ross Pomeroy and Chuck Tasaka',
+    caption: <>Ross Pomeroy and Chuck Tasaka</>,
   },
 ];
 
