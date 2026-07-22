@@ -138,6 +138,7 @@ import buildingArticle_3  from './img/gallery/misc/building_article3.jpg';
 import buildingArticle_4  from './img/gallery/misc/building_article4.jpg';
 import buildingArticle_5  from './img/gallery/misc/building_article5.jpg';
 import ohairi_6  from './img/gallery/misc/ohairi-park-6.JPG';
+import internees_4  from './img/gallery/misc/internees_4.jpg';
 
 import buildings_1  from './img/gallery/buildings/buildings_1.jpg';
 import buildings_2  from './img/gallery/buildings/buildings_2.jpg';
@@ -1881,6 +1882,10 @@ const INTERNEES_IMAGES: GalleryImage[] = [
           Photo courtesy of Greenwood Museum</>
       ),
     },
+];
+
+const INTERNEES2_IMAGES: GalleryImage[] = [
+
     {
       src: interneeArticle_1,
       alt: '',
@@ -1917,19 +1922,15 @@ const INTERNEES_IMAGES: GalleryImage[] = [
         <>Japanese Canadian old-timers who remained in Greenwood.</>
       ),
     },
-];
+    {
+      src: internees_4,
+      alt: 'Tsuneo Miki',
+      caption: (
+        <>Tsuneo Miki is left holding the bag when they got off the train in Greenwood.</>
+      ),
+    },
 
-
-// const INTERMENT1945_IMAGES: GalleryImage[] = [
-//     {
-//       src: internment1946_1,
-//       alt: 'Greenwood put on a skit for those leaving for Japan or East of the Rockies in 1945-46.',
-//       caption: (
-//         <>Greenwood put on a skit for those leaving for Japan or East of the Rockies in 1945-46.</>
-//       ),
-//     },
-//   ];
-
+  ];
 const HOUSING_IMAGES: GalleryImage[] = [
     {
       src: housing1943_4,
@@ -3178,9 +3179,9 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'places', title: 'Sawmill & Logging Industry in Greenwood' },
     { filterKey: 'places', title: 'Greenwood Cemetery' },
     { filterKey: 'internment', title: 'Arrival of Japanese Canadians to Greenwood: 1942' },
-    // { filterKey: 'internment', title: 'Train Station Farewell' },
     { filterKey: 'internment', title: 'Historical Photos' },
-    { filterKey: 'internment', title: 'Early Internees 1942-45' },
+    { filterKey: 'internment', title: 'Early Internees 1942-45: Gallery 1' },
+    { filterKey: 'internment', title: 'Early Internees 1942-45: Gallery 2' },
     { filterKey: 'internment', title: 'Internment 1945-46' },
     { filterKey: 'community', title: 'Sacred Heart School Life: Gallery 1' },
     { filterKey: 'community', title: 'Sacred Heart School Life: Gallery 2' },
@@ -3342,7 +3343,8 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Arrival of Japanese Canadians to Greenwood: 1942') && <Carousel images={BW_IMAGES_2} title="Arrival of Japanese Canadians to Greenwood: 1942" />}
           {matchesQuery('Train Station Farewell') && <Carousel images={FAREWELL_IMAGES} title="Train Station Farewell" />}
           {matchesQuery('Historical Photos') && <Carousel images={BW_IMAGES}   title="Historical Photos" />}
-          {matchesQuery('Early Internees 1942-45') && <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45" />}
+          {matchesQuery('Early Internees 1942-45: Gallery 1') && <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45: Gallery 1" />}
+          {matchesQuery('Early Internees 1942-45: Gallery 2') && <Carousel images={INTERNEES2_IMAGES} title="Early Internees 1942-45: Gallery 2" />}
         </>
       )}
       {(filter === 'all' || filter === 'community') && (
