@@ -812,7 +812,7 @@ const ARTICLES: ArticleEntry[] = [
     source:    'Google Docs',
     sourceUrl: 'https://docs.google.com/presentation/d/1uHE1JpHBO_BRKU67kzjFOHvm_1iPNJKTVYWokVjtMMQ/edit?slide=id.ge2b17be85f_2_91#slide=id.ge2b17be85f_2_91',
     title:     'The Internment of Japanese Canadians',
-    author:    'Leah Kitamura-Gilmore',
+    author:    'Leah Kitamura-Gilmore & Yin Tsia',
     date:      'March 1, 2026',
     link:      'https://docs.google.com/presentation/d/1uHE1JpHBO_BRKU67kzjFOHvm_1iPNJKTVYWokVjtMMQ/edit?slide=id.ge2b17be85f_2_91#slide=id.ge2b17be85f_2_91',
     excerpt:   'The Internment of Japanese Canadians 1942-1949 Click on the book or artifact beside the laptops for a description of the topic. Click on the laptops for lesson plans and graphic organizers',
