@@ -140,6 +140,12 @@ import buildingArticle_5  from './img/gallery/misc/building_article5.jpg';
 import ohairi_6  from './img/gallery/misc/ohairi-park-6.JPG';
 import internees_4  from './img/gallery/misc/internees_4.jpg';
 import internees_6  from './img/gallery/misc/internees_6.jpg';
+import internees_7  from './img/gallery/misc/internees_7.jpg';
+import internees_8  from './img/gallery/misc/internees_8.jpg';
+import internees_9  from './img/gallery/misc/internees_9.jpg';
+import internees_10  from './img/gallery/misc/internees_10.jpg';
+import internees_11  from './img/gallery/misc/internees_11.jpg';
+import internees_12  from './img/gallery/misc/internees_12.jpg';
 
 import buildings_1  from './img/gallery/buildings/buildings_1.jpg';
 import buildings_2  from './img/gallery/buildings/buildings_2.jpg';
@@ -2021,6 +2027,56 @@ const INTERNEES2_IMAGES: GalleryImage[] = [
       alt: 'Jim Tateyama with aunt Ume-chan (Hamanishi) Kozai',
       caption: (
         <>Little boy is Jim Tateyama with aunt Ume-chan (Hamanishi) Kozai.  House in the background left is where Madame Kiyoko Tanaka-Goto stayed.</>
+      ),
+    },
+    {
+      src: internees_7,
+      alt: 'Kimi Kutsukake and daughter Naomi',
+      caption: (
+        <>Kimi Kutsukake and daughter Naomi.</>
+      ),
+    },
+    {
+      src: internees_8,
+      alt: 'Back Gladys Floyd and Ruby Noda. Front: ? Anna Fujisawa and Hedy Shimono  photo: Gladys Floyd',
+      caption: (
+        <>Back Gladys Floyd and Ruby Noda. Front: ? Anna Fujisawa and Hedy Shimono  
+          <br /><br />
+          Photo courtesy of Gladys Floyd</>
+      ),
+    },
+    {
+      src: internees_9,
+      alt: 'Early class photo of Greenwood High School',
+      caption: (
+        <>Early class photo of Greenwood High School 
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: internees_10,
+      alt: 'Graduation Midori Miyashita, Sumi Tabata and Miho Hasebe.',
+      caption: (
+        <>Graduation Midori Miyashita, Sumi Tabata and Miho Hasebe.
+          <br /><br />
+          Photo courtesy of Ron Koyanagi</>
+      ),
+    },
+    {
+      src: internees_11,
+      alt: '',
+      // caption: (
+      //   <>Graduation Midori Miyashita, Sumi Tabata and Miho Hasebe.
+      //     <br /><br />
+      //     Photo courtesy of Ron Koyanagi</>
+      // ),
+    },
+    {
+      src: internees_12,
+      alt: 'Teresa Kurisu and Marion Maclean',
+      caption: (
+        <>Teresa Kurisu and Marion Maclean became fast friends when Teresa’s mother got sick and was placed in Windsor Hotel of Marion’s parents.</>
       ),
     },
 
