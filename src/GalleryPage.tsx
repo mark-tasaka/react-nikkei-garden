@@ -532,10 +532,10 @@ const NIKKEIPARK_IMAGES: GalleryImage[] = [
     caption: <>This rock garden was made to symbolize the revival of Greenwood.  Stone in front is Deadwood.  Behind is Phoenix. Next to Greenwood is Anaconda.  Closest stone is Boundary Falls.  Farthest north is Eholt.  All the outlying places became more or less ghost towns.  Greenwood survived and revived.</>, },
   { src: nikkeiPark_10, 
     alt: 'Bench Nikkei Legacy Park' ,
-    caption: <>Mayor W.E. McArthur Sr. was instrumental in inviting the Japanese Canadian to Greenwood in 1942 which changed the course of history.</>, },
+    caption: <>Mayor W.E. McArthur Sr memorial bench.</>, },
   { src: nikkeiPark_11, 
     alt: 'Bench Nikkei Legacy Park' ,
-    caption: <>Mayor W.E. McArthur Sr. was instrumental in inviting the Japanese Canadian to Greenwood in 1942 which changed the course of history.</>, },
+    caption: <>Mayor W.E. McArthur Sr memorial bench.</>, },
 ];
 
 
@@ -561,7 +561,7 @@ const PANEL_IMAGES: GalleryImage[] = [
     
     caption: <>Map of the Internment buildings by Route 3 Print Studio.</>,
    },
-  { src: panel2026_12, alt: 'Panels June 2026, Photo 12' },
+  // { src: panel2026_12, alt: 'Panels June 2026, Photo 12' },
 ];
 
 
@@ -573,6 +573,7 @@ const TRIBUTE_IMAGES: GalleryImage[] = [
   { src: tribute_5, alt: 'Tribute Image 5' },
   { src: tribute_6, alt: 'Tribute Image 6' },
   { src: tribute_7, alt: 'Tribute Image 7' },
+  { src: panel2026_12, alt: 'Panels June 2026, Photo 12' },
 ];
 
 const DONORS_IMAGES: GalleryImage[] = [
@@ -1243,52 +1244,72 @@ const REUNION_IMAGES: GalleryImage[] = [
   {
     src: reunion_1,
     alt: 'Mary (Shigematsu) McKinnon, husband Bob, Rita (Bourgh) Frake and Dave Bombini.',
-    caption: <>Mary (Shigematsu) McKinnon, husband Bob, Rita (Bourgh) Frake and Dave Bombini.</>,
+    caption: <>Mary (Shigematsu) McKinnon, husband Bob, Rita (Bourgh) Frake and Dave Bombini.
+        <br /><br />
+        Photo courtesy of Eileen (Miki) Murao</>,
   },
   {
     src: reunion_2,
     alt: '1963 grad Bruce Kellie and wife Myrna.',
-    caption: <>1963 grad Bruce Kellie and wife Myrna.</>,
+    caption: <>1963 grad Bruce Kellie and wife Myrna.
+        <br /><br />
+        Photo courtesy of Eileen (Miki) Murao</>,
   },
   {
     src: reunion_3,
     alt: 'Lucy (Tasaka) Kitamura and Carol.',
-    caption: <>Lucy (Tasaka) Kitamura and Carol.</>,
+    caption: <>Lucy (Tasaka) Kitamura and Carol.
+        <br /><br />
+        Photo courtesy of Eileen (Miki) Murao</>,
   },
   {
     src: reunion_4,
     alt: 'Bonnie (Haines) Folvik and Doreen (Kakuno) Campbell',
-    caption: <>Bonnie (Haines) Folvik and Doreen (Kakuno) Campbell</>,
+    caption: <>Bonnie (Haines) Folvik and Doreen (Kakuno) Campbell
+        <br /><br />
+        Photo courtesy of Eileen (Miki) Murao</>,
   },
   {
     src: reunion_5,
     alt: 'Linda (Kleman), Fred, Eileen (Miki) Murao',
-    caption: <>Linda (Kleman), Fred, Eileen (Miki) Murao</>,
+    caption: <>Linda (Kleman), Fred, Eileen (Miki) Murao
+        <br /><br />
+        Photo courtesy of Eileen (Miki) Murao</>,
   },
   {
     src: reunion_6,
     alt: 'Bob, Mary and Rita',
-    caption: <>Bob, Mary and Rita</>,
+    caption: <>Bob, Mary and Rita
+        <br /><br />
+        Photo courtesy of Eileen (Miki) Murao</>,
   },
   {
     src: reunion_7,
     alt: 'Jim Campbell and wife Doreen',
-    caption: <>Jim Campbell and wife Doreen</>,
+    caption: <>Jim Campbell and wife Doreen
+        <br /><br />
+        Photo courtesy of Eileen (Miki) Murao</>,
   },
   {
     src: reunion_8,
     alt: 'Robert Hamaguchi with Carol',
-    caption: <>Robert Hamaguchi with Carol</>,
+    caption: <>Robert Hamaguchi with Carol
+        <br /><br />
+        Photo courtesy of Eileen (Miki) Murao</>,
   },
   {
     src: reunion_9,
     alt: 'Lucy and Robert',
-    caption: <>Lucy and Robert</>,
+    caption: <>Lucy and Robert
+        <br /><br />
+        Photo courtesy of Eileen (Miki) Murao</>,
   },
   {
     src: reunion_10,
     alt: 'Ross Pomeroy and Chuck Tasaka',
-    caption: <>Ross Pomeroy and Chuck Tasaka</>,
+    caption: <>Ross Pomeroy and Chuck Tasaka
+        <br /><br />
+        Photo courtesy of Eileen (Miki) Murao</>,
   },
 ];
 
