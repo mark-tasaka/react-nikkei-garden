@@ -139,6 +139,7 @@ import buildingArticle_4  from './img/gallery/misc/building_article4.jpg';
 import buildingArticle_5  from './img/gallery/misc/building_article5.jpg';
 import ohairi_6  from './img/gallery/misc/ohairi-park-6.JPG';
 import internees_4  from './img/gallery/misc/internees_4.jpg';
+import internees_6  from './img/gallery/misc/internees_6.jpg';
 
 import buildings_1  from './img/gallery/buildings/buildings_1.jpg';
 import buildings_2  from './img/gallery/buildings/buildings_2.jpg';
@@ -397,6 +398,7 @@ import farewell_4  from './img/gallery/farewell/farewell_4.jpg';
 import farewell_5  from './img/gallery/farewell/farewell_5.jpg';
 import farewell_6  from './img/gallery/farewell/farewell_6.jpg';
 import farewell_7  from './img/gallery/farewell/farewell_7.jpg';
+import farewell_8  from './img/gallery/farewell/farewell_8.jpg';
 
 import internment1946_1  from './img/gallery/internment1946/internment1946_1.jpg';
 
@@ -1857,6 +1859,12 @@ const FAREWELL_IMAGES: GalleryImage[] = [
     alt: 'Leaving Greenwood was bittersweet.',
     caption: <>By the 1950's, Japanese Canadians were given the freedom as Canadian citizens so they were able to move back to the coast like former fishermen to resume their occupation in Steveston.  There were more job opportunities in cities like Vancouver.</>,
   },
+  {
+    src: farewell_8,
+    alt: 'train station scene is Greenwood',
+    caption: <>This train station scene is Greenwood.  Young lady far left with books is Nobuko Hamanishi.  Older lady with a bag in her arms is Tei Terashita.  Lady with glasses on the train steps is Mrs. Kawabata.
+</>,
+  }
 ];
 
 const INTERNEES_IMAGES: GalleryImage[] = [
@@ -2006,6 +2014,13 @@ const INTERNEES2_IMAGES: GalleryImage[] = [
       alt: 'Japanese Canadian old-timers who remained in Greenwood.',
       caption: (
         <>Japanese Canadian old-timers who remained in Greenwood.</>
+      ),
+    },
+    {
+      src: internees_6,
+      alt: 'Jim Tateyama with aunt Ume-chan (Hamanishi) Kozai',
+      caption: (
+        <>Little boy is Jim Tateyama with aunt Ume-chan (Hamanishi) Kozai.  House in the background left is where Madame Kiyoko Tanaka-Goto stayed.</>
       ),
     },
 
