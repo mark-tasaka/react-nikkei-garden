@@ -539,11 +539,9 @@ const NIKKEIPARK_IMAGES: GalleryImage[] = [
     
     caption: <>This rock garden was made to symbolize the revival of Greenwood.  Stone in front is Deadwood.  Behind is Phoenix. Next to Greenwood is Anaconda.  Closest stone is Boundary Falls.  Farthest north is Eholt.  All the outlying places became more or less ghost towns.  Greenwood survived and revived.</>, },
   { src: nikkeiPark_10, 
-    alt: 'Bench Nikkei Legacy Park' ,
-    caption: <>Mayor W.E. McArthur Sr memorial bench.</>, },
+    alt: 'Bench Nikkei Legacy Park' ,},
   { src: nikkeiPark_11, 
-    alt: 'Bench Nikkei Legacy Park' ,
-    caption: <>Mayor W.E. McArthur Sr memorial bench.</>, },
+    alt: 'Bench Nikkei Legacy Park' , },
 ];
 
 
@@ -2066,11 +2064,11 @@ const INTERNEES2_IMAGES: GalleryImage[] = [
     {
       src: internees_11,
       alt: '',
-      // caption: (
-      //   <>Graduation Midori Miyashita, Sumi Tabata and Miho Hasebe.
-      //     <br /><br />
-      //     Photo courtesy of Ron Koyanagi</>
-      // ),
+      caption: (
+        <>Nancy Araki and Barbara Sakamoto are taking a break.
+          <br /><br />
+          Photo courtesy of Ron Koyanagi</>
+      ),
     },
     {
       src: internees_12,
