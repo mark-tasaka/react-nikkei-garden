@@ -457,6 +457,14 @@ import reunion_10  from './img/gallery/reunion/reunion_10.jpeg';
 
 import kozo_1  from './img/gallery/kozo/kozo_1.jpg';
 import kozo_2  from './img/gallery/kozo/kozo_2.jpg';
+import kozo_3  from './img/gallery/kozo/kozo_3.jpg';
+import kozo_4  from './img/gallery/kozo/kozo_4.jpg';
+import kozo_5  from './img/gallery/kozo/kozo_5.jpg';
+import kozo_6  from './img/gallery/kozo/kozo_6.jpg';
+import kozo_7  from './img/gallery/kozo/kozo_7.jpg';
+import kozo_8  from './img/gallery/kozo/kozo_8.jpg';
+import kozo_9  from './img/gallery/kozo/kozo_9.jpg';
+import kozo_10  from './img/gallery/kozo/kozo_10.jpg';
 
 interface GalleryImage {
   src: string;
@@ -2107,7 +2115,61 @@ const INTERNEES2_IMAGES: GalleryImage[] = [
       src: kozo_2,
       alt: '”Slum Dogs” of Greenwood',
       caption: (
-        <>Mitsui-chan who worked at Hotel Vancouver came to Greenwood around 1948 to take a photo of the ”Slum Dogs” of Greenwood.  Translation into English.  Hachiro, Yayeko, Yoko, Stephen, Betty Kariya, Kazue Yoshida, Kikuko and Kazuko.</>
+        <>Mitsui-chan who worked at Hotel Vancouver came to Greenwood around 1948 to take a photo of the 'Slum Dogs' of Greenwood.  Translation into English.  Hachiro, Yayeko, Yoko, Stephen, Betty Kariya, Kazue Yoshida, Kikuko and Kazuko.</>
+      ),
+    },
+    {
+      src: kozo_3,
+      alt: 'Swimming Hole at First Bridge. 40’s kids taking a break.',
+      caption: (
+        <>Swimming Hole at First Bridge. 40’s kids taking a break.
+          <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: kozo_4,
+      alt: 'United Church kindergarten graduation.',
+      caption: (
+        <>United Church kindergarten graduation.</>
+      ),
+    },
+    {
+      src: kozo_5,
+      alt: 'Classic photo of integration.',
+      caption: (
+        <>Classic photo of integration.</>
+      ),
+    },
+    {
+      src: kozo_7,
+      alt: 'Children are all dressed up.  Labour Day?',
+      caption: (
+        <>Children are all dressed up.  Labour Day?</>
+      ),
+    },
+    {
+      src: kozo_8,
+      alt: 'Greenwood Kozo',
+      caption: (
+        <>
+          Photo courtesy of George Takahashi (Ontario).</>
+      ),
+    },
+    {
+      src: kozo_9,
+      alt: 'Greenwood Kozo',
+      caption: (
+        <>
+          Photo courtesy of George Takahashi (Ontario).</>
+      ),
+    },
+    {
+      src: kozo_10,
+      alt: 'Greenwood Kozo',
+      caption: (
+        <>
+          Photo courtesy of George Takahashi (Ontario).</>
       ),
     },
 
