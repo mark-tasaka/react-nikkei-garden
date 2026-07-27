@@ -3510,7 +3510,21 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Historical Photos') && <Carousel images={BW_IMAGES}   title="Historical Photos" />}
           {matchesQuery('Early Internees 1942-45: Gallery 1') && <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45: Gallery 1" />}
           {matchesQuery('Early Internees 1942-45: Gallery 2') && <Carousel images={INTERNEES2_IMAGES} title="Early Internees 1942-45: Gallery 2" />}
-          {matchesQuery('Memoirs of the Internment') && <Carousel images={MEMOIRS_IMAGES} title="Memoirs of the Internment" />}
+          {matchesQuery('Memoirs of the Internment') && (
+            <>
+              <Carousel images={MEMOIRS_IMAGES} title="Memoirs of the Internment" />
+              <p className="gallery-section-link">
+                Featured article:{' '}
+                
+                 <a href="/pdf/TsuneoMiki.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tsuneo's memoirs of Greenwood and his older brother Ichio Miki
+                </a>
+              </p>
+            </>
+          )}
         </>
       )}
       {(filter === 'all' || filter === 'community') && (
