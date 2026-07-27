@@ -455,6 +455,9 @@ import reunion_8  from './img/gallery/reunion/reunion_8.jpeg';
 import reunion_9  from './img/gallery/reunion/reunion_9.jpeg';
 import reunion_10  from './img/gallery/reunion/reunion_10.jpeg';
 
+import kozo_1  from './img/gallery/kozo/kozo_1.jpg';
+import kozo_2  from './img/gallery/kozo/kozo_2.jpg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -2092,6 +2095,24 @@ const INTERNEES2_IMAGES: GalleryImage[] = [
 
   ];
 
+ const KOZO_IMAGES: GalleryImage[] = [
+    {
+      src: kozo_1,
+      alt: 'Hamaguchi Boys: Jiro, Miki, Tak, Shogo and Ted.',
+      caption: (
+        <>Hamaguchi Boys: Jiro, Miki, Tak, Shogo and Ted.</>
+      ),
+    },
+    {
+      src: kozo_2,
+      alt: '”Slum Dogs” of Greenwood',
+      caption: (
+        <>Mitsui-chan who worked at Hotel Vancouver came to Greenwood around 1948 to take a photo of the ”Slum Dogs” of Greenwood.  Translation into English.  Hachiro, Yayeko, Yoko, Stephen, Betty Kariya, Kazue Yoshida, Kikuko and Kazuko.</>
+      ),
+    },
+
+  ];
+
 const HOUSING_IMAGES: GalleryImage[] = [
     {
       src: housing1943_4,
@@ -3344,6 +3365,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'internment', title: 'Historical Photos' },
     { filterKey: 'internment', title: 'Early Internees 1942-45: Gallery 1' },
     { filterKey: 'internment', title: 'Early Internees 1942-45: Gallery 2' },
+    { filterKey: 'internment', title: 'Greenwood Kozo' },
     { filterKey: 'internment', title: 'Memoirs of the Internment' },
     { filterKey: 'community', title: 'Sacred Heart School Life: Gallery 1' },
     { filterKey: 'community', title: 'Sacred Heart School Life: Gallery 2' },
@@ -3510,6 +3532,7 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Historical Photos') && <Carousel images={BW_IMAGES}   title="Historical Photos" />}
           {matchesQuery('Early Internees 1942-45: Gallery 1') && <Carousel images={INTERNEES_IMAGES} title="Early Internees 1942-45: Gallery 1" />}
           {matchesQuery('Early Internees 1942-45: Gallery 2') && <Carousel images={INTERNEES2_IMAGES} title="Early Internees 1942-45: Gallery 2" />}
+          {matchesQuery('Greenwood Kozo') && <Carousel images={KOZO_IMAGES} title="Greenwood Kozo" />}
           {matchesQuery('Memoirs of the Internment') && (
             <>
               <Carousel images={MEMOIRS_IMAGES} title="Memoirs of the Internment" />
