@@ -146,6 +146,7 @@ import internees_9  from './img/gallery/misc/internees_9.jpg';
 import internees_10  from './img/gallery/misc/internees_10.jpg';
 import internees_11  from './img/gallery/misc/internees_11.jpg';
 import internees_12  from './img/gallery/misc/internees_12.jpg';
+import miki  from './img/gallery/misc/miki.jpg';
 
 import buildings_1  from './img/gallery/buildings/buildings_1.jpg';
 import buildings_2  from './img/gallery/buildings/buildings_2.jpg';
@@ -2099,6 +2100,10 @@ const INTERNEES2_IMAGES: GalleryImage[] = [
       caption: (
         <>Tsuneo Miki is left holding the bag when they got off the train in Greenwood.</>
       ),
+    },
+    {
+      src: miki,
+      alt: 'Tsuneo Miki Panel',
     },
 
   ];
