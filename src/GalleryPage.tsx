@@ -479,6 +479,11 @@ import museum_2  from './img/gallery/museum/museum_2.jpeg';
 import museum_3  from './img/gallery/museum/museum_3.jpeg';
 import museum_4  from './img/gallery/museum/museum_4.jpeg';
 import museum_5  from './img/gallery/museum/museum_5.jpeg';
+import museum_6  from './img/gallery/museum/museum_6.jpeg';
+import museum_7  from './img/gallery/museum/museum_7.jpeg';
+import museum_8  from './img/gallery/museum/museum_8.jpeg';
+import museum_9  from './img/gallery/museum/museum_9.jpeg';
+import museum_10  from './img/gallery/museum/museum_10.jpeg';
 
 interface GalleryImage {
   src: string;
@@ -1355,28 +1360,53 @@ const REUNION_IMAGES: GalleryImage[] = [
 const MUSEUM_IMAGES: GalleryImage[] = [
   {
     src: museum_1,
-    alt: 'Museum Image 1',
+    alt: 'Spotted Horse Mine',
     caption: <>Spotted Horse mine was one of many claims.  The building was elongated like a horse’s nose.  As children, we dared to walk inside the dark cave.</>,
   },
   {
     src: museum_2,
-    alt: 'Museum Image 2',
+    alt: 'Greenwood Smelter',
     caption: <>Greenwood Smelter owned by American company strangely named B.C. Copper Smelter Co.</>,
   },
   {
     src: museum_3,
-    alt: 'Museum Image 3',
+    alt: 'Map of Mining Claims',
     caption: <>Map of the many mining claims in the area.</>,
   },
   {
     src: museum_4,
-    alt: 'Museum Image 4',
+    alt: 'Sikh Railroad Builders',
     caption: <>Sikhs worked built railroads from Mother Lode to the smelter.</>,
   },
   {
     src: museum_5,
-    alt: 'Museum Image 5',
+    alt: 'Mineral Monument',
     caption: <>Mineral Monument.</>,
+  },
+  {
+    src: museum_6,
+    alt: 'Cooke Lumber Co.',
+    caption: <>Cooke Lumber Co. where many JCs worked year round and for summer employment for university students.</>,
+  },
+  {
+    src: museum_7,
+    alt: 'Chinese Laundry',
+    caption: <>Chinese Laundry on Gold and Silver Street.</>,
+  },
+  {
+    src: museum_8,
+    alt: 'Modiste Apparel Shop',
+    caption: <>Modiste Apparel Shop</>,
+  },
+  {
+    src: museum_9,
+    alt: 'Gulley General Store',
+    caption: <>Gulley General Store.</>,
+  },
+  {
+    src: museum_10,
+    alt: 'Building #3',
+    caption: <>Later became #3 Building to the Japanese Canadian families.</>,
   },
 ];
 
