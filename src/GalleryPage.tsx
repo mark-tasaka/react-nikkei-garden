@@ -484,6 +484,9 @@ import museum_7  from './img/gallery/museum/museum_7.jpeg';
 import museum_8  from './img/gallery/museum/museum_8.jpeg';
 import museum_9  from './img/gallery/museum/museum_9.jpeg';
 import museum_10  from './img/gallery/museum/museum_10.jpeg';
+import museum_11  from './img/gallery/museum/museum_11.jpeg';
+import museum_12  from './img/gallery/museum/museum_12.jpeg';
+import museum_13  from './img/gallery/museum/museum_13.jpeg';
 
 interface GalleryImage {
   src: string;
@@ -1407,6 +1410,21 @@ const MUSEUM_IMAGES: GalleryImage[] = [
     src: museum_10,
     alt: 'Building #3',
     caption: <>Later became #3 Building to the Japanese Canadian families.</>,
+  },
+  {
+    src: museum_11,
+    alt: 'Old phonograph or Chikounki',
+    caption: <>Old phonograph or Chikounki to the Japanese Issei.</>,
+  },
+  {
+    src: museum_12,
+    alt: 'Algoma Hotel',
+    caption: <>Algoma Hotel.  One of 26 hotels in town.</>,
+  },
+  {
+    src: museum_13,
+    alt: 'Famous outlaw who rode with Jesse James and Younger brothers in Missouri but died at the Sacred Heart Hospital in Greenwood.  He lived in Rock Creek.',
+    caption: <>Famous outlaw who rode with Jesse James and Younger brothers in Missouri but died at the Sacred Heart Hospital in Greenwood.  He lived in Rock Creek.</>,
   },
 ];
 
