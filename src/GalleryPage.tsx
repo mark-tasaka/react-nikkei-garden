@@ -474,6 +474,12 @@ import kozo_8  from './img/gallery/kozo/kozo_8.jpg';
 import kozo_9  from './img/gallery/kozo/kozo_9.jpg';
 import kozo_10  from './img/gallery/kozo/kozo_10.jpg';
 
+import museum_1  from './img/gallery/museum/museum_1.jpeg';
+import museum_2  from './img/gallery/museum/museum_2.jpeg';
+import museum_3  from './img/gallery/museum/museum_3.jpeg';
+import museum_4  from './img/gallery/museum/museum_4.jpeg';
+import museum_5  from './img/gallery/museum/museum_5.jpeg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -1344,6 +1350,36 @@ const REUNION_IMAGES: GalleryImage[] = [
         Photo courtesy of Eileen (Miki) Murao</>,
   },
 ];
+
+
+const MUSEUM_IMAGES: GalleryImage[] = [
+  {
+    src: museum_1,
+    alt: 'Museum Image 1',
+    caption: <>Spotted Horse mine was one of many claims.  The building was elongated like a horse’s nose.  As children, we dared to walk inside the dark cave.</>,
+  },
+  {
+    src: museum_2,
+    alt: 'Museum Image 2',
+    caption: <>Greenwood Smelter owned by American company strangely named B.C. Copper Smelter Co.</>,
+  },
+  {
+    src: museum_3,
+    alt: 'Museum Image 3',
+    caption: <>Map of the many mining claims in the area.</>,
+  },
+  {
+    src: museum_4,
+    alt: 'Museum Image 4',
+    caption: <>Sikhs worked built railroads from Mother Lode to the smelter.</>,
+  },
+  {
+    src: museum_5,
+    alt: 'Museum Image 5',
+    caption: <>Mineral Monument.</>,
+  },
+];
+
 
 const BUILDING_IMAGES: GalleryImage[] = [
   {
@@ -3436,6 +3472,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'greenwood', title: 'Snow Falling on Cedars Movie: Gallery 1' },
     { filterKey: 'greenwood', title: 'Snow Falling on Cedars Movie: Gallery 2' },
     { filterKey: 'greenwood', title: '1962 & 1963 High School Reunion in Greenwood 2026' },
+    { filterKey: 'greenwood', title: 'Visit Greenwood Museum' },
     { filterKey: 'places', title: '1943 Japanese Canadian Housing' },
     { filterKey: 'places', title: 'Historical Buildings: Gallery 1' },
     { filterKey: 'places', title: 'Historical Buildings: Gallery 2' },
@@ -3593,6 +3630,9 @@ const GalleryPage: React.FC = () => {
           )}
           {matchesQuery('1962 & 1963 High School Reunion in Greenwood 2026') && (
             <Carousel images={REUNION_IMAGES} title="1962 & 1963 High School Reunion in Greenwood 2026" />
+          )}
+          {matchesQuery('Visit Greenwood Museum') && (
+            <Carousel images={MUSEUM_IMAGES} title="Visit Greenwood Museum" />
           )}
         </>
       )}
