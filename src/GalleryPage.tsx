@@ -491,6 +491,15 @@ import museum_14  from './img/gallery/museum/museum_14.jpeg';
 import museum_15  from './img/gallery/museum/museum_15.jpeg';
 import museum_16  from './img/gallery/museum/museum_16.jpeg';
 
+import kariya_1  from './img/gallery/kariya/kariya_1.jpeg';
+import kariya_2  from './img/gallery/kariya/kariya_2.jpeg';
+import kariya_3  from './img/gallery/kariya/kariya_3.jpeg';
+import kariya_4  from './img/gallery/kariya/kariya_4.jpeg';
+import kariya_5  from './img/gallery/kariya/kariya_5.jpeg';
+import kariya_6  from './img/gallery/kariya/kariya_6.jpeg';
+import kariya_7  from './img/gallery/kariya/kariya_7.jpeg';
+import kariya_8  from './img/gallery/kariya/kariya_8.jpeg';
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -1447,6 +1456,74 @@ const MUSEUM2_IMAGES: GalleryImage[] = [
     src: museum_16,
     alt: 'Samurai Boys Day decoration.',
     caption: <>Samurai Boys Day decoration.</>,
+  },
+];
+
+
+const KARIYA_IMAGES: GalleryImage[] = [
+  {
+    src: kariya_1,
+    alt: 'Long line of athletic excellence of Isamu and Fumiko Kariya family.',
+    caption: <>Long line of athletic excellence of Isamu and Fumiko Kariya family.
+    This album is in the Greenwood Museum.  Paul Kariya was inducted in both NHL Hockey Hall of Fame and B.C. Sports Hall of Fame.  Material came from Sports Illustrated.
+    T.K. was born in Greenwood in 1943 ar the old hospital.<br/><br />
+        Photo courtesy of Greenwood Museum</>,
+  },
+  {
+    src: kariya_2,
+    alt: 'Long line of athletic excellence of Isamu and Fumiko Kariya family.',
+    caption: <>Long line of athletic excellence of Isamu and Fumiko Kariya family.
+    This album is in the Greenwood Museum.  Paul Kariya was inducted in both NHL Hockey Hall of Fame and B.C. Sports Hall of Fame.  Material came from Sports Illustrated.
+    T.K. was born in Greenwood in 1943 ar the old hospital.<br/><br />
+        Photo courtesy of Greenwood Museum</>,
+  },
+  {
+    src: kariya_3,
+    alt: 'Long line of athletic excellence of Isamu and Fumiko Kariya family.',
+    caption: <>Long line of athletic excellence of Isamu and Fumiko Kariya family.
+    This album is in the Greenwood Museum.  Paul Kariya was inducted in both NHL Hockey Hall of Fame and B.C. Sports Hall of Fame.  Material came from Sports Illustrated.
+    T.K. was born in Greenwood in 1943 ar the old hospital.<br/><br />
+        Photo courtesy of Greenwood Museum</>,
+  },
+  {
+    src: kariya_4,
+    alt: 'Long line of athletic excellence of Isamu and Fumiko Kariya family.',
+    caption: <>Long line of athletic excellence of Isamu and Fumiko Kariya family.
+    This album is in the Greenwood Museum.  Paul Kariya was inducted in both NHL Hockey Hall of Fame and B.C. Sports Hall of Fame.  Material came from Sports Illustrated.
+    T.K. was born in Greenwood in 1943 ar the old hospital.<br/><br />
+        Photo courtesy of Greenwood Museum</>,
+  },
+  {
+    src: kariya_5,
+    alt: 'Long line of athletic excellence of Isamu and Fumiko Kariya family.',
+    caption: <>Long line of athletic excellence of Isamu and Fumiko Kariya family.
+    This album is in the Greenwood Museum.  Paul Kariya was inducted in both NHL Hockey Hall of Fame and B.C. Sports Hall of Fame.  Material came from Sports Illustrated.
+    T.K. was born in Greenwood in 1943 ar the old hospital.<br/><br />
+        Photo courtesy of Greenwood Museum</>,
+  },
+  {
+    src: kariya_6,
+    alt: 'Long line of athletic excellence of Isamu and Fumiko Kariya family.',
+    caption: <>Long line of athletic excellence of Isamu and Fumiko Kariya family.
+    This album is in the Greenwood Museum.  Paul Kariya was inducted in both NHL Hockey Hall of Fame and B.C. Sports Hall of Fame.  Material came from Sports Illustrated.
+    T.K. was born in Greenwood in 1943 ar the old hospital.<br/><br />
+        Photo courtesy of Greenwood Museum</>,
+  },
+  {
+    src: kariya_7,
+    alt: 'Long line of athletic excellence of Isamu and Fumiko Kariya family.',
+    caption: <>Long line of athletic excellence of Isamu and Fumiko Kariya family.
+    This album is in the Greenwood Museum.  Paul Kariya was inducted in both NHL Hockey Hall of Fame and B.C. Sports Hall of Fame.  Material came from Sports Illustrated.
+    T.K. was born in Greenwood in 1943 ar the old hospital.<br/><br />
+        Photo courtesy of Greenwood Museum</>,
+  },
+  {
+    src: kariya_8,
+    alt: 'Long line of athletic excellence of Isamu and Fumiko Kariya family.',
+    caption: <>Long line of athletic excellence of Isamu and Fumiko Kariya family.
+    This album is in the Greenwood Museum.  Paul Kariya was inducted in both NHL Hockey Hall of Fame and B.C. Sports Hall of Fame.  Material came from Sports Illustrated.
+    T.K. was born in Greenwood in 1943 ar the old hospital.<br/><br />
+        Photo courtesy of Greenwood Museum</>,
   },
 ];
 
@@ -3543,6 +3620,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'greenwood', title: '1962 & 1963 High School Reunion in Greenwood 2026' },
     { filterKey: 'greenwood', title: 'Visit Greenwood Museum: Gallery 1' },
     { filterKey: 'greenwood', title: 'Visit Greenwood Museum: Gallery 2' },
+    { filterKey: 'greenwood', title: 'Kariya Family' },
     { filterKey: 'places', title: '1943 Japanese Canadian Housing' },
     { filterKey: 'places', title: 'Historical Buildings: Gallery 1' },
     { filterKey: 'places', title: 'Historical Buildings: Gallery 2' },
@@ -3706,6 +3784,9 @@ const GalleryPage: React.FC = () => {
           )}
           {matchesQuery('Visit Greenwood Museum: Gallery 2') && (
             <Carousel images={MUSEUM2_IMAGES} title="Visit Greenwood Museum: Gallery 2" />
+          )}
+          {matchesQuery('Kariya Family') && (
+            <Carousel images={KARIYA_IMAGES} title="Kariya Family" />
           )}
         </>
       )}
