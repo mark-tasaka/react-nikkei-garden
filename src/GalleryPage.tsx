@@ -487,6 +487,9 @@ import museum_10  from './img/gallery/museum/museum_10.jpeg';
 import museum_11  from './img/gallery/museum/museum_11.jpeg';
 import museum_12  from './img/gallery/museum/museum_12.jpeg';
 import museum_13  from './img/gallery/museum/museum_13.jpeg';
+import museum_14  from './img/gallery/museum/museum_14.jpeg';
+import museum_15  from './img/gallery/museum/museum_15.jpeg';
+import museum_16  from './img/gallery/museum/museum_16.jpeg';
 
 interface GalleryImage {
   src: string;
@@ -1421,13 +1424,31 @@ const MUSEUM_IMAGES: GalleryImage[] = [
     alt: 'Algoma Hotel',
     caption: <>Algoma Hotel.  One of 26 hotels in town.</>,
   },
+];
+
+
+const MUSEUM2_IMAGES: GalleryImage[] = [
   {
     src: museum_13,
     alt: 'Famous outlaw who rode with Jesse James and Younger brothers in Missouri but died at the Sacred Heart Hospital in Greenwood.  He lived in Rock Creek.',
     caption: <>Famous outlaw who rode with Jesse James and Younger brothers in Missouri but died at the Sacred Heart Hospital in Greenwood.  He lived in Rock Creek.</>,
   },
+  {
+    src: museum_14,
+    alt: 'Old Japanese ornaments and dolls on display.',
+    caption: <>Old Japanese ornaments and dolls on display.</>,
+  },
+  {
+    src: museum_15,
+    alt: 'Tokonoma display with shoji screen.',
+    caption: <>Tokonoma display with shoji screen.</>,
+  },
+  {
+    src: museum_16,
+    alt: 'Samurai Boys Day decoration.',
+    caption: <>Samurai Boys Day decoration.</>,
+  },
 ];
-
 
 const BUILDING_IMAGES: GalleryImage[] = [
   {
@@ -3520,7 +3541,8 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'greenwood', title: 'Snow Falling on Cedars Movie: Gallery 1' },
     { filterKey: 'greenwood', title: 'Snow Falling on Cedars Movie: Gallery 2' },
     { filterKey: 'greenwood', title: '1962 & 1963 High School Reunion in Greenwood 2026' },
-    { filterKey: 'greenwood', title: 'Visit Greenwood Museum' },
+    { filterKey: 'greenwood', title: 'Visit Greenwood Museum: Gallery 1' },
+    { filterKey: 'greenwood', title: 'Visit Greenwood Museum: Gallery 2' },
     { filterKey: 'places', title: '1943 Japanese Canadian Housing' },
     { filterKey: 'places', title: 'Historical Buildings: Gallery 1' },
     { filterKey: 'places', title: 'Historical Buildings: Gallery 2' },
@@ -3679,8 +3701,11 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('1962 & 1963 High School Reunion in Greenwood 2026') && (
             <Carousel images={REUNION_IMAGES} title="1962 & 1963 High School Reunion in Greenwood 2026" />
           )}
-          {matchesQuery('Visit Greenwood Museum') && (
-            <Carousel images={MUSEUM_IMAGES} title="Visit Greenwood Museum" />
+          {matchesQuery('Visit Greenwood Museum: Gallery 1') && (
+            <Carousel images={MUSEUM_IMAGES} title="Visit Greenwood Museum: Gallery 1" />
+          )}
+          {matchesQuery('Visit Greenwood Museum: Gallery 2') && (
+            <Carousel images={MUSEUM2_IMAGES} title="Visit Greenwood Museum: Gallery 2" />
           )}
         </>
       )}
