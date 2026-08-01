@@ -153,6 +153,8 @@ import internees_9  from './img/gallery/misc/internees_9.jpg';
 import internees_10  from './img/gallery/misc/internees_10.jpg';
 import internees_11  from './img/gallery/misc/internees_11.jpg';
 import internees_12  from './img/gallery/misc/internees_12.jpg';
+import internees_13  from './img/gallery/misc/internees_13.jpg';
+import internees_14  from './img/gallery/misc/internees_14.jpg';
 import miki  from './img/gallery/misc/miki.jpg';
 
 import buildings_1  from './img/gallery/buildings/buildings_1.jpg';
@@ -473,6 +475,7 @@ import kozo_7  from './img/gallery/kozo/kozo_7.jpg';
 import kozo_8  from './img/gallery/kozo/kozo_8.jpg';
 import kozo_9  from './img/gallery/kozo/kozo_9.jpg';
 import kozo_10  from './img/gallery/kozo/kozo_10.jpg';
+import kozo_11  from './img/gallery/kozo/kozo_11.jpg';
 
 import museum_1  from './img/gallery/museum/museum_1.jpeg';
 import museum_2  from './img/gallery/museum/museum_2.jpeg';
@@ -1391,7 +1394,7 @@ const MUSEUM_IMAGES: GalleryImage[] = [
   {
     src: museum_4,
     alt: 'Sikh Railroad Builders',
-    caption: <>Sikhs worked built railroads from Mother Lode to the smelter.</>,
+    caption: <>Sikhs built railroads from Mother Lode to the smelter.</>,
   },
   {
     src: museum_5,
@@ -2188,6 +2191,24 @@ const INTERNEES_IMAGES: GalleryImage[] = [
           Photo courtesy of Greenwood Museum</>
       ),
     },
+    {
+      src: internees_13,
+      alt: 'Laura Tanaka',
+      caption: (
+        <>Laura Tanaka was the first JC baby born in 1942.  Laura was named after Laura Rendell, the head nurse.
+        <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
+    {
+      src: internees_14,
+      alt: 'First JC marriage in Greenwood',
+      caption: (
+        <>First JC marriage in Greenwood in 1943.  Tatsuo and Lily Onodera.
+        <br /><br />
+          Photo courtesy of Greenwood Museum</>
+      ),
+    },
 ];
 
 const INTERNEES2_IMAGES: GalleryImage[] = [
@@ -2379,6 +2400,15 @@ const INTERNEES2_IMAGES: GalleryImage[] = [
       caption: (
         <>
           Photo courtesy of George Takahashi (Ontario).</>
+      ),
+    },
+    {
+      src: kozo_11,
+      alt: 'Greenwood Kozo',
+      caption: (
+        <>Greenwood children loved climbing Jubilee Mt.
+        <br/><br/>
+          Photo courtesy of Greenwood Museum</>
       ),
     },
 
