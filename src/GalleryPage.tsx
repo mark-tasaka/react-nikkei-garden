@@ -430,6 +430,9 @@ import donors_7  from './img/gallery/donors/donors_7.jpeg';
 import donors_8  from './img/gallery/donors/donors_8.jpeg';
 import donors_9  from './img/gallery/donors/donors_9.jpeg';
 import donors_10  from './img/gallery/donors/donors_10.jpeg';
+import donors_11  from './img/gallery/donors/donors_11.jpeg';
+import donors_12  from './img/gallery/donors/donors_12.jpeg';
+import donors_13  from './img/gallery/donors/donors_13.jpeg';
 
 import snowFalling_1  from './img/gallery/snowFalling/snowFalling_1.jpeg';
 import snowFalling_2  from './img/gallery/snowFalling/snowFalling_2.jpeg';
@@ -493,6 +496,8 @@ import museum_13  from './img/gallery/museum/museum_13.jpeg';
 import museum_14  from './img/gallery/museum/museum_14.jpeg';
 import museum_15  from './img/gallery/museum/museum_15.jpeg';
 import museum_16  from './img/gallery/museum/museum_16.jpeg';
+import museum_17  from './img/gallery/museum/museum_17.jpeg';
+import museum_18  from './img/gallery/museum/museum_18.jpeg';
 
 import kariya_1  from './img/gallery/kariya/kariya_1.jpeg';
 import kariya_2  from './img/gallery/kariya/kariya_2.jpeg';
@@ -654,6 +659,9 @@ const DONORS_IMAGES: GalleryImage[] = [
   { src: donors_8, alt: 'Donors' },
   { src: donors_9, alt: 'Donors' },
   { src: donors_10, alt: 'Donors' },
+  { src: donors_11, alt: 'Donors' },
+  { src: donors_12, alt: 'Donors' },
+  { src: donors_13, alt: 'Donors' },
 ];
 
 const OPENING_IMAGES: GalleryImage[] = [
@@ -1459,6 +1467,16 @@ const MUSEUM2_IMAGES: GalleryImage[] = [
     src: museum_16,
     alt: 'Samurai Boys Day decoration.',
     caption: <>Samurai Boys Day decoration.</>,
+  },
+  {
+    src: museum_17,
+    alt: 'Arizo Tasaka made it to the museum where his certificate is displayed.',
+    caption: <>Arizo Tasaka made it to the museum where his certificate is displayed.</>,
+  },
+  {
+    src: museum_18,
+    alt: 'Arizo Tasaka made it to the museum where his certificate is displayed.',
+    caption: <>Arizo Tasaka made it to the museum where his certificate is displayed.</>,
   },
 ];
 
