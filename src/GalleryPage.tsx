@@ -2195,10 +2195,18 @@ const INTERNEES2_IMAGES: GalleryImage[] = [
     {
       src: interneeArticle_1,
       alt: '',
+      caption: (
+        <>
+          Courtesy of Ginny Kelly and Rita Daminato for their project under Art Gough of Greenwood Museum collected these materials.</>
+      ),
     },
     {
       src: interneeArticle_2,
       alt: '',
+      caption: (
+        <>
+          Courtesy of Ginny Kelly and Rita Daminato for their project under Art Gough of Greenwood Museum collected these materials.</>
+      ),
     },
     {
       src: interneeArticle_3,
