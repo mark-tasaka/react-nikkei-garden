@@ -498,6 +498,9 @@ import museum_15  from './img/gallery/museum/museum_15.jpeg';
 import museum_16  from './img/gallery/museum/museum_16.jpeg';
 import museum_17  from './img/gallery/museum/museum_17.jpeg';
 import museum_18  from './img/gallery/museum/museum_18.jpeg';
+import museum_19  from './img/gallery/museum/museum_19.jpeg';
+import museum_20  from './img/gallery/museum/museum_20.jpeg';
+import museum_21  from './img/gallery/museum/museum_21.jpeg';
 
 import kariya_1  from './img/gallery/kariya/kariya_1.jpeg';
 import kariya_2  from './img/gallery/kariya/kariya_2.jpeg';
@@ -1477,6 +1480,21 @@ const MUSEUM2_IMAGES: GalleryImage[] = [
     src: museum_18,
     alt: 'Arizo Tasaka made it to the museum where his certificate is displayed.',
     caption: <>Arizo Tasaka made it to the museum where his certificate is displayed.</>,
+  },
+  {
+    src: museum_19,
+    alt: 'Japanese Canadians were given this plaque for their contribution to revive the city.',
+    caption: <>Japanese Canadians were given this plaque for their contribution to revive the city.</>,
+  },
+  {
+    src: museum_20,
+    alt: 'Letter from George Hartley petitioning to keep the JCs in Greenwood.  The City made a stand to protest the ultimatum from the government,” Go East of the Rockies, or to Japan”.',
+    caption: <>Letter from George Hartley petitioning to keep the JCs in Greenwood.  The City made a stand to protest the ultimatum from the government,” Go East of the Rockies, or to Japan”.</>,
+  },
+  {
+    src: museum_21,
+    alt: 'A typical 10’ x 10’ cubical as a family suite.  Bunkbeds took up much of the space.',
+    caption: <>A typical 10’ x 10’ cubical as a family suite.  Bunkbeds took up much of the space.</>,
   },
 ];
 
