@@ -501,6 +501,10 @@ import museum_18  from './img/gallery/museum/museum_18.jpeg';
 import museum_19  from './img/gallery/museum/museum_19.jpeg';
 import museum_20  from './img/gallery/museum/museum_20.jpeg';
 import museum_21  from './img/gallery/museum/museum_21.jpeg';
+import museum_22  from './img/gallery/museum/museum_22.jpeg';
+import museum_23  from './img/gallery/museum/museum_23.jpeg';
+import museum_24  from './img/gallery/museum/museum_24.jpeg';
+import museum_25  from './img/gallery/museum/museum_25.jpeg';
 
 import kariya_1  from './img/gallery/kariya/kariya_1.jpeg';
 import kariya_2  from './img/gallery/kariya/kariya_2.jpeg';
@@ -1495,6 +1499,26 @@ const MUSEUM2_IMAGES: GalleryImage[] = [
     src: museum_21,
     alt: 'A typical 10’ x 10’ cubical as a family suite.  Bunkbeds took up much of the space.',
     caption: <>A typical 10’ x 10’ cubical as a family suite.  Bunkbeds took up much of the space.</>,
+  },
+  {
+    src: museum_22,
+    alt: 'Sacred Heart School and Church history',
+    caption: <>Sacred Heart School and Church history.</>,
+  },
+  {
+    src: museum_23,
+    alt: 'Sacred Heart School and Church history',
+    caption: <>Sacred Heart School and Church history.</>,
+  },
+  {
+    src: museum_24,
+    alt: 'Buddhist Butsudan Altar',
+    caption: <>Buddhist Butsudan Altar.</>,
+  },
+  {
+    src: museum_25,
+    alt: 'Japanese dolls, plate and dishes display.',
+    caption: <>Japanese dolls, plate and dishes display.</>,
   },
 ];
 
