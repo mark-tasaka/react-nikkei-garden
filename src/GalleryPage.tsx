@@ -362,6 +362,11 @@ import sports_22  from './img/gallery/sports/sports_22.jpg';
 import sports_23  from './img/gallery/sports/sports_23.jpg';
 import sports_24  from './img/gallery/sports/sports_24.jpg';
 import sports_25  from './img/gallery/sports/sports_25.jpg';
+import sports_26  from './img/gallery/sports/sports_26.jpg';
+import sports_27  from './img/gallery/sports/sports_27.jpeg';
+import sports_28  from './img/gallery/sports/sports_28.jpeg';
+import sports_29  from './img/gallery/sports/sports_29.jpeg';
+import sports_30  from './img/gallery/sports/sports_30.jpeg';
 
 import active_life_1  from './img/gallery/activeLife/active_life_1.jpg';
 import active_life_2  from './img/gallery/activeLife/active_life_2.jpg';
@@ -3331,13 +3336,6 @@ const SPORTS2_IMAGES: GalleryImage[] = [
         <>Greenwood Museum hockey history display of the Dynamiters jacket.</> 
       ),
     },
-    // {
-    //   src: sports_20,
-    //   alt: 'Greenwood Hawks Hockey Team',
-    //   caption: (
-    //     <>This was one of the later teams in the early 60's.  They were called the Greenwood Hawks. Hockey display at the Greenwood Museum in 2015.</> 
-    //   ),
-    // },
     {
       src: sports_21,
       alt: 'Greenwood Hawks Hockey Team',
@@ -3371,6 +3369,46 @@ const SPORTS2_IMAGES: GalleryImage[] = [
       alt: 'First High School Hockey Jersey',
       caption: (
         <>This was the first high school hockey jersey designed by Stephen Tasaka circa 1957.</> 
+      ),
+    },
+  ];
+
+  
+  
+const SPORTS3_IMAGES: GalleryImage[] = [
+    {
+      src: sports_26,
+      alt: 'Phoenix team',
+      caption: (
+        <>1911: Though not Nikkei, the Phoenix team won three championship to qualify for the Stanley Cup, but was late applying.</> 
+      ),
+    },
+    {
+      src: sports_27,
+      alt: 'Old hockey photos with names to faces',
+      caption: (
+        <>Old hockey photos with names to faces.  If you recognize anyone with (?), please let us know.</> 
+      ),
+    },
+    {
+      src: sports_28,
+      alt: 'Old hockey photos with names to faces',
+      caption: (
+        <>Old hockey photos with names to faces.  If you recognize anyone with (?), please let us know.</> 
+      ),
+    },
+    {
+      src: sports_29,
+      alt: 'Old hockey photos with names to faces',
+      caption: (
+        <>Old hockey photos with names to faces.  If you recognize anyone with (?), please let us know.</> 
+      ),
+    },
+    {
+      src: sports_30,
+      alt: 'Old hockey photos with names to faces',
+      caption: (
+        <>Old hockey photos with names to faces.  If you recognize anyone with (?), please let us know.</> 
       ),
     },
   ];
@@ -3761,6 +3799,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'community', title: 'Natsu Matsuri - Summer Festival 1964' },
     { filterKey: 'community', title: 'Sports: Gallery 1' },
     { filterKey: 'community', title: 'Sports: Gallery 2' },
+    { filterKey: 'community', title: 'Sports: Gallery 3' },
     { filterKey: 'community', title: 'Active Life in Greenwood: Gallery 1' },
     { filterKey: 'community', title: 'Active Life in Greenwood: Gallery 2' },
   ];
@@ -3956,6 +3995,7 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Natsu Matsuri - Summer Festival 1964') && <Carousel images={HISTORICAL1960_IMAGES} title="Natsu Matsuri - Summer Festival 1964" />}
           {matchesQuery('Sports: Gallery 1') && <Carousel images={SPORTS_IMAGES} title="Sports: Gallery 1" />}
           {matchesQuery('Sports: Gallery 2') && <Carousel images={SPORTS2_IMAGES} title="Sports: Gallery 2" />}
+          {matchesQuery('Sports: Gallery 3') && <Carousel images={SPORTS3_IMAGES} title="Sports: Gallery 3" />}
           {matchesQuery('Active Life in Greenwood: Gallery 1') && <Carousel images={ACTIVELIFE_IMAGES} title="Active Life in Greenwood: Gallery 1" />}
           {matchesQuery('Active Life in Greenwood: Gallery 2') && <Carousel images={ACTIVELIFE2_IMAGES} title="Active Life in Greenwood: Gallery 2" />}
         </>
