@@ -433,6 +433,9 @@ import donors_10  from './img/gallery/donors/donors_10.jpeg';
 import donors_11  from './img/gallery/donors/donors_11.jpeg';
 import donors_12  from './img/gallery/donors/donors_12.jpeg';
 import donors_13  from './img/gallery/donors/donors_13.jpeg';
+import donors_14  from './img/gallery/donors/donors_14.jpeg';
+import donors_15  from './img/gallery/donors/donors_15.jpeg';
+import donors_16  from './img/gallery/donors/donors_16.jpeg';
 
 import snowFalling_1  from './img/gallery/snowFalling/snowFalling_1.jpeg';
 import snowFalling_2  from './img/gallery/snowFalling/snowFalling_2.jpeg';
@@ -666,10 +669,18 @@ const DONORS_IMAGES: GalleryImage[] = [
   { src: donors_8, alt: 'Donors' },
   { src: donors_9, alt: 'Donors' },
   { src: donors_10, alt: 'Donors' },
+];
+
+
+const DONORS2_IMAGES: GalleryImage[] = [
   { src: donors_11, alt: 'Donors' },
   { src: donors_12, alt: 'Donors' },
   { src: donors_13, alt: 'Donors' },
+  { src: donors_14, alt: 'Donors' },
+  { src: donors_15, alt: 'Donors' },
+  { src: donors_16, alt: 'Donors' },
 ];
+
 
 const OPENING_IMAGES: GalleryImage[] = [
   {
@@ -3702,7 +3713,8 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park' },
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park Panels' },
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park Tribute Plaques' },
-    { filterKey: 'nikkei', title: 'Thank You Donors' },
+    { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 1' },
+    { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 2' },
     { filterKey: 'nikkei', title: 'Grand Opening: July 20, 2025' },
     { filterKey: 'nikkei', title: 'Japanese Canadian Signage Unveiling: 2018' },
     { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 1' },
@@ -3813,7 +3825,8 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Nikkei Legacy Park') && <Carousel images={NIKKEIPARK_IMAGES} title="Nikkei Legacy Park" />}
           {matchesQuery('Nikkei Legacy Park Panels') && <Carousel images={PANEL_IMAGES} title="Nikkei Legacy Park Panels" />}
           {matchesQuery('Nikkei Legacy Park Tribute Plaques') && <Carousel images={TRIBUTE_IMAGES} title="Nikkei Legacy Park Tribute Plaques" />}
-          {matchesQuery('Thank You Donors') && <Carousel images={DONORS_IMAGES} title="Thank You Donors" />}
+          {matchesQuery('Thank You Donors: Gallery 1') && <Carousel images={DONORS_IMAGES} title="Thank You Donors: Gallery 1" />}
+          {matchesQuery('Thank You Donors: Gallery 2') && <Carousel images={DONORS2_IMAGES} title="Thank You Donors: Gallery 2" />}
           {matchesQuery('Grand Opening: July 20, 2025') && <Carousel images={OPENING_IMAGES}   title="Grand Opening: July 20, 2025" />}
           {matchesQuery('Japanese Canadian Signage Unveiling: 2018') && <Carousel images={UNVEILING_IMAGES}   title="Japanese Canadian Signage Unveiling: 2018" />}
           {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 1') && <Carousel images={VISITORS_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 1" />}
