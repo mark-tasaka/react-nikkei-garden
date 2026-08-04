@@ -527,6 +527,8 @@ import kariya_5  from './img/gallery/kariya/kariya_5.jpeg';
 import kariya_6  from './img/gallery/kariya/kariya_6.jpeg';
 import kariya_7  from './img/gallery/kariya/kariya_7.jpeg';
 import kariya_8  from './img/gallery/kariya/kariya_8.jpeg';
+import kariya_9  from './img/gallery/kariya/kariya_9.jpeg';
+import kariya_10  from './img/gallery/kariya/kariya_10.jpeg';
 
 interface GalleryImage {
   src: string;
@@ -1613,6 +1615,18 @@ const KARIYA_IMAGES: GalleryImage[] = [
     This album is in the Greenwood Museum.  Paul Kariya was inducted in both NHL Hockey Hall of Fame and B.C. Sports Hall of Fame.  Material came from Sports Illustrated.
     T.K. was born in Greenwood in 1943 ar the old hospital.<br/><br />
         Photo courtesy of Greenwood Museum</>,
+  },
+  {
+    src: kariya_9,
+    alt: 'Dusty Imoo is the son of Chris Imoo who came from Kaslo to Greenwood and lived in the #11 Building or Mellor Blk.',
+    caption: <>Dusty Imoo is the son of Chris Imoo who came from Kaslo to Greenwood and lived in the #11 Building or Mellor Blk.<br/><br />
+        Photo courtesy of Ritsuko (Imoo) Imai</>,
+  },
+  {
+    src: kariya_10,
+    alt: 'Dusty Imoo is the son of Chris Imoo who came from Kaslo to Greenwood and lived in the #11 Building or Mellor Blk.',
+    caption: <>Dusty Imoo is the son of Chris Imoo who came from Kaslo to Greenwood and lived in the #11 Building or Mellor Blk.<br/><br />
+        Photo courtesy of Ritsuko (Imoo) Imai</>,
   },
 ];
 
