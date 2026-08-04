@@ -84,7 +84,10 @@ import kiyo from './img/articles/kiyo.jpeg';
 
 import googleDoc from './img/articles/googleDoc.png';
 
+import exile from './img/articles/exileKirk.jpg';
+
 const burton2024 = '/pdf/burton2024.pdf';
+const kirk2025 = '/pdf/kirk2025.pdf';
 
 interface ArticleEntry {
   source:     string;
@@ -817,6 +820,16 @@ const ARTICLES: ArticleEntry[] = [
     link:      'https://docs.google.com/presentation/d/1uHE1JpHBO_BRKU67kzjFOHvm_1iPNJKTVYWokVjtMMQ/edit?slide=id.ge2b17be85f_2_91#slide=id.ge2b17be85f_2_91',
     excerpt:   'The Internment of Japanese Canadians 1942-1949 Click on the book or artifact beside the laptops for a description of the topic. Click on the laptops for lesson plans and graphic organizers',
     img:       googleDoc,
+  },
+  {
+    source:    'PDF',
+    sourceUrl: '',
+    title:     'Exile in Postwar Japan: Memories of Japanese Canadians',
+    author:    'Stan Kirk',
+    date:      'July 6, 2025',
+    link:      kirk2025,
+    excerpt:   'The first recorded Japanese immigrant to Canada, Manzo Nagano, arrived alone in 1877. Although significant numbers of Japanese did not start to come until the late 1880s, once theflow started, their numbers increased rapidly. Most of these early immigrants worked on the westcoast of British Columbia as laborers in the forestry, fishing, mining and agricultural industries,but as their communities began to take shape, many also established small businesses rangingfrom export-import companies to grocery and drug stores to barbershops. Eventually there ',
+    img:       exile,
   },
 ];
 
