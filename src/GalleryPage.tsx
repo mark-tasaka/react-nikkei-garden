@@ -451,6 +451,10 @@ import donors_22  from './img/gallery/donors/donors_22.jpeg';
 import donors_23  from './img/gallery/donors/donors_23.jpeg';
 import donors_24  from './img/gallery/donors/donors_24.jpeg';
 import donors_25  from './img/gallery/donors/donors_25.jpeg';
+import donors_26  from './img/gallery/donors/donors_26.jpeg';
+import donors_27  from './img/gallery/donors/donors_27.jpeg';
+import donors_28  from './img/gallery/donors/donors_28.jpeg';
+import donors_29  from './img/gallery/donors/donors_29.jpeg';
 
 import snowFalling_1  from './img/gallery/snowFalling/snowFalling_1.jpeg';
 import snowFalling_2  from './img/gallery/snowFalling/snowFalling_2.jpeg';
@@ -716,6 +720,14 @@ const DONORS3_IMAGES: GalleryImage[] = [
     caption: <>Donors for the WWI JC Memorial Monument</>,  },
   { src: donors_25, alt: 'Donors',
     caption: <>Local donors for the Illuminated Nikkei Legacy Park sign.</>,  },
+  { src: donors_26, alt: 'Donors',
+    caption: <>Sakura Blossom Memorial for the Homma family.</>,  },
+  { src: donors_27, alt: 'Donors',
+    caption: <>Sakura Blossom Memorial for the Tasaka family.</>,  },
+  { src: donors_28, alt: 'Donors',
+    caption: <>Sakura Blossom Memorial orial for the Hall family.</>,  },
+  { src: donors_29, alt: 'Donors',
+    caption: <>Japanese Lantern Memorial for the Isomura/Imai family </>,  },
 ];
 
 
