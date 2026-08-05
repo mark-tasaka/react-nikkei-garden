@@ -52,6 +52,7 @@ import panel2026_9 from './img/gallery/galleryPanels2026/panel2026-9.jpeg';
 import panel2026_10 from './img/gallery/galleryPanels2026/panel2026-10.jpeg';
 import panel2026_11 from './img/gallery/galleryPanels2026/panel2026-11.jpeg';
 import panel2026_12 from './img/gallery/galleryPanels2026/panel2026-12.jpeg';
+import panel2026_13 from './img/gallery/galleryPanels2026/panel2026-13.jpeg';
 
 import tribute_1 from './img/gallery/tributePlaques/tributePlaques_1.jpeg';
 import tribute_2 from './img/gallery/tributePlaques/tributePlaques_2.jpeg';
@@ -446,6 +447,10 @@ import donors_18  from './img/gallery/donors/donors_18.jpeg';
 import donors_19  from './img/gallery/donors/donors_19.jpeg';
 import donors_20  from './img/gallery/donors/donors_20.jpeg';
 import donors_21  from './img/gallery/donors/donors_21.jpeg';
+import donors_22  from './img/gallery/donors/donors_22.jpeg';
+import donors_23  from './img/gallery/donors/donors_23.jpeg';
+import donors_24  from './img/gallery/donors/donors_24.jpeg';
+import donors_25  from './img/gallery/donors/donors_25.jpeg';
 
 import snowFalling_1  from './img/gallery/snowFalling/snowFalling_1.jpeg';
 import snowFalling_2  from './img/gallery/snowFalling/snowFalling_2.jpeg';
@@ -626,6 +631,10 @@ const PANEL_IMAGES: GalleryImage[] = [
     
     caption: <>Over 50% of the businesses were owned or operated by Japanese Canadians during the war and postwar.  Notice Mr. K. Morita sold kamaboko, yokan and oboro.  Mayor McArthur Sr. and council provided business licence.</>,
    },
+  { src: panel2026_13, alt: 'Panels June 2026, Photo 1',
+    
+    caption: <>Prewar, Koichi Nakagawa bought the dry cleaning business from the Kurisu family.  In 1942, Japanese Canadians were forced to vacate beyond the 100-mile radius.  Mr. Nakagawa asked the Franciscan Sisters if he could leave the pressing machine in the basement of the convent.  This machine may be the only large items the government couldn’t confiscate.</>,
+   },
   { src: panel2026_2, alt: 'Panels June 2026, Photo 2' },
   { src: panel2026_3, alt: 'Panels June 2026, Photo 3' },
   { src: panel2026_9, alt: 'Panels June 2026, Photo 9' },
@@ -696,6 +705,17 @@ const DONORS2_IMAGES: GalleryImage[] = [
   { src: donors_19, alt: 'Donors' },
   { src: donors_20, alt: 'Donors' },
   { src: donors_21, alt: 'Donors' },
+  { src: donors_22, alt: 'Donors',
+    caption: <>Donors listed for trees and bench.</>,  },
+];
+
+const DONORS3_IMAGES: GalleryImage[] = [
+  { src: donors_23, alt: 'Donors',
+    caption: <>Japanese Lantern donors: Stephen and Dianne Tasaka family.</>,  },
+  { src: donors_24, alt: 'Donors',
+    caption: <>Donors for the WWI JC Memorial Monument</>,  },
+  { src: donors_25, alt: 'Donors',
+    caption: <>Local donors for the Illuminated Nikkei Legacy Park sign.</>,  },
 ];
 
 
@@ -3777,6 +3797,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park Tribute Plaques' },
     { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 1' },
     { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 2' },
+    { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 3' },
     { filterKey: 'nikkei', title: 'Grand Opening: July 20, 2025' },
     { filterKey: 'nikkei', title: 'Japanese Canadian Signage Unveiling: 2018' },
     { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 1' },
@@ -3890,6 +3911,7 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Nikkei Legacy Park Tribute Plaques') && <Carousel images={TRIBUTE_IMAGES} title="Nikkei Legacy Park Tribute Plaques" />}
           {matchesQuery('Thank You Donors: Gallery 1') && <Carousel images={DONORS_IMAGES} title="Thank You Donors: Gallery 1" />}
           {matchesQuery('Thank You Donors: Gallery 2') && <Carousel images={DONORS2_IMAGES} title="Thank You Donors: Gallery 2" />}
+          {matchesQuery('Thank You Donors: Gallery 3') && <Carousel images={DONORS3_IMAGES} title="Thank You Donors: Gallery 3" />}
           {matchesQuery('Grand Opening: July 20, 2025') && <Carousel images={OPENING_IMAGES}   title="Grand Opening: July 20, 2025" />}
           {matchesQuery('Japanese Canadian Signage Unveiling: 2018') && <Carousel images={UNVEILING_IMAGES}   title="Japanese Canadian Signage Unveiling: 2018" />}
           {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 1') && <Carousel images={VISITORS_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 1" />}
