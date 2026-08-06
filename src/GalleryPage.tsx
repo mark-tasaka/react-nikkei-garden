@@ -455,6 +455,13 @@ import donors_26  from './img/gallery/donors/donors_26.jpeg';
 import donors_27  from './img/gallery/donors/donors_27.jpeg';
 import donors_28  from './img/gallery/donors/donors_28.jpeg';
 import donors_29  from './img/gallery/donors/donors_29.jpeg';
+import donors_30  from './img/gallery/donors/donors_30.jpeg';
+import donors_31  from './img/gallery/donors/donors_31.jpeg';
+import donors_32  from './img/gallery/donors/donors_32.jpeg';
+import donors_33  from './img/gallery/donors/donors_33.jpeg';
+import donors_34  from './img/gallery/donors/donors_34.jpeg';
+import donors_35  from './img/gallery/donors/donors_35.jpeg';
+import donors_36  from './img/gallery/donors/donors_36.jpeg';
 
 import snowFalling_1  from './img/gallery/snowFalling/snowFalling_1.jpeg';
 import snowFalling_2  from './img/gallery/snowFalling/snowFalling_2.jpeg';
@@ -728,6 +735,20 @@ const DONORS3_IMAGES: GalleryImage[] = [
     caption: <>Sakura Blossom Memorial orial for the Hall family.</>,  },
   { src: donors_29, alt: 'Donors',
     caption: <>Japanese Lantern Memorial for the Isomura/Imai family </>,  },
+  { src: donors_30, alt: 'Donors',
+    caption: <>Sakura Blossom Memorial in Appreciation</>,  },
+  { src: donors_31, alt: 'Donors',
+    caption: <>Sakura Blossom In Memorial for the Miki family</>,  },
+  { src: donors_32, alt: 'Donors',
+    caption: <>Sakura Blossom Memorial for Imai and Mayede family</>,  },
+  { src: donors_33, alt: 'Donors',
+    caption: <>Sakura Memorial for David.</>,  },
+  { src: donors_34, alt: 'Donors',
+    caption: <>Donor of the panel “Where Two Cultures Meet”</>,  },
+  { src: donors_35, alt: 'Donors',
+    caption: <>Donors of the Peace Crane</>,  },
+  { src: donors_36, alt: 'Donors',
+    caption: <>Sakura Blossom donors for the Kindness and Acceptance.</>,  },
 ];
 
 
