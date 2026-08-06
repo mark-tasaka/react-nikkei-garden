@@ -861,7 +861,7 @@ const UNVEILING_IMAGES: GalleryImage[] = [
     {
       src: unveiling_9,
       alt: 'Japanese Canadian Signage Unveiling: 2018',
-      caption: <>Guests joining present and local Japanese Canadians.</>,
+      caption: <>Guests joining past and present local Japanese Canadians.</>,
     }
 ];
 
