@@ -69,6 +69,11 @@ import tribute_11 from './img/gallery/tributePlaques/tributePlaques_11.jpeg';
 import tribute_12 from './img/gallery/tributePlaques/tributePlaques_12.jpeg';
 import tribute_13 from './img/gallery/tributePlaques/tributePlaques_13.jpeg';
 import tribute_14 from './img/gallery/tributePlaques/tributePlaques_14.jpeg';
+import tribute_9a from './img/gallery/tributePlaques/tributePlaques_9a.jpeg';
+import tribute_10a from './img/gallery/tributePlaques/tributePlaques_10a.jpeg';
+import tribute_11a from './img/gallery/tributePlaques/tributePlaques_11a.jpeg';
+import tribute_12a from './img/gallery/tributePlaques/tributePlaques_12a.jpeg';
+import tribute_13a from './img/gallery/tributePlaques/tributePlaques_13a.jpeg';
 
 import nikkeiPark_1 from './img/gallery/nikkeiPark/nikkeiPark_1.jpg';
 import nikkeiPark_2 from './img/gallery/nikkeiPark/nikkeiPark_2.jpg';
@@ -688,11 +693,16 @@ const TRIBUTE_IMAGES: GalleryImage[] = [
   { src: tribute_7, alt: 'Tribute Image 7' },
   { src: panel2026_12, alt: 'Panels June 2026, Photo 12' },
   { src: tribute_8, alt: 'Tribute Image 8' },
-  { src: tribute_9, alt: 'Tribute Image 9' },
-  { src: tribute_10, alt: 'Tribute Image 10' },
-  { src: tribute_11, alt: 'Tribute Image 11' },
-  { src: tribute_12, alt: 'Tribute Image 12' },
-  { src: tribute_13, alt: 'Tribute Image 13' },
+  // { src: tribute_9, alt: 'Tribute Image 9' },
+  // { src: tribute_10, alt: 'Tribute Image 10' },
+  // { src: tribute_11, alt: 'Tribute Image 11' },
+  // { src: tribute_12, alt: 'Tribute Image 12' },
+  // { src: tribute_13, alt: 'Tribute Image 13' },
+  { src: tribute_9a, alt: 'Tribute Image 9' },
+  { src: tribute_10a, alt: 'Tribute Image 10' },
+  { src: tribute_11a, alt: 'Tribute Image 11' },
+  { src: tribute_12a, alt: 'Tribute Image 12' },
+  { src: tribute_13a, alt: 'Tribute Image 13' },
   { src: tribute_14, alt: 'Tribute Image 14' },
 ];
 
