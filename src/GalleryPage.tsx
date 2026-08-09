@@ -663,7 +663,7 @@ const PANEL_IMAGES: GalleryImage[] = [
    },
   { src: panel2026_13, alt: 'Panels June 2026, Photo 1',
     
-    caption: <>Prewar, Koichi Nakagawa bought the dry cleaning business from the Kurisu family.  In 1942, Japanese Canadians were forced to vacate beyond the 100-mile radius.  Mr. Nakagawa asked the Franciscan Sisters if he could leave the pressing machine in the basement of the convent.  This machine may be the only large items the government couldn’t confiscate.</>,
+    caption: <>Prewar, Koichi Nakagawa bought the dry cleaning business from the Kurisu family.  In 1942, Japanese Canadians were forced to vacate beyond the 100-mile radius.  Mr. Nakagawa asked the Franciscan Sisters if he could leave the pressing machine in the basement of the convent.  This machine may be the only large item the government couldn’t confiscate.</>,
    },
   { src: panel2026_2, alt: 'Panels June 2026, Photo 2' },
   { src: panel2026_3, alt: 'Panels June 2026, Photo 3' },
