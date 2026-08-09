@@ -74,6 +74,8 @@ import tribute_10a from './img/gallery/tributePlaques/tributePlaques_10a.jpeg';
 import tribute_11a from './img/gallery/tributePlaques/tributePlaques_11a.jpeg';
 import tribute_12a from './img/gallery/tributePlaques/tributePlaques_12a.jpeg';
 import tribute_13a from './img/gallery/tributePlaques/tributePlaques_13a.jpeg';
+import tribute_15 from './img/gallery/tributePlaques/tributePlaques_15.jpeg';
+import tribute_16 from './img/gallery/tributePlaques/tributePlaques_16.jpeg';
 
 import nikkeiPark_1 from './img/gallery/nikkeiPark/nikkeiPark_1.jpg';
 import nikkeiPark_2 from './img/gallery/nikkeiPark/nikkeiPark_2.jpg';
@@ -703,8 +705,15 @@ const TRIBUTE_IMAGES: GalleryImage[] = [
   { src: tribute_11a, alt: 'Tribute Image 11' },
   { src: tribute_12a, alt: 'Tribute Image 12' },
   { src: tribute_13a, alt: 'Tribute Image 13' },
-  { src: tribute_14, alt: 'Tribute Image 14' },
 ];
+
+
+const TRIBUTE2_IMAGES: GalleryImage[] = [
+  { src: tribute_14, alt: 'Tribute Image 14' },
+  { src: tribute_15, alt: 'Tribute Image 15' },
+  { src: tribute_16, alt: 'Tribute Image 16' },
+];
+
 
 const DONORS_IMAGES: GalleryImage[] = [
   { src: donors_1, alt: 'Donors' },
@@ -3872,7 +3881,8 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'nikkei', title: 'Springtime in the Park: May 2026' },
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park' },
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park Panels' },
-    { filterKey: 'nikkei', title: 'Nikkei Legacy Park Tribute Plaques' },
+    { filterKey: 'nikkei', title: 'Nikkei Legacy Park Tribute Plaques: Gallery 1' },
+    { filterKey: 'nikkei', title: 'Nikkei Legacy Park Tribute Plaques: Gallery 2' },
     { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 1' },
     { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 2' },
     { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 3' },
@@ -3987,7 +3997,8 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Springtime in the Park: May 2026') && <Carousel images={MAY_IMAGES}   title="Springtime in the Park: May 2026" />}
           {matchesQuery('Nikkei Legacy Park') && <Carousel images={NIKKEIPARK_IMAGES} title="Nikkei Legacy Park" />}
           {matchesQuery('Nikkei Legacy Park Panels') && <Carousel images={PANEL_IMAGES} title="Nikkei Legacy Park Panels" />}
-          {matchesQuery('Nikkei Legacy Park Tribute Plaques') && <Carousel images={TRIBUTE_IMAGES} title="Nikkei Legacy Park Tribute Plaques" />}
+          {matchesQuery('Nikkei Legacy Park Tribute Plaques: Gallery 1') && <Carousel images={TRIBUTE_IMAGES} title="Nikkei Legacy Park Tribute Plaques: Gallery 1" />}
+          {matchesQuery('Nikkei Legacy Park Tribute Plaques: Gallery 2') && <Carousel images={TRIBUTE2_IMAGES} title="Nikkei Legacy Park Tribute Plaques: Gallery 2" />}
           {matchesQuery('Thank You Donors: Gallery 1') && <Carousel images={DONORS_IMAGES} title="Thank You Donors: Gallery 1" />}
           {matchesQuery('Thank You Donors: Gallery 2') && <Carousel images={DONORS2_IMAGES} title="Thank You Donors: Gallery 2" />}
           {matchesQuery('Thank You Donors: Gallery 3') && <Carousel images={DONORS3_IMAGES} title="Thank You Donors: Gallery 3" />}
