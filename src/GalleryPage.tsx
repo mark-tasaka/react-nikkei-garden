@@ -465,6 +465,9 @@ import donors_33  from './img/gallery/donors/donors_33.jpeg';
 import donors_34  from './img/gallery/donors/donors_34.jpeg';
 import donors_35  from './img/gallery/donors/donors_35.jpeg';
 import donors_36  from './img/gallery/donors/donors_36.jpeg';
+import donors_37  from './img/gallery/donors/donors_37.jpeg';
+import donors_38  from './img/gallery/donors/donors_38.jpeg';
+import donors_39  from './img/gallery/donors/donors_39.jpeg';
 
 import snowFalling_1  from './img/gallery/snowFalling/snowFalling_1.jpeg';
 import snowFalling_2  from './img/gallery/snowFalling/snowFalling_2.jpeg';
@@ -752,6 +755,13 @@ const DONORS3_IMAGES: GalleryImage[] = [
     caption: <>Donors of the Peace Crane</>,  },
   { src: donors_36, alt: 'Donors',
     caption: <>Sakura Blossom donors for the Kindness and Acceptance.</>,  },
+];
+
+
+const DONORS4_IMAGES: GalleryImage[] = [
+  { src: donors_37, alt: 'Donors', },
+  { src: donors_38, alt: 'Donors', },
+  { src: donors_39, alt: 'Donors', },
 ];
 
 
@@ -3846,6 +3856,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 1' },
     { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 2' },
     { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 3' },
+    { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 4' },
     { filterKey: 'nikkei', title: 'Grand Opening: July 20, 2025' },
     { filterKey: 'nikkei', title: 'Japanese Canadian Signage Unveiling: 2018' },
     { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 1' },
@@ -3960,6 +3971,7 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Thank You Donors: Gallery 1') && <Carousel images={DONORS_IMAGES} title="Thank You Donors: Gallery 1" />}
           {matchesQuery('Thank You Donors: Gallery 2') && <Carousel images={DONORS2_IMAGES} title="Thank You Donors: Gallery 2" />}
           {matchesQuery('Thank You Donors: Gallery 3') && <Carousel images={DONORS3_IMAGES} title="Thank You Donors: Gallery 3" />}
+          {matchesQuery('Thank You Donors: Gallery 4') && <Carousel images={DONORS4_IMAGES} title="Thank You Donors: Gallery 4" />}
           {matchesQuery('Grand Opening: July 20, 2025') && <Carousel images={OPENING_IMAGES}   title="Grand Opening: July 20, 2025" />}
           {matchesQuery('Japanese Canadian Signage Unveiling: 2018') && <Carousel images={UNVEILING_IMAGES}   title="Japanese Canadian Signage Unveiling: 2018" />}
           {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 1') && <Carousel images={VISITORS_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 1" />}
