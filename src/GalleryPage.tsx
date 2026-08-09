@@ -39,6 +39,7 @@ import july2026_4  from './img/gallery/galleryJuly2026/july2026-4.jpg';
 import july2026_5  from './img/gallery/galleryJuly2026/july2026-5.jpg';
 import july2026_6  from './img/gallery/galleryJuly2026/july2026-6.jpg';
 import july2026_7  from './img/gallery/galleryJuly2026/july2026-7.jpg';
+import aug2026_1  from './img/gallery/galleryJuly2026/aug2026_1.jpeg';
 
 import panel2026_1 from './img/gallery/galleryPanels2026/panel2026-1.jpeg';
 import panel2026_2 from './img/gallery/galleryPanels2026/panel2026-2.jpeg';
@@ -468,6 +469,8 @@ import donors_36  from './img/gallery/donors/donors_36.jpeg';
 import donors_37  from './img/gallery/donors/donors_37.jpeg';
 import donors_38  from './img/gallery/donors/donors_38.jpeg';
 import donors_39  from './img/gallery/donors/donors_39.jpeg';
+import donors_40  from './img/gallery/donors/donors_40.jpeg';
+import donors_41  from './img/gallery/donors/donors_41.jpeg';
 
 import snowFalling_1  from './img/gallery/snowFalling/snowFalling_1.jpeg';
 import snowFalling_2  from './img/gallery/snowFalling/snowFalling_2.jpeg';
@@ -581,6 +584,9 @@ const JULY2026_IMAGES: GalleryImage[] = [
   { src: july2026_7,  alt: 'Nikkei Legacy Park, July 2026, photo taken by Chuck Tasaka',
     
     caption: <>The ground cover is showing its beauty and colour to enhance the garden.</>,   },
+  { src: aug2026_1,  alt: 'Nikkei Legacy Park, August 2026, photo taken by Chuck Tasaka',
+    
+    caption: <>After 9:00 pm, the sensor will light up the gazebo for night viewers.</>,   },
 ];
 
 
@@ -759,6 +765,10 @@ const DONORS3_IMAGES: GalleryImage[] = [
 
 
 const DONORS4_IMAGES: GalleryImage[] = [
+  { src: donors_40, alt: 'Donors',
+    caption: <>n Memory of the three Asahi players who were sent to Greenwood.</>,  },
+  { src: donors_41, alt: 'Donors',
+    caption: <>Sakura Blossom In Memory of the Madokoro family</>,  },
   { src: donors_37, alt: 'Donors', },
   { src: donors_38, alt: 'Donors', },
   { src: donors_39, alt: 'Donors', },
