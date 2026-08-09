@@ -161,6 +161,9 @@ import miki  from './img/gallery/misc/miki.jpg';
 import buildings_1  from './img/gallery/buildings/buildings_1.jpg';
 import buildings_2  from './img/gallery/buildings/buildings_2.jpg';
 import buildings_3  from './img/gallery/buildings/buildings_3.jpg';
+import building4_text  from './img/gallery/buildings/building4_text.jpeg';
+import building3_text  from './img/gallery/buildings/building3_text.jpeg';
+import building10_text  from './img/gallery/buildings/building10_text.jpeg';
 
 import restoration1  from './img/gallery/restoration/restoration1.JPG';
 import restoration2  from './img/gallery/restoration/restoration2.JPG';
@@ -1763,6 +1766,10 @@ const BUILDING_IMAGES: GalleryImage[] = [
     ),
   },
   {
+    src: building3_text,
+    alt: 'Building #3',
+  },
+  {
     src: misc_5,
     alt: 'Building #4',
     caption: (
@@ -1772,6 +1779,10 @@ const BUILDING_IMAGES: GalleryImage[] = [
         Photo courtesy of Greenwood Museum
       </>
     ),
+  },
+  {
+    src: building4_text,
+    alt: 'Building #4',
   },
   {
     src: misc_11,
@@ -1790,6 +1801,10 @@ const BUILDING_IMAGES: GalleryImage[] = [
     caption: <>#10 building that later became primary classroom, boxing gym and presently the Greenwood Volunteer Fire Dept.
         <br /><br />
         Photo courtesy of Eiko Kimoto</>,
+  },
+  {
+    src: building10_text,
+    alt: 'Building #10',
   },
   {
     src: misc_7,
