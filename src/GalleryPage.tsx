@@ -172,6 +172,7 @@ import buildings_3  from './img/gallery/buildings/buildings_3.jpg';
 import building4_text  from './img/gallery/buildings/building4_text.jpeg';
 import building3_text  from './img/gallery/buildings/building3_text.jpeg';
 import building10_text  from './img/gallery/buildings/building10_text.jpeg';
+import building1_text  from './img/gallery/buildings/building1_text.jpeg';
 
 import restoration1  from './img/gallery/restoration/restoration1.JPG';
 import restoration2  from './img/gallery/restoration/restoration2.JPG';
@@ -716,40 +717,40 @@ const TRIBUTE2_IMAGES: GalleryImage[] = [
 
 
 const DONORS_IMAGES: GalleryImage[] = [
-  { src: donors_1, alt: 'Donors' },
-  { src: donors_2, alt: 'Donors' },
-  { src: donors_3, alt: 'Donors' },
-  { src: donors_4, alt: 'Donors' },
-  { src: donors_5, alt: 'Donors' },
-  { src: donors_6, alt: 'Donors' },
+  // { src: donors_1, alt: 'Donors' },
+  // { src: donors_2, alt: 'Donors' },
+  // { src: donors_3, alt: 'Donors' },
+  // { src: donors_4, alt: 'Donors' },
+  // { src: donors_5, alt: 'Donors' },
+  // { src: donors_6, alt: 'Donors' },
   { src: donors_6a, 
     alt: 'snow lantern',
     caption: <>Dr. Soichi Isomura and Frances Imai family donated the snow lantern.  This will go beside the lantern donor Isomura/Imai.</>, },
   { src: donors_6b, 
     alt: 'snow lantern',
     caption: <>This lantern and Tsuru were donated by Stephen and Dianne Tasaka Family.</>, },
-  { src: donors_7, alt: 'Donors' },
-  { src: donors_8, alt: 'Donors' },
-  { src: donors_9, alt: 'Donors' },
-  { src: donors_10, alt: 'Donors' },
+  // { src: donors_7, alt: 'Donors' },
+  // { src: donors_8, alt: 'Donors' },
+  // { src: donors_9, alt: 'Donors' },
+  // { src: donors_10, alt: 'Donors' },
 ];
 
 
-const DONORS2_IMAGES: GalleryImage[] = [
-  { src: donors_11, alt: 'Donors' },
-  { src: donors_12, alt: 'Donors' },
-  { src: donors_13, alt: 'Donors' },
-  { src: donors_14, alt: 'Donors' },
-  { src: donors_15, alt: 'Donors' },
-  { src: donors_16, alt: 'Donors' },
-  { src: donors_17, alt: 'Donors' },
-  { src: donors_18, alt: 'Donors' },
-  { src: donors_19, alt: 'Donors' },
-  { src: donors_20, alt: 'Donors' },
-  { src: donors_21, alt: 'Donors' },
-  { src: donors_22, alt: 'Donors',
-    caption: <>Donors listed for trees and bench.</>,  },
-];
+// const DONORS2_IMAGES: GalleryImage[] = [
+//   { src: donors_11, alt: 'Donors' },
+//   { src: donors_12, alt: 'Donors' },
+//   { src: donors_13, alt: 'Donors' },
+//   { src: donors_14, alt: 'Donors' },
+//   { src: donors_15, alt: 'Donors' },
+//   { src: donors_16, alt: 'Donors' },
+//   { src: donors_17, alt: 'Donors' },
+//   { src: donors_18, alt: 'Donors' },
+//   { src: donors_19, alt: 'Donors' },
+//   { src: donors_20, alt: 'Donors' },
+//   { src: donors_21, alt: 'Donors' },
+//   { src: donors_22, alt: 'Donors',
+//     caption: <>Donors listed for trees and bench.</>,  },
+// ];
 
 const DONORS3_IMAGES: GalleryImage[] = [
   { src: donors_23, alt: 'Donors',
@@ -778,8 +779,8 @@ const DONORS3_IMAGES: GalleryImage[] = [
     caption: <>Donor of the panel “Where Two Cultures Meet”</>,  },
   { src: donors_35, alt: 'Donors',
     caption: <>Donors of the Peace Crane</>,  },
-  { src: donors_36, alt: 'Donors',
-    caption: <>Sakura Blossom donors for the Kindness and Acceptance.</>,  },
+  // { src: donors_36, alt: 'Donors',
+  //   caption: <>Sakura Blossom donors for the Kindness and Acceptance.</>,  },
 ];
 
 
@@ -1736,6 +1737,10 @@ const BUILDING_IMAGES: GalleryImage[] = [
         Photo courtesy of Greenwood Museum
       </>
     ),
+  },
+  {
+    src: building1_text,
+    alt: 'Building #1',
   },
   {
     src: misc_3,
@@ -4000,7 +4005,7 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Nikkei Legacy Park Tribute Plaques: Gallery 1') && <Carousel images={TRIBUTE_IMAGES} title="Nikkei Legacy Park Tribute Plaques: Gallery 1" />}
           {matchesQuery('Nikkei Legacy Park Tribute Plaques: Gallery 2') && <Carousel images={TRIBUTE2_IMAGES} title="Nikkei Legacy Park Tribute Plaques: Gallery 2" />}
           {matchesQuery('Thank You Donors: Gallery 1') && <Carousel images={DONORS_IMAGES} title="Thank You Donors: Gallery 1" />}
-          {matchesQuery('Thank You Donors: Gallery 2') && <Carousel images={DONORS2_IMAGES} title="Thank You Donors: Gallery 2" />}
+          {/* {matchesQuery('Thank You Donors: Gallery 2') && <Carousel images={DONORS2_IMAGES} title="Thank You Donors: Gallery 2" />} */}
           {matchesQuery('Thank You Donors: Gallery 3') && <Carousel images={DONORS3_IMAGES} title="Thank You Donors: Gallery 3" />}
           {matchesQuery('Thank You Donors: Gallery 4') && <Carousel images={DONORS4_IMAGES} title="Thank You Donors: Gallery 4" />}
           {matchesQuery('Grand Opening: July 20, 2025') && <Carousel images={OPENING_IMAGES}   title="Grand Opening: July 20, 2025" />}
