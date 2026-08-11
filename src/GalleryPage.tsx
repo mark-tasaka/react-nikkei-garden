@@ -716,24 +716,18 @@ const TRIBUTE2_IMAGES: GalleryImage[] = [
 ];
 
 
-const DONORS_IMAGES: GalleryImage[] = [
-  // { src: donors_1, alt: 'Donors' },
-  // { src: donors_2, alt: 'Donors' },
-  // { src: donors_3, alt: 'Donors' },
-  // { src: donors_4, alt: 'Donors' },
-  // { src: donors_5, alt: 'Donors' },
-  // { src: donors_6, alt: 'Donors' },
-  { src: donors_6a, 
-    alt: 'snow lantern',
-    caption: <>Dr. Soichi Isomura and Frances Imai family donated the snow lantern.  This will go beside the lantern donor Isomura/Imai.</>, },
-  { src: donors_6b, 
-    alt: 'snow lantern',
-    caption: <>This lantern and Tsuru were donated by Stephen and Dianne Tasaka Family.</>, },
-  // { src: donors_7, alt: 'Donors' },
-  // { src: donors_8, alt: 'Donors' },
-  // { src: donors_9, alt: 'Donors' },
-  // { src: donors_10, alt: 'Donors' },
-];
+// const DONORS_IMAGES: GalleryImage[] = [
+//   { src: donors_1, alt: 'Donors' },
+//   { src: donors_2, alt: 'Donors' },
+//   { src: donors_3, alt: 'Donors' },
+//   { src: donors_4, alt: 'Donors' },
+//   { src: donors_5, alt: 'Donors' },
+//   { src: donors_6, alt: 'Donors' },
+//   { src: donors_7, alt: 'Donors' },
+//   { src: donors_8, alt: 'Donors' },
+//   { src: donors_9, alt: 'Donors' },
+//   { src: donors_10, alt: 'Donors' },
+// ];
 
 
 // const DONORS2_IMAGES: GalleryImage[] = [
@@ -752,7 +746,13 @@ const DONORS_IMAGES: GalleryImage[] = [
 //     caption: <>Donors listed for trees and bench.</>,  },
 // ];
 
-const DONORS3_IMAGES: GalleryImage[] = [
+const DONORS_IMAGES: GalleryImage[] = [
+  { src: donors_6a, 
+    alt: 'snow lantern',
+    caption: <>Dr. Soichi Isomura and Frances Imai family donated the snow lantern.  This will go beside the lantern donor Isomura/Imai.</>, },
+  { src: donors_6b, 
+    alt: 'snow lantern',
+    caption: <>This lantern and Tsuru were donated by Stephen and Dianne Tasaka Family.</>, },
   { src: donors_23, alt: 'Donors',
     caption: <>Japanese Lantern donors: Stephen and Dianne Tasaka family.</>,  },
   { src: donors_24, alt: 'Donors',
@@ -784,7 +784,7 @@ const DONORS3_IMAGES: GalleryImage[] = [
 ];
 
 
-const DONORS4_IMAGES: GalleryImage[] = [
+const DONORS2_IMAGES: GalleryImage[] = [
   { src: donors_40, alt: 'Donors',
     caption: <>n Memory of the three Asahi players who were sent to Greenwood.</>,  },
   { src: donors_41, alt: 'Donors',
@@ -3890,8 +3890,8 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park Tribute Plaques: Gallery 2' },
     { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 1' },
     { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 2' },
-    { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 3' },
-    { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 4' },
+    // { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 3' },
+    // { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 4' },
     { filterKey: 'nikkei', title: 'Grand Opening: July 20, 2025' },
     { filterKey: 'nikkei', title: 'Japanese Canadian Signage Unveiling: 2018' },
     { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 1' },
@@ -4005,9 +4005,9 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Nikkei Legacy Park Tribute Plaques: Gallery 1') && <Carousel images={TRIBUTE_IMAGES} title="Nikkei Legacy Park Tribute Plaques: Gallery 1" />}
           {matchesQuery('Nikkei Legacy Park Tribute Plaques: Gallery 2') && <Carousel images={TRIBUTE2_IMAGES} title="Nikkei Legacy Park Tribute Plaques: Gallery 2" />}
           {matchesQuery('Thank You Donors: Gallery 1') && <Carousel images={DONORS_IMAGES} title="Thank You Donors: Gallery 1" />}
-          {/* {matchesQuery('Thank You Donors: Gallery 2') && <Carousel images={DONORS2_IMAGES} title="Thank You Donors: Gallery 2" />} */}
-          {matchesQuery('Thank You Donors: Gallery 3') && <Carousel images={DONORS3_IMAGES} title="Thank You Donors: Gallery 3" />}
-          {matchesQuery('Thank You Donors: Gallery 4') && <Carousel images={DONORS4_IMAGES} title="Thank You Donors: Gallery 4" />}
+          {matchesQuery('Thank You Donors: Gallery 2') && <Carousel images={DONORS2_IMAGES} title="Thank You Donors: Gallery 2" />}
+          {/* {matchesQuery('Thank You Donors: Gallery 3') && <Carousel images={DONORS3_IMAGES} title="Thank You Donors: Gallery 3" />}
+          {matchesQuery('Thank You Donors: Gallery 4') && <Carousel images={DONORS4_IMAGES} title="Thank You Donors: Gallery 4" />} */}
           {matchesQuery('Grand Opening: July 20, 2025') && <Carousel images={OPENING_IMAGES}   title="Grand Opening: July 20, 2025" />}
           {matchesQuery('Japanese Canadian Signage Unveiling: 2018') && <Carousel images={UNVEILING_IMAGES}   title="Japanese Canadian Signage Unveiling: 2018" />}
           {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 1') && <Carousel images={VISITORS_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 1" />}
