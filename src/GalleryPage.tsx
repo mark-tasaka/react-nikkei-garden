@@ -479,6 +479,11 @@ import donors_38  from './img/gallery/donors/donors_38.jpeg';
 import donors_39  from './img/gallery/donors/donors_39.jpeg';
 import donors_40  from './img/gallery/donors/donors_40.jpeg';
 import donors_41  from './img/gallery/donors/donors_41.jpeg';
+import donors_a1  from './img/gallery/donors/donors_a1.jpeg';
+import donors_a2  from './img/gallery/donors/donors_a2.jpeg';
+import donors_a3  from './img/gallery/donors/donors_a3.jpeg';
+import donors_a4  from './img/gallery/donors/donors_a4.jpeg';
+import donors_a5  from './img/gallery/donors/donors_a5.jpeg';
 
 import snowFalling_1  from './img/gallery/snowFalling/snowFalling_1.jpeg';
 import snowFalling_2  from './img/gallery/snowFalling/snowFalling_2.jpeg';
@@ -792,8 +797,12 @@ const DONORS2_IMAGES: GalleryImage[] = [
   { src: donors_37, alt: 'Donors', },
   { src: donors_38, alt: 'Donors', },
   { src: donors_39, alt: 'Donors', },
+  { src: donors_a1, alt: 'Donors', },
+  { src: donors_a2, alt: 'Donors', },
+  { src: donors_a3, alt: 'Donors', },
+  { src: donors_a4, alt: 'Donors', },
+  { src: donors_a5, alt: 'Donors', },
 ];
-
 
 const OPENING_IMAGES: GalleryImage[] = [
   {
