@@ -485,6 +485,27 @@ import donors_a3  from './img/gallery/donors/donors_a3.jpeg';
 import donors_a4  from './img/gallery/donors/donors_a4.jpeg';
 import donors_a5  from './img/gallery/donors/donors_a5.jpeg';
 
+import donors_b1  from './img/gallery/donors/donors_b1.jpg';
+import donors_b2  from './img/gallery/donors/donors_b2.jpg';
+import donors_b3  from './img/gallery/donors/donors_b3.jpg';
+import donors_b4  from './img/gallery/donors/donors_b4.jpg';
+import donors_b5  from './img/gallery/donors/donors_b5.jpg';
+import donors_b6  from './img/gallery/donors/donors_b6.jpg';
+import donors_b7  from './img/gallery/donors/donors_b7.jpg';
+import donors_b8  from './img/gallery/donors/donors_b8.jpg';
+import donors_b9  from './img/gallery/donors/donors_b9.jpg';
+import donors_b10 from './img/gallery/donors/donors_b10.jpg';
+import donors_b11 from './img/gallery/donors/donors_b11.jpg';
+import donors_b12 from './img/gallery/donors/donors_b12.jpg';
+import donors_b13 from './img/gallery/donors/donors_b13.jpg';
+import donors_b14 from './img/gallery/donors/donors_b14.jpg';
+import donors_b15 from './img/gallery/donors/donors_b15.jpg';
+import donors_b16 from './img/gallery/donors/donors_b16.jpg';
+import donors_b17 from './img/gallery/donors/donors_b17.jpg';
+import donors_b18 from './img/gallery/donors/donors_b18.jpg';
+import donors_b19 from './img/gallery/donors/donors_b19.jpg';
+import donors_b20 from './img/gallery/donors/donors_b20.jpg';
+
 import snowFalling_1  from './img/gallery/snowFalling/snowFalling_1.jpeg';
 import snowFalling_2  from './img/gallery/snowFalling/snowFalling_2.jpeg';
 import snowFalling_3  from './img/gallery/snowFalling/snowFalling_3.jpeg';
@@ -758,50 +779,30 @@ const DONORS_IMAGES: GalleryImage[] = [
   { src: donors_6b, 
     alt: 'snow lantern',
     caption: <>This lantern and Tsuru were donated by Stephen and Dianne Tasaka Family.</>, },
-  { src: donors_23, alt: 'Donors',
-    caption: <>Japanese Lantern donors: Stephen and Dianne Tasaka family.</>,  },
-  { src: donors_24, alt: 'Donors',
-    caption: <>Donors for the WWI JC Memorial Monument</>,  },
-  { src: donors_25, alt: 'Donors',
-    caption: <>Local donors for the Illuminated Nikkei Legacy Park sign.</>,  },
-  { src: donors_26, alt: 'Donors',
-    caption: <>Sakura Blossom Memorial for the Homma family.</>,  },
-  { src: donors_27, alt: 'Donors',
-    caption: <>Sakura Blossom Memorial for the Tasaka family.</>,  },
-  { src: donors_28, alt: 'Donors',
-    caption: <>Sakura Blossom Memorial orial for the Hall family.</>,  },
-  { src: donors_29, alt: 'Donors',
-    caption: <>Japanese Lantern Memorial for the Isomura/Imai family </>,  },
-  { src: donors_30, alt: 'Donors',
-    caption: <>Sakura Blossom Memorial in Appreciation</>,  },
-  { src: donors_31, alt: 'Donors',
-    caption: <>Sakura Blossom In Memorial for the Miki family</>,  },
-  { src: donors_32, alt: 'Donors',
-    caption: <>Sakura Blossom Memorial for Imai and Mayede family</>,  },
-  { src: donors_33, alt: 'Donors',
-    caption: <>Sakura Memorial for David.</>,  },
-  { src: donors_34, alt: 'Donors',
-    caption: <>Donor of the panel “Where Two Cultures Meet”</>,  },
-  { src: donors_35, alt: 'Donors',
-    caption: <>Donors of the Peace Crane</>,  },
-  // { src: donors_36, alt: 'Donors',
-  //   caption: <>Sakura Blossom donors for the Kindness and Acceptance.</>,  },
+  { src: donors_b1,  alt: 'snow lantern',},
+  { src: donors_b2,  alt: 'snow lantern',},
+  { src: donors_b3,  alt: 'snow lantern',},
+  { src: donors_b4,  alt: 'snow lantern',},
+  { src: donors_b5,  alt: 'snow lantern',},
+  { src: donors_b6,  alt: 'snow lantern',},
+  { src: donors_b7,  alt: 'snow lantern',},
+  { src: donors_b8,  alt: 'snow lantern',},
+  { src: donors_b9,  alt: 'snow lantern',},
+  { src: donors_b10, alt: 'snow lantern',},
 ];
 
 
 const DONORS2_IMAGES: GalleryImage[] = [
-  { src: donors_40, alt: 'Donors',
-    caption: <>n Memory of the three Asahi players who were sent to Greenwood.</>,  },
-  { src: donors_41, alt: 'Donors',
-    caption: <>Sakura Blossom In Memory of the Madokoro family</>,  },
-  { src: donors_37, alt: 'Donors', },
-  { src: donors_38, alt: 'Donors', },
-  { src: donors_39, alt: 'Donors', },
-  { src: donors_a1, alt: 'Donors', },
-  { src: donors_a2, alt: 'Donors', },
-  { src: donors_a3, alt: 'Donors', },
-  { src: donors_a4, alt: 'Donors', },
-  { src: donors_a5, alt: 'Donors', },
+  { src: donors_b11, alt: 'snow lantern',},
+  { src: donors_b12, alt: 'snow lantern',},
+  { src: donors_b13, alt: 'snow lantern',},
+  { src: donors_b14, alt: 'snow lantern',},
+  { src: donors_b15, alt: 'snow lantern',},
+  { src: donors_b16, alt: 'snow lantern',},
+  { src: donors_b17, alt: 'snow lantern',},
+  { src: donors_b18, alt: 'snow lantern',},
+  { src: donors_b19, alt: 'snow lantern',},
+  { src: donors_b20, alt: 'snow lantern',},
 ];
 
 const OPENING_IMAGES: GalleryImage[] = [
