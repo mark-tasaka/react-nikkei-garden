@@ -741,37 +741,6 @@ const TRIBUTE2_IMAGES: GalleryImage[] = [
   { src: tribute_16, alt: 'Tribute Image 16' },
 ];
 
-
-// const DONORS_IMAGES: GalleryImage[] = [
-//   { src: donors_1, alt: 'Donors' },
-//   { src: donors_2, alt: 'Donors' },
-//   { src: donors_3, alt: 'Donors' },
-//   { src: donors_4, alt: 'Donors' },
-//   { src: donors_5, alt: 'Donors' },
-//   { src: donors_6, alt: 'Donors' },
-//   { src: donors_7, alt: 'Donors' },
-//   { src: donors_8, alt: 'Donors' },
-//   { src: donors_9, alt: 'Donors' },
-//   { src: donors_10, alt: 'Donors' },
-// ];
-
-
-// const DONORS2_IMAGES: GalleryImage[] = [
-//   { src: donors_11, alt: 'Donors' },
-//   { src: donors_12, alt: 'Donors' },
-//   { src: donors_13, alt: 'Donors' },
-//   { src: donors_14, alt: 'Donors' },
-//   { src: donors_15, alt: 'Donors' },
-//   { src: donors_16, alt: 'Donors' },
-//   { src: donors_17, alt: 'Donors' },
-//   { src: donors_18, alt: 'Donors' },
-//   { src: donors_19, alt: 'Donors' },
-//   { src: donors_20, alt: 'Donors' },
-//   { src: donors_21, alt: 'Donors' },
-//   { src: donors_22, alt: 'Donors',
-//     caption: <>Donors listed for trees and bench.</>,  },
-// ];
-
 const DONORS_IMAGES: GalleryImage[] = [
   { src: donors_6a, 
     alt: 'snow lantern',

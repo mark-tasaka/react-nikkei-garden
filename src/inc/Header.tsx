@@ -5,6 +5,14 @@ import { NavLink, Link } from 'react-router-dom';
 import './css/Header.css';
 import logoHeader from './img/header/logo_header.png';
 import logoHeaderSticky from './img/header/logo_header-sticky.png';
+import weatherClearSky from './img/header/weather/01-clear-sky.png';
+import weatherPartlyCloudy from './img/header/weather/02-partly-cloudy.png';
+import weatherOvercast from './img/header/weather/03-overcast.png';
+import weatherFoggy from './img/header/weather/04-foggy.png';
+import weatherRain from './img/header/weather/05-rain.png';
+import weatherSnow from './img/header/weather/06-snow.png';
+import weatherRainShowers from './img/header/weather/07-rain-showers.png';
+import weatherThunderstorm from './img/header/weather/08-thunderstorm.png';
 
 /* ─────────────────────────────────────────────────────────
    Nav link lists
@@ -80,14 +88,14 @@ const NavLinks: React.FC<NavLinksProps> = ({ onLinkClick, includeGreenwood = fal
 
 // Replace getWeatherEmoji with this:
 function getWeatherIcon(code: number): string {
-  if (code === 0) return require('./img/header/weather/01-clear-sky.png');
-  if (code <= 2)  return require('./img/header/weather/02-partly-cloudy.png');
-  if (code === 3) return require('./img/header/weather/03-overcast.png');
-  if (code <= 49) return require('./img/header/weather/04-foggy.png');
-  if (code <= 69) return require('./img/header/weather/05-rain.png');
-  if (code <= 79) return require('./img/header/weather/06-snow.png');
-  if (code <= 84) return require('./img/header/weather/07-rain-showers.png');
-  return require('./img/header/weather/08-thunderstorm.png');
+  if (code === 0) return weatherClearSky;
+  if (code <= 2) return weatherPartlyCloudy;
+  if (code === 3) return weatherOvercast;
+  if (code <= 49) return weatherFoggy;
+  if (code <= 69) return weatherRain;
+  if (code <= 79) return weatherSnow;
+  if (code <= 84) return weatherRainShowers;
+  return weatherThunderstorm;
 }
 
 const useHeaderWeather = () => {
