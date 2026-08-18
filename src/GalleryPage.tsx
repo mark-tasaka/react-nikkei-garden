@@ -338,6 +338,7 @@ import visitors_27  from './img/gallery/visitors/visitors_27.jpg';
 import visitors_28  from './img/gallery/visitors/visitors_28.jpg';
 import visitors_29  from './img/gallery/visitors/visitors_29.jpg';
 import visitors_30  from './img/gallery/visitors/visitors_30.jpg';
+import visitors_31  from './img/gallery/visitors/visitors_31.jpg';
 
 import food_1  from './img/gallery/food/food_1.jpg';
 import food_2  from './img/gallery/food/food_2.jpg';
@@ -1074,6 +1075,11 @@ const VISITORS3_IMAGES: GalleryImage[] = [
     src: visitors_30,
     alt: 'Keiko Funahashi',
     caption: <>Keiko Funahashi of Nikkei Place and Mas Watanabe visited Nikkei Legacy Park.</>,
+  },
+  {
+    src: visitors_31,
+    alt: 'daughter Myma and mother Sachiko Okuda on the Tomoshibi internment bus tour to learn together the JC history.',
+    caption: <>Daughter Myma and mother Sachiko Okuda on the Tomoshibi internment bus tour to learn together the JC history.</>,
   },
 
 ];
@@ -1880,34 +1886,34 @@ const BUILDING2_IMAGES: GalleryImage[] = [
     src: buildingArticle_1,
     alt: '',
   },
-  {
-    src: buildingArticle_2,
-    alt: '',
-    caption: (
-      <>Under the Greenwood Museum, Rita Daminato and Ginny Kelly collected all these documents with the Secretary of States of Kelowna.  </>
-    ),
-  },
-  {
-    src: buildingArticle_3,
-    alt: '',
-    caption: (
-      <>Under the Greenwood Museum, Rita Daminato and Ginny Kelly collected all these documents with the Secretary of States of Kelowna.  </>
-    ),
-  },
-  {
-    src: buildingArticle_4,
-    alt: '',
-    caption: (
-      <>Under the Greenwood Museum, Rita Daminato and Ginny Kelly collected all these documents with the Secretary of States of Kelowna.  </>
-    ),
-  },
-  {
-    src: buildingArticle_5,
-    alt: '',
-    caption: (
-      <>Under the Greenwood Museum, Rita Daminato and Ginny Kelly collected all these documents with the Secretary of States of Kelowna.  </>
-    ),
-  },
+  // {
+  //   src: buildingArticle_2,
+  //   alt: '',
+  //   caption: (
+  //     <>Under the Greenwood Museum, Rita Daminato and Ginny Kelly collected all these documents with the Secretary of States of Kelowna.  </>
+  //   ),
+  // },
+  // {
+  //   src: buildingArticle_3,
+  //   alt: '',
+  //   caption: (
+  //     <>Under the Greenwood Museum, Rita Daminato and Ginny Kelly collected all these documents with the Secretary of States of Kelowna.  </>
+  //   ),
+  // },
+  // {
+  //   src: buildingArticle_4,
+  //   alt: '',
+  //   caption: (
+  //     <>Under the Greenwood Museum, Rita Daminato and Ginny Kelly collected all these documents with the Secretary of States of Kelowna.  </>
+  //   ),
+  // },
+  // {
+  //   src: buildingArticle_5,
+  //   alt: '',
+  //   caption: (
+  //     <>Under the Greenwood Museum, Rita Daminato and Ginny Kelly collected all these documents with the Secretary of States of Kelowna.  </>
+  //   ),
+  // },
   {
     src: buildings_1,
     alt: '',
