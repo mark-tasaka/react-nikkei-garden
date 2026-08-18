@@ -381,6 +381,8 @@ import sports_27  from './img/gallery/sports/sports_27.jpeg';
 import sports_28  from './img/gallery/sports/sports_28.jpeg';
 import sports_29  from './img/gallery/sports/sports_29.jpeg';
 import sports_30  from './img/gallery/sports/sports_30.jpeg';
+import sports_31  from './img/gallery/sports/sports_31.jpg';
+import sports_32  from './img/gallery/sports/sports_32.jpg';
 
 import active_life_1  from './img/gallery/activeLife/active_life_1.jpg';
 import active_life_2  from './img/gallery/activeLife/active_life_2.jpg';
@@ -3520,6 +3522,20 @@ const SPORTS3_IMAGES: GalleryImage[] = [
       alt: 'Old hockey photos with names to faces',
       caption: (
         <>Old hockey photos with names to faces.  If you recognize anyone with (?), please let us know.</> 
+      ),
+    },
+    {
+      src: sports_31,
+      alt: 'Nisei Curling Club Bonspiel February 25th, 1968 ',
+      caption: (
+        <>This was the first year of Nisei Curling Club Bonspiel February 25th, 1968 held in Greenwood.<br/>Inaugural winner of “A”:  Sammy Murao, Susy Yamamoto, Gus Ishida and Toru Oye.</> 
+      ),
+    },
+    {
+      src: sports_32,
+      alt: 'Nisei Curling Club Bonspiel February 25th, 1968 ',
+      caption: (
+        <>This was the first year of Nisei Curling Club Bonspiel February 25th, 1968 held in Greenwood.<br/>Winner of “B”:  Nobby Hashimoto, Jack Takahashi, Matsy Oye and Ben Yamamura.</> 
       ),
     },
   ];
