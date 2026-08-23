@@ -542,6 +542,7 @@ import reunion_7  from './img/gallery/reunion/reunion_7.jpeg';
 import reunion_8  from './img/gallery/reunion/reunion_8.jpeg';
 import reunion_9  from './img/gallery/reunion/reunion_9.jpeg';
 import reunion_10  from './img/gallery/reunion/reunion_10.jpeg';
+import reunion_11  from './img/gallery/reunion/reunion_11.jpeg';
 
 import kozo_1  from './img/gallery/kozo/kozo_1.jpg';
 import kozo_2  from './img/gallery/kozo/kozo_2.jpg';
@@ -591,6 +592,10 @@ import kariya_7  from './img/gallery/kariya/kariya_7.jpeg';
 import kariya_8  from './img/gallery/kariya/kariya_8.jpeg';
 import kariya_9  from './img/gallery/kariya/kariya_9.jpeg';
 import kariya_10  from './img/gallery/kariya/kariya_10.jpeg';
+
+import ohairi_7  from './img/gallery/misc/ohairi-park-7.jpeg';
+import ohairi_8  from './img/gallery/misc/ohairi-park-8.jpeg';
+import ohairi_9  from './img/gallery/misc/ohairi-park-9.jpeg';
 
 interface GalleryImage {
   src: string;
@@ -1122,6 +1127,21 @@ const MISC_IMAGES: GalleryImage[] = [
     alt: 'first major fundraiser ',
     caption: <>The first major fundraiser was held at Richmond’s St. Joseph the Worker gymnasium in 2017, and it was an overwhelming success.  It was the beginning of Nikkei Legacy Park to expand the interpretive panels and WWI JC veterans monument.  Thank you for all your support. </>,
   },
+  {
+    src: ohairi_7,
+    alt: '2018 roadside signage was erected',
+    caption: <>When the 2018 roadside signage was erected, the benches were moved to this location.  Ken Hamanishi was the unofficial mayor for the JC community.  Merlin Phelps was a community volunteer.</>,
+  },
+  {
+    src: ohairi_8,
+    alt: 'These two benches were from the Ohairi Park project around 1999-2000.',
+    caption: <>These two benches were from the Ohairi Park project around 1999-2000.</>,
+  },
+  {
+    src: ohairi_9,
+    alt: 'These two benches were from the Ohairi Park project around 1999-2000.',
+    caption: <>These two benches were from the Ohairi Park project around 1999-2000.</>,
+  },
 ];
 
 const RESTORATION_IMAGES: GalleryImage[] = [
@@ -1302,7 +1322,7 @@ const SNOW_FALLING_IMAGES: GalleryImage[] = [
     src: snowFalling_1,
     alt: 'Snow Falling on Cedars Movie',
     caption: <>Snow Falling on Cedars Movie Poster
-    <br /><br />Poster Courtesy of Kim Martin and Mary Nakagawa</>,
+    <br /><br />Poster Courtesy of Kim Marti and Mary Nakagawa</>,
   },
   {
     src: snowFalling_2,
@@ -1497,6 +1517,13 @@ const REUNION_IMAGES: GalleryImage[] = [
     caption: <>Ross Pomeroy and Chuck Tasaka
         <br /><br />
         Photo courtesy of Eileen (Miki) Murao</>,
+  },
+  {
+    src: reunion_11,
+    alt: 'Donna and Dan Ishida with sister Matsy (Ishida) Oye.',
+    caption: <>Donna and Dan Ishida with sister Matsy (Ishida) Oye.
+        <br /><br />
+        Photo by Robert Hamaguchi</>,
   },
 ];
 
