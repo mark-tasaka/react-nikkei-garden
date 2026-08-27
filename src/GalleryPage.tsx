@@ -427,6 +427,10 @@ import greenwood_2  from './img/gallery/greenwood/greenwood_2.jpg';
 import greenwood_3  from './img/gallery/greenwood/greenwood_3.jpg';
 import greenwood_4  from './img/gallery/greenwood/greenwood_4.jpg';
 import greenwood_5  from './img/gallery/greenwood/greenwood_5.jpg';
+import greenwood_6  from './img/gallery/greenwood/greenwood_6.jpg';
+import greenwood_7  from './img/gallery/greenwood/greenwood_7.jpg';
+import greenwood_8  from './img/gallery/greenwood/greenwood_8.jpg';
+import greenwood_9  from './img/gallery/greenwood/greenwood_9.jpg';
 
 import farewell_1  from './img/gallery/farewell/farewell_1.jpg';
 import farewell_2  from './img/gallery/farewell/farewell_2.jpg';
@@ -545,6 +549,8 @@ import reunion_10  from './img/gallery/reunion/reunion_10.jpeg';
 import reunion_11  from './img/gallery/reunion/reunion_11.jpeg';
 import reunion_12  from './img/gallery/reunion/reunion_12.jpeg';
 import reunion_13  from './img/gallery/reunion/reunion_13.jpeg';
+import reunion_14  from './img/gallery/reunion/reunion_14.jpeg';
+import reunion_15  from './img/gallery/reunion/reunion_15.jpeg';
 
 import kozo_1  from './img/gallery/kozo/kozo_1.jpg';
 import kozo_2  from './img/gallery/kozo/kozo_2.jpg';
@@ -1316,6 +1322,26 @@ const GREENWOOD_IMAGES: GalleryImage[] = [
     caption: <>Jam-packed audience enjoyed learning and reliving those Greenwood years that cannot be replicated.
     <br /><br />Photo Courtesy of Maureen Johnson</>,
   },
+  {
+    src: greenwood_6,
+    alt: 'Kayo Miki of San Francisco played the violin in honour of her father Ichio on video',
+    caption: <>Kayo Miki of San Francisco played the violin in honour of her father Ichio on video</>,
+  },
+  {
+    src: greenwood_7,
+    alt: 'Tamika on keyboard',
+    caption: <>Tamika on keyboard</>,
+  },
+  {
+    src: greenwood_8,
+    alt: 'Kayo Miki of San Francisco played the violin in honour of her father Ichio on video',
+    caption: <>Kayo Miki of San Francisco played the violin in honour of her father Ichio on video</>,
+  },
+  {
+    src: greenwood_9,
+    alt: 'Yamabiko Taiko of Kelowna was another performer for the 80th Anniversary',
+    caption: <>Yamabiko Taiko of Kelowna was another performer for the 80th Anniversary</>,
+  },
 ];
 
 
@@ -1543,6 +1569,19 @@ const REUNION_IMAGES: GalleryImage[] = [
   },
 ];
 
+
+const REUNION2_IMAGES: GalleryImage[] = [
+  {
+    src: reunion_14,
+    alt: '1966 was Greenwood High School last grade 12 class to graduate.  Clare Tanaka Folvik celebrated her 60th year.  She was the only 1966 grad present.',
+    caption: <>1966 was Greenwood High School last grade 12 class to graduate.  Clare Tanaka Folvik celebrated her 60th year.  She was the only 1966 grad present.</>,
+  },
+  {
+    src: reunion_15,
+    alt: 'Johnny Ikari did not attend school in Greenwood because he went to work at 14 years of age.  At the grad reunion, Johnny was the oldest guest at 98.',
+    caption: <>Johnny Ikari did not attend school in Greenwood because he went to work at 14 years of age.  At the grad reunion, Johnny was the oldest guest at 98.</>,
+  },
+];
 
 const MUSEUM_IMAGES: GalleryImage[] = [
   {
@@ -3949,6 +3988,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'greenwood', title: 'Snow Falling on Cedars Movie: Gallery 1' },
     { filterKey: 'greenwood', title: 'Snow Falling on Cedars Movie: Gallery 2' },
     { filterKey: 'greenwood', title: '1962 & 1963 High School Reunion in Greenwood 2026' },
+    { filterKey: 'greenwood', title: '1966 High School Reunion in Greenwood' },
     { filterKey: 'greenwood', title: 'Visit Greenwood Museum: Gallery 1' },
     { filterKey: 'greenwood', title: 'Visit Greenwood Museum: Gallery 2' },
     { filterKey: 'greenwood', title: 'Kariya Family' },
@@ -4114,6 +4154,9 @@ const GalleryPage: React.FC = () => {
           )}
           {matchesQuery('1962 & 1963 High School Reunion in Greenwood 2026') && (
             <Carousel images={REUNION_IMAGES} title="1962 & 1963 High School Reunion in Greenwood 2026" />
+          )}
+          {matchesQuery('1966 High School Reunion in Greenwood') && (
+            <Carousel images={REUNION2_IMAGES} title="1966 High School Reunion in Greenwood" />
           )}
           {matchesQuery('Visit Greenwood Museum: Gallery 1') && (
             <Carousel images={MUSEUM_IMAGES} title="Visit Greenwood Museum: Gallery 1" />
