@@ -543,6 +543,8 @@ import reunion_8  from './img/gallery/reunion/reunion_8.jpeg';
 import reunion_9  from './img/gallery/reunion/reunion_9.jpeg';
 import reunion_10  from './img/gallery/reunion/reunion_10.jpeg';
 import reunion_11  from './img/gallery/reunion/reunion_11.jpeg';
+import reunion_12  from './img/gallery/reunion/reunion_12.jpeg';
+import reunion_13  from './img/gallery/reunion/reunion_13.jpeg';
 
 import kozo_1  from './img/gallery/kozo/kozo_1.jpg';
 import kozo_2  from './img/gallery/kozo/kozo_2.jpg';
@@ -1524,6 +1526,20 @@ const REUNION_IMAGES: GalleryImage[] = [
     caption: <>Donna and Dan Ishida with sister Matsy (Ishida) Oye.
         <br /><br />
         Photo by Robert Hamaguchi</>,
+  },
+  {
+    src: reunion_12,
+    alt: 'Two grads of 1956 attended the high school reunion July 18th, 2026.  It was Ken Hamanishi and Gail Hendry Shimizu’s 70th year since Fr during from high school.',
+    caption: <>Two grads of 1956 attended the high school reunion July 18th, 2026.  It was Ken Hamanishi and Gail Hendry Shimizu’s 70th year since Fr during from high school.
+        <br /><br />
+        Photo by Ellen Clements</>,
+  },
+  {
+    src: reunion_13,
+    alt: 'Two grads of 1956 attended the high school reunion July 18th, 2026.  It was Ken Hamanishi and Gail Hendry Shimizu’s 70th year since Fr during from high school.',
+    caption: <>Two grads of 1956 attended the high school reunion July 18th, 2026.  It was Ken Hamanishi and Gail Hendry Shimizu’s 70th year since Fr during from high school.
+        <br /><br />
+        Photo by Ellen Clements</>,
   },
 ];
 
