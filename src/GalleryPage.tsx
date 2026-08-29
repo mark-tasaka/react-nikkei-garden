@@ -1563,7 +1563,7 @@ const REUNION_IMAGES: GalleryImage[] = [
   {
     src: reunion_13,
     alt: 'Two grads of 1956 attended the high school reunion July 18th, 2026.  It was Ken Hamanishi and Gail Hendry Shimizu’s 70th year since Fr during from high school.',
-    caption: <>Two grads of 1956 attended the high school reunion July 18th, 2026.  It was Ken Hamanishi and Gail Hendry Shimizu’s 70th year since Fr during from high school.
+    caption: <>Two grads of 1956 attended the high school reunion July 18th, 2026.  It was Ken Hamanishi and Gail Hendry Shimizu’s 70th year since graduating from high school.
         <br /><br />
         Photo by Ellen Clements</>,
   },
