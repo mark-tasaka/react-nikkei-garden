@@ -1334,8 +1334,8 @@ const GREENWOOD_IMAGES: GalleryImage[] = [
   },
   {
     src: greenwood_8,
-    alt: 'Kayo Miki of San Francisco played the violin in honour of her father Ichio on video',
-    caption: <>Kayo Miki of San Francisco played the violin in honour of her father Ichio on video</>,
+    alt: 'Tamika Roberts who also played the guitar.',
+    caption: <>Tamika Roberts who also played the guitar.</>,
   },
   {
     src: greenwood_9,
@@ -1556,7 +1556,7 @@ const REUNION_IMAGES: GalleryImage[] = [
   {
     src: reunion_12,
     alt: 'Two grads of 1956 attended the high school reunion July 18th, 2026.  It was Ken Hamanishi and Gail Hendry Shimizu’s 70th year since Fr during from high school.',
-    caption: <>Two grads of 1956 attended the high school reunion July 18th, 2026.  It was Ken Hamanishi and Gail Hendry Shimizu’s 70th year since Fr during from high school.
+    caption: <>Two grads of 1956 attended the high school reunion July 18th, 2026.  It was Ken Hamanishi and Gail Hendry Shimizu’s 70th year since graduating from high school.
         <br /><br />
         Photo by Ellen Clements</>,
   },
@@ -1567,10 +1567,6 @@ const REUNION_IMAGES: GalleryImage[] = [
         <br /><br />
         Photo by Ellen Clements</>,
   },
-];
-
-
-const REUNION2_IMAGES: GalleryImage[] = [
   {
     src: reunion_14,
     alt: '1966 was Greenwood High School last grade 12 class to graduate.  Clare Tanaka Folvik celebrated her 60th year.  She was the only 1966 grad present.',
@@ -1582,6 +1578,20 @@ const REUNION2_IMAGES: GalleryImage[] = [
     caption: <>Johnny Ikari did not attend school in Greenwood because he went to work at 14 years of age.  At the grad reunion, Johnny was the oldest guest at 98.</>,
   },
 ];
+
+
+// const REUNION2_IMAGES: GalleryImage[] = [
+//   {
+//     src: reunion_14,
+//     alt: '1966 was Greenwood High School last grade 12 class to graduate.  Clare Tanaka Folvik celebrated her 60th year.  She was the only 1966 grad present.',
+//     caption: <>1966 was Greenwood High School last grade 12 class to graduate.  Clare Tanaka Folvik celebrated her 60th year.  She was the only 1966 grad present.</>,
+//   },
+//   {
+//     src: reunion_15,
+//     alt: 'Johnny Ikari did not attend school in Greenwood because he went to work at 14 years of age.  At the grad reunion, Johnny was the oldest guest at 98.',
+//     caption: <>Johnny Ikari did not attend school in Greenwood because he went to work at 14 years of age.  At the grad reunion, Johnny was the oldest guest at 98.</>,
+//   },
+// ];
 
 const MUSEUM_IMAGES: GalleryImage[] = [
   {
@@ -3988,7 +3998,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'greenwood', title: 'Snow Falling on Cedars Movie: Gallery 1' },
     { filterKey: 'greenwood', title: 'Snow Falling on Cedars Movie: Gallery 2' },
     { filterKey: 'greenwood', title: '1962 & 1963 High School Reunion in Greenwood 2026' },
-    { filterKey: 'greenwood', title: '1966 High School Reunion in Greenwood' },
+    // { filterKey: 'greenwood', title: '1966 High School Reunion in Greenwood' },
     { filterKey: 'greenwood', title: 'Visit Greenwood Museum: Gallery 1' },
     { filterKey: 'greenwood', title: 'Visit Greenwood Museum: Gallery 2' },
     { filterKey: 'greenwood', title: 'Kariya Family' },
@@ -4155,9 +4165,9 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('1962 & 1963 High School Reunion in Greenwood 2026') && (
             <Carousel images={REUNION_IMAGES} title="1962 & 1963 High School Reunion in Greenwood 2026" />
           )}
-          {matchesQuery('1966 High School Reunion in Greenwood') && (
+          {/* {matchesQuery('1966 High School Reunion in Greenwood') && (
             <Carousel images={REUNION2_IMAGES} title="1966 High School Reunion in Greenwood" />
-          )}
+          )} */}
           {matchesQuery('Visit Greenwood Museum: Gallery 1') && (
             <Carousel images={MUSEUM_IMAGES} title="Visit Greenwood Museum: Gallery 1" />
           )}
