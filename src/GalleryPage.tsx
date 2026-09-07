@@ -294,6 +294,7 @@ import cementery_4  from './img/gallery/cementery/cementery_4.jpg';
 import cementery_5  from './img/gallery/cementery/cementery_5.jpg';
 import cementery_6  from './img/gallery/cementery/cementery_6.jpg';
 import cementery_7  from './img/gallery/cementery/cementery_7.jpg';
+import cementery_8  from './img/gallery/cementery/cementery_8.jpg';
 
 import opening_1  from './img/gallery/opening2025/opening_1.jpg';
 import opening_2  from './img/gallery/opening2025/opening_2.jpg';
@@ -3394,6 +3395,13 @@ const CEMENTERY_IMAGES: GalleryImage[] = [
       alt: 'Sadako Matsuba headstone in Greenwood Cemetery',
       caption: (
         <>Sadako Matsuba</>
+      ),
+    },
+    {
+      src: cementery_8,
+      alt: 'Chiyozo Ando headstone in Greenwood Cemetery',
+      caption: (
+        <>Chiyozo Ando was from Salt Spring Island.</>
       ),
     },
   ];
