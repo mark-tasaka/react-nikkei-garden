@@ -3587,31 +3587,10 @@ const SPORTS2_IMAGES: GalleryImage[] = [
       ),
     },
     {
-      src: sports_25,
-      alt: 'First High School Hockey Jersey',
+      src: sports_26,
+      alt: 'Phoenix team',
       caption: (
-        <>This was the first high school hockey jersey designed by Stephen Tasaka circa 1957.</> 
-      ),
-    },
-    {
-      src: sports_33,
-      alt: 'Sacred Heart School team jersey.  This jersey is old since the school closed in 1954.',
-      caption: (
-        <>Sacred Heart School team jersey.  This jersey is old since the school closed in 1954.</> 
-      ),
-    },
-    {
-      src: sports_34,
-      alt: 'Dynamiters jersey was prominent in the late 50’s.  Prior to that, the team was called the Monarchs in the early to mid-50’s.',
-      caption: (
-        <>Dynamiters jersey was prominent in the late 50’s.  Prior to that, the team was called the Monarchs in the early to mid-50’s.</> 
-      ),
-    },
-    {
-      src: sports_35,
-      alt: 'Greenwood Hawks in the late 60’s.',
-      caption: (
-        <>Greenwood Hawks in the late 60’s.</> 
+        <>1911: Though not Nikkei, the Phoenix team won three championship to qualify for the Stanley Cup, but was late applying.</> 
       ),
     },
   ];
@@ -3619,13 +3598,6 @@ const SPORTS2_IMAGES: GalleryImage[] = [
   
   
 const SPORTS3_IMAGES: GalleryImage[] = [
-    {
-      src: sports_26,
-      alt: 'Phoenix team',
-      caption: (
-        <>1911: Though not Nikkei, the Phoenix team won three championship to qualify for the Stanley Cup, but was late applying.</> 
-      ),
-    },
     {
       src: sports_27,
       alt: 'Old hockey photos with names to faces',
@@ -3666,6 +3638,35 @@ const SPORTS3_IMAGES: GalleryImage[] = [
       alt: 'Nisei Curling Club Bonspiel February 25th, 1968 ',
       caption: (
         <>This was the first year of Nisei Curling Club Bonspiel February 25th, 1968 held in Greenwood.<br/>Winner of “B”:  Nobby Hashimoto, Jack Takahashi, Matsy Oye and Ben Yamamura.</> 
+      ),
+    },
+    
+    {
+      src: sports_25,
+      alt: 'First High School Hockey Jersey',
+      caption: (
+        <>This was the first high school hockey jersey designed by Stephen Tasaka circa 1957.</> 
+      ),
+    },
+    {
+      src: sports_33,
+      alt: 'Sacred Heart School team jersey.  This jersey is old since the school closed in 1954.',
+      caption: (
+        <>Sacred Heart School team jersey.  This jersey is old since the school closed in 1954.</> 
+      ),
+    },
+    {
+      src: sports_34,
+      alt: 'Dynamiters jersey was prominent in the late 50’s.  Prior to that, the team was called the Monarchs in the early to mid-50’s.',
+      caption: (
+        <>Dynamiters jersey was prominent in the late 50’s.  Prior to that, the team was called the Monarchs in the early to mid-50’s.</> 
+      ),
+    },
+    {
+      src: sports_35,
+      alt: 'Greenwood Hawks in the late 60’s.',
+      caption: (
+        <>Greenwood Hawks in the late 60’s.</> 
       ),
     },
   ];
