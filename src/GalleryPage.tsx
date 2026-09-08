@@ -385,6 +385,9 @@ import sports_29  from './img/gallery/sports/sports_29.jpeg';
 import sports_30  from './img/gallery/sports/sports_30.jpeg';
 import sports_31  from './img/gallery/sports/sports_31.jpg';
 import sports_32  from './img/gallery/sports/sports_32.jpg';
+import sports_33  from './img/gallery/sports/sports_33.jpeg';
+import sports_34  from './img/gallery/sports/sports_34.jpeg';
+import sports_35  from './img/gallery/sports/sports_35.jpeg';
 
 import active_life_1  from './img/gallery/activeLife/active_life_1.jpg';
 import active_life_2  from './img/gallery/activeLife/active_life_2.jpg';
@@ -3588,6 +3591,27 @@ const SPORTS2_IMAGES: GalleryImage[] = [
       alt: 'First High School Hockey Jersey',
       caption: (
         <>This was the first high school hockey jersey designed by Stephen Tasaka circa 1957.</> 
+      ),
+    },
+    {
+      src: sports_33,
+      alt: 'Sacred Heart School team jersey.  This jersey is old since the school closed in 1954.',
+      caption: (
+        <>Sacred Heart School team jersey.  This jersey is old since the school closed in 1954.</> 
+      ),
+    },
+    {
+      src: sports_34,
+      alt: 'Dynamiters jersey was prominent in the late 50’s.  Prior to that, the team was called the Monarchs in the early to mid-50’s.',
+      caption: (
+        <>Dynamiters jersey was prominent in the late 50’s.  Prior to that, the team was called the Monarchs in the early to mid-50’s.</> 
+      ),
+    },
+    {
+      src: sports_35,
+      alt: 'Greenwood Hawks in the late 60’s.',
+      caption: (
+        <>Greenwood Hawks in the late 60’s.</> 
       ),
     },
   ];
