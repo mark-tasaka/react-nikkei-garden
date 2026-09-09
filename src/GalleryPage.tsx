@@ -3664,9 +3664,9 @@ const SPORTS3_IMAGES: GalleryImage[] = [
     },
     {
       src: sports_35,
-      alt: 'Greenwood Hawks in the late 60’s.',
+      alt: 'Greenwood Hawks in the 1970s.',
       caption: (
-        <>Greenwood Hawks in the late 60’s.<br /><br />These jerseys are in the museum archives.</> 
+        <>Greenwood Hawks in the 1970s.<br /><br />These jerseys are in the museum archives.</> 
       ),
     },
   ];
