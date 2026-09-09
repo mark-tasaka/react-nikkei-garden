@@ -90,6 +90,7 @@ import nikkeiPark_8 from './img/gallery/nikkeiPark/nikkeiPark_8.jpg';
 import nikkeiPark_9 from './img/gallery/nikkeiPark/nikkeiPark_9.jpg';
 import nikkeiPark_10 from './img/gallery/nikkeiPark/nikkeiPark_10.jpg';
 import nikkeiPark_11 from './img/gallery/nikkeiPark/nikkeiPark_11.jpg';
+import nikkeiPark_12 from './img/gallery/nikkeiPark/nikkeiPark_12.png';
 
 import misc_1  from './img/gallery/misc/ohairi-park-1.JPG';
 import misc_2  from './img/gallery/misc/ohairi-park-2.JPG';
@@ -610,6 +611,7 @@ import kariya_10  from './img/gallery/kariya/kariya_10.jpeg';
 import ohairi_7  from './img/gallery/misc/ohairi-park-7.jpeg';
 import ohairi_8  from './img/gallery/misc/ohairi-park-8.jpeg';
 import ohairi_9  from './img/gallery/misc/ohairi-park-9.jpeg';
+import ohairi_10  from './img/gallery/misc/ohairi-park-10.jpg';
 
 interface GalleryImage {
   src: string;
@@ -643,7 +645,7 @@ const JULY2026_IMAGES: GalleryImage[] = [
   { src: aug2026_1,  alt: 'Nikkei Legacy Park, August 2026, photo taken by Chuck Tasaka',
     
     caption: <>After 9:00 pm, the sensor will light up the gazebo for night viewers.</>,   },
-  { src: aug2026_1,  alt: 'Nikkei Legacy Park, Sept 2026, photo taken by Chuck Tasaka',  },
+  { src: sept2026_1,  alt: 'Nikkei Legacy Park, September 2026, photo taken by Chuck Tasaka',  },
 ];
 
 
@@ -702,6 +704,9 @@ const NIKKEIPARK_IMAGES: GalleryImage[] = [
     alt: 'Bench Nikkei Legacy Park' ,},
   { src: nikkeiPark_11, 
     alt: 'Bench Nikkei Legacy Park' , },
+  { src: nikkeiPark_12, 
+    alt: 'City of Greenwood added this tribute. ' ,
+    caption: <>City of Greenwood added this tribute. </>, },
 ];
 
 
@@ -1161,6 +1166,11 @@ const MISC_IMAGES: GalleryImage[] = [
     src: ohairi_9,
     alt: 'These two benches were from the Ohairi Park project around 1999-2000.',
     caption: <>These two benches were from the Ohairi Park project around 1999-2000.</>,
+  },
+  {
+    src: ohairi_10,
+    alt: 'The old Ohairi Park slowly turning into Nikkei Legacy Park.',
+    caption: <>The old Ohairi Park slowly turning into Nikkei Legacy Park.</>,
   },
 ];
 
