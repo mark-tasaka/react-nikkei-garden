@@ -40,6 +40,7 @@ import july2026_5  from './img/gallery/galleryJuly2026/july2026-5.jpg';
 import july2026_6  from './img/gallery/galleryJuly2026/july2026-6.jpg';
 import july2026_7  from './img/gallery/galleryJuly2026/july2026-7.jpg';
 import aug2026_1  from './img/gallery/galleryJuly2026/aug2026_1.jpeg';
+import sept2026_1  from './img/gallery/galleryJuly2026/sept2026_1.jpg';
 
 import panel2026_1 from './img/gallery/galleryPanels2026/panel2026-1.jpeg';
 import panel2026_2 from './img/gallery/galleryPanels2026/panel2026-2.jpeg';
@@ -642,6 +643,7 @@ const JULY2026_IMAGES: GalleryImage[] = [
   { src: aug2026_1,  alt: 'Nikkei Legacy Park, August 2026, photo taken by Chuck Tasaka',
     
     caption: <>After 9:00 pm, the sensor will light up the gazebo for night viewers.</>,   },
+  { src: aug2026_1,  alt: 'Nikkei Legacy Park, Sept 2026, photo taken by Chuck Tasaka',  },
 ];
 
 
