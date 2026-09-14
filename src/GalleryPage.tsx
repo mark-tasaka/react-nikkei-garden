@@ -343,6 +343,7 @@ import visitors_29  from './img/gallery/visitors/visitors_29.jpg';
 import visitors_30  from './img/gallery/visitors/visitors_30.jpg';
 import visitors_31  from './img/gallery/visitors/visitors_31.jpg';
 import visitors_32  from './img/gallery/visitors/visitors_32.jpg';
+import visitors_33  from './img/gallery/visitors/visitors_33.jpg';
 
 import food_1  from './img/gallery/food/food_1.jpg';
 import food_2  from './img/gallery/food/food_2.jpg';
@@ -1112,6 +1113,11 @@ const VISITORS3_IMAGES: GalleryImage[] = [
     src: visitors_32,
     alt: 'Cindy Kitamura’s friend Kerri and her daughter Maddie',
     caption: <>Cindy Kitamura’s friend Kerri and her daughter Maddie dropped in for a short visit at the park.</>,
+  },
+  {
+    src: visitors_33,
+    alt: 'Harriet (Iwase) Miyagawa',
+    caption: <>Another visitor to Nikkei Legacy Park is Harriet (Iwase) Miyagawa who wrote her biography “A Life Lived”.</>,
   },
 
 ];
