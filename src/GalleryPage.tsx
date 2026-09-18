@@ -40,7 +40,6 @@ import july2026_5  from './img/gallery/galleryJuly2026/july2026-5.jpg';
 import july2026_6  from './img/gallery/galleryJuly2026/july2026-6.jpg';
 import july2026_7  from './img/gallery/galleryJuly2026/july2026-7.jpg';
 import aug2026_1  from './img/gallery/galleryJuly2026/aug2026_1.jpeg';
-import sept2026_1  from './img/gallery/galleryJuly2026/sept2026_1.jpg';
 
 import panel2026_1 from './img/gallery/galleryPanels2026/panel2026-1.jpeg';
 import panel2026_2 from './img/gallery/galleryPanels2026/panel2026-2.jpeg';
@@ -614,12 +613,34 @@ import ohairi_8  from './img/gallery/misc/ohairi-park-8.jpeg';
 import ohairi_9  from './img/gallery/misc/ohairi-park-9.jpeg';
 import ohairi_10  from './img/gallery/misc/ohairi-park-10.jpg';
 
+import sept2026_2  from './img/gallery/gallerySept2026/sept2026_2.jpg';
+import sept2026_3  from './img/gallery/gallerySept2026/sept2026_3.jpg';
+import sept2026_4  from './img/gallery/gallerySept2026/sept2026_4.jpg';
+import sept2026_5  from './img/gallery/gallerySept2026/sept2026_5.jpg';
+import sept2026_1a  from './img/gallery/gallerySept2026/sept2026_1.jpg';
+
 interface GalleryImage {
   src: string;
   alt: string;
   caption?: React.ReactNode;
 }
 
+
+const SEPT2026_IMAGES: GalleryImage[] = [
+  { src: sept2026_2,  alt: 'Nikkei Legacy Park in Autumn.  Photos by Ciel Sanders.',
+    
+    caption: <>Nikkei Legacy Park in Autumn.<br /><br />Photos by Ciel Sanders.</>,   },
+  { src: sept2026_3,  alt: 'Nikkei Legacy Park in Autumn.  Photos by Ciel Sanders.',
+    
+    caption: <>Nikkei Legacy Park in Autumn.<br /><br />Photos by Ciel Sanders.</>,   },
+  { src: sept2026_4,  alt: 'Nikkei Legacy Park in Autumn.  Photos by Ciel Sanders.',
+    
+    caption: <>Nikkei Legacy Park in Autumn.<br /><br />Photos by Ciel Sanders.</>,   },
+  { src: sept2026_5,  alt: 'Nikkei Legacy Park in Autumn.  Photos by Ciel Sanders.',
+    
+    caption: <>Nikkei Legacy Park in Autumn.<br /><br />Photos by Ciel Sanders.</>,   },
+  { src: sept2026_1a,  alt: 'Nikkei Legacy Park in Autumn.  Photos by Chuck Tasaka.',  },
+  ];
 
 const JULY2026_IMAGES: GalleryImage[] = [
   { src: july2026_1,  alt: 'Nikkei Legacy Park, July 2026, photo taken by Chuck Tasaka',
@@ -643,10 +664,8 @@ const JULY2026_IMAGES: GalleryImage[] = [
   { src: july2026_7,  alt: 'Nikkei Legacy Park, July 2026, photo taken by Chuck Tasaka',
     
     caption: <>The ground cover is showing its beauty and colour to enhance the garden.</>,   },
-  { src: aug2026_1,  alt: 'Nikkei Legacy Park, August 2026, photo taken by Chuck Tasaka',
+  { src: aug2026_1,  alt: 'Nikkei Legacy Park, August 2026, photo taken by Chuck Tasaka',},
     
-    caption: <>After 9:00 pm, the sensor will light up the gazebo for night viewers.</>,   },
-  { src: sept2026_1,  alt: 'Nikkei Legacy Park, September 2026, photo taken by Chuck Tasaka',  },
 ];
 
 
@@ -4031,6 +4050,7 @@ const GalleryPage: React.FC = () => {
   const matchesQuery = (title: string) => q === '' || title.toLowerCase().includes(q);
 
   const ALL_CAROUSELS: { filterKey: GalleryFilter; title: string }[] = [
+    { filterKey: 'nikkei', title: 'Autumn in the Park: September 2026' },
     { filterKey: 'nikkei', title: 'Summertime in the Park: July 2026' },
     { filterKey: 'nikkei', title: 'Springtime in the Park: June 2026' },
     { filterKey: 'nikkei', title: 'Springtime in the Park: May 2026' },
@@ -4148,6 +4168,7 @@ const GalleryPage: React.FC = () => {
 
       {(filter === 'all' || filter === 'nikkei') && (
         <>
+          {matchesQuery('Autumn in the Park: September 2026') && <Carousel images={SEPT2026_IMAGES}  title="Autumn in the Park: September 2026" />}
           {matchesQuery('Summertime in the Park: July 2026') && <Carousel images={JULY2026_IMAGES}  title="Summertime in the Park: July 2026" />}
           {matchesQuery('Springtime in the Park: June 2026') && <Carousel images={JUNE_IMAGES}  title="Springtime in the Park: June 2026" />}
           {matchesQuery('Springtime in the Park: May 2026') && <Carousel images={MAY_IMAGES}   title="Springtime in the Park: May 2026" />}
