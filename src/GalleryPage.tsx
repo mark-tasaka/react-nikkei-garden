@@ -343,6 +343,7 @@ import visitors_30  from './img/gallery/visitors/visitors_30.jpg';
 import visitors_31  from './img/gallery/visitors/visitors_31.jpg';
 import visitors_32  from './img/gallery/visitors/visitors_32.jpg';
 import visitors_33  from './img/gallery/visitors/visitors_33.jpg';
+import visitors_34  from './img/gallery/visitors/visitors_34.jpg';
 
 import food_1  from './img/gallery/food/food_1.jpg';
 import food_2  from './img/gallery/food/food_2.jpg';
@@ -596,6 +597,7 @@ import museum_22  from './img/gallery/museum/museum_22.jpeg';
 import museum_23  from './img/gallery/museum/museum_23.jpeg';
 import museum_24  from './img/gallery/museum/museum_24.jpeg';
 import museum_25  from './img/gallery/museum/museum_25.jpeg';
+import museum_26  from './img/gallery/museum/museum_26.jpeg';
 
 import kariya_1  from './img/gallery/kariya/kariya_1.jpeg';
 import kariya_2  from './img/gallery/kariya/kariya_2.jpeg';
@@ -1137,6 +1139,11 @@ const VISITORS3_IMAGES: GalleryImage[] = [
     src: visitors_33,
     alt: 'Harriet (Iwase) Miyagawa',
     caption: <>Another visitor to Nikkei Legacy Park is Harriet (Iwase) Miyagawa who wrote her biography “A Life Lived”.</>,
+  },
+  {
+    src: visitors_34,
+    alt: 'Yoko Nakagawa and Lurana Tasaka',
+    caption: <>Yoko Nakagawa and Lurana Tasaka along with Kathleen Quo Vadis taking the photo in September, 2026.</>,
   },
 
 ];
@@ -1769,6 +1776,12 @@ const MUSEUM2_IMAGES: GalleryImage[] = [
     src: museum_25,
     alt: 'Japanese dolls, plate and dishes display.',
     caption: <>Japanese dolls, plate and dishes display.</>,
+  },
+  {
+    src: museum_26,
+    alt: 'Kathleen, Doreen Maclean (Greenwood Museum supervisor), Yoko, Clare Folvik volunteer and Chuck reminisced at the museum.',
+    caption: <>Kathleen, Doreen Maclean (Greenwood Museum supervisor), Yoko,
+    Clare (Tanaka) Folvik volunteer and Chuck reminisced at the museum.</>,
   },
 ];
 
