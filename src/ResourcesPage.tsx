@@ -86,6 +86,8 @@ import googleDoc from './img/articles/googleDoc.png';
 
 import exile from './img/articles/exileKirk.jpg';
 
+import dailyNews from './img/articles/dailyNews.jpeg';
+
 const burton2024 = '/pdf/burton2024.pdf';
 const kirk2025 = '/pdf/kirk2025.pdf';
 
@@ -831,6 +833,16 @@ const ARTICLES: ArticleEntry[] = [
     excerpt:   'The first recorded Japanese immigrant to Canada, Manzo Nagano, arrived alone in 1877. Although significant numbers of Japanese did not start to come until the late 1880s, once theflow started, their numbers increased rapidly. Most of these early immigrants worked on the westcoast of British Columbia as laborers in the forestry, fishing, mining and agricultural industries,but as their communities began to take shape, many also established small businesses rangingfrom export-import companies to grocery and drug stores to barbershops. Eventually there ',
     img:       exile,
   },
+  {
+    source:    'Daily News',
+    sourceUrl: 'https://www.dnews.com/',
+    title:     'OPINION: Why are we picking a fight with Canada?',
+    author:    'Stephen Pearce',
+    date:      'September 23, 2026',
+    link:      'https://www.dnews.com/opinion/opinion-why-are-we-picking-a-fight-with-canada-4e8fc0fa/',
+    excerpt:   'I learned much of this from Chuck Tasaka, caretaker of a tiny city park dedicated to the memory and history of the internment. Chuck was born in Greenwood after his parents were sent there in the spring of 1942. Now 81, he lives in Vancouver most of the year but tends the park and guides tourists during summer months.',
+    img:       dailyNews,
+  },
 ];
 
 function truncateWords(text: string, maxWords: number): string {
@@ -873,7 +885,7 @@ type SortDir   = 'desc' | 'asc';
 
 const ArticlesPage: React.FC = () => {
   const [query,     setQuery]     = useState('');
-  const [filter, setFilter] = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies' | 'Greenwood Nikkei' | 'The Bulletin' | 'Japanese Canadian Veterans' | 'Canadian Encyclopedia' | 'Books' | 'PDF' | 'Google Docs' |'UBC'>('all');
+  const [filter, setFilter] = useState<'all' | 'Discover Nikkei' | 'Japanese Canadian Legacies' | 'Greenwood Nikkei' | 'The Bulletin' | 'Japanese Canadian Veterans' | 'Canadian Encyclopedia' | 'Books'| 'Daily News'  | 'PDF' | 'Google Docs' |'UBC'>('all');
   const [sortField, setSortField] = useState<SortField>('year');
   const [sortDir,   setSortDir]   = useState<SortDir>('desc');
 
@@ -916,7 +928,7 @@ const ArticlesPage: React.FC = () => {
 
       {/* ── Filter buttons ── */}
       <div className="articles-filter-wrapper">
-       {(['all', 'Discover Nikkei', 'Japanese Canadian Legacies', 'Greenwood Nikkei', 'The Bulletin', 'Japanese Canadian Veterans', 'Canadian Encyclopedia', 'Books', 'UBC', 'PDF', 'Google Docs'] as const).map(f => (
+       {(['all', 'Discover Nikkei', 'Japanese Canadian Legacies', 'Greenwood Nikkei', 'The Bulletin', 'Japanese Canadian Veterans', 'Canadian Encyclopedia', 'Books', 'UBC', 'Daily News','PDF',  'Google Docs'] as const).map(f => (
           <button
             key={f}
             className={`articles-filter-btn${
@@ -942,6 +954,8 @@ const ArticlesPage: React.FC = () => {
               ? 'Books'
               : f === 'UBC'
               ? 'UBC'
+              : f === 'Daily News'
+              ? 'Daily News'
               : f === 'Google Docs'
               ? 'Google Docs'
               : 'PDF'}
