@@ -344,6 +344,9 @@ import visitors_31  from './img/gallery/visitors/visitors_31.jpg';
 import visitors_32  from './img/gallery/visitors/visitors_32.jpg';
 import visitors_33  from './img/gallery/visitors/visitors_33.jpg';
 import visitors_34  from './img/gallery/visitors/visitors_34.jpg';
+import visitors_35  from './img/gallery/visitors/visitors_35.jpg';
+import visitors_36  from './img/gallery/visitors/visitors_36.jpg';
+import visitors_37  from './img/gallery/visitors/visitors_37.jpg';
 
 import food_1  from './img/gallery/food/food_1.jpg';
 import food_2  from './img/gallery/food/food_2.jpg';
@@ -1144,6 +1147,22 @@ const VISITORS3_IMAGES: GalleryImage[] = [
     src: visitors_34,
     alt: 'Yoko Nakagawa and Lurana Tasaka',
     caption: <>Yoko Nakagawa and Lurana Tasaka along with Kathleen Quo Vadis taking the photo in September, 2026.</>,
+  },
+  {
+    src: visitors_35,
+    alt: 'Bob Cowan',
+    caption: <>Bob Cowan, former Kitsilano grad of 1956 came to Nikkei Legacy
+    Park to learn the JC internment history.  He and his friend Paul were then on their way to New Denver.</>,
+  },
+  {
+    src: visitors_36,
+    alt: 'Daniel Hazen',
+    caption: <>Daniel Hazen of Bailey, Colorado visited Nikkei Legacy Park September 23rd to place the peace cranes on the monument.  Bob has placed peace cranes in Hiroshima, Nagasaki, Pearl Harbor and now Greenwood!</>,
+  },
+  {
+    src: visitors_37,
+    alt: 'Daniel Hazen',
+    caption: <>Daniel Hazen of Bailey, Colorado visited Nikkei Legacy Park September 23rd to place the peace cranes on the monument.  Bob has placed peace cranes in Hiroshima, Nagasaki, Pearl Harbor and now Greenwood!</>,
   },
 
 ];
