@@ -626,6 +626,12 @@ import sept2026_4  from './img/gallery/gallerySept2026/sept2026_4.jpg';
 import sept2026_5  from './img/gallery/gallerySept2026/sept2026_5.jpg';
 import sept2026_1a  from './img/gallery/gallerySept2026/sept2026_1.jpg';
 
+import recentDonors_1  from './img/gallery/recentDonors/recentDonor_1.jpg';
+import recentDonors_2  from './img/gallery/recentDonors/recentDonor_2.jpg';
+import recentDonors_3  from './img/gallery/recentDonors/recentDonor_3.jpg';
+
+
+
 interface GalleryImage {
   src: string;
   alt: string;
@@ -828,6 +834,14 @@ const DONORS2_IMAGES: GalleryImage[] = [
   { src: donors_b19, alt: 'snow lantern',},
   { src: donors_b20, alt: 'snow lantern',},
 ];
+
+
+const DONORS3_IMAGES: GalleryImage[] = [
+  { src: recentDonors_1, alt: 'Recent Donor 2026',},
+  { src: recentDonors_2, alt: 'Recent Donor 2026',},
+  { src: recentDonors_3, alt: 'Recent Donor 2026',},
+];
+
 
 const OPENING_IMAGES: GalleryImage[] = [
   {
@@ -4105,6 +4119,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'nikkei', title: 'Nikkei Legacy Park Tribute Plaques: Gallery 2' },
     { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 1' },
     { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 2' },
+    { filterKey: 'nikkei', title: 'Recent Donors: 2026' },
     // { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 3' },
     // { filterKey: 'nikkei', title: 'Thank You Donors: Gallery 4' },
     { filterKey: 'nikkei', title: 'Grand Opening: July 20, 2025' },
@@ -4223,6 +4238,7 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Nikkei Legacy Park Tribute Plaques: Gallery 2') && <Carousel images={TRIBUTE2_IMAGES} title="Nikkei Legacy Park Tribute Plaques: Gallery 2" />}
           {matchesQuery('Thank You Donors: Gallery 1') && <Carousel images={DONORS_IMAGES} title="Thank You Donors: Gallery 1" />}
           {matchesQuery('Thank You Donors: Gallery 2') && <Carousel images={DONORS2_IMAGES} title="Thank You Donors: Gallery 2" />}
+          {matchesQuery('Recent Donors: 2026') && <Carousel images={DONORS3_IMAGES} title="Recent Donors: 2026" />}
           {/* {matchesQuery('Thank You Donors: Gallery 3') && <Carousel images={DONORS3_IMAGES} title="Thank You Donors: Gallery 3" />}
           {matchesQuery('Thank You Donors: Gallery 4') && <Carousel images={DONORS4_IMAGES} title="Thank You Donors: Gallery 4" />} */}
           {matchesQuery('Grand Opening: July 20, 2025') && <Carousel images={OPENING_IMAGES}   title="Grand Opening: July 20, 2025" />}
