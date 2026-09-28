@@ -192,6 +192,7 @@ import landscaping_3  from './img/gallery/landscaping/landscaping_3.jpg';
 import landscaping_4  from './img/gallery/landscaping/landscaping_4.jpg';
 import landscaping_5  from './img/gallery/landscaping/landscaping_5.jpg';
 import landscaping_6  from './img/gallery/landscaping/landscaping_6.jpg';
+import landscaping_7  from './img/gallery/landscaping/landscaping_7.jpg';
 
 
 import housing1943_1  from './img/gallery/1943Housing/housing1943_1.jpeg';
@@ -347,6 +348,7 @@ import visitors_34  from './img/gallery/visitors/visitors_34.jpg';
 import visitors_35  from './img/gallery/visitors/visitors_35.jpg';
 import visitors_36  from './img/gallery/visitors/visitors_36.jpg';
 import visitors_37  from './img/gallery/visitors/visitors_37.jpg';
+import visitors_38  from './img/gallery/visitors/visitors_38.jpg';
 
 import food_1  from './img/gallery/food/food_1.jpg';
 import food_2  from './img/gallery/food/food_2.jpg';
@@ -1164,6 +1166,11 @@ const VISITORS3_IMAGES: GalleryImage[] = [
     alt: 'Daniel Hazen',
     caption: <>Daniel Hazen of Bailey, Colorado visited Nikkei Legacy Park September 23rd to place the peace cranes on the monument.  Bob has placed peace cranes in Hiroshima, Nagasaki, Pearl Harbor and now Greenwood!</>,
   },
+  {
+    src: visitors_38,
+    alt: 'Mori family',
+    caption: <>Mori family visited Nikkei Legacy Park September 27th, 2026. Patrick Fong, Chuck, Debbie Mori-Fong, Dayton, Rachel-Claire and Kaylee enjoyed following their father, grandfather Isao’s footsteps while interned in Greenwood.</>,
+  },
 
 ];
 
@@ -1304,6 +1311,12 @@ const LANDSCAPING_IMAGES: GalleryImage[] = [
     src: landscaping_2,
     alt: 'Landscaping Image 2',
     caption: <>Winter scene:  Greenwood Nikkei Memorial Garden dedicated to the 1200 Japanese Canadians who came to Greenwood April 26th, 1942.  Most stayed and made their homes after 1945.  There are still a few JCs are still residing in this community.</>,
+  },
+  {
+    src: landscaping_7,
+    alt: 'Greenwood Public Works and Kunon and Japonica Landscaping crew',
+    caption: <>Greenwood Public Works and Kunon and Japonica Landscaping crew before the start of the Greenwood Nikkei Memorial Japanese Garden project dedicated to the 1200 JCs sent to Greenwood.
+</>,
   }
 ];
 
