@@ -1183,7 +1183,7 @@ const VISITORS3_IMAGES: GalleryImage[] = [
   {
     src: visitors_38,
     alt: 'Mori family',
-    caption: <>Mori family visited Nikkei Legacy Park September 27th, 2026. Patrick Fong, Chuck, Debbie Mori-Fong, Dayton, Rachel-Claire and Kaylee enjoyed following their father, grandfather Isao’s footsteps while interned in Greenwood.</>,
+    caption: <>Mori family visited Nikkei Legacy Park September 27th, 2026. Patrick Fung, Chuck, Debbie Mori-Fung, Dayton, Rachel-Claire and Kaylee enjoyed following their father, grandfather Isao’s footsteps while interned in Greenwood.</>,
   },
 
 ];
