@@ -349,6 +349,7 @@ import visitors_35  from './img/gallery/visitors/visitors_35.jpg';
 import visitors_36  from './img/gallery/visitors/visitors_36.jpg';
 import visitors_37  from './img/gallery/visitors/visitors_37.jpg';
 import visitors_38  from './img/gallery/visitors/visitors_38.jpg';
+import visitors_39  from './img/gallery/visitors/visitors_39.jpg';
 
 import food_1  from './img/gallery/food/food_1.jpg';
 import food_2  from './img/gallery/food/food_2.jpg';
@@ -1175,6 +1176,12 @@ const VISITORS3_IMAGES: GalleryImage[] = [
     alt: 'Daniel Hazen',
     caption: <>Daniel Hazen of Bailey, Colorado visited Nikkei Legacy Park September 23rd to place the peace cranes on the monument.  Bob has placed peace cranes in Hiroshima, Nagasaki, Pearl Harbor and now Greenwood!</>,
   },
+
+];
+
+
+const VISITORS4_IMAGES: GalleryImage[] = [
+  
   {
     src: visitors_37,
     alt: 'Daniel Hazen',
@@ -1185,7 +1192,11 @@ const VISITORS3_IMAGES: GalleryImage[] = [
     alt: 'Mori family',
     caption: <>Mori family visited Nikkei Legacy Park September 27th, 2026. Patrick Fung, Chuck, Debbie Mori-Fung, Dayton, Rachel-Claire and Kaylee enjoyed following their father, grandfather Isao’s footsteps while interned in Greenwood.</>,
   },
-
+  {
+    src: visitors_39,
+    alt: 'American friends',
+    caption: <>American friends came to visit.  Sylvia’s third visit but friend’s Teresa’s first from Idaho.</>,
+  },
 ];
 
 const MISC_IMAGES: GalleryImage[] = [
@@ -4127,6 +4138,7 @@ const GalleryPage: React.FC = () => {
     { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 1' },
     { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 2' },
     { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 3' },
+    { filterKey: 'nikkei', title: 'Visitors to Nikkei Legacy Park: Gallery 4' },
     { filterKey: 'restoration', title: 'Restoration and Renovation: 2016-2018' },
     { filterKey: 'restoration', title: 'Japanese Rock Garden Landscaping' },
     { filterKey: 'ohairi', title: 'A Look Back: Ohairi Park (Pre-2014)' },
@@ -4246,6 +4258,7 @@ const GalleryPage: React.FC = () => {
           {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 1') && <Carousel images={VISITORS_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 1" />}
           {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 2') && <Carousel images={VISITORS2_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 2" />}
           {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 3') && <Carousel images={VISITORS3_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 3" />}
+          {matchesQuery('Visitors to Nikkei Legacy Park: Gallery 4') && <Carousel images={VISITORS4_IMAGES}   title="Visitors to Nikkei Legacy Park: Gallery 4" />}
         </>
       )}
 
